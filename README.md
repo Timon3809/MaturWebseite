@@ -29,6 +29,7 @@ Anschlussend `http://localhost:8080` öffnen.
 | **Geschichte** | vollständig | Zusammenfassungen, Glossar, ewige Daten, Dateien, Prüfungssimulator |
 | **Chemie** | Aufbau | Zusammenfassungen, Glossar, Dateien, Prüfungssimulator; Skripte zu Atombau und Molekularen Stoffen |
 | **Geographie** | Platzhalter | Zusammenfassungen, Glossar, Dateien; Inhalte folgen |
+| **Biologie** | Platzhalter | Zusammenfassungen, Glossar, Dateien, Prüfungssimulator; Inhalte folgen |
 | Mathe, PhysikSP, Deutsch, Französisch | in Vorbereitung | Matur-Fächer, noch nicht verfügbar |
 
 ## Funktionen
@@ -52,6 +53,10 @@ Die Lernbereiche (Übersicht, Zusammenfassungen, Glossar, Dateien, Prüfungssimu
 ### Geographie
 
 Strukturell vorbereitet mit Übersicht, Zusammenfassungen, Glossar und Dateien. Unterrichtsinhalte werden ergänzt, sobald die Unterlagen bereitstehen.
+
+### Biologie
+
+Strukturell vorbereitet mit Übersicht, Zusammenfassungen, Glossar, Dateien und Prüfungssimulator. Unterrichtsinhalte werden ergänzt, sobald die Unterlagen bereitstehen.
 
 ## Projektstruktur
 
@@ -83,11 +88,17 @@ MaturWebseite/
 │   ├── dateien.html
 │   ├── pruefungssimulator.html
 │   └── Skript/                       # PDF-Skripte (Atombau, Molekulare Stoffe, …)
-└── Geographie/
+├── Geographie/
+│   ├── index.html
+│   ├── zusammenfassungen.html
+│   ├── glossar.html
+│   └── dateien.html
+└── Biologie/
     ├── index.html
     ├── zusammenfassungen.html
     ├── glossar.html
-    └── dateien.html
+    ├── dateien.html
+    └── pruefungssimulator.html
 ```
 
 ## Technik
