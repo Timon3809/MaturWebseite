@@ -5,7 +5,8 @@
       links: [
         { label: "Fachübersicht", href: "index.html",                 icon: "⌂", page: "home" },
         { label: "Geschichte",    href: "Geschichte/index.html",      icon: "▣", page: "history" },
-        { label: "Chemie",        href: "Chemie/chemie.html",         icon: "⚗", page: "chemistry" }
+        { label: "Chemie",        href: "Chemie/index.html",         icon: "⚗", page: "chemistry" },
+        { label: "Geographie",    href: "Geographie/index.html",      icon: "◎", page: "geography" }
       ]
     },
     geschichte: {
@@ -27,6 +28,15 @@
         { label: "Glossar",           href: "glossar.html",            icon: "⌕", page: "glossary" },
         { label: "Dateien",           href: "dateien.html",            icon: "↓", page: "files" },
         { label: "Prüfungssimulator", href: "pruefungssimulator.html", icon: "▤", page: "simulator" }
+      ]
+    },
+    geographie: {
+      brand: { mark: "Geo", name: "Vormatur", tag: "GEOGRAPHIE", href: "../index.html" },
+      links: [
+        { label: "Übersicht",         href: "index.html",                    icon: "◎", page: "overview" },
+        { label: "Zusammenfassungen", href: "zusammenfassungen.html",        icon: "▧", page: "summaries" },
+        { label: "Glossar",           href: "glossar.html",                  icon: "⌕", page: "glossary" },
+        { label: "Dateien",           href: "dateien.html",                  icon: "↓", page: "files" }
       ]
     }
   };
