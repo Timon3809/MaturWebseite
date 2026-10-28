@@ -611,6 +611,192 @@ window.historyData = {
             <p><strong>Modern:</strong> fluoreszenzmarkierte Abbruchnucleotide, je eine Farbe pro Base. Alle Reaktionen laufen in einem Gefäss und einer Gelspur, ein Detektor liest die Farbabfolge.</p>`
         }
       ]
+    },
+    {
+      id: "topic-6",
+      name: "Mendel-Genetik",
+      subtopics: [
+        {
+          name: "Begriffe und Methodik",
+          summary: `<h3>Grundbegriffe</h3>
+            <ul>
+              <li><strong>Genotyp:</strong> genetische Ausstattung (Allele, die ein Individuum hat).</li>
+              <li><strong>Phänotyp:</strong> äusseres Erscheinungsbild (bestimmt durch den Genotyp).</li>
+              <li><strong>Homozygot</strong> = reinerbig: Das betrachtete Merkmal hat zwei identische Allele → Merkmal bleibt bei Selbstbefruchtung identisch.</li>
+              <li><strong>Heterozygot</strong> = mischerbig: Das betrachtete Merkmal hat unterschiedliche Allele.</li>
+              <li><strong>Hybridisierung:</strong> Kreuzung von zwei homozygoten Pflanzen. <strong>Monohybride Kreuzung:</strong> Unterschied in einem Merkmal; <strong>dihybride Kreuzung:</strong> zwei Merkmale.</li>
+              <li><strong>Hybride:</strong> Nachkommen einer Hybridisierung.</li>
+              <li><strong>Reziproke Kreuzung:</strong> Das Geschlecht der Eltern wird vertauscht (Mutter A × Vater B → Mutter B × Vater A).</li>
+              <li><strong>Inter se:</strong> Eine Generation wird unter sich gekreuzt.</li>
+              <li><strong>Generationen:</strong> Parentalgeneration (P) → 1. Filialgeneration (F1) → F2.</li>
+              <li><strong>Dominant:</strong> Allel, welches den Phänotyp eines Heterozygoten bestimmt (Abkürzung mit Grossbuchstaben). <strong>Rezessiv:</strong> Allel, welches einem dominanten Allel unterliegt (Kleinbuchstaben).</li>
+            </ul>
+            <h3>Methodik der Experimente (Mendel)</h3>
+            <ul>
+              <li>Kreuzungen von Sorten einer Art, die sich in einem oder zwei Merkmalen unterscheiden</li>
+              <li>Untersuchung für eindeutige Merkmale (z. B. weiss oder rot)</li>
+              <li>Beginn der Kreuzungen mit homozygoten (= zwei identische Allele) Eltern</li>
+            </ul>`
+        },
+        {
+          name: "Mendelsche Regeln",
+          summary: `<h3>Die drei Regeln</h3>
+            <ul>
+              <li><strong>1. Regel (Uniformitätsregel):</strong> Die F1 sind uniform → der Phänotyp wird durch das dominante Allel bestimmt (da eine reziproke Kreuzung das Gleiche ergibt).</li>
+              <li><strong>2. Regel (Spaltungsregel):</strong> Kreuzt man F1 unter sich, treten die Phänotypen der F2 im Verhältnis 3:1 auf. Genotypen: AA, Aa, Aa und aa.</li>
+              <li><strong>3. Regel (Unabhängigkeitsregel):</strong> Bei einer polyhybriden Kreuzung werden die Genotypen unabhängig voneinander vererbt und können frei kombiniert werden.</li>
+            </ul>
+            <h3>Test auf Reinerbigkeit</h3>
+            <p>Zur Prüfung eines Trägers mit dominanter Merkmalsform:</p>
+            <ul>
+              <li>1. Möglichkeit: <strong>Selbstbefruchtung</strong></li>
+              <li>2. Möglichkeit: <strong>Rückkreuzung</strong> mit einem homozygot rezessiven Elter</li>
+              <li>Haben alle F1 die dominante Merkmalsform → <strong>homozygot</strong>.</li>
+              <li>Hat die F1 auch Nachkommen mit der rezessiven Merkmalsform → <strong>heterozygot</strong>.</li>
+            </ul>
+            <h3>Kombinationsquadrat</h3>
+            <p>Methode zur Bestimmung der möglichen Genotypen der Tochterzellen und deren Häufigkeit. Beispiel für die Kreuzung Aa × Aa: Der Genotyp Aa kommt zweimal vor → doppelt so wahrscheinlich wie AA oder aa.</p>`
+        },
+        {
+          name: "Intermediäre Vererbung und polyhybride Erbgänge",
+          summary: `<h3>Intermediärer Vorgang</h3>
+            <p>Auch <strong>unvollständige Dominanz</strong> genannt: Die Merkmalsform wird von beiden Allelen beeinflusst. Der Phänotyp liegt zwischen den Homozygoten (z. B. rot × weiss → rosa). Da kein Allel dominant ist, verwendet man z. B. a und a′ statt A und a.</p>
+            <ul>
+              <li>Die 1. mendelsche Regel gilt hier ebenfalls.</li>
+              <li>Die 2. mendelsche Regel ergibt das neue Zahlenverhältnis 1:2:1.</li>
+            </ul>
+            <h3>Polyhybride Erbgänge</h3>
+            <ul>
+              <li><strong>Zahl der Gametensorten F1: 2ⁿ</strong> — alle Organismen sind mischerbig; pro Allel 2 Möglichkeiten (Mutter oder Vater).</li>
+              <li><strong>Zahl der Genotypen F2: 3ⁿ</strong> — pro Allel z. B. AA oder Aa oder aa.</li>
+              <li><strong>Zahl der Phänotypen F2: 2ⁿ</strong> — pro Allel zwei mögliche Phänotypen.</li>
+              <li>n = Anzahl heterozygoter Genpaare.</li>
+            </ul>
+            <p>Zahlenverhältnis Phänotypen: Jedes Merkmal tritt weiterhin im Verhältnis 3:1 auf. Für die Wahrscheinlichkeit eines Phänotyps multipliziert man die Anzahl der dominanten Allele × 3 — z. B. AbC = 3 × 1 × 3 = 9 → 9:3:3:1.</p>`
+        },
+        {
+          name: "Alleltypen",
+          summary: `<h3>Multiple Allele</h3>
+            <p>Bei manchen Genen existieren mehr als zwei verschiedene Allele. Jede Zelle hat trotzdem nur zwei Allele! Die mendelschen Regeln gelten trotzdem. Beispiel: Blutgruppen mit Allelen I<sup>A</sup>, I<sup>B</sup>, I<sup>0</sup>.</p>
+            <h3>Letale Allele</h3>
+            <ul>
+              <li><strong>Wirkungsweise:</strong> Bestimmte Allele wirken in homozygoter Form (meist dominant, z. B. AA) tödlich. Im heterozygoten Zustand (Aa) kann das gesunde Allel den Defekt oft kompensieren → Überleben, aber meist verändertes Merkmal.</li>
+              <li><strong>Todeszeitpunkt:</strong> wenn das Produkt letal ist (meist Embryonalentwicklung).</li>
+              <li><strong>Mendel 2:</strong> Durch die sterbenden Organismen ist das Zahlenverhältnis 2:1.</li>
+            </ul>`
+        }
+      ]
+    },
+    {
+      id: "topic-7",
+      name: "Zytologische Grundlagen",
+      subtopics: [
+        {
+          name: "Haploid, diploid und Chromatiden",
+          summary: `<h3>Chromosomensätze</h3>
+            <ul>
+              <li><strong>Haploid (n):</strong> Zellen mit einem Chromosomensatz — die meisten Gameten (Geschlechtszellen).</li>
+              <li><strong>Diploid (2n):</strong> Zellen mit zwei Chromosomensätzen → ein homologes Chromosomenpaar (je eines von Mutter und Vater). Entstehen aus der Zygote, die aus der Verschmelzung zweier Haploider entsteht.</li>
+            </ul>
+            <h3>Chromatiden</h3>
+            <ul>
+              <li>Chromosomen können als Einchromatid-Chromosom oder Zweichromatiden-Chromosom vorliegen.</li>
+              <li>Mit <strong>C</strong> wird die Anzahl Chromatiden pro Zelle angegeben: Eine diploide Zelle hat z. B. 4C.</li>
+            </ul>`
+        },
+        {
+          name: "Mitotische Zellteilung",
+          summary: `<h3>Interphase</h3>
+            <ul>
+              <li><strong>G1:</strong> Zellwachstum, Bildung der Zellorganellen (2C).</li>
+              <li><strong>S:</strong> Verdoppelung der DNA, Bildung von Histonproteinen (2C → 4C).</li>
+              <li><strong>G2:</strong> Zellwachstum (4C).</li>
+            </ul>
+            <h3>Mitose</h3>
+            <ul>
+              <li><strong>Prophase:</strong> Spiralisierung der Chromosomen, Auflösung der Kernhülle, Ausbildung des Spindelapparats (4C).</li>
+              <li><strong>Metaphase:</strong> Die Fasern setzen am Centromer an, die Chromosomen ordnen sich in der Äquatorealebene an (4C).</li>
+              <li><strong>Anaphase:</strong> Die Spindelfasern verkürzen sich → ziehen je ein Chromatid zum Spindelpol (4C).</li>
+              <li><strong>Telophase:</strong> Bildung der Kernhülle, der Spindelapparat verschwindet (4C).</li>
+              <li><strong>Zytokinese:</strong> Teilung der Zelle (4C → 2C).</li>
+            </ul>
+            <p>In jeder Phase befinden sich 2n Chromosomensätze. Funktion: Wachstum / Ersetzen alter Zellen. Die Erbinformationen sind identisch.</p>`
+        },
+        {
+          name: "Meiotische Zellteilung",
+          summary: `<h3>Reduktionsteilung</h3>
+            <p>Die Meiose halbiert den Chromosomensatz und erzeugt vier Gameten.</p>
+            <h3>1. Reduktionsteilung (1. RT)</h3>
+            <ul>
+              <li><strong>Prophase / Metaphase:</strong> wie bei der Mitose (4C).</li>
+              <li><strong>Anaphase:</strong> Je ein Chromosom wird zu den Polen gezogen → an jedem Pol liegt nun ein haploider Satz (4C).</li>
+              <li><strong>Telophase + Zytokinese:</strong> wie bei der Mitose — das Produkt sind jedoch zwei haploide Zellen (4C → 2C).</li>
+            </ul>
+            <h3>2. Reduktionsteilung (2. RT)</h3>
+            <ul>
+              <li><strong>Prophase / Metaphase:</strong> wie in der 1. RT (2C).</li>
+              <li><strong>Anaphase:</strong> wie bei der Mitose (2C).</li>
+              <li><strong>Telophase:</strong> wie bei der Mitose (2C → C).</li>
+            </ul>
+            <p>Chromosomensatz: Nach der 1. RT-Zellteilung von 2n → 1n. Funktion: Herstellung von je 4 Gameten. Die Erbinformationen sind halbiert.</p>`
+        }
+      ]
+    },
+    {
+      id: "topic-8",
+      name: "Drosophila-Genetik",
+      subtopics: [
+        {
+          name: "Drosophila als Modellorganismus",
+          summary: `<h3>Warum Drosophila?</h3>
+            <p>Die Fruchtfliege <em>Drosophila</em> wurde durch Morgan zum «Haustier» der Genetiker.</p>
+            <ul>
+              <li>Die Chromosomenzahl ist mit 8 gering</li>
+              <li>Günstiges Futter, wenig Platz</li>
+              <li>Mutationen lassen sich (meist) von Auge erkennen</li>
+              <li>Schnelle Generationsfolge (ca. 12 Tage) mit vielen Nachkommen (ca. 300)</li>
+            </ul>
+            <h3>Schreibweise</h3>
+            <ul>
+              <li>A⁺ = Wildtyp, A = Mutation</li>
+              <li>Grosser Buchstabe → Mutation dominant</li>
+              <li>Bei Kreuzungen: Allel mütterlicherseits und Allel väterlicherseits werden notiert.</li>
+            </ul>`
+        },
+        {
+          name: "Rekombination",
+          summary: `<h3>Interchromosomale Rekombination</h3>
+            <p>Zwei Allele sind frei kombinierbar, wenn sie auf verschiedenen Chromosomen liegen. Zwei Allele auf dem gleichen Chromosom sind hingegen gekoppelt. Für den Vorgang der interchromosomalen Rekombination gibt es beim Menschen 2²³ = 8 Millionen Möglichkeiten — das hat der Natur nicht gerecht, und so «erfand» sie das Crossing-over.</p>
+            <h3>Intrachromosomale Rekombination</h3>
+            <ul>
+              <li>Ohne Crossing-over würden in der Meiose immer zwei von vier Kernen genetisch identisch sein — das ist aber nicht der Fall.</li>
+              <li>In der Prophase I gibt es <strong>Chiasmen</strong> (Überkreuzungen) der Chromatiden. Dabei brechen die Chromatiden an der gleichen Stelle auseinander und tauschen Stücke aus → gekoppelte Gene werden entkoppelt.</li>
+              <li>Sonst würden immer alle Informationen eines Chromatids vom Vater oder der Mutter kommen.</li>
+              <li>Crossing-over sind kein seltenes Ereignis und zufällig.</li>
+              <li>Bei <em>Drosophila</em>: Morgan erkannte, dass beim Zweiflügler Crossing-over nur bei Weibchen stattfindet.</li>
+            </ul>`
+        },
+        {
+          name: "Genkarte und X-chromosomale Vererbung",
+          summary: `<h3>Genkarte</h3>
+            <p>Grundbedingungen:</p>
+            <ul>
+              <li>Gene liegen linear hintereinander.</li>
+              <li>Ein Bruch ist an allen Stellen gleich wahrscheinlich.</li>
+              <li>→ Die Häufigkeit von Crossing-over ist unter diesen Bedingungen proportional zum Abstand zwischen zwei Genen.</li>
+            </ul>
+            <p><strong>Austauschwert (Rekombinationswert):</strong> Prozentsatz, bei dem das Gen durch ein Crossing-over ausgetauscht wurde. 1 % Crossing-over bezeichnet man als Abstand von 1 <strong>Morganeinheit (1 ME)</strong>.</p>
+            <p><strong>Berechnung von ME:</strong> Alle Genotypen betrachten und die zusammenzählen, die ein Crossing-over bei A, B etc. hatten. Eventuell Gene in der Mitte müssen ebenfalls in Betracht gezogen werden. Doppel-Crossing-over werden nicht entdeckt, wenn man die Gene dazwischen nicht betrachtet.</p>
+            <h3>X-Chromosomen-gebundene Vererbung</h3>
+            <p>Es gibt reziproke Kreuzungen, die nicht das gleiche Ergebnis haben — die Information liegt auf dem Geschlechtschromosom X; das Y hat diese Information nicht.</p>
+            <ul>
+              <li><strong>Autosomen:</strong> Chromosomen, die nicht an der Geschlechtsbestimmung beteiligt sind.</li>
+              <li><strong>Gonosomen:</strong> Chromosomen, die an der Geschlechtsbestimmung beteiligt sind.</li>
+              <li>X und Y haben eine homologe Region. Der Grossteil des Y ist genetisch inaktiv und Y hat viele Informationen des X nicht.</li>
+              <li><strong>Hemizygot:</strong> Gen, das in einem diploiden Chromosomensatz einfach vorhanden ist.</li>
+            </ul>`
+        }
+      ]
     }
   ]
 };
