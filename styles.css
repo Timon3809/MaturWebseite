@@ -218,6 +218,12 @@ main { width: min(100%, 1180px); margin: 0 auto; padding: 31px 0 43px; }
 .summary-text h4 { margin: 12px 0 5px; color: #454940; font: 600 11px/1.5 var(--display); }
 .summary-text ul, .summary-text ol { margin: 0 0 12px; padding-left: 20px; color: #64675f; font-size: 11px; line-height: 1.8; }
 .summary-text li { margin-bottom: 4px; }
+.summary-table-wrap { max-width: 100%; margin: 10px 0 14px; overflow-x: auto; }
+.summary-text table { width: 100%; border-collapse: collapse; color: #64675f; font-size: 11px; line-height: 1.6; }
+.summary-text caption { padding: 0 0 6px; color: #454940; font: 600 11px/1.5 var(--display); text-align: left; }
+.summary-text th, .summary-text td { border: 1px solid var(--line); padding: 7px 9px; text-align: left; vertical-align: top; }
+.summary-text th { background: #f5f4ef; color: #454940; font-weight: 600; }
+.summary-text .summary-note-table td { border-color: #e8d9bf; background: #fbf5e9; color: #725d38; }
 .summary-text img { display: block; max-width: 60%; max-height: 320px; height: auto; margin: 12px auto; }
 .summary-text .summary-figure { margin: 12px auto; }
 .summary-tag { color: #a09f94; font-size: 7px; letter-spacing: .45px; }
