@@ -27,7 +27,8 @@ Anschlussend `http://localhost:8080` öffnen.
 | Fach | Status | Inhalte |
 |------|--------|---------|
 | **Geschichte** | vollständig | Zusammenfassungen, Glossar, ewige Daten, Dateien, Prüfungssimulator |
-| **Chemie** | Platzhalter | Lernbereiche sind angelegt, Unterrichtsinhalte folgen |
+| **Chemie** | Aufbau | Zusammenfassungen, Glossar, Dateien, Prüfungssimulator; Skripte zu Atombau und Molekularen Stoffen |
+| **Geographie** | Platzhalter | Zusammenfassungen, Glossar, Dateien; Inhalte folgen |
 | Mathe, PhysikSP, Deutsch, Französisch | in Vorbereitung | Matur-Fächer, noch nicht verfügbar |
 
 ## Funktionen
@@ -46,7 +47,11 @@ Anschlussend `http://localhost:8080` öffnen.
 
 ### Chemie
 
-Der Bereich ist strukturell vorbereitet (Übersicht, Zusammenfassungen, Glossar, Dateien, Prüfungssimulator), enthält aber noch keine Unterrichtsinhalte.
+Die Lernbereiche (Übersicht, Zusammenfassungen, Glossar, Dateien, Prüfungssimulator) sind angelegt. Unter `Chemie/Skript/` liegen bereits PDF-Skripte (Atombau, Molekulare Stoffe); weitere Inhalte folgen.
+
+### Geographie
+
+Strukturell vorbereitet mit Übersicht, Zusammenfassungen, Glossar und Dateien. Unterrichtsinhalte werden ergänzt, sobald die Unterlagen bereitstehen.
 
 ## Projektstruktur
 
@@ -71,12 +76,18 @@ MaturWebseite/
 │   └── Resourcen/
 │       ├── Bilder_Zusammenfassung/   # Abbildungen für die Themen
 │       └── Dateien/                  # PDFs (Lehrmittel, Stoffplan)
-└── Chemie/
+├── Chemie/
+│   ├── index.html
+│   ├── zusammenfassungen.html
+│   ├── glossar.html
+│   ├── dateien.html
+│   ├── pruefungssimulator.html
+│   └── Skript/                       # PDF-Skripte (Atombau, Molekulare Stoffe, …)
+└── Geographie/
     ├── index.html
     ├── zusammenfassungen.html
     ├── glossar.html
-    ├── dateien.html
-    └── pruefungssimulator.html
+    └── dateien.html
 ```
 
 ## Technik
