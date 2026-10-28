@@ -5,17 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Geographie-Glossar | Vormatur</title>
     <link rel="stylesheet" href="../styles.css">
+    <script src="Scripts/data.js" defer></script>
+    <script src="Scripts/glossar.js" defer></script>
     <script src="../site-nav.js" defer></script>
   </head>
   <body>
     <div class="app-shell">
       <aside class="sidebar" data-nav-section="geographie" data-nav-page="glossary"></aside>
+
       <div class="workspace">
-        <header><div class="breadcrumb"><a href="../index.html">VORMATUR</a><span class="breadcrumb-divider">/</span><a href="index.html">GEOGRAPHIE</a><span class="breadcrumb-divider">/</span><span>GLOSSAR</span></div></header>
-        <main><section class="content-view">
-          <div class="page-heading"><span class="eyebrow dark-eyebrow">GEOGRAPHIE / MERKEN</span><h1>Glossar</h1><p>Begriffe aus den Geographie-Themen der Vormatur sammeln und wiederholen.</p></div>
-          <div class="placeholder-panel"><span>Aa</span><p><strong>Noch keine Begriffe eingetragen</strong>Das Geographie-Glossar wird aufgebaut, sobald die Unterrichtsunterlagen vorliegen.</p></div>
-        </section></main>
+        <header>
+          <div class="breadcrumb"><a href="../index.html">VORMATUR</a><span class="breadcrumb-divider">/</span><a href="index.html">GEOGRAPHIE</a><span class="breadcrumb-divider">/</span><span>GLOSSAR</span></div>
+        </header>
+        <main>
+            <section class="content-view">
+                <div class="page-heading">
+                  <span class="eyebrow dark-eyebrow">GEOGRAPHIE / MERKEN</span>
+                  <h1>Glossar</h1>
+                </div>
+
+            <section class="glossary-section" id="begriffe">
+                <div class="glossary-tools">
+                  <label class="search-field"><span>⌕</span><input id="glossary-search" type="search" placeholder="Begriff oder Definition suchen …" autocomplete="off"></label>
+                  <select class="field-control glossary-filter" id="glossary-topic"><option value="all">Alle Themen</option></select>
+                  <span class="glossary-total" id="glossary-total"></span>
+                </div>
+                <div class="glossary-view-switch" role="group" aria-label="Darstellung wählen">
+                  <button class="glossary-view-button is-active" type="button" data-view="list" aria-pressed="true">Liste</button>
+                  <button class="glossary-view-button" type="button" data-view="mindmap" aria-pressed="false">Mindmap</button>
+                </div>
+                <div id="glossary-list-view">
+                  <div class="glossary-grid" id="glossary-list"></div>
+                  <p class="empty-state" id="glossary-empty" hidden>Keine passenden Begriffe gefunden. Versuche einen anderen Suchbegriff oder ein anderes Thema.</p>
+                </div>
+                <div class="glossary-map-view" id="glossary-map-view" hidden>
+                  <div class="mindmap-toolbar">
+                    <p>Ziehe zum Verschieben, scrolle zum Zoomen und wähle einen Begriff für die Definition.</p>
+                    <div class="mindmap-controls" aria-label="Mindmap-Zoom">
+                      <button type="button" id="mindmap-zoom-in" aria-label="Heranzoomen">+</button>
+                      <button type="button" id="mindmap-zoom-out" aria-label="Herauszoomen">−</button>
+                      <button type="button" id="mindmap-center" aria-label="Mindmap zentrieren">Zentrieren</button>
+                      <button type="button" id="mindmap-fullscreen" aria-label="Mindmap im Vollbild anzeigen">Vollbild</button>
+                    </div>
+                  </div>
+                  <div class="mindmap-layout">
+                    <div class="mindmap-viewport" id="mindmap-viewport" tabindex="0" aria-label="Interaktive Glossar-Mindmap">
+                      <div class="mindmap-surface" id="mindmap-surface">
+                        <svg class="mindmap-connections" id="mindmap-connections" aria-hidden="true"></svg>
+                      </div>
+                    </div>
+                    <aside class="mindmap-detail" aria-live="polite">
+                      <span class="eyebrow dark-eyebrow">GLOSSAR</span>
+                      <h2 id="mindmap-detail-title">Begriff auswählen</h2>
+                      <p id="mindmap-detail-definition">Wähle einen Begriff in der Mindmap aus, um die Definition anzuzeigen.</p>
+                      <span id="mindmap-detail-topic"></span>
+                    </aside>
+                  </div>
+                  <p class="empty-state" id="mindmap-empty" hidden>Keine passenden Begriffe gefunden. Passe deine Suche oder den Themenfilter an.</p>
+                </div>
+              </section>
+            </section>
+        </main>
       </div>
     </div>
   </body>

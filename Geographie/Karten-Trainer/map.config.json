@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "id": "asia",
+  "title": "Baki’s Asienkarte",
+  "region": "Asien",
+  "description": "Länder, Städte und Landschaften Asiens kennenlernen und das eigene Wissen prüfen.",
+  "data": "data/asia-learning-map.json"
+}

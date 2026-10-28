@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 720" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4a6fa5"/>
+    </marker>
+    <marker id="arrO" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d9822b"/>
+    </marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5a8f4a"/>
+    </marker>
+
+    <pattern id="locksed" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#f5f0e6"/>
+      <circle cx="3" cy="3" r="1.3" fill="#b9a77a"/>
+      <circle cx="8" cy="7" r="1.3" fill="#b9a77a"/>
+    </pattern>
+    <pattern id="sedgest" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#efe6d2"/>
+      <line x1="0" y1="3" x2="12" y2="3" stroke="#a8905f" stroke-width="1.4"/>
+      <line x1="0" y1="9" x2="12" y2="9" stroke="#a8905f" stroke-width="1.4"/>
+    </pattern>
+    <pattern id="meta" width="14" height="10" patternUnits="userSpaceOnUse">
+      <rect width="14" height="10" fill="#f6efdc"/>
+      <path d="M0,5 Q3.5,1 7,5 T14,5" fill="none" stroke="#c2a24a" stroke-width="1.5"/>
+    </pattern>
+    <pattern id="magmatit" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#e9e9ee"/>
+      <circle cx="2.5" cy="2.5" r="1.4" fill="#5b5b66"/>
+      <circle cx="7.5" cy="6.5" r="1.4" fill="#5b5b66"/>
+      <circle cx="4.5" cy="8.5" r="1" fill="#8b8b96"/>
+    </pattern>
+    <radialGradient id="magmaG" cx="0.4" cy="0.35" r="0.75">
+      <stop offset="0%" stop-color="#ffd24d"/>
+      <stop offset="45%" stop-color="#f28a1c"/>
+      <stop offset="100%" stop-color="#c22e12"/>
+    </radialGradient>
+
+    <linearGradient id="weathG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cfe6f7"/>
+      <stop offset="100%" stop-color="#eaf4e2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="880" height="720" fill="#ffffff"/>
+  <text x="440" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#1f2d3d">Der Kreislauf der Gesteine</text>
+  <text x="440" y="66" text-anchor="middle" font-size="14" fill="#5a6b7c">endogene und exogene Prozesse als Motor der Umwandlung</text>
+
+  <!-- ================= Knoten ================= -->
+
+  <!-- Verwitterung / Erdoberfläche -->
+  <g transform="translate(440,150)">
+    <rect x="-95" y="-42" width="190" height="84" rx="10" fill="url(#weathG)" stroke="#7ba7cc" stroke-width="1.6"/>
+    <!-- Hügel + Regen -->
+    <path d="M-80,20 Q-45,-12 -5,20 Q25,-4 70,22 Z" fill="#7cb069"/>
+    <path d="M-80,20 L70,22 L70,32 L-80,32 Z" fill="#8a6b45"/>
+    <g stroke="#4a7fb5" stroke-width="1.8" stroke-linecap="round">
+      <line x1="-55" y1="-28" x2="-62" y2="-14"/><line x1="-30" y1="-32" x2="-37" y2="-18"/>
+      <line x1="-5" y1="-30" x2="-12" y2="-16"/><line x1="20" y1="-33" x2="13" y2="-19"/>
+      <line x1="45" y1="-28" x2="38" y2="-14"/>
+    </g>
+    <path d="M-75,-36 Q-35,-52 10,-40 Q50,-30 72,-42 L72,-30 Q48,-20 8,-30 Q-32,-40 -72,-26 Z" fill="#bcd9ef" opacity="0.85"/>
+    <text y="58" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2d3d">Verwitterung &amp; Abtragung</text>
+    <text y="76" text-anchor="middle" font-size="11.5" fill="#5a6b7c">an der Erdoberfläche (exogen)</text>
+  </g>
+
+  <!-- Lockersediment -->
+  <g transform="translate(700,150)">
+    <circle r="62" fill="url(#locksed)" stroke="#a8905f" stroke-width="1.6"/>
+    <text y="88" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2d3d">Lockersediment</text>
+    <text y="106" text-anchor="middle" font-size="11.5" fill="#5a6b7c">Schutt, Sand, Ton</text>
+  </g>
+
+  <!-- Sedimentgestein -->
+  <g transform="translate(700,345)">
+    <circle r="62" fill="url(#sedgest)" stroke="#a8905f" stroke-width="1.6"/>
+    <text y="88" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2d3d">Sedimentgestein</text>
+    <text y="106" text-anchor="middle" font-size="11.5" fill="#5a6b7c">verfestigt durch Diagenese</text>
+  </g>
+
+  <!-- Metamorphit -->
+  <g transform="translate(520,545)">
+    <circle r="62" fill="url(#meta)" stroke="#a8905f" stroke-width="1.6"/>
+    <text y="88" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2d3d">Metamorphit</text>
+    <text y="106" text-anchor="middle" font-size="11.5" fill="#5a6b7c">Umwandlungsgestein</text>
+  </g>
+
+  <!-- Magma -->
+  <g transform="translate(300,545)">
+    <circle r="58" fill="url(#magmaG)" stroke="#c22e12" stroke-width="1.6"/>
+    <text y="92" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2d3d">Magma</text>
+    <text y="110" text-anchor="middle" font-size="11.5" fill="#5a6b7c">Gesteinsschmelze</text>
+  </g>
+
+  <!-- Magmatit -->
+  <g transform="translate(175,345)">
+    <circle r="62" fill="url(#magmatit)" stroke="#5b5b66" stroke-width="1.6"/>
+    <text y="88" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2d3d">Magmatit</text>
+    <text y="106" text-anchor="middle" font-size="11.5" fill="#5a6b7c">erstarrtes Magma</text>
+  </g>
+
+  <!-- ================= Pfade ================= -->
+
+  <!-- Oberfläche → Lockersediment -->
+  <path d="M535,140 C590,120 630,122 638,140" fill="none" stroke="#4a6fa5" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="600" y="112" text-anchor="middle" font-size="11.5" fill="#2c3e50">Ablagerung auf dem</text>
+  <text x="600" y="126" text-anchor="middle" font-size="11.5" fill="#2c3e50">Festland oder im Meer</text>
+
+  <!-- Lockersediment → Sedimentgestein -->
+  <path d="M700,214 L700,278" fill="none" stroke="#4a6fa5" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="782" y="250" text-anchor="middle" font-size="11.5" fill="#2c3e50">Versenkung &amp;</text>
+  <text x="782" y="264" text-anchor="middle" font-size="11.5" fill="#2c3e50">Diagenese</text>
+
+  <!-- Sedimentgestein → Metamorphit -->
+  <path d="M655,392 C620,440 585,468 562,492" fill="none" stroke="#d9822b" stroke-width="3" marker-end="url(#arrO)"/>
+  <text x="662" y="452" font-size="11.5" fill="#2c3e50">Temperatur</text>
+  <text x="662" y="466" font-size="11.5" fill="#2c3e50">und Druck</text>
+
+  <!-- Metamorphit → Magma -->
+  <path d="M458,545 L362,545" fill="none" stroke="#d9822b" stroke-width="3" marker-end="url(#arrO)"/>
+  <text x="410" y="530" text-anchor="middle" font-size="11.5" fill="#2c3e50">Aufschmelzung</text>
+  <text x="410" y="578" text-anchor="middle" font-size="11.5" fill="#2c3e50">(Anatexis)</text>
+
+  <!-- Magma → Magmatit -->
+  <path d="M258,505 C222,462 202,430 192,408" fill="none" stroke="#4a6fa5" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="140" y="470" text-anchor="end" font-size="11.5" fill="#2c3e50">Abkühlung &amp;</text>
+  <text x="140" y="484" text-anchor="end" font-size="11.5" fill="#2c3e50">Kristallisation</text>
+
+  <!-- Magmatit → Oberfläche (Hebung) -->
+  <path d="M182,285 C200,220 250,178 320,152" fill="none" stroke="#5a8f4a" stroke-width="3" marker-end="url(#arrG)"/>
+  <text x="152" y="210" text-anchor="end" font-size="11.5" fill="#2c3e50">Hebung</text>
+
+  <!-- Sedimentgestein → Oberfläche (Hebung) -->
+  <path d="M662,300 C620,240 575,195 533,166" fill="none" stroke="#5a8f4a" stroke-width="3" marker-end="url(#arrG)"/>
+  <text x="642" y="230" font-size="11.5" fill="#2c3e50">Hebung</text>
+
+  <!-- Metamorphit → Oberfläche (Hebung) -->
+  <path d="M520,481 C505,380 495,270 482,196" fill="none" stroke="#5a8f4a" stroke-width="3" marker-end="url(#arrG)"/>
+  <text x="440" y="330" text-anchor="end" font-size="11.5" fill="#2c3e50">Hebung</text>
+
+  <!-- Tiefenachse -->
+  <g transform="translate(60,620)">
+    <line x1="0" y1="-230" x2="0" y2="20" stroke="#7a8794" stroke-width="2" marker-end="url(#arr)" stroke-opacity="0.001"/>
+    <text x="-8" y="-100" transform="rotate(-90 -8 -100)" text-anchor="middle" font-size="12" fill="#5a6b7c">Zunahme von Druck und Temperatur</text>
+    <line x1="-20" y1="-180" x2="-20" y2="10" stroke="#7a8794" stroke-width="2"/>
+    <path d="M-26,4 L-14,4 L-20,16 Z" fill="#7a8794"/>
+  </g>
+
+  <!-- Legende -->
+  <g transform="translate(105,655)" font-size="11.5" fill="#2c3e50">
+    <rect x="-70" y="-18" width="740" height="52" rx="8" fill="#f7f9fb" stroke="#d5dde5"/>
+    <circle cx="-40" cy="8" r="7" fill="#4a6fa5"/><text x="-26" y="12">exogener Prozess</text>
+    <line x1="80" y1="8" x2="118" y2="8" stroke="#d9822b" stroke-width="3"/><text x="126" y="12">Umwandlung durch Druck/Temperatur</text>
+    <line x1="360" y1="8" x2="398" y2="8" stroke="#5a8f4a" stroke-width="3"/><text x="406" y="12">Hebung (endogen)</text>
+  </g>
+</svg>

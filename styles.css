@@ -226,6 +226,9 @@ main { width: min(100%, 1180px); margin: 0 auto; padding: 31px 0 43px; }
 .summary-text .summary-note-table td { border-color: #e8d9bf; background: #fbf5e9; color: #725d38; }
 .summary-text img { display: block; max-width: 60%; max-height: 320px; height: auto; margin: 12px auto; }
 .summary-text .summary-figure { margin: 12px auto; }
+.summary-text .summary-embed { margin: 16px 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: #fff; }
+.summary-text .summary-embed iframe { display: block; width: 100%; min-height: 560px; border: 0; }
+.summary-text .summary-note { font-size: 12px; color: var(--muted, #7a8794); }
 .summary-tag { color: #a09f94; font-size: 7px; letter-spacing: .45px; }
 .summary-subtopics { display: grid; gap: 0; margin-top: 18px; border-top: 1px solid var(--line); padding-top: 7px; }
 .summary-subtopic { border-bottom: 1px solid var(--line); }

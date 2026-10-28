@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 660" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <pattern id="tafeljura" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#f4f1e8"/>
+      <line x1="5" y1="0" x2="5" y2="10" stroke="#8b7d5c" stroke-width="1.2"/>
+    </pattern>
+    <pattern id="faltenjura" width="6" height="10" patternUnits="userSpaceOnUse">
+      <rect width="6" height="10" fill="#e8e0cb"/>
+      <line x1="1.5" y1="0" x2="1.5" y2="10" stroke="#6e6244" stroke-width="1.1"/>
+      <line x1="4.5" y1="0" x2="4.5" y2="10" stroke="#6e6244" stroke-width="1.1"/>
+    </pattern>
+    <pattern id="molasse" width="12" height="10" patternUnits="userSpaceOnUse">
+      <rect width="12" height="10" fill="#f3ede0"/>
+      <line x1="0" y1="2.5" x2="12" y2="2.5" stroke="#b09566" stroke-width="1.2"/>
+      <line x1="0" y1="7.5" x2="12" y2="7.5" stroke="#b09566" stroke-width="1.2"/>
+    </pattern>
+    <pattern id="submolasse" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#efe7d6"/>
+      <circle cx="3" cy="3" r="1.6" fill="#a6894f"/>
+      <circle cx="9" cy="9" r="1.6" fill="#a6894f"/>
+    </pattern>
+    <pattern id="helvetikum" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#dfe9f2"/>
+      <circle cx="2" cy="2" r="1.1" fill="#5c7c9c"/>
+      <circle cx="6" cy="6" r="1.1" fill="#5c7c9c"/>
+    </pattern>
+    <pattern id="penninikum" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#cfd8e6"/>
+      <line x1="0" y1="8" x2="8" y2="0" stroke="#3f5878" stroke-width="1.3"/>
+    </pattern>
+    <pattern id="grundgebirge" width="9" height="9" patternUnits="userSpaceOnUse">
+      <rect width="9" height="9" fill="#3c4450"/>
+      <line x1="0" y1="9" x2="9" y2="0" stroke="#22282f" stroke-width="1.2"/>
+    </pattern>
+    <pattern id="autochthon" width="9" height="9" patternUnits="userSpaceOnUse">
+      <rect width="9" height="9" fill="#fbf8f1"/>
+      <line x1="0" y1="4.5" x2="9" y2="4.5" stroke="#cbbf9e" stroke-width="0.9"/>
+    </pattern>
+  </defs>
+
+  <rect width="1240" height="660" fill="#ffffff"/>
+  <text x="620" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#1f2d3d">Geologisches Profil vom Jura bis zu den Alpen</text>
+  <text x="620" y="52" text-anchor="middle" font-size="12.5" fill="#5a6b7c">schematisch, überhöht und mehrfach vereinfacht · NW – SE</text>
+
+  <!-- ============ Profilkörper ============ -->
+  <!-- Grundgebirge / Massiv (Basis) -->
+  <path d="M95,470 L160,455 L235,432 L310,425 L400,420 L470,428 L520,438 L560,428 L600,392 L650,332 L700,292 L760,262 L830,242 L900,222 L965,192 L1020,172 L1075,152 L1120,140 L1120,545 L95,545 Z"
+        fill="url(#grundgebirge)" stroke="#22282f" stroke-width="1"/>
+
+  <!-- Penninikum (Bünderschiefer/Nappe) -->
+  <path d="M560,428 L600,392 L650,332 L700,292 L760,262 L830,242 L900,222 L965,192 L1020,172 L1075,152 L1120,140 L1120,255 L1060,258 L990,272 L915,292 L845,318 L785,348 L735,382 L690,412 L655,438 L620,452 L585,452 Z"
+        fill="url(#penninikum)" stroke="#3f5878" stroke-width="1"/>
+
+  <!-- Helvetikum (Nordrand der Alpen) -->
+  <path d="M470,428 L520,438 L560,428 L585,452 L620,452 L655,438 L690,412 L735,382 L760,362 L745,398 L700,432 L655,458 L610,470 L560,472 L505,462 L470,452 Z"
+        fill="url(#helvetikum)" stroke="#5c7c9c" stroke-width="1"/>
+
+  <!-- Subalpine Molasse -->
+  <path d="M400,420 L470,428 L470,452 L505,462 L560,472 L560,492 L470,492 L400,480 Z"
+        fill="url(#submolasse)" stroke="#a6894f" stroke-width="1"/>
+
+  <!-- Mittelland-Molasse / Tertiär Rheingraben -->
+  <path d="M235,432 L310,425 L400,420 L400,480 L310,478 L235,470 Z"
+        fill="url(#molasse)" stroke="#b09566" stroke-width="1"/>
+
+  <!-- Autochthon / Parautochthon (Tafeljura-Untergrund) -->
+  <path d="M95,470 L160,455 L235,432 L235,470 L160,478 L95,492 Z"
+        fill="url(#autochthon)" stroke="#cbbf9e" stroke-width="1"/>
+
+  <!-- Faltenjura -->
+  <path d="M160,455 L235,432 L310,425 L310,448 L235,452 L160,468 Z"
+        fill="url(#faltenjura)" stroke="#6e6244" stroke-width="1"/>
+
+  <!-- Tafeljura -->
+  <path d="M95,470 L160,455 L160,468 L95,486 Z"
+        fill="url(#tafeljura)" stroke="#8b7d5c" stroke-width="1"/>
+
+  <!-- ============ Relief ============ -->
+  <path d="M95,470 L128,436 L152,398 L178,382 L205,370 L235,342 L262,352 L290,376 L318,408 L352,418 L392,412 L432,404 L470,408 L505,418 L535,410 L562,394 L590,372 L616,362 L642,342 L668,312 L694,292 L720,286 L748,262 L776,256 L804,236 L832,212 L860,202 L890,182 L918,172 L948,142 L976,122 L1004,128 L1032,142 L1062,152 L1092,132 L1120,140"
+        fill="none" stroke="#22282f" stroke-width="2.2" stroke-linejoin="round"/>
+
+  <!-- Stationen -->
+  <g font-size="11" fill="#2c3e50">
+    <line x1="95" y1="470" x2="95" y2="545" stroke="#9aa5b1" stroke-dasharray="3 3"/>
+    <text x="95" y="562" text-anchor="middle" font-weight="600">Basel</text>
+    <text x="95" y="458" text-anchor="middle" fill="#5a6b7c">0 m</text>
+
+    <circle cx="235" cy="342" r="3" fill="#22282f"/>
+    <line x1="235" y1="342" x2="235" y2="312" stroke="#9aa5b1"/>
+    <text x="235" y="304" text-anchor="middle" font-weight="600">Passwang</text>
+    <text x="235" y="290" text-anchor="middle" fill="#5a6b7c">1204 m</text>
+
+    <circle cx="352" cy="418" r="3" fill="#22282f"/>
+    <text x="352" y="442" text-anchor="middle">Oensingen</text>
+    <circle cx="470" cy="408" r="3" fill="#22282f"/>
+    <text x="470" y="392" text-anchor="middle">Sempach</text>
+    <circle cx="535" cy="410" r="3" fill="#22282f"/>
+    <text x="535" y="394" text-anchor="middle">Küssnacht</text>
+
+    <circle cx="642" cy="342" r="3" fill="#22282f"/>
+    <line x1="642" y1="342" x2="642" y2="312" stroke="#9aa5b1"/>
+    <text x="642" y="304" text-anchor="middle" font-weight="600">Rigihöchflue</text>
+    <text x="642" y="290" text-anchor="middle" fill="#5a6b7c">1699 m</text>
+
+    <circle cx="720" cy="286" r="3" fill="#22282f"/>
+    <line x1="720" y1="286" x2="720" y2="256" stroke="#9aa5b1"/>
+    <text x="720" y="248" text-anchor="middle" font-weight="600">Gross Mythen</text>
+    <text x="720" y="234" text-anchor="middle" fill="#5a6b7c">1899 m</text>
+
+    <circle cx="804" cy="236" r="3" fill="#22282f"/>
+    <line x1="804" y1="236" x2="804" y2="206" stroke="#9aa5b1"/>
+    <text x="804" y="198" text-anchor="middle" font-weight="600">Rossstock</text>
+    <text x="804" y="184" text-anchor="middle" fill="#5a6b7c">2461 m</text>
+
+    <circle cx="890" cy="182" r="3" fill="#22282f"/>
+    <line x1="890" y1="182" x2="890" y2="152" stroke="#9aa5b1"/>
+    <text x="890" y="144" text-anchor="middle" font-weight="600">Gross Windgällen</text>
+    <text x="890" y="130" text-anchor="middle" fill="#5a6b7c">3188 m</text>
+
+    <circle cx="948" cy="142" r="3" fill="#22282f"/>
+    <line x1="948" y1="142" x2="948" y2="112" stroke="#9aa5b1"/>
+    <text x="948" y="104" text-anchor="middle" font-weight="600">Oberalpstock</text>
+    <text x="948" y="90" text-anchor="middle" fill="#5a6b7c">3328 m</text>
+
+    <circle cx="1032" cy="142" r="3" fill="#22282f"/>
+    <line x1="1032" y1="142" x2="1032" y2="112" stroke="#9aa5b1"/>
+    <text x="1032" y="104" text-anchor="middle" font-weight="600">Piz Badus</text>
+    <text x="1032" y="90" text-anchor="middle" fill="#5a6b7c">2928 m</text>
+
+    <circle cx="1120" cy="140" r="3" fill="#22282f"/>
+    <line x1="1120" y1="140" x2="1120" y2="110" stroke="#9aa5b1"/>
+    <text x="1120" y="102" text-anchor="middle" font-weight="600">Ambrì</text>
+  </g>
+
+  <!-- Talliste -->
+  <g transform="translate(880,300)" font-size="11" fill="#2c3e50">
+    <rect x="-12" y="-22" width="182" height="122" rx="7" fill="#f7f9fb" stroke="#d5dde5"/>
+    <text y="-6" font-size="11.5" font-weight="700">Täler &amp; Pässe</text>
+    <text y="14">① Gaeterlippass</text>
+    <text y="30">② Muotatal</text>
+    <text y="46">③ Riemenschtaldner Tal</text>
+    <text y="62">④ Schächental</text>
+    <text y="78">⑤ Maderanertal</text>
+    <text y="94">⑥ Ursenerental</text>
+  </g>
+  <g transform="translate(880,440)" font-size="11" fill="#2c3e50">
+    <text y="14">⑦ Valle Leventina</text>
+  </g>
+
+  <!-- Grossregionen -->
+  <g font-size="12.5" font-weight="700" fill="#33414f">
+    <text x="170" y="588" text-anchor="middle">JURA</text>
+    <text x="430" y="588" text-anchor="middle">MITTELLAND</text>
+    <text x="880" y="588" text-anchor="middle">ALPEN</text>
+    <line x1="95" y1="572" x2="310" y2="572" stroke="#8b7d5c" stroke-width="2"/>
+    <line x1="318" y1="572" x2="548" y2="572" stroke="#b09566" stroke-width="2"/>
+    <line x1="556" y1="572" x2="1120" y2="572" stroke="#3f5878" stroke-width="2"/>
+  </g>
+
+  <!-- Richtung -->
+  <g font-size="12" fill="#5a6b7c">
+    <text x="95" y="612" text-anchor="start" font-weight="600">NW</text>
+    <text x="1120" y="612" text-anchor="end" font-weight="600">SE</text>
+    <line x1="130" y1="608" x2="1085" y2="608" stroke="#9aa5b1" stroke-width="1.2" stroke-dasharray="6 4"/>
+    <text x="620" y="604" text-anchor="middle">ca. 30 km · vertikal überhöht</text>
+  </g>
+
+  <!-- Legende -->
+  <g transform="translate(95,632)" font-size="10.5" fill="#2c3e50">
+    <rect x="-12" y="-16" width="1140" height="30" rx="6" fill="#f7f9fb" stroke="#d5dde5"/>
+    <g transform="translate(6,4)">
+      <rect x="0" y="-10" width="18" height="18" fill="url(#tafeljura)" stroke="#8b7d5c"/><text x="24" y="4">Tafeljura</text>
+      <rect x="120" y="-10" width="18" height="18" fill="url(#faltenjura)" stroke="#6e6244"/><text x="144" y="4">Faltenjura</text>
+      <rect x="240" y="-10" width="18" height="18" fill="url(#molasse)" stroke="#b09566"/><text x="264" y="4">Mittelland-Molasse / Tertiär Rheingraben</text>
+      <rect x="540" y="-10" width="18" height="18" fill="url(#submolasse)" stroke="#a6894f"/><text x="564" y="4">Subalpine Molasse</text>
+    </g>
+    <g transform="translate(6,24)">
+      <rect x="0" y="-10" width="18" height="18" fill="url(#helvetikum)" stroke="#5c7c9c"/><text x="24" y="4">Helvetikum</text>
+      <rect x="120" y="-10" width="18" height="18" fill="url(#penninikum)" stroke="#3f5878"/><text x="144" y="4">Penninikum</text>
+      <rect x="240" y="-10" width="18" height="18" fill="url(#grundgebirge)" stroke="#22282f"/><text x="264" y="4">Grundgebirge, Massive</text>
+      <rect x="540" y="-10" width="18" height="18" fill="url(#autochthon)" stroke="#cbbf9e"/><text x="564" y="4">Autochthon, Parautochthon</text>
+    </g>
+  </g>
+</svg>

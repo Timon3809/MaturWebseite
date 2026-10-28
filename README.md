@@ -28,7 +28,7 @@ Anschlussend `http://localhost:8080` öffnen.
 |------|--------|---------|
 | **Geschichte** | vollständig | Zusammenfassungen, Glossar, ewige Daten, Dateien, Prüfungssimulator |
 | **Chemie** | Aufbau | Zusammenfassungen, Glossar, Dateien, Prüfungssimulator; Skripte zu Atombau und Molekularen Stoffen |
-| **Geographie** | aufgebaut | Zusammenfassungen (China: Regionen, Wirtschaft, Bevölkerung, Kultur), Dateien (Stoffplan); Glossar folgt |
+| **Geographie** | aufgebaut | Zusammenfassungen in 5 Themen (Klimatologie, Geologie/Gletscher, Schweiz, Asien, USA) mit 123 Abbildungen, Glossar (Begriffe + Gesteine, nach Thema), Dateien |
 | **Biologie** | aufgebaut | Zusammenfassungen (Neurobiologie, Gentechnik, Genetik), Glossar (klassische Genetik), Dateien, Prüfungssimulator |
 | Mathe, PhysikSP, Deutsch, Französisch | in Vorbereitung | Matur-Fächer, noch nicht verfügbar |
 
@@ -52,9 +52,16 @@ Die Lernbereiche (Übersicht, Zusammenfassungen, Glossar, Dateien, Prüfungssimu
 
 ### Geographie
 
-- **Zusammenfassungen** — China: Grossregionen (Tibet, Sinkiang, Südchinesisches Bergland, Nordchinesisches Tiefland), Drei-Schluchten-Damm, Wirtschaft, Peking, Bevölkerungspolitik, Religion, Sprache
+- **Zusammenfassungen** — fünf Themen mit 70 Unterthemen, aufgebaut nach dem Inhaltsverzeichnis der Matur 2026:
+  - **Klimatologie** (Grundlagen, Niederschlag, Zirkulation, Klimazonen, Köppen, Monsune, Zyklonen)
+  - **Geologie und Gletscher** (Tethys, Alpenfaltung, Bauteile, Jura/Mittelland, Gesteine, Gesteinskreislauf, Gletscher)
+  - **Schweiz** (Tessin, Tourismus, Bevölkerungsgeographie, EU, Asyl, Landschaftswandel)
+  - **Asien** (Gliederung, China: Regionen, Damm, Wirtschaft, Peking, Bevölkerung, Religion, Sprache)
+  - **USA** (Klima Nordamerikas, Landschaftsgürtel)
+  - 123 eingebettete Abbildungen sowie saubere SVG-Nachbauten (Gesteinskreislauf, Tethys-Profil, Geologisches Profil Jura–Alpen)
+- **Glossar** — 185 Begriffe nach Thema (Klimatologie, Geologie, Gesteine, Schweiz, Asien/China, USA) mit Suche und Mindmap
+- **Karten-Trainer** — interaktive Asien-Lernkarte (`Geographie/Karten-Trainer/`, 69 Lernobjekte: Orte finden, benennen, frei üben) als Ersatz der statischen Asien-Gliederung. Single-File-Build — läuft auch ohne Server direkt über `file://`
 - **Dateien** — Inhaltsverzeichnis Matur 2026 (prov.)
-- **Glossar** — angelegt, Inhalte folgen
 
 ### Biologie
 
@@ -98,8 +105,11 @@ MaturWebseite/
 │   ├── glossar.html
 │   ├── dateien.html
 │   ├── Scripts/
-│   │   └── data.js                 # Themen China / Geographie
+│   │   ├── data.js                 # 23 Themen + Glossar (nach Inhaltsverzeichnis Matur 2026)
+│   │   ├── glossar.js
+│   │   └── zusammenfassungen.js
 │   └── Resourcen/
+│       ├── Bilder/                 # Abbildungen (Gesteinskreislauf, Tethys-Profil, …)
 │       └── Dateien/                # Stoffpläne und Dokumente
 └── Biologie/
     ├── index.html
