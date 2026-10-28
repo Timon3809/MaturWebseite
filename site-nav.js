@@ -6,7 +6,8 @@
         { label: "Fachübersicht", href: "index.html",                 icon: "⌂", page: "home" },
         { label: "Geschichte",    href: "Geschichte/index.html",      icon: "▣", page: "history" },
         { label: "Chemie",        href: "Chemie/index.html",         icon: "⚗", page: "chemistry" },
-        { label: "Geographie",    href: "Geographie/index.html",      icon: "◎", page: "geography" }
+        { label: "Geographie",    href: "Geographie/index.html",      icon: "◎", page: "geography" },
+        { label: "Biologie",      href: "Biologie/index.html",        icon: "❀", page: "biology" }
       ]
     },
     geschichte: {
@@ -37,6 +38,16 @@
         { label: "Zusammenfassungen", href: "zusammenfassungen.html",        icon: "▧", page: "summaries" },
         { label: "Glossar",           href: "glossar.html",                  icon: "⌕", page: "glossary" },
         { label: "Dateien",           href: "dateien.html",                  icon: "↓", page: "files" }
+      ]
+    },
+    biologie: {
+      brand: { mark: "Bio", name: "Vormatur", tag: "BIOLOGIE", href: "../index.html" },
+      links: [
+        { label: "Übersicht",         href: "index.html",                    icon: "❀", page: "overview" },
+        { label: "Zusammenfassungen", href: "zusammenfassungen.html",        icon: "▧", page: "summaries" },
+        { label: "Glossar",           href: "glossar.html",                  icon: "⌕", page: "glossary" },
+        { label: "Dateien",           href: "dateien.html",                  icon: "↓", page: "files" },
+        { label: "Prüfungssimulator", href: "pruefungssimulator.html",       icon: "▤", page: "simulator" }
       ]
     }
   };
