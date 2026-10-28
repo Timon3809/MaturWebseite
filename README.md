@@ -28,8 +28,8 @@ Anschlussend `http://localhost:8080` öffnen.
 |------|--------|---------|
 | **Geschichte** | vollständig | Zusammenfassungen, Glossar, ewige Daten, Dateien, Prüfungssimulator |
 | **Chemie** | Aufbau | Zusammenfassungen, Glossar, Dateien, Prüfungssimulator; Skripte zu Atombau und Molekularen Stoffen |
-| **Geographie** | Platzhalter | Zusammenfassungen, Glossar, Dateien; Inhalte folgen |
-| **Biologie** | aufgebaut | Zusammenfassungen (Neurobiologie & Gentechnik), Glossar (klassische Genetik), Dateien, Prüfungssimulator |
+| **Geographie** | aufgebaut | Zusammenfassungen (China: Regionen, Wirtschaft, Bevölkerung, Kultur), Dateien (Stoffplan); Glossar folgt |
+| **Biologie** | aufgebaut | Zusammenfassungen (Neurobiologie, Gentechnik, Genetik), Glossar (klassische Genetik), Dateien, Prüfungssimulator |
 | Mathe, PhysikSP, Deutsch, Französisch | in Vorbereitung | Matur-Fächer, noch nicht verfügbar |
 
 ## Funktionen
@@ -52,11 +52,13 @@ Die Lernbereiche (Übersicht, Zusammenfassungen, Glossar, Dateien, Prüfungssimu
 
 ### Geographie
 
-Strukturell vorbereitet mit Übersicht, Zusammenfassungen, Glossar und Dateien. Unterrichtsinhalte werden ergänzt, sobald die Unterlagen bereitstehen.
+- **Zusammenfassungen** — China: Grossregionen (Tibet, Sinkiang, Südchinesisches Bergland, Nordchinesisches Tiefland), Drei-Schluchten-Damm, Wirtschaft, Peking, Bevölkerungspolitik, Religion, Sprache
+- **Dateien** — Inhaltsverzeichnis Matur 2026 (prov.)
+- **Glossar** — angelegt, Inhalte folgen
 
 ### Biologie
 
-- **Zusammenfassungen** — Neurobiologie und Gentechnik (Nervensystem, Nervenzellen, Ruhe-/Aktionspotenzial, Genregulation, Gentechnik-Methoden)
+- **Zusammenfassungen** — Neurobiologie und Gentechnik (Nervensystem, Nervenzellen, Ruhe-/Aktionspotenzial, Genregulation, Gentechnik-Methoden) sowie Genetik (Mendel, Zytologie, Drosophila)
 - **Glossar** — Begriffe der klassischen Genetik, mit Suche und Mindmap
 - **Dateien**, **Prüfungssimulator** — angelegt, Inhalte folgen
 
@@ -94,7 +96,11 @@ MaturWebseite/
 │   ├── index.html
 │   ├── zusammenfassungen.html
 │   ├── glossar.html
-│   └── dateien.html
+│   ├── dateien.html
+│   ├── Scripts/
+│   │   └── data.js                 # Themen China / Geographie
+│   └── Resourcen/
+│       └── Dateien/                # Stoffpläne und Dokumente
 └── Biologie/
     ├── index.html
     ├── zusammenfassungen.html
@@ -102,7 +108,7 @@ MaturWebseite/
     ├── dateien.html
     ├── pruefungssimulator.html
     └── Scripts/
-        ├── data.js                 # Glossar Genetik + Themen Neurobiologie/Gentechnik
+        ├── data.js                 # Glossar Genetik + Themen Neurobiologie, Gentechnik, Genetik
         ├── glossar.js
         └── zusammenfassungen.js
 ```
