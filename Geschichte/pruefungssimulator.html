@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prüfungssimulator | Vormatur</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="Scripts/data.js" defer></script>
+    <script src="Scripts/pruefungssimulator.js" defer></script>
+    <script src="../site-nav.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" data-nav-section="geschichte" data-nav-page="simulator"></aside>
+
+      <div class="workspace">
+        <header>
+          <div class="breadcrumb"><a href="../index.html">VORMATUR</a><span class="breadcrumb-divider">/</span><a href="index.html">GESCHICHTE</a><span class="breadcrumb-divider">/</span><span>PRÜFUNGSSIMULATOR</span></div>
+        </header>
+        <main>
+          <section class="content-view">
+            <div class="page-heading">
+              <span class="eyebrow dark-eyebrow">TRAINIEREN / 01</span>
+              <h1>Prüfungssimulator</h1>
+            </div>
+            <div class="simulator-layout">
+              <form class="panel simulator-form" id="simulator-form">
+                <div class="panel-heading"><div><span class="eyebrow dark-eyebrow">DEINE AUSWAHL</span><h2>Prüfung konfigurieren</h2></div></div>
+                <fieldset class="topic-fieldset">
+                  <legend class="field-label">Themen</legend>
+                  <div class="topic-options" id="topic-options"></div>
+                </fieldset>
+                
+                <div class="exam-structure">
+                  <h3 class="field-label" id="exam-structure-heading">Aufbau jeder Prüfung</h3>
+                  <div id="question-type-placeholders"></div>
+                </div>
+
+                <p class="topic-selection-error" id="topic-selection-error"></p>
+                <button class="button button-primary" type="submit" disabled>Prüfung erstellen <span>↗</span></button>
+              
+              </form>
+            </div>
+
+            <div class="exam-result" id="exam-result" hidden></div>
+
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
