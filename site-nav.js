@@ -27,8 +27,7 @@
         { label: "Übersicht",         href: "index.html",                    icon: "⚗", page: "overview" },
         { label: "Zusammenfassungen", href: "zusammenfassungen.html",  icon: "▧", page: "summaries" },
         { label: "Glossar",           href: "glossar.html",            icon: "⌕", page: "glossary" },
-        { label: "Dateien",           href: "dateien.html",            icon: "↓", page: "files" },
-        { label: "Prüfungssimulator", href: "pruefungssimulator.html", icon: "▤", page: "simulator" }
+        { label: "Dateien",           href: "dateien.html",            icon: "↓", page: "files" }
       ]
     },
     geographie: {
