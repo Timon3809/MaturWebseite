@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Biologie-Zusammenfassungen | Vormatur</title>
     <link rel="stylesheet" href="../styles.css">
+    <script src="Scripts/data.js" defer></script>
+    <script src="Scripts/zusammenfassungen.js" defer></script>
     <script src="../site-nav.js" defer></script>
   </head>
   <body>
     <div class="app-shell">
       <aside class="sidebar" data-nav-section="biologie" data-nav-page="summaries"></aside>
+
       <div class="workspace">
-        <header><div class="breadcrumb"><a href="../index.html">VORMATUR</a><span class="breadcrumb-divider">/</span><a href="index.html">BIOLOGIE</a><span class="breadcrumb-divider">/</span><span>ZUSAMMENFASSUNGEN</span></div></header>
-        <main><section class="content-view">
-          <div class="page-heading"><span class="eyebrow dark-eyebrow">BIOLOGIE / WIEDERHOLEN</span><h1>Zusammenfassungen</h1><p>Übersichten zu den Biologie-Themen der Vormatur.</p></div>
-          <div class="placeholder-panel"><span>▧</span><p><strong>Inhalte folgen</strong>Die Biologie-Zusammenfassungen werden ergänzt, sobald die passenden Unterrichtsunterlagen vorliegen.</p></div>
-        </section></main>
+        <header>
+          <div class="breadcrumb"><a href="../index.html">VORMATUR</a><span class="breadcrumb-divider">/</span><a href="index.html">BIOLOGIE</a><span class="breadcrumb-divider">/</span><span>ZUSAMMENFASSUNGEN</span></div>
+        </header>
+        <main>
+          <section class="content-view">
+            <div class="page-heading">
+              <span class="eyebrow dark-eyebrow">BIOLOGIE / WIEDERHOLEN</span>
+              <h1>Zusammenfassungen</h1>
+              </div>
+            <div class="summary-list" id="summary-list"></div>
+          </section>
+        </main>
       </div>
     </div>
   </body>

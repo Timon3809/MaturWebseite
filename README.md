@@ -29,7 +29,7 @@ Anschlussend `http://localhost:8080` öffnen.
 | **Geschichte** | vollständig | Zusammenfassungen, Glossar, ewige Daten, Dateien, Prüfungssimulator |
 | **Chemie** | Aufbau | Zusammenfassungen, Glossar, Dateien, Prüfungssimulator; Skripte zu Atombau und Molekularen Stoffen |
 | **Geographie** | Platzhalter | Zusammenfassungen, Glossar, Dateien; Inhalte folgen |
-| **Biologie** | Platzhalter | Zusammenfassungen, Glossar, Dateien, Prüfungssimulator; Inhalte folgen |
+| **Biologie** | aufgebaut | Zusammenfassungen (Neurobiologie & Gentechnik), Glossar (klassische Genetik), Dateien, Prüfungssimulator |
 | Mathe, PhysikSP, Deutsch, Französisch | in Vorbereitung | Matur-Fächer, noch nicht verfügbar |
 
 ## Funktionen
@@ -56,7 +56,9 @@ Strukturell vorbereitet mit Übersicht, Zusammenfassungen, Glossar und Dateien. 
 
 ### Biologie
 
-Strukturell vorbereitet mit Übersicht, Zusammenfassungen, Glossar, Dateien und Prüfungssimulator. Unterrichtsinhalte werden ergänzt, sobald die Unterlagen bereitstehen.
+- **Zusammenfassungen** — Neurobiologie und Gentechnik (Nervensystem, Nervenzellen, Ruhe-/Aktionspotenzial, Genregulation, Gentechnik-Methoden)
+- **Glossar** — Begriffe der klassischen Genetik, mit Suche und Mindmap
+- **Dateien**, **Prüfungssimulator** — angelegt, Inhalte folgen
 
 ## Projektstruktur
 
@@ -98,7 +100,11 @@ MaturWebseite/
     ├── zusammenfassungen.html
     ├── glossar.html
     ├── dateien.html
-    └── pruefungssimulator.html
+    ├── pruefungssimulator.html
+    └── Scripts/
+        ├── data.js                 # Glossar Genetik + Themen Neurobiologie/Gentechnik
+        ├── glossar.js
+        └── zusammenfassungen.js
 ```
 
 ## Technik
