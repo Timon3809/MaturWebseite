@@ -1,0 +1,734 @@
+{
+  ".claude/settings.json": {
+    "mtime": 1793351971.8855984,
+    "seen": 1793385099.4626002,
+    "ast_hash": "3ac995fbf93552a991ecab9b63f776aa",
+    "semantic_hash": "3ac995fbf93552a991ecab9b63f776aa"
+  },
+  ".mimo-code.json": {
+    "mtime": 1793352941.1638658,
+    "seen": 1793385099.4626002,
+    "ast_hash": "4b8b92f896ea7785cc57459ff80286e4",
+    "semantic_hash": "4b8b92f896ea7785cc57459ff80286e4"
+  },
+  ".vscode/settings.json": {
+    "mtime": 1793187212.034036,
+    "seen": 1793385099.4626002,
+    "ast_hash": "fdb8e89c302d988c6d9658561072914e",
+    "semantic_hash": "fdb8e89c302d988c6d9658561072914e"
+  },
+  "Biologie/Scripts/data.js": {
+    "mtime": 1793196389.7353463,
+    "seen": 1793385099.4626002,
+    "ast_hash": "a54b2ea782a0bf9dc56b643916e28e6b",
+    "semantic_hash": "a54b2ea782a0bf9dc56b643916e28e6b"
+  },
+  "Biologie/Scripts/glossar.js": {
+    "mtime": 1793193979.3501215,
+    "seen": 1793385099.4626002,
+    "ast_hash": "cbf70e084ca64eff65fcdbb7c74109e4",
+    "semantic_hash": "cbf70e084ca64eff65fcdbb7c74109e4"
+  },
+  "Biologie/Scripts/zusammenfassungen.js": {
+    "mtime": 1793194061.721708,
+    "seen": 1793385099.4626002,
+    "ast_hash": "6979916823e1cfc2ba9e8ef453c2676e",
+    "semantic_hash": "6979916823e1cfc2ba9e8ef453c2676e"
+  },
+  "Chemie/Scripts/data.js": {
+    "mtime": 1793226618.1507027,
+    "seen": 1793385099.4626002,
+    "ast_hash": "d135aba577218fb5f8dc4dfeaa41b4a3",
+    "semantic_hash": "d135aba577218fb5f8dc4dfeaa41b4a3"
+  },
+  "Chemie/Scripts/glossar-data.js": {
+    "mtime": 1793226618.151885,
+    "seen": 1793385099.4626002,
+    "ast_hash": "480c6954255e9cd8055a445e9da5f01d",
+    "semantic_hash": "480c6954255e9cd8055a445e9da5f01d"
+  },
+  "Geographie/Karten-Trainer/data/asia-learning-map.json": {
+    "mtime": 1793226618.2576096,
+    "seen": 1793385099.4626002,
+    "ast_hash": "",
+    "semantic_hash": ""
+  },
+  "Geographie/Karten-Trainer/map.config.json": {
+    "mtime": 1793226618.274942,
+    "seen": 1793385099.4626002,
+    "ast_hash": "5ab03e2b00d423fa5636a3645839bffb",
+    "semantic_hash": "5ab03e2b00d423fa5636a3645839bffb"
+  },
+  "Geographie/Karten-Trainer/src/app.js": {
+    "mtime": 1793226618.2759526,
+    "seen": 1793385099.4626002,
+    "ast_hash": "866fbfd590f82a59558e753ccd90cf18",
+    "semantic_hash": "866fbfd590f82a59558e753ccd90cf18"
+  },
+  "Geographie/Karten-Trainer/src/core.js": {
+    "mtime": 1793226618.276959,
+    "seen": 1793385099.4626002,
+    "ast_hash": "eec6f498ba0b2d7ec515248abb56c113",
+    "semantic_hash": "eec6f498ba0b2d7ec515248abb56c113"
+  },
+  "Geographie/Karten-Trainer/src/schema.js": {
+    "mtime": 1793226618.2790754,
+    "seen": 1793385099.4626002,
+    "ast_hash": "6be0c1703e244bdcc3e951131b06e21a",
+    "semantic_hash": "6be0c1703e244bdcc3e951131b06e21a"
+  },
+  "Geographie/Scripts/data.js": {
+    "mtime": 1793226618.4691176,
+    "seen": 1793385099.4626002,
+    "ast_hash": "72c2863acebc6e8e7312c7dacef892df",
+    "semantic_hash": "72c2863acebc6e8e7312c7dacef892df"
+  },
+  "Geographie/Scripts/glossar.js": {
+    "mtime": 1793226618.4710257,
+    "seen": 1793385099.4626002,
+    "ast_hash": "cbf70e084ca64eff65fcdbb7c74109e4",
+    "semantic_hash": "cbf70e084ca64eff65fcdbb7c74109e4"
+  },
+  "Geographie/Scripts/zusammenfassungen.js": {
+    "mtime": 1793226618.4724896,
+    "seen": 1793385099.4626002,
+    "ast_hash": "ea76176d36612ea4adc618ccbebe7d1e",
+    "semantic_hash": "ea76176d36612ea4adc618ccbebe7d1e"
+  },
+  "Geschichte/Scripts/data.js": {
+    "mtime": 1793187212.84537,
+    "seen": 1793385099.4626002,
+    "ast_hash": "7ce4bb91b2ad1beea16a0bf07655c615",
+    "semantic_hash": "7ce4bb91b2ad1beea16a0bf07655c615"
+  },
+  "Geschichte/Scripts/ewige-daten.js": {
+    "mtime": 1793187213.017249,
+    "seen": 1793385099.4626002,
+    "ast_hash": "788c71bda3b03a948513e63d6f9f78c5",
+    "semantic_hash": "788c71bda3b03a948513e63d6f9f78c5"
+  },
+  "Geschichte/Scripts/glossar.js": {
+    "mtime": 1793226618.1666064,
+    "seen": 1793385099.4626002,
+    "ast_hash": "1d6ec0e2523afa9a8bac62746a0e352c",
+    "semantic_hash": "1d6ec0e2523afa9a8bac62746a0e352c"
+  },
+  "Geschichte/Scripts/pruefungssimulator.js": {
+    "mtime": 1793187213.1359477,
+    "seen": 1793385099.4626002,
+    "ast_hash": "dde62d9cb5205da0c06340ec9c7c8aa4",
+    "semantic_hash": "dde62d9cb5205da0c06340ec9c7c8aa4"
+  },
+  "Geschichte/Scripts/zusammenfassungen.js": {
+    "mtime": 1793193979.3133645,
+    "seen": 1793385099.4626002,
+    "ast_hash": "8e8d844dd92653fc5886eafc15f38a46",
+    "semantic_hash": "8e8d844dd92653fc5886eafc15f38a46"
+  },
+  "Scripts/glossar.js": {
+    "mtime": 1793226618.1749227,
+    "seen": 1793385099.4626002,
+    "ast_hash": "0116a07e85c29a5aa8b8c7c83cf46d5f",
+    "semantic_hash": "0116a07e85c29a5aa8b8c7c83cf46d5f"
+  },
+  "Scripts/zusammenfassungen.js": {
+    "mtime": 1793193979.315436,
+    "seen": 1793385099.4626002,
+    "ast_hash": "4e65db0cd815228cc9bd2e7caecee78e",
+    "semantic_hash": "4e65db0cd815228cc9bd2e7caecee78e"
+  },
+  "site-nav.js": {
+    "mtime": 1793226618.178008,
+    "seen": 1793385099.4626002,
+    "ast_hash": "c04ab367fa366e3c6b5a855ff88a57b3",
+    "semantic_hash": "c04ab367fa366e3c6b5a855ff88a57b3"
+  },
+  ".claude/CLAUDE.md": {
+    "mtime": 1793351971.8794098,
+    "seen": 1793385099.4626002,
+    "ast_hash": "9b31786b637be3c13978bec4c2330752",
+    "semantic_hash": "9b31786b637be3c13978bec4c2330752"
+  },
+  "Biologie/dateien.html": {
+    "mtime": 1793191715.4532263,
+    "seen": 1793385099.4626002,
+    "ast_hash": "af6a9687ca33db09c27eaf20fe416560",
+    "semantic_hash": "af6a9687ca33db09c27eaf20fe416560"
+  },
+  "Biologie/glossar.html": {
+    "mtime": 1793193979.3514612,
+    "seen": 1793385099.4626002,
+    "ast_hash": "40c322d0ebf5530ca77f967dcc63d6aa",
+    "semantic_hash": "40c322d0ebf5530ca77f967dcc63d6aa"
+  },
+  "Biologie/index.html": {
+    "mtime": 1793196389.7353463,
+    "seen": 1793385099.4626002,
+    "ast_hash": "f3cc0557690a038d043e602985fbf423",
+    "semantic_hash": "f3cc0557690a038d043e602985fbf423"
+  },
+  "Biologie/pruefungssimulator.html": {
+    "mtime": 1793191715.4609337,
+    "seen": 1793385099.4626002,
+    "ast_hash": "23f75b53158943d4ae0daa6c02d7abb0",
+    "semantic_hash": "23f75b53158943d4ae0daa6c02d7abb0"
+  },
+  "Biologie/zusammenfassungen.html": {
+    "mtime": 1793194061.7576356,
+    "seen": 1793385099.4626002,
+    "ast_hash": "82bd523e2f99b2aa7580bbd88713e1ed",
+    "semantic_hash": "82bd523e2f99b2aa7580bbd88713e1ed"
+  },
+  "CLAUDE.md": {
+    "mtime": 1793351971.8824043,
+    "seen": 1793385099.4626002,
+    "ast_hash": "67d88e9d0760c3ba54c75dfd9551c1c5",
+    "semantic_hash": "67d88e9d0760c3ba54c75dfd9551c1c5"
+  },
+  "Chemie/dateien.html": {
+    "mtime": 1793226618.1569638,
+    "seen": 1793385099.4626002,
+    "ast_hash": "f720027f7ef333caa28060fe3288d74b",
+    "semantic_hash": "f720027f7ef333caa28060fe3288d74b"
+  },
+  "Chemie/glossar.html": {
+    "mtime": 1793226618.1583698,
+    "seen": 1793385099.4626002,
+    "ast_hash": "d716a006d0f42bc576460d2f7f847bf8",
+    "semantic_hash": "d716a006d0f42bc576460d2f7f847bf8"
+  },
+  "Chemie/index.html": {
+    "mtime": 1793226618.1593354,
+    "seen": 1793385099.4626002,
+    "ast_hash": "954469c4f63629fee106d4423e061823",
+    "semantic_hash": "954469c4f63629fee106d4423e061823"
+  },
+  "Chemie/zusammenfassungen.html": {
+    "mtime": 1793193979.3118744,
+    "seen": 1793385099.4626002,
+    "ast_hash": "f2d6303f25cbf0f5bc7d2c001feb5132",
+    "semantic_hash": "f2d6303f25cbf0f5bc7d2c001feb5132"
+  },
+  "Geographie/Karten-Trainer/index.html": {
+    "mtime": 1793226618.273484,
+    "seen": 1793385099.4626002,
+    "ast_hash": "95ce76a04ba68b2ae9e8026d9c856ca7",
+    "semantic_hash": "95ce76a04ba68b2ae9e8026d9c856ca7"
+  },
+  "Geographie/dateien.html": {
+    "mtime": 1793196389.7429228,
+    "seen": 1793385099.4626002,
+    "ast_hash": "94d236bbbfc579731f4106fba40ff0d5",
+    "semantic_hash": "94d236bbbfc579731f4106fba40ff0d5"
+  },
+  "Geographie/glossar.html": {
+    "mtime": 1793226618.4757936,
+    "seen": 1793385099.4626002,
+    "ast_hash": "188b487d38437cc57c4ad910b3f86360",
+    "semantic_hash": "188b487d38437cc57c4ad910b3f86360"
+  },
+  "Geographie/index.html": {
+    "mtime": 1793226618.4782243,
+    "seen": 1793385099.4626002,
+    "ast_hash": "1e862f6e6a2768fbe1e4fde80f9d94e5",
+    "semantic_hash": "1e862f6e6a2768fbe1e4fde80f9d94e5"
+  },
+  "Geographie/zusammenfassungen.html": {
+    "mtime": 1793226618.4810221,
+    "seen": 1793385099.4626002,
+    "ast_hash": "7cff7846ec8aec31db10ae71c03348c6",
+    "semantic_hash": "7cff7846ec8aec31db10ae71c03348c6"
+  },
+  "Geschichte/dateien.html": {
+    "mtime": 1793187213.6640468,
+    "seen": 1793385099.4626002,
+    "ast_hash": "c8cd94789bd97ccde303a3b41942a103",
+    "semantic_hash": "c8cd94789bd97ccde303a3b41942a103"
+  },
+  "Geschichte/ewige-daten.html": {
+    "mtime": 1793187213.8624234,
+    "seen": 1793385099.4626002,
+    "ast_hash": "9666337ff67f5c3177c14cb974128944",
+    "semantic_hash": "9666337ff67f5c3177c14cb974128944"
+  },
+  "Geschichte/glossar.html": {
+    "mtime": 1793226618.167728,
+    "seen": 1793385099.4626002,
+    "ast_hash": "624e9f48571e9b2631bbd8170e486cf9",
+    "semantic_hash": "624e9f48571e9b2631bbd8170e486cf9"
+  },
+  "Geschichte/index.html": {
+    "mtime": 1793226618.1692393,
+    "seen": 1793385099.4626002,
+    "ast_hash": "efd81570d353aefbd1d9139a7f9a272b",
+    "semantic_hash": "efd81570d353aefbd1d9139a7f9a272b"
+  },
+  "Geschichte/pruefungssimulator.html": {
+    "mtime": 1793187214.0042918,
+    "seen": 1793385099.4626002,
+    "ast_hash": "fbf49a203301ce6108e49f2e71aa5d10",
+    "semantic_hash": "fbf49a203301ce6108e49f2e71aa5d10"
+  },
+  "Geschichte/zusammenfassungen.html": {
+    "mtime": 1793193979.314436,
+    "seen": 1793385099.4626002,
+    "ast_hash": "afca0221a28f66ed33ebb686c547c1b5",
+    "semantic_hash": "afca0221a28f66ed33ebb686c547c1b5"
+  },
+  "README.md": {
+    "mtime": 1793226618.4844892,
+    "seen": 1793385099.4626002,
+    "ast_hash": "6b3ff0f1b3672500771ef02e82d0e3bc",
+    "semantic_hash": "6b3ff0f1b3672500771ef02e82d0e3bc"
+  },
+  "index.html": {
+    "mtime": 1793226618.1759305,
+    "seen": 1793385099.4626002,
+    "ast_hash": "9f9cfde17b374a5f844b9961fe7e7722",
+    "semantic_hash": "9f9cfde17b374a5f844b9961fe7e7722"
+  },
+  "Geographie/Resourcen/Bilder/svg-geologisches-profil.svg": {
+    "mtime": 1793226618.407504,
+    "seen": 1793385099.4626002,
+    "ast_hash": "08ec228e85f46c018fea97759d13bc1e",
+    "semantic_hash": "08ec228e85f46c018fea97759d13bc1e"
+  },
+  "Geographie/Resourcen/Bilder/svg-tethys-profil.svg": {
+    "mtime": 1793226618.4114985,
+    "seen": 1793385099.4626002,
+    "ast_hash": "848b99a1244693143ac5b0f7d6d7013b",
+    "semantic_hash": "848b99a1244693143ac5b0f7d6d7013b"
+  },
+  "Chemie/Resourcen/pr\u00fcfungsdossier.pdf": {
+    "mtime": 1793226618.1477835,
+    "seen": 1793386895.3161182,
+    "ast_hash": "56ca9aed0f1fc7f6e9ab5533dd6f006c",
+    "semantic_hash": ""
+  },
+  "Chemie/Unterrichtsdateien/3_Chemische_Bindungen.pdf": {
+    "mtime": 1793193977.9574308,
+    "seen": 1793386895.3161182,
+    "ast_hash": "d7ffc46bc4b8d6a430a450108173a92e",
+    "semantic_hash": ""
+  },
+  "Chemie/Unterrichtsdateien/4_Atombau.pdf": {
+    "mtime": 1793193978.3589816,
+    "seen": 1793386895.3161182,
+    "ast_hash": "6b92db485e0204918af003f75d8de730",
+    "semantic_hash": ""
+  },
+  "Chemie/Unterrichtsdateien/5_Molekulare Stoffe.pdf": {
+    "mtime": 1793193978.6029067,
+    "seen": 1793386895.3161182,
+    "ast_hash": "cf98908e57f1a9c6343235a5eda1d0a1",
+    "semantic_hash": ""
+  },
+  "Chemie/Unterrichtsdateien/6_Salze.pdf": {
+    "mtime": 1793193978.8196273,
+    "seen": 1793386895.3161182,
+    "ast_hash": "f3b0410a74945eb3b90e7e152e6e35e8",
+    "semantic_hash": ""
+  },
+  "Chemie/Unterrichtsdateien/Kapitel_4_Chemische_Reaktionen.pdf": {
+    "mtime": 1793193979.0909276,
+    "seen": 1793386895.3161182,
+    "ast_hash": "01ce1e62234e47871868774b3aaed146",
+    "semantic_hash": ""
+  },
+  "Chemie/Unterrichtsdateien/Kapitel_5_S\u00e4ure_Basen.pdf": {
+    "mtime": 1793193979.1693587,
+    "seen": 1793386895.3161182,
+    "ast_hash": "3becf3433893a8df0342eba30393ad04",
+    "semantic_hash": ""
+  },
+  "Chemie/Unterrichtsdateien/Kapitel_6_Elekronen\u00fcbertragungsreaktion.pdf": {
+    "mtime": 1793193979.2636192,
+    "seen": 1793386895.3161182,
+    "ast_hash": "a941e7bdeef8f48441a86ef1cbf8396d",
+    "semantic_hash": ""
+  },
+  "Chemie/Unterrichtsdateien/Kapitel_7_Organische_Chemie.pdf": {
+    "mtime": 1793193979.309875,
+    "seen": 1793386895.3161182,
+    "ast_hash": "8111d1ec5949919be7499784e587e563",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Dateien/inhaltsverzeichnis_matur_2026_prov.pdf": {
+    "mtime": 1793196389.740487,
+    "seen": 1793386895.3161182,
+    "ast_hash": "cb2003e43bfca51c1f61703498780651",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Dateien/Schw.GB Bd.2.pdf": {
+    "mtime": 1793187212.432816,
+    "seen": 1793386895.3161182,
+    "ast_hash": "b3aeb414f747f61cb652e80d3140148d",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Dateien/Schweizer_GB_Bd.3.pdf": {
+    "mtime": 1793187212.6288507,
+    "seen": 1793386895.3161182,
+    "ast_hash": "6de1a373c7498a798b3496c4e4dc28d8",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Dateien/Stoffplan_Vormatura Geschichte 2027.pdf": {
+    "mtime": 1793187212.6737306,
+    "seen": 1793386895.3161182,
+    "ast_hash": "6ea8577aa37f9977c8db8c52767c7265",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/asyl-p4-1.png": {
+    "mtime": 1793226618.2853093,
+    "seen": 1793386895.3161182,
+    "ast_hash": "a19c1ba6c376021f8c300e70cd95f57f",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/bev-p1-1.jpg": {
+    "mtime": 1793226618.2863154,
+    "seen": 1793386895.3161182,
+    "ast_hash": "415a91d4956e5907f6ec7d884fb7f433",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/bev-p2-1.jpg": {
+    "mtime": 1793226618.290214,
+    "seen": 1793386895.3161182,
+    "ast_hash": "87f65b04b39f1e8ae9a5a2e9678ff636",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/bev-p3-1.png": {
+    "mtime": 1793226618.2912183,
+    "seen": 1793386895.3161182,
+    "ast_hash": "8064720b9464e2099413d302105e8a7e",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/bevpyr-p4-1.jpg": {
+    "mtime": 1793226618.3047764,
+    "seen": 1793386895.3161182,
+    "ast_hash": "9cb27e6651d323ca2d65928c2155f834",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/china-p2-1.png": {
+    "mtime": 1793226618.3140807,
+    "seen": 1793386895.3161182,
+    "ast_hash": "793b2c72f5a935420978ee90a6078c5c",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/china-p4-1.jpg": {
+    "mtime": 1793226618.3194149,
+    "seen": 1793386895.3161182,
+    "ast_hash": "dc326d2e852fc7b92b11bb92b4d6b51a",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/china-p6-1.jpg": {
+    "mtime": 1793226618.322376,
+    "seen": 1793386895.3161182,
+    "ast_hash": "0c1a509fc8221b7b071e22e86a9c2875",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/eu-p4-1.jpg": {
+    "mtime": 1793226618.3243816,
+    "seen": 1793386895.3161182,
+    "ast_hash": "ea2cf343cd73f4c3534f671314a97c3f",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-p10-1.jpg": {
+    "mtime": 1793226618.3359149,
+    "seen": 1793386895.3161182,
+    "ast_hash": "7c0641a72faa96e10e249e4849c88286",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-p11-1.jpg": {
+    "mtime": 1793226618.3370094,
+    "seen": 1793386895.3161182,
+    "ast_hash": "cdd465f7032770eafed979ec840161fe",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-p11-2.jpg": {
+    "mtime": 1793226618.3409028,
+    "seen": 1793386895.3161182,
+    "ast_hash": "96d686c98cc7539347a3c04dd8899e38",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-p11-3.jpg": {
+    "mtime": 1793226618.343035,
+    "seen": 1793386895.3161182,
+    "ast_hash": "3aaacb5e98c43e9b771efc743670a15b",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-p12-1.jpg": {
+    "mtime": 1793226618.345915,
+    "seen": 1793386895.3161182,
+    "ast_hash": "83c40b74348cde6e870a36419b705cd0",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-p13-1.jpg": {
+    "mtime": 1793226618.348889,
+    "seen": 1793386895.3161182,
+    "ast_hash": "34969994c0f222b07f65477febaa18fe",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-p14-1.jpg": {
+    "mtime": 1793226618.3517118,
+    "seen": 1793386895.3161182,
+    "ast_hash": "3b7c90336f1b8a9a9579773ce1873a3d",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-p3-1.jpg": {
+    "mtime": 1793226618.3552964,
+    "seen": 1793386895.3161182,
+    "ast_hash": "ae9ec5a56626e1fd1ab67a188fb2502d",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/gestein-p2-1.jpg": {
+    "mtime": 1793226618.358297,
+    "seen": 1793386895.3161182,
+    "ast_hash": "7776b1cd21c99887e55cd8068997f99d",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/gestein-p3-1.jpg": {
+    "mtime": 1793226618.361317,
+    "seen": 1793386895.3161182,
+    "ast_hash": "3768b925f0ec9a212cff22179a7d5637",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/glazio-p7-1.jpg": {
+    "mtime": 1793226618.3662367,
+    "seen": 1793386895.3161182,
+    "ast_hash": "031ee9f041c637aa9d60f1d36e211c5e",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/gletscher-p2-1.jpg": {
+    "mtime": 1793226618.3740714,
+    "seen": 1793386895.3161182,
+    "ast_hash": "8e0c91fd62f2266553eb4a7ccdbeb3e6",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/gletscher-p3-1.jpg": {
+    "mtime": 1793226618.3750758,
+    "seen": 1793386895.3161182,
+    "ast_hash": "81c24047d6b130c0f8b7704d03dd7554",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/gletscher-p4-1.jpg": {
+    "mtime": 1793226618.3786469,
+    "seen": 1793386895.3161182,
+    "ast_hash": "a0e011505f5ecd18518f3ec3dd96e7ea",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/klima-p11-1.jpg": {
+    "mtime": 1793226618.3815217,
+    "seen": 1793386895.3161182,
+    "ast_hash": "3bb39efbba58fcd88a3b47f2d97211f5",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/klima-p13-1.png": {
+    "mtime": 1793226618.3851357,
+    "seen": 1793386895.3161182,
+    "ast_hash": "5a49dbf32ea06d5f5c497a540ed0ac36",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/klima-p14-1.jpg": {
+    "mtime": 1793226618.3875504,
+    "seen": 1793386895.3161182,
+    "ast_hash": "410715bbc86bbf7a7f893965346157bb",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/klima-p2-1.jpg": {
+    "mtime": 1793226618.3912785,
+    "seen": 1793386895.3161182,
+    "ast_hash": "6d260113b06c42b4f4c8d4f7abb46dae",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/klima-p5-1.png": {
+    "mtime": 1793226618.3954422,
+    "seen": 1793386895.3161182,
+    "ast_hash": "e4c3ed5410bdf7d9e2877006467b228c",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/klima-p9-1.jpg": {
+    "mtime": 1793226618.3991954,
+    "seen": 1793386895.3161182,
+    "ast_hash": "53b5d18f9d5d3176c44017ca6d76aa18",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/migr-p1-1.png": {
+    "mtime": 1793226618.4016392,
+    "seen": 1793386895.3161182,
+    "ast_hash": "3904c9409578de7a64db666c18f88862",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/peking-p2-1.jpg": {
+    "mtime": 1793226618.4026382,
+    "seen": 1793386895.3161182,
+    "ast_hash": "08fd4b714ecbb4b7eb4eca4c87213b55",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/peking-p3-1.jpg": {
+    "mtime": 1793226618.4064412,
+    "seen": 1793386895.3161182,
+    "ast_hash": "83832d903e57e410046e555910a0af12",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/svg-gesteinskreislauf.svg": {
+    "mtime": 1793226618.4090385,
+    "seen": 1793386895.3171148,
+    "ast_hash": "8d90caeda2991ea99fd3efd7fd7ada2d",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/tessin-p1-1.jpg": {
+    "mtime": 1793226618.41251,
+    "seen": 1793386895.3181114,
+    "ast_hash": "e5770cd8db57689678ae4bea0b7227c7",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/tour-p1-1.jpg": {
+    "mtime": 1793226618.4175174,
+    "seen": 1793386895.3181114,
+    "ast_hash": "749b672a759f24cbaf4156abcc9c792b",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/tour-p2-1.jpg": {
+    "mtime": 1793226618.420377,
+    "seen": 1793386895.3181114,
+    "ast_hash": "b6ad6f23053b31f867c4e5400e00e5ec",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/uig-p1-1.png": {
+    "mtime": 1793226618.4235117,
+    "seen": 1793386895.3181114,
+    "ast_hash": "0da55093c4ab7d6697b7c6c84c561fdb",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/uig-p2-1.png": {
+    "mtime": 1793226618.427748,
+    "seen": 1793386895.3181114,
+    "ast_hash": "755d28dd21dc684351885021ba63e2a8",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/usaklima-p5-1.png": {
+    "mtime": 1793226618.4312744,
+    "seen": 1793386895.3181114,
+    "ast_hash": "c742e4ccc62288f4e5a7d8011b4c8559",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/usaklima-p8-1.jpg": {
+    "mtime": 1793226618.4337504,
+    "seen": 1793386895.3181114,
+    "ast_hash": "ba777042a322f2aac7157467f422a4e1",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/usaklima-p9-1.png": {
+    "mtime": 1793226618.45031,
+    "seen": 1793386895.3181114,
+    "ast_hash": "4782a7d40b02b333c7cb0de40ecc3326",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zone-p5-1.jpg": {
+    "mtime": 1793226618.4611464,
+    "seen": 1793386895.3181114,
+    "ast_hash": "8373c883c6154b57ebd2219cb88370fb",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zone-p6-1.jpg": {
+    "mtime": 1793226618.4659612,
+    "seen": 1793386895.3181114,
+    "ast_hash": "7823651d367c4e882b4b079d31a5766f",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Bilder_Zusammenfassung/kalter-krieg-image1.png": {
+    "mtime": 1793187212.045115,
+    "seen": 1793386895.3181114,
+    "ast_hash": "1d5c7d4030b9765534eb3ca0a348e989",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Bilder_Zusammenfassung/kalter-krieg-image2.png": {
+    "mtime": 1793187212.05594,
+    "seen": 1793386895.3181114,
+    "ast_hash": "6fc6ca43f3b05ec0ee494733f798f22a",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Bilder_Zusammenfassung/kalter-krieg-image3.png": {
+    "mtime": 1793187212.0607982,
+    "seen": 1793386895.3181114,
+    "ast_hash": "b81d9af44a5b4e9bbf039ce7ce1ab3c8",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Bilder_Zusammenfassung/udssr-image1.png": {
+    "mtime": 1793187212.0648544,
+    "seen": 1793386895.3181114,
+    "ast_hash": "7cac893db355f5957d316da8e86107a0",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Bilder_Zusammenfassung/zwischenkriegszeit-image1.png": {
+    "mtime": 1793187212.0678751,
+    "seen": 1793386895.3181114,
+    "ast_hash": "132c0089e846bf07ab0d421a344b4ea4",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Bilder_Zusammenfassung/zwischenkriegszeit-image10.png": {
+    "mtime": 1793187212.098312,
+    "seen": 1793386895.3181114,
+    "ast_hash": "bc38c5e25fbaaa2ea80c65d2fdfedb5a",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Bilder_Zusammenfassung/zwischenkriegszeit-image11.png": {
+    "mtime": 1793187212.158878,
+    "seen": 1793386895.3181114,
+    "ast_hash": "07d8fde6162f89bdac21727a65ed51dc",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Bilder_Zusammenfassung/zwischenkriegszeit-image12.png": {
+    "mtime": 1793187212.1677668,
+    "seen": 1793386895.3181114,
+    "ast_hash": "5a82d37b8bc6f827764dbc8f2ed52648",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Bilder_Zusammenfassung/zwischenkriegszeit-image2.png": {
+    "mtime": 1793187212.2180629,
+    "seen": 1793386895.3181114,
+    "ast_hash": "ad9975af6200c6110e1cba834f822308",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Bilder_Zusammenfassung/zwischenkriegszeit-image4.png": {
+    "mtime": 1793187212.2354188,
+    "seen": 1793386895.3181114,
+    "ast_hash": "3d553696e235e76afefa56ca9f24a132",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Bilder_Zusammenfassung/zwischenkriegszeit-image5.png": {
+    "mtime": 1793187212.2364223,
+    "seen": 1793386895.3181114,
+    "ast_hash": "128981a05d4bec7acf1756a6c272dd5e",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Bilder_Zusammenfassung/zwischenkriegszeit-image6.png": {
+    "mtime": 1793187212.2392514,
+    "seen": 1793386895.3181114,
+    "ast_hash": "742dcf3de32d0e325ef04f07428b28f0",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Bilder_Zusammenfassung/zwischenkriegszeit-image7.png": {
+    "mtime": 1793187212.2437625,
+    "seen": 1793386895.3181114,
+    "ast_hash": "f902f8fcfc78c1966686308d37d3d52f",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Bilder_Zusammenfassung/zwischenkriegszeit-image8.png": {
+    "mtime": 1793187212.2507725,
+    "seen": 1793386895.3181114,
+    "ast_hash": "06fff2ff6041695045cc73f0c2985ace",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Bilder_Zusammenfassung/zwischenkriegszeit-image9.png": {
+    "mtime": 1793187212.2532308,
+    "seen": 1793386895.3181114,
+    "ast_hash": "a03958c0dd842f6b9f44007ce4ba1c24",
+    "semantic_hash": ""
+  },
+  ".mimocode/package-lock.json": {
+    "mtime": 1793190939.0001354,
+    "seen": 1793386895.3181114,
+    "ast_hash": "a076f7c970f06bd44c7a133a7dbdec0a",
+    "semantic_hash": ""
+  }
+}
