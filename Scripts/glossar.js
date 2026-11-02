@@ -35,6 +35,7 @@ const mapDetailTitle      = document.getElementById("mindmap-detail-title");
 const mapDetailDefinition = document.getElementById("mindmap-detail-definition");
 const mapDetailTopic      = document.getElementById("mindmap-detail-topic");
 const mapFullscreenToggle = document.getElementById("mindmap-fullscreen");
+const learnView           = document.getElementById("glossary-learn-view");
 
 const mapWidth            = 2300;
 const mapHeight           = 1900;
@@ -234,15 +235,16 @@ function zoomMindmap(nextScale, originX, originY) {
 function initializeMindmapInteractions() {
   document.querySelectorAll(".glossary-view-button").forEach((button) => {
     button.addEventListener("click", () => {
-      const showMap = button.dataset.view === "mindmap";
-      listView.hidden = showMap;
-      mapView.hidden = !showMap;
+      const view = button.dataset.view;
+      listView.hidden = view !== "list";
+      mapView.hidden = view !== "mindmap";
+      learnView.hidden = view !== "learn";
       document.querySelectorAll(".glossary-view-button").forEach((viewButton) => {
         const active = viewButton === button;
         viewButton.classList.toggle("is-active", active);
         viewButton.setAttribute("aria-pressed", String(active));
       });
-      if (showMap && !mapHasCentered) {
+      if (view === "mindmap" && !mapHasCentered) {
         centerMindmap();
         mapHasCentered = true;
       }

@@ -1,17 +1,17 @@
-# Graph Report - MaturWebseite  (2026-10-30)
+# Graph Report - MaturWebseite  (2026-11-02)
 
 ## Corpus Check
-- 27 files · ~70,287 words
+- 28 files · ~71,766 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 3 file(s) not represented in the graph (top: .css 2, (none) 1)
 
 ## Summary
-- 1533 nodes · 2075 edges · 206 communities (114 shown, 92 thin omitted)
-- Extraction: 84% EXTRACTED · 16% INFERRED · 0% AMBIGUOUS · INFERRED: 331 edges (avg confidence: 0.83)
+- 1552 nodes · 2114 edges · 207 communities (115 shown, 92 thin omitted)
+- Extraction: 84% EXTRACTED · 16% INFERRED · 0% AMBIGUOUS · INFERRED: 332 edges (avg confidence: 0.83)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `29b77b85`
+- Built from commit: `a323394a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -205,6 +205,7 @@
 - Protonenaustauschmembran (PEM - Proton Exchange Membrane)
 - Redox-Reihe (Redox Series / Electrochemical Voltage Series)
 - Standard-Reduktionspotential E° (Standard Reduction Potential)
+- glossar-quiz.js
 
 ## God Nodes (most connected - your core abstractions)
 1. `Geologisches Profil vom Jura bis zu den Alpen` - 30 edges
@@ -371,7 +372,7 @@
 - **Crystalline Massifs as Basement Windows (Aar + Gotthard)** — geographie_resourcen_bilder_geo_p10_1_aarmassiv, geographie_resourcen_bilder_geo_p10_1_gotthard_massiv, geographie_resourcen_bilder_geo_p10_1_grundgebirge [INFERRED 0.95]
 - **Molasse Foreland Basin Sequence (Mittelland → Subalpine → Alpenrand)** — geographie_resourcen_bilder_geo_p10_1_mittelland_molasse, geographie_resourcen_bilder_geo_p10_1_subalpine_molasse, geographie_resourcen_bilder_geo_p10_1_alpenrand [INFERRED 0.95]
 
-## Communities (206 total, 92 thin omitted)
+## Communities (207 total, 92 thin omitted)
 
 ### Community 0 - "Karten-Trainer Render Pipeline"
 Cohesion: 0.07
@@ -399,15 +400,15 @@ Nodes (27): Köppen Climate Classification Table, Af: Tropisches Regenwaldklima,
 
 ### Community 7 - "Glossar-Mindmap Script"
 Cohesion: 0.11
-Nodes (24): addMapNode(), centerMindmap(), drawMapLine(), escapeHtml(), glossaryEntries, initializeMindmapInteractions(), syncFullscreenState(), listView (+16 more)
+Nodes (25): addMapNode(), centerMindmap(), drawMapLine(), escapeHtml(), glossaryEntries, initializeMindmapInteractions(), syncFullscreenState(), learnView (+17 more)
 
 ### Community 8 - "Biologie Glossar Script"
-Cohesion: 0.12
-Nodes (23): addMapNode(), centerMindmap(), drawMapLine(), glossaryEntries, initializeMindmapInteractions(), syncFullscreenState(), listView, mapConnections (+15 more)
+Cohesion: 0.11
+Nodes (24): addMapNode(), centerMindmap(), drawMapLine(), glossaryEntries, initializeMindmapInteractions(), syncFullscreenState(), learnView, listView (+16 more)
 
 ### Community 9 - "Geographie Glossar Script"
-Cohesion: 0.12
-Nodes (23): addMapNode(), centerMindmap(), drawMapLine(), glossaryEntries, initializeMindmapInteractions(), syncFullscreenState(), listView, mapConnections (+15 more)
+Cohesion: 0.11
+Nodes (24): addMapNode(), centerMindmap(), drawMapLine(), glossaryEntries, initializeMindmapInteractions(), syncFullscreenState(), learnView, listView (+16 more)
 
 ### Community 10 - "Projektstruktur und FÃ¤cher"
 Cohesion: 0.13
@@ -829,6 +830,10 @@ Nodes (3): Chemische Vorgänge, Kapitel 4: Chemische Reaktionen (M5a), Physische
 Cohesion: 0.67
 Nodes (3): Nationalitätensowjet (Soviet of Nationalities), Oberster Sowjet (Supreme Soviet), Unionssowjet (Soviet of the Union)
 
+### Community 206 - "glossar-quiz.js"
+Cohesion: 0.30
+Nodes (14): advance(), answerVariants(), buildDeck(), buildOptions(), checkAnswer(), escapeAttr(), handleAction(), normalize() (+6 more)
+
 ## Ambiguous Edges - Review These
 - `British Empire (Cricket Player)` → `USA (Baseball Player)`  [AMBIGUOUS]
   Geschichte/Resourcen/Bilder_Zusammenfassung/kalter-krieg-image1.png · relation: shares_data_with
@@ -845,20 +850,20 @@ Nodes (3): Nationalitätensowjet (Soviet of Nationalities), Oberster Sowjet (Sup
 
 ## Knowledge Gaps
 - **409 isolated node(s):** `Nagelfluh (Alpine Conglomerate)`, `Helvetikum`, `Tethys Ocean`, `Ur-Donau (Proto-Danube)`, `Die Organisation der NSDAP` (+404 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 528 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 532 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **92 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Funktionelle Gruppen` connect `Organische Funktionelle Gruppen` to `Chemie Unterrichtsdateien Kapitel`, `Kapitel 7 Organische`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `Russland: vom Zarenreich zum Stalinismus` connect `Geschichte Resourcen Dateien` to `Geschichte Resourcen Dateien`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `Nagelfluh (Alpine Conglomerate)`, `Helvetikum`, `Tethys Ocean` to the rest of the system?**
   _409 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Karten-Trainer Render Pipeline` be split into smaller, more focused modules?**
   _Cohesion score 0.0670886075949367 - nodes in this community are weakly interconnected._
-- **Why does `Kapitel 7 – Organische Chemie` connect `Kapitel 7 Organische` to `Chemie Unterrichtsdateien Kapitel`, `Organische Funktionelle Gruppen`, `Alkane und MolekÃ¼lgeometrie`, `Chemie Unterrichtsdateien Kapitel`, `Chemie Unterrichtsdateien Kapitel`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `Schweizer Geschichtsbuch` connect `Geschichte Resourcen Dateien` to `Geschichte Resourcen Dateien`, `Geschichte Resourcen Dateien`, `Geschichte Stoffplan Begriffe`, `Geschichte Resourcen Dateien`, `Geschichte Resourcen Dateien`, `Geschichte Resourcen Dateien`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Should `Karten-Trainer App Logic` be split into smaller, more focused modules?**
   _Cohesion score 0.051251956181533644 - nodes in this community are weakly interconnected._
 

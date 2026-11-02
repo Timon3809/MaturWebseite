@@ -24,10 +24,10 @@
     "semantic_hash": "a54b2ea782a0bf9dc56b643916e28e6b"
   },
   "Biologie/Scripts/glossar.js": {
-    "mtime": 1793193979.3501215,
-    "seen": 1793385099.4626002,
-    "ast_hash": "cbf70e084ca64eff65fcdbb7c74109e4",
-    "semantic_hash": "cbf70e084ca64eff65fcdbb7c74109e4"
+    "mtime": 1793616063.8402348,
+    "seen": 1793618159.2077188,
+    "ast_hash": "900909ad3f02fc812015c21c167e15d2",
+    "semantic_hash": ""
   },
   "Biologie/Scripts/zusammenfassungen.js": {
     "mtime": 1793194061.721708,
@@ -84,10 +84,10 @@
     "semantic_hash": "72c2863acebc6e8e7312c7dacef892df"
   },
   "Geographie/Scripts/glossar.js": {
-    "mtime": 1793226618.4710257,
-    "seen": 1793385099.4626002,
-    "ast_hash": "cbf70e084ca64eff65fcdbb7c74109e4",
-    "semantic_hash": "cbf70e084ca64eff65fcdbb7c74109e4"
+    "mtime": 1793616063.9091215,
+    "seen": 1793618159.2117107,
+    "ast_hash": "900909ad3f02fc812015c21c167e15d2",
+    "semantic_hash": ""
   },
   "Geographie/Scripts/zusammenfassungen.js": {
     "mtime": 1793226618.4724896,
@@ -126,10 +126,10 @@
     "semantic_hash": "8e8d844dd92653fc5886eafc15f38a46"
   },
   "Scripts/glossar.js": {
-    "mtime": 1793226618.1749227,
-    "seen": 1793385099.4626002,
-    "ast_hash": "0116a07e85c29a5aa8b8c7c83cf46d5f",
-    "semantic_hash": "0116a07e85c29a5aa8b8c7c83cf46d5f"
+    "mtime": 1793618807.10847,
+    "seen": 1793619074.2966678,
+    "ast_hash": "2dec499b4d09e062e522d09b92f3ff10",
+    "semantic_hash": ""
   },
   "Scripts/zusammenfassungen.js": {
     "mtime": 1793193979.315436,
@@ -156,10 +156,10 @@
     "semantic_hash": "af6a9687ca33db09c27eaf20fe416560"
   },
   "Biologie/glossar.html": {
-    "mtime": 1793193979.3514612,
-    "seen": 1793385099.4626002,
-    "ast_hash": "40c322d0ebf5530ca77f967dcc63d6aa",
-    "semantic_hash": "40c322d0ebf5530ca77f967dcc63d6aa"
+    "mtime": 1793616035.569904,
+    "seen": 1793618159.215792,
+    "ast_hash": "5f1311add28028e3e178d17479505e83",
+    "semantic_hash": ""
   },
   "Biologie/index.html": {
     "mtime": 1793196389.7353463,
@@ -192,10 +192,10 @@
     "semantic_hash": "f720027f7ef333caa28060fe3288d74b"
   },
   "Chemie/glossar.html": {
-    "mtime": 1793226618.1583698,
-    "seen": 1793385099.4626002,
-    "ast_hash": "d716a006d0f42bc576460d2f7f847bf8",
-    "semantic_hash": "d716a006d0f42bc576460d2f7f847bf8"
+    "mtime": 1793618848.8106759,
+    "seen": 1793619074.3045807,
+    "ast_hash": "ded02bf32a40eea98d995d7465a06700",
+    "semantic_hash": ""
   },
   "Chemie/index.html": {
     "mtime": 1793226618.1593354,
@@ -222,10 +222,10 @@
     "semantic_hash": "94d236bbbfc579731f4106fba40ff0d5"
   },
   "Geographie/glossar.html": {
-    "mtime": 1793226618.4757936,
-    "seen": 1793385099.4626002,
-    "ast_hash": "188b487d38437cc57c4ad910b3f86360",
-    "semantic_hash": "188b487d38437cc57c4ad910b3f86360"
+    "mtime": 1793616035.6161084,
+    "seen": 1793618159.22014,
+    "ast_hash": "9af8750d813c9ce539af309db5dac63b",
+    "semantic_hash": ""
   },
   "Geographie/index.html": {
     "mtime": 1793226618.4782243,
@@ -252,10 +252,10 @@
     "semantic_hash": "9666337ff67f5c3177c14cb974128944"
   },
   "Geschichte/glossar.html": {
-    "mtime": 1793226618.167728,
-    "seen": 1793385099.4626002,
-    "ast_hash": "624e9f48571e9b2631bbd8170e486cf9",
-    "semantic_hash": "624e9f48571e9b2631bbd8170e486cf9"
+    "mtime": 1793618879.7835348,
+    "seen": 1793619074.3138518,
+    "ast_hash": "b5856a86a12e8a5cb7446f01a19a1011",
+    "semantic_hash": ""
   },
   "Geschichte/index.html": {
     "mtime": 1793226618.1692393,
@@ -723,6 +723,12 @@
     "mtime": 1793187212.2532308,
     "seen": 1793386895.3181114,
     "ast_hash": "a03958c0dd842f6b9f44007ce4ba1c24",
+    "semantic_hash": ""
+  },
+  "Scripts/glossar-quiz.js": {
+    "mtime": 1793618762.7709894,
+    "seen": 1793619074.2966678,
+    "ast_hash": "0357ede85b480d68419abf4e51515027",
     "semantic_hash": ""
   },
   ".mimocode/package-lock.json": {
