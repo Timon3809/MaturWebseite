@@ -71,11 +71,16 @@
                       <button class="learn-mode is-active" type="button" data-mode="cards" aria-pressed="true">Karteikarten</button>
                       <button class="learn-mode" type="button" data-mode="choice" aria-pressed="false">Multiple Choice</button>
                       <button class="learn-mode" type="button" data-mode="write" aria-pressed="false">Schreiben</button>
+                      <button class="learn-mode" type="button" data-mode="rocks" aria-pressed="false">Steine</button>
                     </div>
                     <div class="learn-directions" id="learn-direction" role="group" aria-label="Fragrichtung wählen" hidden>
                       <button class="learn-mode is-active" type="button" data-direction="mixed" aria-pressed="true">Gemischt</button>
                       <button class="learn-mode" type="button" data-direction="forward" aria-pressed="false">Begriff → Definition</button>
                       <button class="learn-mode" type="button" data-direction="backward" aria-pressed="false">Definition → Begriff</button>
+                    </div>
+                    <div class="learn-directions" id="learn-rock-modes" role="group" aria-label="Stein-Antwortart wählen" hidden>
+                      <button class="learn-mode is-active" type="button" data-rockmode="choice" aria-pressed="true">Multiple Choice (8)</button>
+                      <button class="learn-mode" type="button" data-rockmode="name" aria-pressed="false">Benennen</button>
                     </div>
                     <select class="field-control glossary-filter" id="learn-topic" aria-label="Thema filtern"><option value="all">Alle Themen</option></select>
                     <span class="glossary-total" id="learn-total"></span>

@@ -9,9 +9,17 @@
     entries.map((entry) => ({ ...entry, topic }))
   );
 
+  // Gesteins-Lernsektion (nur Geographie): window.rockData aus Geographie/Scripts/glossar.js.
+  const rockDefs = window.rockData ?? [];
+  const rockNames = rockDefs.map((rock) => rock.name);
+  const rockEntries = rockDefs.flatMap((rock) =>
+    rock.files.map((file) => ({ name: rock.name, accept: rock.accept, src: `../Gesteine/${encodeURI(file)}` }))
+  );
+
   const learnView      = document.getElementById("glossary-learn-view");
   const learnModes     = document.getElementById("learn-modes");
   const learnDirection = document.getElementById("learn-direction");
+  const learnRockModes = document.getElementById("learn-rock-modes");
   const learnTopic     = document.getElementById("learn-topic");
   const learnTotal     = document.getElementById("learn-total");
   const learnStage     = document.getElementById("learn-stage");
@@ -19,6 +27,7 @@
 
   const state = {
     mode: "cards",
+    rockMode: "choice",
     direction: "mixed",
     topic: "all",
     deck: [],
@@ -78,7 +87,28 @@
     return shuffle(options);
   }
 
+  function buildRockOptions(entry) {
+    const seen = new Set([entry.name]);
+    const options = [entry.name];
+    for (const candidate of shuffle(rockNames)) {
+      if (seen.has(candidate)) continue;
+      seen.add(candidate);
+      options.push(candidate);
+      if (options.length === 8) break;
+    }
+    return shuffle(options);
+  }
+
   function buildDeck() {
+    if (state.mode === "rocks") {
+      state.deck = shuffle(rockEntries);
+      state.index = 0;
+      state.correct = 0;
+      state.asked = 0;
+      state.finished = false;
+      prepareQuestion();
+      return;
+    }
     state.deck = shuffle(state.topic === "all"
       ? glossaryEntries
       : glossaryEntries.filter((entry) => entry.topic === state.topic));
@@ -96,7 +126,12 @@
     state.answered = false;
     state.picked = -1;
     state.guess = "";
-    if (!state.entry || state.mode !== "choice") return;
+    if (!state.entry) return;
+    if (state.mode === "rocks") {
+      if (state.rockMode === "choice") state.options = buildRockOptions(state.entry);
+      return;
+    }
+    if (state.mode !== "choice") return;
     state.questionDirection = state.direction === "mixed"
       ? (Math.random() < 0.5 ? "forward" : "backward")
       : state.direction;
@@ -120,17 +155,59 @@
     return `FRAGE ${Math.min(state.index + 1, state.deck.length)} / ${state.deck.length} · RICHTIG ${state.correct}`;
   }
 
+  function rockSolved() {
+    return [state.entry.name, ...(state.entry.accept || [])].some(
+      (variant) => normalize(variant) === normalize(state.guess || "")
+    );
+  }
+
   function renderStage() {
     if (!state.deck.length) {
-      learnStage.innerHTML = `<p class="empty-state">Keine Begriffe für dieses Thema gefunden.</p>`;
+      learnStage.innerHTML = `<p class="empty-state">${state.mode === "rocks" ? "Keine Gesteinsbilder gefunden." : "Keine Begriffe für dieses Thema gefunden."}</p>`;
       return;
     }
     if (state.finished) {
+      const unit = state.mode === "rocks" ? "Gesteine" : "Begriffe";
+      const source = state.mode === "rocks" ? "dem Gesteinsordner" : (state.topic === "all" ? "allen Themen" : state.topic);
       learnStage.innerHTML = `
         <div class="learn-summary">
           <span class="eyebrow dark-eyebrow">ABGESCHLOSSEN</span>
           <h2>${state.correct} von ${state.asked} richtig</h2>
-          <p>Alle ${state.deck.length} Begriffe aus ${state.topic === "all" ? "allen Themen" : state.topic} wurden abgefragt.</p>
+          <p>Alle ${state.deck.length} ${unit} aus ${source} wurden abgefragt.</p>
+        </div>`;
+      return;
+    }
+    if (state.mode === "rocks") {
+      const image = `<img class="learn-rock-image" src="${escapeAttr(state.entry.src)}" alt="Gestein zur Bestimmung">`;
+      if (state.rockMode === "choice") {
+        learnStage.innerHTML = `
+          <div class="learn-prompt">
+            <span class="eyebrow dark-eyebrow">GESTEIN BESTIMMEN</span>
+            ${image}
+          </div>
+          <div class="learn-options">
+            ${state.options.map((option, optionIndex) => {
+              let extraClass = "";
+              if (state.answered) {
+                if (option === state.entry.name) extraClass = " is-correct";
+                else if (optionIndex === state.picked) extraClass = " is-wrong";
+              }
+              return `<button class="learn-option${extraClass}" type="button" data-action="pick" data-index="${optionIndex}"${state.answered ? " disabled" : ""}>${option}</button>`;
+            }).join("")}
+          </div>`;
+        return;
+      }
+      learnStage.innerHTML = `
+        <div class="learn-prompt">
+          <span class="eyebrow dark-eyebrow">GESTEIN BENENNEN</span>
+          ${image}
+        </div>
+        <div class="learn-write" id="learn-write">
+          <input class="field-control" id="learn-answer" type="text" placeholder="Gesteinsname eingeben …" autocomplete="off" value="${escapeAttr(state.answered ? state.guess : "")}">
+          ${state.answered ? `
+            <p class="learn-feedback ${rockSolved() ? "is-correct" : "is-wrong"}">
+              ${rockSolved() ? "Richtig!" : `Leider falsch. Richtig wäre: <strong>${state.entry.name}</strong>`}
+            </p>` : ""}
         </div>`;
       return;
     }
@@ -191,10 +268,14 @@
   function renderActions() {
     if (!state.deck.length) {
       learnActions.innerHTML = "";
-      learnTotal.textContent = "0 BEGRIFFE";
+      learnTotal.textContent = state.mode === "rocks" ? "0 GESTEINE" : "0 BEGRIFFE";
       return;
     }
-    learnTotal.textContent = `${state.deck.length} ${state.deck.length === 1 ? "BEGRIFF" : "BEGRIFFE"}`;
+    if (state.mode === "rocks") {
+      learnTotal.textContent = `${state.deck.length} ${state.deck.length === 1 ? "GESTEIN" : "GESTEINE"}`;
+    } else {
+      learnTotal.textContent = `${state.deck.length} ${state.deck.length === 1 ? "BEGRIFF" : "BEGRIFFE"}`;
+    }
     if (state.finished) {
       learnActions.innerHTML = `
         <button class="learn-action" type="button" data-action="restart">Neu starten</button>`;
@@ -209,10 +290,11 @@
         <span class="learn-progress">${progressText()}</span>`;
       return;
     }
-    const showNext = state.mode === "write" || state.answered;
+    const isWriteLike = state.mode === "write" || (state.mode === "rocks" && state.rockMode === "name");
+    const showNext = isWriteLike || state.answered;
     learnActions.innerHTML = `
       <button class="learn-action" type="button" data-action="prev"${state.index === 0 ? " disabled" : ""}>Zurück</button>
-      ${state.mode === "write" && !state.answered ? `<button class="learn-action" type="button" data-action="check">Prüfen</button>` : ""}
+      ${isWriteLike && !state.answered ? `<button class="learn-action" type="button" data-action="check">Prüfen</button>` : ""}
       <button class="learn-action" type="button" data-action="next"${showNext ? "" : " disabled"}>${state.index + 1 >= state.deck.length ? "Fertig" : "Weiter"}</button>
       <button class="learn-action" type="button" data-action="shuffle">Mischen</button>
       <span class="learn-progress">${progressText()}</span>`;
@@ -220,6 +302,8 @@
 
   function render() {
     learnDirection.hidden = state.mode !== "choice";
+    if (learnRockModes) learnRockModes.hidden = state.mode !== "rocks";
+    learnTopic.hidden = state.mode === "rocks";
     renderStage();
     renderActions();
   }
@@ -237,7 +321,9 @@
     state.guess = input ? input.value : "";
     if (!state.guess.trim()) return;
     state.asked += 1;
-    const correct = answerVariants(state.entry.term).some((variant) => normalize(variant) === normalize(state.guess));
+    const correct = state.mode === "rocks"
+      ? rockSolved()
+      : answerVariants(state.entry.term).some((variant) => normalize(variant) === normalize(state.guess));
     if (correct) state.correct += 1;
     state.answered = true;
     render();
@@ -258,7 +344,8 @@
         render();
       }
     } else if (action === "next") {
-      if (state.mode === "choice" && !state.answered) return;
+      const isChoiceLike = state.mode === "choice" || (state.mode === "rocks" && state.rockMode === "choice");
+      if (isChoiceLike && !state.answered) return;
       advance();
     } else if (action === "shuffle") {
       state.deck = shuffle(state.deck);
@@ -274,8 +361,9 @@
     } else if (action === "pick") {
       if (state.answered) return;
       state.picked = Number(target.dataset.index);
-      const forward = state.questionDirection === "forward";
-      const correctAnswer = forward ? state.entry.definition : state.entry.term;
+      const correctAnswer = state.mode === "rocks"
+        ? state.entry.name
+        : (state.questionDirection === "forward" ? state.entry.definition : state.entry.term);
       state.asked += 1;
       if (state.options[state.picked] === correctAnswer) state.correct += 1;
       state.answered = true;
@@ -302,6 +390,17 @@
     buildDeck();
     render();
   });
+
+  if (learnRockModes) {
+    learnRockModes.addEventListener("click", (event) => {
+      const button = event.target.closest("button[data-rockmode]");
+      if (!button) return;
+      state.rockMode = button.dataset.rockmode;
+      setActive(learnRockModes, button);
+      buildDeck();
+      render();
+    });
+  }
 
   learnTopic.addEventListener("change", () => {
     state.topic = learnTopic.value;

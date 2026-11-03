@@ -1,3 +1,32 @@
+// Gesteinsbilder für die Lernsektion "Steine" (Ordner Gesteine/ im Repo-Root).
+// accept = alternative Schreibweisen, die im Schreibmodus ebenfalls akzeptiert werden.
+window.rockData = [
+  { name: "Alpenkalk",        accept: [],                      files: ["Alpenkalk 1.jpg", "Alpenkalk 2.jpg"] },
+  { name: "Basalt",           accept: [],                      files: ["Basalt 1.webp", "Basalt 2.webp", "Basalt 3.webp", "Basalt 4.jpg"] },
+  { name: "Bimsstein",        accept: [],                      files: ["Bimsstein 1.webp", "Bimsstein 2.webp", "Bimsstein 3.webp", "Bimsstein 4.jpg"] },
+  { name: "Brekzie",          accept: [],                      files: ["Brekzie 1.webp", "Brekzie 2.webp", "Brekzie 3.webp"] },
+  { name: "Flintstein",       accept: [],                      files: ["Flintstein 1.webp", "Flintstein 2.webp", "Flintstein 3.webp", "Flintstein 4.jpg"] },
+  { name: "Gipsstein",        accept: [],                      files: ["Gipsstein 1.webp", "Gipsstein 2.webp", "Gipsstein 3.webp", "Gipsstein 4.jpg"] },
+  { name: "Glimmerschiefer",  accept: [],                      files: ["Glimmerschiefer 1.webp", "Glimmerschiefer 2.webp", "Glimmerschiefer 3.webp", "Glimmerschiefer 4.jpg"] },
+  { name: "Gneis",            accept: [],                      files: ["Gneis 1.webp", "Gneis 2.webp", "Gneis 3.webp", "Gneis 4.jpg"] },
+  { name: "Granatolivinfels", accept: ["Granat-Olivin-Fels"],  files: ["Granatolivinfels 1.jpg"] },
+  { name: "Granit",           accept: [],                      files: ["Granit 1.webp", "Granit 2.webp", "Granit 3.png"] },
+  { name: "Jurakalk",         accept: [],                      files: ["Jurakalk 1.jpg", "Jurakalk 2.webp"] },
+  { name: "Kalkstein",        accept: [],                      files: ["Kalkstein 1.jpeg"] },
+  { name: "Marmor",           accept: [],                      files: ["Marmor 1.jpg", "Marmor 2.webp"] },
+  { name: "Mergel",           accept: [],                      files: ["Mergel 1.jpg", "Mergel 2.webp"] },
+  { name: "Nagelfluh",        accept: [],                      files: ["Nagelfluh 1.jpg"] },
+  { name: "Obsidian",         accept: [],                      files: ["Obsidian 1.jpg", "Obsidian 2.webp", "Obsidian 3.webp"] },
+  { name: "Peridotit",        accept: [],                      files: ["Peridotit.jpg"] },
+  { name: "Rhyolith",         accept: ["Rhyolit"],             files: ["Rhyolith 2.webp", "Rhyolith 3.jpeg", "Rhyolit 1.jpg"] },
+  { name: "Sandstein",        accept: [],                      files: ["Sandstein 1.jpg", "Sandstein 2.webp", "Sandstein 3.jpeg"] },
+  { name: "Serpentinit",      accept: ["Serpnetinit"],         files: ["Serpentinit 1.webp", "Serpentinit 2.webp", "Serpnetinit 1.jpg"] },
+  { name: "Steinsalz",        accept: ["Steinsaltz"],          files: ["Steinsalz 2.webp", "Steinsalz 3.webp", "Steinsaltz 1.jpg"] },
+  { name: "Talkschiefer",     accept: [],                      files: ["Talkschiefer 1.jpg"] },
+  { name: "Tonstein",         accept: [],                      files: ["Tonstein 1.jpg", "Tonstein 2.webp"] },
+  { name: "Tuff",             accept: [],                      files: ["Tuff 1.jpg"] }
+];
+
 const glossaryData = window.historyData.glossary;
 const topicNames = Object.keys(glossaryData);
 const glossaryEntries = Object.entries(glossaryData).flatMap(([topic, entries]) =>
