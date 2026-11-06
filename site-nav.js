@@ -31,7 +31,7 @@
       ]
     },
     geographie: {
-      brand: { mark: "Geo", name: "Vormatur", tag: "GEOGRAPHIE", href: "../index.html" },
+      brand: { mark: "Gg", name: "Vormatur", tag: "GEOGRAPHIE", href: "../index.html" },
       links: [
         { label: "Übersicht",         href: "index.html",                    icon: "◎", page: "overview" },
         { label: "Zusammenfassungen", href: "zusammenfassungen.html",        icon: "▧", page: "summaries" },
@@ -40,7 +40,7 @@
       ]
     },
     biologie: {
-      brand: { mark: "Bio", name: "Vormatur", tag: "BIOLOGIE", href: "../index.html" },
+      brand: { mark: "B", name: "Vormatur", tag: "BIOLOGIE", href: "../index.html" },
       links: [
         { label: "Übersicht",         href: "index.html",                    icon: "❀", page: "overview" },
         { label: "Zusammenfassungen", href: "zusammenfassungen.html",        icon: "▧", page: "summaries" },
