@@ -267,10 +267,102 @@ window.summaryData = {
             <p>Im Periodensystem ist meist die <strong>durchschnittliche Atommasse</strong> einer Atomsorte angegeben. Sie ergibt sich aus den Massen ihrer Isotope, gewichtet nach deren natürlicher Häufigkeit.</p>
           `
         },
-        { name: "Genauere Betrachtung der Elektronenhülle", placeholder: true },
-        { name: "Von Ionisierungsenergien zum Bohr'schen Atommodell", placeholder: true },
-        { name: "Das Periodensystem", placeholder: true },
-        { name: "Elementfamilien", placeholder: true },
+        {
+          name: "Genauere Betrachtung der Elektronenhülle",
+          summary: `
+            <p>Die <strong>Ionisierungsenergie</strong> ist die Energie, die benötigt wird, um ein Elektron aus einem Atom oder Ion zu entfernen. Sie hängt davon ab, wie stark das Elektron vom Atomkern angezogen wird.</p>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Aluminium: aufeinanderfolgende Ionisierungen</caption>
+                <thead><tr><th scope="col">Elektron</th><th scope="col">Herkunft</th><th scope="col">Benötigte Energie</th></tr></thead>
+                <tbody>
+                  <tr><td>1.–3.</td><td>äusserste Schale</td><td>relativ wenig</td></tr>
+                  <tr><td>4.–11.</td><td>darunterliegende Schale</td><td>deutlich mehr</td></tr>
+                  <tr><td>12.–13.</td><td>innerste Schale</td><td>besonders viel</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Ein grosser Energiesprung zeigt, dass Elektronen aus einer näher am Kern liegenden Schale entfernt werden. Je weiter ein Elektron vom Kern entfernt ist, desto höher ist seine Energie und desto leichter lässt es sich abspalten.</p>
+            <figure class="summary-figure">
+              <svg role="img" aria-labelledby="ionization-shell-title ionization-shell-desc" viewBox="0 0 400 150" style="display:block;width:100%;max-width:420px;height:auto">
+                <title id="ionization-shell-title">Ionisierungsenergie und Elektronenschalen</title>
+                <desc id="ionization-shell-desc">Die Ionisierungsenergie steigt stark an, wenn nach den drei Aussenelektronen von Aluminium ein Elektron aus einer inneren Schale entfernt wird.</desc>
+                <g font-family="Arial, sans-serif" text-anchor="middle">
+                  <text x="200" y="22" fill="#394957" font-size="16" font-weight="700">Elektronen werden schalenweise entfernt</text>
+                  <g fill="#4a8fba">
+                    <rect x="30" y="78" width="40" height="28" rx="4"/><rect x="78" y="70" width="40" height="36" rx="4"/><rect x="126" y="62" width="40" height="44" rx="4"/>
+                    <rect x="207" y="39" width="40" height="67" rx="4"/><rect x="255" y="31" width="40" height="75" rx="4"/><rect x="303" y="23" width="40" height="83" rx="4"/>
+                  </g>
+                  <path d="M185 111 V47" fill="none" stroke="#d87937" stroke-width="2"/>
+                  <path d="M179 54 L185 44 L191 54" fill="none" stroke="#d87937" stroke-width="2"/>
+                  <text x="185" y="132" fill="#d87937" font-size="12">grosser Sprung</text>
+                  <g fill="#394957" font-size="12">
+                    <text x="50" y="120">1</text><text x="98" y="120">2</text><text x="146" y="120">3</text>
+                    <text x="227" y="120">4</text><text x="275" y="120">5</text><text x="323" y="120">6</text>
+                  </g>
+                  <text x="98" y="147" fill="#68747c" font-size="12">Aussenschale</text>
+                  <text x="275" y="147" fill="#68747c" font-size="12">innere Schale</text>
+                </g>
+              </svg>
+              <figcaption style="text-align:center;color:#68747c;font-size:.9em">Ein Energiesprung weist auf den Wechsel zu einer inneren Schale hin.</figcaption>
+            </figure>
+          `
+        },
+        {
+          name: "Von Ionisierungsenergien zum Bohr'schen Atommodell",
+          summary: `
+            <p>Im <strong>Bohr'schen Atommodell</strong> befinden sich Elektronen auf bestimmten Schalen um den Kern. Weiter aussen liegende Elektronen haben mehr Energie und lassen sich leichter entfernen. Die Schalen werden von innen nach aussen besetzt.</p>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Schalenbelegung einfacher Atome</caption>
+                <thead><tr><th scope="col">Atom</th><th scope="col">Elektronen pro Schale</th><th scope="col">Valenzelektronen</th></tr></thead>
+                <tbody>
+                  <tr><td>Fluor (F)</td><td>2 | 7</td><td>7</td></tr>
+                  <tr><td>Magnesium (Mg)</td><td>2 | 8 | 2</td><td>2</td></tr>
+                  <tr><td>Schwefel (S)</td><td>2 | 8 | 6</td><td>6</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Die maximale Besetzung einer Schale mit der Nummer <em>n</em> wird im Modell mit <strong>2n²</strong> berechnet.</p>
+          `
+        },
+        {
+          name: "Das Periodensystem",
+          summary: `
+            <p>Im Periodensystem sind Elemente nach steigender <strong>Ordnungszahl</strong> angeordnet. Mendelejew ordnete sie zuvor nach der Atommasse und liess Lücken für damals noch unbekannte Elemente.</p>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Der Aufbau der Elektronenhülle im Periodensystem</caption>
+                <thead><tr><th scope="col">Position</th><th scope="col">Entspricht</th><th scope="col">Beispiel</th></tr></thead>
+                <tbody>
+                  <tr><td>Periode (Zeile)</td><td>Anzahl besetzter Schalen</td><td>3. Periode: 3 Schalen</td></tr>
+                  <tr><td>Hauptgruppe (Spalte)</td><td>Anzahl der Aussenelektronen</td><td>VI. Hauptgruppe: 6</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Damit spiegelt die Position eines Hauptgruppenelements seine Elektronenkonfiguration wider. Die Aussenelektronen bestimmen sein Verhalten bei chemischen Reaktionen.</p>
+          `
+        },
+        {
+          name: "Elementfamilien",
+          summary: `
+            <p>Elemente derselben <strong>Hauptgruppe</strong> besitzen gleich viele Aussenelektronen und zeigen deshalb ähnliche chemische Eigenschaften.</p>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Namen und Merkmale ausgewählter Hauptgruppen</caption>
+                <thead><tr><th scope="col">Hauptgruppe</th><th scope="col">Familie</th><th scope="col">Merkmal aus dem Dossier</th></tr></thead>
+                <tbody>
+                  <tr><td>I</td><td>Alkalimetalle</td><td>Metalle; Reaktivität mit Wasser nimmt nach unten zu</td></tr>
+                  <tr><td>II</td><td>Erdalkalimetalle</td><td>Metalle</td></tr>
+                  <tr><td>VI</td><td>Chalkogene</td><td>Vorkommen häufig in Erzen und Mineralien</td></tr>
+                  <tr><td>VII</td><td>Halogene</td><td>Nichtmetalle; bilden mit Metallen Salze</td></tr>
+                  <tr><td>VIII</td><td>Edelgase</td><td>Sehr reaktionsträge</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Bei den Alkalimetallen nimmt der Abstand der Aussenelektronen zum Kern nach unten zu; ihre Ionisierungsenergie sinkt und die Reaktivität steigt.</p>
+          `
+        },
         {
           name: "Atomrumpf und Rumpfladung",
           summary: `
