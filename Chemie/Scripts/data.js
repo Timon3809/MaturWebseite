@@ -612,43 +612,46 @@ window.summaryData = {
           name: "Kochsalz",
           summary: `
             <h3>Ein Salz aus Ionen</h3>
-            <ul>
-              <li>Kochsalz ist der Stoff <strong>Natriumchlorid</strong> mit der Verhältnisformel <strong>NaCl</strong>.</li>
-              <li>Es besteht nicht aus einzelnen NaCl-Molekülen, sondern aus einem regelmässigen Ionengitter mit Na<sup>+</sup>- und Cl<sup>−</sup>-Ionen.</li>
-              <li>Das Zahlenverhältnis der Ionen ist 1:1; positive und negative Ladungen gleichen sich aus. Der Salzkristall ist nach aussen elektrisch neutral.</li>
-              <li>Als Feststoff sind die Ionen an ihre Gitterplätze gebunden; in einer Salzlösung können sie sich bewegen.</li>
-            </ul>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Kochsalz auf einen Blick</caption>
+                <thead><tr><th scope="col">Formel</th><th scope="col">Aufbau</th><th scope="col">Ladung / Beweglichkeit</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>NaCl</strong></td><td>Ionengitter aus Na<sup>+</sup> und Cl<sup>−</sup>, Verhältnis 1:1</td><td>Nach aussen neutral; fest gebunden, in Lösung beweglich</td></tr>
+                </tbody>
+              </table>
+            </div>
           `
         },
         {
           name: "Die Bildung von Salzen aus Metallen und Nichtmetallen",
           summary: `
             <h3>Elektronenübertragung</h3>
-            <ul>
-              <li>Metallatome geben häufig Valenzelektronen ab und werden zu positiv geladenen <strong>Kationen</strong>.</li>
-              <li>Nichtmetallatome nehmen häufig Elektronen auf und werden zu negativ geladenen <strong>Anionen</strong>.</li>
-              <li>Beide Ionen erreichen dabei oft eine stabilere, edelgasähnliche Elektronenhülle.</li>
-              <li>Die entgegengesetzt geladenen Ionen ziehen sich elektrostatisch an; viele Ionen ordnen sich zu einem Salz zusammen.</li>
-            </ul>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Vom Atom zum Salz</caption>
+                <thead><tr><th scope="col">Metall</th><th scope="col">Nichtmetall</th><th scope="col">Zusammen</th></tr></thead>
+                <tbody><tr><td>gibt häufig Elektronen ab → <strong>Kation</strong>; oft stabilere, edelgasähnliche Hülle</td><td>nimmt häufig Elektronen auf → <strong>Anion</strong>; oft stabilere, edelgasähnliche Hülle</td><td>entgegengesetzte Ladungen ziehen sich an → Ionengitter</td></tr></tbody>
+              </table>
+            </div>
             <h3>Beispiel: Natriumchlorid</h3>
-            <ul>
-              <li><strong>Na → Na<sup>+</sup> + e<sup>−</sup></strong>: Natrium gibt ein Elektron ab.</li>
-              <li><strong>Cl + e<sup>−</sup> → Cl<sup>−</sup></strong>: Chlor nimmt ein Elektron auf.</li>
-              <li>Im entstehenden Salz gleichen sich die Ladungen aus; Na<sup>+</sup> und Cl<sup>−</sup> liegen im Verhältnis 1:1 vor.</li>
-            </ul>
+            <p><strong>Na → Na<sup>+</sup> + e<sup>−</sup></strong> &nbsp; | &nbsp; <strong>Cl + e<sup>−</sup> → Cl<sup>−</sup></strong> &nbsp; | &nbsp; Verhältnis im Salz: <strong>Na<sup>+</sup>:Cl<sup>−</sup> = 1:1</strong></p>
           `
         },
         {
           name: "Ionenbindung und Ionengitter",
           summary: `
             <h3>Ionenbindung</h3>
-            <ul>
-              <li>Ionenbindung = elektrostatische Anziehung zwischen Kationen und Anionen.</li>
-              <li>Die Anziehung wirkt in alle Richtungen; ein Salz bildet deshalb normalerweise kein einzelnes Molekül, sondern ein ausgedehntes Gitter.</li>
-              <li>Im Ionengitter sind die Ionen so angeordnet, dass Anziehungen möglichst gross und Abstossungen möglichst klein sind.</li>
-              <li>Jedes Ion ist von mehreren Ionen mit entgegengesetzter Ladung umgeben; die Anzahl der Nachbarn hängt von der Gitterstruktur ab.</li>
-              <li>Das gesamte Gitter bleibt elektrisch neutral, auch wenn die einzelnen Ionen geladen sind.</li>
-            </ul>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>So ist das Ionengitter aufgebaut</caption>
+                <tbody>
+                  <tr><th scope="row">Bindung</th><td>Elektrostatische Anziehung zwischen Kationen und Anionen</td></tr>
+                  <tr><th scope="row">Anordnung</th><td>Anziehung wirkt in alle Richtungen: ausgedehntes Gitter statt einzelner Moleküle; Anziehungen gross, Abstossungen klein</td></tr>
+                  <tr><th scope="row">Bilanz</th><td>Jedes Ion ist von mehreren Gegenionen umgeben (Zahl abhängig von der Gitterstruktur); das Gitter ist insgesamt neutral</td></tr>
+                </tbody>
+              </table>
+            </div>
           `
         },
         {
@@ -732,38 +735,50 @@ window.summaryData = {
           name: "Gitterenergie von Salzen",
           summary: `
             <h3>Energie beim Trennen und Zusammenlagern</h3>
-            <ul>
-              <li>Beim Herauslösen von Ionen aus dem Ionengitter muss die elektrostatische Anziehung überwunden werden.</li>
-              <li>Die dazu benötigte Energie heisst <strong>Gitterenergie</strong>.</li>
-              <li>Wenn sich Wassermoleküle um einzelne Ionen anordnen, wird <strong>Hydratationsenergie</strong> frei.</li>
-              <li>Die Energiebilanz beim Lösen hängt davon ab, wie Gitterenergie und frei werdende Hydratationsenergie zusammenwirken.</li>
-              <li>Überwiegt die frei werdende Hydratationsenergie, wird die Lösung wärmer (exothermer Vorgang); überwiegt die benötigte Gitterenergie, kühlt sie ab (endothermer Vorgang).</li>
-              <li>Die Energiebilanz allein ist nicht die ganze Erklärung der Löslichkeit; auch die Unordnung bzw. Entropie spielt eine Rolle.</li>
-            </ul>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Energiebilanz beim Lösen</caption>
+                <thead><tr><th scope="col">Gitterenergie</th><th scope="col">Hydratationsenergie</th><th scope="col">Beobachtung</th></tr></thead>
+                <tbody>
+                  <tr><td>zum Trennen nötig</td><td>beim Umgeben der Ionen frei</td><td>Hydratation überwiegt: Lösung wärmer; Gitterenergie überwiegt: Lösung kühlt ab</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="summary-note">Auch die Unordnung (Entropie) beeinflusst die Löslichkeit.</p>
           `
         },
         {
           name: "Eigenschaften von Salzen",
           summary: `
             <h3>Eigenschaften und Teilchenmodell</h3>
-            <ul>
-              <li><strong>Elektrische Leitfähigkeit:</strong> Festes Salz leitet normalerweise nicht, weil die Ionen im Gitter gebunden sind. In einer Salzschmelze oder Salzlösung sind Ionen beweglich und können Ladung transportieren.</li>
-              <li><strong>Sprödigkeit:</strong> Werden Gitterebenen verschoben, können gleich geladene Ionen nebeneinander zu liegen kommen. Ihre Abstossung lässt den Kristall brechen.</li>
-              <li><strong>Hohe Schmelztemperaturen:</strong> Zum Trennen der Ionen ist viel Energie nötig, da die elektrostatischen Gitterkräfte stark sind.</li>
-              <li>Die Eigenschaften folgen aus dem Aufbau des Ionengitters und unterscheiden sich dadurch von vielen molekularen Stoffen.</li>
-            </ul>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Aufbau erklärt Eigenschaft</caption>
+                <thead><tr><th scope="col">Eigenschaft</th><th scope="col">Erklärung im Teilchenmodell</th></tr></thead>
+                <tbody>
+                  <tr><td>Leitfähigkeit</td><td>Nur in Schmelze oder Lösung bewegliche Ionen</td></tr>
+                  <tr><td>Sprödigkeit</td><td>Verschobene Gitterebenen bringen gleich geladene Ionen nebeneinander</td></tr>
+                  <tr><td>Hohe Schmelztemperatur</td><td>Starke Gitterkräfte benötigen viel Energie zum Trennen</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="summary-note">Die Eigenschaften folgen aus dem Ionengitter und unterscheiden sich von vielen molekularen Stoffen.</p>
           `
         },
         {
           name: "Löseprozesse",
           summary: `
             <h3>Lösen in Wasser: Hydratation</h3>
-            <ol>
-              <li>Wassermoleküle sind Dipole: Die Sauerstoffseite ist teilweise negativ, die Wasserstoffseiten teilweise positiv.</li>
-              <li>Die Sauerstoffseite richtet sich zu Kationen aus; die Wasserstoffseiten richten sich zu Anionen aus.</li>
-              <li>Wassermoleküle ziehen Ionen aus dem Gitter und umgeben sie mit einer <strong>Hydrathülle</strong>.</li>
-              <li>Die hydratisierten Ionen verteilen sich in der Lösung und können sich bewegen.</li>
-            </ol>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Hydratation in drei Schritten</caption>
+                <tbody>
+                  <tr><th scope="row">1</th><td>H<sub>2</sub>O-Dipole (O teilweise −, H teilweise +) richten O-Seite zu Kationen, H-Seiten zu Anionen aus.</td></tr>
+                  <tr><th scope="row">2</th><td>Wassermoleküle lösen Ionen aus dem Gitter und bilden eine <strong>Hydrathülle</strong>.</td></tr>
+                  <tr><th scope="row">3</th><td>Die hydratisierten Ionen verteilen sich und bewegen sich in der Lösung.</td></tr>
+                </tbody>
+              </table>
+            </div>
             <ul>
               <li><strong>Dissoziation:</strong> Aufspaltung eines ionischen Stoffes in seine Ionen beim Lösen, z. B. NaCl(s) → Na<sup>+</sup>(aq) + Cl<sup>−</sup>(aq).</li>
               <li>Das Zustandszeichen <strong>(aq)</strong> bedeutet, dass Teilchen in wässriger Lösung vorliegen.</li>
@@ -832,33 +847,51 @@ window.summaryData = {
               <li>Das Rumpf-Valenzelektronenmodell hilft, Bindungen und Stoffeigenschaften vereinfacht zu beschreiben.</li>
             </ul>
             <h3>Drei grundlegende Bindungsmodelle</h3>
-            <ul>
-              <li><strong>Kovalente Bindung:</strong> Nichtmetallatome teilen Elektronenpaare; typische Grundteilchen sind Moleküle, z. B. H<sub>2</sub>O.</li>
-              <li><strong>Metallische Bindung:</strong> Metallatomrümpfe werden durch gemeinsam genutzte, delokalisierte Valenzelektronen zusammengehalten; z. B. Eisen.</li>
-              <li><strong>Ionenbindung:</strong> Anziehung zwischen positiv und negativ geladenen Ionen in Salzen; häufig aus Metall- und Nichtmetallatomen, z. B. NaCl.</li>
-              <li>Die Modelle sind vereinfachte Grenzfälle; Bindungen können auch Mischformen aufweisen.</li>
-            </ul>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Bindungstypen im Vergleich</caption>
+                <thead><tr><th scope="col">Bindung</th><th scope="col">Zusammenhalt</th><th scope="col">Beispiel</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Kovalent</th><td>Nichtmetallatome teilen Elektronenpaare; typische Grundteilchen: Moleküle</td><td>H<sub>2</sub>O</td></tr>
+                  <tr><th scope="row">Metallisch</th><td>Metallatomrümpfe und gemeinsam genutzte, delokalisierte Valenzelektronen</td><td>Eisen</td></tr>
+                  <tr><th scope="row">Ionisch</th><td>Anziehung zwischen positiven und negativen Ionen; oft Metall + Nichtmetall</td><td>NaCl</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="summary-note">Vereinfachte Grenzfälle; Bindungen können Mischformen sein.</p>
           `
         },
         {
           name: "Chemische Formeln lesen",
           summary: `
             <h3>Teilchenformeln und Stoffformeln</h3>
-            <ul>
-              <li>Formeln verwenden Elementsymbole; tiefgestellte Indizes geben die Anzahl der Atome bzw. das Zahlenverhältnis an.</li>
-              <li><strong>Teilchenformeln</strong> beschreiben ein einzelnes Teilchen: CH<sub>4</sub> enthält 1 C- und 4 H-Atome; O<sup>2−</sup> ist ein zweifach negativ geladenes Sauerstoff-Ion.</li>
-              <li><strong>Stoffformeln</strong> geben an, welche Atome oder Ionen in welchem Verhältnis einen Stoff aufbauen.</li>
-              <li>Bei ionischen Stoffen stehen in der Verhältnisformel normalerweise keine Ladungen: NaCl bedeutet Na<sup>+</sup>- und Cl<sup>−</sup>-Ionen im Verhältnis 1:1; es gibt keine einzelnen NaCl-Moleküle im Ionengitter.</li>
-              <li>CH<sub>4</sub> kann sowohl ein Methan-Molekül als auch den molekularen Stoff Methan bezeichnen; der Kontext entscheidet.</li>
-            </ul>
+            <p>Formeln verwenden Elementsymbole; tiefgestellte Indizes geben Atomanzahl oder Zahlenverhältnis an.</p>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Was Formeln zeigen</caption>
+                <thead><tr><th scope="col">Form</th><th scope="col">Aussage</th><th scope="col">Beispiel</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Index</th><td>Anzahl der Atome bzw. Zahlenverhältnis</td><td>CH<sub>4</sub>: 1 C, 4 H</td></tr>
+                  <tr><th scope="row">Teilchenformel</th><td>Einzelnes Teilchen, auch mit Ladung</td><td>O<sup>2−</sup>: Sauerstoff-Ion</td></tr>
+                  <tr><th scope="row">Stoffformel</th><td>Bausteine und ihr Verhältnis im Stoff</td><td>NaCl: Na<sup>+</sup> : Cl<sup>−</sup> = 1:1, kein einzelnes Molekül</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="summary-note">CH<sub>4</sub> kann ein Molekül oder den Stoff Methan bezeichnen; der Kontext entscheidet.</p>
             <h3>Formel als Hinweis auf Bindungstyp und Teilchen</h3>
-            <ul>
-              <li>Nur Metall-Atomsorten, z. B. Fe → metallischer Stoff.</li>
-              <li>Nur Nichtmetall-Atomsorten, z. B. H<sub>2</sub>O → meist molekularer Stoff; wichtige Ausnahme: Kohlenstoff-Netzwerke wie Graphit und Diamant.</li>
-              <li>Metall- und Nichtmetall-Atome, z. B. NaCl → meist salzartiger Stoff aus Ionen.</li>
-              <li>Geladene Formel mit hochgestellter Ladung, z. B. Na<sup>+</sup> oder Cl<sup>−</sup> → einzelnes Ion, nicht automatisch ein neutraler Stoff.</li>
-              <li>Das sind Orientierungshilfen: mehratomige Ionen wie NH<sub>4</sub><sup>+</sup> und Grenzfälle erfordern eine genauere Betrachtung.</li>
-            </ul>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Erste Orientierung an der Formel</caption>
+                <thead><tr><th scope="col">Formel enthält</th><th scope="col">Typischer Hinweis</th><th scope="col">Beispiel</th></tr></thead>
+                <tbody>
+                  <tr><td>Nur Metalle</td><td>Metallischer Stoff</td><td>Fe</td></tr>
+                  <tr><td>Nur Nichtmetalle</td><td>Meist molekular; Kohlenstoff-Netzwerke wie Graphit und Diamant sind Ausnahmen</td><td>H<sub>2</sub>O</td></tr>
+                  <tr><td>Metall und Nichtmetall</td><td>Meist salzartig aus Ionen</td><td>NaCl</td></tr>
+                  <tr><td>Hochgestellte Ladung</td><td>Einzelnes Ion, nicht automatisch neutraler Stoff</td><td>Na<sup>+</sup></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="summary-note">Mehratomige Ionen und Grenzfälle erfordern eine genauere Betrachtung.</p>
           `
         },
         {
@@ -961,13 +994,14 @@ window.summaryData = {
           name: "Einführung",
           summary: `
             <h3>Was geschieht bei einer chemischen Reaktion?</h3>
-            <ul>
-              <li>Ausgangsstoffe (<strong>Edukte</strong>) werden in neue Stoffe (<strong>Produkte</strong>) umgewandelt.</li>
-              <li>Atome werden neu angeordnet; chemische Bindungen werden gelöst und neu gebildet.</li>
-              <li>Die Atomsorten und ihre Gesamtzahl bleiben erhalten; Atome und Ladung werden weder erzeugt noch vernichtet.</li>
-              <li>Stoffeigenschaften ändern sich; die Reaktion kann Energie aufnehmen oder abgeben.</li>
-              <li>Teilchenmodell: Reaktionen beruhen auf Zusammenstössen und Umordnungen von Teilchen.</li>
-            </ul>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Reaktionsschema</caption>
+                <thead><tr><th scope="col">Edukte</th><th scope="col">Umordnung</th><th scope="col">Produkte</th></tr></thead>
+                <tbody><tr><td>Ausgangsstoffe</td><td>Teilchen stossen zusammen; Bindungen werden gelöst und neu gebildet</td><td>Neue Stoffe mit veränderten Eigenschaften</td></tr></tbody>
+              </table>
+            </div>
+            <p>Atomsorten, Atomzahl und Ladung bleiben erhalten. Eine Reaktion kann Energie aufnehmen oder abgeben.</p>
             <h3>Reaktionsbedingungen</h3>
             <ul>
               <li>Ob eine Reaktion abläuft, hängt unter anderem von den beteiligten Stoffen und den Bedingungen ab.</li>
@@ -979,19 +1013,16 @@ window.summaryData = {
           name: "Wie viele Teilchen sind da denn genau?",
           summary: `
             <h3>Stoffmenge und Teilchenzahl</h3>
-            <ul>
-              <li>Atome, Moleküle und Ionen sind sehr klein; eine Stoffportion enthält deshalb sehr viele Teilchen.</li>
-              <li>Die Stoffmenge <strong>n</strong> wird in Mol (mol) angegeben.</li>
-              <li><strong>1 mol = N<sub>A</sub> = 6,022&nbsp;140&nbsp;76 · 10<sup>23</sup></strong> Teilchen.</li>
-              <li>Teilchenzahl: <strong>N = n · N<sub>A</sub></strong>; Stoffmenge: <strong>n = N/N<sub>A</sub></strong>.</li>
-            </ul>
-            <h3>Molare Masse</h3>
-            <ul>
-              <li>Die molare Masse <strong>M</strong> gibt die Masse eines Mols an; Einheit: g/mol.</li>
-              <li>Für ein Element entspricht der Zahlenwert von M in g/mol näherungsweise der Atommasse in u.</li>
-              <li>Bei Verbindungen werden die molaren Massen gemäss der Formel aufsummiert, z. B. M(H<sub>2</sub>O) = 2 · M(H) + M(O).</li>
-              <li><strong>n = m/M</strong> und <strong>m = n · M</strong>; vor dem Rechnen die Einheiten prüfen.</li>
-            </ul>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Von Teilchen zu messbaren Mengen</caption>
+                <thead><tr><th scope="col">Grösse</th><th scope="col">Zusammenhang</th><th scope="col">Einheit / Hinweis</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Stoffmenge n</th><td>N = n · N<sub>A</sub>; n = N/N<sub>A</sub></td><td>mol; 1 mol = 6,022&nbsp;140&nbsp;76 · 10<sup>23</sup> Teilchen</td></tr>
+                  <tr><th scope="row">Molare Masse M</th><td>n = m/M; m = n · M</td><td>g/mol; Verbindung: Atommassen gemäss Formel aufsummieren</td></tr>
+                </tbody>
+              </table>
+            </div>
           `
         },
         {
@@ -1024,13 +1055,17 @@ window.summaryData = {
               <li>Für Gase bei gleichem Druck und gleicher Temperatur sind Volumenverhältnisse gleich den Stoffmengenverhältnissen.</li>
             </ul>
             <h3>Rechenweg</h3>
-            <ol>
-              <li>Reaktionsgleichung ausgleichen.</li>
-              <li>Gegebene Masse oder Teilchenzahl in Stoffmenge umrechnen.</li>
-              <li>Mit dem Koeffizientenverhältnis die gesuchte Stoffmenge berechnen.</li>
-              <li>Falls gefragt, Stoffmenge in Masse, Teilchenzahl oder Gasvolumen umrechnen.</li>
-              <li>Einheiten und Grössenordnung kontrollieren.</li>
-            </ol>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Rechenweg in fünf Schritten</caption>
+                <tbody>
+                  <tr><th scope="row">1</th><td>Reaktionsgleichung ausgleichen.</td></tr>
+                  <tr><th scope="row">2</th><td>Masse oder Teilchenzahl in Stoffmenge umrechnen.</td></tr>
+                  <tr><th scope="row">3</th><td>Mit dem Koeffizientenverhältnis die gesuchte Stoffmenge berechnen.</td></tr>
+                  <tr><th scope="row">4–5</th><td>In Masse, Teilchenzahl oder Gasvolumen umrechnen; Einheiten und Grössenordnung prüfen.</td></tr>
+                </tbody>
+              </table>
+            </div>
             <h3>Limitierender Stoff und Ausbeute</h3>
             <ul>
               <li>Edukte gemäss Gleichung im passenden Verhältnis vergleichen.</li>
@@ -1051,12 +1086,18 @@ window.summaryData = {
               <li>Im Teilchenmodell müssen Teilchen zusammenstossen; nicht jeder Zusammenstoss führt zu einer Reaktion.</li>
             </ul>
             <h3>Einflussfaktoren</h3>
-            <ul>
-              <li><strong>Konzentration:</strong> mehr Teilchen pro Volumen → häufigere Zusammenstösse → schnellere Reaktion.</li>
-              <li><strong>Temperatur:</strong> Teilchen bewegen sich schneller; mehr Zusammenstösse besitzen genügend Energie. Als grobe Faustregel steigt die Geschwindigkeit oft etwa auf das Doppelte pro 10 °C.</li>
-              <li><strong>Oberfläche:</strong> fein zerteilte Feststoffe reagieren schneller, weil mehr Teilchen an der Oberfläche zugänglich sind.</li>
-              <li><strong>Katalysator:</strong> ermöglicht einen Reaktionsweg mit geringerer Aktivierungsenergie; beschleunigt Hin- und Rückreaktion, wird dabei nicht dauerhaft verbraucht.</li>
-            </ul>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Was die Reaktion beschleunigt</caption>
+                <thead><tr><th scope="col">Faktor</th><th scope="col">Wirkung</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Konzentration</th><td>Mehr Teilchen pro Volumen → mehr Zusammenstösse</td></tr>
+                  <tr><th scope="row">Temperatur</th><td>Schnellere Teilchen; mehr Zusammenstösse mit ausreichender Energie; oft etwa doppelte Geschwindigkeit je +10 °C</td></tr>
+                  <tr><th scope="row">Oberfläche</th><td>Fein zerteilter Feststoff: mehr Teilchen zugänglich</td></tr>
+                  <tr><th scope="row">Katalysator</th><td>Geringere Aktivierungsenergie; beschleunigt Hin- und Rückreaktion, nicht dauerhaft verbraucht</td></tr>
+                </tbody>
+              </table>
+            </div>
             <h3>Katalyse und Enzyme</h3>
             <ul>
               <li>Bei heterogener Katalyse befinden sich Katalysator und Edukte in unterschiedlichen Phasen; die Reaktion findet oft an der Katalysatoroberfläche statt.</li>
@@ -1081,12 +1122,18 @@ window.summaryData = {
               <li>Bei gegebener Temperatur ist K<sub>c</sub> für eine Reaktion konstant; ein grosser Wert begünstigt Produkte, ein kleiner Wert Edukte.</li>
             </ul>
             <h3>Gleichgewicht verschieben: Prinzip von Le Chatelier</h3>
-            <ul>
-              <li><strong>Konzentration:</strong> Zugabe eines Stoffes verschiebt das Gleichgewicht so, dass ein Teil davon verbraucht wird; Entzug begünstigt dessen Neubildung.</li>
-              <li><strong>Druck (Gasreaktionen):</strong> Druckerhöhung begünstigt die Seite mit weniger gasförmigen Teilchen; bei gleicher Teilchenzahl ist der Einfluss gering.</li>
-              <li><strong>Temperatur:</strong> Erwärmen begünstigt die endotherme Richtung, Abkühlen die exotherme Richtung; die Temperatur kann auch K<sub>c</sub> verändern.</li>
-              <li><strong>Katalysator:</strong> beschleunigt das Erreichen des Gleichgewichts, verschiebt es aber nicht.</li>
-            </ul>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Einfluss auf das Gleichgewicht</caption>
+                <thead><tr><th scope="col">Änderung</th><th scope="col">Verschiebung / Wirkung</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Konzentration</th><td>Zusatz wird teilweise verbraucht; Entzug begünstigt Neubildung</td></tr>
+                  <tr><th scope="row">Druck (Gase)</th><td>Höherer Druck begünstigt weniger Gasteilchen; bei gleicher Anzahl geringer Einfluss</td></tr>
+                  <tr><th scope="row">Temperatur</th><td>Erwärmen endotherm, Abkühlen exotherm; K<sub>c</sub> kann sich ändern</td></tr>
+                  <tr><th scope="row">Katalysator</th><td>Gleichgewicht schneller erreicht, aber nicht verschoben</td></tr>
+                </tbody>
+              </table>
+            </div>
             <h3>Beispiel: Ammoniaksynthese</h3>
             <p><strong>N<sub>2</sub> + 3 H<sub>2</sub> ⇌ 2 NH<sub>3</sub> + Wärme</strong>. Hoher Druck und tiefere Temperatur begünstigen Ammoniak; industriell wird ein Kompromiss mit Katalysator, Produktabtrennung und Rückführung unverbrauchter Gase genutzt.</p>
           `
@@ -1102,18 +1149,19 @@ window.summaryData = {
           number: 1,
           summary: `
             <h3>Brønsted-Modell</h3>
-            <ul>
-              <li><strong>Säure:</strong> Teilchen, das ein Proton (H<sup>+</sup>) abgeben kann.</li>
-              <li><strong>Base:</strong> Teilchen, das ein Proton aufnehmen kann; benötigt ein freies Elektronenpaar.</li>
-              <li>Eine saure H-Bindung ist meist an ein elektronegatives Atom gebunden, z. B. O, N, S oder Halogene.</li>
-              <li>Freie Protonen sind in Wasser nicht stabil: Sie binden sich an H<sub>2</sub>O und bilden H<sub>3</sub>O<sup>+</sup> (Oxonium-/Hydronium-Ion).</li>
-              <li>Elektrische Leitfähigkeit in Lösungen entsteht durch bewegliche Ionen; reine Moleküle leiten nicht.</li>
-            </ul>
-            <h3>Besondere Teilchen</h3>
-            <ul>
-              <li><strong>Ampholyt:</strong> kann je nach Reaktionspartner als Säure oder Base reagieren, z. B. Wasser.</li>
-              <li><strong>Mehrprotonige Säure:</strong> kann schrittweise mehrere Protonen abgeben.</li>
-            </ul>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Säuren, Basen und besondere Teilchen</caption>
+                <thead><tr><th scope="col">Teilchen</th><th scope="col">Merkmal</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Säure</th><td>Gibt H<sup>+</sup> ab; saure H-Bindung meist an O, N, S oder Halogene</td></tr>
+                  <tr><th scope="row">Base</th><td>Nimmt H<sup>+</sup> auf und benötigt ein freies Elektronenpaar</td></tr>
+                  <tr><th scope="row">Ampholyt</th><td>Kann als Säure oder Base reagieren, z. B. Wasser</td></tr>
+                  <tr><th scope="row">Mehrprotonige Säure</th><td>Gibt mehrere Protonen schrittweise ab</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>In Wasser bilden Protonen mit H<sub>2</sub>O H<sub>3</sub>O<sup>+</sup>. Bewegliche Ionen leiten Strom; reine Moleküle nicht.</p>
           `
         },
         {
@@ -1121,18 +1169,19 @@ window.summaryData = {
           number: 2,
           summary: `
             <h3>Protonenübertragung</h3>
-            <ul>
-              <li>Säure-Base-Reaktion = Übertragung eines Protons von einer Säure auf eine Base.</li>
-              <li>Allgemein: <strong>HA + B ⇌ A<sup>−</sup> + BH<sup>+</sup></strong>.</li>
-              <li><strong>Korrespondierende Paare:</strong> HA/A<sup>−</sup> und BH<sup>+</sup>/B; Partner unterscheiden sich jeweils um ein H<sup>+</sup>.</li>
-              <li>Beispiele: CH<sub>3</sub>COOH + H<sub>2</sub>O ⇌ CH<sub>3</sub>COO<sup>−</sup> + H<sub>3</sub>O<sup>+</sup>; NH<sub>3</sub> + H<sub>2</sub>O ⇌ NH<sub>4</sub><sup>+</sup> + OH<sup>−</sup>.</li>
-              <li>Das Gleichgewicht liegt bevorzugt auf der Seite des schwächeren Säure-Base-Paares; Säure-Base-Reihe zum Vergleichen verwenden.</li>
-            </ul>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Protonenübergang und korrespondierende Paare</caption>
+                <tbody>
+                  <tr><th scope="row">Schema</th><td>HA + B ⇌ A<sup>−</sup> + BH<sup>+</sup></td></tr>
+                  <tr><th scope="row">Paare</th><td>HA/A<sup>−</sup> und BH<sup>+</sup>/B; Unterschied jeweils H<sup>+</sup></td></tr>
+                  <tr><th scope="row">Gleichgewicht</th><td>Bevorzugt die Seite des schwächeren Säure-Base-Paares</td></tr>
+                  <tr><th scope="row">Beispiele</th><td>CH<sub>3</sub>COOH + H<sub>2</sub>O ⇌ CH<sub>3</sub>COO<sup>−</sup> + H<sub>3</sub>O<sup>+</sup><br>NH<sub>3</sub> + H<sub>2</sub>O ⇌ NH<sub>4</sub><sup>+</sup> + OH<sup>−</sup></td></tr>
+                </tbody>
+              </table>
+            </div>
             <h3>Neutralisation</h3>
-            <ul>
-              <li>Säure + Base; Oxonium- und Hydroxid-Ionen reagieren zu Wasser: <strong>H<sub>3</sub>O<sup>+</sup> + OH<sup>−</sup> → 2 H<sub>2</sub>O</strong>.</li>
-              <li>Bei vollständiger Neutralisation entstehen aus den übrigen Ionen ein Salz und Wasser.</li>
-            </ul>
+            <p><strong>H<sub>3</sub>O<sup>+</sup> + OH<sup>−</sup> → 2 H<sub>2</sub>O</strong>; bei vollständiger Neutralisation entstehen aus den übrigen Ionen Salz und Wasser.</p>
           `
         },
         {
@@ -1208,13 +1257,19 @@ window.summaryData = {
               <li>Protonenübertragung formulieren und Gleichgewicht prüfen: bevorzugt zur Seite des schwächeren Säure-Base-Paares.</li>
             </ol>
             <h3>pH-Berechnungen: Grundfälle</h3>
-            <ul>
-              <li><strong>Starke einprotonige Säure:</strong> vollständige Abgabe; c(H<sub>3</sub>O<sup>+</sup>) ≈ c<sub>0</sub>(Säure), danach pH = −log c(H<sub>3</sub>O<sup>+</sup>).</li>
-              <li><strong>Starke Base:</strong> c(OH<sup>−</sup>) aus Konzentration und Stöchiometrie bestimmen; pOH = −log c(OH<sup>−</sup>), dann pH = 14 − pOH (bei 25 °C).</li>
-              <li><strong>Schwache, einprotonige Säure:</strong> pH ≈ ½(pK<sub>s</sub> − log c<sub>0</sub>(HA)); Näherung nur anwenden, wenn ihre Voraussetzungen erfüllt sind.</li>
-              <li><strong>Schwache Base:</strong> Gleichgewicht und Stärke der korrespondierenden Säure mitberücksichtigen; Näherung siehe Unterthema 6.9.</li>
-              <li>Vor dem Logarithmieren Konzentrationen in mol/L einsetzen; bei Verdünnung zuerst neue Konzentration berechnen.</li>
-            </ul>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>pH-Rechnung: passende Grundbeziehung</caption>
+                <thead><tr><th scope="col">Fall</th><th scope="col">Ansatz</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Starke einprotonige Säure</th><td>c(H<sub>3</sub>O<sup>+</sup>) ≈ c<sub>0</sub>; pH = −log c(H<sub>3</sub>O<sup>+</sup>)</td></tr>
+                  <tr><th scope="row">Starke Base</th><td>c(OH<sup>−</sup>) bestimmen; pOH = −log c(OH<sup>−</sup>); pH = 14 − pOH (25 °C)</td></tr>
+                  <tr><th scope="row">Schwache einprotonige Säure</th><td>pH ≈ ½(pK<sub>s</sub> − log c<sub>0</sub>(HA)); Näherungsbedingungen beachten</td></tr>
+                  <tr><th scope="row">Schwache Base</th><td>Gleichgewicht und korrespondierende Säure berücksichtigen; Näherung siehe Unterthema 6.9</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="summary-note">Konzentration in mol/L einsetzen; bei Verdünnung zuerst die neue Konzentration berechnen.</p>
           `
         },
         {
@@ -1222,13 +1277,19 @@ window.summaryData = {
           number: 6,
           summary: `
             <h3>Farbumschlag durch Protonierung</h3>
-            <ul>
-              <li>pH-Indikatoren sind meist schwache Säuren/Basen; protonierte und deprotonierte Form haben unterschiedliche Farben.</li>
-              <li><strong>HInd ⇌ H<sup>+</sup> + Ind<sup>−</sup></strong>: tiefere pH-Werte begünstigen HInd, höhere pH-Werte Ind<sup>−</sup>.</li>
-              <li>Der sichtbare Umschlag erfolgt über einen Bereich, ungefähr bei pH = pK<sub>s</sub> ± 1; am Umschlagspunkt liegen beide Formen ähnlich häufig vor.</li>
-              <li>Beispiele: Bromthymolblau, Lackmus, Rotkohlsaft; pH-Papier enthält ein Indikatorgemisch.</li>
-              <li>Für eine Titration Indikator wählen, dessen Umschlagsbereich im steilen pH-Sprung liegt.</li>
-            </ul>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Indikatorformen</caption>
+                <thead><tr><th scope="col">Bedingung</th><th scope="col">Überwiegt</th></tr></thead>
+                <tbody>
+                  <tr><td>Tieferer pH</td><td>HInd (protoniert)</td></tr>
+                  <tr><td>Höherer pH</td><td>Ind<sup>−</sup> (deprotoniert)</td></tr>
+                  <tr><td>Gleichgewicht</td><td>HInd ⇌ H<sup>+</sup> + Ind<sup>−</sup></td></tr>
+                  <tr><td>Umschlagbereich</td><td>Etwa pK<sub>s</sub> ± 1; beide Formen ähnlich häufig</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Beispiele: Bromthymolblau, Lackmus, Rotkohlsaft; pH-Papier enthält ein Indikatorgemisch. Für Titrationen den Umschlag im steilen pH-Sprung wählen.</p>
           `
         },
         {
@@ -1236,18 +1297,20 @@ window.summaryData = {
           number: 7,
           summary: `
             <h3>Bestandteile und Wirkung</h3>
-            <ul>
-              <li>Puffer = schwache Säure und korrespondierende Base in vergleichbaren Mengen, z. B. CH<sub>3</sub>COOH/CH<sub>3</sub>COO<sup>−</sup>.</li>
-              <li>Zugabe von Säure: A<sup>−</sup> + H<sub>3</sub>O<sup>+</sup> → HA + H<sub>2</sub>O; Zugabe von Base: HA + OH<sup>−</sup> → A<sup>−</sup> + H<sub>2</sub>O.</li>
-              <li>Der pH-Wert ändert sich bei kleinen Säure-/Base-Zugaben nur wenig; die Pufferwirkung ist begrenzt.</li>
-            </ul>
-            <h3>Pufferbereich und Kapazität</h3>
-            <ul>
-              <li><strong>pH = pK<sub>s</sub> + log<sub>10</sub>(c(A<sup>−</sup>)/c(HA))</strong> (Puffergleichung).</li>
-              <li>Bei gleichen Mengen gilt pH = pK<sub>s</sub>; grösste Pufferwirkung in der Nähe dieses Wertes.</li>
-              <li>Wirksamer Bereich ungefähr pK<sub>s</sub> ± 1 (etwa zwei pH-Einheiten).</li>
-              <li>Höhere Konzentrationen des Puffers → grössere Pufferkapazität; geeigneten Puffer nach gewünschtem pH wählen.</li>
-            </ul>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Puffer auf einen Blick</caption>
+                <thead><tr><th scope="col">Bestandteil / Zugabe</th><th scope="col">Wirkung</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Schwache Säure + korrespondierende Base</th><td>In vergleichbaren Mengen, z. B. CH<sub>3</sub>COOH/CH<sub>3</sub>COO<sup>−</sup></td></tr>
+                  <tr><th scope="row">Säure / Base</th><td>A<sup>−</sup> + H<sub>3</sub>O<sup>+</sup> → HA + H<sub>2</sub>O; HA + OH<sup>−</sup> → A<sup>−</sup> + H<sub>2</sub>O</td></tr>
+                  <tr><th scope="row">Puffergleichung</th><td>pH = pK<sub>s</sub> + log<sub>10</sub>(c(A<sup>−</sup>)/c(HA))</td></tr>
+                  <tr><th scope="row">Bereich / Kapazität</th><td>Beste Wirkung bei pH ≈ pK<sub>s</sub>; wirksam etwa pK<sub>s</sub> ± 1. Höhere Konzentration erhöht die Kapazität.</td></tr>
+                  <tr><th scope="row">Auswahl</th><td>Puffer passend zum gewünschten pH wählen.</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="summary-note">Kleine Säure-/Base-Zugaben ändern den pH wenig; die Pufferwirkung ist begrenzt.</p>
           `
         },
         {
@@ -1269,14 +1332,17 @@ window.summaryData = {
           number: 10,
           summary: `
             <h3>Konzentration unbekannter Lösungen bestimmen</h3>
-            <ul>
-              <li>Bekanntes Volumen der Probelösung mit unbekannter Konzentration vorlegen.</li>
-              <li>Standardlösung bekannter Konzentration aus der Bürette langsam zugeben; pH-Verlauf mit Indikator oder pH-Meter beobachten.</li>
-              <li><strong>Äquivalenzpunkt:</strong> Säure und Base haben im stöchiometrisch passenden Verhältnis vollständig reagiert; nicht immer bei pH 7.</li>
-              <li>Am Äquivalenzpunkt die Stoffmengenbeziehung aus der Reaktionsgleichung verwenden; bei einprotoniger Säure und einwertiger Base: <strong>c<sub>S</sub> · V<sub>S</sub> = c<sub>B</sub> · V<sub>B</sub></strong>.</li>
-              <li>Indikator so wählen, dass sein Farbumschlag im steilen pH-Sprung liegt; alternativ pH messen und bis zum Sprung titrieren.</li>
-              <li>Starke Säure + starke Base: Äquivalenzpunkt etwa pH 7; schwache Säure + starke Base: Äquivalenzpunkt über pH 7.</li>
-            </ul>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Titration in drei Schritten</caption>
+                <tbody>
+                  <tr><th scope="row">1</th><td>Bekanntes Probenvolumen vorlegen; Standardlösung aus der Bürette zugeben.</td></tr>
+                  <tr><th scope="row">2</th><td>pH mit Indikator oder pH-Meter bis zum steilen Sprung beobachten.</td></tr>
+                  <tr><th scope="row">3</th><td>Am Äquivalenzpunkt Stoffmengenverhältnis anwenden: c<sub>S</sub> · V<sub>S</sub> = c<sub>B</sub> · V<sub>B</sub> (einprotonig/einwertig).</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="summary-note">Der Äquivalenzpunkt liegt nicht immer bei pH 7: starke Säure + starke Base etwa bei 7; schwache Säure + starke Base darüber.</p>
           `
         }
       ]
@@ -1289,8 +1355,18 @@ window.summaryData = {
           name: "Einführung und Formalismen",
           summary: `
             <h3>Grundprinzip</h3>
-            <p><strong>Redoxreaktionen</strong> sind Elektronenübertragungen. Oxidation und Reduktion treten immer gemeinsam auf: Bei der Oxidation werden Elektronen abgegeben, bei der Reduktion aufgenommen. Das Reduktionsmittel ist der Elektronenspender und wird oxidiert; das Oxidationsmittel ist der Elektronenempfänger und wird reduziert.</p>
-            <p>Beispiel Natrium und Chlor: <strong>2 Na → 2 Na<sup>+</sup> + 2 e<sup>−</sup></strong> (Oxidation), <strong>Cl<sub>2</sub> + 2 e<sup>−</sup> → 2 Cl<sup>−</sup></strong> (Reduktion); insgesamt <strong>2 Na + Cl<sub>2</sub> → 2 NaCl</strong>.</p>
+            <p>Redoxreaktionen sind Elektronenübertragungen: Oxidation und Reduktion treten immer gemeinsam auf.</p>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Redox: Elektronen gehen vom Reduktionsmittel zum Oxidationsmittel</caption>
+                <thead><tr><th scope="col">Vorgang</th><th scope="col">Elektronen</th><th scope="col">Mittel</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Oxidation</th><td>Abgabe</td><td>Reduktionsmittel wird oxidiert</td></tr>
+                  <tr><th scope="row">Reduktion</th><td>Aufnahme</td><td>Oxidationsmittel wird reduziert</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Beispiel: <strong>2 Na → 2 Na<sup>+</sup> + 2 e<sup>−</sup></strong> (Oxidation); <strong>Cl<sub>2</sub> + 2 e<sup>−</sup> → 2 Cl<sup>−</sup></strong> (Reduktion); Gesamt: <strong>2 Na + Cl<sub>2</sub> → 2 NaCl</strong>.</p>
             <h3>Oxidationszahlen</h3>
             <ul>
               <li>Elementare Stoffe haben die Oxidationszahl 0; bei einatomigen Ionen entspricht sie der Ionenladung.</li>
@@ -1307,12 +1383,18 @@ window.summaryData = {
             <h3>Reaktionsrichtung und Potential</h3>
             <p>Redoxpaare bestehen aus einer oxidierten und einer reduzierten Form. Die Redoxreihe hilft vorherzusagen, ob ein Elektronentransfer abläuft: Ein starkes Reduktionsmittel kann ein Oxidationsmittel reduzieren, das in der Reihe stärker ist. Die Potentialwerte gelten für festgelegte Bedingungen; bei Reaktionen mit H<sub>3</sub>O<sup>+</sup> oder OH<sup>−</sup> beeinflusst der pH-Wert das Potential.</p>
             <h3>Galvanische Zelle</h3>
-            <p>In einer galvanischen Zelle laufen Oxidation und Reduktion räumlich getrennt in zwei Halbzellen ab. Die Elektronen fliessen über einen äusseren Draht vom Reduktionsmittel zur Reduktion; dadurch entsteht elektrischer Strom. Die Salzbrücke ermöglicht den Ionenaustausch und hält die Lösungen elektrisch ausgeglichen. Die Zellspannung ergibt sich aus der Potentialdifferenz der Halbreaktionen.</p>
-            <ul>
-              <li><strong>Anode:</strong> Ort der Oxidation.</li>
-              <li><strong>Kathode:</strong> Ort der Reduktion.</li>
-              <li>Eine galvanische Zelle liefert Strom, bis das Gleichgewicht erreicht ist oder ein Edukt aufgebraucht ist.</li>
-            </ul>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Aufbau und Funktion</caption>
+                <tbody>
+                  <tr><th scope="row">Zwei Halbzellen</th><td>Oxidation und Reduktion laufen räumlich getrennt ab.</td></tr>
+                  <tr><th scope="row">Äusserer Draht</th><td>Elektronen fliessen vom Reduktionsmittel zur Reduktion; es entsteht Strom.</td></tr>
+                  <tr><th scope="row">Salzbrücke</th><td>Ermöglicht Ionenaustausch und hält Lösungen elektrisch ausgeglichen.</td></tr>
+                  <tr><th scope="row">Elektroden</th><td>Anode: Oxidation; Kathode: Reduktion.</td></tr>
+                  <tr><th scope="row">Zellspannung</th><td>Potentialdifferenz der Halbreaktionen; Strom bis Gleichgewicht oder ein Edukt aufgebraucht ist.</td></tr>
+                </tbody>
+              </table>
+            </div>
             <h3>Brennstoffzelle</h3>
             <p>Eine Brennstoffzelle setzt Wasserstoff und Sauerstoff kontrolliert zu Wasser um und wandelt einen grossen Teil der Reaktionsenergie direkt in elektrische Energie um. An den Elektroden beschleunigt Platin die Reaktionen; eine Protonenaustauschmembran lässt Protonen passieren und trennt die Reaktionsräume.</p>
           `
@@ -1321,8 +1403,18 @@ window.summaryData = {
           name: "Elektrolyse",
           summary: `
             <h3>Erzwungene Redoxreaktionen</h3>
-            <p>Bei einer Elektrolyse erzwingt eine Gleichspannungsquelle eine Redoxreaktion, die von selbst nicht abläuft. Die Stromquelle wirkt als Elektronenpumpe: Sie entzieht Elektronen an der positiven <strong>Anode</strong> (Oxidation) und liefert sie an der negativen <strong>Kathode</strong> (Reduktion). Die nötige Mindestspannung heisst Zersetzungsspannung; praktisch ist eine höhere Spannung nötig.</p>
-            <p>Beispiel für die Elektrolyse von Kupferchlorid: An der Kathode wird Cu<sup>2+</sup> zu Kupfer reduziert; an der Anode werden Chlorid-Ionen zu Chlor oxidiert. Gesamt: <strong>CuCl<sub>2</sub> → Cu + Cl<sub>2</sub></strong>.</p>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Elektrolyse von Kupferchlorid</caption>
+                <thead><tr><th scope="col">Ort</th><th scope="col">Vorgang</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Positive Anode</th><td>Oxidation; Elektronen werden entzogen</td></tr>
+                  <tr><th scope="row">Negative Kathode</th><td>Reduktion; Elektronen werden geliefert</td></tr>
+                  <tr><th scope="row">Gesamt</th><td>CuCl<sub>2</sub> → Cu + Cl<sub>2</sub></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Eine Gleichspannungsquelle erzwingt die Reaktion. Mindestspannung: Zersetzungsspannung; praktisch ist eine höhere Spannung nötig. Bei Kupferchlorid wird Cu<sup>2+</sup> zu Kupfer und Chlorid zu Chlor.</p>
             <h3>Anwendungen</h3>
             <p>Elektrolysen werden unter anderem zur Aluminiumgewinnung, zur Raffination von Kupfer und Gold, zur Herstellung von Natronlauge und Chlor sowie zum Galvanisieren eingesetzt.</p>
             <h3>Akkumulatoren</h3>
@@ -1333,11 +1425,19 @@ window.summaryData = {
           name: "Biologische Redox-Reaktionen",
           summary: `
             <h3>Zellatmung und Citratzyklus</h3>
-            <p>Die Gesamtgleichung der Zellatmung wird oft ähnlich wie die der Photosynthese dargestellt, doch die Prozesse verlaufen grundverschieden. Im Citratzyklus werden Kohlenstoffverbindungen aus Zucker, Fetten und Proteinen schrittweise zu CO<sub>2</sub> oxidiert. Sauerstoff wird in diesem Zyklus selbst nicht verbraucht.</p>
-            <h3>Elektronenüberträger</h3>
-            <p>Die bei der Oxidation frei werdenden Elektronen werden zunächst auf die Coenzyme <strong>NAD<sup>+</sup></strong> und <strong>FAD</strong> übertragen. Dabei entstehen die energiereicheren Formen <strong>NADH</strong> und <strong>FADH<sub>2</sub></strong>. Sie transportieren die Elektronen zur Elektronentransportkette in der inneren Mitochondrienmembran.</p>
-            <h3>Elektronentransportkette und ATP</h3>
-            <p>Die Elektronen werden schrittweise über Proteinkomplexe weitergegeben und schliesslich auf Sauerstoff übertragen. Die dabei frei werdende Energie pumpt Protonen durch die Membran und erzeugt einen Konzentrations- und Ladungsunterschied. Dieser Protonengradient treibt die Bildung von ATP aus ADP und Phosphat an. Die vielen kleinen, räumlich geordneten Schritte ermöglichen eine kontrollierte Energiegewinnung statt eines grossen Energieverlusts als Wärme.</p>
+            <p>Die Gesamtgleichung ähnelt oft der Photosynthese, die Prozesse verlaufen aber grundverschieden. Im Citratzyklus werden Kohlenstoffverbindungen aus Zucker, Fetten und Proteinen schrittweise zu CO<sub>2</sub> oxidiert; Sauerstoff wird dort nicht verbraucht.</p>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Elektronenfluss und Energiegewinnung</caption>
+                <thead><tr><th scope="col">Schritt</th><th scope="col">Was geschieht?</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Oxidation</th><td>Elektronen werden auf NAD<sup>+</sup> und FAD übertragen → NADH und FADH<sub>2</sub>.</td></tr>
+                  <tr><th scope="row">Transport</th><td>Coenzyme bringen Elektronen zur Elektronentransportkette; Proteinkomplexe geben sie schrittweise an Sauerstoff weiter.</td></tr>
+                  <tr><th scope="row">ATP-Bildung</th><td>Energie pumpt Protonen durch die Membran; der Protonengradient treibt ADP + Phosphat → ATP.</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Die räumlich geordneten Schritte ermöglichen kontrollierte Energiegewinnung statt eines grossen Wärmeverlusts.</p>
             <h3>Enzyme</h3>
             <p>Enzyme katalysieren die einzelnen Reaktionsschritte. Ihre Bindungstasche bindet bestimmte Substrate und richtet sie für die Reaktion aus; so wird die Umsetzung beschleunigt und bleibt substratspezifisch.</p>
           `
