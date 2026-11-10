@@ -589,19 +589,271 @@ window.summaryData = {
       id: "topic-2",
       name: "Moleküle und molekulare Stoffe",
       subtopics: [
-        { name: "Stoffe und ihre Bausteine", placeholder: true },
-        { name: "Wechselwirkungen zwischen geladenen Teilchen", placeholder: true },
-        { name: "Die Energie eines Systems aus zwei Wasserstoff-Atomen", placeholder: true },
-        { name: "Die Elektronenpaarbindung", placeholder: true },
-        { name: "Die Edelgasregel", placeholder: true },
-        { name: "Der räumliche Bau von Molekülen", placeholder: true },
-        { name: "Die Polarität von Bindungen", placeholder: true },
-        { name: "Dipol-Moleküle", placeholder: true },
-        { name: "Zwischenmolekulare Kräfte (ZMK)", placeholder: true },
-        { name: "Siedepunkt von Reinstoffen", placeholder: true },
-        { name: "Mischbarkeit / Löslichkeit", placeholder: true },
-        { name: "Nomenklatur", placeholder: true },
-        { name: "Struktur und Eigenschaften", placeholder: true }
+        {
+          name: "Stoffe und ihre Bausteine",
+          summary: `
+            <h3>Stoffklassen und Teilchen</h3>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Reinstoffe: Bausteine und Zusammenhalt</caption>
+                <thead><tr><th scope="col">Stoffgruppe</th><th scope="col">Bausteine</th><th scope="col">Zusammenhalt im Feststoff</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Salze</th><td>Ionen</td><td>Ionengitter</td></tr>
+                  <tr><th scope="row">Molekulare Stoffe</th><td>Moleküle</td><td>Molekülgitter</td></tr>
+                  <tr><th scope="row">Metalle</th><td>Atomrümpfe und Elektronen</td><td>Metallgitter</td></tr>
+                  <tr><th scope="row">Nichtmetalle</th><td>Moleküle oder Atome</td><td>Molekül- oder Atomgitter</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Stoffe werden in <strong>Reinstoffe</strong> (Verbindungen und Elementarstoffe) sowie <strong>Stoffgemische</strong> eingeteilt. Wasser ist ein molekularer Stoff aus H<sub>2</sub>O-Molekülen.</p>
+          `
+        },
+        {
+          name: "Wechselwirkungen zwischen geladenen Teilchen",
+          summary: `
+            <h3>Coulomb-Kräfte zwischen Ladungen</h3>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Zwischen zwei Wasserstoff-Atomen wirken Anziehung und Abstossung</caption>
+                <thead><tr><th scope="col">Ladungen</th><th scope="col">Kraft</th></tr></thead>
+                <tbody>
+                  <tr><td>Proton und Elektron</td><td>Anziehung</td></tr>
+                  <tr><td>Proton und Proton</td><td>Abstossung</td></tr>
+                  <tr><td>Elektron und Elektron</td><td>Abstossung</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Die elektrostatische Kraft hängt von den Ladungen und ihrem Abstand ab. Zwischen zwei Atomen wirken daher gleichzeitig anziehende und abstossende Kräfte.</p>
+          `
+        },
+        {
+          name: "Die Energie eines Systems aus zwei Wasserstoff-Atomen",
+          summary: `
+            <h3>Abstand und potenzielle Energie</h3>
+            <p>Nähern sich zwei Wasserstoff-Atome, sinkt ihre potenzielle Energie zunächst: Die Anziehung überwiegt. Bei sehr kleinem Abstand überwiegt die Abstossung wieder.</p>
+            <figure class="summary-figure">
+              <svg role="img" aria-labelledby="h2-energy-title h2-energy-desc" viewBox="0 0 620 230" style="display:block;width:100%;max-width:620px;height:auto">
+                <title id="h2-energy-title">Potenzielle Energie zweier Wasserstoff-Atome in Abhängigkeit vom Abstand</title>
+                <desc id="h2-energy-desc">Die Energie sinkt beim Annähern bis zu einem Minimum bei der Bindungslänge und steigt bei noch kleinerem Abstand stark an.</desc>
+                <path d="M66 25 V182 H584" fill="none" stroke="#68747c" stroke-width="2"/>
+                <path d="M68 74 H582" fill="none" stroke="#a9b0ad" stroke-width="1" stroke-dasharray="5 5"/>
+                <path d="M74 76 C138 77 176 91 218 123 C246 146 264 163 298 168 C337 174 365 156 392 128 C430 91 472 77 580 75" fill="none" stroke="#d66b61" stroke-width="4"/>
+                <circle cx="298" cy="168" r="6" fill="#d66b61"/>
+                <path d="M298 170 V183" stroke="#68747c" stroke-width="1.5"/>
+                <g fill="#454940" font-family="Arial, sans-serif" font-size="14">
+                  <text x="20" y="34">Energie</text>
+                  <text x="510" y="207">Kernabstand</text>
+                  <text x="308" y="162">Minimum</text>
+                  <text x="308" y="191">Bindungslänge</text>
+                  <text x="78" y="61">getrennte Atome</text>
+                  <text x="448" y="55">Abstossung bei kleinem Abstand</text>
+                </g>
+              </svg>
+              <figcaption style="text-align:center;color:#68747c;font-size:.9em">Im Energieminimum ist das H<sub>2</sub>-Molekül besonders stabil.</figcaption>
+            </figure>
+            <p>Die maximale Energieabsenkung entspricht der <strong>Bindungsenergie</strong>. Um die Atome wieder zu trennen, muss Energie zugeführt werden.</p>
+          `
+        },
+        {
+          name: "Die Elektronenpaarbindung",
+          summary: `
+            <h3>Gemeinsame Elektronenpaare</h3>
+            <p>Bei der Elektronenpaarbindung teilen Nichtmetall-Atome Elektronenpaare. Die Lewis-Formel zeigt bindende und freie Elektronenpaare.</p>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Bindungsordnung und gemeinsame Elektronenpaare</caption>
+                <thead><tr><th scope="col">Bindung</th><th scope="col">Geteilte Paare</th><th scope="col">Beispiel</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Einfach</th><td>1</td><td>H—H</td></tr>
+                  <tr><th scope="row">Doppel</th><td>2</td><td>O=O</td></tr>
+                  <tr><th scope="row">Dreifach</th><td>3</td><td>N≡N</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Eine Doppelbindung ist nicht einfach doppelt so stark wie eine Einfachbindung.</p>
+          `
+        },
+        {
+          name: "Die Edelgasregel",
+          summary: `
+            <h3>Stabile Elektronenhülle</h3>
+            <p>Atome bilden gemeinsame Elektronenpaare, um eine stabile, edelgasähnliche Aussenschale zu erreichen. Moleküle sind dadurch energieärmer und stabiler als die entsprechenden einzelnen Atome.</p>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Lewis-Formeln machen die Bindungen sichtbar</caption>
+                <tbody>
+                  <tr><th scope="row">Einzeichnen</th><td>Bindende und nichtbindende Valenzelektronen</td></tr>
+                  <tr><th scope="row">Prüfen</th><td>Ob die Atome durch Einfach-, Doppel- oder Dreifachbindungen die Edelgasregel erfüllen</td></tr>
+                </tbody>
+              </table>
+            </div>
+          `
+        },
+        {
+          name: "Der räumliche Bau von Molekülen",
+          summary: `
+            <h3>Elektronenpaar-Abstossungs-Modell (EPA)</h3>
+            <p>Bindende und nichtbindende Elektronenpaare stossen sich ab und ordnen sich um ein Atom möglichst weit voneinander entfernt an. So entsteht die räumliche Molekülform; Lewis-Formeln allein zeigen sie nicht.</p>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Häufige Anordnungen um ein Atom</caption>
+                <thead><tr><th scope="col">Anordnung</th><th scope="col">Beispiel</th><th scope="col">Bindungswinkel</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Tetraedrisch</th><td>CH<sub>4</sub></td><td>ca. 109,5°</td></tr>
+                  <tr><th scope="row">Planar</th><td>CH<sub>2</sub>O</td><td>ca. 120°</td></tr>
+                  <tr><th scope="row">Linear</th><td>C<sub>2</sub>H<sub>2</sub></td><td>180°</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Mehrfachbindungen beanspruchen mehr Raum als Einfachbindungen. Keil-Strich- und Skelettformeln helfen, dreidimensionale Strukturen darzustellen.</p>
+          `
+        },
+        {
+          name: "Die Polarität von Bindungen",
+          summary: `
+            <h3>Elektronegativität und Partialladungen</h3>
+            <p>Die Elektronegativität (EN) beschreibt, wie stark ein Atom gemeinsame Bindungselektronen anzieht. Bei unterschiedlichen Atomen wird das Elektronenpaar ungleich verteilt: Das stärker anziehende Atom erhält δ−, das andere δ+.</p>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>EN-Differenz als Hinweis auf die Bindungspolarität</caption>
+                <thead><tr><th scope="col">EN-Differenz</th><th scope="col">Bindung</th></tr></thead>
+                <tbody>
+                  <tr><td>0</td><td>Unpolar</td></tr>
+                  <tr><td>ca. 0,1–0,4</td><td>Schwach polar</td></tr>
+                  <tr><td>ab ca. 0,5</td><td>Polar</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Partialladungen sind keine vollständigen Ionenladungen. Polare Bindungen sind meist stärker als unpolare.</p>
+          `
+        },
+        {
+          name: "Dipol-Moleküle",
+          summary: `
+            <h3>Bindungspolarität und Molekülform</h3>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Wann ist ein Molekül ein Dipol?</caption>
+                <thead><tr><th scope="col">Molekül</th><th scope="col">Bedingung</th><th scope="col">Ergebnis</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Zwei Atome</th><td>Polare Bindung</td><td>Dipol</td></tr>
+                  <tr><th scope="row">Mehrere Atome</th><td>Positive und negative Ladungsschwerpunkte fallen nicht zusammen</td><td>Dipol</td></tr>
+                  <tr><th scope="row">Mehrere Atome, symmetrisch</th><td>Teilladungen heben sich auf</td><td>Kein Dipol</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Polare Bindungen allein machen ein mehratomiges Molekül also nicht zwingend zum Dipol: Entscheidend ist auch seine räumliche Gestalt.</p>
+          `
+        },
+        {
+          name: "Zwischenmolekulare Kräfte (ZMK)",
+          summary: `
+            <h3>Anziehung zwischen Molekülen</h3>
+            <p>Zwischenmolekulare Kräfte halten Moleküle zusammen und sind von den Bindungen innerhalb eines Moleküls zu unterscheiden. Sie beeinflussen unter anderem Siede- und Schmelzpunkt, Dichte, Viskosität und Löslichkeit.</p>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Die wichtigsten ZMK (bei vergleichbarer Molekülgrösse)</caption>
+                <thead><tr><th scope="col">Kraft</th><th scope="col">Wirkt zwischen</th><th scope="col">Merke</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Van-der-Waals</th><td>Allen Atomen und Molekülen</td><td>Stärker bei mehr Elektronen, grösserer Masse und grösserer Kontaktfläche</td></tr>
+                  <tr><th scope="row">Dipol-Dipol</th><td>Polaren Molekülen</td><td>Zusätzliche Anziehung zwischen Partialladungen</td></tr>
+                  <tr><th scope="row">Wasserstoffbrücken</th><td>Molekülen mit H—F, H—O oder H—N</td><td>Donor-H an F/O/N und freies Elektronenpaar an F/O/N; stärkste ZMK</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="summary-note">Bei Molekülen vergleichbarer Grösse: Wasserstoffbrücken &gt; Dipol-Dipol &gt; Van-der-Waals. Stärkere Anziehung erschwert das Trennen der Moleküle.</p>
+          `
+        },
+        {
+          name: "Siedepunkt von Reinstoffen",
+          summary: `
+            <h3>Mehr Anziehung – höherer Siedepunkt</h3>
+            <p>Beim Sieden müssen Moleküle die zwischenmolekularen Kräfte überwinden. Je stärker diese sind, desto mehr Energie und meist eine höhere Temperatur sind dafür nötig.</p>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Was den Siedepunkt beeinflusst</caption>
+                <thead><tr><th scope="col">Einfluss</th><th scope="col">Tendenz</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Wasserstoffbrücken</th><td>Starke Anziehung → Siedepunkt steigt</td></tr>
+                  <tr><th scope="row">Dipol-Dipol-Kräfte</th><td>Zusätzliche Anziehung bei polaren Molekülen → Siedepunkt steigt</td></tr>
+                  <tr><th scope="row">Grössere Moleküle</th><td>Mehr Elektronen / grössere Kontaktfläche → stärkere Van-der-Waals-Kräfte</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Alle Moleküle besitzen Van-der-Waals-Kräfte; bei kleinen Molekülen können zusätzliche Dipol-Dipol-Kräfte oder Wasserstoffbrücken besonders ins Gewicht fallen.</p>
+          `
+        },
+        {
+          name: "Mischbarkeit / Löslichkeit",
+          summary: `
+            <h3>Ähnliches löst sich in Ähnlichem</h3>
+            <p>Stoffe mischen sich gut, wenn zwischen den Molekülen der beiden Stoffe passende, ausreichend starke Wechselwirkungen entstehen können.</p>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Polarität als Orientierung</caption>
+                <thead><tr><th scope="col">Lösungsmittel</th><th scope="col">Löst bevorzugt</th><th scope="col">Beispiel aus dem Dossier</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Wasser (polar)</th><td>Polare Stoffe</td><td>Methanol</td></tr>
+                  <tr><th scope="row">Heptan (unpolar)</th><td>Unpolare Stoffe</td><td>Butan-1-ol, Aceton</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Unpassende Wechselwirkungen zwischen Wasser und einem unpolaren Stoff reichen oft nicht aus, um die Anziehungen im reinen Stoff zu ersetzen.</p>
+          `
+        },
+        {
+          name: "Nomenklatur",
+          summary: `
+            <h3>Molekulare Stoffe benennen</h3>
+            <p>Molekulare Stoffe bestehen aus Nichtmetall-Atomen. Zahlwörter geben an, wie viele Atome einer Sorte im Molekül vorkommen; die Eins wird weggelassen.</p>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Griechische Zahlwörter</caption>
+                <thead><tr><th scope="col">Anzahl</th><th scope="col">Präfix</th><th scope="col">Anzahl</th><th scope="col">Präfix</th></tr></thead>
+                <tbody>
+                  <tr><td>1</td><td>—</td><td>6</td><td>hexa-</td></tr>
+                  <tr><td>2</td><td>di-</td><td>7</td><td>hepta-</td></tr>
+                  <tr><td>3</td><td>tri-</td><td>8</td><td>octa-</td></tr>
+                  <tr><td>4</td><td>tetra-</td><td>9</td><td>nona-</td></tr>
+                  <tr><td>5</td><td>penta-</td><td>10</td><td>deca-</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <ul>
+              <li>Die Formel-Reihenfolge beim Benennen richtet sich nach der im Dossier angegebenen Elementreihe: Xe, Kr, B, Si, C, S, P, N, H, Te, Se, As, I, Br, Cl, O, F.</li>
+              <li>Das zweite Element erhält die Endung <strong>-id</strong>; Beispiele: CO<sub>2</sub> Kohlenstoffdioxid, HCl Chlorwasserstoff.</li>
+            </ul>
+          `
+        },
+        {
+          name: "Struktur und Eigenschaften",
+          summary: `
+            <h3>Gleicher Elementtyp, unterschiedliche Struktur</h3>
+            <p><strong>Allotropie</strong> bezeichnet verschiedene Strukturformen desselben Elements. Die Struktur der Teilchen und ihre zwischenmolekularen Kräfte beeinflussen die Stoffeigenschaften.</p>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Kohlenstoff: Beispiele verschiedener Modifikationen</caption>
+                <thead><tr><th scope="col">Form</th><th scope="col">Struktur / Eigenschaft</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Diamant</th><td>Sehr hart, elektrisch isolierend, hohe Dichte</td></tr>
+                  <tr><th scope="row">Graphit</th><td>Schichtstruktur, weich, schwarz und elektrisch leitfähig</td></tr>
+                  <tr><th scope="row">Fullerene, Graphen, Nanoröhren</th><td>Weitere unterschiedliche Anordnungen von Kohlenstoff-Atomen</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <h3>Schwefel beim Erhitzen</h3>
+            <div class="summary-table-wrap">
+              <table>
+                <caption>Änderungen von Struktur und Eigenschaften</caption>
+                <tbody>
+                  <tr><th scope="row">Fest</th><td>Rhombischer Schwefel mit achtgliedrigen Ringen; oberhalb 95,6 °C entsteht monokliner Schwefel.</td></tr>
+                  <tr><th scope="row">Schmelze</th><td>Bei 119 °C zunächst dünnflüssig; ab etwa 154 °C bilden sich aus Ringmolekülen lange Ketten und die Viskosität steigt.</td></tr>
+                  <tr><th scope="row">Weiter erhitzt</th><td>Oberhalb etwa 185 °C sinkt die Viskosität wieder; bei 444,6 °C siedet Schwefel.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          `
+        }
       ]
     },
     {
