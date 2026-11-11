@@ -218,10 +218,13 @@
   const equilibriumAddProduct = document.getElementById("equilibrium-add-product");
   const equilibriumRemoveProduct = document.getElementById("equilibrium-remove-product");
   const equilibriumConstantResult = document.getElementById("equilibrium-constant-result");
-  const conversionValue = document.getElementById("conversion-value");
-  const conversionUnit = document.getElementById("conversion-unit");
+  const conversionQuantityInputs = {
+    moles: document.getElementById("conversion-moles"),
+    mass: document.getElementById("conversion-mass"),
+    volume: document.getElementById("conversion-volume"),
+    particles: document.getElementById("conversion-particles")
+  };
   const conversionMolarMass = document.getElementById("conversion-molar-mass");
-  const conversionMolarVolume = document.getElementById("conversion-molar-volume");
   const conversionResult = document.getElementById("conversion-result");
   const atomDetail = document.getElementById("atom-detail");
   const textTargets = {
@@ -265,6 +268,7 @@
   const equilibriumParticleMotion = [];
   const EQUILIBRIUM_PARTICLE_LIMIT = 100;
   const AVOGADRO_CONSTANT = 6.02214076e23;
+  const MOLAR_GAS_VOLUME = 24;
   const EQUILIBRIUM_EXTENT_PER_RATE_SECOND = 0.45;
   const EQUILIBRIUM_RATE_BAR_SCALE = 3;
   let equilibriumTimer = null;
@@ -1439,59 +1443,156 @@
   }
 
   function calculateAmountConversions() {
-    const value = conversionValue.valueAsNumber;
     const molarMass = conversionMolarMass.valueAsNumber;
-    const molarVolume = conversionMolarVolume.valueAsNumber;
     const hasMolarMass = conversionMolarMass.value.trim() !== "";
-    const hasMolarVolume = conversionMolarVolume.value.trim() !== "";
-    if (!Number.isFinite(value) || value < 0) {
-      conversionResult.textContent = "Gib einen gültigen Wert grösser oder gleich 0 ein.";
-      return;
-    }
     if (hasMolarMass && (!Number.isFinite(molarMass) || molarMass <= 0)) {
       conversionResult.textContent = "Die molare Masse M muss grösser als 0 sein.";
       return;
     }
-    if (hasMolarVolume && (!Number.isFinite(molarVolume) || molarVolume <= 0)) {
-      conversionResult.textContent = "Das molare Gasvolumen Vₘ muss grösser als 0 sein.";
+
+    const knownValues = Object.entries(conversionQuantityInputs)
+      .filter(([, input]) => input.value.trim() !== "")
+      .map(([quantity, input]) => ({ quantity, value: input.valueAsNumber }));
+    if (knownValues.some(({ value }) => !Number.isFinite(value) || value < 0)) {
+      conversionResult.textContent = "Alle bekannten Werte müssen gültige Zahlen grösser oder gleich 0 sein.";
+      return;
+    }
+    const hasEnoughKnownValues = knownValues.length === 2 || (knownValues.length === 1 && hasMolarMass);
+    if (!hasEnoughKnownValues) {
+      conversionResult.textContent = knownValues.length > 2
+        ? "Gib zwei Grössen ein. Leere weitere Eingabefelder."
+        : knownValues.length === 1
+          ? "Gib einen zweiten Wert ein."
+          : "Gib mindestens eine Grösse (n, m, V oder N) ein.";
       return;
     }
 
-    let moles;
-    if (conversionUnit.value === "mol" || conversionUnit.value === "particles") {
-      moles = conversionUnit.value === "mol" ? value : value / AVOGADRO_CONSTANT;
-    } else if (conversionUnit.value === "g") {
-      if (!Number.isFinite(molarMass) || molarMass <= 0) {
-        conversionResult.textContent = "Für die Umrechnung von Masse in Stoffmenge musst du M eingeben.";
-        return;
-      }
-      moles = value / molarMass;
-    } else {
-      if (!Number.isFinite(molarVolume) || molarVolume <= 0) {
-        conversionResult.textContent = "Für die Umrechnung von Gasvolumen in Stoffmenge musst du Vₘ eingeben.";
-        return;
-      }
-      moles = value / molarVolume;
-    }
-
-    if (!Number.isFinite(moles)) {
-      conversionResult.textContent = "Mit diesen Werten ist keine endliche Umrechnung möglich.";
-      return;
-    }
     const amountFormatter = new Intl.NumberFormat("de-CH", { maximumSignificantDigits: 6 });
     const particleFormatter = new Intl.NumberFormat("de-CH", { maximumFractionDigits: 0 });
-    const formatResult = (label, result, unit, formatter = amountFormatter) => Number.isFinite(result)
-      ? `${label} = ${formatter.format(result)} ${unit}`
-      : `${label} = ausserhalb des darstellbaren Zahlenbereichs`;
-    const results = [`Stoffmenge n = ${amountFormatter.format(moles)} mol`];
-    results.push(Number.isFinite(molarMass) && molarMass > 0
-      ? formatResult("Masse m", moles * molarMass, "g")
-      : "Masse m = Molare Masse M eingeben");
-    results.push(Number.isFinite(molarVolume) && molarVolume > 0
-      ? formatResult("Gasvolumen V", moles * molarVolume, "L")
-      : "Gasvolumen V = Molvolumen Vₘ eingeben");
-    results.push(formatResult("Teilchenzahl N", moles * AVOGADRO_CONSTANT, "Teilchen", particleFormatter));
-    conversionResult.textContent = results.join("\n");
+    const formatAmount = (number) => amountFormatter.format(number);
+    const moleCandidates = knownValues.flatMap(({ quantity, value }) => {
+      if (quantity === "moles") {
+        return [{ value, calculation: `n = ${formatAmount(value)} mol` }];
+      }
+      if (quantity === "mass" && hasMolarMass) {
+        return [{
+          value: value / molarMass,
+          calculation: `n = m / M = ${formatAmount(value)} g / ${formatAmount(molarMass)} g/mol = ${formatAmount(value / molarMass)} mol`
+        }];
+      }
+      if (quantity === "volume") {
+        return [{
+          value: value / MOLAR_GAS_VOLUME,
+          calculation: `n = V / Vₘ = ${formatAmount(value)} L / ${formatAmount(MOLAR_GAS_VOLUME)} L/mol = ${formatAmount(value / MOLAR_GAS_VOLUME)} mol`
+        }];
+      }
+      if (quantity === "particles") {
+        return [{
+          value: value / AVOGADRO_CONSTANT,
+          calculation: `n = N / Nₐ = ${particleFormatter.format(value)} / 6,02214076 × 10²³ = ${formatAmount(value / AVOGADRO_CONSTANT)} mol`
+        }];
+      }
+      return [];
+    });
+    if (moleCandidates.length === 0) {
+      conversionResult.textContent = "Für die Berechnung von n aus einer Masse gib M ein.";
+      return;
+    }
+
+    const moles = moleCandidates[0].value;
+    if (!Number.isFinite(moles)) {
+      conversionResult.textContent = "Mit diesen Werten ist keine endliche Stoffmenge berechenbar.";
+      return;
+    }
+    const inconsistentValues = moleCandidates.some(({ value }) =>
+      Math.abs(value - moles) > Math.max(Math.abs(moles), Math.abs(value), 1e-12) * 0.01
+    );
+    if (inconsistentValues) {
+      conversionResult.textContent = "Die eingegebenen Werte passen nicht zusammen. Prüfe die Werte.";
+      return;
+    }
+
+    const knownByQuantity = Object.fromEntries(knownValues.map(({ quantity, value }) => [quantity, value]));
+    const results = [
+      {
+        label: "Stoffmenge",
+        value: knownByQuantity.moles !== undefined
+          ? `n = ${formatAmount(knownByQuantity.moles)} mol (gegeben)`
+          : moleCandidates[0].calculation
+      }
+    ];
+    if (knownByQuantity.mass !== undefined) {
+      results.push({ label: "Masse", value: `m = ${formatAmount(knownByQuantity.mass)} g (gegeben)` });
+    } else if (hasMolarMass) {
+      const mass = moles * molarMass;
+      results.push({
+        label: "Masse",
+        value: Number.isFinite(mass)
+          ? `m = n · M = ${formatAmount(moles)} mol · ${formatAmount(molarMass)} g/mol = ${formatAmount(mass)} g`
+          : "Ausserhalb des darstellbaren Zahlenbereichs"
+      });
+    } else {
+      results.push({ label: "Masse", value: "M eingeben, um m zu berechnen" });
+    }
+    if (knownByQuantity.mass !== undefined && moles > 0) {
+      const calculatedMolarMass = knownByQuantity.mass / moles;
+      results.push({
+        label: "Molare Masse",
+        value: Number.isFinite(calculatedMolarMass)
+          ? `M = m / n = ${formatAmount(knownByQuantity.mass)} g / ${formatAmount(moles)} mol = ${formatAmount(calculatedMolarMass)} g/mol`
+          : "Ausserhalb des darstellbaren Zahlenbereichs"
+      });
+    } else if (hasMolarMass) {
+      results.push({ label: "Molare Masse", value: `M = ${formatAmount(molarMass)} g/mol (gegeben)` });
+    } else {
+      results.push({
+        label: "Molare Masse",
+        value: moles === 0 && knownByQuantity.mass !== undefined
+          ? "Bei n = 0 mol nicht bestimmbar"
+          : "m und n eingeben, um M zu berechnen"
+      });
+    }
+    if (knownByQuantity.volume !== undefined) {
+      results.push({ label: "Gasvolumen", value: `V = ${formatAmount(knownByQuantity.volume)} L (gegeben)` });
+    } else {
+      const volume = moles * MOLAR_GAS_VOLUME;
+      results.push({
+        label: "Gasvolumen",
+        value: Number.isFinite(volume)
+          ? `V = n · Vₘ = ${formatAmount(moles)} mol · ${formatAmount(MOLAR_GAS_VOLUME)} L/mol = ${formatAmount(volume)} L`
+          : "Ausserhalb des darstellbaren Zahlenbereichs"
+      });
+    }
+    if (knownByQuantity.particles !== undefined) {
+      results.push({
+        label: "Teilchenzahl",
+        value: `N = ${particleFormatter.format(knownByQuantity.particles)} (gegeben)`
+      });
+    } else {
+      const particles = moles * AVOGADRO_CONSTANT;
+      results.push({
+        label: "Teilchenzahl",
+        value: Number.isFinite(particles)
+          ? `N = n · Nₐ = ${formatAmount(moles)} mol · 6,022 × 10²³ mol⁻¹ = ${particleFormatter.format(particles)} Teilchen`
+          : "Ausserhalb des darstellbaren Zahlenbereichs"
+      });
+    }
+    const table = document.createElement("table");
+    table.className = "amount-converter-results-table";
+    table.innerHTML = "<thead><tr><th scope=\"col\">Grösse</th><th scope=\"col\">Wert / Berechnung</th></tr></thead>";
+    const body = document.createElement("tbody");
+    results.forEach(({ label, value }) => {
+      const row = document.createElement("tr");
+      const heading = document.createElement("th");
+      heading.scope = "row";
+      heading.textContent = label;
+      const result = document.createElement("td");
+      result.textContent = value;
+      row.append(heading, result);
+      body.append(row);
+    });
+    table.append(body);
+    conversionResult.replaceChildren(table);
   }
 
   function updateEquilibriumConditions() {
@@ -1760,10 +1861,10 @@
   equilibriumTemperature.addEventListener("input", updateEquilibriumConditions);
   equilibriumPressure.addEventListener("input", updateEquilibriumConditions);
   equilibriumCatalyst.addEventListener("change", updateEquilibriumConditions);
-  conversionValue.addEventListener("input", calculateAmountConversions);
-  conversionUnit.addEventListener("change", calculateAmountConversions);
+  Object.values(conversionQuantityInputs).forEach((input) =>
+    input.addEventListener("input", calculateAmountConversions)
+  );
   conversionMolarMass.addEventListener("input", calculateAmountConversions);
-  conversionMolarVolume.addEventListener("input", calculateAmountConversions);
   equilibriumPlay.addEventListener("click", () => {
     equilibriumRunning = !equilibriumRunning;
     const playLabel = equilibriumRunning ? "Simulation pausieren" : "Simulation fortsetzen";

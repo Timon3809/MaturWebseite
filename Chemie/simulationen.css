@@ -180,12 +180,21 @@
 .amount-converter { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; max-width: 640px; padding-top: 20px; }
 .amount-converter-field { display: grid; align-content: start; gap: 6px; }
 .amount-converter-field label { color: #65685f; font-size: 11px; font-weight: 600; }
+.amount-converter-hint { color: #74776d; font-size: 10px; line-height: 1.45; }
 .amount-converter-input { display: flex; align-items: center; gap: 9px; }
 .amount-converter-input input { min-width: 0; width: 100%; }
 .amount-converter-input span { color: #74776d; font-size: 11px; }
-.amount-converter-formula, .amount-converter output { grid-column: 1 / -1; }
+.amount-converter-inputs-heading, .amount-converter-formula, .amount-converter-result { grid-column: 1 / -1; }
+.amount-converter-inputs-heading { margin: 0 0 -7px; color: #38443c; font: 600 16px var(--display); }
+.amount-converter-known-field .amount-converter-input span { min-width: 62px; }
 .amount-converter-formula { margin: 0; color: #74776d; font-size: 10px; }
-.amount-converter output { min-height: 70px; border-radius: 5px; background: #f4f3ed; padding: 12px; color: #424a42; font-size: 11px; line-height: 1.7; white-space: pre-line; }
+.amount-converter-results-heading { grid-column: 1 / -1; margin: 3px 0 -7px; color: #38443c; font: 600 16px var(--display); }
+.amount-converter-result { min-height: 70px; border-radius: 5px; background: #f4f3ed; padding: 12px; color: #424a42; font-size: 11px; line-height: 1.6; }
+.amount-converter-results-table { width: 100%; border-collapse: collapse; table-layout: fixed; text-align: left; }
+.amount-converter-results-table th, .amount-converter-results-table td { border-bottom: 1px solid #e1dfd6; padding: 7px 8px; vertical-align: top; overflow-wrap: anywhere; }
+.amount-converter-results-table thead th { color: #38443c; font-weight: 600; }
+.amount-converter-results-table tbody th { width: 28%; color: #50584f; font-weight: 600; }
+.amount-converter-results-table tr:last-child > * { border-bottom: 0; }
 .equilibrium-product-controls .button:disabled { border-color: #e8e5dc; background: #f3f2ee; color: #a3a39b; cursor: not-allowed; opacity: .7; }
 .nucleon-proton circle { stroke: #a94839; stroke-width: .8; }
 .nucleon-neutron circle { stroke: #5e6a62; stroke-width: .8; }

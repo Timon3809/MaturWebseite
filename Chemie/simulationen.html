@@ -244,32 +244,33 @@
               <section class="conversion-view" id="conversion-view" aria-label="Stoffmengen umrechnen" hidden>
                 <div class="equilibrium-intro">
                   <span class="equilibrium-equation">Stoffmenge, Masse, Gasvolumen und Teilchenzahl</span>
-                  <p>Wähle die bekannte Grösse und gib die nötigen Stoffdaten ein. Für Masse wird die molare Masse benötigt; für Gasvolumen das zum Druck und zur Temperatur passende molare Gasvolumen.</p>
+                  <p>Gib genau zwei Grössen ein. Die übrigen werden berechnet.</p>
                 </div>
                 <div class="amount-converter">
-                  <div class="amount-converter-field">
-                    <label for="conversion-value">Bekannter Wert</label>
-                    <input class="field-control" id="conversion-value" type="number" min="0" step="any" value="1">
+                  <h3 class="amount-converter-inputs-heading">Bekannte Werte</h3>
+                  <div class="amount-converter-field amount-converter-known-field">
+                    <label for="conversion-moles">Stoffmenge n</label>
+                    <div class="amount-converter-input"><input class="field-control" id="conversion-moles" type="number" min="0" step="any"><span>mol</span></div>
                   </div>
-                  <div class="amount-converter-field">
-                    <label for="conversion-unit">Einheit</label>
-                    <select class="field-control" id="conversion-unit">
-                      <option value="mol">mol</option>
-                      <option value="g">g (Masse)</option>
-                      <option value="L">L (Gasvolumen)</option>
-                      <option value="particles">Teilchen</option>
-                    </select>
+                  <div class="amount-converter-field amount-converter-known-field">
+                    <label for="conversion-mass">Masse m</label>
+                    <div class="amount-converter-input"><input class="field-control" id="conversion-mass" type="number" min="0" step="any"><span>g</span></div>
                   </div>
-                  <div class="amount-converter-field">
+                  <div class="amount-converter-field amount-converter-known-field">
+                    <label for="conversion-volume">Gasvolumen V</label>
+                    <div class="amount-converter-input"><input class="field-control" id="conversion-volume" type="number" min="0" step="any"><span>L</span></div>
+                  </div>
+                  <div class="amount-converter-field amount-converter-known-field">
+                    <label for="conversion-particles">Teilchenzahl N</label>
+                    <div class="amount-converter-input"><input class="field-control" id="conversion-particles" type="number" min="0" step="1"><span>Teilchen</span></div>
+                  </div>
+                  <div class="amount-converter-field amount-converter-known-field">
                     <label for="conversion-molar-mass">Molare Masse M</label>
                     <div class="amount-converter-input"><input class="field-control" id="conversion-molar-mass" type="number" min="0" step="any" placeholder="z. B. 18"><span>g/mol</span></div>
                   </div>
-                  <div class="amount-converter-field">
-                    <label for="conversion-molar-volume">Molares Gasvolumen Vₘ</label>
-                    <div class="amount-converter-input"><input class="field-control" id="conversion-molar-volume" type="number" min="0" step="any" placeholder="z. B. 24"><span>L/mol</span></div>
-                  </div>
-                  <p class="amount-converter-formula">m = n · M &nbsp; | &nbsp; V = n · Vₘ &nbsp; | &nbsp; N = n · N<sub>A</sub></p>
-                  <output id="conversion-result" aria-live="polite"></output>
+                  <p class="amount-converter-formula">n = m / M &nbsp; | &nbsp; n = V / (24 L/mol) &nbsp; | &nbsp; n = N / N<sub>A</sub><br>m = n · M &nbsp; | &nbsp; V = n · 24 L/mol &nbsp; | &nbsp; N = n · N<sub>A</sub></p>
+                  <h3 class="amount-converter-results-heading">Berechnete Werte</h3>
+                  <div class="amount-converter-result" id="conversion-result" role="status" aria-live="polite"></div>
                 </div>
               </section>
             </section>
