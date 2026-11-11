@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simulationen | Chemie</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="simulationen.css">
+    <script src="Scripts/periodic-elements-data.js" defer></script>
+    <script src="Scripts/simulationen.js" defer></script>
+    <script src="../site-nav.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" data-nav-section="chemie" data-nav-page="models"></aside>
+      <div class="workspace">
+        <header><div class="breadcrumb"><a href="../index.html">VORMATUR</a><span class="breadcrumb-divider">/</span><a href="index.html">CHEMIE</a><span class="breadcrumb-divider">/</span><span>SIMULATIONEN</span></div></header>
+        <main>
+          <section class="content-view molecule-page">
+            <div class="page-heading">
+              <span class="eyebrow dark-eyebrow">ENTDECKEN / 04</span>
+              <h1>Simulationen</h1>
+            </div>
+            <section class="molecule-explorer" aria-label="Chemische Modelle und Simulationen erkunden">
+              <div class="model-mode-switch" role="group" aria-label="Modelltyp wählen">
+                <button class="model-mode-button" id="atom-mode" type="button" aria-pressed="false">Atom</button>
+                <button class="model-mode-button is-active" id="molecule-mode" type="button" aria-pressed="true">Molekül</button>
+                <button class="model-mode-button" id="equilibrium-mode" type="button" aria-pressed="false">Reaktionen</button>
+                <button class="model-mode-button" id="conversion-mode" type="button" aria-pressed="false">Rechner</button>
+              </div>
+              <div id="molecule-view">
+                <div class="molecule-toolbar">
+                  <label for="molecule-select">Molekül wählen</label>
+                  <select class="field-control" id="molecule-select"></select>
+                </div>
+                <div class="model-mode-switch molecule-representation-switch" role="group" aria-label="Moleküldarstellung wählen">
+                  <button class="model-mode-button is-active" id="ball-stick-representation" type="button" aria-pressed="true">Kugel-Stab</button>
+                  <button class="model-mode-button" id="structural-representation" type="button" aria-pressed="false">Strukturformel</button>
+                  <button class="model-mode-button" id="wedge-representation" type="button" aria-pressed="false">Keilstrich</button>
+                  <button class="model-mode-button" id="skeletal-representation" type="button" aria-pressed="false">Skelettformel</button>
+                </div>
+                <div class="molecule-layout">
+                <div class="molecule-stage">
+                  <div class="molecule-stage-heading">
+                    <div><h2 id="molecule-name"></h2><p id="molecule-formula"></p></div>
+                    <span class="molecule-shape-tag" id="molecule-shape"></span>
+                  </div>
+                  <svg id="molecule-canvas" class="molecule-canvas" viewBox="0 0 720 470" role="group" aria-label="Drehbares Molekülmodell mit Elektronenpaaren. Mit Maus oder Touch ziehen, mit Pfeiltasten drehen.">
+                    <defs>
+                      <radialGradient id="atom-carbon" cx="32%" cy="28%"><stop offset="0" stop-color="#9ca7a1"/><stop offset="1" stop-color="#47544e"/></radialGradient>
+                      <radialGradient id="atom-hydrogen" cx="32%" cy="28%"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#cfd2cc"/></radialGradient>
+                      <radialGradient id="atom-oxygen" cx="32%" cy="28%"><stop offset="0" stop-color="#f6a28e"/><stop offset="1" stop-color="#bd503d"/></radialGradient>
+                      <radialGradient id="atom-nitrogen" cx="32%" cy="28%"><stop offset="0" stop-color="#a1bbd5"/><stop offset="1" stop-color="#4f7194"/></radialGradient>
+                      <filter id="atom-shadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#27332d" flood-opacity=".18"/></filter>
+                      <filter id="electron-shadow" x="-80%" y="-80%" width="260%" height="260%"><feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#27332d" flood-opacity=".35"/></filter>
+                    </defs>
+                    <g id="molecule-structure"></g>
+                  </svg>
+                  <div class="molecule-legend" aria-label="Farblegende">
+                    <span data-element="C"><i class="atom-dot atom-dot-carbon"></i> Kohlenstoff</span>
+                    <span data-element="H"><i class="atom-dot atom-dot-hydrogen"></i> Wasserstoff</span>
+                    <span data-element="O"><i class="atom-dot atom-dot-oxygen"></i> Sauerstoff</span>
+                    <span data-element="N"><i class="atom-dot atom-dot-nitrogen"></i> Stickstoff</span>
+                    <span class="electron-pair-legend"><i class="electron-pair-symbol"><i></i><i></i></i> Freies Elektronenpaar</span>
+                  </div>
+                  <p class="molecule-instructions" id="molecule-instructions">Ziehen zum Drehen · Atom anklicken für Details · Pfeiltasten funktionieren ebenfalls</p>
+                </div>
+                <aside class="molecule-info" aria-live="polite">
+                  <button class="button button-outline electron-toggle" id="electron-toggle" type="button" aria-pressed="true">Freie Elektronenpaare ausblenden</button>
+                  <dl>
+                    <div><dt>Form</dt><dd id="molecule-geometry"></dd></div>
+                    <div><dt>Bindungswinkel</dt><dd id="molecule-angle"></dd></div>
+                    <div><dt>Dipol</dt><dd id="molecule-dipole"></dd></div>
+                  </dl>
+                  <p id="molecule-explanation"></p>
+                  <div class="molecule-atom-detail" id="atom-detail">
+                    <strong>Atome entdecken</strong>
+                    <span>Wähle ein Atom im Modell aus, um seine Bindungen zu sehen.</span>
+                  </div>
+                </aside>
+              </div>
+              <p class="molecule-note" id="molecule-note" hidden></p>
+              </div>
+              <section class="atom-view" id="atom-view" aria-label="Periodensystem und Atome erkunden" hidden>
+                <div class="molecule-toolbar atom-toolbar">
+                  <label for="element-search">Element suchen</label>
+                  <input class="field-control" id="element-search" type="search" placeholder="Name, Symbol oder Ordnungszahl" autocomplete="off">
+                  <span class="periodic-count" id="periodic-count" role="status">118 Elemente</span>
+                </div>
+                <div class="periodic-picker">
+                  <div class="periodic-table-scroll" tabindex="0" aria-label="Periodensystem. Auf kleinen Bildschirmen horizontal scrollen.">
+                    <div class="periodic-group-headings" aria-hidden="true"></div>
+                    <div class="periodic-table" id="periodic-table" role="group" aria-label="Periodensystem"></div>
+                  </div>
+                  <div class="periodic-legend" aria-label="Elementgruppen">
+                    <span><i class="periodic-swatch alkali"></i>Alkalimetalle</span>
+                    <span><i class="periodic-swatch alkaline"></i>Erdalkalimetalle</span>
+                    <span><i class="periodic-swatch transition"></i>Übergangsmetalle</span>
+                    <span><i class="periodic-swatch post-transition"></i>Weitere Metalle</span>
+                    <span><i class="periodic-swatch metalloid"></i>Halbmetalle</span>
+                    <span><i class="periodic-swatch nonmetal"></i>Nichtmetalle</span>
+                    <span><i class="periodic-swatch halogen"></i>Halogene</span>
+                    <span><i class="periodic-swatch noble-gas"></i>Edelgase</span>
+                    <span><i class="periodic-swatch lanthanide"></i>Lanthanoide</span>
+                    <span><i class="periodic-swatch actinide"></i>Actinoide</span>
+                  </div>
+                </div>
+                <div class="model-mode-switch atom-representation-switch" role="group" aria-label="Atomdarstellung wählen">
+                  <button class="model-mode-button is-active" id="bohr-representation" type="button" aria-pressed="true">Bohr-Modell</button>
+                  <button class="model-mode-button" id="core-representation" type="button" aria-pressed="false">Atomrumpf + Valenzelektronen</button>
+                </div>
+                <div class="atom-layout">
+                  <div class="atom-stage">
+                    <div class="molecule-stage-heading">
+                      <div><h2 id="element-name"></h2><p id="element-symbol"></p></div>
+                      <span class="molecule-shape-tag" id="atom-representation-label">Bohr-Modell</span>
+                    </div>
+                    <svg id="atom-canvas" class="atom-canvas" viewBox="0 0 720 560" role="img" aria-labelledby="atom-diagram-title atom-diagram-desc">
+                      <title id="atom-diagram-title"></title>
+                      <desc id="atom-diagram-desc"></desc>
+                      <defs>
+                        <radialGradient id="atom-nucleus-proton" cx="32%" cy="28%"><stop offset="0" stop-color="#f6a28e"/><stop offset="1" stop-color="#bd503d"/></radialGradient>
+                        <radialGradient id="atom-nucleus-neutron" cx="32%" cy="28%"><stop offset="0" stop-color="#b8beb9"/><stop offset="1" stop-color="#717c74"/></radialGradient>
+                      </defs>
+                      <g id="atom-shells"></g>
+                    </svg>
+                    <div class="atom-legend" aria-label="Farblegende">
+                      <span class="atom-legend-bohr-item"><i class="atom-dot atom-dot-oxygen"></i>Proton</span>
+                      <span class="atom-legend-bohr-item"><i class="atom-dot atom-dot-carbon"></i>Neutron</span>
+                      <span class="atom-legend-bohr-item"><i class="atom-dot atom-dot-hydrogen"></i>Elektron</span>
+                      <span class="atom-legend-core-item" hidden><i class="atom-dot atom-dot-core"></i>Atomrumpf</span>
+                      <span class="atom-legend-valence-item" hidden><i class="atom-dot atom-dot-valence"></i>Valenzelektron</span>
+                    </div>
+                  </div>
+                  <aside class="molecule-info atom-info" aria-live="polite">
+                    <dl>
+                      <div><dt>Ordnungszahl</dt><dd id="element-number"></dd></div>
+                      <div><dt>Nuklid</dt><dd id="element-isotope"></dd></div>
+                      <div><dt>Protonen</dt><dd id="element-protons"></dd></div>
+                      <div><dt>Neutronen</dt><dd id="element-neutrons"></dd></div>
+                      <div><dt>Elektronen</dt><dd id="element-electrons"></dd></div>
+                      <div><dt>Schalenbelegung</dt><dd id="element-shell-config"></dd></div>
+                      <div><dt>Äusserste Schale</dt><dd id="element-valence"></dd></div>
+                    </dl>
+                  </aside>
+                </div>
+                <p class="molecule-note" id="atom-representation-note">Schematische Darstellung eines neutralen Atoms im vereinfachten Bohr-Modell. Die Nuklide sind Beispiele; bei Elementen ohne stabile Isotope ist ein langlebiges Isotop gewählt. Kernteilchen, Abstände und Grössen sind nicht massstabsgetreu.</p>
+              </section>
+              <section class="equilibrium-view" id="equilibrium-view" aria-label="Reaktionen simulieren" hidden>
+                <div class="equilibrium-intro">
+                  <span class="equilibrium-equation">N₂ + 3 H₂ ⇌ 2 NH₃ + Wärme</span>
+                  <p>Die Ammoniaksynthese ist exotherm: Bei der Bildung von NH₃ wird Wärme frei. Im geschlossenen Gefäss laufen Hin- und Rückreaktion gleichzeitig ab.</p>
+                </div>
+                <div class="equilibrium-controls">
+                  <div class="equilibrium-control">
+                    <label for="equilibrium-temperature">Temperatur</label>
+                    <input id="equilibrium-temperature" type="range" min="0" max="2" step="1" value="1">
+                    <output id="equilibrium-temperature-label" for="equilibrium-temperature">Mittel</output>
+                  </div>
+                  <div class="equilibrium-control">
+                    <label for="equilibrium-pressure">Druck</label>
+                    <input id="equilibrium-pressure" type="range" min="0" max="2" step="1" value="1">
+                    <output id="equilibrium-pressure-label" for="equilibrium-pressure">Mittel</output>
+                  </div>
+                  <label class="equilibrium-catalyst">
+                    <input id="equilibrium-catalyst" type="checkbox">
+                    <span>Katalysator einsetzen</span>
+                  </label>
+                  <div class="equilibrium-product-controls" role="group" aria-label="Ammoniakmenge im Gefäss verändern">
+                    <button class="button button-outline" id="equilibrium-add-product" type="button" aria-label="Ein NH₃-Molekül zugeben">NH₃ +</button>
+                    <button class="button button-outline" id="equilibrium-remove-product" type="button" aria-label="Ein NH₃-Molekül entfernen">NH₃ −</button>
+                  </div>
+                </div>
+                <div class="equilibrium-layout">
+                  <div class="equilibrium-stage">
+                    <div class="molecule-stage-heading">
+                      <div><h2>Teilchen im Gefäss</h2><p id="equilibrium-time">t = 0 s</p></div>
+                      <span class="molecule-shape-tag">geschlossenes System</span>
+                    </div>
+                    <svg id="equilibrium-canvas" class="equilibrium-canvas" viewBox="0 0 800 540" role="img" aria-labelledby="equilibrium-diagram-title equilibrium-diagram-desc">
+                      <title id="equilibrium-diagram-title">Ammoniaksynthese im Reaktionsgleichgewicht</title>
+                      <desc id="equilibrium-diagram-desc">Moleküle von Stickstoff, Wasserstoff und Ammoniak in einem geschlossenen Gefäss.</desc>
+                      <rect class="equilibrium-vessel" x="20" y="24" width="760" height="492" rx="18"></rect>
+                      <g id="equilibrium-particles"></g>
+                    </svg>
+                    <div class="equilibrium-legend">
+                      <span><i class="atom-dot atom-dot-nitrogen"></i>Stickstoff (N₂ und NH₃)</span>
+                      <span><i class="atom-dot atom-dot-hydrogen"></i>Wasserstoff</span>
+                      <span><i class="equilibrium-species-marker"></i>NH₃-Molekül umrandet</span>
+                    </div>
+                    <div class="equilibrium-counts" aria-label="Teilchenzahlen">
+                      <span>N₂ <strong id="equilibrium-n2-count">20</strong></span>
+                      <span>H₂ <strong id="equilibrium-h2-count">60</strong></span>
+                      <span>NH₃ <strong id="equilibrium-nh3-count">0</strong></span>
+                    </div>
+                  </div>
+                  <div class="equilibrium-sidebar">
+                    <aside class="molecule-info equilibrium-info" aria-live="polite">
+                      <span class="eyebrow dark-eyebrow">REAKTIONSVERLAUF</span>
+                      <p class="equilibrium-status" id="equilibrium-status">Die Hinreaktion überwiegt.</p>
+                      <svg class="equilibrium-chart" id="equilibrium-chart" viewBox="0 0 395 160" role="img" aria-label="Verlauf des relativen Anteils von Stickstoff, Wasserstoff und Ammoniak über die Zeit. Die Kurven sind am rechten Ende beschriftet.">
+                        <path class="equilibrium-chart-grid" d="M42 25H345 M42 75H345 M42 125H345 M42 25V125"></path>
+                        <polyline class="equilibrium-line equilibrium-line-n2" id="equilibrium-line-n2" points=""></polyline>
+                        <polyline class="equilibrium-line equilibrium-line-h2" id="equilibrium-line-h2" points=""></polyline>
+                        <polyline class="equilibrium-line equilibrium-line-nh3" id="equilibrium-line-nh3" points=""></polyline>
+                        <text class="equilibrium-chart-line-label equilibrium-chart-line-label-n2" id="equilibrium-label-n2" x="350" y="125">N₂</text>
+                        <text class="equilibrium-chart-line-label equilibrium-chart-line-label-h2" id="equilibrium-label-h2" x="350" y="125">H₂</text>
+                        <text class="equilibrium-chart-line-label equilibrium-chart-line-label-nh3" id="equilibrium-label-nh3" x="350" y="125">NH₃</text>
+                        <text class="equilibrium-chart-label" x="193" y="146" text-anchor="middle">Zeit (s)</text>
+                        <text class="equilibrium-chart-label" x="34" y="28" text-anchor="end">1</text>
+                        <text class="equilibrium-chart-label" x="34" y="128" text-anchor="end">0</text>
+                        <text class="equilibrium-chart-label" x="10" y="75" text-anchor="middle" transform="rotate(-90 10 75)">Relativer Anteil</text>
+                      </svg>
+                      <div class="equilibrium-chart-legend">
+                        <span><i class="equilibrium-line-key equilibrium-line-n2"></i>N₂</span>
+                        <span><i class="equilibrium-line-key equilibrium-line-h2"></i>H₂</span>
+                        <span><i class="equilibrium-line-key equilibrium-line-nh3"></i>NH₃</span>
+                      </div>
+                      <section class="equilibrium-calculator" aria-labelledby="equilibrium-calculator-title">
+                        <h3 id="equilibrium-calculator-title">Kc aus dem Simulationsexperiment</h3>
+                        <p class="equilibrium-calculator-formula">Kc = [NH₃]² / ([N₂] · [H₂]³)</p>
+                        <output id="equilibrium-constant-result" aria-live="polite">Wird berechnet, sobald das Gleichgewicht erreicht ist.</output>
+                      </section>
+                      <div class="equilibrium-actions">
+                        <button class="button button-outline equilibrium-play" id="equilibrium-play" type="button" aria-label="Simulation pausieren" title="Simulation pausieren" aria-pressed="true">
+                          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path class="equilibrium-icon-pause" d="M8 5v14M16 5v14"></path><path class="equilibrium-icon-play" d="M8 5l11 7-11 7z"></path></svg>
+                        </button>
+                        <button class="button button-outline equilibrium-reset" id="equilibrium-reset" type="button" aria-label="Simulation zurücksetzen" title="Simulation zurücksetzen">
+                          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"></path><path d="M3 3v5h5"></path></svg>
+                        </button>
+                      </div>
+                    </aside>
+                    <section class="equilibrium-speed" id="equilibrium-speed" aria-labelledby="equilibrium-speed-title">
+                      <h2 id="equilibrium-speed-title">Reaktionsgeschwindigkeit</h2>
+                      <div class="equilibrium-rates">
+                        <div><span>Hinreaktion</span><span class="equilibrium-rate-track" role="meter" aria-label="Absolute Geschwindigkeit der Hinreaktion" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0"><i id="equilibrium-forward-rate"></i></span><output id="equilibrium-forward-absolute-rate"></output></div>
+                        <div><span>Rückreaktion</span><span class="equilibrium-rate-track" role="meter" aria-label="Absolute Geschwindigkeit der Rückreaktion" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0"><i id="equilibrium-reverse-rate"></i></span><output id="equilibrium-reverse-absolute-rate"></output></div>
+                        <p class="equilibrium-rate-scale">Skala der Balken: 0–3 Modell-Einheiten/s</p>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </section>
+              <section class="conversion-view" id="conversion-view" aria-label="Stoffmengen umrechnen" hidden>
+                <div class="equilibrium-intro">
+                  <span class="equilibrium-equation">Stoffmenge, Masse, Gasvolumen und Teilchenzahl</span>
+                  <p>Wähle die bekannte Grösse und gib die nötigen Stoffdaten ein. Für Masse wird die molare Masse benötigt; für Gasvolumen das zum Druck und zur Temperatur passende molare Gasvolumen.</p>
+                </div>
+                <div class="amount-converter">
+                  <div class="amount-converter-field">
+                    <label for="conversion-value">Bekannter Wert</label>
+                    <input class="field-control" id="conversion-value" type="number" min="0" step="any" value="1">
+                  </div>
+                  <div class="amount-converter-field">
+                    <label for="conversion-unit">Einheit</label>
+                    <select class="field-control" id="conversion-unit">
+                      <option value="mol">mol</option>
+                      <option value="g">g (Masse)</option>
+                      <option value="L">L (Gasvolumen)</option>
+                      <option value="particles">Teilchen</option>
+                    </select>
+                  </div>
+                  <div class="amount-converter-field">
+                    <label for="conversion-molar-mass">Molare Masse M</label>
+                    <div class="amount-converter-input"><input class="field-control" id="conversion-molar-mass" type="number" min="0" step="any" placeholder="z. B. 18"><span>g/mol</span></div>
+                  </div>
+                  <div class="amount-converter-field">
+                    <label for="conversion-molar-volume">Molares Gasvolumen Vₘ</label>
+                    <div class="amount-converter-input"><input class="field-control" id="conversion-molar-volume" type="number" min="0" step="any" placeholder="z. B. 24"><span>L/mol</span></div>
+                  </div>
+                  <p class="amount-converter-formula">m = n · M &nbsp; | &nbsp; V = n · Vₘ &nbsp; | &nbsp; N = n · N<sub>A</sub></p>
+                  <output id="conversion-result" aria-live="polite"></output>
+                </div>
+              </section>
+            </section>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

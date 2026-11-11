@@ -1,0 +1,239 @@
+.molecule-page > .page-heading > p { max-width: 650px; margin: 8px 0 0; color: #777970; font-size: 12px; line-height: 1.7; }
+.molecule-explorer { margin-top: 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--white); padding: 18px; }
+.model-mode-switch { display: flex; flex-wrap: wrap; gap: 5px; border-bottom: 1px solid var(--line); padding-bottom: 14px; }
+.model-mode-button { min-height: 35px; border: 1px solid transparent; border-radius: 5px; background: transparent; padding: 0 13px; color: #74776d; font-size: 11px; cursor: pointer; }
+.model-mode-button:hover { background: #f3f1ea; }
+.model-mode-button.is-active { border-color: #e0ddd3; background: #f1efe8; color: var(--ink); font-weight: 600; }
+.molecule-toolbar { display: flex; align-items: center; gap: 12px; border-bottom: 1px solid var(--line); padding-top: 16px; padding-bottom: 16px; }
+.atom-toolbar { padding-top: 16px; }
+.equilibrium-intro { padding: 17px 0 2px; }
+.equilibrium-equation { color: #38443c; font: 600 20px var(--display); letter-spacing: .2px; }
+.equilibrium-intro p { margin: 6px 0 0; color: #74776d; font-size: 11px; line-height: 1.65; }
+.equilibrium-controls { display: grid; grid-template-columns: minmax(130px, 1fr) minmax(130px, 1fr) auto auto; align-items: end; gap: 12px; border-bottom: 1px solid var(--line); padding: 15px 0; }
+.equilibrium-control { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 6px 10px; }
+.equilibrium-control label, .equilibrium-catalyst { color: #65685f; font-size: 10px; font-weight: 600; }
+.equilibrium-control input { grid-column: 1 / -1; width: 100%; accent-color: #66745f; }
+.equilibrium-control output { color: #777970; font: 9px var(--mono); }
+.equilibrium-catalyst { display: flex; align-items: center; gap: 6px; min-height: 34px; white-space: nowrap; }
+.equilibrium-catalyst input { accent-color: #66745f; }
+.equilibrium-product-controls { display: flex; gap: 8px; }
+.equilibrium-product-controls .button { min-height: 34px; padding: 0 10px; font-size: 9px; white-space: nowrap; }
+.equilibrium-controls > .button { min-height: 34px; padding: 0 10px; font-size: 9px; white-space: nowrap; }
+.molecule-toolbar label { color: #65685f; font-size: 11px; font-weight: 600; }
+.molecule-toolbar select { min-width: 190px; }
+.molecule-toolbar .button { margin-left: auto; }
+.molecule-representation-switch { margin-top: 12px; }
+.periodic-count { margin-left: auto; color: #777970; font: 10px var(--mono); white-space: nowrap; }
+.periodic-picker { padding-top: 15px; }
+.periodic-table-scroll { overflow-x: auto; padding-bottom: 5px; }
+.periodic-group-headings, .periodic-table { display: grid; grid-template-columns: 24px repeat(18, minmax(32px, 1fr)); gap: 4px; min-width: 700px; }
+.periodic-group-headings { margin-bottom: 4px; color: #909188; font: 9px var(--mono); text-align: center; }
+.periodic-table { grid-template-rows: repeat(7, 44px) 12px 44px 12px 44px; }
+.periodic-period-number { display: flex; align-items: center; justify-content: center; color: #909188; font: 9px var(--mono); }
+.periodic-element { display: grid; align-content: center; justify-items: center; gap: 1px; min-width: 0; border: 1px solid transparent; border-radius: 4px; padding: 2px 0; color: #30362f; cursor: pointer; transition: border-color .15s, transform .15s, filter .15s; }
+.periodic-element.is-lanthanide-start { border: 1px dashed #87769d; }
+.periodic-element.is-actinide-start { border: 1px dashed #a17b61; }
+.periodic-element:hover { z-index: 1; transform: translateY(-2px); filter: brightness(.97); }
+.periodic-element:focus-visible { z-index: 2; outline: 2px solid #53645a; outline-offset: 1px; }
+.periodic-element.is-selected { border-color: #d87955; box-shadow: inset 0 0 0 1px #d87955; }
+.periodic-element[hidden] { display: none; }
+.periodic-element-number { color: #737970; font: 8px var(--mono); }
+.periodic-element strong { font: 600 13px var(--display); }
+.periodic-element.alkali, .periodic-swatch.alkali { background-color: #f5dfd4; }
+.periodic-element.alkaline, .periodic-swatch.alkaline { background-color: #f4e9c7; }
+.periodic-element.transition, .periodic-swatch.transition { background-color: #e7e5d8; }
+.periodic-element.post-transition, .periodic-swatch.post-transition { background-color: #dfe9d6; }
+.periodic-element.metalloid, .periodic-swatch.metalloid { background-color: #d6e8df; }
+.periodic-element.nonmetal, .periodic-swatch.nonmetal { background-color: #dce8f0; }
+.periodic-element.halogen, .periodic-swatch.halogen { background-color: #e8def0; }
+.periodic-element.noble-gas, .periodic-swatch.noble-gas { background-color: #f2dce2; }
+.periodic-element.lanthanide, .periodic-swatch.lanthanide { background-color: #e8e0f2; }
+.periodic-element.actinide, .periodic-swatch.actinide { background-color: #eee0d5; }
+.periodic-legend { display: flex; flex-wrap: wrap; gap: 7px 13px; padding: 11px 1px 2px; color: #74776d; font-size: 9px; }
+.periodic-legend span { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
+.periodic-swatch { display: inline-block; width: 9px; height: 9px; border: 1px solid #d5d4cb; border-radius: 2px; }
+.molecule-layout { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(230px, .75fr); gap: 17px; padding-top: 17px; }
+.molecule-stage { min-width: 0; overflow: hidden; border: 1px solid #e8e5dc; border-radius: 7px; background: #fbfaf6; }
+.molecule-stage-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 15px 17px 5px; }
+.molecule-stage-heading h2 { margin: 0; font: 600 18px var(--display); letter-spacing: -.4px; }
+.molecule-stage-heading p { margin: 3px 0 0; color: #76796f; font: 12px var(--mono); }
+.molecule-shape-tag { border: 1px solid #dfe3d8; border-radius: 20px; background: #f3f5ef; padding: 6px 9px; color: #66745f; font: 9px var(--mono); text-align: center; }
+.molecule-canvas { display: block; width: 100%; max-height: 470px; touch-action: none; user-select: none; cursor: grab; }
+.molecule-canvas:not(.is-rotatable) { touch-action: auto; cursor: default; }
+.molecule-canvas.is-dragging { cursor: grabbing; }
+.molecule-bond { stroke: #828982; stroke-linecap: round; }
+.formula-bond-line, .formula-hash { stroke: #3f4841; stroke-width: 2.5; stroke-linecap: round; }
+.formula-wedge { fill: #3f4841; }
+.formula-atom-label { fill: #30362f; stroke: #fbfaf6; stroke-width: 6px; paint-order: stroke; text-anchor: middle; dominant-baseline: central; font: 600 19px var(--display); pointer-events: none; }
+.formula-atom-implicit .formula-atom-hit { pointer-events: all; }
+.formula-atom-hit { fill: transparent; stroke: transparent; }
+.formula-atom:focus-visible { outline: none; }
+.formula-atom:focus-visible .formula-atom-label, .formula-atom.is-selected .formula-atom-label { fill: #c65e43; }
+.formula-atom:focus-visible .formula-atom-hit, .formula-atom.is-selected .formula-atom-hit { fill: #d8795518; stroke: #d87955; stroke-width: 1.5; }
+.molecule-atom { cursor: pointer; }
+.molecule-atom circle { stroke: #fffefa; stroke-width: 2; filter: url(#atom-shadow); transition: stroke-width .15s, stroke .15s; }
+.molecule-atom:hover circle, .molecule-atom:focus circle, .molecule-atom.is-selected circle { stroke: #d87955; stroke-width: 4; outline: none; }
+.molecule-atom text { pointer-events: none; text-anchor: middle; dominant-baseline: central; font: 700 12px var(--display); }
+.electron-pair circle { fill: #28332d; stroke: #fffefa; stroke-width: 1.5; filter: url(#electron-shadow); }
+.molecule-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 17px; padding: 2px 12px 10px; color: #74776d; font-size: 9px; }
+.molecule-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.molecule-legend span[hidden] { display: none; }
+.electron-pair-symbol { display: inline-flex; align-items: center; gap: 2px; }
+.electron-pair-symbol i { display: block; width: 5px; height: 5px; border-radius: 50%; background: #28332d; }
+.atom-dot { display: inline-block; width: 10px; height: 10px; border: 1px solid #899087; border-radius: 50%; }
+.atom-dot-carbon { background: #59665f; }
+.atom-dot-hydrogen { background: #fff; }
+.atom-dot-oxygen { background: #d36854; }
+.atom-dot-nitrogen { background: #6886a5; }
+.atom-dot-core { background: #dce8f0; }
+.atom-dot-valence { width: 7px; height: 7px; border: 0; background: #30362f; }
+.atom-representation-switch { margin-top: 12px; }
+.atom-legend [hidden] { display: none; }
+.molecule-instructions { margin: 0; border-top: 1px solid #e8e5dc; padding: 10px 12px; color: #898b82; font-size: 9px; text-align: center; }
+.molecule-info { align-self: start; border: 1px solid var(--line); border-radius: 7px; background: #fffefa; padding: 17px; }
+.electron-toggle { width: 100%; margin-bottom: 12px; font-size: 10px; }
+.molecule-info dl { display: grid; gap: 0; margin: 0; }
+.molecule-info dl > div { display: grid; grid-template-columns: 105px 1fr; gap: 8px; border-top: 1px solid #efede7; padding: 11px 0; }
+.molecule-info dt { color: #81837a; font-size: 10px; }
+.molecule-info dd { margin: 0; color: #30362f; font-size: 10px; font-weight: 600; line-height: 1.55; }
+.molecule-info > p { margin: 8px 0 15px; color: #74776d; font-size: 10px; line-height: 1.7; }
+.molecule-atom-detail { display: grid; gap: 6px; border-radius: 5px; background: #f4f3ed; padding: 12px; }
+.molecule-atom-detail strong { color: #424a42; font: 600 11px var(--display); }
+.molecule-atom-detail span { color: #777970; font-size: 10px; line-height: 1.6; }
+.molecule-element-link { width: fit-content; color: #596c59; font-size: 10px; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.molecule-element-link:hover { color: #a64e39; }
+.molecule-element-link:focus-visible { border-radius: 2px; outline: 2px solid #53645a; outline-offset: 3px; }
+.molecule-note { margin: 13px 2px 0; color: #92938a; font-size: 9px; line-height: 1.6; }
+.molecule-note.is-warning { border: 1px solid #e8c1a8; border-left: 4px solid #c65e43; border-radius: 5px; background: #fff3e9; padding: 11px 14px; color: #49372f; font-size: 12px; font-weight: 600; }
+.molecule-note.is-warning::before { display: block; margin-bottom: 3px; color: #a64e39; content: "Wichtiger Hinweis"; font-size: 10px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.equilibrium-sidebar { display: grid; align-content: start; gap: 12px; min-width: 0; }
+.equilibrium-speed { display: grid; gap: 10px; align-content: start; min-width: 0; border: 1px solid var(--line); border-radius: 7px; background: #fffefa; padding: 14px; }
+.equilibrium-speed h2 { margin: 0; color: #424a42; font: 600 15px var(--display); }
+.equilibrium-speed .equilibrium-rates { min-width: 0; }
+.equilibrium-layout { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(240px, .75fr); gap: 17px; padding-top: 17px; }
+.equilibrium-stage { min-width: 0; overflow: hidden; border: 1px solid #e8e5dc; border-radius: 7px; background: #fbfaf6; }
+.equilibrium-canvas { display: block; width: 100%; height: auto; }
+.equilibrium-vessel { fill: #f5f4ed; stroke: #d7d7cc; stroke-width: 2; }
+.equilibrium-bond { stroke: #828982; stroke-width: 2.5; stroke-linecap: round; }
+.equilibrium-atom { stroke: #fffefa; stroke-width: 1.5; }
+.equilibrium-atom-n { fill: #6886a5; }
+.equilibrium-atom-h { fill: #fff; stroke: #9da69e; }
+.equilibrium-ammonia-highlight { fill: #f7e5d7; stroke: #d87955; stroke-width: 2; stroke-dasharray: 3 2; }
+.equilibrium-atom-label { fill: #fffefa; font: 700 8px var(--display); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.equilibrium-atom-label-h { fill: #53645a; font-size: 7px; }
+.equilibrium-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 18px; border-top: 1px solid #e8e5dc; padding: 10px; color: #74776d; font-size: 9px; }
+.equilibrium-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.equilibrium-species-marker { display: inline-block; width: 10px; height: 10px; border: 2px dashed #d87955; border-radius: 50%; background: #f7e5d7; }
+.equilibrium-counts { display: flex; justify-content: center; flex-wrap: wrap; gap: 9px 18px; padding: 0 12px 12px; }
+.equilibrium-counts span { display: inline-flex; align-items: baseline; gap: 5px; color: #737970; font-size: 9px; }
+.equilibrium-counts strong { color: #30362f; font: 600 12px var(--mono); }
+.equilibrium-info { display: flex; flex-direction: column; gap: 10px; }
+.equilibrium-info > .eyebrow { margin-bottom: 0; }
+.equilibrium-info > p { margin: 0; }
+.equilibrium-status { border-radius: 5px; background: #f4f3ed; padding: 9px 10px; color: #424a42 !important; font-weight: 600; }
+.equilibrium-rates { display: grid; gap: 9px; }
+.equilibrium-rates > div { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 7px 8px; color: #74776d; font-size: 9px; }
+.equilibrium-rates output { grid-column: 2; grid-row: 1; color: #424a42; font: 9px var(--mono); white-space: nowrap; }
+.equilibrium-rate-scale { margin: 0; color: #92938a; font-size: 9px; }
+.equilibrium-rate-track { display: block; height: 7px; overflow: hidden; border-radius: 5px; background: #efede7; }
+.equilibrium-rates .equilibrium-rate-track { grid-column: 1 / -1; grid-row: 2; }
+.equilibrium-rate-track i { display: block; width: 0; height: 100%; border-radius: inherit; background: #66745f; transition: width .2s; }
+#equilibrium-reverse-rate { background: #d87955; }
+.equilibrium-chart { display: block; width: 100%; overflow: visible; }
+.equilibrium-chart-grid { fill: none; stroke: #e8e5dc; stroke-width: 1; }
+.equilibrium-line { fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.equilibrium-line-n2 { stroke: #6886a5; }
+.equilibrium-line-h2 { stroke: #8a9b78; }
+.equilibrium-line-nh3 { stroke: #d87955; }
+.equilibrium-chart-label { fill: #92938a; font: 9px var(--mono); }
+.equilibrium-chart-line-label { stroke: #fffefa; stroke-width: 4px; paint-order: stroke; font: 600 12px var(--mono); }
+.equilibrium-chart-line-label-n2 { fill: #6886a5; }
+.equilibrium-chart-line-label-h2 { fill: #70815e; }
+.equilibrium-chart-line-label-nh3 { fill: #c76547; }
+.equilibrium-chart-legend { display: flex; justify-content: center; flex-wrap: wrap; gap: 9px 14px; color: #74776d; font-size: 9px; }
+.equilibrium-chart-legend span { display: inline-flex; align-items: center; gap: 5px; }
+.equilibrium-line-key { display: inline-block; width: 12px; height: 3px; border-radius: 2px; }
+.equilibrium-calculator { display: grid; gap: 7px; border-top: 1px solid var(--line); padding-top: 12px; }
+.equilibrium-calculator h3, .equilibrium-calculator-formula, .equilibrium-calculator-help, .equilibrium-calculator output { grid-column: 1 / -1; }
+.equilibrium-calculator h3 { margin: 0; color: #424a42; font: 600 12px var(--display); }
+.equilibrium-calculator-formula { margin: 0; color: #30362f; font: 11px var(--mono); }
+.equilibrium-calculator-help { margin: -4px 0 0; color: #74776d; font-size: 9px; }
+.equilibrium-calculator output { min-height: 30px; border-radius: 4px; background: #f4f3ed; padding: 8px; color: #424a42; font-size: 10px; line-height: 1.5; }
+.equilibrium-actions { display: flex; justify-content: center; gap: 10px; }
+.equilibrium-play, .equilibrium-reset { display: grid; width: 42px; height: 42px; place-items: center; padding: 9px; }
+.equilibrium-play svg, .equilibrium-reset svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
+#equilibrium-play[aria-pressed="true"] .equilibrium-icon-play, #equilibrium-play[aria-pressed="false"] .equilibrium-icon-pause { display: none; }
+.equilibrium-icon-play { fill: currentColor !important; stroke: none !important; }
+.atom-layout { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(230px, .75fr); gap: 17px; padding-top: 17px; }
+.atom-stage { min-width: 0; overflow: hidden; border: 1px solid #e8e5dc; border-radius: 7px; background: #fbfaf6; }
+.atom-canvas { display: block; width: 100%; max-height: 560px; }
+.electron-shell { fill: none; stroke: #8fa0a0; stroke-width: 1.5; stroke-dasharray: 4 4; }
+.shell-label { fill: #737970; font: 11px var(--mono); }
+.atom-electron circle { fill: #fffefa; stroke: #53645a; stroke-width: 1.5; }
+.atom-electron text, .nucleon text { dominant-baseline: central; text-anchor: middle; font: 700 11px var(--display); pointer-events: none; }
+.nucleon text { font-size: 9px; }
+.atom-core-representation { fill: #dce8f0; stroke: #6886a5; stroke-width: 2; }
+.atom-valence-ring { fill: none; stroke: #e65d50; stroke-width: 3; }
+.atom-core-symbol { fill: #30362f; font: 600 32px var(--display); text-anchor: middle; dominant-baseline: central; }
+.atom-core-charge { fill: #66745f; font: 600 15px var(--mono); text-anchor: middle; dominant-baseline: central; }
+.valence-electron-dot { fill: #30362f; stroke: #fffefa; stroke-width: 1.5; }
+.amount-converter { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; max-width: 640px; padding-top: 20px; }
+.amount-converter-field { display: grid; align-content: start; gap: 6px; }
+.amount-converter-field label { color: #65685f; font-size: 11px; font-weight: 600; }
+.amount-converter-input { display: flex; align-items: center; gap: 9px; }
+.amount-converter-input input { min-width: 0; width: 100%; }
+.amount-converter-input span { color: #74776d; font-size: 11px; }
+.amount-converter-formula, .amount-converter output { grid-column: 1 / -1; }
+.amount-converter-formula { margin: 0; color: #74776d; font-size: 10px; }
+.amount-converter output { min-height: 70px; border-radius: 5px; background: #f4f3ed; padding: 12px; color: #424a42; font-size: 11px; line-height: 1.7; white-space: pre-line; }
+.equilibrium-product-controls .button:disabled { border-color: #e8e5dc; background: #f3f2ee; color: #a3a39b; cursor: not-allowed; opacity: .7; }
+.nucleon-proton circle { stroke: #a94839; stroke-width: .8; }
+.nucleon-neutron circle { stroke: #5e6a62; stroke-width: .8; }
+.atom-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 18px; border-top: 1px solid #e8e5dc; padding: 12px; color: #74776d; font-size: 9px; }
+.atom-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.atom-info { align-self: start; }
+.atom-info dl > div { grid-template-columns: 112px 1fr; }
+.atom-info > p { margin-bottom: 0; }
+
+@media (max-width: 900px) {
+  .molecule-layout { grid-template-columns: minmax(0, 1fr); }
+  .atom-layout { grid-template-columns: minmax(0, 1fr); }
+  .equilibrium-layout { grid-template-columns: minmax(0, 1fr); }
+  #molecule-view .molecule-info { display: grid; grid-template-columns: 1fr 1fr; column-gap: 18px; }
+  #molecule-view .molecule-info .electron-toggle { grid-column: 1 / -1; }
+  #molecule-view .molecule-info dl { grid-column: 1 / 2; grid-row: 2 / span 2; }
+  #molecule-view .molecule-info > p { grid-column: 2 / 3; grid-row: 2; margin-top: 0; }
+  #molecule-view .molecule-info .molecule-atom-detail { grid-column: 2 / 3; grid-row: 3; }
+}
+@media (max-width: 560px) {
+  .molecule-explorer { padding: 11px; }
+  .molecule-toolbar { align-items: stretch; flex-wrap: wrap; gap: 8px; }
+  .molecule-toolbar label { align-self: center; }
+  .molecule-toolbar select { min-width: 0; flex: 1; }
+  .molecule-toolbar .button { width: 100%; margin-left: 0; }
+  .molecule-layout { gap: 10px; padding-top: 11px; }
+  .molecule-stage-heading { align-items: flex-start; padding-right: 10px; padding-left: 12px; }
+  .molecule-stage-heading h2 { font-size: 16px; }
+  .molecule-shape-tag { max-width: 120px; font-size: 8px; }
+  .molecule-info { display: block; padding: 13px; }
+  .molecule-info dl > div { grid-template-columns: 95px 1fr; }
+  .molecule-info > p { margin-top: 10px; }
+  .molecule-legend { gap: 7px 11px; font-size: 8px; }
+  .model-mode-button { flex: 1 1 30%; padding: 0 6px; font-size: 9px; }
+  .atom-layout { gap: 10px; padding-top: 11px; }
+  .atom-info dl > div { grid-template-columns: 105px 1fr; }
+  .equilibrium-controls { grid-template-columns: 1fr 1fr; gap: 12px 9px; }
+  .equilibrium-catalyst { white-space: normal; }
+  .equilibrium-product-controls { grid-column: 1 / -1; }
+  .equilibrium-product-controls .button { flex: 1; }
+  .amount-converter { grid-template-columns: minmax(0, 1fr); }
+  .equilibrium-controls > .button { width: 100%; }
+  .equilibrium-equation { font-size: 17px; }
+  .equilibrium-layout { gap: 10px; padding-top: 11px; }
+  .equilibrium-speed { grid-template-columns: 1fr; gap: 7px; }
+  .equilibrium-speed h2 { grid-column: auto; }
+  .atom-toolbar { align-items: center; }
+  .atom-toolbar input { min-width: 0; flex: 1; }
+  .periodic-count { width: 100%; margin-left: 0; }
+  .periodic-legend { gap: 7px 10px; font-size: 8px; }
+}

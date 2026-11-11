@@ -27,6 +27,7 @@
         { label: "Übersicht",         href: "index.html",                    icon: "⚗", page: "overview" },
         { label: "Zusammenfassungen", href: "zusammenfassungen.html",  icon: "▧", page: "summaries" },
         { label: "Glossar",           href: "glossar.html",            icon: "⌕", page: "glossary" },
+        { label: "Simulationen", href: "simulationen.html", icon: "⚛", page: "models" },
         { label: "Dateien",           href: "dateien.html",            icon: "↓", page: "files" }
       ]
     },
