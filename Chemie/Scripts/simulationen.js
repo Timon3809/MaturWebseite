@@ -163,9 +163,9 @@
       ],
       bonds: [
         { from: 0, to: 1, stereo: "wedge" }, { from: 1, to: 2 },
-        { from: 0, to: 3 }, { from: 3, to: 4 }, { from: 3, to: 5 }, { from: 3, to: 6 },
-        { from: 0, to: 7 }, { from: 7, to: 8 }, { from: 7, to: 9 },
-        { from: 7, to: 10 }, { from: 10, to: 11 }, { from: 10, to: 12 }, { from: 10, to: 13 },
+        { from: 0, to: 3 }, { from: 3, to: 4, stereo: "wedge" }, { from: 5, to: 3, stereo: "dash" }, { from: 3, to: 6 },
+        { from: 0, to: 7 }, { from: 7, to: 8, stereo: "wedge" }, { from: 9, to: 7, stereo: "dash" },
+        { from: 7, to: 10 }, { from: 10, to: 11 }, { from: 10, to: 12, stereo: "wedge" }, { from: 13, to: 10, stereo: "dash" },
         { from: 0, to: 14, stereo: "dash" }
       ],
       lonePairs: [
@@ -515,6 +515,26 @@
       if (molecule.id === "water") {
         return { x: atom.x, y: atom.z, depth: atom.y };
       }
+      if (molecule.id === "butan-2-ol" && moleculeRepresentation === "wedge") {
+        const positions = [
+          { x: 0, y: 0 },
+          { x: -0.731354, y: 0.681998 },
+          { x: -1.57935, y: 0.1521 },
+          { x: -0.760406, y: -0.649448 },
+          { x: -1.626431, y: -0.149448 },
+          { x: -0.933982, y: -1.515473 },
+          { x: 0.224272, y: -0.991429 },
+          { x: 0.866025, y: -0.5 },
+          { x: 0.366025, y: -1.366025 },
+          { x: 1.573132, y: -1.207107 },
+          { x: 1.626431, y: 0.149448 },
+          { x: 2.626431, y: 0.149448 },
+          { x: 2.126431, y: 1.015473 },
+          { x: 1.126431, y: 1.015473 },
+          { x: 0.594823, y: 0.803857 }
+        ];
+        return { ...positions[index], depth: 0 };
+      }
       if (molecule.id === "butan-2-ol" && moleculeRepresentation === "structural") {
         const positions = [
           { x: 0, y: 0 },
@@ -548,14 +568,21 @@
       return { x: atom.x + atom.z * 0.55, y: atom.y, depth: atom.z };
     });
     const bounds = moleculeRepresentation === "skeletal"
+      || moleculeRepresentation === "wedge" && molecule.id === "butan-2-ol"
       ? rotated.filter((point, index) => {
         const atom = molecule.atoms[index];
         if (atom.element !== "H") {
           return true;
         }
+        if (moleculeRepresentation === "wedge" && molecule.id === "butan-2-ol") {
+          return true;
+        }
         return molecule.bonds.some((bond) => {
           const otherIndex = bond.from === index ? bond.to : bond.to === index ? bond.from : -1;
-          return otherIndex >= 0 && molecule.atoms[otherIndex].element !== "C";
+          return otherIndex >= 0 && (
+            molecule.atoms[otherIndex].element !== "C"
+            || moleculeRepresentation === "wedge" && Boolean(bond.stereo)
+          );
         });
       })
       : rotated;
@@ -577,7 +604,9 @@
   function renderFlatLonePair(pair, molecule, positions, index) {
     const atomPosition = positions[pair.atom];
     let direction;
-    if (molecule.id === "water") {
+    if (molecule.id === "butan-2-ol" && moleculeRepresentation === "wedge") {
+      direction = index === 0 ? { x: -0.5, y: -0.866 } : { x: 0.5, y: -0.866 };
+    } else if (molecule.id === "water") {
       direction = index === 0 ? { x: -0.72, y: 0.69 } : { x: 0.72, y: 0.69 };
     } else {
       direction = { x: pair.direction.x + pair.direction.z * 0.55, y: -pair.direction.y };
@@ -625,10 +654,11 @@
       const isAmmoniaWedge = molecule.id === "ammonia" && bond.from === 0 && bond.to === 2;
       const isMethaneStereoBond = molecule.id === "methane";
       const isPropaneStereoBond = molecule.id === "propane";
+      const isButan2OlStereoBond = molecule.id === "butan-2-ol";
       const narrowEndpoint = stereo === "wedge" ? start : end;
       const wideEndpoint = stereo === "wedge" ? end : start;
-      const narrowInset = isAmmoniaWedge ? 14 : isMethaneStereoBond || isPropaneStereoBond ? 16 : 0;
-      const wideInset = isAmmoniaWedge ? 15 : isMethaneStereoBond || isPropaneStereoBond ? 16 : 0;
+      const narrowInset = isAmmoniaWedge ? 14 : isMethaneStereoBond || isPropaneStereoBond || isButan2OlStereoBond ? 16 : 0;
+      const wideInset = isAmmoniaWedge ? 15 : isMethaneStereoBond || isPropaneStereoBond || isButan2OlStereoBond ? 16 : 0;
       const stereoDirection = {
         x: (wideEndpoint.x - narrowEndpoint.x) / length,
         y: (wideEndpoint.y - narrowEndpoint.y) / length
@@ -642,7 +672,7 @@
         y: wideEndpoint.y - stereoDirection.y * wideInset
       };
       const base = 1.5;
-      const broad = isAmmoniaWedge || isPropaneStereoBond ? 7 : 12;
+      const broad = isAmmoniaWedge || isPropaneStereoBond || isButan2OlStereoBond ? 7 : 12;
       if (stereo === "wedge") {
         group.append(svgElement("polygon", {
           class: "formula-wedge",
@@ -685,7 +715,7 @@
     return group;
   }
 
-  function renderFormulaAtom(atom, index, position, visible) {
+  function renderFormulaAtom(atom, index, position, visible, labelText = atom.element) {
     const group = svgElement("g", {
       class: `formula-atom${visible ? "" : " formula-atom-implicit"}${selectedAtom === index ? " is-selected" : ""}`,
       transform: `translate(${position.x} ${position.y})`,
@@ -697,7 +727,7 @@
     group.append(svgElement("circle", { class: "formula-atom-hit", r: "15" }));
     if (visible) {
       const label = svgElement("text", { class: "formula-atom-label", y: "1" });
-      label.textContent = atom.element;
+      label.textContent = labelText;
       group.append(label);
     }
     group.addEventListener("click", () => selectAtom(index));
@@ -715,6 +745,12 @@
     const positions = flatMoleculePositions(molecule);
     const showStructuralFallback = moleculeRepresentation === "skeletal" && molecule.id === "carbon-dioxide";
     const isSkeletal = moleculeRepresentation === "skeletal" && !showStructuralFallback;
+    const hydroxylOxygenIndices = new Set(isSkeletal
+      ? molecule.atoms.flatMap((atom, index) => atom.element === "O" && molecule.bonds.some((bond) => {
+        const otherIndex = bond.from === index ? bond.to : bond.to === index ? bond.from : -1;
+        return otherIndex >= 0 && molecule.atoms[otherIndex].element === "H";
+      }) ? [index] : [])
+      : []);
     const visibleAtoms = molecule.atoms.map((atom, index) => {
       if (showStructuralFallback) {
         return true;
@@ -723,7 +759,7 @@
         return true;
       }
       if (moleculeRepresentation === "wedge" && atom.element === "H") {
-        if (molecule.id === "formaldehyde" || molecule.id === "propane") {
+        if (molecule.id === "formaldehyde" || molecule.id === "propane" || molecule.id === "butan-2-ol") {
           return true;
         }
         const attachedBond = molecule.bonds.find((bond) => bond.from === index || bond.to === index);
@@ -750,6 +786,13 @@
       if (atom.element !== "H") {
         return true;
       }
+      if (hydroxylOxygenIndices.size > 0) {
+        const attachedBond = molecule.bonds.find((bond) => bond.from === index || bond.to === index);
+        const bondedIndex = attachedBond?.from === index ? attachedBond.to : attachedBond?.from;
+        if (bondedIndex !== undefined && hydroxylOxygenIndices.has(bondedIndex)) {
+          return false;
+        }
+      }
       const bondedAtom = molecule.bonds
         .filter((bond) => bond.from === index || bond.to === index)
         .map((bond) => molecule.atoms[bond.from === index ? bond.to : bond.from])
@@ -764,6 +807,12 @@
       const second = molecule.atoms[bond.to];
       const carbonHydrogenBond = (first.element === "C" && second.element === "H")
         || (first.element === "H" && second.element === "C");
+      const hydroxylBond = isSkeletal
+        && (first.element === "O" && second.element === "H" || first.element === "H" && second.element === "O")
+        && hydroxylOxygenIndices.has(first.element === "O" ? bond.from : bond.to);
+      if (hydroxylBond) {
+        return false;
+      }
       return !carbonHydrogenBond
         || moleculeRepresentation === "wedge"
           && (
@@ -771,18 +820,25 @@
             || molecule.id === "methane"
             || molecule.id === "formaldehyde"
             || molecule.id === "propane"
+            || molecule.id === "butan-2-ol"
           );
     });
     const elements = displayedBonds.map((bond) =>
       renderFlatBond(bond, molecule, positions, visibleAtoms, moleculeRepresentation)
     );
-    if (showLonePairs) {
+    if (showLonePairs && !isSkeletal) {
       (molecule.lonePairs || []).forEach((pair, index) =>
         elements.push(renderFlatLonePair(pair, molecule, positions, index))
       );
     }
     molecule.atoms.forEach((atom, index) => {
-      elements.push(renderFormulaAtom(atom, index, positions[index], visibleAtoms[index]));
+      elements.push(renderFormulaAtom(
+        atom,
+        index,
+        positions[index],
+        visibleAtoms[index],
+        hydroxylOxygenIndices.has(index) ? "OH" : atom.element
+      ));
     });
     elements.sort((left, right) => Number(left.dataset.depth) - Number(right.dataset.depth));
     structure.replaceChildren(...elements);
