@@ -17,10 +17,17 @@ const mapDetailTopic      = document.getElementById("mindmap-detail-topic");
 const mapFullscreenToggle = document.getElementById("mindmap-fullscreen");
 const learnView           = document.getElementById("glossary-learn-view");
 
-const mapWidth            = 2300;
-const mapHeight           = 1900;
-const mapCenterX          = mapWidth / 2;
-const mapCenterY          = mapHeight / 2;
+// Die Mindmap-Fläche wächst mit der Anzahl sichtbarer Begriffe: Bei vielen Begriffen werden
+// die Begriffe abwechselnd auf mehrere Ringe verteilt, damit sich die Knoten nicht überlagern.
+const termRadius          = 800;
+const termRingGap         = 150;
+const termSpacing         = 110;
+let termRings             = 1;
+let mapOuterRadius        = termRadius;
+let mapWidth              = 2300;
+let mapHeight             = 1900;
+let mapCenterX            = mapWidth / 2;
+let mapCenterY            = mapHeight / 2;
 let selectedTerm          = null;
 let selectedNode          = null;
 let mapScale              = 0.4;
@@ -98,12 +105,20 @@ function renderMindmap(entries) {
     return;
   }
 
+  termRings = Math.min(8, Math.max(1, Math.ceil((totalTerms * termSpacing) / (2 * Math.PI * termRadius))));
+  mapOuterRadius = termRadius + (termRings - 1) * termRingGap;
+  mapWidth = Math.max(2300, 2 * (mapOuterRadius + 200));
+  mapHeight = Math.max(1900, 2 * (mapOuterRadius + 150));
+  mapCenterX = mapWidth / 2;
+  mapCenterY = mapHeight / 2;
+  mapSurface.style.width = `${mapWidth}px`;
+  mapSurface.style.height = `${mapHeight}px`;
+
   const root = { name: window.historyData.glossaryMindmap.name };
   addMapNode(root, mapCenterX, mapCenterY, 0);
 
   const topicRadius = 240;
   const subcategoryRadius = 500;
-  const termRadius = 800;
   const firstAngle = -Math.PI / 2;
   let sectorStart = firstAngle;
 
@@ -127,8 +142,9 @@ function renderMindmap(entries) {
       subcategory.entries.forEach((entry, entryIndex) => {
         const angle = subcategoryStart +
           ((entryIndex + 0.5) / subcategory.entries.length) * subcategorySize;
-        const termX = mapCenterX + Math.cos(angle) * termRadius;
-        const termY = mapCenterY + Math.sin(angle) * termRadius;
+        const ringRadius = termRadius + (entryIndex % termRings) * termRingGap;
+        const termX = mapCenterX + Math.cos(angle) * ringRadius;
+        const termY = mapCenterY + Math.sin(angle) * ringRadius;
         const termNode = addMapNode(entry, termX, termY, 3, () => selectMindmapTerm(entry, termNode));
         drawMapLine(subcategoryX, subcategoryY, termX, termY, 3);
 
@@ -196,8 +212,9 @@ function updateMapTransform() {
 }
 
 function centerMindmap() {
-  const scaleX = (mapViewport.clientWidth - 60) / 1760;
-  const scaleY = (mapViewport.clientHeight - 60) / 1760;
+  const extent = 2 * (mapOuterRadius + 80);
+  const scaleX = (mapViewport.clientWidth - 60) / extent;
+  const scaleY = (mapViewport.clientHeight - 60) / extent;
   mapScale = Math.min(0.4, scaleX, scaleY);
   mapTranslateX = mapViewport.clientWidth / 2 - mapCenterX * mapScale;
   mapTranslateY = mapViewport.clientHeight / 2 - mapCenterY * mapScale;
@@ -206,7 +223,7 @@ function centerMindmap() {
 
 function zoomMindmap(nextScale, originX, originY) {
   const oldScale = mapScale;
-  mapScale = Math.max(0.35, Math.min(nextScale, 1.8));
+  mapScale = Math.max(0.15, Math.min(nextScale, 1.8));
   mapTranslateX = originX - (originX - mapTranslateX) * (mapScale / oldScale);
   mapTranslateY = originY - (originY - mapTranslateY) * (mapScale / oldScale);
   updateMapTransform();

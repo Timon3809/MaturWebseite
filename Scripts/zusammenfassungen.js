@@ -35,7 +35,9 @@ const topicNumber = (topic) => {
   return Number(number);
 };
 
-summaryList.innerHTML = summaryData.topics.map((topic) => {
+// Optionales Feld "group": Themen mit gleicher Gruppe (z. B. Neurobiologie, Genetik, Immunbiologie, Ökologie)
+// werden in eine aufklappbare Oberkategorie gepackt. Themen ohne group bleiben unverändert auf oberster Ebene.
+const renderTopic = (topic) => {
   const number = topicNumber(topic);
   const hasContent = topic.summary || topic.placeholder || topic.subtopics?.length;
   if (!hasContent) {
@@ -75,6 +77,30 @@ summaryList.innerHTML = summaryData.topics.map((topic) => {
           </div>
         ` : ""}
       </div>
+    </details>
+  `;
+};
+
+const renderedEntries = [];
+summaryData.topics.forEach((topic) => {
+  const last = renderedEntries[renderedEntries.length - 1];
+  if (topic.group && last?.group === topic.group) last.topics.push(topic);
+  else renderedEntries.push({ group: topic.group, topics: [topic] });
+});
+
+summaryList.innerHTML = renderedEntries.map((entry) => {
+  if (!entry.group) return entry.topics.map(renderTopic).join("");
+  const numbers = entry.topics.map(topicNumber);
+  const first = String(Math.min(...numbers)).padStart(2, "0");
+  const last = String(Math.max(...numbers)).padStart(2, "0");
+  return `
+    <details class="summary-category">
+      <summary>
+        <span class="summary-title">${escapeHtml(entry.group)}</span>
+        <span class="summary-category-count">${entry.topics.length} Themen · ${first}–${last}</span>
+        <span class="summary-toggle">+</span>
+      </summary>
+      <div class="summary-category-body">${entry.topics.map(renderTopic).join("")}</div>
     </details>
   `;
 }).join("");

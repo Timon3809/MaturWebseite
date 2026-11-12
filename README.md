@@ -29,7 +29,7 @@ Anschlussend `http://localhost:8080` öffnen.
 | **Geschichte** | vollständig | Zusammenfassungen, Glossar, ewige Daten, Dateien, Prüfungssimulator |
 | **Chemie** | Aufbau | Zusammenfassungen, Glossar, Dateien, Prüfungssimulator; Skripte zu Atombau und Molekularen Stoffen |
 | **Geographie** | aufgebaut | Zusammenfassungen in 5 Themen (Klimatologie, Geologie/Gletscher, Schweiz, Asien, USA) mit 123 Abbildungen, Glossar (Begriffe + Gesteine, nach Thema), Dateien |
-| **Biologie** | aufgebaut | Zusammenfassungen (Neurobiologie, Gentechnik, Genetik), Glossar (klassische Genetik), Dateien, Prüfungssimulator |
+| **Biologie** | aufgebaut | 27 Zusammenfassungen (Neurobiologie, Genetik, Immunbiologie, Ökologie) mit 83 Abbildungen, Glossar mit 355 Begriffen in 5 Kategorien, Dateien, Prüfungssimulator |
 | Mathe, PhysikSP, Deutsch, Französisch | in Vorbereitung | Matur-Fächer, noch nicht verfügbar |
 
 ## Funktionen
@@ -65,8 +65,13 @@ Die Lernbereiche (Übersicht, Zusammenfassungen, Glossar, Dateien, Prüfungssimu
 
 ### Biologie
 
-- **Zusammenfassungen** — Neurobiologie und Gentechnik (Nervensystem, Nervenzellen, Ruhe-/Aktionspotenzial, Genregulation, Gentechnik-Methoden) sowie Genetik (Mendel, Zytologie, Drosophila)
-- **Glossar** — Begriffe der klassischen Genetik, mit Suche und Mindmap
+- **Zusammenfassungen** — nach Gebieten gruppiert (Feld `group` in `topics`):
+  - **Neurobiologie** (Nervensystem, Nervenzellen, Ruhe-/Aktionspotenzial)
+  - **Genetik** (Mendel, Mitose/Meiose, Drosophila/Genkarten, Genwirkung und Mutationen, Humangenetik und Stammbäume, Molekulargenetik, Genregulation, Gentechnik)
+  - **Immunbiologie** (Infektion und Lymphsystem, unspezifische Abwehr, Antigene/Antikörper/MHC, humorale und zelluläre Antwort, Impfung, Allergien, ELISA)
+  - **Ökologie** (Umweltfaktoren, Temperaturanpassungen, Stoffkreisläufe, Energiefluss, Beziehungen und Nische, Konkurrenz, Populationen, Sukzession, Lotka-Volterra, Mensch und Umwelt)
+  - Abbildungen aus den Unterrichtsunterlagen in `Biologie/Resourcen/Bilder/` (mit Quellenangabe in der Bildunterschrift)
+- **Glossar** — Kategorien Klassische Genetik, Molekulargenetik & Gentechnik, Immunbiologie, Ökologie, Umweltbiologie; Suche, Themenfilter, Mindmap (mehrere Ringe bei vielen Begriffen) und Lernmodi
 - **Dateien**, **Prüfungssimulator** — angelegt, Inhalte folgen
 
 ## Projektstruktur
@@ -118,7 +123,7 @@ MaturWebseite/
     ├── dateien.html
     ├── pruefungssimulator.html
     └── Scripts/
-        ├── data.js                 # Glossar Genetik + Themen Neurobiologie, Gentechnik, Genetik
+        ├── data.js                 # Glossar (5 Kategorien) + 27 Themen (Neurobiologie, Genetik, Immunbiologie, Ökologie)
         ├── glossar.js
         └── zusammenfassungen.js
 ```
