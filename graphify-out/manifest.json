@@ -18,15 +18,15 @@
     "semantic_hash": "fdb8e89c302d988c6d9658561072914e"
   },
   "Biologie/Scripts/data.js": {
-    "mtime": 1793196389.7353463,
-    "seen": 1793385099.4626002,
-    "ast_hash": "a54b2ea782a0bf9dc56b643916e28e6b",
-    "semantic_hash": "a54b2ea782a0bf9dc56b643916e28e6b"
+    "mtime": 1794495436.099273,
+    "seen": 1794527117.2505445,
+    "ast_hash": "80d9314b2a323df3ff46640d8b58011d",
+    "semantic_hash": ""
   },
   "Biologie/Scripts/glossar.js": {
-    "mtime": 1793616063.8402348,
-    "seen": 1793618159.2077188,
-    "ast_hash": "900909ad3f02fc812015c21c167e15d2",
+    "mtime": 1794495436.1044009,
+    "seen": 1794527117.2505445,
+    "ast_hash": "64805abc855dad275e08b83c0a0b09ab",
     "semantic_hash": ""
   },
   "Biologie/Scripts/zusammenfassungen.js": {
@@ -36,10 +36,10 @@
     "semantic_hash": "6979916823e1cfc2ba9e8ef453c2676e"
   },
   "Chemie/Scripts/data.js": {
-    "mtime": 1793226618.1507027,
-    "seen": 1793385099.4626002,
-    "ast_hash": "d135aba577218fb5f8dc4dfeaa41b4a3",
-    "semantic_hash": "d135aba577218fb5f8dc4dfeaa41b4a3"
+    "mtime": 1794524581.064129,
+    "seen": 1794527117.2505445,
+    "ast_hash": "8c03302a52610c04d02dfe22da8b479c",
+    "semantic_hash": ""
   },
   "Chemie/Scripts/glossar-data.js": {
     "mtime": 1793226618.151885,
@@ -84,9 +84,9 @@
     "semantic_hash": "72c2863acebc6e8e7312c7dacef892df"
   },
   "Geographie/Scripts/glossar.js": {
-    "mtime": 1793616063.9091215,
-    "seen": 1793618159.2117107,
-    "ast_hash": "900909ad3f02fc812015c21c167e15d2",
+    "mtime": 1793697593.9042056,
+    "seen": 1794527117.2515738,
+    "ast_hash": "c60e1313550383fe872ae71481b8aab5",
     "semantic_hash": ""
   },
   "Geographie/Scripts/zusammenfassungen.js": {
@@ -132,16 +132,16 @@
     "semantic_hash": ""
   },
   "Scripts/zusammenfassungen.js": {
-    "mtime": 1793193979.315436,
-    "seen": 1793385099.4626002,
-    "ast_hash": "4e65db0cd815228cc9bd2e7caecee78e",
-    "semantic_hash": "4e65db0cd815228cc9bd2e7caecee78e"
+    "mtime": 1794524967.084739,
+    "seen": 1794527117.2525826,
+    "ast_hash": "e3f7bfe7fd7d7d00b5d79b5779c35958",
+    "semantic_hash": ""
   },
   "site-nav.js": {
-    "mtime": 1793226618.178008,
-    "seen": 1793385099.4626002,
-    "ast_hash": "c04ab367fa366e3c6b5a855ff88a57b3",
-    "semantic_hash": "c04ab367fa366e3c6b5a855ff88a57b3"
+    "mtime": 1794524581.0737765,
+    "seen": 1794527117.2525826,
+    "ast_hash": "c5093ce0e10b753bd78cf8c8a5c032e6",
+    "semantic_hash": ""
   },
   ".claude/CLAUDE.md": {
     "mtime": 1793351971.8794098,
@@ -162,10 +162,10 @@
     "semantic_hash": ""
   },
   "Biologie/index.html": {
-    "mtime": 1793196389.7353463,
-    "seen": 1793385099.4626002,
-    "ast_hash": "f3cc0557690a038d043e602985fbf423",
-    "semantic_hash": "f3cc0557690a038d043e602985fbf423"
+    "mtime": 1794524966.5721793,
+    "seen": 1794527117.2525826,
+    "ast_hash": "5ba7c6865d9b06b455f889799d06dfeb",
+    "semantic_hash": ""
   },
   "Biologie/pruefungssimulator.html": {
     "mtime": 1793191715.4609337,
@@ -186,10 +186,10 @@
     "semantic_hash": "67d88e9d0760c3ba54c75dfd9551c1c5"
   },
   "Chemie/dateien.html": {
-    "mtime": 1793226618.1569638,
-    "seen": 1793385099.4626002,
-    "ast_hash": "f720027f7ef333caa28060fe3288d74b",
-    "semantic_hash": "f720027f7ef333caa28060fe3288d74b"
+    "mtime": 1794524581.0681932,
+    "seen": 1794527117.2525826,
+    "ast_hash": "ede8af2460d025a2590633e7933e6df7",
+    "semantic_hash": ""
   },
   "Chemie/glossar.html": {
     "mtime": 1793618848.8106759,
@@ -198,10 +198,10 @@
     "semantic_hash": ""
   },
   "Chemie/index.html": {
-    "mtime": 1793226618.1593354,
-    "seen": 1793385099.4626002,
-    "ast_hash": "954469c4f63629fee106d4423e061823",
-    "semantic_hash": "954469c4f63629fee106d4423e061823"
+    "mtime": 1794524581.0701866,
+    "seen": 1794527117.2525826,
+    "ast_hash": "bd2963bd494e343c4a9298c0952b9dec",
+    "semantic_hash": ""
   },
   "Chemie/zusammenfassungen.html": {
     "mtime": 1793193979.3118744,
@@ -222,9 +222,9 @@
     "semantic_hash": "94d236bbbfc579731f4106fba40ff0d5"
   },
   "Geographie/glossar.html": {
-    "mtime": 1793616035.6161084,
-    "seen": 1793618159.22014,
-    "ast_hash": "9af8750d813c9ce539af309db5dac63b",
+    "mtime": 1793697538.421883,
+    "seen": 1794527117.2540898,
+    "ast_hash": "3bc761a294d10d892301f31441dd1375",
     "semantic_hash": ""
   },
   "Geographie/index.html": {
@@ -276,10 +276,10 @@
     "semantic_hash": "afca0221a28f66ed33ebb686c547c1b5"
   },
   "README.md": {
-    "mtime": 1793226618.4844892,
-    "seen": 1793385099.4626002,
-    "ast_hash": "6b3ff0f1b3672500771ef02e82d0e3bc",
-    "semantic_hash": "6b3ff0f1b3672500771ef02e82d0e3bc"
+    "mtime": 1794524966.2270596,
+    "seen": 1794527117.2553751,
+    "ast_hash": "899413e4d8a86f7fc8482ba770fb0a62",
+    "semantic_hash": ""
   },
   "index.html": {
     "mtime": 1793226618.1759305,
@@ -726,9 +726,909 @@
     "semantic_hash": ""
   },
   "Scripts/glossar-quiz.js": {
-    "mtime": 1793618762.7709894,
-    "seen": 1793619074.2966678,
-    "ast_hash": "0357ede85b480d68419abf4e51515027",
+    "mtime": 1793697754.396793,
+    "seen": 1794527117.2525826,
+    "ast_hash": "09d37ca495be4aec8334b108e7ff6dab",
+    "semantic_hash": ""
+  },
+  "Chemie/Scripts/periodic-elements-data.js": {
+    "mtime": 1794524581.0651937,
+    "seen": 1794527117.2505445,
+    "ast_hash": "8983deaf8325ed19ffcc605dd67e798e",
+    "semantic_hash": ""
+  },
+  "Chemie/Scripts/simulationen.js": {
+    "mtime": 1794524581.067196,
+    "seen": 1794527117.2505445,
+    "ast_hash": "f0a85b3570708f55ca9751f7700d4bf0",
+    "semantic_hash": ""
+  },
+  "Chemie/simulationen.html": {
+    "mtime": 1794524581.0725431,
+    "seen": 1794527117.2525826,
+    "ast_hash": "d29a029f385a9ed2078adad831d74693",
+    "semantic_hash": ""
+  },
+  "cowork-access-test.txt": {
+    "mtime": 1794526693.7477052,
+    "seen": 1794527117.2553751,
+    "ast_hash": "b6d13dba5ddc3420375d8f908273f7ae",
+    "semantic_hash": ""
+  },
+  "Chemie/Resourcen/Instruktionen Vormatur M6a.pdf": {
+    "mtime": 1794524581.059245,
+    "seen": 1794527117.2553751,
+    "ast_hash": "9fb9f6ce22df31ce42fc8d6cfdcb1aab",
+    "semantic_hash": ""
+  },
+  "Chemie/Resourcen/Maturathemen Lernziele_M6a_provisorisch.pdf": {
+    "mtime": 1794524581.0615041,
+    "seen": 1794527117.2553751,
+    "ast_hash": "99d2f68384b05b7f030091d114205842",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-additive-polygenie.jpg": {
+    "mtime": 1794495435.5331557,
+    "seen": 1794527117.2575483,
+    "ast_hash": "fa09047a2bfffd20334ed77100dabb61",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-barr-koerperchen.jpg": {
+    "mtime": 1794495435.540863,
+    "seen": 1794527117.2575483,
+    "ast_hash": "5ecf67095863809c0f24dd059d978cd8",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-chromosomenmutationen.jpg": {
+    "mtime": 1794495435.5483809,
+    "seen": 1794527117.2575483,
+    "ast_hash": "01027fc9213a088a3eb5621ba21ccf3e",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-code-sonne.jpg": {
+    "mtime": 1794495435.5549402,
+    "seen": 1794527117.2575483,
+    "ast_hash": "3268702084861f3c999728eb0244a1fc",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-crispr-cas9.jpg": {
+    "mtime": 1794495435.562098,
+    "seen": 1794527117.2575483,
+    "ast_hash": "446f708dfaf54706821d792d06f9174b",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-crossing-over.jpg": {
+    "mtime": 1794495435.570157,
+    "seen": 1794527117.2575483,
+    "ast_hash": "3dee8f1f3dc133bcbbbcefb5205cc7c2",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-dna-doppelhelix.jpg": {
+    "mtime": 1794495435.5771697,
+    "seen": 1794527117.2575483,
+    "ast_hash": "88aae468868049cb40bc9dae299838ab",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-dna-verpackung.jpg": {
+    "mtime": 1794495435.583623,
+    "seen": 1794527117.2575483,
+    "ast_hash": "14aa0769fc9be1b88f7f54b9050fc9c1",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-griffith-avery.jpg": {
+    "mtime": 1794495435.590458,
+    "seen": 1794527117.2575483,
+    "ast_hash": "01b9527f1aed6e87a04bea51a5192078",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-lac-operon.jpg": {
+    "mtime": 1794495435.5968397,
+    "seen": 1794527117.2575483,
+    "ast_hash": "048a2fb3b1fb9c3195de34ecb77b479a",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-meiose-phasen.jpg": {
+    "mtime": 1794495435.603954,
+    "seen": 1794527117.2575483,
+    "ast_hash": "0615c0f67bc5c373dd5023a9a0ba1f1d",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-mono-trisomie.jpg": {
+    "mtime": 1794495435.610584,
+    "seen": 1794527117.2575483,
+    "ast_hash": "62dcf6aae50ce57b4bd2695ce5f2c0ef",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-monogenie-polygenie-polyphaenie.jpg": {
+    "mtime": 1794495435.617479,
+    "seen": 1794527117.2575483,
+    "ast_hash": "49e306f832244924cf447da9fd55ec92",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-nondisjunction-trisomie21.jpg": {
+    "mtime": 1794495435.6246812,
+    "seen": 1794527117.2575483,
+    "ast_hash": "224542344790bac88931ccab2ca215d6",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-pcr.jpg": {
+    "mtime": 1794495435.6319528,
+    "seen": 1794527117.2575483,
+    "ast_hash": "5b38a34bfd388fff857ddd2f897f37cd",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-proteinbiosynthese-prokaryoten.jpg": {
+    "mtime": 1794495435.637788,
+    "seen": 1794527117.2575483,
+    "ast_hash": "126941611f3a92407c1d5c96c46d9c30",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-regulationsebenen-eukaryoten.jpg": {
+    "mtime": 1794495435.6481023,
+    "seen": 1794527117.2575483,
+    "ast_hash": "81a74e2ac4ce2c365e5067356f228f16",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-replikation.jpg": {
+    "mtime": 1794495435.655244,
+    "seen": 1794527117.2575483,
+    "ast_hash": "168a7e4a5350a13cc6c96a32624cbbca",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-russenkaninchen.jpg": {
+    "mtime": 1794495435.6620386,
+    "seen": 1794527117.2575483,
+    "ast_hash": "60541bc007655b7fa23b3dbaef0135a2",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-spleissen.jpg": {
+    "mtime": 1794495435.6685584,
+    "seen": 1794527117.2575483,
+    "ast_hash": "7a680daedbed9e96c466cd9672d01059",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-stammbaum-autosomal-dominant.jpg": {
+    "mtime": 1794495435.6745076,
+    "seen": 1794527117.2575483,
+    "ast_hash": "e400fd87cc67cb62b723e6db0f23ea3d",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-stammbaum-autosomal-rezessiv.jpg": {
+    "mtime": 1794495435.6810825,
+    "seen": 1794527117.2575483,
+    "ast_hash": "fe3b6c32996b1eecba0871133a7f0f0b",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-stammbaum-bluter.jpg": {
+    "mtime": 1794495435.6880426,
+    "seen": 1794527117.2575483,
+    "ast_hash": "2425b349ec96ca21aa8f5079ed30ccf5",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-stammbaum-symbole.jpg": {
+    "mtime": 1794495435.6946342,
+    "seen": 1794527117.2575483,
+    "ast_hash": "4442065292e39cb3150a30bebec48b7a",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-translation.jpg": {
+    "mtime": 1794495435.702027,
+    "seen": 1794527117.2575483,
+    "ast_hash": "86360572a2120bad63d77da151168a06",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-trna.jpg": {
+    "mtime": 1794495435.7088377,
+    "seen": 1794527117.2575483,
+    "ast_hash": "9cff15d253d44a2f8dcf2ad8542a1a1c",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-trp-operon.jpg": {
+    "mtime": 1794495435.7156994,
+    "seen": 1794527117.2575483,
+    "ast_hash": "f1fb2a64f72f6729dc51532a0bb42858",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/gen-vom-gen-zum-protein.jpg": {
+    "mtime": 1794495435.7223332,
+    "seen": 1794527117.2575483,
+    "ast_hash": "352524b48e8de032a8443dee9340a83d",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/imm-aktive-passive-immunisierung.jpg": {
+    "mtime": 1794495435.7283728,
+    "seen": 1794527117.2575483,
+    "ast_hash": "ee36aeb4b92d8863899888949e23a14a",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/imm-allergie-sensibilisierung.jpg": {
+    "mtime": 1794495435.7353742,
+    "seen": 1794527117.2575483,
+    "ast_hash": "06405bda9cdf074f420f8ab6de85b255",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/imm-antikoerper-antigen-bindung.jpg": {
+    "mtime": 1794495435.7418625,
+    "seen": 1794527117.2575483,
+    "ast_hash": "601d299f4622c936a7e3929c78b71e9e",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/imm-antikoerper-bau.jpg": {
+    "mtime": 1794495435.747842,
+    "seen": 1794527117.2575483,
+    "ast_hash": "442716f238f349db51a2a84075f0345b",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/imm-antikoerperklassen.jpg": {
+    "mtime": 1794495435.7538238,
+    "seen": 1794527117.2575483,
+    "ast_hash": "1c58ba9589d07edf58ef77d0577c96a2",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/imm-elisa.jpg": {
+    "mtime": 1794495435.7612593,
+    "seen": 1794527117.2575483,
+    "ast_hash": "8f0d104553ed6c8cbd2fbb1e30982977",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/imm-komplementsystem.jpg": {
+    "mtime": 1794495435.7678814,
+    "seen": 1794527117.2575483,
+    "ast_hash": "033c88fdbadd2de41032decc6aaa7c28",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/imm-kreuzreaktion.jpg": {
+    "mtime": 1794495435.7733724,
+    "seen": 1794527117.2575483,
+    "ast_hash": "eef56a6ffb8581742b9108e33d66da72",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/imm-lymphknoten.jpg": {
+    "mtime": 1794495435.780113,
+    "seen": 1794527117.2575483,
+    "ast_hash": "f7c972d86dda2f4503efa83b5e21f7bf",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/imm-maus-experiment.jpg": {
+    "mtime": 1794495435.7872784,
+    "seen": 1794527117.2575483,
+    "ast_hash": "8299b33fae6325b9267531d9c2a3e8fd",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/imm-mhc-t-zellen.jpg": {
+    "mtime": 1794495435.7927692,
+    "seen": 1794527117.2575483,
+    "ast_hash": "8e7ebca85f4bd225259b93e95eb45bba",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/imm-mrna-impfstoff.jpg": {
+    "mtime": 1794495435.8002722,
+    "seen": 1794527117.2575483,
+    "ast_hash": "16e3b1441db9c10f7b33a73739c5da54",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/imm-regelkreis-temperatur.jpg": {
+    "mtime": 1794495435.8065498,
+    "seen": 1794527117.2575483,
+    "ast_hash": "2f30dfa95fdf5733b54ad74d9db2ff1e",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/imm-uebersicht-spezifische-abwehr.jpg": {
+    "mtime": 1794495435.8141508,
+    "seen": 1794527117.2575483,
+    "ast_hash": "c3d983cf16b4701cbb02e6bf0e2ea1fc",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/imm-zellen-immunsystem.jpg": {
+    "mtime": 1794495435.820953,
+    "seen": 1794527117.2575483,
+    "ast_hash": "5b12a5121ee4769964f52bbe42b23b23",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-agame-verhalten.jpg": {
+    "mtime": 1794495435.8274095,
+    "seen": 1794527117.2575483,
+    "ast_hash": "bf292280b651b7cfbca475b32a43adf0",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-allen-fuechse.jpg": {
+    "mtime": 1794495435.834587,
+    "seen": 1794527117.2575483,
+    "ast_hash": "fbb2748d07d93184aee4cef32ebd6bd0",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-baumarten-nische.jpg": {
+    "mtime": 1794495435.8404808,
+    "seen": 1794527117.2575483,
+    "ast_hash": "4825127d9ed092882d236a14637a7f6f",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-bergmann-tiger.jpg": {
+    "mtime": 1794495435.8478117,
+    "seen": 1794527117.2575483,
+    "ast_hash": "abf755d8a8439245109e77b39717901e",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-bioakkumulation.jpg": {
+    "mtime": 1794495435.85413,
+    "seen": 1794527117.2575483,
+    "ast_hash": "aeb049efd6ea340202ce6113d656cc11",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-bruttoprimaerproduktion.jpg": {
+    "mtime": 1794495435.8603969,
+    "seen": 1794527117.2575483,
+    "ast_hash": "dc98c59893806c18557172b48c10e130",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-darwinfinken.jpg": {
+    "mtime": 1794495435.8664956,
+    "seen": 1794527117.2575483,
+    "ast_hash": "7b80c415f9f3276197123e2f4227ca22",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-dichteregulation.jpg": {
+    "mtime": 1794495435.8732944,
+    "seen": 1794527117.2575483,
+    "ast_hash": "e82deb12107f2d34cf089ac8089e9679",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-einnischung.jpg": {
+    "mtime": 1794495435.8805811,
+    "seen": 1794527117.2575483,
+    "ast_hash": "b912bf78897c76069a74f40159adbe0b",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-eisbaer-absorption.jpg": {
+    "mtime": 1794495435.8867047,
+    "seen": 1794527117.2575483,
+    "ast_hash": "f5bc3265cf078742dbedf2af28d1e1f1",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-energiepyramide-meer.jpg": {
+    "mtime": 1794495435.8929439,
+    "seen": 1794527117.2575483,
+    "ast_hash": "e324f13d4ba7c6d6210a18fb23bf1b9e",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-euryoek-stenoek.jpg": {
+    "mtime": 1794495435.8997152,
+    "seen": 1794527117.2575483,
+    "ast_hash": "e1e5b75092b2db1a932f73904f75ff9a",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-exponentielles-wachstum.jpg": {
+    "mtime": 1794495435.906854,
+    "seen": 1794527117.2575483,
+    "ast_hash": "1673c4f780c9a7964f3335b759d27b14",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-faktoren-maus.jpg": {
+    "mtime": 1794495435.913941,
+    "seen": 1794527117.2575483,
+    "ast_hash": "be42db8d826e92d6dc30a9ad26dd1036",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-flechten-zeiger.jpg": {
+    "mtime": 1794495435.9208632,
+    "seen": 1794527117.2575483,
+    "ast_hash": "8317760862a82e39d07de3aeaaa2c2b8",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-fussabdruck-schweiz.jpg": {
+    "mtime": 1794495435.926952,
+    "seen": 1794527117.2575483,
+    "ast_hash": "26f9f5ca243f74d63fc4e6d03f110503",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-gegenstrom-pinguin.jpg": {
+    "mtime": 1794495435.9343717,
+    "seen": 1794527117.2575483,
+    "ast_hash": "2143602407cbde170ff1f0eb9e31deb6",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-gegenstrom-schema.jpg": {
+    "mtime": 1794495435.9404752,
+    "seen": 1794527117.2575483,
+    "ast_hash": "51e2c25d03267c9be5f395ebe2ae7c67",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-hudson-bay.jpg": {
+    "mtime": 1794495435.947425,
+    "seen": 1794527117.2575483,
+    "ast_hash": "b162fd79eb98cdd1482dc6deeaade7b2",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-kohlenstoffkreislauf.jpg": {
+    "mtime": 1794495435.9534123,
+    "seen": 1794527117.2575483,
+    "ast_hash": "76490e6c9f2cd60388c38eb709c2f501",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-konvergenz.jpg": {
+    "mtime": 1794495435.9606795,
+    "seen": 1794527117.2575483,
+    "ast_hash": "6e6116f6f2f5fdf4a824576e1b695684",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-liebig-fass.jpg": {
+    "mtime": 1794495435.9659908,
+    "seen": 1794527117.2575483,
+    "ast_hash": "59a352ac9268cec8299986b2fec56f57",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-logistisches-wachstum.jpg": {
+    "mtime": 1794495435.9729915,
+    "seen": 1794527117.2575483,
+    "ast_hash": "426be5db1ac2a6eb9ea9385bd5ccb4c3",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-lotka-volterra-regel3.jpg": {
+    "mtime": 1794495435.9806373,
+    "seen": 1794527117.2575483,
+    "ast_hash": "a9a2654eb2ceb67d2f1ad98ffccd3a9d",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-lotka-volterra.jpg": {
+    "mtime": 1794495435.987267,
+    "seen": 1794527117.2575483,
+    "ast_hash": "181f655d78dbe2769792d4839e7b350a",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-mosaik-zyklus.jpg": {
+    "mtime": 1794495435.99361,
+    "seen": 1794527117.2575483,
+    "ast_hash": "fc3419c706f598a0f8ad7d46617ae636",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-nahrungsnetze.jpg": {
+    "mtime": 1794495436.000081,
+    "seen": 1794527117.2575483,
+    "ast_hash": "980347a0cbd9aa369272ac34f1bcc446",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-nischenraummodell.jpg": {
+    "mtime": 1794495436.0075443,
+    "seen": 1794527117.2575483,
+    "ast_hash": "871cec4a14309b52555c7008f24a9cab",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-pantoffeltierchen.jpg": {
+    "mtime": 1794495436.0158255,
+    "seen": 1794527117.2575483,
+    "ast_hash": "e1e1272dd70ef32052d1207d4f6f8a3b",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-planetare-grenzen.jpg": {
+    "mtime": 1794495436.0224566,
+    "seen": 1794527117.2575483,
+    "ast_hash": "c82d1e08b9d45237e9db5cee9f4e3c8f",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-poikilo-homoiotherm.jpg": {
+    "mtime": 1794495436.029087,
+    "seen": 1794527117.2575483,
+    "ast_hash": "9fdc10aa4f59745e489ad8a526d35fa7",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-pyramiden-wald-meer.jpg": {
+    "mtime": 1794495436.03569,
+    "seen": 1794527117.2575483,
+    "ast_hash": "e282d15834fd30e8b5e8044e5bd5d944",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-raeuber-beute-modell.jpg": {
+    "mtime": 1794495436.0419865,
+    "seen": 1794527117.2575483,
+    "ast_hash": "28816a1acc942cce3e3ae30eff13873b",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-stickstoffkreislauf.jpg": {
+    "mtime": 1794495436.0493114,
+    "seen": 1794527117.2575483,
+    "ast_hash": "8a3b77e00f5f4d317dabfa6e1ae9b467",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-sukzession-mitteleuropa.jpg": {
+    "mtime": 1794495436.0553844,
+    "seen": 1794527117.2575483,
+    "ast_hash": "39d7a37e0a49bc35a82520f97ff212bf",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-temperaturorgel.jpg": {
+    "mtime": 1794495436.0615463,
+    "seen": 1794527117.2575483,
+    "ast_hash": "8923ccc9ac7f7bf89d7e9ed295656aab",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-trophiestufen.jpg": {
+    "mtime": 1794495436.0688446,
+    "seen": 1794527117.2575483,
+    "ast_hash": "e7e909af6ff135a3f79affbd23de06f7",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-ueberlebenskurven.jpg": {
+    "mtime": 1794495436.0757492,
+    "seen": 1794527117.2575483,
+    "ast_hash": "2b2190deefe9862f5ae5cfa61090796b",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-wasserkreislauf.jpg": {
+    "mtime": 1794495436.0819137,
+    "seen": 1794527117.2575483,
+    "ast_hash": "0fd47c9efe177b1cc96ab7cbfe880fe7",
+    "semantic_hash": ""
+  },
+  "Biologie/Resourcen/Bilder/oek-zonation.jpg": {
+    "mtime": 1794495436.0890906,
+    "seen": 1794527117.2575483,
+    "ast_hash": "66b93d75f5a60a7694bd7a3dea64ed29",
+    "semantic_hash": ""
+  },
+  "Gesteine/Alpenkalk 1.jpg": {
+    "mtime": 1793694988.54231,
+    "seen": 1794527117.26701,
+    "ast_hash": "b5a9bf335379c56e758e982e3a134ef0",
+    "semantic_hash": ""
+  },
+  "Gesteine/Alpenkalk 2.jpg": {
+    "mtime": 1793695054.6724553,
+    "seen": 1794527117.26701,
+    "ast_hash": "7ebf28f0e481574c52b63b4353e6c356",
+    "semantic_hash": ""
+  },
+  "Gesteine/Basalt 1.webp": {
+    "mtime": 1793693644.2343638,
+    "seen": 1794527117.26701,
+    "ast_hash": "36176775d394466ec6a30f937415cb1a",
+    "semantic_hash": ""
+  },
+  "Gesteine/Basalt 2.webp": {
+    "mtime": 1793693667.9546096,
+    "seen": 1794527117.26701,
+    "ast_hash": "22a33bbab155c42cd0a68d04c1f9a5fb",
+    "semantic_hash": ""
+  },
+  "Gesteine/Basalt 3.webp": {
+    "mtime": 1793693696.3369243,
+    "seen": 1794527117.26701,
+    "ast_hash": "c4c019c3d00dedeb4d8e441f09140d1c",
+    "semantic_hash": ""
+  },
+  "Gesteine/Basalt 4.jpg": {
+    "mtime": 1793694581.6320386,
+    "seen": 1794527117.26701,
+    "ast_hash": "3df22ffef6c686a599c6a1169e687931",
+    "semantic_hash": ""
+  },
+  "Gesteine/Bimsstein 1.webp": {
+    "mtime": 1793693729.7765567,
+    "seen": 1794527117.26701,
+    "ast_hash": "7bd446508c9b30b016b5e5e27244b571",
+    "semantic_hash": ""
+  },
+  "Gesteine/Bimsstein 2.webp": {
+    "mtime": 1793693748.525374,
+    "seen": 1794527117.26701,
+    "ast_hash": "72dd2a66ff5a61fe06d75aa96eba00d1",
+    "semantic_hash": ""
+  },
+  "Gesteine/Bimsstein 3.webp": {
+    "mtime": 1793693790.302639,
+    "seen": 1794527117.26701,
+    "ast_hash": "950e50fe5d3e4ee610bafc25df72802b",
+    "semantic_hash": ""
+  },
+  "Gesteine/Bimsstein 4.jpg": {
+    "mtime": 1793694511.9861264,
+    "seen": 1794527117.26701,
+    "ast_hash": "89be3f9a307b59a37d583c62596698aa",
+    "semantic_hash": ""
+  },
+  "Gesteine/Brekzie 1.webp": {
+    "mtime": 1793693849.9107673,
+    "seen": 1794527117.26701,
+    "ast_hash": "32c95bdb0dfab38ba08676487c7fbedd",
+    "semantic_hash": ""
+  },
+  "Gesteine/Brekzie 2.webp": {
+    "mtime": 1793693859.7946389,
+    "seen": 1794527117.26701,
+    "ast_hash": "58a73e43f9615d0fc1358fef4c35e07d",
+    "semantic_hash": ""
+  },
+  "Gesteine/Brekzie 3.webp": {
+    "mtime": 1793693872.4398587,
+    "seen": 1794527117.26701,
+    "ast_hash": "e87011b30870515e3c42e844fcd5579d",
+    "semantic_hash": ""
+  },
+  "Gesteine/Flintstein 1.webp": {
+    "mtime": 1793693932.4592512,
+    "seen": 1794527117.26701,
+    "ast_hash": "dc4e42de2a19db993379f9e4e43c9882",
+    "semantic_hash": ""
+  },
+  "Gesteine/Flintstein 2.webp": {
+    "mtime": 1793693947.1962876,
+    "seen": 1794527117.26701,
+    "ast_hash": "29f4a161d9c24d8ddfd2f26c0c273df8",
+    "semantic_hash": ""
+  },
+  "Gesteine/Flintstein 3.webp": {
+    "mtime": 1793693960.4416816,
+    "seen": 1794527117.26701,
+    "ast_hash": "938d89d9ec47e531bd1c31c7827f7563",
+    "semantic_hash": ""
+  },
+  "Gesteine/Flintstein 4.jpg": {
+    "mtime": 1793694761.3863125,
+    "seen": 1794527117.26701,
+    "ast_hash": "261d300260700ee16b95c01897c20302",
+    "semantic_hash": ""
+  },
+  "Gesteine/Gipsstein 1.webp": {
+    "mtime": 1793693993.9391098,
+    "seen": 1794527117.26701,
+    "ast_hash": "17f3dd7aa07015571a135ef70637ca13",
+    "semantic_hash": ""
+  },
+  "Gesteine/Gipsstein 2.webp": {
+    "mtime": 1793694011.1410925,
+    "seen": 1794527117.26701,
+    "ast_hash": "31e3f873a3b964bb288c3c47888fcbb8",
+    "semantic_hash": ""
+  },
+  "Gesteine/Gipsstein 3.webp": {
+    "mtime": 1793694025.869121,
+    "seen": 1794527117.26701,
+    "ast_hash": "0c1801248a59d7a9d63ca3537d8ce67d",
+    "semantic_hash": ""
+  },
+  "Gesteine/Gipsstein 4.jpg": {
+    "mtime": 1793694961.682005,
+    "seen": 1794527117.26701,
+    "ast_hash": "38ebd613f4f1c156930d3024b212cb17",
+    "semantic_hash": ""
+  },
+  "Gesteine/Glimmerschiefer 1.webp": {
+    "mtime": 1793694072.151436,
+    "seen": 1794527117.26701,
+    "ast_hash": "a875a901148d965801c2cedebe9cc399",
+    "semantic_hash": ""
+  },
+  "Gesteine/Glimmerschiefer 2.webp": {
+    "mtime": 1793694082.2498808,
+    "seen": 1794527117.26701,
+    "ast_hash": "47f66769a10d5e2d27fbd2d36476d23a",
+    "semantic_hash": ""
+  },
+  "Gesteine/Glimmerschiefer 3.webp": {
+    "mtime": 1793694098.2312584,
+    "seen": 1794527117.26701,
+    "ast_hash": "55739041964fc074051caacc4c43ef0f",
+    "semantic_hash": ""
+  },
+  "Gesteine/Glimmerschiefer 4.jpg": {
+    "mtime": 1793695103.2868397,
+    "seen": 1794527117.26701,
+    "ast_hash": "c2ecc3991f40d04d38643daa2fbd3579",
+    "semantic_hash": ""
+  },
+  "Gesteine/Gneis 1.webp": {
+    "mtime": 1793694125.7985537,
+    "seen": 1794527117.26701,
+    "ast_hash": "8731ebef7e6d508708b5acd677262210",
+    "semantic_hash": ""
+  },
+  "Gesteine/Gneis 2.webp": {
+    "mtime": 1793694135.4976385,
+    "seen": 1794527117.26701,
+    "ast_hash": "74e945aa08dd03c870a4e65d850f2d72",
+    "semantic_hash": ""
+  },
+  "Gesteine/Gneis 3.webp": {
+    "mtime": 1793694160.5216396,
+    "seen": 1794527117.26701,
+    "ast_hash": "483f94a1e420ff8f77ec1e4272ccac32",
+    "semantic_hash": ""
+  },
+  "Gesteine/Gneis 4.jpg": {
+    "mtime": 1793694548.779386,
+    "seen": 1794527117.26701,
+    "ast_hash": "43c02767e06ee329ba1eb5a278f4a4a0",
+    "semantic_hash": ""
+  },
+  "Gesteine/Granatolivinfels 1.jpg": {
+    "mtime": 1793694375.1170897,
+    "seen": 1794527117.26701,
+    "ast_hash": "8eff30d802c65c90ecacf4417353851d",
+    "semantic_hash": ""
+  },
+  "Gesteine/Granit 1.webp": {
+    "mtime": 1793694410.0344613,
+    "seen": 1794527117.26701,
+    "ast_hash": "8fcca989e312f7d6f10a3fdba6242a25",
+    "semantic_hash": ""
+  },
+  "Gesteine/Granit 2.webp": {
+    "mtime": 1793694417.4774604,
+    "seen": 1794527117.26701,
+    "ast_hash": "7ff88c461ca613568291b3c7671c9037",
+    "semantic_hash": ""
+  },
+  "Gesteine/Granit 3.png": {
+    "mtime": 1793694439.0173173,
+    "seen": 1794527117.26701,
+    "ast_hash": "3af284fd558bde55fae320cf41a548fe",
+    "semantic_hash": ""
+  },
+  "Gesteine/Jurakalk 1.jpg": {
+    "mtime": 1793694691.3288178,
+    "seen": 1794527117.26701,
+    "ast_hash": "66c0afe4861f51193629dc2121a5369f",
+    "semantic_hash": ""
+  },
+  "Gesteine/Jurakalk 2.webp": {
+    "mtime": 1793694479.8959754,
+    "seen": 1794527117.26701,
+    "ast_hash": "480edf6814fda14c69b6b21f9fa40fdc",
+    "semantic_hash": ""
+  },
+  "Gesteine/Kalkstein 1.jpeg": {
+    "mtime": 1793696723.8450897,
+    "seen": 1794527117.26701,
+    "ast_hash": "a5bdf3b8186ee8850d3f2d72d897c7c7",
+    "semantic_hash": ""
+  },
+  "Gesteine/Marmor 1.jpg": {
+    "mtime": 1793694659.2340014,
+    "seen": 1794527117.26701,
+    "ast_hash": "4d54943b75682e6adb0409451cfb40a4",
+    "semantic_hash": ""
+  },
+  "Gesteine/Marmor 2.webp": {
+    "mtime": 1793696796.9688218,
+    "seen": 1794527117.26701,
+    "ast_hash": "edb963c6d7d4f6c19ff240e0e620016f",
+    "semantic_hash": ""
+  },
+  "Gesteine/Mergel 1.jpg": {
+    "mtime": 1793694637.9269586,
+    "seen": 1794527117.26701,
+    "ast_hash": "23e4e09c33e6cb202aec49ccc4c32cf3",
+    "semantic_hash": ""
+  },
+  "Gesteine/Mergel 2.webp": {
+    "mtime": 1793696438.03548,
+    "seen": 1794527117.26701,
+    "ast_hash": "96d1a80f4988c6d51c0afea4177b2e1d",
+    "semantic_hash": ""
+  },
+  "Gesteine/Nagelfluh 1.jpg": {
+    "mtime": 1793694571.0116305,
+    "seen": 1794527117.26701,
+    "ast_hash": "3f97202c3aaab97745263422d6ee03ca",
+    "semantic_hash": ""
+  },
+  "Gesteine/Obsidian 1.jpg": {
+    "mtime": 1793695040.95536,
+    "seen": 1794527117.26701,
+    "ast_hash": "25d025f688b78f3832ef42302f041ed8",
+    "semantic_hash": ""
+  },
+  "Gesteine/Obsidian 2.webp": {
+    "mtime": 1793695191.2344465,
+    "seen": 1794527117.26701,
+    "ast_hash": "bcf907d02ac5129d64423fa5a790dead",
+    "semantic_hash": ""
+  },
+  "Gesteine/Obsidian 3.webp": {
+    "mtime": 1793695207.6894145,
+    "seen": 1794527117.26701,
+    "ast_hash": "6bfc9bec1a084aaf384efdec666a5c02",
+    "semantic_hash": ""
+  },
+  "Gesteine/Peridotit.jpg": {
+    "mtime": 1793694784.90796,
+    "seen": 1794527117.26701,
+    "ast_hash": "b8099ba2904956cb7b4ad7bc36504dad",
+    "semantic_hash": ""
+  },
+  "Gesteine/Rhyolit 1.jpg": {
+    "mtime": 1793695029.2142754,
+    "seen": 1794527117.26701,
+    "ast_hash": "8d471a6f65c2322c1edadae74d833c71",
+    "semantic_hash": ""
+  },
+  "Gesteine/Rhyolith 2.webp": {
+    "mtime": 1793696513.570602,
+    "seen": 1794527117.26701,
+    "ast_hash": "1260a496435c8bc2b7e957c791f974d5",
+    "semantic_hash": ""
+  },
+  "Gesteine/Rhyolith 3.jpeg": {
+    "mtime": 1793696741.9649339,
+    "seen": 1794527117.26701,
+    "ast_hash": "d77f56d3ee19e762ab9c1f7eec1cbac8",
+    "semantic_hash": ""
+  },
+  "Gesteine/Sandstein 1.jpg": {
+    "mtime": 1793694973.3355365,
+    "seen": 1794527117.26701,
+    "ast_hash": "089aab7523a1e89004102009f6bb9091",
+    "semantic_hash": ""
+  },
+  "Gesteine/Sandstein 2.webp": {
+    "mtime": 1793695252.1754298,
+    "seen": 1794527117.26701,
+    "ast_hash": "0a2d840be5aabe83d3196665b154fb47",
+    "semantic_hash": ""
+  },
+  "Gesteine/Sandstein 3.jpeg": {
+    "mtime": 1793696706.4619913,
+    "seen": 1794527117.26701,
+    "ast_hash": "15afe5d427370717d07c4dd547510f67",
+    "semantic_hash": ""
+  },
+  "Gesteine/Serpentinit 1.webp": {
+    "mtime": 1793696358.2033653,
+    "seen": 1794527117.26701,
+    "ast_hash": "0bbd44ad2a00dd06881ee7873fe008e5",
+    "semantic_hash": ""
+  },
+  "Gesteine/Serpentinit 2.webp": {
+    "mtime": 1793696389.389382,
+    "seen": 1794527117.26701,
+    "ast_hash": "3c4f8b4f5fb3669df83622b9ac2061b2",
+    "semantic_hash": ""
+  },
+  "Gesteine/Serpnetinit 1.jpg": {
+    "mtime": 1793694622.3319516,
+    "seen": 1794527117.26701,
+    "ast_hash": "46f4588834b1c81b8487ef018e285b00",
+    "semantic_hash": ""
+  },
+  "Gesteine/Steinsaltz 1.jpg": {
+    "mtime": 1793694648.6685193,
+    "seen": 1794527117.26701,
+    "ast_hash": "45ae1cbfa1e1ade00c12a2eafcdb7889",
+    "semantic_hash": ""
+  },
+  "Gesteine/Steinsalz 2.webp": {
+    "mtime": 1793695291.0832493,
+    "seen": 1794527117.26701,
+    "ast_hash": "4a3b61132744cd69f91ccf01b79b0f94",
+    "semantic_hash": ""
+  },
+  "Gesteine/Steinsalz 3.webp": {
+    "mtime": 1793695304.1342058,
+    "seen": 1794527117.26701,
+    "ast_hash": "f53e0ab3b26613fe0cc995baa34063e9",
+    "semantic_hash": ""
+  },
+  "Gesteine/Talkschiefer 1.jpg": {
+    "mtime": 1793694559.2849245,
+    "seen": 1794527117.26701,
+    "ast_hash": "6054f5614cf9b2185951fae0551de2b9",
+    "semantic_hash": ""
+  },
+  "Gesteine/Tonstein 1.jpg": {
+    "mtime": 1793695000.0263388,
+    "seen": 1794527117.26701,
+    "ast_hash": "5caff6a08942cf79ce895e34cf7aa43d",
+    "semantic_hash": ""
+  },
+  "Gesteine/Tonstein 2.webp": {
+    "mtime": 1793696862.225773,
+    "seen": 1794527117.26701,
+    "ast_hash": "705ac34b80b09cbeb1c8110dcdd71830",
+    "semantic_hash": ""
+  },
+  "Gesteine/Tuff 1.jpg": {
+    "mtime": 1793694535.3548417,
+    "seen": 1794527117.26701,
+    "ast_hash": "1167b15baadf145260c6bed88057ce87",
     "semantic_hash": ""
   },
   ".mimocode/package-lock.json": {
