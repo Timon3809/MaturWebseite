@@ -1354,6 +1354,10 @@ window.historyData = {
     "name": "USA",
     "subtopics": [
       {
+        "name": "Klima Animiert",
+        "summary": "<p><a href=\"Resourcen/Klima Nordamerikas animiert.html\" target=\"_blank\" rel=\"noopener\">In neuem Tab öffnen ↗</a></p>\n<iframe src=\"Resourcen/Klima Nordamerikas animiert.html\" title=\"Klima Nordamerikas animiert\" loading=\"lazy\" style=\"width:100%;height:900px;border:1px solid #ddd;border-radius:6px;\"></iframe>\n"
+      },
+      {
         "name": "Die Klimaregionen der USA",
         "summary": "<h3>Neun Klimaregionen nach Köppen</h3><p>Nordamerika besitzt durch seine Grösse und seine Gebirge eine grosse <strong>Vielfalt an Klimaformen</strong>. Zur Bestimmung dient der <strong>Klimaschlüssel nach Köppen</strong> (Kombination von Buchstaben, die Temperatur und Niederschlag beschreiben). Hinter den Gebirgen im Westen liegt Trockenheit (Lee-Effekt).</p>\n<ul><li><strong>Kontinentales Waldklima (Mischwald):</strong> kältester Monat unter -3 °C, ganzjährig Niederschlag</li><li><strong>Kontinentales Waldklima (Laubwald):</strong> kältester Monat unter -3 °C, Sommerregen</li><li><strong>Subtropisches Klima:</strong> kältester Monat zwischen -3 °C und 18 °C</li><li><strong>Tropisches Klima:</strong> kältester Monat über 18 °C, ganzjährig heiss</li><li><strong>Steppenklima:</strong> zu wenig Niederschlag für Wald (BS)</li><li><strong>Wüstenklima:</strong> sehr trocken, heiss (BWh) oder kalt (BWk)</li><li><strong>Trockenklima der Becken:</strong> kontinentale Trockengebiete im Westen (z. B. Becken von Salt Lake City)</li><li><strong>Mittelmeerklima:</strong> Winterregen, trockener Sommer (Cs)</li><li><strong>Seeklima der Westseiten:</strong> milde, feuchte Westküste (z. B. Portland, San Francisco)</li></ul>\n"
       },
