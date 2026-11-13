@@ -60,7 +60,7 @@ Die Lernbereiche (Übersicht, Zusammenfassungen, Glossar, Dateien, Prüfungssimu
   - **USA** (Klima Nordamerikas, Landschaftsgürtel)
   - 123 eingebettete Abbildungen sowie saubere SVG-Nachbauten (Gesteinskreislauf, Tethys-Profil, Geologisches Profil Jura–Alpen)
 - **Glossar** — 185 Begriffe nach Thema (Klimatologie, Geologie, Gesteine, Schweiz, Asien/China, USA) mit Suche und Mindmap
-- **Programme und Karten Trainer** (`Geographie/programme.html`) — Asien-Karten-Trainer (`Geographie/Programme/Karten-Trainer/`, 69 Lernobjekte: Orte finden, benennen, frei üben; Single-File-Build, läuft auch über `file://`), Nordamerika-Kartentrainer (`Geographie/Programme/Nordamerika Kartentrainer.html`) sowie Direktlinks zu den Glossar-Lernfunktionen (Quizlet-Funktion `glossar.html#lernen`, Steine-Quizlet `glossar.html#steine`)
+- **Programme und Karten Trainer** (`Geographie/programme.html`) — Asien-Karten-Trainer (`Geographie/Programme/Karten-Trainer/`, 69 Lernobjekte: Orte finden, benennen, frei üben; Single-File-Build, läuft auch über `file://`), Nordamerika-Kartentrainer (`Geographie/Programme/Nordamerika Kartentrainer.html`) das Köppen-Klimaquiz (`Geographie/Programme/klimaquiz.html`) sowie Direktlinks zu den Glossar-Lernfunktionen (Quizlet-Funktion `glossar.html#lernen`, Steine-Quizlet `glossar.html#steine`)
 - **Dateien** — Inhaltsverzeichnis Matur 2026 (prov.)
 
 ### Biologie

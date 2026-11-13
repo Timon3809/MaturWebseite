@@ -1,0 +1,3218 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Klimazonen-Detektiv – Köppen Quiz</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+
+<style>
+:root {
+ --navy:#173d53;
+ --blue:#00a6df;
+ --red:#be4b48;
+ --green:#21845c;
+ --bg:#edf2f6;
+ --border:#dce4e9;
+ --text:#263746;
+}
+* {box-sizing:border-box}
+body {
+ margin:0;
+ background:var(--bg);
+ color:var(--text);
+ font-family:Arial,sans-serif;
+}
+header {
+ background:var(--navy);
+ color:white;
+ padding:24px;
+ text-align:center;
+}
+header h1 {margin:0 0 8px}
+main {max-width:1650px;margin:22px auto;padding:14px}
+.card {
+ background:white;
+ border-radius:12px;
+ padding:20px;
+ margin-bottom:18px;
+ box-shadow:0 3px 12px #0000000b;
+}
+button,select {
+ padding:10px 14px;
+ border-radius:7px;
+ border:1px solid var(--border);
+ font-size:15px;
+}
+button {
+ background:#267da7;
+ color:white;
+ cursor:pointer;
+ border:0;
+}
+button:hover {filter:brightness(.92)}
+button:disabled {opacity:.5;cursor:not-allowed}
+.secondary {background:#657d8d}
+.hidden {display:none!important}
+.muted {color:#75838e;font-size:13px}
+.controls {display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.layout {
+ display:grid;
+ grid-template-columns:minmax(0,1.2fr) minmax(400px,1fr);
+ gap:18px;
+ align-items:start;
+}
+.diagrams {
+ display:grid;
+ grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:15px;
+}
+.diagram {
+ border:2px solid var(--border);
+ border-radius:11px;
+ padding:12px;
+ min-width:0;
+ transition:.15s;
+}
+.diagram.active {
+ border-color:#267da7;
+ background:#f1faff;
+}
+.diagram.assigned {border-color:var(--green)}
+.diagram h3 {margin:2px 0 8px}
+.chart-wrap {
+ position:relative;
+ width:100%;
+ height:285px;
+}
+.diagram select {width:100%;margin-top:9px}
+.diagram .assign {
+ width:100%;
+ margin-top:8px;
+ background:#657d8d;
+}
+.diagram .assign.selected {background:#267da7}
+.assignment {
+ padding:8px;
+ margin-top:8px;
+ background:#f1f4f6;
+ border-radius:6px;
+ font-size:13px;
+}
+#map {
+ width:100%;
+ height:570px;
+ border-radius:9px;
+ background:#dcebf0;
+ z-index:1;
+}
+#mapInfo {
+ padding:12px;
+ margin:12px 0;
+ background:#edf6f8;
+ border-radius:8px;
+}
+.progress {
+ height:10px;
+ background:#e5ebef;
+ border-radius:20px;
+ overflow:hidden;
+}
+.progress div {
+ height:100%;
+ background:var(--green);
+ width:0;
+ transition:.2s;
+}
+#schema {
+ position:fixed;
+ z-index:1000;
+ right:0;
+ top:0;
+ width:min(460px,95vw);
+ height:100vh;
+ background:white;
+ box-shadow:-5px 0 25px #0003;
+ padding:25px;
+ overflow-y:auto;
+ transform:translateX(110%);
+ transition:.25s;
+}
+#schema.open {transform:translateX(0)}
+.schema-section {
+ border-bottom:1px solid var(--border);
+ padding:14px 0;
+ line-height:1.55;
+}
+.schema-section h3 {color:#17647d;margin-bottom:5px}
+.result {
+ background:white;
+ border:1px solid var(--border);
+ border-radius:10px;
+ padding:17px;
+ margin:15px 0;
+}
+.result .chart-wrap {max-width:600px;height:330px}
+.good {color:var(--green);font-weight:bold}
+.bad {color:#c34242;font-weight:bold}
+#loading {
+ padding:14px;
+ background:#e9f4f8;
+ border-radius:8px;
+ margin-top:12px;
+}
+.leaflet-marker-icon.number-marker {
+ background:#e5a33c;
+ color:#243b4a;
+ border:3px solid white;
+ border-radius:50%;
+ text-align:center;
+ font-size:15px;
+ line-height:29px;
+ font-weight:bold;
+ box-shadow:0 2px 7px #0005;
+}
+.leaflet-marker-icon.number-marker.used {background:#27865d;color:white}
+.leaflet-marker-icon.number-marker.active {background:#267da7;color:white;transform:scale(1.2)}
+@media(max-width:1050px) {
+ .layout {grid-template-columns:1fr}
+}
+@media(max-width:650px) {
+ .diagrams {grid-template-columns:1fr}
+ #map {height:420px}
+ main {padding:8px}
+ .card {padding:13px}
+}
+.station-marker {
+    background: transparent !important;
+    border: none !important;
+}
+
+.map-point {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ed9b26;
+    color: white;
+
+    border: 3px solid white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    box-shadow: 0 3px 9px rgba(0,0,0,.45);
+
+    cursor: pointer;
+
+    transition: transform .15s, background .15s;
+}
+
+.map-point:hover {
+    transform: scale(1.2);
+    background: #1684ad;
+}
+
+.map-point.used {
+    background: #23845c;
+}
+
+.map-point.selected {
+    background: #167da8;
+    transform: scale(1.2);
+}
+
+/* NEUE NAVIGATION */
+
+.main-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 15px;
+    background: white;
+    border-bottom: 1px solid var(--border);
+}
+
+/* KLIMAATLAS */
+
+#atlasPage {
+    max-width: 1650px;
+    margin: 22px auto;
+}
+
+.atlas-map {
+    width: 100%;
+    height: 570px;
+    border-radius: 10px;
+    background: #dcebf0;
+}
+
+.atlas-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.atlas-controls select {
+    min-width: 230px;
+}
+
+.atlas-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 15px 0;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+}
+
+.legend-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.atlas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.atlas-chart-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    background: white;
+    min-width: 0;
+    cursor: pointer;
+    transition: .15s;
+}
+
+.atlas-chart-card:hover {
+    border-color: var(--blue);
+    background: #f3faff;
+}
+
+.atlas-chart-card.active {
+    border: 2px solid var(--blue);
+    background: #f1faff;
+}
+
+.atlas-chart-card h3 {
+    margin: 4px 0;
+}
+
+.atlas-chart {
+    position: relative;
+    width: 100%;
+    height: 230px;
+}
+
+.atlas-info {
+    background: #edf6f8;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 12px 0;
+}
+
+.atlas-marker {
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px #0005;
+}
+
+@media(max-width:1050px) {
+    .atlas-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media(max-width:650px) {
+    .atlas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .atlas-map {
+        height: 420px;
+    }
+}
+
+/* --------------------------------------------------
+   NEUES VERGLEICHSLAYOUT
+-------------------------------------------------- */
+
+.atlas-comparison-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 22px;
+    align-items: start;
+}
+
+/* Linke Seite bleibt sichtbar */
+
+
+/* LINKER BEREICH: AUSGEWÄHLTES DIAGRAMM BLEIBT SICHTBAR */
+
+.atlas-selected-column {
+    position: sticky;
+    top: 20px;
+    align-self: start;
+    min-width: 0;
+
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+/* Ausgewähltes Diagramm bleibt beim Scrollen oben stehen */
+
+.atlas-selected-card {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+
+    background: #f1faff;
+    border: 4px solid #267da7;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+/* Liste der Stationen mit gleichem Klimatyp */
+
+.atlas-same-type-section {
+    margin-top: 18px;
+}
+
+#atlasSameTypeCharts {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 5px 3px 15px;
+}
+
+#atlasSameTypeCharts .atlas-chart-card {
+    cursor: pointer;
+    margin: 0;
+}
+
+#atlasSameTypeCharts .atlas-chart {
+    height: 210px;
+}
+
+/* RECHTE SEITE: FREIE KLIMATYPWAHL */
+
+.atlas-comparison-column {
+    min-width: 0;
+}
+
+#atlasComparisonCharts {
+    max-height: 750px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 5px 10px 5px 2px;
+    scrollbar-width: thin;
+}
+
+#atlasComparisonCharts .atlas-chart-card {
+    margin-bottom: 16px;
+    cursor: default;
+}
+
+#atlasComparisonCharts .atlas-chart {
+    height: 230px;
+}
+
+/* Mobile Darstellung */
+
+@media(max-width: 850px) {
+
+    .atlas-comparison-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .atlas-selected-column {
+        position: static;
+        max-height: none;
+        overflow: visible;
+    }
+
+    .atlas-selected-card {
+        position: sticky;
+        top: 0;
+    }
+
+    #atlasSameTypeCharts {
+        max-height: 600px;
+        overflow-y: auto;
+    }
+
+    #atlasComparisonCharts {
+        max-height: 650px;
+    }
+}
+
+
+.atlas-selected-card {
+    background: #f1faff;
+    border: 4px solid #267da7;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.atlas-selected-card h3 {
+    margin-top: 4px;
+}
+
+/* Rechte Seite kann unabhängig gescrollt werden */
+
+.atlas-comparison-column {
+    min-width: 0;
+}
+
+#atlasComparisonCharts {
+    max-height: 750px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 5px 10px 5px 2px;
+    scrollbar-width: thin;
+}
+
+#atlasComparisonCharts .atlas-chart-card {
+    margin-bottom: 16px;
+    cursor: default;
+}
+
+#atlasComparisonCharts .atlas-chart {
+    height: 230px;
+}
+
+.atlas-selected-card .atlas-chart {
+    height: 230px;
+}
+
+/* Mobile Darstellung */
+
+@media(max-width: 850px) {
+
+    .atlas-comparison-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .atlas-selected-column {
+        position: static;
+    }
+
+    #atlasComparisonCharts {
+        max-height: 650px;
+    }
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+ <h1>🌍 Klimazonen-Detektiv</h1>
+ <p>Bestimme die Klimagruppen nach Köppen und ordne die Klimadiagramme ihren Standorten zu.</p>
+</header>
+
+<nav class="main-navigation">
+    <button id="quizNavButton">
+        🧩 Klimazonen-Detektiv
+    </button>
+
+    <button id="atlasNavButton" class="secondary">
+        🌍 Interaktiver Klimaatlas
+    </button>
+</nav>
+
+<main>
+
+<!-- START -->
+<section class="card" id="start">
+ <h2>Neues Quiz</h2>
+
+ <div class="controls">
+  <label for="amount">Anzahl der Klimadiagramme:</label>
+  <select id="amount">
+   <option>2</option>
+   <option>3</option>
+   <option>4</option>
+   <option selected>5</option>
+   <option>6</option>
+   <option>7</option>
+   <option>8</option>
+   <option>9</option>
+   <option>10</option>
+  </select>
+
+  <label for="period">Referenzzeitraum:</label>
+  <select id="period">
+   <option value="both">Beide Zeiträume</option>
+   <option value="R1">1961–1990</option>
+   <option value="R2">1991–2020</option>
+  </select>
+ </div>
+
+ <br>
+ <button id="startButton">Quiz starten</button>
+
+ <div id="loading" class="hidden"></div>
+ <p id="error" class="bad"></p>
+
+ <p class="muted">
+ Datenquelle:
+ <a href="https://oer.fdagner.de/klimadiagramme/" target="_blank">OER Klimadiagramme</a>
+ </p>
+ <p class="muted">
+ Die Diagramme basieren auf den frei nutzbaren Klimadaten des OER-Projekts.
+ </p>
+</section>
+
+<!-- QUIZ -->
+<section id="game" class="hidden">
+
+ <section class="card">
+  <h2>Deine Aufgabe</h2>
+  <p>
+   Du siehst alle Klimadiagramme gleichzeitig. Bestimme die Klimagruppe
+   und ordne jedes Diagramm dem richtigen nummerierten Standort auf der
+   Weltkarte zu.
+  </p>
+
+  <div id="progressText"></div>
+  <div class="progress"><div id="progressBar"></div></div>
+
+  <br>
+  <button class="secondary" id="schemaButton">
+   📖 Köppen-Bestimmungsschema öffnen
+  </button>
+ </section>
+
+ <div class="layout">
+
+  <section class="card">
+   <h2>1. Klimadiagramme</h2>
+   <p class="muted">
+    Die Ortsnamen und Klimazonen sind während des Quiz verborgen.
+    Wähle ein Diagramm aus, um es auf der Karte zuzuordnen.
+   </p>
+   <div id="diagrams" class="diagrams"></div>
+  </section>
+
+  <section class="card">
+   <h2>2. Weltkarte</h2>
+
+   <div id="mapInfo">
+    Wähle zunächst ein Klimadiagramm aus.
+    Klicke danach auf den passenden Punkt auf der Weltkarte.
+   </div>
+
+   <div id="map"></div>
+
+   <p class="muted">
+    Die Punkte zeigen die tatsächlichen Koordinaten der Wetterstationen.
+    Du kannst jederzeit eine andere Zuordnung wählen.
+   </p>
+
+   <button class="secondary" id="clearSelection">
+    Auswahl aufheben
+   </button>
+  </section>
+
+ </div>
+
+ <section class="card">
+  <h2>3. Auswertung</h2>
+  <p>
+   Wenn du alle Klimadiagramme bestimmt und zugeordnet hast,
+   kannst du deine Antworten überprüfen.
+  </p>
+  <button id="finishButton">Quiz auswerten</button>
+ </section>
+
+</section>
+
+<!-- RESULT -->
+<section id="end" class="card hidden">
+ <h2>🏆 Deine Ergebnisse</h2>
+ <h1 id="final"></h1>
+ <p id="percentage"></p>
+ <div id="results"></div>
+ <button id="newQuiz">Neues Quiz starten</button>
+</section>
+
+
+<!-- INTERAKTIVER KLIMAATLAS -->
+
+<section id="atlasPage" class="hidden">
+
+    <section class="card">
+
+        <h1>🌍 Interaktiver Klimaatlas</h1>
+
+        <p>
+            Entdecke die weltweite Verteilung der Köppen-Klimatypen.
+            Wähle eine Klimagruppe aus und vergleiche die
+            Klimadiagramme verschiedener Wetterstationen.
+        </p>
+
+        <div class="atlas-controls">
+
+            <label for="atlasClimateType">
+                Klimatyp auswählen:
+            </label>
+
+            <select id="atlasClimateType">
+                <option value="">Alle Klimatypen</option>
+            </select>
+
+            <label for="atlasPeriod">
+                Referenzzeitraum:
+            </label>
+
+            <select id="atlasPeriod">
+                <option value="both">Beide Zeiträume</option>
+                <option value="R1">1961–1990</option>
+                <option value="R2">1991–2020</option>
+            </select>
+
+        </div>
+
+        <div id="atlasInfo" class="atlas-info">
+            Lade Klimadaten ...
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>1. Weltkarte der Klimastationen</h2>
+
+        <p class="muted">
+            Die Farben kennzeichnen die Köppen-Klimagruppe
+            der jeweiligen Wetterstation.
+        </p>
+
+        <div id="atlasLegend" class="atlas-legend"></div>
+
+        <div id="climateMap" class="atlas-map"></div>
+
+        <p class="muted">
+            Klicke auf einen Kartenpunkt, um das entsprechende
+            Klimadiagramm anzuzeigen.
+        </p>
+
+    </section>
+
+<!-- AUSGEWÄHLTES KLIMADIAGRAMM UND KLIMAVERGLEICH -->
+
+
+<!-- AUSGEWÄHLTES KLIMADIAGRAMM UND KLIMAVERGLEICH -->
+
+<section class="card hidden" id="atlasDetailSection">
+
+    <h2>📊 Klimadiagramme im Vergleich</h2>
+
+    <div id="atlasDetailInfo" class="atlas-info"></div>
+
+    <div class="atlas-comparison-layout">
+
+        <!-- LINKE SEITE: AUSGEWÄHLTES DIAGRAMM -->
+
+        <div class="atlas-selected-column">
+
+            <h3>Ausgewählte Station</h3>
+
+            
+
+<div class="atlas-selected-card">
+
+    <div id="atlasSelectedHeading"></div>
+
+    <div class="atlas-chart">
+        <canvas id="atlasDetailChart"></canvas>
+    </div>
+
+    <p class="muted" id="atlasSelectedClimate"></p>
+
+</div>
+
+<div class="atlas-same-type-section">
+
+    <h3>Weitere Stationen desselben Klimatyps</h3>
+
+    <p class="muted">
+        Hier findest du weitere Klimadiagramme mit derselben
+        Köppen-Klimagruppe.
+    </p>
+
+    <div id="atlasSameTypeCharts"></div>
+
+</div>
+
+
+<div class="atlas-same-type-section">
+
+    <h3>Weitere Stationen desselben Klimatyps</h3>
+
+    <p class="muted">
+        Hier findest du weitere Klimadiagramme mit derselben
+        Köppen-Klimagruppe.
+    </p>
+
+    <div id="atlasSameTypeCharts"></div>
+
+</div>
+
+
+        </div>
+
+        <!-- RECHTE SEITE: VERGLEICHSDIAGRAMME -->
+
+        <div class="atlas-comparison-column">
+
+            <h3>Vergleichsstationen</h3>
+
+            
+<div class="atlas-controls">
+
+    <label for="atlasCompareMode">
+        Klimatyp zum Vergleichen auswählen:
+    </label>
+
+    <select id="atlasCompareMode">
+
+        <option value="">Bitte Klimatyp auswählen</option>
+
+        <option value="Af">Af – Tropisches Regenwaldklima</option>
+        <option value="Am">Am – Monsunklima</option>
+        <option value="Aw">Aw – Savannenklima</option>
+
+        <option value="BW">BW – Wüstenklima</option>
+        <option value="BS">BS – Steppenklima</option>
+
+        <option value="Cf">Cf – Warmgemäßigt, ganzjährig feucht</option>
+        <option value="Cs">Cs – Warmgemäßigt, sommertrocken</option>
+        <option value="Cw">Cw – Warmgemäßigt, wintertrocken</option>
+
+        <option value="Df">Df – Kontinental, ganzjährig feucht</option>
+        <option value="Ds">Ds – Kontinental, sommertrocken</option>
+        <option value="Dw">Dw – Kontinental, wintertrocken</option>
+
+        <option value="ET">ET – Tundrenklima</option>
+        <option value="EF">EF – Eisklima</option>
+
+    </select>
+
+</div>
+
+<div id="atlasComparisonTitle"></div>
+
+<div id="atlasComparisonInfo" class="muted"></div>
+
+<div id="atlasComparisonCharts"></div>
+
+            <div id="atlasComparisonTitle"></div>
+
+            <div id="atlasComparisonInfo" class="muted"></div>
+
+            <div id="atlasComparisonCharts"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <section class="card">
+
+        <h2>2. Klimadiagramme vergleichen</h2>
+
+        <div id="atlasResultCount"></div>
+
+        <div id="atlasCharts" class="atlas-grid"></div>
+
+        <button id="atlasShowMore" class="secondary hidden">
+            Weitere Klimadiagramme anzeigen
+        </button>
+
+    </section>
+
+    <button id="atlasBackButton" class="secondary">
+        ← Zurück zum Klimazonen-Detektiv
+    </button>
+
+</section>
+
+
+</main>
+
+
+<!-- KÖPPEN-KLIMASCHLÜSSEL -->
+<aside id="schema">
+
+    <button class="secondary" id="closeSchema">
+        ✕ Schließen
+    </button>
+
+    <h2>🌍 Köppen-Klimaschlüssel</h2>
+
+    <p>
+        Bestimme die Klimagruppe anhand der Monatsmitteltemperaturen
+        und der Niederschlagsverteilung.
+    </p>
+
+    <div class="schema-section">
+        <h3>1. Temperaturverhältnisse bestimmen</h3>
+
+        <p><b>A – Tropisches Klima</b></p>
+        <p>Alle Monatsmitteltemperaturen mindestens 18 °C.</p>
+
+        <p><b>E – Polarklima</b></p>
+        <ul>
+            <li><b>ET:</b> Wärmster Monat zwischen 0 °C und 10 °C.</li>
+            <li><b>EF:</b> Wärmster Monat höchstens 0 °C.</li>
+        </ul>
+
+        <p><b>C – Warmgemäßigtes Klima</b></p>
+        <p>
+            Wärmster Monat über 10 °C und kältester Monat
+            zwischen -3 °C und 18 °C.
+        </p>
+
+        <p><b>D – Kontinentales Klima</b></p>
+        <p>
+            Wärmster Monat über 10 °C und kältester Monat
+            unter -3 °C.
+        </p>
+
+        <p><b>B – Trockenklima</b></p>
+        <p>
+            Der Jahresniederschlag liegt unter der
+            temperaturabhängigen Köppen-Trockengrenze.
+        </p>
+    </div>
+
+    <div class="schema-section">
+        <h3>2. Niederschlagsverhältnisse bestimmen</h3>
+
+        <p><b>A – Tropisches Klima</b></p>
+        <ul>
+            <li><b>Af:</b> Alle Monate mindestens 60 mm Niederschlag.</li>
+            <li><b>Am:</b> Monsunklima mit kurzer Trockenzeit.</li>
+            <li><b>Aw:</b> Ausgeprägte winterliche Trockenzeit.</li>
+        </ul>
+
+        <p><b>B – Trockenklima</b></p>
+        <ul>
+            <li><b>BW:</b> Wüstenklima.</li>
+            <li><b>BS:</b> Steppenklima.</li>
+        </ul>
+
+        <p><b>C und D – Niederschlagsverteilung</b></p>
+        <ul>
+            <li><b>f:</b> Ganzjährig feucht, keine ausgeprägte Trockenzeit.</li>
+            <li><b>s:</b> Sommertrockenheit.</li>
+            <li><b>w:</b> Wintertrockenheit.</li>
+        </ul>
+    </div>
+
+    <div class="schema-section">
+        <h3>3. Buchstabenkombinationen</h3>
+
+        <p><b>Tropisches Klima</b></p>
+        <p>Af · Am · Aw</p>
+
+        <p><b>Trockenklima</b></p>
+        <p>BW · BS</p>
+
+        <p><b>Warmgemäßigtes Klima</b></p>
+        <p>Cf · Cs · Cw</p>
+
+        <p><b>Kontinentales Klima</b></p>
+        <p>Df · Ds · Dw</p>
+
+        <p><b>Polarklima</b></p>
+        <p>ET · EF</p>
+    </div>
+
+    <div class="schema-section">
+        <h3>4. Köppen-Trockengrenze</h3>
+
+        <p>
+            Die Trockengrenze hängt von der Jahresmitteltemperatur
+            und der Niederschlagsverteilung ab.
+        </p>
+
+        <p>
+            <b>Grundformel:</b>
+        </p>
+
+        <p>
+            20 × Jahresmitteltemperatur + Zuschlag
+        </p>
+
+        <ul>
+            <li>280 mm bei überwiegendem Sommerniederschlag.</li>
+            <li>140 mm bei ausgeglichener Verteilung.</li>
+            <li>0 mm bei überwiegendem Winterniederschlag.</li>
+        </ul>
+
+        <p>
+            BW liegt unter der Hälfte dieser Grenze,
+            BS zwischen der Hälfte und der gesamten Grenze.
+        </p>
+    </div>
+
+    <div class="schema-section">
+        <h3>5. Merkhilfe</h3>
+
+        <ul>
+            <li><b>A:</b> Tropen</li>
+            <li><b>B:</b> Trockenräume</li>
+            <li><b>C:</b> Warmgemäßigte Zone</li>
+            <li><b>D:</b> Kontinentalzone</li>
+            <li><b>E:</b> Polarzone</li>
+            <li><b>f:</b> Feucht</li>
+            <li><b>s:</b> Sommer trocken</li>
+            <li><b>w:</b> Winter trocken</li>
+        </ul>
+    </div>
+
+    <div class="schema-section">
+        <h3>Hinweis zur Klassifikation</h3>
+        <p>
+            Das Quiz verwendet eine vereinfachte Köppen-Klassifikation.
+            Die Grenzwerte und Untertypen können je nach verwendeter
+            Köppen-Variante geringfügig abweichen.
+        </p>
+    </div>
+
+</aside>
+
+<script>
+"use strict";
+
+/* --------------------------------------------------
+   DATENQUELLE
+-------------------------------------------------- */
+
+const DATA_URL =
+ "https://raw.githubusercontent.com/fdagner/klimadiagramme/main/data/geodaten.csv";
+
+const MONTHS = [
+ "Jan","Feb","Mär","Apr","Mai","Jun",
+ "Jul","Aug","Sep","Okt","Nov","Dez"
+];
+
+const CLIMATE_TYPES = [
+ "Af","Am","Aw","BW","BS",
+ "Cf","Cs","Cw","Df","Dw","Ds","ET","EF"
+];
+
+let allStations = [];
+let quiz = [];
+let assignments = {};
+let selectedDiagram = null;
+let map = null;
+let markers = [];
+let charts = [];
+let locked = false;
+/* --------------------------------------------------
+   ALLGEMEINE HILFSFUNKTIONEN
+-------------------------------------------------- */
+
+// Kurzer Zugriff auf HTML-Elemente
+function $(id) {
+    return document.getElementById(id);
+}
+
+// Kartenmarker entsprechend den Zuordnungen aktualisieren
+function refreshMarkers() {
+
+    quiz.forEach((station, i) => {
+
+        const element = $("point-" + i);
+
+        if (!element) return;
+
+        element.classList.remove("used", "selected");
+
+        const isUsed = Object.values(assignments)
+            .includes(i);
+
+        if (isUsed) {
+            element.classList.add("used");
+        }
+
+        if (
+            selectedDiagram !== null &&
+            assignments[selectedDiagram] === i
+        ) {
+            element.classList.add("selected");
+        }
+    });
+
+    // Zugeordnete Marker und Diagramme aktualisieren
+    markers.forEach((marker, i) => {
+
+        const isUsed = Object.values(assignments)
+            .includes(i);
+
+        marker.setZIndexOffset(
+            selectedDiagram !== null &&
+            assignments[selectedDiagram] === i
+                ? 12000
+                : isUsed ? 10000 : 9000
+        );
+    });
+}
+
+// Einheitlicher Aufrufname für den Kartenaufbau
+async function createMap() {
+    await drawMap();
+}
+/* --------------------------------------------------
+   HILFSFUNKTIONEN
+-------------------------------------------------- */
+
+function shuffle(array) {
+ const a = [...array];
+
+ for(let i=a.length-1;i>0;i--) {
+  const j = Math.floor(Math.random()*(i+1));
+  [a[i],a[j]] = [a[j],a[i]];
+ }
+
+ return a;
+}
+
+function parseNumber(value) {
+ if(value === undefined || value === null) return NaN;
+
+ return Number(
+  String(value).trim().replace(",",".")
+ );
+}
+
+function escapeHTML(value) {
+ return String(value ?? "").replace(/[&<>"']/g, c => ({
+  "&":"&amp;",
+  "<":"&lt;",
+  ">":"&gt;",
+  '"':"&quot;",
+  "'":"&#39;"
+ })[c]);
+}
+
+/* CSV-Parser mit Unterstützung für Anführungszeichen */
+
+function parseCSV(text) {
+ const rows = [];
+ let row = [];
+ let field = "";
+ let quoted = false;
+
+ for(let i=0;i<text.length;i++) {
+  const c = text[i];
+
+  if(c === '"') {
+   if(quoted && text[i+1] === '"') {
+    field += '"';
+    i++;
+   } else {
+    quoted = !quoted;
+   }
+  } else if(c === ";" && !quoted) {
+   row.push(field.trim());
+   field = "";
+  } else if((c === "\n" || c === "\r") && !quoted) {
+   if(c === "\r" && text[i+1] === "\n") i++;
+
+   row.push(field.trim());
+
+   if(row.some(x => x !== "")) rows.push(row);
+
+   row = [];
+   field = "";
+  } else {
+   field += c;
+  }
+ }
+
+ row.push(field.trim());
+ if(row.some(x => x !== "")) rows.push(row);
+
+ return rows;
+}
+
+/* --------------------------------------------------
+   OER-DATEN LADEN
+-------------------------------------------------- */
+
+async function loadData() {
+
+ const response = await fetch(DATA_URL);
+
+ if(!response.ok) {
+  throw new Error(
+   "Der OER-Datensatz konnte nicht geladen werden. HTTP "+response.status
+  );
+ }
+
+ const text = await response.text();
+ const rows = parseCSV(text);
+
+ if(rows.length < 2) {
+  throw new Error("Die CSV-Datei enthält keine Datensätze.");
+ }
+
+ const headers = rows[0].map(x => x.replace(/^\uFEFF/,""));
+
+ const required = [
+  "ID","Ort","Land","Hoehenlage",
+  "Laengengrad","Breitengrad","Referenzzeitraum"
+ ];
+
+ for(const name of required) {
+  if(!headers.includes(name)) {
+   throw new Error("CSV-Spalte fehlt: "+name);
+  }
+ }
+
+ const index = name => headers.indexOf(name);
+
+ const result = [];
+
+ for(let i=1;i<rows.length;i++) {
+
+  const cells = rows[i];
+
+  if(cells.length !== headers.length) continue;
+
+  const station = {
+   id:cells[index("ID")],
+   name:cells[index("Ort")],
+   country:cells[index("Land")],
+   height:parseNumber(cells[index("Hoehenlage")]),
+   lon:parseNumber(cells[index("Laengengrad")]),
+   lat:parseNumber(cells[index("Breitengrad")]),
+   period:cells[index("Referenzzeitraum")],
+
+   t:cells.slice(4,16).map(parseNumber),
+   p:cells.slice(16,28).map(parseNumber)
+  };
+
+  if(
+   !station.id ||
+   !station.name ||
+   !Number.isFinite(station.lat) ||
+   !Number.isFinite(station.lon) ||
+   Math.abs(station.lat)>90 ||
+   Math.abs(station.lon)>180 ||
+   station.t.length!==12 ||
+   station.p.length!==12 ||
+   !station.t.every(Number.isFinite) ||
+   !station.p.every(x=>Number.isFinite(x)&&x>=0)
+  ) continue;
+
+  result.push(station);
+ }
+
+ if(result.length < 10) {
+  throw new Error("Es wurden zu wenige gültige Datensätze gefunden.");
+ }
+
+ return result;
+}
+
+/* --------------------------------------------------
+   STATIONEN AUSWÄHLEN
+-------------------------------------------------- */
+
+function selectStations(pool,n) {
+
+ // Mehrere Referenzzeiträume desselben Ortes nicht doppelt verwenden.
+ const groups = new Map();
+
+ for(const s of shuffle(pool)) {
+
+  const key = [
+   s.name.toLowerCase(),
+   s.country.toLowerCase(),
+   s.lat.toFixed(2),
+   s.lon.toFixed(2)
+  ].join("|");
+
+  if(!groups.has(key)) groups.set(key,s);
+ }
+
+ const candidates = shuffle([...groups.values()]);
+ const selected = [];
+
+ // Nach Möglichkeit geografisch verteilte Orte auswählen.
+ for(const station of candidates) {
+
+  if(selected.length >= n) break;
+
+  const farEnough = selected.every(other => {
+   const d = distanceKm(
+    station.lat,station.lon,other.lat,other.lon
+   );
+   return d > 350;
+  });
+
+  if(farEnough || selected.length===0) {
+   selected.push(station);
+  }
+ }
+
+ // Falls die Mindestentfernung nicht genügend Treffer erlaubt.
+ for(const station of candidates) {
+  if(selected.length>=n) break;
+
+  if(!selected.includes(station)) selected.push(station);
+ }
+
+ return shuffle(selected);
+}
+
+function distanceKm(lat1,lon1,lat2,lon2) {
+ const rad = Math.PI/180;
+
+ const a = Math.sin((lat2-lat1)*rad/2)**2 +
+  Math.cos(lat1*rad)*Math.cos(lat2*rad)*
+  Math.sin((lon2-lon1)*rad/2)**2;
+
+ return 6371*2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a));
+}
+
+/* --------------------------------------------------
+   QUIZ STARTEN
+-------------------------------------------------- */
+
+async function startQuiz() {
+
+ const button = document.getElementById("startButton");
+ const loading = document.getElementById("loading");
+ const error = document.getElementById("error");
+
+ button.disabled = true;
+ error.textContent = "";
+ loading.classList.remove("hidden");
+ loading.textContent = "Lade OER-Klimadaten ...";
+
+ try {
+
+  if(!allStations.length) {
+   allStations = await loadData();
+  }
+
+  const period = document.getElementById("period").value;
+  const n = Number(document.getElementById("amount").value);
+
+  let pool = allStations;
+
+  if(period !== "both") {
+   pool = pool.filter(s => s.period === period);
+  }
+
+  if(pool.length < n) {
+   throw new Error("Nicht genügend Klimastationen verfügbar.");
+  }
+
+  quiz = selectStations(pool,n);
+
+  assignments = {};
+  selectedDiagram = null;
+  locked = false;
+
+  charts.forEach(c => c.destroy());
+  charts = [];
+
+  document.getElementById("start").classList.add("hidden");
+  document.getElementById("game").classList.remove("hidden");
+  document.getElementById("end").classList.add("hidden");
+
+  drawDiagrams();
+  await createMap();
+  updateProgress();
+
+ } catch(e) {
+
+  console.error(e);
+  loading.classList.add("hidden");
+  error.textContent = "Fehler: "+e.message;
+
+ } finally {
+
+  button.disabled = false;
+ }
+}
+
+/* --------------------------------------------------
+   ORIGINALNAHE WALTER-LIETH-DIAGRAMME
+-------------------------------------------------- */
+
+function createChart(canvas,station,showTitle=false) {
+
+ const t = station.t;
+ const p = station.p;
+
+ const temperatureMapped = t.map(v=>v*2);
+ const precipitationLow = p.map(v=>Math.min(v,100));
+ const precipitationHigh = p.map(v=>Math.max(0,v-100)/10);
+
+// Walter-Lieth-Darstellung:
+// Bis 100 mm entspricht 1 mm einer halben Temperaturstufe.
+// Oberhalb von 100 mm wird die Niederschlagsskala gestaucht.
+
+const mappedPrecipitation = p.map(value =>
+    value <= 100
+        ? value
+        : 100 + (value - 100) / 10
+);
+
+const maxPre = Math.max(...mappedPrecipitation);
+
+const maxAxis = Math.max(
+    100,
+    Math.ceil((maxPre + 10) / 20) * 20
+);
+
+const minTemp = Math.min(
+    -20,
+    Math.floor((Math.min(...t) * 2 - 10) / 20) * 20
+);
+
+
+ const config = {
+  type:"bar",
+
+  data:{
+   labels:MONTHS,
+   datasets:[
+    {
+     type:"line",
+     label:"Temperatur",
+     data:temperatureMapped,
+     borderColor:"#BE4B48",
+     backgroundColor:"#BE4B48",
+     borderWidth:3,
+     tension:.4,
+     pointRadius:0,
+     yAxisID:"yTemp",
+     order:1
+    },
+    {
+     type:"bar",
+     label:"Niederschlag bis 100 mm",
+     data:precipitationLow,
+     backgroundColor:"#00B0F0",
+     borderColor:"#00B0F0",
+     stack:"precip",
+     yAxisID:"yPre",
+     order:2
+    },
+    {
+     type:"bar",
+     label:"Niederschlag über 100 mm",
+     data:precipitationHigh,
+     backgroundColor:"#40699C",
+     borderColor:"#40699C",
+     stack:"precip",
+     yAxisID:"yPre",
+     order:2
+    }
+   ]
+  },
+
+  options:{
+   responsive:true,
+   maintainAspectRatio:false,
+   animation:false,
+
+   layout:{
+    padding:{top:5,left:3,right:3,bottom:0}
+   },
+
+   plugins:{
+    legend:{display:false},
+
+    title:{
+     display:showTitle,
+     text:station.name,
+     font:{size:18,weight:"bold"}
+    },
+
+    subtitle:{
+     display:true,
+     text:
+      "T: "+
+      (t.reduce((a,b)=>a+b,0)/12).toFixed(1)+
+      " °C    N: "+
+      Math.round(p.reduce((a,b)=>a+b,0))+
+      " mm    "+
+      (Number.isFinite(station.height)?station.height:"–")+
+      " m ü. NN",
+     color:"#777",
+     font:{size:11}
+    },
+
+    tooltip: {
+    enabled: true,
+
+    callbacks: {
+
+        label: function(context) {
+
+            const index = context.dataIndex;
+
+            if (context.dataset.label === "Temperatur") {
+
+                return "Temperatur: " +
+                    t[index].toFixed(1) + " °C";
+            }
+
+            if (
+                context.dataset.label ===
+                "Niederschlag bis 100 mm"
+            ) {
+
+                return "Niederschlag: " +
+                    Math.min(p[index], 100).toFixed(1) +
+                    " mm";
+            }
+
+            if (
+                context.dataset.label ===
+                "Niederschlag über 100 mm"
+            ) {
+
+                return "Niederschlag: " +
+                    p[index].toFixed(1) + " mm";
+            }
+
+            return context.dataset.label;
+        }
+    }
+}
+   },
+
+   scales:{
+
+    x:{
+     stacked:true,
+     grid:{display:false},
+     ticks:{font:{size:10}}
+    },
+
+    yPre:{
+     type:"linear",
+     position:"right",
+     min:minTemp,
+     max:maxAxis,
+     stacked:true,
+     grid:{color:"#e8edf0"},
+     ticks:{
+      stepSize:20,
+      color:"#00A6DF",
+      font:{size:10},
+      callback:value=>{
+       if(value<0)return "";
+       return value>100?
+        Math.round(100+(value-100)*10)+" mm":
+        value+" mm";
+      }
+     }
+    },
+
+    yTemp:{
+     type:"linear",
+     position:"left",
+     min:minTemp,
+     max:maxAxis,
+     grid:{display:false},
+     ticks:{
+      stepSize:20,
+      color:"#BE4B48",
+      font:{size:10},
+      callback:value=>{
+       if(value<0)return "";
+       if(value>80)return "";
+       return (value/2)+" °C";
+      }
+     }
+    }
+   }
+  }
+ };
+
+ return new Chart(canvas,config);
+}
+
+/* --------------------------------------------------
+   DIAGRAMME DARSTELLEN
+-------------------------------------------------- */
+
+function drawDiagrams() {
+
+ const container = document.getElementById("diagrams");
+ container.innerHTML = "";
+
+ quiz.forEach((station,i)=>{
+
+  const card = document.createElement("article");
+  card.className = "diagram";
+  card.id = "diagram"+i;
+
+  const heading = document.createElement("h3");
+  heading.textContent = "Klimadiagramm "+(i+1);
+  card.appendChild(heading);
+
+  const wrap = document.createElement("div");
+  wrap.className = "chart-wrap";
+
+  const canvas = document.createElement("canvas");
+  canvas.id = "chart"+i;
+
+  wrap.appendChild(canvas);
+  card.appendChild(wrap);
+
+  const label = document.createElement("label");
+  label.textContent = "Köppen-Klimagruppe:";
+  card.appendChild(label);
+
+  const select = document.createElement("select");
+  select.id = "type"+i;
+
+  select.innerHTML =
+   '<option value="">Bitte auswählen</option>'+
+   CLIMATE_TYPES.map(type=>
+    `<option value="${type}">${type}</option>`
+   ).join("");
+
+  select.addEventListener("change",updateProgress);
+  card.appendChild(select);
+
+  const assignment = document.createElement("div");
+  assignment.className = "assignment";
+  assignment.id = "assigned"+i;
+  assignment.textContent = "Noch kein Standort zugeordnet.";
+  card.appendChild(assignment);
+
+  const button = document.createElement("button");
+  button.className = "assign";
+  button.textContent = "Standort auswählen";
+  button.addEventListener("click",()=>selectDiagram(i));
+  card.appendChild(button);
+
+  container.appendChild(card);
+
+  charts.push(createChart(canvas,station,false));
+ });
+}
+
+/* --------------------------------------------------
+   WELTKARTE
+-------------------------------------------------- */
+
+
+
+async function drawMap() {
+
+    if (map) {
+        map.remove();
+        map = null;
+    }
+
+    markers = [];
+
+    // Weltkarte erstellen
+    map = L.map("map", {
+        center: [25, 10],
+        zoom: 2,
+        minZoom: 2,
+        maxZoom: 9,
+        worldCopyJump: false
+    });
+
+    // Eigene Ebene für die Länder
+    map.createPane("countryPane");
+    map.getPane("countryPane").style.zIndex = 400;
+
+    // Eigene Ebene für die Klimastandorte
+    map.createPane("stationPane");
+    map.getPane("stationPane").style.zIndex = 650;
+
+    // Keine externen Kartenkacheln:
+    // Dadurch gibt es keinen Tile-Access-Blocked-Fehler.
+    map.getContainer().style.background = "#c9dce8";
+
+    // Länder direkt als GeoJSON laden.
+    try {
+
+    const response = await fetch(
+      "https://cdn.jsdelivr.net/gh/datasets/geo-countries@master/data/countries.geojson"
+    );
+
+    if (!response.ok) {
+        throw new Error("HTTP " + response.status);
+    }
+
+    const geo = await response.json();
+
+    if (!geo.features || geo.features.length === 0) {
+        throw new Error("Keine Länder gefunden.");
+    }
+
+    L.geoJSON(geo, {
+
+        pane: "countryPane",
+
+        interactive: false,
+
+        style: function(feature) {
+
+            return {
+                color: "#84949c",
+                weight: 0.8,
+                fillColor: "#e9dfc9",
+                fillOpacity: 1
+            };
+
+        }
+
+    }).addTo(map);
+
+    console.log("Weltkarte erfolgreich geladen.");
+
+} catch(error) {
+
+    console.error("Weltkartenfehler:", error);
+
+    document.getElementById("mapInfo").innerHTML =
+    "<b>Die Länderkarte konnte nicht geladen werden.</b> " +
+    escapeHTML(error.message) +
+    "<br>Die Klimastandorte können weiterhin verwendet werden.";
+
+}
+
+    // WICHTIG:
+    // Marker werden unabhängig von der Länderkarte erzeugt.
+    // Jeder Marker erhält seine eigenen Koordinaten aus dem OER-Datensatz.
+
+    quiz.forEach((station, i) => {
+
+        if (
+            !Number.isFinite(station.lat) ||
+            !Number.isFinite(station.lon)
+        ) {
+            console.error("Ungültige Koordinaten:", station);
+            return;
+        }
+
+        const icon = L.divIcon({
+
+            className: "station-marker",
+
+            html: `
+                <div class="map-point"
+                     id="point-${i}">
+                    ${i + 1}
+                </div>
+            `,
+
+            iconSize: [42, 42],
+            iconAnchor: [21, 21]
+
+        });
+
+        const marker = L.marker(
+            [station.lat, station.lon],
+            {
+                icon: icon,
+                pane: "stationPane",
+                keyboard: true,
+                zIndexOffset: 10000
+            }
+        );
+
+        marker.addTo(map);
+
+        marker.bindTooltip(
+            "Standort " + (i + 1),
+            {direction: "top"}
+        );
+
+        marker.on("click", function() {
+            assignPoint(i);
+        });
+
+        markers.push(marker);
+    });
+
+    // Kartenlegende
+    
+
+    // Karte auf die Standorte ausrichten
+    if (quiz.length > 0) {
+
+        const bounds = L.latLngBounds(
+            quiz.map(s => [s.lat, s.lon])
+        );
+
+        if (bounds.isValid()) {
+            map.fitBounds(bounds.pad(0.25), {
+                maxZoom: 4
+            });
+        }
+
+    }
+
+    refreshMarkers();
+
+    setTimeout(() => {
+        map.invalidateSize();
+    }, 300);
+
+}
+
+
+/* --------------------------------------------------
+   ZUORDNUNG
+-------------------------------------------------- */
+
+function selectDiagram(i) {
+
+    if (locked) return;
+
+    selectedDiagram = i;
+
+    document.querySelectorAll(".diagram")
+        .forEach((card, j) => {
+
+            card.classList.toggle("active", j === i);
+
+            card.querySelector(".assign")
+                .classList.toggle("selected", j === i);
+        });
+
+    refreshMarkers();
+
+    document.getElementById("mapInfo").textContent =
+        "Klimadiagramm " + (i + 1) +
+        " ausgewählt. Klicke jetzt auf den passenden Kartenpunkt.";
+}
+
+function assignPoint(point) {
+
+ if(locked)return;
+
+ if(selectedDiagram===null) {
+  document.getElementById("mapInfo").textContent =
+   "Bitte zuerst ein Klimadiagramm auswählen.";
+  return;
+ }
+
+ const diagram = selectedDiagram;
+ const previous = assignments[diagram];
+
+ const occupant = Object.keys(assignments).find(key=>
+  Number(key)!==diagram &&
+  assignments[key]===point
+ );
+
+ // Zwei bereits zugeordnete Punkte tauschen.
+ if(occupant!==undefined) {
+
+  if(previous===undefined) {
+   delete assignments[occupant];
+  } else {
+   assignments[occupant]=previous;
+  }
+ }
+
+ assignments[diagram]=point;
+
+ refreshAssignments();
+
+ selectedDiagram=null;
+
+ document.getElementById("mapInfo").textContent =
+  "Zuordnung gespeichert. Du kannst jede Zuordnung jederzeit ändern.";
+
+ refreshMarkers();
+ updateProgress();
+}
+
+function refreshAssignments() {
+
+ quiz.forEach((station,i)=>{
+
+  const point = assignments[i];
+
+  const card = document.getElementById("diagram"+i);
+  const label = document.getElementById("assigned"+i);
+
+  if(point===undefined) {
+   label.textContent="Noch kein Standort zugeordnet.";
+   card.classList.remove("assigned");
+  } else {
+   label.textContent="Standort "+(point+1)+" zugeordnet.";
+   card.classList.add("assigned");
+  }
+
+  card.classList.remove("active");
+
+  card.querySelector(".assign").classList.remove("selected");
+ });
+}
+
+function clearSelection() {
+
+    selectedDiagram = null;
+
+    document.querySelectorAll(".diagram").forEach(card => {
+
+        card.classList.remove("active");
+
+        card.querySelector(".assign")
+            .classList.remove("selected");
+    });
+
+    refreshMarkers();
+
+    document.getElementById("mapInfo").textContent =
+        "Auswahl aufgehoben. Wähle ein Klimadiagramm aus.";
+}
+
+/* --------------------------------------------------
+   KÖPPEN-KLASSIFIKATION
+-------------------------------------------------- */
+
+function classify(station) {
+
+ const t=station.t;
+ const p=station.p;
+
+ const annualT=t.reduce((a,b)=>a+b,0)/12;
+ const annualP=p.reduce((a,b)=>a+b,0);
+
+ const cold=Math.min(...t);
+ const hot=Math.max(...t);
+
+ // Nord- und Südhalbkugel berücksichtigen.
+ const summer=station.lat>=0?
+  [3,4,5,6,7,8]:
+  [9,10,11,0,1,2];
+
+ const winter=station.lat>=0?
+  [9,10,11,0,1,2]:
+  [3,4,5,6,7,8];
+
+ const summerP=summer.reduce((a,i)=>a+p[i],0);
+ const winterP=winter.reduce((a,i)=>a+p[i],0);
+
+ // B: Trockengrenze in mm.
+ const summerShare=summerP/Math.max(annualP,1);
+
+ let dryLimit=20*annualT;
+
+ if(summerShare>=0.70) {
+  dryLimit+=280;
+ } else if(summerShare>=0.30) {
+  dryLimit+=140;
+ }
+
+ if(annualP<dryLimit/2)return "BW";
+ if(annualP<dryLimit)return "BS";
+
+ // A: Tropisches Klima.
+ if(cold>=18) {
+
+  if(Math.min(...p)>=60)return "Af";
+
+  const amLimit=100-annualP/25;
+
+  if(Math.min(...p)>=amLimit)return "Am";
+
+  return "Aw";
+ }
+
+ // E: Polarklima.
+ if(hot<=10) {
+  return hot<=0?"EF":"ET";
+ }
+
+ // C/D: Temperaturgrenze.
+ const continental=cold< -3;
+ const prefix=continental?"D":"C";
+
+ const summerMin=Math.min(...summer.map(i=>p[i]));
+ const winterMin=Math.min(...winter.map(i=>p[i]));
+
+ const summerMax=Math.max(...summer.map(i=>p[i]));
+ const winterMax=Math.max(...winter.map(i=>p[i]));
+
+ const summerDry=
+  summerMin<40 &&
+  summerMin<winterMax/3;
+
+ const winterDry=
+  winterMin<summerMax/10;
+
+ if(summerDry)return prefix+"s";
+ if(winterDry)return prefix+"w";
+
+ return prefix+"f";
+}
+
+/* --------------------------------------------------
+   ERKLÄRUNGEN
+-------------------------------------------------- */
+
+function climateExplanation(s,type) {
+
+ const t=s.t;
+ const p=s.p;
+
+ const avg=t.reduce((a,b)=>a+b,0)/12;
+ const total=p.reduce((a,b)=>a+b,0);
+
+ const cold=Math.min(...t);
+ const hot=Math.max(...t);
+
+ const coldMonth=MONTHS[t.indexOf(cold)];
+ const hotMonth=MONTHS[t.indexOf(hot)];
+
+ const summer=s.lat>=0?
+  [3,4,5,6,7,8]:
+  [9,10,11,0,1,2];
+
+ const winter=s.lat>=0?
+  [9,10,11,0,1,2]:
+  [3,4,5,6,7,8];
+
+ const summerP=summer.reduce((a,i)=>a+p[i],0);
+ const winterP=winter.reduce((a,i)=>a+p[i],0);
+
+ const minP=Math.min(...p);
+ const maxP=Math.max(...p);
+
+ const reasons={
+
+  Af:"Alle Monate sind warm und der Niederschlag bleibt auch im trockensten Monat hoch. Es handelt sich um tropisches Regenwaldklima.",
+
+  Am:"Die Temperaturen sind ganzjährig tropisch. Es gibt zwar einen trockeneren Monat, aber die Niederschlagsmenge entspricht dem Monsunklima.",
+
+  Aw:"Die Temperaturen liegen ganzjährig im tropischen Bereich. Gleichzeitig zeigt sich eine deutliche Trockenzeit.",
+
+  BW:"Der Jahresniederschlag liegt unter der Hälfte der Köppen-Trockengrenze. Das ist typisch für Wüstenklima.",
+
+  BS:"Der Jahresniederschlag liegt unter der Köppen-Trockengrenze, aber nicht unter deren Hälfte. Es handelt sich um Steppenklima.",
+
+  Cf:"Die Temperaturen zeigen ein warmgemäßigtes Klima. Es gibt weder eine ausgeprägte sommerliche noch eine ausgeprägte winterliche Trockenzeit.",
+
+  Cs:"Im Sommerhalbjahr fällt deutlich weniger Niederschlag als im Winterhalbjahr. Das ist typisch für Mittelmeerklima.",
+
+  Cw:"Das Winterhalbjahr ist deutlich trockener als das Sommerhalbjahr. Das ist typisch für wintertrockenes warmgemäßigtes Klima.",
+
+  Df:"Der kalte Winter und der warme Sommer zeigen ein kontinentales Klima. Eine ausgeprägte Trockenzeit fehlt.",
+
+  Dw:"Die Winter sind deutlich trockener als die Sommer. Das ist typisch für wintertrockenes kontinentales Klima.",
+
+  Ds:"Das Sommerhalbjahr ist deutlich trockener als das Winterhalbjahr. Die Temperaturverhältnisse zeigen ein kontinentales Klima.",
+
+  ET:"Der wärmste Monat liegt zwischen 0 °C und 10 °C. Damit handelt es sich um Tundrenklima.",
+
+  EF:"Selbst der wärmste Monat bleibt bei höchstens 0 °C. Das ist typisch für Eiswüstenklima."
+ };
+
+ return `
+ <p>
+  Die Jahresmitteltemperatur beträgt
+  <b>${avg.toFixed(1)} °C</b>.
+  Der kälteste Monat ist ${coldMonth}
+  mit ${cold.toFixed(1)} °C.
+  Der wärmste Monat ist ${hotMonth}
+  mit ${hot.toFixed(1)} °C.
+ </p>
+
+ <p>
+  Der Jahresniederschlag beträgt
+  <b>${Math.round(total)} mm</b>.
+  Der niederschlagsärmste Monat hat
+  ${minP.toFixed(1)} mm, der niederschlagsreichste
+  ${maxP.toFixed(1)} mm.
+ </p>
+
+ <p>
+  ${summerP>winterP?
+   "Der Niederschlagsschwerpunkt liegt im Sommerhalbjahr.":
+   "Der Niederschlagsschwerpunkt liegt im Winterhalbjahr."
+  }
+ </p>
+
+ <p>${reasons[type]}</p>
+ `;
+}
+
+/* --------------------------------------------------
+   FORTSCHRITT
+-------------------------------------------------- */
+
+function updateProgress() {
+
+ const assigned=Object.keys(assignments).length;
+
+ const climate=quiz.filter((s,i)=>
+  document.getElementById("type"+i)?.value
+ ).length;
+
+ const total=quiz.length*2;
+ const completed=assigned+climate;
+
+ document.getElementById("progressText").textContent =
+  "Standorte: "+assigned+"/"+quiz.length+
+  " | Klimagruppen: "+climate+"/"+quiz.length;
+
+ document.getElementById("progressBar").style.width =
+  (completed/total*100)+"%";
+}
+
+/* --------------------------------------------------
+   AUSWERTUNG
+-------------------------------------------------- */
+
+function finishQuiz() {
+
+ if(Object.keys(assignments).length!==quiz.length) {
+  alert("Bitte ordne zunächst alle Klimadiagramme einem Standort zu.");
+  return;
+ }
+
+ if(!quiz.every((s,i)=>
+  document.getElementById("type"+i).value
+ )) {
+  alert("Bitte bestimme zuerst alle Klimagruppen.");
+  return;
+ }
+
+ locked=true;
+
+ let score=0;
+ let html="";
+
+ quiz.forEach((station,i)=>{
+
+  const answer=document.getElementById("type"+i).value;
+  const correctType=classify(station);
+
+  const correctPoint=i;
+  const locationCorrect=assignments[i]===correctPoint;
+  const climateCorrect=answer===correctType;
+
+  if(locationCorrect)score++;
+  if(climateCorrect)score++;
+
+  const chartId="resultChart"+i;
+
+  html+=`
+   <article class="result">
+
+    <h2>Diagramm ${i+1}: ${escapeHTML(station.name)}</h2>
+
+    <div class="chart-wrap">
+     <canvas id="${chartId}"></canvas>
+    </div>
+
+    <h3>Klimaklasse</h3>
+
+    <p class="${climateCorrect?"good":"bad"}">
+     Deine Antwort: ${answer}
+     ${climateCorrect?"✓":"✗"}
+     ${!climateCorrect?
+      " – Richtige Antwort: "+correctType:""}
+    </p>
+
+    <h3>Geografische Zuordnung</h3>
+
+    <p class="${locationCorrect?"good":"bad"}">
+     ${locationCorrect?
+      "Richtig zugeordnet ✓":
+      "Falscher Standort – richtig ist Punkt "+(correctPoint+1)}
+    </p>
+
+    <p>
+     <b>Richtiger Ort:</b>
+     ${escapeHTML(station.name)}, ${escapeHTML(station.country)}
+    </p>
+
+    <p>
+     <b>Koordinaten:</b>
+     ${station.lat.toFixed(2)}°,
+     ${station.lon.toFixed(2)}°
+    </p>
+
+    <p>
+     <b>Höhenlage:</b>
+     ${Number.isFinite(station.height)?
+      station.height+" m ü. NN":"Keine Angabe"}
+    </p>
+
+    <p>
+     <b>Referenzzeitraum:</b>
+     ${station.period==="R1"?"1961–1990":"1991–2020"}
+    </p>
+
+    <h3>Warum passt das Diagramm zu diesem Ort und Klima?</h3>
+
+    ${climateExplanation(station,correctType)}
+
+    <p class="muted">
+     Datenquelle: OER Klimadiagramme.
+     Die Temperatur- und Niederschlagswerte stammen aus dem
+     ausgewählten Referenzzeitraum.
+    </p>
+
+   </article>
+  `;
+ });
+
+ const max=quiz.length*2;
+ const percentage=Math.round(score/max*100);
+
+ document.getElementById("game").classList.add("hidden");
+ document.getElementById("end").classList.remove("hidden");
+
+ document.getElementById("final").textContent =
+  score+" von "+max+" Punkten";
+
+ document.getElementById("percentage").textContent =
+  "Du hast "+percentage+" % erreicht.";
+
+ document.getElementById("results").innerHTML=html;
+
+ // Originalnahe Diagramme auch in der Lösung anzeigen.
+ quiz.forEach((station,i)=>{
+  const canvas=document.getElementById("resultChart"+i);
+  charts.push(createChart(canvas,station,true));
+ });
+
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+
+/* --------------------------------------------------
+   INTERAKTIVER KLIMAATLAS
+-------------------------------------------------- */
+
+let atlasMap = null;
+let atlasLayer = null;
+let atlasStations = [];
+let atlasMarkers = [];
+let atlasCharts = [];
+let atlasVisible = 24;
+let atlasPreviousPage = "start";
+let atlasSelectedStation = null;
+let atlasDetailChart = null;
+let atlasDetailCharts = [];
+let atlasSameTypeCharts = [];
+
+// Farben der Köppen-Klimagruppen
+const ATLAS_COLORS = {
+    Af: "#0066cc",
+    Am: "#0099cc",
+    Aw: "#33bbee",
+
+    BW: "#e6b800",
+    BS: "#d9a441",
+
+    Cf: "#168b55",
+    Cs: "#62a83b",
+    Cw: "#a1c65b",
+
+    Df: "#4169aa",
+    Ds: "#718dc7",
+    Dw: "#9bb5dc",
+
+    ET: "#8e78c5",
+    EF: "#b9a6dc"
+};
+
+const ATLAS_NAMES = {
+    Af: "Tropisches Regenwaldklima",
+    Am: "Monsunklima",
+    Aw: "Savannenklima",
+
+    BW: "Wüstenklima",
+    BS: "Steppenklima",
+
+    Cf: "Warmgemäßigt, ganzjährig feucht",
+    Cs: "Warmgemäßigt, sommertrocken",
+    Cw: "Warmgemäßigt, wintertrocken",
+
+    Df: "Kontinental, ganzjährig feucht",
+    Ds: "Kontinental, sommertrocken",
+    Dw: "Kontinental, wintertrocken",
+
+    ET: "Tundrenklima",
+    EF: "Eisklima"
+};
+
+
+/* --------------------------------------------------
+   NAVIGATION
+-------------------------------------------------- */
+
+function openAtlas() {
+
+    if (!$("atlasPage").classList.contains("hidden")) {
+        return;
+    }
+
+    if (!$("game").classList.contains("hidden")) {
+        atlasPreviousPage = "game";
+    } else if (!$("end").classList.contains("hidden")) {
+        atlasPreviousPage = "end";
+    } else {
+        atlasPreviousPage = "start";
+    }
+
+    $("start").classList.add("hidden");
+    $("game").classList.add("hidden");
+    $("end").classList.add("hidden");
+
+    $("atlasPage").classList.remove("hidden");
+
+    loadAtlas();
+}
+
+function backToQuiz() {
+
+    $("atlasPage").classList.add("hidden");
+
+    $("start").classList.toggle(
+        "hidden",
+        atlasPreviousPage !== "start"
+    );
+
+    $("game").classList.toggle(
+        "hidden",
+        atlasPreviousPage !== "game"
+    );
+
+    $("end").classList.toggle(
+        "hidden",
+        atlasPreviousPage !== "end"
+    );
+
+    if (map) {
+        setTimeout(() => map.invalidateSize(), 100);
+    }
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+
+/* --------------------------------------------------
+   DATEN VORBEREITEN
+-------------------------------------------------- */
+
+function prepareAtlasStations() {
+
+    const period = $("atlasPeriod").value;
+
+    let pool = allStations;
+
+    if (period !== "both") {
+        pool = pool.filter(s => s.period === period);
+    }
+
+    // Gleiche Stationen aus unterschiedlichen Zeiträumen
+    // nur einmal darstellen.
+    const groups = new Map();
+
+    pool.forEach(station => {
+
+        const key = [
+            station.name.toLowerCase(),
+            station.country.toLowerCase(),
+            station.lat.toFixed(2),
+            station.lon.toFixed(2)
+        ].join("|");
+
+        const old = groups.get(key);
+
+        if (
+            !old ||
+            (station.period === "R2" && old.period !== "R2")
+        ) {
+            groups.set(key, station);
+        }
+    });
+
+    atlasStations = [...groups.values()].map(station => ({
+        ...station,
+        climate: classify(station)
+    }));
+
+    atlasVisible = 24;
+    atlasSelectedStation = null;
+}
+
+
+/* --------------------------------------------------
+   ATLAS LADEN
+-------------------------------------------------- */
+
+async function loadAtlas() {
+
+    $("atlasInfo").textContent =
+        "Klimadaten werden geladen ...";
+
+    try {
+
+        if (!allStations.length) {
+            allStations = await loadData();
+        }
+
+        prepareAtlasStations();
+
+        fillAtlasSelect();
+        drawAtlasLegend();
+
+        await createAtlasMap();
+
+        renderAtlas();
+        renderAtlasDetail();
+
+    } catch (error) {
+
+        console.error(error);
+
+        $("atlasInfo").textContent =
+            "Fehler beim Laden: " + error.message;
+    }
+}
+
+
+/* --------------------------------------------------
+   KLIMATYPEN AUSWAHL
+-------------------------------------------------- */
+
+function fillAtlasSelect() {
+
+    const select = $("atlasClimateType");
+    const previous = select.value;
+
+    select.innerHTML =
+        '<option value="">Alle Klimatypen</option>';
+
+    CLIMATE_TYPES.forEach(type => {
+
+        const count = atlasStations.filter(
+            s => s.climate === type
+        ).length;
+
+        const option = document.createElement("option");
+
+        option.value = type;
+
+        option.textContent =
+            type + " – " + ATLAS_NAMES[type] +
+            " (" + count + ")";
+
+        select.appendChild(option);
+    });
+
+    if (
+        previous &&
+        CLIMATE_TYPES.includes(previous)
+    ) {
+        select.value = previous;
+    }
+}
+
+
+/* --------------------------------------------------
+   LEGENDE
+-------------------------------------------------- */
+
+function drawAtlasLegend() {
+
+    $("atlasLegend").innerHTML =
+        CLIMATE_TYPES.map(type => `
+
+            <div class="legend-item">
+
+                <span
+                    class="legend-color"
+                    style="background:${ATLAS_COLORS[type]}"
+                ></span>
+
+                <span>
+                    <b>${type}</b>
+                    ${ATLAS_NAMES[type]}
+                </span>
+
+            </div>
+
+        `).join("");
+}
+
+
+/* --------------------------------------------------
+   ATLAS-KARTE
+-------------------------------------------------- */
+
+async function createAtlasMap() {
+
+    if (!atlasMap) {
+
+        atlasMap = L.map("climateMap", {
+            center: [20, 10],
+            zoom: 2,
+            minZoom: 2,
+            maxZoom: 8,
+            worldCopyJump: false
+        });
+
+        atlasMap.getContainer().style.background =
+            "#c9dce8";
+
+        try {
+
+            const response = await fetch(
+                "https://cdn.jsdelivr.net/gh/datasets/geo-countries@master/data/countries.geojson"
+            );
+
+            if (!response.ok) {
+                throw new Error("Länderkarte nicht erreichbar");
+            }
+
+            const geo = await response.json();
+
+            L.geoJSON(geo, {
+
+                interactive: false,
+
+                style: {
+                    color: "#84949c",
+                    weight: 0.8,
+                    fillColor: "#e9dfc9",
+                    fillOpacity: 1
+                }
+
+            }).addTo(atlasMap);
+
+        } catch (error) {
+
+            console.warn(error);
+
+            $("atlasInfo").textContent =
+                "Die Länderkarte konnte nicht geladen werden. " +
+                "Die Klimastationen werden trotzdem dargestellt.";
+        }
+
+        atlasLayer = L.layerGroup().addTo(atlasMap);
+    }
+
+    atlasLayer.clearLayers();
+    atlasMarkers = [];
+
+    atlasStations.forEach((station, index) => {
+
+        const marker = L.circleMarker(
+            [station.lat, station.lon],
+            {
+                radius: 6,
+                color: "#ffffff",
+                weight: 1.5,
+                fillColor: ATLAS_COLORS[station.climate],
+                fillOpacity: 0.9
+            }
+        );
+
+        marker.bindPopup(`
+            <b>${escapeHTML(station.name)}</b><br>
+            ${escapeHTML(station.country)}<br>
+            Klimagruppe: <b>${station.climate}</b><br>
+            ${ATLAS_NAMES[station.climate]}<br>
+            <button onclick="focusAtlasStation(${index})">
+                Diagramm anzeigen
+            </button>
+        `);
+
+        marker.addTo(atlasLayer);
+
+        marker.on("click", () => {
+            atlasSelectedStation = station;
+            focusAtlasStation(index);
+        });
+
+        atlasMarkers.push({
+            marker,
+            station
+        });
+    });
+
+    if (atlasStations.length) {
+
+        const bounds = L.latLngBounds(
+            atlasStations.map(s => [s.lat, s.lon])
+        );
+
+        if (bounds.isValid()) {
+            atlasMap.fitBounds(bounds.pad(0.1), {
+                maxZoom: 3
+            });
+        }
+    }
+
+    setTimeout(() => {
+        atlasMap.invalidateSize();
+    }, 200);
+
+    updateAtlasMarkers();
+}
+
+
+/* --------------------------------------------------
+   MARKER NACH KLIMATYP EINFÄRBEN
+-------------------------------------------------- */
+
+function updateAtlasMarkers() {
+
+    const selected = $("atlasClimateType").value;
+
+    atlasMarkers.forEach(({marker, station}) => {
+
+        const matches =
+            !selected || station.climate === selected;
+
+        marker.setStyle({
+            fillColor: ATLAS_COLORS[station.climate],
+            fillOpacity: matches ? 0.95 : 0.12,
+            opacity: matches ? 1 : 0.25,
+            radius: matches ? 7 : 4
+        });
+    });
+}
+
+
+/* --------------------------------------------------
+   KLIMADIAGRAMME DARSTELLEN
+-------------------------------------------------- */
+
+function renderAtlas() {
+
+    atlasCharts.forEach(chart => chart.destroy());
+    atlasCharts = [];
+
+    const selected = $("atlasClimateType").value;
+
+    const filtered = atlasStations.filter(station =>
+        !selected || station.climate === selected
+    );
+
+    const visible = filtered.slice(0, atlasVisible);
+
+    $("atlasInfo").innerHTML = selected
+        ? `<b>${selected} – ${ATLAS_NAMES[selected]}</b><br>
+           ${filtered.length} passende Klimastationen gefunden.`
+        : `<b>Alle Klimagruppen</b><br>
+           ${filtered.length} Klimastationen verfügbar.`;
+
+    $("atlasResultCount").textContent =
+        visible.length + " von " + filtered.length +
+        " Klimadiagrammen werden angezeigt.";
+
+    const container = $("atlasCharts");
+    container.innerHTML = "";
+
+    visible.forEach((station, i) => {
+
+        const stationIndex = atlasStations.indexOf(station);
+
+        const card = document.createElement("article");
+
+        card.className = "atlas-chart-card";
+        card.id = "atlasCard" + stationIndex;
+
+        const heading = document.createElement("h3");
+
+        heading.textContent =
+            station.name + ", " + station.country;
+
+        card.appendChild(heading);
+
+        const info = document.createElement("p");
+
+        info.className = "muted";
+
+        info.textContent =
+            station.climate + " – " +
+            ATLAS_NAMES[station.climate] +
+            " | " +
+            (Number.isFinite(station.height)
+                ? station.height + " m"
+                : "Höhe unbekannt");
+
+        card.appendChild(info);
+
+        const wrap = document.createElement("div");
+        wrap.className = "atlas-chart";
+
+        const canvas = document.createElement("canvas");
+        canvas.id = "atlasChart" + i;
+
+        wrap.appendChild(canvas);
+        card.appendChild(wrap);
+
+        card.addEventListener("click", () => {
+            focusAtlasStation(stationIndex);
+        });
+
+        container.appendChild(card);
+
+        atlasCharts.push(
+            createChart(canvas, station, false)
+        );
+    });
+
+    $("atlasShowMore").classList.toggle(
+        "hidden",
+        atlasVisible >= filtered.length
+    );
+
+    updateAtlasMarkers();
+
+    if (atlasSelectedStation) {
+
+        const index = atlasStations.indexOf(
+            atlasSelectedStation
+        );
+
+        if (index >= 0) {
+            const card = $("atlasCard" + index);
+
+            if (card) {
+                card.classList.add("active");
+            }
+        }
+    }
+}
+
+
+/* --------------------------------------------------
+   ÄHNLICHE KLIMATYPEN
+-------------------------------------------------- */
+
+
+/* --------------------------------------------------
+   DETAILANSICHT UND KLIMAVERGLEICH
+-------------------------------------------------- */
+
+
+
+function renderAtlasDetail() {
+
+    const section = $("atlasDetailSection");
+
+    if (!atlasSelectedStation) {
+        section.classList.add("hidden");
+        return;
+    }
+
+    section.classList.remove("hidden");
+
+    const station = atlasSelectedStation;
+
+    $("atlasDetailInfo").innerHTML = `
+        <b>Ausgewählte Wetterstation:</b>
+        ${escapeHTML(station.name)},
+        ${escapeHTML(station.country)}
+        |
+        <b>${station.climate}</b> –
+        ${ATLAS_NAMES[station.climate]}
+        |
+        ${station.period === "R1"
+            ? "1961–1990"
+            : "1991–2020"}
+    `;
+
+    $("atlasSelectedHeading").innerHTML = `
+        <h3>
+            ${escapeHTML(station.name)},
+            ${escapeHTML(station.country)}
+        </h3>
+    `;
+
+    $("atlasSelectedClimate").textContent =
+        station.climate + " – " +
+        ATLAS_NAMES[station.climate];
+
+    // Ausgewähltes Diagramm aktualisieren
+    if (atlasDetailChart) {
+        atlasDetailChart.destroy();
+    }
+
+    atlasDetailChart = createChart(
+        $("atlasDetailChart"),
+        station,
+        false
+    );
+
+    // Linke Seite: gleicher Klimatyp
+    renderAtlasSameType();
+
+    // Rechte Seite: Klimatyp-Auswahl aktualisieren
+    const select = $("atlasCompareMode");
+
+    const previousValue = select.value;
+
+    // Wenn möglich, bisherige Auswahl beibehalten.
+    // Ansonsten ersten verfügbaren anderen Klimatyp wählen.
+    const availableTypes = CLIMATE_TYPES.filter(type =>
+        type !== station.climate &&
+        atlasStations.some(s => s.climate === type)
+    );
+
+    if (availableTypes.includes(previousValue)) {
+        select.value = previousValue;
+    } else {
+        select.value = availableTypes[0] || "";
+    }
+
+    // Rechte Seite aufbauen
+    renderAtlasComparison();
+}
+
+function renderAtlasSameType() {
+
+    const station = atlasSelectedStation;
+
+    if (!station) return;
+
+    // Alte Diagramme entfernen
+    atlasSameTypeCharts.forEach(chart => chart.destroy());
+
+    atlasSameTypeCharts = [];
+
+    const container = $("atlasSameTypeCharts");
+
+    container.innerHTML = "";
+
+    // Alle Stationen desselben Klimatyps suchen.
+    // Die aktuell ausgewählte Station wird ausgeschlossen.
+    const matchingStations = atlasStations.filter(s =>
+        s !== station &&
+        s.climate === station.climate
+    );
+
+    if (matchingStations.length === 0) {
+
+        container.innerHTML = `
+            <p class="muted">
+                Es gibt keine weiteren Stationen
+                mit diesem Klimatyp.
+            </p>
+        `;
+
+        return;
+    }
+
+    matchingStations.forEach((other, i) => {
+
+        const card = document.createElement("article");
+
+        card.className = "atlas-chart-card";
+
+        const heading = document.createElement("h3");
+
+        heading.textContent =
+            other.name + ", " + other.country;
+
+        card.appendChild(heading);
+
+        const info = document.createElement("p");
+
+        info.className = "muted";
+
+        info.textContent =
+            other.climate + " – " +
+            ATLAS_NAMES[other.climate] +
+            " | " +
+            (other.period === "R1"
+                ? "1961–1990"
+                : "1991–2020");
+
+        card.appendChild(info);
+
+        const wrap = document.createElement("div");
+
+        wrap.className = "atlas-chart";
+
+        const canvas = document.createElement("canvas");
+
+        canvas.id = "atlasSameTypeChart" + i;
+
+        wrap.appendChild(canvas);
+
+        card.appendChild(wrap);
+
+        container.appendChild(card);
+
+        // Diagramm erzeugen
+        atlasSameTypeCharts.push(
+            createChart(canvas, other, false)
+        );
+
+    });
+
+    const heading = document.createElement("p");
+
+    heading.className = "muted";
+
+    heading.textContent =
+        matchingStations.length +
+        " weitere Stationen mit Klimatyp " +
+        station.climate + ".";
+
+    container.prepend(heading);
+}
+
+
+/* --------------------------------------------------
+   VERGLEICHSDIAGRAMME
+-------------------------------------------------- */
+
+
+function renderAtlasComparison() {
+
+    const station = atlasSelectedStation;
+
+    if (!station) return;
+
+    // Alte Vergleichsdiagramme entfernen
+    atlasDetailCharts.forEach(chart => chart.destroy());
+
+    atlasDetailCharts = [];
+
+    const selectedType = $("atlasCompareMode").value;
+
+    const container = $("atlasComparisonCharts");
+
+    container.innerHTML = "";
+    container.scrollTop = 0;
+
+    if (!selectedType) {
+
+        $("atlasComparisonTitle").textContent =
+            "Klimatyp auswählen";
+
+        $("atlasComparisonInfo").textContent =
+            "Wähle rechts einen Köppen-Klimatyp aus.";
+
+        return;
+    }
+
+    $("atlasComparisonTitle").textContent =
+        "Vergleich mit " + selectedType +
+        " – " + ATLAS_NAMES[selectedType];
+
+    $("atlasComparisonInfo").textContent =
+        "Ausgewählte Station: " +
+        station.name + " (" + station.climate + ").";
+
+    // Alle Stationen des frei gewählten Klimatyps suchen.
+    const comparisonStations = atlasStations.filter(s =>
+        s.climate === selectedType
+    );
+
+    if (comparisonStations.length === 0) {
+
+        container.innerHTML = `
+            <p>
+                Für den Klimatyp ${selectedType}
+                sind keine Wetterstationen verfügbar.
+            </p>
+        `;
+
+        return;
+    }
+
+    comparisonStations.forEach((other, i) => {
+
+        const card = document.createElement("article");
+
+        card.className = "atlas-chart-card";
+
+        const heading = document.createElement("h3");
+
+        heading.textContent =
+            other.name + ", " + other.country;
+
+        card.appendChild(heading);
+
+        const info = document.createElement("p");
+
+        info.className = "muted";
+
+        info.textContent =
+            other.climate + " – " +
+            ATLAS_NAMES[other.climate] +
+            " | " +
+            (other.period === "R1"
+                ? "1961–1990"
+                : "1991–2020");
+
+        card.appendChild(info);
+
+        const wrap = document.createElement("div");
+
+        wrap.className = "atlas-chart";
+
+        const canvas = document.createElement("canvas");
+
+        canvas.id = "atlasComparisonChart" + i;
+
+        wrap.appendChild(canvas);
+
+        card.appendChild(wrap);
+
+        container.appendChild(card);
+
+        atlasDetailCharts.push(
+            createChart(canvas, other, false)
+        );
+
+    });
+
+    $("atlasComparisonInfo").textContent +=
+        " " + comparisonStations.length +
+        " Vergleichsstationen gefunden.";
+}
+
+
+/* --------------------------------------------------
+   STATION AUF KARTE UND DIAGRAMM VERKNÜPFEN
+-------------------------------------------------- */
+
+function focusAtlasStation(index) {
+
+    const station = atlasStations[index];
+
+    if (!station) return;
+
+    const selected = $("atlasClimateType").value;
+
+    // Falls ein anderer Klimatyp ausgewählt ist,
+    // den passenden Klimatyp aktivieren.
+    if (selected && selected !== station.climate) {
+
+        $("atlasClimateType").value = station.climate;
+
+        atlasVisible = Math.max(
+            24,
+            atlasStations
+                .filter(s => s.climate === station.climate)
+                .indexOf(station) + 1
+        );
+
+        renderAtlas();
+    }
+
+    // Ausgewählte Wetterstation speichern
+    atlasSelectedStation = station;
+
+    // Detaildiagramm und Vergleich anzeigen
+    renderAtlasDetail();
+
+    // Kartenansicht auf die Station ausrichten
+    atlasMap.setView(
+        [station.lat, station.lon],
+        Math.max(atlasMap.getZoom(), 4),
+        {animate: true}
+    );
+
+    // Kartenpopup öffnen
+    if (atlasMarkers[index]) {
+        atlasMarkers[index].marker.openPopup();
+    }
+
+    // Ausgewählte Station in der Diagrammliste markieren
+    document.querySelectorAll(".atlas-chart-card")
+        .forEach(el => el.classList.remove("active"));
+
+    const card = $("atlasCard" + index);
+
+    if (card) {
+        card.classList.add("active");
+    }
+
+    // Zur neuen Detailansicht scrollen
+    setTimeout(() => {
+
+        $("atlasDetailSection").scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    }, 150);
+
+}
+
+
+/* --------------------------------------------------
+   BEDIENELEMENTE KLIMAATLAS
+-------------------------------------------------- */
+
+$("atlasNavButton").addEventListener(
+    "click",
+    openAtlas
+);
+
+$("quizNavButton").addEventListener(
+    "click",
+    backToQuiz
+);
+
+$("atlasBackButton").addEventListener(
+    "click",
+    backToQuiz
+);
+
+$("atlasClimateType").addEventListener(
+    "change",
+    () => {
+
+        atlasSelectedStation = null;
+        atlasVisible = 24;
+
+        renderAtlas();
+
+        const selected = $("atlasClimateType").value;
+
+        if (selected) {
+
+            const matching = atlasStations.filter(
+                s => s.climate === selected
+            );
+
+            if (matching.length) {
+
+                const bounds = L.latLngBounds(
+                    matching.map(s => [s.lat, s.lon])
+                );
+
+                atlasMap.fitBounds(bounds.pad(0.15), {
+                    maxZoom: 5
+                });
+            }
+        }
+    }
+);
+
+$("atlasPeriod").addEventListener(
+    "change",
+    async () => {
+
+        prepareAtlasStations();
+        fillAtlasSelect();
+
+        await createAtlasMap();
+
+        renderAtlas();
+        renderAtlasDetail();
+    }
+);
+
+$("atlasShowMore").addEventListener(
+    "click",
+    () => {
+
+        atlasVisible += 24;
+
+        renderAtlas();
+    }
+);
+$("atlasCompareMode").addEventListener(
+    "change",
+    renderAtlasComparison
+);
+
+/* --------------------------------------------------
+   BEDIENELEMENTE
+-------------------------------------------------- */
+
+document.getElementById("startButton")
+ .addEventListener("click",startQuiz);
+
+document.getElementById("finishButton")
+ .addEventListener("click",finishQuiz);
+
+document.getElementById("clearSelection")
+ .addEventListener("click",clearSelection);
+
+document.getElementById("schemaButton")
+ .addEventListener("click",()=>{
+  document.getElementById("schema").classList.add("open");
+ });
+
+document.getElementById("closeSchema")
+ .addEventListener("click",()=>{
+  document.getElementById("schema").classList.remove("open");
+ });
+
+document.getElementById("newQuiz")
+ .addEventListener("click",()=>{
+  charts.forEach(c=>c.destroy());
+  charts=[];
+  if(map) {
+   map.remove();
+   map=null;
+  }
+
+  document.getElementById("end").classList.add("hidden");
+  document.getElementById("game").classList.add("hidden");
+  document.getElementById("start").classList.remove("hidden");
+  document.getElementById("loading").classList.add("hidden");
+  document.getElementById("error").textContent="";
+  window.scrollTo({top:0,behavior:"smooth"});
+ });
+
+</script>
+</body>
+</html>
+
+
