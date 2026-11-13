@@ -232,6 +232,7 @@ main { width: min(100%, 1180px); margin: 0 auto; padding: 31px 0 43px; }
 .summary-text figcaption { max-width: 640px; margin: 4px auto 0; color: #6c6e66; font-size: 10px; line-height: 1.6; text-align: left; }
 .summary-text .figure-source { display: block; margin-top: 3px; color: #9a9b91; font: 9px var(--mono); }
 .summary-text .summary-figure-wide img { max-width: 92%; max-height: 520px; }
+.summary-text .summary-figure-full img { max-width: 100%; max-height: none; }
 .summary-text .summary-svg svg { display: block; width: 100%; max-width: 640px; height: auto; margin: 12px auto 0; }
 .summary-text ol li::marker { color: #58745a; font-weight: 600; }
 .summary-text .summary-merke { max-width: 780px; margin: 12px 0; border-left: 3px solid #58745a; border-radius: 0 5px 5px 0; background: #f2f5ef; padding: 9px 12px; color: #4f5a4b; font-size: 11px; line-height: 1.7; }
