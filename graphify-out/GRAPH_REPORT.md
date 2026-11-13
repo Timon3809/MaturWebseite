@@ -1,23 +1,22 @@
 # Graph Report - MaturWebseite  (2026-11-13)
 
 ## Corpus Check
-- 30 files · ~120,185 words
+- 30 files · ~141,271 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 4 file(s) not represented in the graph (top: .css 3, (none) 1)
 
 ## Summary
-- 1613 nodes · 2261 edges · 209 communities (116 shown, 93 thin omitted)
-- Extraction: 85% EXTRACTED · 15% INFERRED · 0% AMBIGUOUS · INFERRED: 340 edges (avg confidence: 0.83)
+- 1540 nodes · 2130 edges · 207 communities (115 shown, 92 thin omitted)
+- Extraction: 84% EXTRACTED · 15% INFERRED · 0% AMBIGUOUS · INFERRED: 329 edges (avg confidence: 0.83)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e60a3d1b`
+- Built from commit: `fbb6539a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- Karten-Trainer Render Pipeline
-- Karten-Trainer App Logic
+- app.js
 - Salze und Ionengitter
 - SÃ¤uren und Basen
 - Geologisches Profil Jura-Alpen
@@ -138,7 +137,6 @@
 - Kleines Cluster chemie_unterrichtsdateie
 - Kleines Cluster chemie_unterrichtsdateie
 - Kleines Cluster chemie_unterrichtsdateie
-- Kleines Cluster geographie_karten_traine
 - Geo P12 1
 - Kleines Cluster geographie_resourcen_bil
 - Kleines Cluster geographie_resourcen_bil
@@ -270,7 +268,6 @@
 - **Energiebilanz des Loeseprozesses (Gitterenergie, Hydrationsenergie, Loesungsenergie)** — chemie_unterrichtsdateien_6_salze_gitterenergie, chemie_unterrichtsdateien_6_salze_hydrationsenergie, chemie_unterrichtsdateien_6_salze_loesungsenergie, chemie_unterrichtsdateien_6_salze_loeseprozess_salz [EXTRACTED 1.00]
 - **Fascist Takeover of All Three Branches of Government** — geschichte_resourcen_bilder_zusammenfassung_zwischenkriegszeit_image4_exekutive_koenig_viktor_emanuel_iii, geschichte_resourcen_bilder_zusammenfassung_zwischenkriegszeit_image4_legislative_mussolini_ministerpraesident, geschichte_resourcen_bilder_zusammenfassung_zwischenkriegszeit_image4_judikative_frei_richter [EXTRACTED 1.00]
 - **Föhn Thermodynamic Cycle (Orographic Lift → Condensation → Latent Heat Release → Dry Descent → Warm Dry Wind)** — geographie_resourcen_bilder_tessin_p1_1_orografischer_aufstieg, geographie_resourcen_bilder_tessin_p1_1_adiabatische_abkuehlung, geographie_resourcen_bilder_tessin_p1_1_kondensation, geographie_resourcen_bilder_tessin_p1_1_latente_waerme, geographie_resourcen_bilder_tessin_p1_1_adiabatische_erwaermung, geographie_resourcen_bilder_tessin_p1_1_foehnwind [EXTRACTED 1.00]
-- **Dataset validation pipeline: config -> bounds -> geometry -> full dataset** — geographie_karten_trainer_index_validateconfig, geographie_karten_trainer_index_validatebounds, geographie_karten_trainer_index_validategeometry, geographie_karten_trainer_index_validatedataset [EXTRACTED 1.00]
 - **Geographie Section Pages** — geographie_index_page, geographie_zusammenfassungen_page, geographie_glossar_page, geographie_dateien_page [EXTRACTED 1.00]
 - **Geologie-Modul der Schweiz: Grosslandschaften, Bauteile, Schichtfolgen, Gesteine, Mittelland, Jura** — geographie_resourcen_dateien_inhaltsverzeichnis_matur_2026_prov_geologie_der_schweiz, geographie_resourcen_dateien_inhaltsverzeichnis_matur_2026_prov_grosslandschaften_schweiz, geographie_resourcen_dateien_inhaltsverzeichnis_matur_2026_prov_geologische_bauteile_schweiz, geographie_resourcen_dateien_inhaltsverzeichnis_matur_2026_prov_tektonische_fenster_klippen, geographie_resourcen_dateien_inhaltsverzeichnis_matur_2026_prov_gesteine_mineralien, geographie_resourcen_dateien_inhaltsverzeichnis_matur_2026_prov_schweizer_mittelland, geographie_resourcen_dateien_inhaltsverzeichnis_matur_2026_prov_juragebirge [EXTRACTED 1.00]
 - **Pages Powered by Shared Data Layer** — geschichte_ewige_daten_page, geschichte_glossar_page, geschichte_pruefungssimulator_page, geschichte_zusammenfassungen_page [EXTRACTED 1.00]
@@ -343,8 +340,6 @@
 - **Cold War Phase Cycle (Heisse Phase, Entspannung, Hoechstspannung)** — geschichte_resourcen_bilder_zusammenfassung_kalter_krieg_image3_heisse_phase, geschichte_resourcen_bilder_zusammenfassung_kalter_krieg_image3_entspannung_detente, geschichte_resourcen_bilder_zusammenfassung_kalter_krieg_image3_hoechstspannung [INFERRED 0.85]
 - **Entwicklung der Atommodelle von Demokrit bis Orbitalmodell** — chemie_unterrichtsdateien_4_atombau_demokrit, chemie_unterrichtsdateien_4_atombau_daltonsche_atomhypothese, chemie_unterrichtsdateien_4_atombau_thomsonsches_atommodell, chemie_unterrichtsdateien_4_atombau_kern_huelle_modell, chemie_unterrichtsdateien_4_atombau_bohrsches_atommodell, chemie_unterrichtsdateien_4_atombau_bohr_sommerfeldsches_atommodell, chemie_unterrichtsdateien_4_atombau_orbital_modell [INFERRED 0.85]
 - **Folded Strata Erosion Landscape System (anticline, syncline, differential erosion, topographic lake)** — geographie_resourcen_bilder_geo_p13_1_anticline_fold, geographie_resourcen_bilder_geo_p13_1_syncline_fold, geographie_resourcen_bilder_geo_p13_1_differential_erosion, geographie_resourcen_bilder_geo_p13_1_topographic_lake [INFERRED 0.85]
-- **Answer evaluation flow: deck -> question -> answer -> feedback -> retry** — geographie_karten_trainer_index_startround, geographie_karten_trainer_index_nextquestion, geographie_karten_trainer_index_submittextanswer, geographie_karten_trainer_index_matchanswer, geographie_karten_trainer_index_choosemapitem, geographie_karten_trainer_index_finalizeanswer, geographie_karten_trainer_index_createfeedback [INFERRED 0.85]
-- **Map rendering pipeline: project geometry -> SVG paths -> layers -> transform** — geographie_karten_trainer_index_createprojector, geographie_karten_trainer_index_pathforgeometry, geographie_karten_trainer_index_rendermap, geographie_karten_trainer_index_rendermarker, geographie_karten_trainer_index_renderstudyfeature, geographie_karten_trainer_index_renderhighlight, geographie_karten_trainer_index_applytransform [INFERRED 0.85]
 - **Arctic-Boreal Latitudinal Zonation Gradient** — geographie_ressourcen_bilder_usaklima_p5_1_ice, geographie_ressourcen_bilder_usaklima_p5_1_polar_desert, geographie_ressourcen_bilder_usaklima_p5_1_tundra, geographie_ressourcen_bilder_usaklima_p5_1_open_boreal_woodland, geographie_ressourcen_bilder_usaklima_p5_1_mid_taiga, geographie_ressourcen_bilder_usaklima_p5_1_south_taiga [INFERRED 0.85]
 - **Potential Natural Vegetation Zones of North America** — geographie_ressourcen_bilder_usaklima_p5_1_ice, geographie_ressourcen_bilder_usaklima_p5_1_polar_desert, geographie_ressourcen_bilder_usaklima_p5_1_tundra, geographie_ressourcen_bilder_usaklima_p5_1_open_boreal_woodland, geographie_ressourcen_bilder_usaklima_p5_1_mid_taiga, geographie_ressourcen_bilder_usaklima_p5_1_south_taiga, geographie_ressourcen_bilder_usaklima_p5_1_grassland, geographie_ressourcen_bilder_usaklima_p5_1_cool_temperate_and_mixed, geographie_ressourcen_bilder_usaklima_p5_1_warm_temperate_forests, geographie_ressourcen_bilder_usaklima_p5_1_mediterranean_scrub, geographie_ressourcen_bilder_usaklima_p5_1_semi_desert, geographie_ressourcen_bilder_usaklima_p5_1_open_woodland, geographie_ressourcen_bilder_usaklima_p5_1_tropical_rain_forest [INFERRED 0.85]
 - **Alpine Glacial Process System** — geographie_resourcen_bilder_glazio_p7_1_glacier, geographie_resourcen_bilder_glazio_p7_1_glacial_erosion, geographie_resourcen_bilder_glazio_p7_1_rock_flour, geographie_resourcen_bilder_glazio_p7_1_glacial_lake [INFERRED 0.85]
@@ -373,15 +368,11 @@
 - **Crystalline Massifs as Basement Windows (Aar + Gotthard)** — geographie_resourcen_bilder_geo_p10_1_aarmassiv, geographie_resourcen_bilder_geo_p10_1_gotthard_massiv, geographie_resourcen_bilder_geo_p10_1_grundgebirge [INFERRED 0.95]
 - **Molasse Foreland Basin Sequence (Mittelland → Subalpine → Alpenrand)** — geographie_resourcen_bilder_geo_p10_1_mittelland_molasse, geographie_resourcen_bilder_geo_p10_1_subalpine_molasse, geographie_resourcen_bilder_geo_p10_1_alpenrand [INFERRED 0.95]
 
-## Communities (209 total, 93 thin omitted)
+## Communities (207 total, 92 thin omitted)
 
-### Community 0 - "Karten-Trainer Render Pipeline"
+### Community 0 - "app.js"
 Cohesion: 0.07
 Nodes (73): activeMapItems(), activePointers, appendMarkerSymbol(), applyTheme(), applyTransform(), availableTypes(), chooseMapItem(), clamp() (+65 more)
-
-### Community 1 - "Karten-Trainer App Logic"
-Cohesion: 0.05
-Nodes (69): activeMapItems, appendMarkerSymbol, applyTheme, applyTransform, availableTypes, chooseMapItem, clamp, clampTransform (+61 more)
 
 ### Community 2 - "Salze und Ionengitter"
 Cohesion: 0.06
@@ -854,9 +845,9 @@ Nodes (52): addNucleus(), animateEquilibriumParticles(), atomRadius(), chooseEle
   C:/Users/irar/MaturWebseite/Geographie/Resourcen/Bilder/geo-p12-1.jpg · relation: references
 
 ## Knowledge Gaps
-- **409 isolated node(s):** `Nagelfluh (Alpine Conglomerate)`, `Helvetikum`, `Tethys Ocean`, `Ur-Donau (Proto-Danube)`, `Die Organisation der NSDAP` (+404 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 536 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **93 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **394 isolated node(s):** `Nagelfluh (Alpine Conglomerate)`, `Helvetikum`, `Tethys Ocean`, `Ur-Donau (Proto-Danube)`, `Die Organisation der NSDAP` (+389 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 519 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **92 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -864,13 +855,13 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `Kapitel 7 – Organische Chemie` connect `Kapitel 7 Organische` to `Chemie Unterrichtsdateien Kapitel`, `Organische Funktionelle Gruppen`, `Alkane und MolekÃ¼lgeometrie`, `Chemie Unterrichtsdateien Kapitel`, `Chemie Unterrichtsdateien Kapitel`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `Nagelfluh (Alpine Conglomerate)`, `Helvetikum`, `Tethys Ocean` to the rest of the system?**
-  _409 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Karten-Trainer Render Pipeline` be split into smaller, more focused modules?**
+  _394 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `app.js` be split into smaller, more focused modules?**
   _Cohesion score 0.0670886075949367 - nodes in this community are weakly interconnected._
 - **Why does `Funktionelle Gruppen` connect `Organische Funktionelle Gruppen` to `Chemie Unterrichtsdateien Kapitel`, `Kapitel 7 Organische`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Should `Karten-Trainer App Logic` be split into smaller, more focused modules?**
-  _Cohesion score 0.051251956181533644 - nodes in this community are weakly interconnected._
+- **Should `Salze und Ionengitter` be split into smaller, more focused modules?**
+  _Cohesion score 0.059233449477351915 - nodes in this community are weakly interconnected._
 
 ### Low-confidence Hints
 _AMBIGUOUS edges — the extractor was unsure. Verify before acting on these._

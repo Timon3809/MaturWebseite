@@ -47,41 +47,11 @@
     "ast_hash": "480c6954255e9cd8055a445e9da5f01d",
     "semantic_hash": "480c6954255e9cd8055a445e9da5f01d"
   },
-  "Geographie/Karten-Trainer/data/asia-learning-map.json": {
-    "mtime": 1793226618.2576096,
-    "seen": 1793385099.4626002,
-    "ast_hash": "",
-    "semantic_hash": ""
-  },
-  "Geographie/Karten-Trainer/map.config.json": {
-    "mtime": 1793226618.274942,
-    "seen": 1793385099.4626002,
-    "ast_hash": "5ab03e2b00d423fa5636a3645839bffb",
-    "semantic_hash": "5ab03e2b00d423fa5636a3645839bffb"
-  },
-  "Geographie/Karten-Trainer/src/app.js": {
-    "mtime": 1793226618.2759526,
-    "seen": 1793385099.4626002,
-    "ast_hash": "866fbfd590f82a59558e753ccd90cf18",
-    "semantic_hash": "866fbfd590f82a59558e753ccd90cf18"
-  },
-  "Geographie/Karten-Trainer/src/core.js": {
-    "mtime": 1793226618.276959,
-    "seen": 1793385099.4626002,
-    "ast_hash": "eec6f498ba0b2d7ec515248abb56c113",
-    "semantic_hash": "eec6f498ba0b2d7ec515248abb56c113"
-  },
-  "Geographie/Karten-Trainer/src/schema.js": {
-    "mtime": 1793226618.2790754,
-    "seen": 1793385099.4626002,
-    "ast_hash": "6be0c1703e244bdcc3e951131b06e21a",
-    "semantic_hash": "6be0c1703e244bdcc3e951131b06e21a"
-  },
   "Geographie/Scripts/data.js": {
-    "mtime": 1793226618.4691176,
-    "seen": 1793385099.4626002,
-    "ast_hash": "72c2863acebc6e8e7312c7dacef892df",
-    "semantic_hash": "72c2863acebc6e8e7312c7dacef892df"
+    "mtime": 1794553906.5802898,
+    "seen": 1794553962.6015491,
+    "ast_hash": "9bff85cff5cee1218ca051a977bf3009",
+    "semantic_hash": ""
   },
   "Geographie/Scripts/glossar.js": {
     "mtime": 1793697593.9042056,
@@ -138,9 +108,9 @@
     "semantic_hash": ""
   },
   "site-nav.js": {
-    "mtime": 1794524581.0737765,
-    "seen": 1794527117.2525826,
-    "ast_hash": "c5093ce0e10b753bd78cf8c8a5c032e6",
+    "mtime": 1794553924.0952876,
+    "seen": 1794553962.610559,
+    "ast_hash": "9fec5843b45543af1eda4740c1d2b26d",
     "semantic_hash": ""
   },
   ".claude/CLAUDE.md": {
@@ -209,12 +179,6 @@
     "ast_hash": "f2d6303f25cbf0f5bc7d2c001feb5132",
     "semantic_hash": "f2d6303f25cbf0f5bc7d2c001feb5132"
   },
-  "Geographie/Karten-Trainer/index.html": {
-    "mtime": 1793226618.273484,
-    "seen": 1793385099.4626002,
-    "ast_hash": "95ce76a04ba68b2ae9e8026d9c856ca7",
-    "semantic_hash": "95ce76a04ba68b2ae9e8026d9c856ca7"
-  },
   "Geographie/dateien.html": {
     "mtime": 1793196389.7429228,
     "seen": 1793385099.4626002,
@@ -222,16 +186,16 @@
     "semantic_hash": "94d236bbbfc579731f4106fba40ff0d5"
   },
   "Geographie/glossar.html": {
-    "mtime": 1793697538.421883,
-    "seen": 1794527117.2540898,
-    "ast_hash": "3bc761a294d10d892301f31441dd1375",
+    "mtime": 1794553924.0989425,
+    "seen": 1794553962.6231322,
+    "ast_hash": "d417159ee71da5fb60ae36b6edd1f736",
     "semantic_hash": ""
   },
   "Geographie/index.html": {
-    "mtime": 1793226618.4782243,
-    "seen": 1793385099.4626002,
-    "ast_hash": "1e862f6e6a2768fbe1e4fde80f9d94e5",
-    "semantic_hash": "1e862f6e6a2768fbe1e4fde80f9d94e5"
+    "mtime": 1794553924.097434,
+    "seen": 1794553962.6231322,
+    "ast_hash": "60f3f3206fd1ae4c74a618e25b2236c2",
+    "semantic_hash": ""
   },
   "Geographie/zusammenfassungen.html": {
     "mtime": 1793226618.4810221,
@@ -276,9 +240,9 @@
     "semantic_hash": "afca0221a28f66ed33ebb686c547c1b5"
   },
   "README.md": {
-    "mtime": 1794524966.2270596,
-    "seen": 1794527117.2553751,
-    "ast_hash": "899413e4d8a86f7fc8482ba770fb0a62",
+    "mtime": 1794553929.946411,
+    "seen": 1794553962.6308823,
+    "ast_hash": "15cbec1840cbea71e7e9debb38a6795c",
     "semantic_hash": ""
   },
   "index.html": {
@@ -1629,6 +1593,48 @@
     "mtime": 1793694535.3548417,
     "seen": 1794527117.26701,
     "ast_hash": "1167b15baadf145260c6bed88057ce87",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Karten-Trainer/map.config.json": {
+    "mtime": 1793226618.274942,
+    "seen": 1794553962.6015491,
+    "ast_hash": "5ab03e2b00d423fa5636a3645839bffb",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Karten-Trainer/src/app.js": {
+    "mtime": 1793226618.2759526,
+    "seen": 1794553962.6015491,
+    "ast_hash": "866fbfd590f82a59558e753ccd90cf18",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Karten-Trainer/src/core.js": {
+    "mtime": 1793226618.276959,
+    "seen": 1794553962.6015491,
+    "ast_hash": "eec6f498ba0b2d7ec515248abb56c113",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Karten-Trainer/src/schema.js": {
+    "mtime": 1793226618.2790754,
+    "seen": 1794553962.6015491,
+    "ast_hash": "6be0c1703e244bdcc3e951131b06e21a",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Karten-Trainer/index.html": {
+    "mtime": 1793226618.273484,
+    "seen": 1794553962.6206012,
+    "ast_hash": "95ce76a04ba68b2ae9e8026d9c856ca7",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Nordamerika Kartentrainer.html": {
+    "mtime": 1794553443.1545653,
+    "seen": 1794553962.6206012,
+    "ast_hash": "63cc197eb87335ebc587336193a45397",
+    "semantic_hash": ""
+  },
+  "Geographie/programme.html": {
+    "mtime": 1794553923.7700782,
+    "seen": 1794553962.6231322,
+    "ast_hash": "f4daac3a64da72720a3ab62ba3576a57",
     "semantic_hash": ""
   },
   ".mimocode/package-lock.json": {

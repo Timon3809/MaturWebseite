@@ -93,5 +93,18 @@
         </main>
       </div>
     </div>
+    <script>
+      // Direktlinks: glossar.html#lernen (Karteikarten etc.) und glossar.html#steine (Steine-Quizlet)
+      document.addEventListener("DOMContentLoaded", function () {
+        var hash = location.hash.replace("#", "");
+        if (hash !== "lernen" && hash !== "steine") return;
+        var view = document.querySelector('.glossary-view-button[data-view="learn"]');
+        if (view) view.click();
+        if (hash === "steine") {
+          var rocks = document.querySelector('#learn-modes [data-mode="rocks"]');
+          if (rocks) rocks.click();
+        }
+      });
+    </script>
   </body>
 </html>

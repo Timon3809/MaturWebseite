@@ -52,7 +52,7 @@ Die Lernbereiche (Übersicht, Zusammenfassungen, Glossar, Dateien, Prüfungssimu
 
 ### Geographie
 
-- **Zusammenfassungen** — fünf Themen mit 70 Unterthemen, aufgebaut nach dem Inhaltsverzeichnis der Matur 2026:
+- **Zusammenfassungen** — fünf Themen mit 69 Unterthemen, aufgebaut nach dem Inhaltsverzeichnis der Matur 2026:
   - **Klimatologie** (Grundlagen, Niederschlag, Zirkulation, Klimazonen, Köppen, Monsune, Zyklonen)
   - **Geologie und Gletscher** (Tethys, Alpenfaltung, Bauteile, Jura/Mittelland, Gesteine, Gesteinskreislauf, Gletscher)
   - **Schweiz** (Tessin, Tourismus, Bevölkerungsgeographie, EU, Asyl, Landschaftswandel)
@@ -60,7 +60,7 @@ Die Lernbereiche (Übersicht, Zusammenfassungen, Glossar, Dateien, Prüfungssimu
   - **USA** (Klima Nordamerikas, Landschaftsgürtel)
   - 123 eingebettete Abbildungen sowie saubere SVG-Nachbauten (Gesteinskreislauf, Tethys-Profil, Geologisches Profil Jura–Alpen)
 - **Glossar** — 185 Begriffe nach Thema (Klimatologie, Geologie, Gesteine, Schweiz, Asien/China, USA) mit Suche und Mindmap
-- **Karten-Trainer** — interaktive Asien-Lernkarte (`Geographie/Karten-Trainer/`, 69 Lernobjekte: Orte finden, benennen, frei üben) als Ersatz der statischen Asien-Gliederung. Single-File-Build — läuft auch ohne Server direkt über `file://`
+- **Programme und Karten Trainer** (`Geographie/programme.html`) — Asien-Karten-Trainer (`Geographie/Programme/Karten-Trainer/`, 69 Lernobjekte: Orte finden, benennen, frei üben; Single-File-Build, läuft auch über `file://`), Nordamerika-Kartentrainer (`Geographie/Programme/Nordamerika Kartentrainer.html`) sowie Direktlinks zu den Glossar-Lernfunktionen (Quizlet-Funktion `glossar.html#lernen`, Steine-Quizlet `glossar.html#steine`)
 - **Dateien** — Inhaltsverzeichnis Matur 2026 (prov.)
 
 ### Biologie
