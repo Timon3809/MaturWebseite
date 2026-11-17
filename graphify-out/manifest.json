@@ -54,9 +54,9 @@
     "semantic_hash": ""
   },
   "Geographie/Scripts/glossar.js": {
-    "mtime": 1793697593.9042056,
-    "seen": 1794527117.2515738,
-    "ast_hash": "c60e1313550383fe872ae71481b8aab5",
+    "mtime": 1794565988.532779,
+    "seen": 1794566045.4008203,
+    "ast_hash": "4a74fb520057c9b7112e52ac1ea3add9",
     "semantic_hash": ""
   },
   "Geographie/Scripts/zusammenfassungen.js": {
@@ -186,9 +186,9 @@
     "semantic_hash": "94d236bbbfc579731f4106fba40ff0d5"
   },
   "Geographie/glossar.html": {
-    "mtime": 1794553924.0989425,
-    "seen": 1794553962.6231322,
-    "ast_hash": "d417159ee71da5fb60ae36b6edd1f736",
+    "mtime": 1794565988.5353165,
+    "seen": 1794566045.4078515,
+    "ast_hash": "e51def7fa45162db26bb2f37ae261b6a",
     "semantic_hash": ""
   },
   "Geographie/index.html": {
@@ -690,9 +690,9 @@
     "semantic_hash": ""
   },
   "Scripts/glossar-quiz.js": {
-    "mtime": 1793697754.396793,
-    "seen": 1794527117.2525826,
-    "ast_hash": "09d37ca495be4aec8334b108e7ff6dab",
+    "mtime": 1794565988.5342815,
+    "seen": 1794566045.4028282,
+    "ast_hash": "ed6e2755e1d8689e96f91603946b35e1",
     "semantic_hash": ""
   },
   "Chemie/Scripts/periodic-elements-data.js": {
@@ -711,12 +711,6 @@
     "mtime": 1794524581.0725431,
     "seen": 1794527117.2525826,
     "ast_hash": "d29a029f385a9ed2078adad831d74693",
-    "semantic_hash": ""
-  },
-  "cowork-access-test.txt": {
-    "mtime": 1794526693.7477052,
-    "seen": 1794527117.2553751,
-    "ast_hash": "b6d13dba5ddc3420375d8f908273f7ae",
     "semantic_hash": ""
   },
   "Chemie/Resourcen/Instruktionen Vormatur M6a.pdf": {
@@ -1641,6 +1635,12 @@
     "mtime": 1794556439.4962022,
     "seen": 1794556568.0189333,
     "ast_hash": "0ca3a648adc15cae1ac16407880b5fc3",
+    "semantic_hash": ""
+  },
+  ".claude/launch.json": {
+    "mtime": 1794566012.4677553,
+    "seen": 1794566045.3931587,
+    "ast_hash": "91ae21c322a10f7c812fa526ec66e149",
     "semantic_hash": ""
   },
   ".mimocode/package-lock.json": {

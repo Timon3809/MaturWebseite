@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "id": "schweiz",
+  "title": "Schweizer Kartentrainer",
+  "region": "Schweiz",
+  "description": "Flüsse, Seen, Berge, Pässe, Täler und Städte der Schweiz laut Legende zur Karte der Schweiz kennenlernen und prüfen.",
+  "data": "data/schweiz-lernkarte.json"
+}

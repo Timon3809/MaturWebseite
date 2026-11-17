@@ -1,17 +1,17 @@
 # Graph Report - MaturWebseite  (2026-11-13)
 
 ## Corpus Check
-- 30 files · ~141,271 words
+- 31 files · ~147,204 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 4 file(s) not represented in the graph (top: .css 3, (none) 1)
 
 ## Summary
-- 1540 nodes · 2130 edges · 207 communities (115 shown, 92 thin omitted)
+- 1541 nodes · 2133 edges · 207 communities (115 shown, 92 thin omitted)
 - Extraction: 84% EXTRACTED · 15% INFERRED · 0% AMBIGUOUS · INFERRED: 329 edges (avg confidence: 0.83)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fbb6539a`
+- Built from commit: `b48b8055`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -823,8 +823,8 @@ Cohesion: 0.67
 Nodes (3): Nationalitätensowjet (Soviet of Nationalities), Oberster Sowjet (Supreme Soviet), Unionssowjet (Soviet of the Union)
 
 ### Community 206 - "glossar-quiz.js"
-Cohesion: 0.28
-Nodes (16): advance(), answerVariants(), buildDeck(), buildOptions(), buildRockOptions(), checkAnswer(), escapeAttr(), handleAction() (+8 more)
+Cohesion: 0.27
+Nodes (17): advance(), answerVariants(), buildDeck(), buildOptions(), buildRockOptions(), checkAnswer(), escapeAttr(), handleAction() (+9 more)
 
 ### Community 207 - "simulationen.js"
 Cohesion: 0.09

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Interaktive Lernkarte der Schweiz: Orte finden, benennen und wiederholen. Läuft auch ohne Server direkt im Browser.">
+    <title>Schweizer Kartentrainer</title>
+    <link rel="icon" href="data:,">
+    <style>
+/*__CSS__*/
+    </style>
+  </head>
+  <body>
+    <noscript>Bitte aktiviere JavaScript, um mit der Lernkarte zu üben.</noscript>
+    <div id="app" class="app-shell setup-layout">
+      <aside class="side-panel" aria-label="Lernsteuerung">
+        <div id="panel-root"></div>
+      </aside>
+
+      <main class="map-area">
+        <div class="map-topbar">
+          <div>
+            <span class="map-kicker">Lernkarte</span>
+            <strong id="map-mode-label">Bereit</strong>
+          </div>
+          <div class="map-actions" aria-label="Kartensteuerung">
+            <button id="zoom-out" class="icon-button" type="button" title="Herauszoomen" aria-label="Herauszoomen">−</button>
+            <button id="zoom-reset" class="icon-button" type="button" title="Ansicht zurücksetzen" aria-label="Ansicht zurücksetzen">1:1</button>
+            <button id="zoom-in" class="icon-button" type="button" title="Hineinzoomen" aria-label="Hineinzoomen">+</button>
+          </div>
+        </div>
+
+        <svg id="map-svg" class="map-svg" viewBox="0 0 1080 760" role="group" aria-label="Interaktive Lernkarte" aria-describedby="map-help">
+          <defs>
+            <filter id="label-halo" x="-40%" y="-40%" width="180%" height="180%">
+              <feMorphology operator="dilate" radius="2" in="SourceAlpha" result="dilated"></feMorphology>
+              <feFlood flood-color="#101413" flood-opacity="0.94" result="halo"></feFlood>
+              <feComposite in="halo" in2="dilated" operator="in" result="haloShape"></feComposite>
+              <feMerge>
+                <feMergeNode in="haloShape"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+              </feMerge>
+            </filter>
+          </defs>
+          <g id="map-content">
+            <g id="base-layer"></g>
+            <g id="study-layer"></g>
+            <g id="hit-layer"></g>
+            <g id="highlight-layer"></g>
+          </g>
+        </svg>
+
+        <p id="map-help" class="map-help">Ziehen zum Verschieben · + / − zum Zoomen<span class="keyboard-help"><br>Tastatur: Tab zu den Punkten, Pfeiltasten, Enter zum Auswählen</span></p>
+        <div id="toast" class="toast" role="status" hidden></div>
+        <div id="map-legend" class="map-legend" hidden></div>
+      </main>
+    </div>
+
+    <script>
+/*__SCRIPT__*/
+    </script>
+  </body>
+</html>

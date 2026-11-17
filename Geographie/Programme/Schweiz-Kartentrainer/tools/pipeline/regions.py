@@ -1,0 +1,61 @@
+# -*- coding: utf-8 -*-
+"""Recipes for the 'Täler / Landschaften'. Coordinates are (lon, lat) WGS84.
+
+Each recipe:
+  river:  (river name, lon_range, lat_range, buffer_deg)  -> OSM river segment buffered
+  line:   ([(lon,lat),...], buffer_deg)                    -> hand-set valley axis buffered
+  ellipse:((lon,lat), rx_deg, ry_deg, rot_deg)             -> landscape blob
+  probes: known places that MUST fall inside the result (self-check), (name, lon, lat)
+"""
+R = {
+ 'A': dict(line=([(6.690, 46.500), (6.730, 46.491), (6.775, 46.483), (6.800, 46.476), (6.838, 46.470)], 0.011),
+           probes=[('Cully', 6.7288, 46.4886), ('Chexbres', 6.7773, 46.4797), ('Lutry', 6.6877, 46.5019)]),
+ 'B': dict(river=('Rhône', (6.90, 8.00), (46.05, 46.45), 0.018),
+           probes=[('Sion', 7.3589, 46.2312), ('Martigny', 7.0719, 46.1019), ('Visp', 7.8814, 46.2937), ('Sierre', 7.5353, 46.2922)]),
+ 'C': dict(river=('Rhône', (8.04, 8.40), (46.30, 46.60), 0.011),
+           probes=[('Münster', 8.2686, 46.4806), ('Fiesch', 8.1333, 46.4033), ('Oberwald', 8.3478, 46.5359)]),
+ 'D': dict(river=('Ticino', (8.58, 8.99), (46.30, 46.56), 0.012),
+           probes=[('Airolo', 8.6086, 46.529), ('Faido', 8.8003, 46.4786), ('Biasca', 8.9703, 46.3600)]),
+ 'E': dict(river=('Maggia', (8.40, 8.85), (46.15, 46.50), 0.010),
+           probes=[('Cevio', 8.6058, 46.3189), ('Bignasco', 8.6, 46.3338)]),
+ 'F': dict(river=('Verzasca', (8.70, 8.95), (46.15, 46.40), 0.010),
+           probes=[('Sonogno', 8.7873, 46.3698), ('Lavertezzo', 8.8420, 46.2678)]),
+ 'G': dict(river=('Moesa', (9.00, 9.30), (46.15, 46.50), 0.010),
+           probes=[('Mesocco', 9.2306, 46.3918), ('Roveredo', 9.1217, 46.2358)]),
+ 'H': dict(line=([(9.695, 46.403), (9.660, 46.382), (9.600, 46.362), (9.560, 46.345), (9.520, 46.333)], 0.011),
+           probes=[('Vicosoprano', 9.6203, 46.3569), ('Stampa', 9.5805, 46.3490)]),
+ 'I': dict(line=([(10.02, 46.41), (10.05, 46.35), (10.06, 46.32), (10.11, 46.27), (10.16, 46.23)], 0.011),
+           probes=[('Poschiavo', 10.0614, 46.3236), ('Brusio', 10.1244, 46.2631)]),
+ 'J': dict(line=([(10.30, 46.635), (10.34, 46.623), (10.38, 46.614), (10.42, 46.604), (10.45, 46.622)], 0.014),
+           probes=[('Müstair', 10.4500, 46.6294), ('Santa Maria', 10.4297, 46.6030)]),
+ 'K': dict(river=('Inn', (9.65, 10.50), (46.35, 46.95), 0.012),
+           probes=[('St. Moritz', 9.8392, 46.4979), ('Zernez', 10.0872, 46.6989), ('Scuol', 10.2995, 46.7964)]),
+ 'L': dict(line=([(9.91, 46.86), (9.80, 46.90), (9.70, 46.93), (9.60, 46.96)], 0.016),
+           probes=[('Klosters', 9.8800, 46.8700), ('Küblis', 9.7600, 46.9100)]),
+ 'M': dict(river=('Hinterrhein', (9.30, 9.55), (46.69, 46.80), 0.014),
+           probes=[('Thusis', 9.4400, 46.6970), ('Cazis', 9.4400, 46.7230)]),
+ 'N': dict(river=('Vorderrhein', (8.60, 9.45), (46.60, 46.85), 0.012),
+           probes=[('Disentis', 8.8530, 46.7020), ('Ilanz', 9.2040, 46.7740), ('Sedrun', 8.7742, 46.6797)]),
+ 'O': dict(river=('Rhein', (9.40, 9.70), (47.00, 47.52), 0.055),
+           probes=[('Buchs SG', 9.4770, 47.1660), ('Altstätten', 9.5530, 47.3770), ('Au SG', 9.6330, 47.4310)]),
+ 'P': dict(river=('Thur', (9.00, 9.40), (47.18, 47.48), 0.030),
+           probes=[('Wattwil', 9.0850, 47.3010), ('Lichtensteig', 9.0890, 47.3230), ('Nesslau', 9.2300, 47.2200)]),
+ 'Q': dict(ellipse=((9.38, 47.255), 0.085, 0.065, 15),
+           probes=[('Säntis', 9.3434, 47.2495), ('Wildhaus', 9.3500, 47.2000), ('Hoher Kasten', 9.4513, 47.2845)]),
+ 'R': dict(river=('Kleine Emme', (7.95, 8.15), (46.83, 47.10), 0.020),
+           probes=[('Schüpfheim', 8.0170, 46.9500), ('Entlebuch', 8.0670, 47.0100)]),
+ 'S': dict(river=('Grosse Emme', (7.60, 7.90), (46.83, 47.10), 0.045),
+           probes=[('Langnau', 7.7870, 46.9390), ('Burgdorf', 7.6270, 47.0590)]),
+ 'T': dict(ellipse=((7.94, 47.00), 0.125, 0.09, 0),
+           probes=[('Napf', 7.9360, 47.0070), ('Trubschachen', 7.8500, 46.9350)]),
+ 'U': dict(ellipse=((7.22, 47.02), 0.17, 0.075, 0),
+           probes=[('Aarberg', 7.2740, 47.0440), ('Lyss', 7.3050, 47.0740), ('Ins', 7.1070, 47.0000)]),
+ 'V': dict(line=([(6.34, 46.66), (6.28, 46.64), (6.24, 46.615), (6.20, 46.590)], 0.022),
+           probes=[('Le Sentier', 6.2290, 46.6100), ('Le Brassus', 6.2000, 46.5880)]),
+ 'W': dict(ellipse=((7.00, 47.25), 0.105, 0.045, 0),
+           probes=[('Saignelégier', 6.9930, 47.2560), ('Le Noirmont', 6.9500, 47.2250)]),
+ 'X': dict(ellipse=((7.07, 47.43), 0.11, 0.06, 0),
+           probes=[('Porrentruy', 7.0750, 47.4160), ('Courgenay', 7.1230, 47.4020)]),
+ 'Y': dict(ellipse=((8.35, 47.28), 0.105, 0.105, 0),
+           probes=[('Muri AG', 8.3410, 47.2740), ('Bremgarten AG', 8.3460, 47.3520), ('Sins', 8.4010, 47.1930)]),
+}

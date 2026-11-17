@@ -12,9 +12,14 @@
   // Gesteins-Lernsektion (nur Geographie): window.rockData aus Geographie/Scripts/glossar.js.
   const rockDefs = window.rockData ?? [];
   const rockNames = rockDefs.map((rock) => rock.name);
-  const rockEntries = rockDefs.flatMap((rock) =>
-    rock.files.map((file) => ({ name: rock.name, accept: rock.accept, src: `../Gesteine/${encodeURI(file)}` }))
-  );
+  const rockCategories = window.rockCategories ?? {};
+  const rockEntry = (rock, file) => ({
+    name: rock.name,
+    accept: rock.accept,
+    category: rockCategories[rock.category],
+    src: `../Gesteine/${encodeURI(file)}`
+  });
+  const rockEntries = rockDefs.flatMap((rock) => rock.files.map((file) => rockEntry(rock, file)));
 
   const learnView      = document.getElementById("glossary-learn-view");
   const learnModes     = document.getElementById("learn-modes");
@@ -101,7 +106,10 @@
 
   function buildDeck() {
     if (state.mode === "rocks") {
-      state.deck = shuffle(rockEntries);
+      // Kategorie-Modus: jedes Gestein einmal, mit einem zufälligen Bild.
+      state.deck = state.rockMode === "category"
+        ? shuffle(rockDefs.map((rock) => rockEntry(rock, shuffle(rock.files)[0])))
+        : shuffle(rockEntries);
       state.index = 0;
       state.correct = 0;
       state.asked = 0;
@@ -129,6 +137,7 @@
     if (!state.entry) return;
     if (state.mode === "rocks") {
       if (state.rockMode === "choice") state.options = buildRockOptions(state.entry);
+      else if (state.rockMode === "category") state.options = Object.values(rockCategories);
       return;
     }
     if (state.mode !== "choice") return;
@@ -155,6 +164,11 @@
     return `FRAGE ${Math.min(state.index + 1, state.deck.length)} / ${state.deck.length} · RICHTIG ${state.correct}`;
   }
 
+  // Richtige Option im Multiple Choice der Steine (Name oder Kategorie).
+  function rockAnswer() {
+    return state.rockMode === "category" ? state.entry.category : state.entry.name;
+  }
+
   function rockSolved() {
     return [state.entry.name, ...(state.entry.accept || [])].some(
       (variant) => normalize(variant) === normalize(state.guess || "")
@@ -179,17 +193,19 @@
     }
     if (state.mode === "rocks") {
       const image = `<img class="learn-rock-image" src="${escapeAttr(state.entry.src)}" alt="Gestein zur Bestimmung">`;
-      if (state.rockMode === "choice") {
+      if (state.rockMode !== "name") {
+        const byCategory = state.rockMode === "category";
         learnStage.innerHTML = `
           <div class="learn-prompt">
-            <span class="eyebrow dark-eyebrow">GESTEIN BESTIMMEN</span>
+            <span class="eyebrow dark-eyebrow">${byCategory ? "GESTEIN EINORDNEN" : "GESTEIN BESTIMMEN"}</span>
             ${image}
+            ${byCategory ? `<p class="learn-prompt-text">${state.entry.name}</p>` : ""}
           </div>
           <div class="learn-options">
             ${state.options.map((option, optionIndex) => {
               let extraClass = "";
               if (state.answered) {
-                if (option === state.entry.name) extraClass = " is-correct";
+                if (option === rockAnswer()) extraClass = " is-correct";
                 else if (optionIndex === state.picked) extraClass = " is-wrong";
               }
               return `<button class="learn-option${extraClass}" type="button" data-action="pick" data-index="${optionIndex}"${state.answered ? " disabled" : ""}>${option}</button>`;
@@ -344,7 +360,7 @@
         render();
       }
     } else if (action === "next") {
-      const isChoiceLike = state.mode === "choice" || (state.mode === "rocks" && state.rockMode === "choice");
+      const isChoiceLike = state.mode === "choice" || (state.mode === "rocks" && state.rockMode !== "name");
       if (isChoiceLike && !state.answered) return;
       advance();
     } else if (action === "shuffle") {
@@ -362,7 +378,7 @@
       if (state.answered) return;
       state.picked = Number(target.dataset.index);
       const correctAnswer = state.mode === "rocks"
-        ? state.entry.name
+        ? rockAnswer()
         : (state.questionDirection === "forward" ? state.entry.definition : state.entry.term);
       state.asked += 1;
       if (state.options[state.picked] === correctAnswer) state.correct += 1;
