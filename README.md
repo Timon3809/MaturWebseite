@@ -138,6 +138,7 @@ MaturWebseite/
 
 - **Reines Frontend** — keine externen Frameworks, kein Backend, kein Build-Schritt
 - **Navigation** — `site-nav.js` baut die Sidebar je nach Fach und aktueller Seite auf (Attribute `data-nav-section` / `data-nav-page` am `<aside class="sidebar">`)
+- **Dunkelmodus** — Schalter oben rechts auf den Seiten mit gemeinsamem Layout; die Einstellung bleibt beim Seitenwechsel gespeichert
 - **Glossarseiten** — die vorhandenen `*/glossar.html`-Adressen bleiben bestehen; `Scripts/glossar-page.js` erzeugt das gemeinsame Gerüst, Fachseiten liefern nur ihre Metadaten und Datenquelle
 - **Datenhaltung** — Fach-Scripts stellen ihre Inhalte einheitlich über `window.subjectData` bereit:
   - `glossary.categories` und optional `glossary.mindmap`

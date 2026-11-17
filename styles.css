@@ -501,3 +501,179 @@ button.mindmap-node:hover, button.mindmap-node:focus-visible, button.mindmap-nod
   .dates-list::before { left: 16px; }
   .page-footer { gap: 10px; font-size: 7px; }
 }
+
+.theme-toggle {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--white);
+  padding: 0 9px;
+  color: var(--ink);
+  font-size: 9px;
+  cursor: pointer;
+}
+.theme-toggle-icon { font-size: 13px; }
+.theme-toggle-track {
+  display: inline-flex;
+  width: 27px;
+  height: 16px;
+  align-items: center;
+  border: 1px solid #c9c9bf;
+  border-radius: 10px;
+  background: #e9e7df;
+  padding: 2px;
+  transition: background .18s;
+}
+.theme-toggle-track > span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fffefa;
+  box-shadow: 0 1px 2px #21262030;
+  transition: transform .18s;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #1a1c20;
+  --white: #24272c;
+  --ink: #e8ebef;
+  --muted: #a9afb8;
+  --line: #41464d;
+  --orange: #e99370;
+  --green: #aebac4;
+  --blue: #a6bfd3;
+}
+
+:root[data-theme="dark"] .sidebar { background: #202328; }
+:root[data-theme="dark"] .nav-link { color: #b9bfc6; }
+:root[data-theme="dark"] .nav-link:hover { background: #2c3137; color: var(--ink); }
+:root[data-theme="dark"] .nav-link.is-active { background: #343a40; color: var(--ink); }
+:root[data-theme="dark"] .breadcrumb { color: #afb5bc; }
+:root[data-theme="dark"] .breadcrumb-divider { color: #757b82; }
+:root[data-theme="dark"] .topbar-subject,
+:root[data-theme="dark"] .subject-card-content > span,
+:root[data-theme="dark"] .placeholder-panel p,
+:root[data-theme="dark"] .feature-card > p,
+:root[data-theme="dark"] .bottom-note p,
+:root[data-theme="dark"] .page-heading > p,
+:root[data-theme="dark"] .summary-content p,
+:root[data-theme="dark"] .summary-text ul,
+:root[data-theme="dark"] .summary-text ol,
+:root[data-theme="dark"] .summary-text table,
+:root[data-theme="dark"] .glossary-sections a,
+:root[data-theme="dark"] .mindmap-toolbar > p,
+:root[data-theme="dark"] .mindmap-detail p,
+:root[data-theme="dark"] .glossary-definition p,
+:root[data-theme="dark"] .learn-card-definition,
+:root[data-theme="dark"] .learn-summary p,
+:root[data-theme="dark"] .timeline-event p { color: #bec3c9; }
+:root[data-theme="dark"] .breadcrumb span:last-child,
+:root[data-theme="dark"] .text-link,
+:root[data-theme="dark"] .field-label,
+:root[data-theme="dark"] .summary-text h3,
+:root[data-theme="dark"] .summary-text h4,
+:root[data-theme="dark"] .summary-text caption,
+:root[data-theme="dark"] .summary-text th,
+:root[data-theme="dark"] .summary-category > summary .summary-title { color: var(--ink); }
+:root[data-theme="dark"] .subject-card-arrow,
+:root[data-theme="dark"] .placeholder-panel > span,
+:root[data-theme="dark"] .summary-number,
+:root[data-theme="dark"] .date-entry time,
+:root[data-theme="dark"] .quizlet-link { color: #c0c7ce; }
+:root[data-theme="dark"] .bottom-note strong { color: #c4c9cf; }
+:root[data-theme="dark"] .topic-selection-error { color: #d7b17e; }
+:root[data-theme="dark"] .button-light { background: #e7eaee; color: #1d2025; }
+:root[data-theme="dark"] .button-light:hover { background: #fff; }
+:root[data-theme="dark"] .button-primary,
+:root[data-theme="dark"] .brand-mark,
+:root[data-theme="dark"] .glossary-view-button:hover,
+:root[data-theme="dark"] .glossary-view-button.is-active,
+:root[data-theme="dark"] .learn-mode:hover,
+:root[data-theme="dark"] .learn-mode.is-active,
+:root[data-theme="dark"] .learn-action:hover:not(:disabled) {
+  border-color: #b2bec8;
+  background: #b2bec8;
+  color: #1b2025;
+}
+:root[data-theme="dark"] .button-primary:hover { background: #c5d0d8; }
+:root[data-theme="dark"] .button-outline { border-color: #555c65; }
+:root[data-theme="dark"] .button-outline:hover { background: #30353b; }
+:root[data-theme="dark"] .subject-card.is-disabled { background: #24282d; color: #aeb5bd; }
+:root[data-theme="dark"] .subject-card.is-disabled .subject-card-content strong { color: #c7ccd2; }
+:root[data-theme="dark"] .placeholder-panel,
+:root[data-theme="dark"] .content-notice { border-color: #444a52; background: #24282d; color: #bec3c9; }
+:root[data-theme="dark"] .icon-orange { background: #49352d; color: #efa17f; }
+:root[data-theme="dark"] .icon-green { background: #32393a; color: #c1c8cd; }
+:root[data-theme="dark"] .icon-blue { background: #2e3b45; color: #afc8dc; }
+:root[data-theme="dark"] .icon-purple { background: #3d3546; color: #c2b0d7; }
+:root[data-theme="dark"] .topic-option,
+:root[data-theme="dark"] .field-control,
+:root[data-theme="dark"] .search-field,
+:root[data-theme="dark"] .glossary-view-button,
+:root[data-theme="dark"] .learn-mode,
+:root[data-theme="dark"] .learn-action,
+:root[data-theme="dark"] .mindmap-controls button {
+  border-color: #4a5159;
+  background: #292e34;
+  color: var(--ink);
+}
+:root[data-theme="dark"] .topic-option:has(input:checked) { border-color: #919daa; background: #353b41; }
+:root[data-theme="dark"] .exam-part-placeholder,
+:root[data-theme="dark"] .info-callout,
+:root[data-theme="dark"] .simulator-aside,
+:root[data-theme="dark"] .summary-text th,
+:root[data-theme="dark"] .summary-merke,
+:root[data-theme="dark"] .summary-category,
+:root[data-theme="dark"] .learn-card-front,
+:root[data-theme="dark"] .learn-rock-image,
+:root[data-theme="dark"] .learn-option.is-correct { border-color: #4a5159; background: #2c3238; }
+:root[data-theme="dark"] .exam-part-placeholder h4,
+:root[data-theme="dark"] .exam-part-placeholder li,
+:root[data-theme="dark"] .steps-list p,
+:root[data-theme="dark"] .info-callout p,
+:root[data-theme="dark"] .summary-text figcaption { color: #bec3c9; }
+:root[data-theme="dark"] .summary-status { border-color: #66573b; background: #383225; color: #e0c58e; }
+:root[data-theme="dark"] .summary-text .summary-note-table td { border-color: #66573b; background: #383225; color: #e0c58e; }
+:root[data-theme="dark"] .summary-text .summary-merke { border-left-color: #aebac4; color: #d4d8dd; }
+:root[data-theme="dark"] .summary-category { border-color: #4c5258; }
+:root[data-theme="dark"] .summary-category > summary .summary-title,
+:root[data-theme="dark"] .summary-category-count { color: #c0c7ce; }
+:root[data-theme="dark"] .mindmap-viewport {
+  border-color: var(--line);
+  background-color: #24292e;
+  background-image: radial-gradient(#4c535b 0.7px, transparent 0.7px);
+}
+:root[data-theme="dark"] .mindmap-line { stroke: #838a92; }
+:root[data-theme="dark"] .mindmap-node { border-color: #51575e; background: #292e34; color: #d5d9de; }
+:root[data-theme="dark"] .mindmap-level-0 { border-color: #555f67; background: #363d43; color: #eef0f3; }
+:root[data-theme="dark"] .mindmap-level-1 { border-color: #687681; background: #363d40; color: #d9dde1; }
+:root[data-theme="dark"] .mindmap-level-2 { border-color: #806b51; background: #3b3329; color: #e3d3bd; }
+:root[data-theme="dark"] button.mindmap-node:hover,
+:root[data-theme="dark"] button.mindmap-node:focus-visible,
+:root[data-theme="dark"] button.mindmap-node.active { border-color: var(--orange); background: #49352d; color: #f3d9ca; }
+:root[data-theme="dark"] .glossary-toggle,
+:root[data-theme="dark"] .timeline-toggle { background: #363c42; color: #c9cdd2; }
+:root[data-theme="dark"] .glossary-definition { border-top-color: var(--line); }
+:root[data-theme="dark"] .learn-option.is-correct { border-color: #72817a; background: #353d3c; }
+:root[data-theme="dark"] .learn-option.is-wrong { border-color: #9b6047; background: #422f29; }
+:root[data-theme="dark"] .learn-feedback.is-correct { color: #c0cbc4; }
+:root[data-theme="dark"] .periods-axis { border-bottom-color: var(--line); }
+:root[data-theme="dark"] .period-track { border-bottom-color: #41464d; }
+:root[data-theme="dark"] .dates-list::before { background: #4c5259; }
+:root[data-theme="dark"] .timeline-marker { border-color: #2c3238; }
+:root[data-theme="dark"] .date-entry { background: #2c3238; }
+:root[data-theme="dark"] .empty-state { border-color: #4a5159; color: #bec3c9; }
+:root[data-theme="dark"] .theme-toggle { border-color: #4a5159; background: #292e34; color: var(--ink); }
+:root[data-theme="dark"] .theme-toggle-track { border-color: #727c86; background: #596571; }
+:root[data-theme="dark"] .theme-toggle-track > span { transform: translateX(11px); background: #e7eaee; }
+:root[data-theme="dark"] input[type="checkbox"],
+:root[data-theme="dark"] input[type="radio"] { accent-color: #aebac4; }
+
+@media (max-width: 560px) {
+  .theme-toggle { min-height: 30px; gap: 5px; padding: 0 7px; }
+  .theme-toggle-label { display: none; }
+}

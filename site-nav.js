@@ -1,4 +1,9 @@
 (function () {
+  const themeStorageKey = "vormatur-theme";
+  const savedTheme = localStorage.getItem(themeStorageKey);
+  const isDark = savedTheme === "dark";
+  document.documentElement.dataset.theme = isDark ? "dark" : "light";
+
   const sections = {
     index: {
       brand: { mark: "M", name: "Vormatur", tag: "STARTSEITE", href: "index.html" },
@@ -61,6 +66,36 @@
   const currentPage = sidebar.dataset.navPage;
   const config      = sections[section];
 
+  const header = document.querySelector(".workspace > header");
+  if (header) {
+    let topbarActions = header.querySelector(".topbar-right");
+    if (!topbarActions) {
+      topbarActions = document.createElement("div");
+      topbarActions.className = "topbar-right";
+      header.append(topbarActions);
+    }
+
+    const themeToggle = document.createElement("button");
+    themeToggle.className = "theme-toggle";
+    themeToggle.type = "button";
+    themeToggle.setAttribute("role", "switch");
+    themeToggle.setAttribute("aria-label", "Dunkelmodus");
+    themeToggle.setAttribute("aria-checked", String(isDark));
+    themeToggle.title = "Dunkelmodus";
+    themeToggle.innerHTML = `
+      <span class="theme-toggle-icon" aria-hidden="true">${isDark ? "☼" : "☾"}</span>
+      <span class="theme-toggle-label">Dunkel</span>
+      <span class="theme-toggle-track" aria-hidden="true"><span></span></span>
+    `;
+    themeToggle.addEventListener("click", () => {
+      const nextIsDark = document.documentElement.dataset.theme !== "dark";
+      document.documentElement.dataset.theme = nextIsDark ? "dark" : "light";
+      themeToggle.setAttribute("aria-checked", String(nextIsDark));
+      themeToggle.querySelector(".theme-toggle-icon").textContent = nextIsDark ? "☼" : "☾";
+      localStorage.setItem(themeStorageKey, nextIsDark ? "dark" : "light");
+    });
+    topbarActions.append(themeToggle);
+  }
 
   const brand     = document.createElement("a");
   brand.className = "brand";
