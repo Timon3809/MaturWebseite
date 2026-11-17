@@ -1499,6 +1499,7 @@ window.historyData = {
     name: "Teil 1: Wissen und Begriffe",
     questionTypes: [
       { id: "term",       name: "Begriff erklären", count: 2 },
+      { id: "eternalDate", name: "Jahreszahl ergänzen", count: 2 },
       { id: "trueFalse",  name: "Wahr / falsch",    count: 4 }
     ]
   },
@@ -1515,47 +1516,5 @@ window.historyData = {
     ]
   }
 ],
-  topicQuestions: {
-    "topic-8": { term: [], trueFalse: [], understanding: [], analysis: [] },
-    "topic-9": { term: [], trueFalse: [], understanding: [], analysis: [] },
-    "topic-10": { term: [], trueFalse: [], understanding: [], analysis: [] },
-    "topic-11": { term: [], trueFalse: [], understanding: [], analysis: [] },
-    "topic-13": { term: [], trueFalse: [], understanding: [], analysis: [] },
-    "topic-14": { term: [], trueFalse: [], understanding: [], analysis: [] },
-    "topic-15": { term: [], trueFalse: [], understanding: [], analysis: [] },
-    "topic-16": { term: [], trueFalse: [], understanding: [], analysis: [] },
-    "topic-17": { term: [], trueFalse: [], understanding: [], analysis: [] },
-    "topic-18": { term: [], trueFalse: [], understanding: [], analysis: [] },
-    "topic-19": { term: [], trueFalse: [], understanding: [], analysis: [] },
-    "topic-20": { term: [], trueFalse: [], understanding: [], analysis: [] },
-    "topic-21": { term: [], trueFalse: [], understanding: [], analysis: [] },
-    "topic-22": { term: [], trueFalse: [], understanding: [], analysis: [] },
-    "topic-23": { term: [], trueFalse: [], understanding: [], analysis: [] },
-    "topic-24": { term: [], trueFalse: [], understanding: [], analysis: [] },
-    "topic-25": { term: [], trueFalse: [], understanding: [], analysis: [] },
-    "topic-26": { term: [], trueFalse: [], understanding: [], analysis: [] },
-    "topic-10": {
-      term: [
-        { text: "Erkläre den Begriff Imperialismus.", term: "Imperialismus" },
-        { text: "Erkläre den Unterschied zwischen einer formellen und einer informellen Kolonie.", term: "formelle und informelle Kolonie" },
-        { text: "Erkläre, was mit dem Begriff «Wettlauf um Afrika» gemeint ist.", term: "Wettlauf um Afrika" }
-      ],
-      trueFalse: [
-        { text: "Entscheide, ob die Aussage wahr oder falsch ist: Der Imperialismus begann erst nach dem Ersten Weltkrieg." },
-        { text: "Entscheide, ob die Aussage wahr oder falsch ist: Neben wirtschaftlichen Motiven spielten auch politische und nationalistische Interessen beim Imperialismus eine Rolle." },
-        { text: "Entscheide, ob die Aussage wahr oder falsch ist: China wurde im 19. Jahrhundert vollständig zu einer einzigen formellen Kolonie Grossbritanniens." },
-        { text: "Entscheide, ob die Aussage wahr oder falsch ist: Die Berliner Konferenz von 1884/85 regelte den Wettlauf um Afrika unter den europäischen Mächten." }
-      ],
-      understanding: [
-        { text: "Erkläre, weshalb europäische Mächte im 19. Jahrhundert Kolonien erwarben." },
-        { text: "Erkläre, wie die Industrialisierung den Bedarf europäischer Staaten an Rohstoffen und Absatzmärkten beeinflusste." },
-        { text: "Erkläre einen Unterschied zwischen formeller und informeller kolonialer Herrschaft am Beispiel Chinas." }
-      ],
-      analysis: [
-        { text: "Analysiere, welche Interessen sich in einem Konflikt um koloniale Gebiete zeigen." },
-        { text: "Analysiere, wie wirtschaftliche Interessen und nationalistische Vorstellungen die koloniale Expansion beeinflussten." },
-        { text: "Analysiere, welche Folgen die koloniale Herrschaft für die betroffene Bevölkerung haben konnte." }
-      ]
-    }
-  }
+  topicQuestions: {}
 };

@@ -7,7 +7,7 @@ const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (character) => (
 })[character]);
 
 function getQuestionPool(questionType, selectedTopics) {
-  return selectedTopics.flatMap((topic) =>
+  const topicQuestions = selectedTopics.flatMap((topic) =>
     (window.historyData.topicQuestions[topic.id]?.[questionType.id] ?? []).map((question) => ({
       ...question,
       topic: topic.name,
@@ -15,6 +15,36 @@ function getQuestionPool(questionType, selectedTopics) {
       typeName: questionType.name
     }))
   );
+  const uniqueQuestions = [...new Map(topicQuestions.map((question) => [
+    question.text ?? question.term,
+    question
+  ])).values()];
+
+  if (questionType.id === "eternalDate") {
+    return window.historyData.eternalDates.map(({ year, event }) => ({
+      year,
+      event,
+      text: `In welchem Jahr fand «${event}» statt? ________`,
+      typeName: questionType.name,
+      part: questionType.part
+    }));
+  }
+  if (questionType.id !== "term") return uniqueQuestions;
+
+  const availableTerms = Object.values(window.historyData.glossary).flat()
+    .map(({ term }) => term)
+    .filter((term, index, terms) => terms.indexOf(term) === index)
+    .map((term) => ({
+      term,
+      text: `Erkläre den Begriff ${term}.`,
+      typeName: questionType.name,
+      part: questionType.part
+    }));
+  const existingTerms = new Set(uniqueQuestions.map((question) => question.term));
+  return [
+    ...uniqueQuestions,
+    ...availableTerms.filter((question) => !existingTerms.has(question.term))
+  ];
 }
 
 function getQuestionAvailability(questionType, selectedTopics) {
@@ -27,13 +57,6 @@ function updateQuestionPlaceholders() {
   const submitButton = document.querySelector("#simulator-form button[type='submit']");
   const selectionError = document.getElementById("topic-selection-error");
   const hasSelection = selectedTopics.length > 0;
-  const missingTypes = window.historyData.examParts.flatMap((part) =>
-    part.questionTypes.flatMap((questionType) => {
-      const available = getQuestionAvailability({ ...questionType, part: part.name }, selectedTopics);
-      return available < questionType.count ? [`${questionType.name} (${available}/${questionType.count})`] : [];
-    })
-  );
-  const canGenerate = hasSelection && missingTypes.length === 0;
 
   placeholderContainer.innerHTML = window.historyData.examParts.map((part) => `
     <section class="exam-part-placeholder">
@@ -41,18 +64,17 @@ function updateQuestionPlaceholders() {
       <ul>
         ${part.questionTypes.map((questionType) => {
           const available = getQuestionAvailability({ ...questionType, part: part.name }, selectedTopics);
-          const status = `${questionType.count} benötigt · ${available} verfügbar`;
+          const included = Math.min(questionType.count, available);
+          const status = `${included} im Blatt · ${available} verfügbar`;
           return `<li><span>${escapeHtml(questionType.name)}</span><span>${escapeHtml(status)}</span></li>`;
         }).join("")}
       </ul>
     </section>
   `).join("");
-  submitButton.disabled = !canGenerate;
+  submitButton.disabled = !hasSelection;
 
   if (!hasSelection) {
     selectionError.textContent = "Wähle mindestens ein Thema aus.";
-  } else if (!canGenerate) {
-    selectionError.textContent = `Für die gewünschte Prüfungsgrösse fehlen noch Fragen bei: ${missingTypes.join(", ")}.`;
   } else {
     selectionError.textContent = "";
   }
@@ -91,9 +113,10 @@ function renderExam(questions, selectedTopics) {
   const topicName = selectedTopics.length === window.historyData.topics.length
     ? "Alle Themen"
     : selectedTopics.map((topic) => topic.name).join(", ");
+  const includedParts = [...new Set(questions.map((question) => question.part))].join(" · ");
   result.innerHTML = `
     <div class="exam-heading">
-      <div><span class="eyebrow dark-eyebrow">DEIN ÜBUNGSBLATT IST BEREIT</span><h2>Geschichtsprüfung erstellt</h2><p>${escapeHtml(topicName)} <span>·</span> alle drei Teile</p></div>
+      <div><span class="eyebrow dark-eyebrow">DEIN ÜBUNGSBLATT IST BEREIT</span><h2>Geschichtsprüfung erstellt</h2><p>${escapeHtml(topicName)} <span>·</span> ${escapeHtml(includedParts)}</p></div>
       <div class="exam-actions"><button class="button button-outline" type="button" id="download-word">Word herunterladen</button><button class="button button-primary" type="button" id="download-pdf">PDF herunterladen</button></div>
     </div>
     <p class="exam-disclaimer">Lade die Prüfung als Word-Dokument oder PDF herunter, um die Fragen anzusehen.</p>
@@ -112,6 +135,42 @@ function saveBlob(blob, filename) {
   link.click();
   link.remove();
   window.setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
+}
+
+function getExamMaximumPoints(questions) {
+  const questionPoints = questions.reduce((total, question) => {
+    if (question.typeName === "Wahr / falsch") return total;
+    return total + getQuestionPoints(question);
+  }, 0);
+  return questionPoints + (questions.some((question) => question.typeName === "Wahr / falsch") ? 2 : 0);
+}
+
+function getQuestionPoints(question) {
+  if (Number.isFinite(question.points)) return question.points;
+  if (question.typeName === "Begriff erklären" || question.typeName === "Jahreszahl ergänzen") return 1;
+  if (question.typeName === "Verständnisfrage") return 3;
+  if (question.typeName === "Analyse") return 5;
+  return 0;
+}
+
+function getSourceImage(imageId) {
+  const image = window.historyQuestionImages?.[imageId];
+  if (!image) throw new Error(`Die Quellenabbildung «${imageId}» ist nicht geladen.`);
+  return image;
+}
+
+function renderWordSource(question) {
+  if (!question.sourceTitle && !question.sourceText && !question.sourceImage) return "";
+  const title = question.sourceTitle
+    ? `<p style="margin: 8pt 0 4pt;"><b>${escapeHtml(question.sourceTitle)}</b></p>`
+    : "";
+  const text = question.sourceText
+    ? `<div style="font-size: 9pt; line-height: 1.25; white-space: pre-wrap; margin: 0 0 8pt;">${escapeHtml(question.sourceText)}</div>`
+    : "";
+  const image = question.sourceImage
+    ? `<p style="margin: 4pt 0 8pt;"><img src="${getSourceImage(question.sourceImage).data}" alt="${escapeHtml(question.sourceTitle ?? "Quellenabbildung")}" style="max-width: 100%; max-height: 4.5in; height: auto; width: auto;"></p>`
+    : "";
+  return `<div style="margin: 0 0 8pt 18pt;">${title}${text}${image}</div>`;
 }
 
 function downloadWord(questions, topicName) {
@@ -181,15 +240,14 @@ function downloadWord(questions, topicName) {
     }
 
     questionNumber += 1;
-    const points = question.typeName === "Verständnisfrage" ? 3
-      : question.typeName === "Analyse" ? 5
-      : 0;
+    const points = getQuestionPoints(question);
     rows.push(`<table style="width: 100%; border-collapse: collapse; margin: 0;">
         <tr>
           <td style="padding: 0; vertical-align: top;">${questionNumber}) ${escapeHtml(question.text)}</td>
           <td style="width: 1in; padding: 0; text-align: right; vertical-align: top; white-space: nowrap;">${points ? `(${points} Punkte)` : ""}</td>
         </tr>
       </table>
+      ${renderWordSource(question)}
       <p style="margin-bottom: 36pt">&nbsp;</p>`);
     index += 1;
   }
@@ -221,7 +279,7 @@ function downloadWord(questions, topicName) {
         </td>
         <td style="width: 46%; padding: 0; vertical-align: top;">
           <table style="width: 100%; border-collapse: collapse;">
-            <tr><td style="padding: 10pt 0; vertical-align: top;">Maximale Punktzahl:</td><td style="padding: 3pt 0; vertical-align: top; text-align: right;">18 Punkte</td></tr>
+            <tr><td style="padding: 10pt 0; vertical-align: top;">Maximale Punktzahl:</td><td style="padding: 3pt 0; vertical-align: top; text-align: right;">${getExamMaximumPoints(questions)} Punkte</td></tr>
             <tr><td style="padding: 10pt 0; vertical-align: top;">Erreichte Punktzahl:</td><td style="padding: 3pt 0; vertical-align: top; text-align: right;">__________</td></tr>
             <tr><td style="padding: 10pt 0; vertical-align: top;"><b>Note:</b></td><td style="padding: 3pt 0; vertical-align: top; text-align: right;"><b>__________</b></td></tr>
           </table>
@@ -300,6 +358,21 @@ function wrapPdfText(text, maxCharacters) {
 }
 
 function buildExamPdf(questions, topicName) {
+  const sourceImageIds = [...new Set(questions.filter((question) => question.sourceImage).map((question) => question.sourceImage))];
+  const sourceImages = sourceImageIds.map((id, index) => {
+    const image = getSourceImage(id);
+    const base64 = image.data.slice(image.data.indexOf(",") + 1);
+    const binary = atob(base64);
+    return {
+      id,
+      index,
+      width: image.width,
+      height: image.height,
+      binary,
+      objectId: 5 + index
+    };
+  });
+  const sourceImageById = new Map(sourceImages.map((image) => [image.id, image]));
   const pages = [[]];
   let y = 752;
   const addText = (font, size, x, text, position = y) => {
@@ -347,7 +420,7 @@ function buildExamPdf(questions, topicName) {
   addText("F1", 10, 52, "Name:");
   addLine(86, 711, 300, 711);
   addText("F1", 10, 322, "Maximale Punktzahl:");
-  addText("F1", 10, 497, "18 Punkte");
+  addText("F1", 10, 497, `${getExamMaximumPoints(questions)} Punkte`);
   y -= 17;
   addText("F1", 10, 322, "Erreichte Punktzahl:");
   addLine(444, 696, 543, 696);
@@ -367,12 +440,17 @@ function buildExamPdf(questions, topicName) {
   let index = 0;
   while (index < questions.length) {
     const question = questions[index];
-    if (question.part !== currentPart) {
-      ensureSpace(150);
-      addText("F2", 13, 52, question.part);
-      y -= 24;
-      currentPart = question.part;
-    }
+    const startsNewPart = question.part !== currentPart;
+    const ensureQuestionSpace = (height) => {
+      if (startsNewPart) {
+        ensureSpace(height + 24);
+        addText("F2", 13, 52, question.part);
+        y -= 24;
+        currentPart = question.part;
+      } else {
+        ensureSpace(height, currentPart);
+      }
+    };
 
     if (question.typeName === "Begriff erklären") {
       const terms = [];
@@ -383,7 +461,7 @@ function buildExamPdf(questions, topicName) {
         index += 1;
       }
 
-      ensureSpace(90, currentPart);
+      ensureQuestionSpace(90);
       questionNumber += 1;
       addWrapped("F1", 11, 52, `${questionNumber}) Erklären Sie in maximal 2 Sätzen:`, 75, 15);
       y -= 2;
@@ -407,7 +485,7 @@ function buildExamPdf(questions, topicName) {
         index += 1;
       }
 
-      ensureSpace(130, currentPart);
+      ensureQuestionSpace(130);
       questionNumber += 1;
       addText("F1", 11, 52, `${questionNumber}) Sind die Aussagen richtig (R) oder falsch (F)?`);
       addText("F1", 9, 473, "(2 Punkte)");
@@ -430,34 +508,66 @@ function buildExamPdf(questions, topicName) {
     }
 
     questionNumber += 1;
-    const points = question.typeName === "Verständnisfrage" ? 3
-      : question.typeName === "Analyse" ? 5
-      : 0;
+    const points = getQuestionPoints(question);
     const questionLines = wrapPdfText(`${questionNumber}) ${question.text}`, 75);
-    const questionHeight = questionLines.length * 14 + (question.typeName === "Analyse" ? 85 : 55);
-    ensureSpace(questionHeight, currentPart);
+    const sourceTitleLines = question.sourceTitle ? wrapPdfText(question.sourceTitle, 82).length : 0;
+    const sourceTextLines = question.sourceText
+      ? question.sourceText.split(/\n/).reduce((total, line) => total + wrapPdfText(line, 82).length, 0)
+      : 0;
+    const sourceImage = question.sourceImage ? sourceImageById.get(question.sourceImage) : null;
+    const imageScale = sourceImage ? Math.min(491 / sourceImage.width, 300 / sourceImage.height) : 0;
+    const imageWidth = sourceImage ? sourceImage.width * imageScale : 0;
+    const imageHeight = sourceImage ? sourceImage.height * imageScale : 0;
+    const sourceHeight = (sourceTitleLines ? sourceTitleLines * 11 + 5 : 0)
+      + (sourceTextLines ? sourceTextLines * 10 + 10 : 0)
+      + (sourceImage ? imageHeight + 10 : 0);
+    const questionHeight = questionLines.length * 14 + sourceHeight + (question.sourceTitle || question.sourceText || sourceImage ? 40 : 55);
+    ensureQuestionSpace(questionHeight);
     questionLines.forEach((line, lineIndex) => {
       addText("F1", 11, 52, line, y - lineIndex * 14);
     });
     addText("F1", 9, 493, `(${points} Punkte)`, y);
     y -= questionLines.length * 14 + 8;
-    y -= question.typeName === "Analyse" ? 85 : 55;
+    if (question.sourceTitle) {
+      addWrapped("F2", 9, 52, question.sourceTitle, 82, 11);
+      y -= 3;
+    }
+    if (question.sourceText) {
+      question.sourceText.split(/\n/).forEach((line) => {
+        addWrapped("F1", 9, 60, line, 82, 10);
+      });
+      y -= 8;
+    }
+    if (sourceImage) {
+      const imageBottom = y - imageHeight;
+      pages[pages.length - 1].push(`q ${imageWidth} 0 0 ${imageHeight} 52 ${imageBottom} cm /Im${sourceImage.index} Do Q`);
+      y = imageBottom - 10;
+    }
+    y -= question.sourceTitle || question.sourceText || sourceImage ? 32 : 55;
     index += 1;
   }
 
+  const firstContentObjectId = 5 + sourceImages.length;
+  const pageObjectIds = pages.map((_, index) => firstContentObjectId + index * 2 + 1);
+  const imageResources = sourceImages.map((image) => `/Im${image.index} ${image.objectId} 0 R`).join(" ");
   const objects = [
     "<< /Type /Catalog /Pages 2 0 R >>",
-    `<< /Type /Pages /Kids [${pages.map((_, index) => `${6 + index * 2} 0 R`).join(" ")}] /Count ${pages.length} >>`,
+    `<< /Type /Pages /Kids [${pageObjectIds.map((objectId) => `${objectId} 0 R`).join(" ")}] /Count ${pages.length} >>`,
     "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>",
     "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>"
   ];
 
+  sourceImages.forEach((image) => {
+    objects.push(`<< /Type /XObject /Subtype /Image /Width ${image.width} /Height ${image.height} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${image.binary.length} >>\nstream\n${image.binary}\nendstream`);
+  });
+
   pages.forEach((commands, index) => {
     const content = commands.join("\n");
-    const contentObjectId = 5 + index * 2;
+    const contentObjectId = firstContentObjectId + index * 2;
     const pageObjectId = contentObjectId + 1;
     objects.push(`<< /Length ${content.length} >>\nstream\n${content}\nendstream`);
-    objects.push(`<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents ${contentObjectId} 0 R >>`);
+    const xObjects = imageResources ? ` /XObject << ${imageResources} >>` : "";
+    objects.push(`<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >>${xObjects} >> /Contents ${contentObjectId} 0 R >>`);
   });
 
   let pdf = "%PDF-1.4\n";
@@ -484,12 +594,7 @@ function downloadPdf(questions, topicName) {
 document.getElementById("simulator-form").addEventListener("submit", (event) => {
   event.preventDefault();
   const selectedTopics = getSelectedTopics();
-  const allTypesAvailable = window.historyData.examParts.every((part) =>
-    part.questionTypes.every((questionType) =>
-      getQuestionAvailability({ ...questionType, part: part.name }, selectedTopics) >= questionType.count
-    )
-  );
-  if (!selectedTopics.length || !allTypesAvailable) {
+  if (!selectedTopics.length) {
     updateQuestionPlaceholders();
     return;
   }
