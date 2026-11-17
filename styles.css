@@ -677,3 +677,319 @@ button.mindmap-node:hover, button.mindmap-node:focus-visible, button.mindmap-nod
   .theme-toggle { min-height: 30px; gap: 5px; padding: 0 7px; }
   .theme-toggle-label { display: none; }
 }
+
+/* ==========================================================================
+   Liquid Glass Design (Aqua) – überschreibt die Grundstile oben.
+   ========================================================================== */
+
+/* Variante A – «Aqua»: klares Glas im Stil von iOS/macOS, kräftige Farbflächen dahinter,
+   schwebende Sidebar, Systemblau als Akzent. */
+:root {
+  --lg-canvas: #eef2f9;
+  --lg-bg:
+    radial-gradient(48vw 48vw at 6% 8%, #b9dcff 0%, #b9dcff00 70%),
+    radial-gradient(50vw 50vw at 90% 95%, #d6e4f5 0%, #d6e4f500 70%),
+    #eef2f9;
+  --lg-surface: rgba(255, 255, 255, .2);
+  --lg-surface-strong: rgba(255, 255, 255, .5);
+  --lg-surface-solid: #fbfdff;
+  --lg-surface-dim: rgba(255, 255, 255, .1);
+  --lg-sidebar: rgba(255, 255, 255, .18);
+  --lg-control: rgba(255, 255, 255, .3);
+  --lg-banner: linear-gradient(135deg, rgba(20, 40, 80, .8), rgba(30, 50, 90, .66));
+  --lg-hover: rgba(255, 255, 255, .5);
+  --lg-active: rgba(255, 255, 255, .8);
+  --lg-tint: rgba(10, 132, 255, .08);
+  --lg-tint-solid: #eef6ff;
+  --lg-stroke: rgba(255, 255, 255, .7);
+  --lg-stroke-soft: rgba(255, 255, 255, .85);
+  --lg-stroke-strong: rgba(10, 132, 255, .35);
+  --lg-highlight: rgba(255, 255, 255, .9);
+  --lg-lowlight: rgba(0, 20, 60, .06);
+  --lg-shadow-color: rgba(30, 50, 100, .12);
+  --lg-shadow: 0 8px 32px rgba(30, 50, 100, .12);
+  --lg-shadow-hover: 0 14px 40px rgba(30, 50, 100, .2);
+  --lg-sheen: linear-gradient(135deg, rgba(255, 255, 255, .55) 0%, rgba(255, 255, 255, 0) 40%);
+  --lg-deco: rgba(255, 255, 255, .55);
+  --lg-blur: 30px;
+  --lg-sat: 180%;
+  --lg-radius: 22px;
+  --lg-radius-md: 14px;
+  --lg-radius-sm: 11px;
+  --lg-pill: 999px;
+  --lg-accent: #0a84ff;
+  --lg-accent-ink: #ffffff;
+  --lg-accent-text: #0a6fd8;
+  --lg-accent-glow: rgba(10, 132, 255, .35);
+  --lg-text-soft: #4c5568;
+  --ink: #141a26;
+}
+:root[data-theme="dark"] {
+  --lg-canvas: #080a12;
+  --lg-bg:
+    radial-gradient(48vw 48vw at 6% 8%, #1a3a6e 0%, #1a3a6e00 70%),
+    radial-gradient(50vw 50vw at 90% 95%, #1c2638 0%, #1c263800 70%),
+    #080a12;
+  --lg-surface: rgba(40, 46, 62, .2);
+  --lg-surface-strong: rgba(28, 32, 44, .55);
+  --lg-surface-solid: #1d2230;
+  --lg-surface-dim: rgba(40, 46, 62, .1);
+  --lg-sidebar: rgba(30, 36, 50, .2);
+  --lg-control: rgba(60, 68, 88, .25);
+  --lg-banner: linear-gradient(135deg, rgba(14, 30, 60, .7), rgba(22, 32, 52, .6));
+  --lg-hover: rgba(255, 255, 255, .08);
+  --lg-active: rgba(255, 255, 255, .14);
+  --lg-tint: rgba(10, 132, 255, .14);
+  --lg-tint-solid: #1b2a40;
+  --lg-stroke: rgba(255, 255, 255, .14);
+  --lg-stroke-soft: rgba(255, 255, 255, .1);
+  --lg-stroke-strong: rgba(100, 180, 255, .45);
+  --lg-highlight: rgba(255, 255, 255, .16);
+  --lg-lowlight: rgba(0, 0, 0, .3);
+  --lg-shadow-color: rgba(0, 0, 0, .4);
+  --lg-shadow: 0 10px 36px rgba(0, 0, 0, .4);
+  --lg-shadow-hover: 0 16px 44px rgba(0, 0, 0, .55);
+  --lg-sheen: linear-gradient(135deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 0) 40%);
+  --lg-deco: rgba(255, 255, 255, .05);
+  --lg-accent: #0a84ff;
+  --lg-accent-text: #6cb6ff;
+  --lg-accent-glow: rgba(10, 132, 255, .45);
+  --lg-text-soft: #b6bfd0;
+  --ink: #eef2fa;
+}
+
+/* schwebende Sidebar */
+@media (min-width: 761px) {
+  :root[data-theme] .sidebar { inset: 12px auto 12px 12px; border-radius: 26px; }
+  :root[data-theme] .workspace { margin-left: 272px; padding: 0 36px; }
+}
+@media (min-width: 761px) and (max-width: 1050px) {
+  :root[data-theme] .workspace { margin-left: 234px; padding: 0 24px; }
+}
+
+/* Liquid Glass – gemeinsame Struktur. Farben/Formen kommen aus den Varianten-Dateien (--lg-*).
+   Selektoren nutzen :root[data-theme] damit sie die Dark-Mode-Regeln aus styles.css überschreiben. */
+
+:root[data-theme] body { background: var(--lg-canvas); }
+:root[data-theme] body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: var(--lg-bg);
+  background-attachment: fixed;
+  pointer-events: none;
+}
+
+/* ---------- Glas-Mixins ---------- */
+:root[data-theme] .sidebar,
+:root[data-theme] .workspace > header,
+:root[data-theme] .subject-card,
+:root[data-theme] .feature-card,
+:root[data-theme] .panel,
+:root[data-theme] .exam-result,
+:root[data-theme] .summary-category,
+:root[data-theme] .learn-stage,
+:root[data-theme] .periods-panel,
+:root[data-theme] .mindmap-detail,
+:root[data-theme] .placeholder-panel,
+:root[data-theme] .content-notice {
+  border: 1px solid var(--lg-stroke);
+  background: var(--lg-surface);
+  -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-sat));
+  backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-sat));
+  box-shadow: inset 0 1px 0 var(--lg-highlight), inset 0 -1px 0 var(--lg-lowlight), var(--lg-shadow);
+}
+
+/* Lese-Flächen: kein Blur (verschachtelt / zahlreich), aber hohe Deckkraft für Lesbarkeit */
+:root[data-theme] .summary-card,
+:root[data-theme] .glossary-card,
+:root[data-theme] .date-entry,
+:root[data-theme] .learn-option,
+:root[data-theme] .exam-part-placeholder,
+:root[data-theme] .info-callout,
+:root[data-theme] .summary-text .summary-embed {
+  border: 1px solid var(--lg-stroke-soft);
+  background: var(--lg-surface-strong);
+  box-shadow: inset 0 1px 0 var(--lg-highlight);
+}
+
+/* ---------- Sidebar ---------- */
+:root[data-theme] .sidebar { background: var(--lg-sidebar); }
+:root[data-theme] .brand-mark {
+  border-radius: var(--lg-radius-sm);
+  background: var(--lg-accent);
+  color: var(--lg-accent-ink);
+  box-shadow: inset 0 1px 0 #ffffff55, 0 4px 14px var(--lg-accent-glow);
+}
+:root[data-theme] .nav-link { border-radius: var(--lg-pill); color: var(--lg-text-soft); }
+:root[data-theme] .nav-link:hover { background: var(--lg-hover); color: var(--ink); }
+:root[data-theme] .nav-link.is-active {
+  background: var(--lg-active);
+  color: var(--ink);
+  box-shadow: inset 0 1px 0 var(--lg-highlight), 0 2px 10px var(--lg-shadow-color);
+}
+
+/* ---------- Header ---------- */
+:root[data-theme] .workspace > header {
+  position: sticky;
+  z-index: 4;
+  top: 12px;
+  height: 56px;
+  margin-top: 12px;
+  border-radius: var(--lg-pill);
+  padding: 0 10px 0 22px;
+}
+:root[data-theme] .breadcrumb a { color: var(--lg-accent-text); }
+
+/* ---------- Karten ---------- */
+:root[data-theme] .subject-card,
+:root[data-theme] .feature-card,
+:root[data-theme] .panel,
+:root[data-theme] .exam-result,
+:root[data-theme] .learn-stage,
+:root[data-theme] .periods-panel,
+:root[data-theme] .mindmap-detail,
+:root[data-theme] .summary-category,
+:root[data-theme] .placeholder-panel { border-radius: var(--lg-radius); }
+:root[data-theme] .summary-card,
+:root[data-theme] .glossary-card,
+:root[data-theme] .date-entry,
+:root[data-theme] .content-notice,
+:root[data-theme] .learn-option,
+:root[data-theme] .exam-part-placeholder,
+:root[data-theme] .info-callout { border-radius: var(--lg-radius-md); }
+
+:root[data-theme] .subject-card { position: relative; overflow: hidden; }
+:root[data-theme] .subject-card::after,
+:root[data-theme] .feature-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--lg-sheen);
+  pointer-events: none;
+}
+:root[data-theme] .subject-card[href]:hover,
+:root[data-theme] .feature-card:hover {
+  transform: translateY(-3px) scale(1.01);
+  border-color: var(--lg-stroke-strong);
+  box-shadow: inset 0 1px 0 var(--lg-highlight), inset 0 -1px 0 var(--lg-lowlight), var(--lg-shadow-hover);
+}
+:root[data-theme] .feature-card { transition: transform .2s, box-shadow .2s, border-color .2s; }
+:root[data-theme] .subject-card.is-disabled { background: var(--lg-surface-dim); color: var(--lg-text-soft); }
+:root[data-theme] .subject-card.is-disabled .subject-card-content strong { color: var(--lg-text-soft); }
+:root[data-theme] .subject-card-icon,
+:root[data-theme] .feature-icon {
+  border-radius: var(--lg-radius-sm);
+  box-shadow: inset 0 1px 0 #ffffff70, 0 2px 8px var(--lg-shadow-color);
+}
+:root[data-theme] .subject-card-arrow { color: var(--lg-accent-text); }
+:root[data-theme] .card-decoration { color: var(--lg-deco); }
+
+/* Willkommens-Banner als getöntes Glas */
+:root[data-theme] .welcome-banner {
+  border: 1px solid var(--lg-stroke);
+  border-radius: var(--lg-radius);
+  background: var(--lg-banner);
+  -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-sat));
+  backdrop-filter: blur(var(--lg-blur)) saturate(var(--lg-sat));
+  box-shadow: inset 0 1px 0 #ffffff40, var(--lg-shadow);
+}
+
+/* ---------- Bedienelemente ---------- */
+:root[data-theme] .button,
+:root[data-theme] .glossary-view-button,
+:root[data-theme] .learn-mode,
+:root[data-theme] .learn-action,
+:root[data-theme] .mindmap-controls button,
+:root[data-theme] .theme-toggle { border-radius: var(--lg-pill); }
+
+:root[data-theme] .glossary-view-button,
+:root[data-theme] .learn-mode,
+:root[data-theme] .learn-action,
+:root[data-theme] .mindmap-controls button,
+:root[data-theme] .theme-toggle,
+:root[data-theme] .button-outline,
+:root[data-theme] .field-control,
+:root[data-theme] .search-field,
+:root[data-theme] .topic-option {
+  border: 1px solid var(--lg-stroke);
+  background: var(--lg-control);
+  color: var(--ink);
+  box-shadow: inset 0 1px 0 var(--lg-highlight);
+}
+:root[data-theme] .field-control,
+:root[data-theme] .search-field,
+:root[data-theme] .topic-option { border-radius: var(--lg-radius-md); }
+
+:root[data-theme] .glossary-view-button:hover,
+:root[data-theme] .glossary-view-button.is-active,
+:root[data-theme] .learn-mode:hover,
+:root[data-theme] .learn-mode.is-active,
+:root[data-theme] .learn-action:hover:not(:disabled),
+:root[data-theme] .button-primary {
+  border-color: transparent;
+  background: var(--lg-accent);
+  color: var(--lg-accent-ink);
+  box-shadow: inset 0 1px 0 #ffffff55, 0 4px 14px var(--lg-accent-glow);
+}
+:root[data-theme] .mindmap-controls button:hover { border-color: var(--lg-accent); }
+:root[data-theme] .topic-option:has(input:checked) { border-color: var(--lg-accent); background: var(--lg-active); }
+:root[data-theme] .theme-toggle-track { border-color: var(--lg-stroke-strong); background: var(--lg-hover); }
+:root[data-theme="dark"] .theme-toggle-track { background: var(--lg-accent); border-color: transparent; }
+
+:root[data-theme] .glossary-toggle,
+:root[data-theme] .timeline-toggle { background: var(--lg-hover); color: var(--ink); }
+
+:root[data-theme] .glossary-sections { border-bottom-color: var(--lg-stroke); }
+:root[data-theme] .glossary-sections a:hover,
+:root[data-theme] .glossary-sections a:focus-visible { border-bottom-color: var(--lg-accent); }
+
+/* ---------- Zusammenfassungen ---------- */
+:root[data-theme] .summary-category > summary .summary-title,
+:root[data-theme] .summary-category-count,
+:root[data-theme] .summary-number,
+:root[data-theme] .date-entry time,
+:root[data-theme] .quizlet-link { color: var(--lg-accent-text); }
+:root[data-theme] .summary-text .summary-merke {
+  border-left-color: var(--lg-accent);
+  background: var(--lg-tint);
+  color: var(--ink);
+}
+:root[data-theme] .summary-text th { background: var(--lg-tint); }
+:root[data-theme] .summary-text th,
+:root[data-theme] .summary-text td { border-color: var(--lg-stroke-soft); }
+:root[data-theme] .summary-subtopics,
+:root[data-theme] .summary-subtopic { border-color: var(--lg-stroke-soft); }
+
+/* ---------- Mindmap / Lernkarten ---------- */
+:root[data-theme] .mindmap-viewport {
+  border-color: var(--lg-stroke);
+  border-radius: var(--lg-radius);
+  background-color: var(--lg-surface-strong);
+}
+:root[data-theme] .mindmap-node { border-radius: var(--lg-radius-sm); }
+:root[data-theme] .learn-card-face { border-radius: var(--lg-radius); border-color: var(--lg-stroke); background: var(--lg-surface-solid); }
+:root[data-theme] .learn-card-front { background: var(--lg-tint-solid); }
+:root[data-theme] .learn-option.is-correct { border-color: #34c759; background: #34c75922; }
+:root[data-theme] .learn-option.is-wrong { border-color: #ff6b4a; background: #ff6b4a22; }
+
+:root[data-theme] .dates-list::before { background: var(--lg-stroke-strong); }
+:root[data-theme] .timeline-marker { background: var(--lg-accent); box-shadow: 0 0 0 1px var(--lg-accent), 0 0 10px var(--lg-accent-glow); border-color: transparent; }
+
+:root[data-theme] .page-footer { border-top-color: var(--lg-stroke); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 760px) {
+  :root[data-theme] .sidebar {
+    top: 8px;
+    width: auto;
+    margin: 8px 8px 0;
+    border-radius: var(--lg-radius);
+  }
+  :root[data-theme] .workspace > header { position: static; margin-top: 12px; }
+  :root[data-theme] .workspace { padding: 0 14px; }
+}
+
+.welcome-banner + .subject-grid { margin-top: 24px; }

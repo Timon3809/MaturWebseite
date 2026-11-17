@@ -24,7 +24,6 @@
         <main>
           <section class="content-view">
             <div class="page-heading">
-              <span class="eyebrow dark-eyebrow" data-heading-eyebrow></span>
               <h1>Glossar</h1>
               <a class="button button-primary" data-quizlet-link target="_blank" rel="noopener noreferrer" hidden>
                 Mit Quizlet lernen <span aria-hidden="true">↗</span>
@@ -114,7 +113,6 @@
   sidebar.dataset.navSection = navSection;
   sidebar.dataset.navPage = "glossary";
   root.querySelector("[data-section-link]").textContent = sectionLabel;
-  root.querySelector("[data-heading-eyebrow]").textContent = headingEyebrow;
 
   if (quizletUrl) {
     const quizletLink = root.querySelector("[data-quizlet-link]");

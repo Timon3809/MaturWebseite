@@ -18,99 +18,69 @@
     "semantic_hash": "fdb8e89c302d988c6d9658561072914e"
   },
   "Biologie/Scripts/data.js": {
-    "mtime": 1794495436.099273,
-    "seen": 1794527117.2505445,
-    "ast_hash": "80d9314b2a323df3ff46640d8b58011d",
+    "mtime": 1794907958.6702628,
+    "seen": 1794914159.0209365,
+    "ast_hash": "a4227b3b02d35cb33b1d86fd659b4f3b",
     "semantic_hash": ""
-  },
-  "Biologie/Scripts/glossar.js": {
-    "mtime": 1794495436.1044009,
-    "seen": 1794527117.2505445,
-    "ast_hash": "64805abc855dad275e08b83c0a0b09ab",
-    "semantic_hash": ""
-  },
-  "Biologie/Scripts/zusammenfassungen.js": {
-    "mtime": 1793194061.721708,
-    "seen": 1793385099.4626002,
-    "ast_hash": "6979916823e1cfc2ba9e8ef453c2676e",
-    "semantic_hash": "6979916823e1cfc2ba9e8ef453c2676e"
   },
   "Chemie/Scripts/data.js": {
-    "mtime": 1794524581.064129,
-    "seen": 1794527117.2505445,
-    "ast_hash": "8c03302a52610c04d02dfe22da8b479c",
+    "mtime": 1794907958.6772401,
+    "seen": 1794914159.0209365,
+    "ast_hash": "0198c8d39024c6eabb4c5af4c6ad4cb1",
     "semantic_hash": ""
   },
   "Chemie/Scripts/glossar-data.js": {
-    "mtime": 1793226618.151885,
-    "seen": 1793385099.4626002,
-    "ast_hash": "480c6954255e9cd8055a445e9da5f01d",
-    "semantic_hash": "480c6954255e9cd8055a445e9da5f01d"
+    "mtime": 1794907958.6797426,
+    "seen": 1794914159.0209365,
+    "ast_hash": "b1ca5410760070c79891f3ab65cbdcbd",
+    "semantic_hash": ""
   },
   "Geographie/Scripts/data.js": {
-    "mtime": 1794553906.5802898,
-    "seen": 1794553962.6015491,
-    "ast_hash": "9bff85cff5cee1218ca051a977bf3009",
+    "mtime": 1794907958.8523014,
+    "seen": 1794914159.05406,
+    "ast_hash": "8cd2c7c7cfe92894d4d94c7d12f485e6",
     "semantic_hash": ""
-  },
-  "Geographie/Scripts/glossar.js": {
-    "mtime": 1794565988.532779,
-    "seen": 1794566045.4008203,
-    "ast_hash": "4a74fb520057c9b7112e52ac1ea3add9",
-    "semantic_hash": ""
-  },
-  "Geographie/Scripts/zusammenfassungen.js": {
-    "mtime": 1793226618.4724896,
-    "seen": 1793385099.4626002,
-    "ast_hash": "ea76176d36612ea4adc618ccbebe7d1e",
-    "semantic_hash": "ea76176d36612ea4adc618ccbebe7d1e"
   },
   "Geschichte/Scripts/data.js": {
-    "mtime": 1793187212.84537,
-    "seen": 1793385099.4626002,
-    "ast_hash": "7ce4bb91b2ad1beea16a0bf07655c615",
-    "semantic_hash": "7ce4bb91b2ad1beea16a0bf07655c615"
+    "mtime": 1794907958.9705505,
+    "seen": 1794914159.05406,
+    "ast_hash": "807be95eaadd6e54a831d53957f60692",
+    "semantic_hash": ""
   },
   "Geschichte/Scripts/ewige-daten.js": {
-    "mtime": 1793187213.017249,
-    "seen": 1793385099.4626002,
-    "ast_hash": "788c71bda3b03a948513e63d6f9f78c5",
-    "semantic_hash": "788c71bda3b03a948513e63d6f9f78c5"
-  },
-  "Geschichte/Scripts/glossar.js": {
-    "mtime": 1793226618.1666064,
-    "seen": 1793385099.4626002,
-    "ast_hash": "1d6ec0e2523afa9a8bac62746a0e352c",
-    "semantic_hash": "1d6ec0e2523afa9a8bac62746a0e352c"
+    "mtime": 1794907958.9725444,
+    "seen": 1794914159.05406,
+    "ast_hash": "282176a5ced89efdf2dd8e873a7b5d5a",
+    "semantic_hash": ""
   },
   "Geschichte/Scripts/pruefungssimulator.js": {
-    "mtime": 1793187213.1359477,
-    "seen": 1793385099.4626002,
-    "ast_hash": "dde62d9cb5205da0c06340ec9c7c8aa4",
-    "semantic_hash": "dde62d9cb5205da0c06340ec9c7c8aa4"
+    "mtime": 1794907958.9825623,
+    "seen": 1794914159.05406,
+    "ast_hash": "306847050fe230fe166af7f79f78c252",
+    "semantic_hash": ""
   },
   "Geschichte/Scripts/zusammenfassungen.js": {
-    "mtime": 1793193979.3133645,
-    "seen": 1793385099.4626002,
-    "ast_hash": "8e8d844dd92653fc5886eafc15f38a46",
-    "semantic_hash": "8e8d844dd92653fc5886eafc15f38a46"
+    "mtime": 1794907958.9845562,
+    "seen": 1794914159.05406,
+    "ast_hash": "07dd48bdb19c9fd02573ecf53f1fc402",
+    "semantic_hash": ""
   },
   "Scripts/glossar.js": {
-    "mtime": 1793618807.10847,
-    "seen": 1793619074.2966678,
-    "ast_hash": "2dec499b4d09e062e522d09b92f3ff10",
+    "mtime": 1794907958.9938445,
+    "seen": 1794914159.05406,
+    "ast_hash": "5832ccc443e267493a9e5023f4529328",
     "semantic_hash": ""
   },
   "Scripts/zusammenfassungen.js": {
-    "mtime": 1794524967.084739,
-    "seen": 1794527117.2525826,
-    "ast_hash": "e3f7bfe7fd7d7d00b5d79b5779c35958",
+    "mtime": 1794907958.995838,
+    "seen": 1794914159.05406,
+    "ast_hash": "e3c7c21bd148683bf59aa27e1b20ae70",
     "semantic_hash": ""
   },
   "site-nav.js": {
-    "mtime": 1794553924.0952876,
-    "seen": 1794553962.610559,
-    "ast_hash": "9fec5843b45543af1eda4740c1d2b26d",
+    "mtime": 1794915153.6990316,
+    "seen": 1794915197.4146852,
+    "ast_hash": "01952fa5f757c1114baa25234ddcc560",
     "semantic_hash": ""
   },
   ".claude/CLAUDE.md": {
@@ -120,34 +90,28 @@
     "semantic_hash": "9b31786b637be3c13978bec4c2330752"
   },
   "Biologie/dateien.html": {
-    "mtime": 1793191715.4532263,
-    "seen": 1793385099.4626002,
-    "ast_hash": "af6a9687ca33db09c27eaf20fe416560",
-    "semantic_hash": "af6a9687ca33db09c27eaf20fe416560"
+    "mtime": 1794915586.175131,
+    "seen": 1794915609.920133,
+    "ast_hash": "d338b69825e9a474a3fbdf8bab9dae5d",
+    "semantic_hash": ""
   },
   "Biologie/glossar.html": {
-    "mtime": 1793616035.569904,
-    "seen": 1793618159.215792,
-    "ast_hash": "5f1311add28028e3e178d17479505e83",
+    "mtime": 1794907958.6722572,
+    "seen": 1794914159.05659,
+    "ast_hash": "a29dcc04e3b6c272ddf88a25dc75b5e5",
     "semantic_hash": ""
   },
   "Biologie/index.html": {
-    "mtime": 1794524966.5721793,
-    "seen": 1794527117.2525826,
-    "ast_hash": "5ba7c6865d9b06b455f889799d06dfeb",
+    "mtime": 1794915586.175131,
+    "seen": 1794915609.9211314,
+    "ast_hash": "e10f35391dfb1504e1c08cf2ec621af2",
     "semantic_hash": ""
   },
-  "Biologie/pruefungssimulator.html": {
-    "mtime": 1793191715.4609337,
-    "seen": 1793385099.4626002,
-    "ast_hash": "23f75b53158943d4ae0daa6c02d7abb0",
-    "semantic_hash": "23f75b53158943d4ae0daa6c02d7abb0"
-  },
   "Biologie/zusammenfassungen.html": {
-    "mtime": 1793194061.7576356,
-    "seen": 1793385099.4626002,
-    "ast_hash": "82bd523e2f99b2aa7580bbd88713e1ed",
-    "semantic_hash": "82bd523e2f99b2aa7580bbd88713e1ed"
+    "mtime": 1794915586.1763566,
+    "seen": 1794915609.9211314,
+    "ast_hash": "aacfd9f0a6f66d462f916b0cfc31e142",
+    "semantic_hash": ""
   },
   "CLAUDE.md": {
     "mtime": 1793351971.8824043,
@@ -156,100 +120,100 @@
     "semantic_hash": "67d88e9d0760c3ba54c75dfd9551c1c5"
   },
   "Chemie/dateien.html": {
-    "mtime": 1794524581.0681932,
-    "seen": 1794527117.2525826,
-    "ast_hash": "ede8af2460d025a2590633e7933e6df7",
+    "mtime": 1794915586.1763566,
+    "seen": 1794915609.9211314,
+    "ast_hash": "cb7f80b095415a86eb0f43f1967f1b6f",
     "semantic_hash": ""
   },
   "Chemie/glossar.html": {
-    "mtime": 1793618848.8106759,
-    "seen": 1793619074.3045807,
-    "ast_hash": "ded02bf32a40eea98d995d7465a06700",
+    "mtime": 1794907958.6852062,
+    "seen": 1794914159.058629,
+    "ast_hash": "e67358ecdc4ee7cc2536c042899706ce",
     "semantic_hash": ""
   },
   "Chemie/index.html": {
-    "mtime": 1794524581.0701866,
-    "seen": 1794527117.2525826,
-    "ast_hash": "bd2963bd494e343c4a9298c0952b9dec",
+    "mtime": 1794915683.9677627,
+    "seen": 1794915707.1116421,
+    "ast_hash": "0b1c858699e4828a57faba4ea7aedd6a",
     "semantic_hash": ""
   },
   "Chemie/zusammenfassungen.html": {
-    "mtime": 1793193979.3118744,
-    "seen": 1793385099.4626002,
-    "ast_hash": "f2d6303f25cbf0f5bc7d2c001feb5132",
-    "semantic_hash": "f2d6303f25cbf0f5bc7d2c001feb5132"
+    "mtime": 1794915586.1783888,
+    "seen": 1794915609.922127,
+    "ast_hash": "2f5ab5f09dd88ffc26bf255560d811cb",
+    "semantic_hash": ""
   },
   "Geographie/dateien.html": {
-    "mtime": 1793196389.7429228,
-    "seen": 1793385099.4626002,
-    "ast_hash": "94d236bbbfc579731f4106fba40ff0d5",
-    "semantic_hash": "94d236bbbfc579731f4106fba40ff0d5"
+    "mtime": 1794915586.1806574,
+    "seen": 1794915609.927265,
+    "ast_hash": "7b6ab88bbb700d19e012cd1d14633084",
+    "semantic_hash": ""
   },
   "Geographie/glossar.html": {
-    "mtime": 1794565988.5353165,
-    "seen": 1794566045.4078515,
-    "ast_hash": "e51def7fa45162db26bb2f37ae261b6a",
+    "mtime": 1794907958.854294,
+    "seen": 1794914159.072542,
+    "ast_hash": "885691a7ddfcccb0b983a7915262d5fd",
     "semantic_hash": ""
   },
   "Geographie/index.html": {
-    "mtime": 1794553924.097434,
-    "seen": 1794553962.6231322,
-    "ast_hash": "60f3f3206fd1ae4c74a618e25b2236c2",
+    "mtime": 1794915586.1816914,
+    "seen": 1794915609.9284952,
+    "ast_hash": "c45937bb270ab8dab17ba85014dd0441",
     "semantic_hash": ""
   },
   "Geographie/zusammenfassungen.html": {
-    "mtime": 1793226618.4810221,
-    "seen": 1793385099.4626002,
-    "ast_hash": "7cff7846ec8aec31db10ae71c03348c6",
-    "semantic_hash": "7cff7846ec8aec31db10ae71c03348c6"
+    "mtime": 1794915586.1826887,
+    "seen": 1794915609.9284952,
+    "ast_hash": "ad403255cd9a603f328402b1750eef32",
+    "semantic_hash": ""
   },
   "Geschichte/dateien.html": {
-    "mtime": 1793187213.6640468,
-    "seen": 1793385099.4626002,
-    "ast_hash": "c8cd94789bd97ccde303a3b41942a103",
-    "semantic_hash": "c8cd94789bd97ccde303a3b41942a103"
+    "mtime": 1794915586.1826887,
+    "seen": 1794915609.9284952,
+    "ast_hash": "f04f80157a490d839812a9260c0858b3",
+    "semantic_hash": ""
   },
   "Geschichte/ewige-daten.html": {
-    "mtime": 1793187213.8624234,
-    "seen": 1793385099.4626002,
-    "ast_hash": "9666337ff67f5c3177c14cb974128944",
-    "semantic_hash": "9666337ff67f5c3177c14cb974128944"
+    "mtime": 1794915586.183685,
+    "seen": 1794915609.9284952,
+    "ast_hash": "00bb62e810a96693ff5dacb84bd857f0",
+    "semantic_hash": ""
   },
   "Geschichte/glossar.html": {
-    "mtime": 1793618879.7835348,
-    "seen": 1793619074.3138518,
-    "ast_hash": "b5856a86a12e8a5cb7446f01a19a1011",
+    "mtime": 1794907958.9855528,
+    "seen": 1794914159.0756178,
+    "ast_hash": "c2ebdbc55046631ef4da071d007ffbd3",
     "semantic_hash": ""
   },
   "Geschichte/index.html": {
-    "mtime": 1793226618.1692393,
-    "seen": 1793385099.4626002,
-    "ast_hash": "efd81570d353aefbd1d9139a7f9a272b",
-    "semantic_hash": "efd81570d353aefbd1d9139a7f9a272b"
+    "mtime": 1794915683.9677627,
+    "seen": 1794915707.125807,
+    "ast_hash": "58f56447ba8327d61ae816a2d0fd0cd8",
+    "semantic_hash": ""
   },
   "Geschichte/pruefungssimulator.html": {
-    "mtime": 1793187214.0042918,
-    "seen": 1793385099.4626002,
-    "ast_hash": "fbf49a203301ce6108e49f2e71aa5d10",
-    "semantic_hash": "fbf49a203301ce6108e49f2e71aa5d10"
+    "mtime": 1794915586.1846817,
+    "seen": 1794915609.9284952,
+    "ast_hash": "fa3721c5d65dafec3506ae3ccb44219a",
+    "semantic_hash": ""
   },
   "Geschichte/zusammenfassungen.html": {
-    "mtime": 1793193979.314436,
-    "seen": 1793385099.4626002,
-    "ast_hash": "afca0221a28f66ed33ebb686c547c1b5",
-    "semantic_hash": "afca0221a28f66ed33ebb686c547c1b5"
+    "mtime": 1794915586.1846817,
+    "seen": 1794915609.9284952,
+    "ast_hash": "89cf87f4651a90ebdd6f11b7b2019956",
+    "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1794556554.4153204,
-    "seen": 1794556568.025422,
-    "ast_hash": "38f09ac4c429c61abbfb4171947de486",
+    "mtime": 1794907958.9898584,
+    "seen": 1794914159.077632,
+    "ast_hash": "4916c437b58bf138f647c52b0e4b1b59",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1793226618.1759305,
-    "seen": 1793385099.4626002,
-    "ast_hash": "9f9cfde17b374a5f844b9961fe7e7722",
-    "semantic_hash": "9f9cfde17b374a5f844b9961fe7e7722"
+    "mtime": 1794915153.1890855,
+    "seen": 1794915197.4294388,
+    "ast_hash": "aaf21cd6f782065b551b22f35db9ceed",
+    "semantic_hash": ""
   },
   "Geographie/Resourcen/Bilder/svg-geologisches-profil.svg": {
     "mtime": 1793226618.407504,
@@ -267,54 +231,6 @@
     "mtime": 1793226618.1477835,
     "seen": 1793386895.3161182,
     "ast_hash": "56ca9aed0f1fc7f6e9ab5533dd6f006c",
-    "semantic_hash": ""
-  },
-  "Chemie/Unterrichtsdateien/3_Chemische_Bindungen.pdf": {
-    "mtime": 1793193977.9574308,
-    "seen": 1793386895.3161182,
-    "ast_hash": "d7ffc46bc4b8d6a430a450108173a92e",
-    "semantic_hash": ""
-  },
-  "Chemie/Unterrichtsdateien/4_Atombau.pdf": {
-    "mtime": 1793193978.3589816,
-    "seen": 1793386895.3161182,
-    "ast_hash": "6b92db485e0204918af003f75d8de730",
-    "semantic_hash": ""
-  },
-  "Chemie/Unterrichtsdateien/5_Molekulare Stoffe.pdf": {
-    "mtime": 1793193978.6029067,
-    "seen": 1793386895.3161182,
-    "ast_hash": "cf98908e57f1a9c6343235a5eda1d0a1",
-    "semantic_hash": ""
-  },
-  "Chemie/Unterrichtsdateien/6_Salze.pdf": {
-    "mtime": 1793193978.8196273,
-    "seen": 1793386895.3161182,
-    "ast_hash": "f3b0410a74945eb3b90e7e152e6e35e8",
-    "semantic_hash": ""
-  },
-  "Chemie/Unterrichtsdateien/Kapitel_4_Chemische_Reaktionen.pdf": {
-    "mtime": 1793193979.0909276,
-    "seen": 1793386895.3161182,
-    "ast_hash": "01ce1e62234e47871868774b3aaed146",
-    "semantic_hash": ""
-  },
-  "Chemie/Unterrichtsdateien/Kapitel_5_S\u00e4ure_Basen.pdf": {
-    "mtime": 1793193979.1693587,
-    "seen": 1793386895.3161182,
-    "ast_hash": "3becf3433893a8df0342eba30393ad04",
-    "semantic_hash": ""
-  },
-  "Chemie/Unterrichtsdateien/Kapitel_6_Elekronen\u00fcbertragungsreaktion.pdf": {
-    "mtime": 1793193979.2636192,
-    "seen": 1793386895.3161182,
-    "ast_hash": "a941e7bdeef8f48441a86ef1cbf8396d",
-    "semantic_hash": ""
-  },
-  "Chemie/Unterrichtsdateien/Kapitel_7_Organische_Chemie.pdf": {
-    "mtime": 1793193979.309875,
-    "seen": 1793386895.3161182,
-    "ast_hash": "8111d1ec5949919be7499784e587e563",
     "semantic_hash": ""
   },
   "Geographie/Resourcen/Dateien/inhaltsverzeichnis_matur_2026_prov.pdf": {
@@ -690,27 +606,27 @@
     "semantic_hash": ""
   },
   "Scripts/glossar-quiz.js": {
-    "mtime": 1794565988.5342815,
-    "seen": 1794566045.4028282,
-    "ast_hash": "ed6e2755e1d8689e96f91603946b35e1",
+    "mtime": 1794907958.9928482,
+    "seen": 1794914159.05406,
+    "ast_hash": "a9f2b0c3085f1321156e9177c3f42b7d",
     "semantic_hash": ""
   },
   "Chemie/Scripts/periodic-elements-data.js": {
-    "mtime": 1794524581.0651937,
-    "seen": 1794527117.2505445,
-    "ast_hash": "8983deaf8325ed19ffcc605dd67e798e",
+    "mtime": 1794907958.6807392,
+    "seen": 1794914159.0209365,
+    "ast_hash": "129fce986ba4ea0fbe7147890d8f9158",
     "semantic_hash": ""
   },
   "Chemie/Scripts/simulationen.js": {
-    "mtime": 1794524581.067196,
-    "seen": 1794527117.2505445,
-    "ast_hash": "f0a85b3570708f55ca9751f7700d4bf0",
+    "mtime": 1794907958.6837287,
+    "seen": 1794914159.0209365,
+    "ast_hash": "7bffa7c14e6dfd19b3aabb975a3382d2",
     "semantic_hash": ""
   },
   "Chemie/simulationen.html": {
-    "mtime": 1794524581.0725431,
-    "seen": 1794527117.2525826,
-    "ast_hash": "d29a029f385a9ed2078adad831d74693",
+    "mtime": 1794915586.177384,
+    "seen": 1794915609.922127,
+    "ast_hash": "67351620c7f0cf2cd8994234b6ad177c",
     "semantic_hash": ""
   },
   "Chemie/Resourcen/Instruktionen Vormatur M6a.pdf": {
@@ -1223,372 +1139,6 @@
     "ast_hash": "66b93d75f5a60a7694bd7a3dea64ed29",
     "semantic_hash": ""
   },
-  "Gesteine/Alpenkalk 1.jpg": {
-    "mtime": 1793694988.54231,
-    "seen": 1794527117.26701,
-    "ast_hash": "b5a9bf335379c56e758e982e3a134ef0",
-    "semantic_hash": ""
-  },
-  "Gesteine/Alpenkalk 2.jpg": {
-    "mtime": 1793695054.6724553,
-    "seen": 1794527117.26701,
-    "ast_hash": "7ebf28f0e481574c52b63b4353e6c356",
-    "semantic_hash": ""
-  },
-  "Gesteine/Basalt 1.webp": {
-    "mtime": 1793693644.2343638,
-    "seen": 1794527117.26701,
-    "ast_hash": "36176775d394466ec6a30f937415cb1a",
-    "semantic_hash": ""
-  },
-  "Gesteine/Basalt 2.webp": {
-    "mtime": 1793693667.9546096,
-    "seen": 1794527117.26701,
-    "ast_hash": "22a33bbab155c42cd0a68d04c1f9a5fb",
-    "semantic_hash": ""
-  },
-  "Gesteine/Basalt 3.webp": {
-    "mtime": 1793693696.3369243,
-    "seen": 1794527117.26701,
-    "ast_hash": "c4c019c3d00dedeb4d8e441f09140d1c",
-    "semantic_hash": ""
-  },
-  "Gesteine/Basalt 4.jpg": {
-    "mtime": 1793694581.6320386,
-    "seen": 1794527117.26701,
-    "ast_hash": "3df22ffef6c686a599c6a1169e687931",
-    "semantic_hash": ""
-  },
-  "Gesteine/Bimsstein 1.webp": {
-    "mtime": 1793693729.7765567,
-    "seen": 1794527117.26701,
-    "ast_hash": "7bd446508c9b30b016b5e5e27244b571",
-    "semantic_hash": ""
-  },
-  "Gesteine/Bimsstein 2.webp": {
-    "mtime": 1793693748.525374,
-    "seen": 1794527117.26701,
-    "ast_hash": "72dd2a66ff5a61fe06d75aa96eba00d1",
-    "semantic_hash": ""
-  },
-  "Gesteine/Bimsstein 3.webp": {
-    "mtime": 1793693790.302639,
-    "seen": 1794527117.26701,
-    "ast_hash": "950e50fe5d3e4ee610bafc25df72802b",
-    "semantic_hash": ""
-  },
-  "Gesteine/Bimsstein 4.jpg": {
-    "mtime": 1793694511.9861264,
-    "seen": 1794527117.26701,
-    "ast_hash": "89be3f9a307b59a37d583c62596698aa",
-    "semantic_hash": ""
-  },
-  "Gesteine/Brekzie 1.webp": {
-    "mtime": 1793693849.9107673,
-    "seen": 1794527117.26701,
-    "ast_hash": "32c95bdb0dfab38ba08676487c7fbedd",
-    "semantic_hash": ""
-  },
-  "Gesteine/Brekzie 2.webp": {
-    "mtime": 1793693859.7946389,
-    "seen": 1794527117.26701,
-    "ast_hash": "58a73e43f9615d0fc1358fef4c35e07d",
-    "semantic_hash": ""
-  },
-  "Gesteine/Brekzie 3.webp": {
-    "mtime": 1793693872.4398587,
-    "seen": 1794527117.26701,
-    "ast_hash": "e87011b30870515e3c42e844fcd5579d",
-    "semantic_hash": ""
-  },
-  "Gesteine/Flintstein 1.webp": {
-    "mtime": 1793693932.4592512,
-    "seen": 1794527117.26701,
-    "ast_hash": "dc4e42de2a19db993379f9e4e43c9882",
-    "semantic_hash": ""
-  },
-  "Gesteine/Flintstein 2.webp": {
-    "mtime": 1793693947.1962876,
-    "seen": 1794527117.26701,
-    "ast_hash": "29f4a161d9c24d8ddfd2f26c0c273df8",
-    "semantic_hash": ""
-  },
-  "Gesteine/Flintstein 3.webp": {
-    "mtime": 1793693960.4416816,
-    "seen": 1794527117.26701,
-    "ast_hash": "938d89d9ec47e531bd1c31c7827f7563",
-    "semantic_hash": ""
-  },
-  "Gesteine/Flintstein 4.jpg": {
-    "mtime": 1793694761.3863125,
-    "seen": 1794527117.26701,
-    "ast_hash": "261d300260700ee16b95c01897c20302",
-    "semantic_hash": ""
-  },
-  "Gesteine/Gipsstein 1.webp": {
-    "mtime": 1793693993.9391098,
-    "seen": 1794527117.26701,
-    "ast_hash": "17f3dd7aa07015571a135ef70637ca13",
-    "semantic_hash": ""
-  },
-  "Gesteine/Gipsstein 2.webp": {
-    "mtime": 1793694011.1410925,
-    "seen": 1794527117.26701,
-    "ast_hash": "31e3f873a3b964bb288c3c47888fcbb8",
-    "semantic_hash": ""
-  },
-  "Gesteine/Gipsstein 3.webp": {
-    "mtime": 1793694025.869121,
-    "seen": 1794527117.26701,
-    "ast_hash": "0c1801248a59d7a9d63ca3537d8ce67d",
-    "semantic_hash": ""
-  },
-  "Gesteine/Gipsstein 4.jpg": {
-    "mtime": 1793694961.682005,
-    "seen": 1794527117.26701,
-    "ast_hash": "38ebd613f4f1c156930d3024b212cb17",
-    "semantic_hash": ""
-  },
-  "Gesteine/Glimmerschiefer 1.webp": {
-    "mtime": 1793694072.151436,
-    "seen": 1794527117.26701,
-    "ast_hash": "a875a901148d965801c2cedebe9cc399",
-    "semantic_hash": ""
-  },
-  "Gesteine/Glimmerschiefer 2.webp": {
-    "mtime": 1793694082.2498808,
-    "seen": 1794527117.26701,
-    "ast_hash": "47f66769a10d5e2d27fbd2d36476d23a",
-    "semantic_hash": ""
-  },
-  "Gesteine/Glimmerschiefer 3.webp": {
-    "mtime": 1793694098.2312584,
-    "seen": 1794527117.26701,
-    "ast_hash": "55739041964fc074051caacc4c43ef0f",
-    "semantic_hash": ""
-  },
-  "Gesteine/Glimmerschiefer 4.jpg": {
-    "mtime": 1793695103.2868397,
-    "seen": 1794527117.26701,
-    "ast_hash": "c2ecc3991f40d04d38643daa2fbd3579",
-    "semantic_hash": ""
-  },
-  "Gesteine/Gneis 1.webp": {
-    "mtime": 1793694125.7985537,
-    "seen": 1794527117.26701,
-    "ast_hash": "8731ebef7e6d508708b5acd677262210",
-    "semantic_hash": ""
-  },
-  "Gesteine/Gneis 2.webp": {
-    "mtime": 1793694135.4976385,
-    "seen": 1794527117.26701,
-    "ast_hash": "74e945aa08dd03c870a4e65d850f2d72",
-    "semantic_hash": ""
-  },
-  "Gesteine/Gneis 3.webp": {
-    "mtime": 1793694160.5216396,
-    "seen": 1794527117.26701,
-    "ast_hash": "483f94a1e420ff8f77ec1e4272ccac32",
-    "semantic_hash": ""
-  },
-  "Gesteine/Gneis 4.jpg": {
-    "mtime": 1793694548.779386,
-    "seen": 1794527117.26701,
-    "ast_hash": "43c02767e06ee329ba1eb5a278f4a4a0",
-    "semantic_hash": ""
-  },
-  "Gesteine/Granatolivinfels 1.jpg": {
-    "mtime": 1793694375.1170897,
-    "seen": 1794527117.26701,
-    "ast_hash": "8eff30d802c65c90ecacf4417353851d",
-    "semantic_hash": ""
-  },
-  "Gesteine/Granit 1.webp": {
-    "mtime": 1793694410.0344613,
-    "seen": 1794527117.26701,
-    "ast_hash": "8fcca989e312f7d6f10a3fdba6242a25",
-    "semantic_hash": ""
-  },
-  "Gesteine/Granit 2.webp": {
-    "mtime": 1793694417.4774604,
-    "seen": 1794527117.26701,
-    "ast_hash": "7ff88c461ca613568291b3c7671c9037",
-    "semantic_hash": ""
-  },
-  "Gesteine/Granit 3.png": {
-    "mtime": 1793694439.0173173,
-    "seen": 1794527117.26701,
-    "ast_hash": "3af284fd558bde55fae320cf41a548fe",
-    "semantic_hash": ""
-  },
-  "Gesteine/Jurakalk 1.jpg": {
-    "mtime": 1793694691.3288178,
-    "seen": 1794527117.26701,
-    "ast_hash": "66c0afe4861f51193629dc2121a5369f",
-    "semantic_hash": ""
-  },
-  "Gesteine/Jurakalk 2.webp": {
-    "mtime": 1793694479.8959754,
-    "seen": 1794527117.26701,
-    "ast_hash": "480edf6814fda14c69b6b21f9fa40fdc",
-    "semantic_hash": ""
-  },
-  "Gesteine/Kalkstein 1.jpeg": {
-    "mtime": 1793696723.8450897,
-    "seen": 1794527117.26701,
-    "ast_hash": "a5bdf3b8186ee8850d3f2d72d897c7c7",
-    "semantic_hash": ""
-  },
-  "Gesteine/Marmor 1.jpg": {
-    "mtime": 1793694659.2340014,
-    "seen": 1794527117.26701,
-    "ast_hash": "4d54943b75682e6adb0409451cfb40a4",
-    "semantic_hash": ""
-  },
-  "Gesteine/Marmor 2.webp": {
-    "mtime": 1793696796.9688218,
-    "seen": 1794527117.26701,
-    "ast_hash": "edb963c6d7d4f6c19ff240e0e620016f",
-    "semantic_hash": ""
-  },
-  "Gesteine/Mergel 1.jpg": {
-    "mtime": 1793694637.9269586,
-    "seen": 1794527117.26701,
-    "ast_hash": "23e4e09c33e6cb202aec49ccc4c32cf3",
-    "semantic_hash": ""
-  },
-  "Gesteine/Mergel 2.webp": {
-    "mtime": 1793696438.03548,
-    "seen": 1794527117.26701,
-    "ast_hash": "96d1a80f4988c6d51c0afea4177b2e1d",
-    "semantic_hash": ""
-  },
-  "Gesteine/Nagelfluh 1.jpg": {
-    "mtime": 1793694571.0116305,
-    "seen": 1794527117.26701,
-    "ast_hash": "3f97202c3aaab97745263422d6ee03ca",
-    "semantic_hash": ""
-  },
-  "Gesteine/Obsidian 1.jpg": {
-    "mtime": 1793695040.95536,
-    "seen": 1794527117.26701,
-    "ast_hash": "25d025f688b78f3832ef42302f041ed8",
-    "semantic_hash": ""
-  },
-  "Gesteine/Obsidian 2.webp": {
-    "mtime": 1793695191.2344465,
-    "seen": 1794527117.26701,
-    "ast_hash": "bcf907d02ac5129d64423fa5a790dead",
-    "semantic_hash": ""
-  },
-  "Gesteine/Obsidian 3.webp": {
-    "mtime": 1793695207.6894145,
-    "seen": 1794527117.26701,
-    "ast_hash": "6bfc9bec1a084aaf384efdec666a5c02",
-    "semantic_hash": ""
-  },
-  "Gesteine/Peridotit.jpg": {
-    "mtime": 1793694784.90796,
-    "seen": 1794527117.26701,
-    "ast_hash": "b8099ba2904956cb7b4ad7bc36504dad",
-    "semantic_hash": ""
-  },
-  "Gesteine/Rhyolit 1.jpg": {
-    "mtime": 1793695029.2142754,
-    "seen": 1794527117.26701,
-    "ast_hash": "8d471a6f65c2322c1edadae74d833c71",
-    "semantic_hash": ""
-  },
-  "Gesteine/Rhyolith 2.webp": {
-    "mtime": 1793696513.570602,
-    "seen": 1794527117.26701,
-    "ast_hash": "1260a496435c8bc2b7e957c791f974d5",
-    "semantic_hash": ""
-  },
-  "Gesteine/Rhyolith 3.jpeg": {
-    "mtime": 1793696741.9649339,
-    "seen": 1794527117.26701,
-    "ast_hash": "d77f56d3ee19e762ab9c1f7eec1cbac8",
-    "semantic_hash": ""
-  },
-  "Gesteine/Sandstein 1.jpg": {
-    "mtime": 1793694973.3355365,
-    "seen": 1794527117.26701,
-    "ast_hash": "089aab7523a1e89004102009f6bb9091",
-    "semantic_hash": ""
-  },
-  "Gesteine/Sandstein 2.webp": {
-    "mtime": 1793695252.1754298,
-    "seen": 1794527117.26701,
-    "ast_hash": "0a2d840be5aabe83d3196665b154fb47",
-    "semantic_hash": ""
-  },
-  "Gesteine/Sandstein 3.jpeg": {
-    "mtime": 1793696706.4619913,
-    "seen": 1794527117.26701,
-    "ast_hash": "15afe5d427370717d07c4dd547510f67",
-    "semantic_hash": ""
-  },
-  "Gesteine/Serpentinit 1.webp": {
-    "mtime": 1793696358.2033653,
-    "seen": 1794527117.26701,
-    "ast_hash": "0bbd44ad2a00dd06881ee7873fe008e5",
-    "semantic_hash": ""
-  },
-  "Gesteine/Serpentinit 2.webp": {
-    "mtime": 1793696389.389382,
-    "seen": 1794527117.26701,
-    "ast_hash": "3c4f8b4f5fb3669df83622b9ac2061b2",
-    "semantic_hash": ""
-  },
-  "Gesteine/Serpnetinit 1.jpg": {
-    "mtime": 1793694622.3319516,
-    "seen": 1794527117.26701,
-    "ast_hash": "46f4588834b1c81b8487ef018e285b00",
-    "semantic_hash": ""
-  },
-  "Gesteine/Steinsaltz 1.jpg": {
-    "mtime": 1793694648.6685193,
-    "seen": 1794527117.26701,
-    "ast_hash": "45ae1cbfa1e1ade00c12a2eafcdb7889",
-    "semantic_hash": ""
-  },
-  "Gesteine/Steinsalz 2.webp": {
-    "mtime": 1793695291.0832493,
-    "seen": 1794527117.26701,
-    "ast_hash": "4a3b61132744cd69f91ccf01b79b0f94",
-    "semantic_hash": ""
-  },
-  "Gesteine/Steinsalz 3.webp": {
-    "mtime": 1793695304.1342058,
-    "seen": 1794527117.26701,
-    "ast_hash": "f53e0ab3b26613fe0cc995baa34063e9",
-    "semantic_hash": ""
-  },
-  "Gesteine/Talkschiefer 1.jpg": {
-    "mtime": 1793694559.2849245,
-    "seen": 1794527117.26701,
-    "ast_hash": "6054f5614cf9b2185951fae0551de2b9",
-    "semantic_hash": ""
-  },
-  "Gesteine/Tonstein 1.jpg": {
-    "mtime": 1793695000.0263388,
-    "seen": 1794527117.26701,
-    "ast_hash": "5caff6a08942cf79ce895e34cf7aa43d",
-    "semantic_hash": ""
-  },
-  "Gesteine/Tonstein 2.webp": {
-    "mtime": 1793696862.225773,
-    "seen": 1794527117.26701,
-    "ast_hash": "705ac34b80b09cbeb1c8110dcdd71830",
-    "semantic_hash": ""
-  },
-  "Gesteine/Tuff 1.jpg": {
-    "mtime": 1793694535.3548417,
-    "seen": 1794527117.26701,
-    "ast_hash": "1167b15baadf145260c6bed88057ce87",
-    "semantic_hash": ""
-  },
   "Geographie/Programme/Karten-Trainer/map.config.json": {
     "mtime": 1793226618.274942,
     "seen": 1794553962.6015491,
@@ -1626,21 +1176,1185 @@
     "semantic_hash": ""
   },
   "Geographie/programme.html": {
-    "mtime": 1794556554.3294406,
-    "seen": 1794556568.0209262,
-    "ast_hash": "f1a23d1b3ee62d91b3c1eef22753d735",
+    "mtime": 1794915586.1816914,
+    "seen": 1794915609.9284952,
+    "ast_hash": "1b815f12d6a06d409c44300bce363b3e",
     "semantic_hash": ""
   },
   "Geographie/Programme/klimaquiz.html": {
-    "mtime": 1794556439.4962022,
-    "seen": 1794556568.0189333,
-    "ast_hash": "0ca3a648adc15cae1ac16407880b5fc3",
+    "mtime": 1794908288.8377876,
+    "seen": 1794914159.0695138,
+    "ast_hash": "9bff2ace5d4d7d380a53d60b8122c352",
     "semantic_hash": ""
   },
   ".claude/launch.json": {
     "mtime": 1794566012.4677553,
     "seen": 1794566045.3931587,
     "ast_hash": "91ae21c322a10f7c812fa526ec66e149",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Klima Nordamerikas animiert.html": {
+    "mtime": 1794570707.8537936,
+    "seen": 1794595859.838484,
+    "ast_hash": "139aa04577cdcacf76d6f0ef47b898d3",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/usaklima-hurrikan-vogelperspektive.jpg": {
+    "mtime": 1794595406.72593,
+    "seen": 1794595859.8619208,
+    "ast_hash": "5665c8f7f2e8056e232eaf8832ecb9a0",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/usaklima-isotherme-januar.jpg": {
+    "mtime": 1794595406.7521834,
+    "seen": 1794595859.8619208,
+    "ast_hash": "38c23478e9c708c49191028dce78c82b",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/usaklima-januar-juli.jpg": {
+    "mtime": 1794595406.7693682,
+    "seen": 1794595859.8619208,
+    "ast_hash": "f92f2e5c311f36de2bafc71942708462",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/usaklima-klimadiagramme.jpg": {
+    "mtime": 1794595406.7892966,
+    "seen": 1794595859.8619208,
+    "ast_hash": "9c956be01c2c7194da55824530f35831",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/usaklima-querschnitt.jpg": {
+    "mtime": 1794595406.8055396,
+    "seen": 1794595859.8619208,
+    "ast_hash": "af9368efe3519c97b9f11b5cf19bbe5a",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/usaklima-tornado-alley.jpg": {
+    "mtime": 1794595406.8242722,
+    "seen": 1794595859.8619208,
+    "ast_hash": "2bba0efbc72d3bed3f3b84b5328595fb",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/usaklima-tornado-luftstroemung.jpg": {
+    "mtime": 1794595406.8402977,
+    "seen": 1794595859.8619208,
+    "ast_hash": "d51d3ff5db69698c0606cbca410f58c4",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/usaklima-tornado-superzelle.jpg": {
+    "mtime": 1794595406.8566701,
+    "seen": 1794595859.8619208,
+    "ast_hash": "c618562be8eb7f48321c75b733ed5364",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/usaklima-vegetation-niederschlag.jpg": {
+    "mtime": 1794595406.8767114,
+    "seen": 1794595859.8619208,
+    "ast_hash": "ce62b672eba44a4e24067014dc25fbba",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/usaklima-zugbahnen.jpg": {
+    "mtime": 1794595406.9088323,
+    "seen": 1794595859.8619208,
+    "ast_hash": "3d892f1353d86f2e08c2e38e86368a7b",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zonen-bisons.jpg": {
+    "mtime": 1794596930.1553097,
+    "seen": 1794597413.3161135,
+    "ast_hash": "39918f97364908b2ca9c744e44725e7d",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zonen-bodenprofile-vergleich.jpg": {
+    "mtime": 1794596930.1872528,
+    "seen": 1794597413.3161135,
+    "ast_hash": "3b63ac22169505483b341d2fc0d06e38",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zonen-dustbowl.jpg": {
+    "mtime": 1794596930.2094562,
+    "seen": 1794597413.3161135,
+    "ast_hash": "f27312310a35da2ecda9b744711b6088",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zonen-great-plains-karte.jpg": {
+    "mtime": 1794596930.226393,
+    "seen": 1794597413.3161135,
+    "ast_hash": "0dc6e23804a45b0d98b0ace06d04ec8c",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zonen-inuit-atemloch.jpg": {
+    "mtime": 1794596930.2441773,
+    "seen": 1794597413.3161135,
+    "ast_hash": "a1e258c4e5eef97ca6dae8812ba26683",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zonen-inuit-hundeschlitten.jpg": {
+    "mtime": 1794596930.2596922,
+    "seen": 1794597413.3161135,
+    "ast_hash": "4e4cf169d999236e3092ce264ea4338e",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zonen-inuit-iglu.jpg": {
+    "mtime": 1794596930.2781074,
+    "seen": 1794597413.3161135,
+    "ast_hash": "35355963b48a97c6f56ee10696fd8629",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zonen-inuit-jahreslauf.jpg": {
+    "mtime": 1794596930.2971706,
+    "seen": 1794597413.3161135,
+    "ast_hash": "eb5c585a56ab8588d2b412a6fb762a6b",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zonen-inuit-kajak.jpg": {
+    "mtime": 1794596930.3155248,
+    "seen": 1794597413.3161135,
+    "ast_hash": "1ce8df0f617005fc134f0fe5aedee3f3",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zonen-inuit-neuerungen.jpg": {
+    "mtime": 1794596930.3351388,
+    "seen": 1794597413.3161135,
+    "ast_hash": "cac593cabf86be963f8a012a971e5e2a",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zonen-inuit-wanderung.jpg": {
+    "mtime": 1794596930.3537374,
+    "seen": 1794597413.3161135,
+    "ast_hash": "16fe367312c00a663f06bd8aea76b695",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zonen-inuit-wirtschaftswandel.jpg": {
+    "mtime": 1794596930.3724704,
+    "seen": 1794597413.3161135,
+    "ast_hash": "2432d001bda8b59a55b33e0ba5c7696e",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zonen-iqaluit.jpg": {
+    "mtime": 1794596930.3906949,
+    "seen": 1794597413.3161135,
+    "ast_hash": "7e3e048b7c2208bff1e7a278d57dd933",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zonen-klimadiagramme-vergleich.jpg": {
+    "mtime": 1794596930.4225454,
+    "seen": 1794597413.3161135,
+    "ast_hash": "275fa2c517eea988f3e3a2acfdceb5d9",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zonen-nunavut-flagge.jpg": {
+    "mtime": 1794596930.4398365,
+    "seen": 1794597413.3161135,
+    "ast_hash": "603acee70bd27a4622fc4b4bd5bc5f36",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zonen-permafrost-alaska.jpg": {
+    "mtime": 1794596930.4587102,
+    "seen": 1794597413.3161135,
+    "ast_hash": "f68fd5f24dd0acd01af5aa517ff28012",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zonen-permafrost-foto.jpg": {
+    "mtime": 1794596930.4765117,
+    "seen": 1794597413.3161135,
+    "ast_hash": "f16c2eac27e3a62288e1a7823b5eceea",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/zonen-vegetationszonen.jpg": {
+    "mtime": 1794596930.5096374,
+    "seen": 1794597413.3161135,
+    "ast_hash": "511c76c901fcbfccfc2a8e2e099a1408",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/bev-demographischer-uebergang.jpg": {
+    "mtime": 1794653513.6209004,
+    "seen": 1794671046.2047894,
+    "ast_hash": "8f95322c10e91d61bb55afd57a22fc13",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/bev-pyramide-oesterreich.jpg": {
+    "mtime": 1794653513.6550188,
+    "seen": 1794671046.2058065,
+    "ast_hash": "6599e347620b14256945aad974c557b6",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/bev-pyramidenformen.jpg": {
+    "mtime": 1794653513.6694636,
+    "seen": 1794671046.2058065,
+    "ast_hash": "dfd41d785f52aa63238c43ff544e25af",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/bev-raten-regionen.jpg": {
+    "mtime": 1794653513.685208,
+    "seen": 1794671046.2058065,
+    "ast_hash": "907f895c3e04e408d880a8321938e3ba",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/bev-uebergang-laender.jpg": {
+    "mtime": 1794653513.721056,
+    "seen": 1794671046.2058065,
+    "ast_hash": "4577ac9a8aa6b8d08874ead26a3893f7",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/china-foto-ackerland.jpg": {
+    "mtime": 1794653830.750537,
+    "seen": 1794671046.2058065,
+    "ast_hash": "72fbd2573f39759866481268a0cbb505",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/china-foto-karst.jpg": {
+    "mtime": 1794653830.785544,
+    "seen": 1794671046.2058065,
+    "ast_hash": "1e95ceb75f680598d0f64b905eae07bd",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/china-foto-oase.jpg": {
+    "mtime": 1794653830.8255157,
+    "seen": 1794671046.2058065,
+    "ast_hash": "332fd02414dcab09d0ec97e8ebefbc34",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/china-foto-tibet.jpg": {
+    "mtime": 1794653830.8561418,
+    "seen": 1794671046.2058065,
+    "ast_hash": "d9d4e95222ec8ca4f2a5f91b1d91f292",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/china-kd-nordchina.jpg": {
+    "mtime": 1794653830.8904686,
+    "seen": 1794671046.2058065,
+    "ast_hash": "c24029a075e7a801d3975a84d18d04fd",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/china-kd-sinkiang.jpg": {
+    "mtime": 1794653830.926152,
+    "seen": 1794671046.2058065,
+    "ast_hash": "c513fbbf2c99563c0cb5b7b85d859151",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/china-kd-suedchina.jpg": {
+    "mtime": 1794653830.970884,
+    "seen": 1794671046.2058065,
+    "ast_hash": "35a8616cd66f60eeeb8b9dacd45e5f9f",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/china-kd-tibet.jpg": {
+    "mtime": 1794653831.0078847,
+    "seen": 1794671046.2058065,
+    "ast_hash": "7aff3a80db57f799d3200d15a7409a13",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/china-ortsnamen-tabelle.jpg": {
+    "mtime": 1794653831.0461366,
+    "seen": 1794671046.2058065,
+    "ast_hash": "810e44acd1bcfb1e139ff448a5a3aa1f",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/china-provinzen-karte.jpg": {
+    "mtime": 1794671021.6744776,
+    "seen": 1794671046.2068403,
+    "ast_hash": "5f8d552b27f876c0f8a65df4b953ee68",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/eu-mitgliedstaaten.jpg": {
+    "mtime": 1794653513.8013349,
+    "seen": 1794671046.2068403,
+    "ast_hash": "ccb6638153da81f20ec1398dc456b6af",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-alpenbildung-zeitschnitte.jpg": {
+    "mtime": 1794653106.0805104,
+    "seen": 1794671046.2078598,
+    "ast_hash": "d172c944789a1c1c3a117f7191a5b65f",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-blick-jura-alpen.jpg": {
+    "mtime": 1794653106.105204,
+    "seen": 1794671046.2078598,
+    "ast_hash": "c4eae9249eee6b0121d48952e208cfa0",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-blockdiagramm-decke.jpg": {
+    "mtime": 1794653106.1205013,
+    "seen": 1794671046.2078598,
+    "ast_hash": "3d7af86eb194ca42f2138767fcf57094",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-deckenschub.jpg": {
+    "mtime": 1794653106.1368148,
+    "seen": 1794671046.2078598,
+    "ast_hash": "672b619b5433ae44a565152291fb4f12",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-grosslandschaften.jpg": {
+    "mtime": 1794653106.148647,
+    "seen": 1794671046.2078598,
+    "ast_hash": "310f96a238082ecb4dd52e1501eb3577",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-haute-chaine.jpg": {
+    "mtime": 1794653106.1757913,
+    "seen": 1794671046.2078598,
+    "ast_hash": "7522ea0be67a075123ed6baa6b46bc2a",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-klus.jpg": {
+    "mtime": 1794653106.191122,
+    "seen": 1794671046.2078598,
+    "ast_hash": "d2cbadd55ffec540aed681e1c02341ee",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-kreide-profil.jpg": {
+    "mtime": 1794653106.2063262,
+    "seen": 1794671046.2078598,
+    "ast_hash": "781dbbae5a58c56f0baa3aa3fc8b9a0f",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-profil-jura-alpen.jpg": {
+    "mtime": 1794653106.2202566,
+    "seen": 1794671046.2088666,
+    "ast_hash": "cc76c1541fb8902356dc4ad047bfd2f7",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-subalpine-molasse.jpg": {
+    "mtime": 1794653106.248204,
+    "seen": 1794671046.2088666,
+    "ast_hash": "3436d9303034b65bf70d385f5a668333",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-tafeljura.jpg": {
+    "mtime": 1794653106.2655628,
+    "seen": 1794671046.2088666,
+    "ast_hash": "0dd4a1d4627528698f00ba3e8a66e50a",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-tektonische-karte.jpg": {
+    "mtime": 1794653106.2811835,
+    "seen": 1794671046.2088666,
+    "ast_hash": "e2f8f578a67f0d830ed1dbcae15d91a5",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-tethys-profil.jpg": {
+    "mtime": 1794653106.2965562,
+    "seen": 1794671046.2088666,
+    "ast_hash": "f7af57f47db7f35b785f7614c150aeb6",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/geo-zeittabelle.jpg": {
+    "mtime": 1794653106.3238297,
+    "seen": 1794671046.2088666,
+    "ast_hash": "fef58c17926ebf515626ce603f29c678",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/gestein-evaporite.jpg": {
+    "mtime": 1794653106.4478643,
+    "seen": 1794671046.2088666,
+    "ast_hash": "e2e89a685ba85a2a0177345c5a566146",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/gestein-metamorphose-arten.jpg": {
+    "mtime": 1794653106.4732711,
+    "seen": 1794671046.2088666,
+    "ast_hash": "b4044a511bf45d226b42a8756701743d",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/gestein-schieferung.jpg": {
+    "mtime": 1794653106.4857662,
+    "seen": 1794671046.2098632,
+    "ast_hash": "c6a4c27168b0b859ad58455da23227c4",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/glazio-bergschrund.jpg": {
+    "mtime": 1794653106.3392582,
+    "seen": 1794671046.2098632,
+    "ast_hash": "1c50cb009db65dd194a8184e9dabb866",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/glazio-gletscher-aufbau.jpg": {
+    "mtime": 1794653106.3641279,
+    "seen": 1794671046.2098632,
+    "ast_hash": "336173a0f628fb4610e70f609cbf85dd",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/glazio-pfaeffikersee.jpg": {
+    "mtime": 1794653106.3785894,
+    "seen": 1794671046.21037,
+    "ast_hash": "aecb873be711bf84b2d1c96168bdd616",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/glazio-schnee-zu-eis.jpg": {
+    "mtime": 1794653106.3929882,
+    "seen": 1794671046.21037,
+    "ast_hash": "929b365494efdb64eda989858c3744fb",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/glazio-serie-nach.jpg": {
+    "mtime": 1794653106.4060304,
+    "seen": 1794671046.21037,
+    "ast_hash": "bde76ce41a67e6c07dde81640af642dc",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/glazio-serie-waehrend.jpg": {
+    "mtime": 1794653106.4195764,
+    "seen": 1794671046.21037,
+    "ast_hash": "344e735105df214c16178740e963bfd4",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/klima-cutoff.jpg": {
+    "mtime": 1794652932.8091626,
+    "seen": 1794671046.21037,
+    "ast_hash": "b61ca3ee9988825f118d880a85897d1d",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/klima-hoehenstroemung.jpg": {
+    "mtime": 1794652932.8359518,
+    "seen": 1794671046.21037,
+    "ast_hash": "b6d5a986a0e4e195c98b7756835fa32e",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/klima-koeppen-schluessel.jpg": {
+    "mtime": 1794652932.8648446,
+    "seen": 1794671046.21037,
+    "ast_hash": "2283213a3444406886dd8c7f9f578175",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/klima-matur-diagramme.jpg": {
+    "mtime": 1794652932.8951597,
+    "seen": 1794671046.21037,
+    "ast_hash": "68a1b14ba9f4e7cc4e3510948d407a29",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/klima-matur-karte.jpg": {
+    "mtime": 1794652932.9133964,
+    "seen": 1794671046.21037,
+    "ast_hash": "c1a73e9b96421e8a675c5cd975d3f229",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/klima-monsun-indien.jpg": {
+    "mtime": 1794652932.9447968,
+    "seen": 1794671046.21037,
+    "ast_hash": "f81445a7a432414eb3ca6562f79e9ef4",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/klima-rossbywellen.jpg": {
+    "mtime": 1794652932.9590518,
+    "seen": 1794671046.2128856,
+    "ast_hash": "a34be1b8b624ee1378ee173be656bd0e",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/klima-zonen-grenzwerte.jpg": {
+    "mtime": 1794652932.9763129,
+    "seen": 1794671046.2128856,
+    "ast_hash": "f24746b7e093d81af3cbed01fdc28349",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/klima-zyklone-lebenslauf.jpg": {
+    "mtime": 1794652933.0027716,
+    "seen": 1794671046.2128856,
+    "ast_hash": "9f0b69531fec795482e6b068e4574457",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/klima-zyklonenfamilie.jpg": {
+    "mtime": 1794652933.0184283,
+    "seen": 1794671046.2128856,
+    "ast_hash": "269a0dd04b283d24cf47d8f1c9e0bcd1",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/migr-ein-auswanderung.jpg": {
+    "mtime": 1794653513.7493322,
+    "seen": 1794671046.2128856,
+    "ast_hash": "f1052d4dd4c71745d76ceb7b22e86672",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/migr-nationalitaeten.jpg": {
+    "mtime": 1794653513.7677052,
+    "seen": 1794671046.2128856,
+    "ast_hash": "799000d94a02567d60dd60c305a2d1bc",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/peking-1950-2014.jpg": {
+    "mtime": 1794653940.0871377,
+    "seen": 1794671046.2128856,
+    "ast_hash": "52696f02602ac4bb96a14a520beff329",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/tessin-foehn-schema.jpg": {
+    "mtime": 1794653513.5460677,
+    "seen": 1794671046.213892,
+    "ast_hash": "30c619e98c2ccd5937cc3bd66396aef6",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/tessin-saettigungskurve.jpg": {
+    "mtime": 1794653513.5836537,
+    "seen": 1794671046.213892,
+    "ast_hash": "5b4bfc4908e26532a1c2f78b056c1e53",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/data/schweiz-lernkarte.json": {
+    "mtime": 1794817209.6106963,
+    "seen": 1794817390.4157348,
+    "ast_hash": "10eff14803321337fc71a28bb60c73c0",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/map.config.json": {
+    "mtime": 1794814685.18985,
+    "seen": 1794816652.2405813,
+    "ast_hash": "d813f837fe8417a77acf853188ed9a9c",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/src/app.js": {
+    "mtime": 1794815559.8638408,
+    "seen": 1794816652.2405813,
+    "ast_hash": "8a613ec29f509d63079f8f0c2bb7a340",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/src/core.js": {
+    "mtime": 1794814608.1231697,
+    "seen": 1794816652.2405813,
+    "ast_hash": "eec6f498ba0b2d7ec515248abb56c113",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/src/schema.js": {
+    "mtime": 1794814653.0791388,
+    "seen": 1794816652.2405813,
+    "ast_hash": "5d475941da7ca28fec50f365e23bf903",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/tools/bundle.py": {
+    "mtime": 1794815821.9145572,
+    "seen": 1794816652.2405813,
+    "ast_hash": "d3062bd1fb5f129341d9b137344dbc4a",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Koeppen-Kartenquiz-USA.html": {
+    "mtime": 1794785287.4301407,
+    "seen": 1794816652.2796433,
+    "ast_hash": "f7102646b41abe674afc7d47f937cc6a",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/Pruefbericht-Schweizer-Karte.md": {
+    "mtime": 1794817364.6087854,
+    "seen": 1794817390.4321053,
+    "ast_hash": "1f2fb333df7602a72f7d5639e57ec93b",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/index.html": {
+    "mtime": 1794817210.1305852,
+    "seen": 1794817390.4321053,
+    "ast_hash": "2bacc5b132c95fc000bb987a0a6e7d9a",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/src/shell.html": {
+    "mtime": 1794814595.9513626,
+    "seen": 1794816652.2806873,
+    "ast_hash": "04dfa1123e94fb3b12d494255dcd26b9",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/tools/README.md": {
+    "mtime": 1794817332.7006173,
+    "seen": 1794817390.4332144,
+    "ast_hash": "76c62d9f3a1d87342042fb9dc3a75f05",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/tools/pipeline/base.py": {
+    "mtime": 1794817299.187487,
+    "seen": 1794817390.4177606,
+    "ast_hash": "95fc6f0055084a247db43c78ecb763b5",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/tools/pipeline/build_data.py": {
+    "mtime": 1794817299.6164923,
+    "seen": 1794817390.4177606,
+    "ast_hash": "b728939a3c11a9fa384eeef8d0fa957f",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/tools/pipeline/build_main.py": {
+    "mtime": 1794817299.2227423,
+    "seen": 1794817390.4177606,
+    "ast_hash": "0f5580768e0966f932dfa29a7c66d521",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/tools/pipeline/fetch11.py": {
+    "mtime": 1794817299.0086415,
+    "seen": 1794817390.4177606,
+    "ast_hash": "64c64689f8078efa58087b5dc245f11f",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/tools/pipeline/fetch12.py": {
+    "mtime": 1794817299.0201468,
+    "seen": 1794817390.4177606,
+    "ast_hash": "461af0507c601b0763c91447f8c3bc48",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/tools/pipeline/fetch5.py": {
+    "mtime": 1794817298.9770532,
+    "seen": 1794817390.4177606,
+    "ast_hash": "4b58834c64c45d11444a8a94f45092fb",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/tools/pipeline/fetch8.py": {
+    "mtime": 1794817298.9860294,
+    "seen": 1794817390.4177606,
+    "ast_hash": "6cdb93cb72f49bc0fbca0be50ce06f5e",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/tools/pipeline/fetch9.py": {
+    "mtime": 1794817298.9949765,
+    "seen": 1794817390.4177606,
+    "ast_hash": "b9ea00bd0c045d162a56e17f3f890019",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/tools/pipeline/fetch_base.py": {
+    "mtime": 1794817299.3431363,
+    "seen": 1794817390.4177606,
+    "ast_hash": "be4670c5c38ac9fedf69c841e90cee99",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/tools/pipeline/fetch_osm.py": {
+    "mtime": 1794817298.9703524,
+    "seen": 1794817390.4177606,
+    "ast_hash": "312e41e3ccfacefb1e71e5f80de933e8",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/tools/pipeline/ovp.py": {
+    "mtime": 1794817299.4877753,
+    "seen": 1794817390.4177606,
+    "ast_hash": "d874bc32940e17e8c2ee494e9bca3083",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/tools/pipeline/regions.py": {
+    "mtime": 1794817298.922406,
+    "seen": 1794817390.4177606,
+    "ast_hash": "91ee3412ba529f91c0b77ddc7bff54ed",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/tools/pipeline/spec.py": {
+    "mtime": 1794817298.9326544,
+    "seen": 1794817390.4177606,
+    "ast_hash": "1d16b131702603ea70d0c156c73a6209",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/tools/pipeline/stats.py": {
+    "mtime": 1794817298.9401271,
+    "seen": 1794817390.4177606,
+    "ast_hash": "a020d646ce7319c03f0d762d0deb5940",
+    "semantic_hash": ""
+  },
+  "Geographie/Programme/Schweiz-Kartentrainer/tools/pipeline/topo.py": {
+    "mtime": 1794817299.3692098,
+    "seen": 1794817390.4177606,
+    "ast_hash": "183a33d890b72dbb0f9441cb2a7c68d3",
+    "semantic_hash": ""
+  },
+  "Geschichte/Scripts/pruefungsfragen.js": {
+    "mtime": 1794907958.974591,
+    "seen": 1794914159.05406,
+    "ast_hash": "af2b8340c1a123c723dda5a6da179eeb",
+    "semantic_hash": ""
+  },
+  "Geschichte/Scripts/pruefungsquellen.js": {
+    "mtime": 1794907958.9815657,
+    "seen": 1794914159.05406,
+    "ast_hash": "de64678e656733fcd046ef895308af6c",
+    "semantic_hash": ""
+  },
+  "Scripts/glossar-page.js": {
+    "mtime": 1794915586.2397363,
+    "seen": 1794915609.9171433,
+    "ast_hash": "3a785aa9b5d6ad76298f10586f9ccd5b",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Alpenkalk 1.jpg": {
+    "mtime": 1794907958.6920438,
+    "seen": 1794914159.1694472,
+    "ast_hash": "b5a9bf335379c56e758e982e3a134ef0",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Alpenkalk 2.jpg": {
+    "mtime": 1794907958.6944065,
+    "seen": 1794914159.1694472,
+    "ast_hash": "7ebf28f0e481574c52b63b4353e6c356",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Basalt 1.webp": {
+    "mtime": 1794907958.696668,
+    "seen": 1794914159.1694472,
+    "ast_hash": "36176775d394466ec6a30f937415cb1a",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Basalt 2.webp": {
+    "mtime": 1794907958.699831,
+    "seen": 1794914159.1694472,
+    "ast_hash": "22a33bbab155c42cd0a68d04c1f9a5fb",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Basalt 3.webp": {
+    "mtime": 1794907958.701824,
+    "seen": 1794914159.1694472,
+    "ast_hash": "c4c019c3d00dedeb4d8e441f09140d1c",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Basalt 4.jpg": {
+    "mtime": 1794907958.7058103,
+    "seen": 1794914159.1705573,
+    "ast_hash": "3df22ffef6c686a599c6a1169e687931",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Bimsstein 1.webp": {
+    "mtime": 1794907958.707804,
+    "seen": 1794914159.1705573,
+    "ast_hash": "7bd446508c9b30b016b5e5e27244b571",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Bimsstein 2.webp": {
+    "mtime": 1794907958.7107933,
+    "seen": 1794914159.1705573,
+    "ast_hash": "72dd2a66ff5a61fe06d75aa96eba00d1",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Bimsstein 3.webp": {
+    "mtime": 1794907958.7127864,
+    "seen": 1794914159.1705573,
+    "ast_hash": "950e50fe5d3e4ee610bafc25df72802b",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Bimsstein 4.jpg": {
+    "mtime": 1794907958.7157812,
+    "seen": 1794914159.1705573,
+    "ast_hash": "89be3f9a307b59a37d583c62596698aa",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Brekzie 1.webp": {
+    "mtime": 1794907958.7177742,
+    "seen": 1794914159.1705573,
+    "ast_hash": "32c95bdb0dfab38ba08676487c7fbedd",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Brekzie 2.webp": {
+    "mtime": 1794907958.7200146,
+    "seen": 1794914159.1705573,
+    "ast_hash": "58a73e43f9615d0fc1358fef4c35e07d",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Brekzie 3.webp": {
+    "mtime": 1794907958.7218306,
+    "seen": 1794914159.1705573,
+    "ast_hash": "e87011b30870515e3c42e844fcd5579d",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Flintstein 1.webp": {
+    "mtime": 1794907958.7238274,
+    "seen": 1794914159.1705573,
+    "ast_hash": "dc4e42de2a19db993379f9e4e43c9882",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Flintstein 2.webp": {
+    "mtime": 1794907958.7258208,
+    "seen": 1794914159.1705573,
+    "ast_hash": "29f4a161d9c24d8ddfd2f26c0c273df8",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Flintstein 3.webp": {
+    "mtime": 1794907958.7278142,
+    "seen": 1794914159.1705573,
+    "ast_hash": "938d89d9ec47e531bd1c31c7827f7563",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Flintstein 4.jpg": {
+    "mtime": 1794907958.7293155,
+    "seen": 1794914159.1705573,
+    "ast_hash": "261d300260700ee16b95c01897c20302",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Gipsstein 1.webp": {
+    "mtime": 1794907958.7313132,
+    "seen": 1794914159.1705573,
+    "ast_hash": "17f3dd7aa07015571a135ef70637ca13",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Gipsstein 2.webp": {
+    "mtime": 1794907958.7336977,
+    "seen": 1794914159.1705573,
+    "ast_hash": "31e3f873a3b964bb288c3c47888fcbb8",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Gipsstein 3.webp": {
+    "mtime": 1794907958.7351854,
+    "seen": 1794914159.1705573,
+    "ast_hash": "0c1801248a59d7a9d63ca3537d8ce67d",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Gipsstein 4.jpg": {
+    "mtime": 1794907958.7373998,
+    "seen": 1794914159.1705573,
+    "ast_hash": "38ebd613f4f1c156930d3024b212cb17",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Glimmerschiefer 1.webp": {
+    "mtime": 1794907958.7400684,
+    "seen": 1794914159.1705573,
+    "ast_hash": "a875a901148d965801c2cedebe9cc399",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Glimmerschiefer 2.webp": {
+    "mtime": 1794907958.742178,
+    "seen": 1794914159.1705573,
+    "ast_hash": "47f66769a10d5e2d27fbd2d36476d23a",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Glimmerschiefer 3.webp": {
+    "mtime": 1794907958.7444384,
+    "seen": 1794914159.1705573,
+    "ast_hash": "55739041964fc074051caacc4c43ef0f",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Glimmerschiefer 4.jpg": {
+    "mtime": 1794907958.7466354,
+    "seen": 1794914159.1705573,
+    "ast_hash": "c2ecc3991f40d04d38643daa2fbd3579",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Gneis 1.webp": {
+    "mtime": 1794907958.748995,
+    "seen": 1794914159.1705573,
+    "ast_hash": "8731ebef7e6d508708b5acd677262210",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Gneis 2.webp": {
+    "mtime": 1794907958.7510655,
+    "seen": 1794914159.1705573,
+    "ast_hash": "74e945aa08dd03c870a4e65d850f2d72",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Gneis 3.webp": {
+    "mtime": 1794907958.7531075,
+    "seen": 1794914159.1705573,
+    "ast_hash": "483f94a1e420ff8f77ec1e4272ccac32",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Gneis 4.jpg": {
+    "mtime": 1794907958.7551513,
+    "seen": 1794914159.1705573,
+    "ast_hash": "43c02767e06ee329ba1eb5a278f4a4a0",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Granatolivinfels 1.jpg": {
+    "mtime": 1794907958.7575097,
+    "seen": 1794914159.1705573,
+    "ast_hash": "8eff30d802c65c90ecacf4417353851d",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Granit 1.webp": {
+    "mtime": 1794907958.759582,
+    "seen": 1794914159.1705573,
+    "ast_hash": "8fcca989e312f7d6f10a3fdba6242a25",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Granit 2.webp": {
+    "mtime": 1794907958.7607431,
+    "seen": 1794914159.1705573,
+    "ast_hash": "7ff88c461ca613568291b3c7671c9037",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Granit 3.png": {
+    "mtime": 1794907958.765892,
+    "seen": 1794914159.1705573,
+    "ast_hash": "3af284fd558bde55fae320cf41a548fe",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Jurakalk 1.jpg": {
+    "mtime": 1794907958.7688808,
+    "seen": 1794914159.1705573,
+    "ast_hash": "66c0afe4861f51193629dc2121a5369f",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Jurakalk 2.webp": {
+    "mtime": 1794907958.7709851,
+    "seen": 1794914159.1705573,
+    "ast_hash": "480edf6814fda14c69b6b21f9fa40fdc",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Kalkstein 1.jpeg": {
+    "mtime": 1794907958.7731578,
+    "seen": 1794914159.1705573,
+    "ast_hash": "a5bdf3b8186ee8850d3f2d72d897c7c7",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Marmor 1.jpg": {
+    "mtime": 1794907958.775285,
+    "seen": 1794914159.1705573,
+    "ast_hash": "4d54943b75682e6adb0409451cfb40a4",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Marmor 2.webp": {
+    "mtime": 1794907958.777753,
+    "seen": 1794914159.1705573,
+    "ast_hash": "edb963c6d7d4f6c19ff240e0e620016f",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Mergel 1.jpg": {
+    "mtime": 1794907958.7797592,
+    "seen": 1794914159.1705573,
+    "ast_hash": "23e4e09c33e6cb202aec49ccc4c32cf3",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Mergel 2.webp": {
+    "mtime": 1794907958.7819853,
+    "seen": 1794914159.1705573,
+    "ast_hash": "96d1a80f4988c6d51c0afea4177b2e1d",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Nagelfluh 1.jpg": {
+    "mtime": 1794907958.7841332,
+    "seen": 1794914159.1705573,
+    "ast_hash": "3f97202c3aaab97745263422d6ee03ca",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Obsidian 1.jpg": {
+    "mtime": 1794907958.7868464,
+    "seen": 1794914159.1705573,
+    "ast_hash": "25d025f688b78f3832ef42302f041ed8",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Obsidian 2.webp": {
+    "mtime": 1794907958.7882168,
+    "seen": 1794914159.1705573,
+    "ast_hash": "bcf907d02ac5129d64423fa5a790dead",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Obsidian 3.webp": {
+    "mtime": 1794907958.7892175,
+    "seen": 1794914159.1705573,
+    "ast_hash": "6bfc9bec1a084aaf384efdec666a5c02",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Peridotit.jpg": {
+    "mtime": 1794907958.7925234,
+    "seen": 1794914159.1705573,
+    "ast_hash": "b8099ba2904956cb7b4ad7bc36504dad",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Rhyolit 1.jpg": {
+    "mtime": 1794907958.794538,
+    "seen": 1794914159.1705573,
+    "ast_hash": "8d471a6f65c2322c1edadae74d833c71",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Rhyolith 2.webp": {
+    "mtime": 1794907958.7955327,
+    "seen": 1794914159.1705573,
+    "ast_hash": "1260a496435c8bc2b7e957c791f974d5",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Rhyolith 3.jpeg": {
+    "mtime": 1794907958.7982056,
+    "seen": 1794914159.1705573,
+    "ast_hash": "d77f56d3ee19e762ab9c1f7eec1cbac8",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Sandstein 1.jpg": {
+    "mtime": 1794907958.800222,
+    "seen": 1794914159.1705573,
+    "ast_hash": "089aab7523a1e89004102009f6bb9091",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Sandstein 2.webp": {
+    "mtime": 1794907958.8015656,
+    "seen": 1794914159.1705573,
+    "ast_hash": "0a2d840be5aabe83d3196665b154fb47",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Sandstein 3.jpeg": {
+    "mtime": 1794907958.8039093,
+    "seen": 1794914159.1705573,
+    "ast_hash": "15afe5d427370717d07c4dd547510f67",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Serpentinit 1.webp": {
+    "mtime": 1794907958.806347,
+    "seen": 1794914159.1705573,
+    "ast_hash": "0bbd44ad2a00dd06881ee7873fe008e5",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Serpentinit 2.webp": {
+    "mtime": 1794907958.8093374,
+    "seen": 1794914159.1705573,
+    "ast_hash": "3c4f8b4f5fb3669df83622b9ac2061b2",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Serpnetinit 1.jpg": {
+    "mtime": 1794907958.8246672,
+    "seen": 1794914159.1705573,
+    "ast_hash": "46f4588834b1c81b8487ef018e285b00",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Steinsaltz 1.jpg": {
+    "mtime": 1794907958.827928,
+    "seen": 1794914159.1705573,
+    "ast_hash": "45ae1cbfa1e1ade00c12a2eafcdb7889",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Steinsalz 2.webp": {
+    "mtime": 1794907958.8291771,
+    "seen": 1794914159.1705573,
+    "ast_hash": "4a3b61132744cd69f91ccf01b79b0f94",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Steinsalz 3.webp": {
+    "mtime": 1794907958.83599,
+    "seen": 1794914159.1705573,
+    "ast_hash": "f53e0ab3b26613fe0cc995baa34063e9",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Talkschiefer 1.jpg": {
+    "mtime": 1794907958.838806,
+    "seen": 1794914159.1705573,
+    "ast_hash": "6054f5614cf9b2185951fae0551de2b9",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Tonstein 1.jpg": {
+    "mtime": 1794907958.8412423,
+    "seen": 1794914159.1705573,
+    "ast_hash": "5caff6a08942cf79ce895e34cf7aa43d",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Tonstein 2.webp": {
+    "mtime": 1794907958.8422437,
+    "seen": 1794914159.1705573,
+    "ast_hash": "705ac34b80b09cbeb1c8110dcdd71830",
+    "semantic_hash": ""
+  },
+  "Geographie/Resourcen/Bilder/Gesteine/Tuff 1.jpg": {
+    "mtime": 1794907958.845303,
+    "seen": 1794914159.1705573,
+    "ast_hash": "1167b15baadf145260c6bed88057ce87",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/AltePr\u00fcfungen/WhatsApp Image 2026-11-16 at 17.29.33 (1).jpeg": {
+    "mtime": 1794907958.8612735,
+    "seen": 1794914159.2864525,
+    "ast_hash": "4272fbf29321803f366c28419d469df8",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/AltePr\u00fcfungen/WhatsApp Image 2026-11-16 at 17.29.33.jpeg": {
+    "mtime": 1794907958.8696272,
+    "seen": 1794914159.2864525,
+    "ast_hash": "5d2811f512ed293028d891c0ddf9a67b",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/AltePr\u00fcfungen/WhatsApp Image 2026-11-16 at 17.29.34 (1).jpeg": {
+    "mtime": 1794907958.8756747,
+    "seen": 1794914159.2864525,
+    "ast_hash": "1bfc3af9abedf100c319a8125a0c1b6e",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/AltePr\u00fcfungen/WhatsApp Image 2026-11-16 at 17.29.34 (2).jpeg": {
+    "mtime": 1794907958.8851864,
+    "seen": 1794914159.2864525,
+    "ast_hash": "43f76985ca17b64f46c2fc3ed6f4301c",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/AltePr\u00fcfungen/WhatsApp Image 2026-11-16 at 17.29.34.jpeg": {
+    "mtime": 1794907958.8897402,
+    "seen": 1794914159.2864525,
+    "ast_hash": "d91ff28a1245d6cb29333ff0baa03fac",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/AltePr\u00fcfungen/WhatsApp Image 2026-11-16 at 17.29.35 (1).jpeg": {
+    "mtime": 1794907958.8947747,
+    "seen": 1794914159.2864525,
+    "ast_hash": "6c61813756dabb35b4831fd9adfcfa9b",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/AltePr\u00fcfungen/WhatsApp Image 2026-11-16 at 17.29.35 (2).jpeg": {
+    "mtime": 1794907958.9002447,
+    "seen": 1794914159.2864525,
+    "ast_hash": "69dbb57505908d16635d279dbd81dbb9",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/AltePr\u00fcfungen/WhatsApp Image 2026-11-16 at 17.29.35 (3).jpeg": {
+    "mtime": 1794907958.9046004,
+    "seen": 1794914159.2864525,
+    "ast_hash": "6bc43edfd61acabc8e258e8adde84761",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/AltePr\u00fcfungen/WhatsApp Image 2026-11-16 at 17.29.35.jpeg": {
+    "mtime": 1794907958.9104223,
+    "seen": 1794914159.2864525,
+    "ast_hash": "24c2e540e33a429f78331133061ad471",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/AltePr\u00fcfungen/WhatsApp Image 2026-11-16 at 17.29.37 (1).jpeg": {
+    "mtime": 1794907958.9139333,
+    "seen": 1794914159.2864525,
+    "ast_hash": "196f68e28ddc96f4efd705b0fc2dca5c",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/AltePr\u00fcfungen/WhatsApp Image 2026-11-16 at 17.29.37 (2).jpeg": {
+    "mtime": 1794907958.9192474,
+    "seen": 1794914159.2864525,
+    "ast_hash": "9c5e589d9f9c01b1424557f83bd57824",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/AltePr\u00fcfungen/WhatsApp Image 2026-11-16 at 17.29.37 (3).jpeg": {
+    "mtime": 1794907958.9239368,
+    "seen": 1794914159.28753,
+    "ast_hash": "3cd06f8f1220b7c308123bc0714b73ad",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/AltePr\u00fcfungen/WhatsApp Image 2026-11-16 at 17.29.37 (4).jpeg": {
+    "mtime": 1794907958.9281013,
+    "seen": 1794914159.28753,
+    "ast_hash": "5c8a7d1e0c1fdd75a700745a17a3f2fe",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/AltePr\u00fcfungen/WhatsApp Image 2026-11-16 at 17.29.37 (5).jpeg": {
+    "mtime": 1794907958.9316347,
+    "seen": 1794914159.28753,
+    "ast_hash": "b198e3e7b6eef3fa5f19cd49752ed246",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/AltePr\u00fcfungen/WhatsApp Image 2026-11-16 at 17.29.37.jpeg": {
+    "mtime": 1794907958.9375236,
+    "seen": 1794914159.28753,
+    "ast_hash": "843a2864f3dd75700b13288f0bf7de38",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/AltePr\u00fcfungen/WhatsApp Image 2026-11-16 at 17.29.38 (1).jpeg": {
+    "mtime": 1794907958.9420547,
+    "seen": 1794914159.28753,
+    "ast_hash": "b6baa1fd604763163f7118c56a2494a6",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/AltePr\u00fcfungen/WhatsApp Image 2026-11-16 at 17.29.38 (2).jpeg": {
+    "mtime": 1794907958.947303,
+    "seen": 1794914159.28753,
+    "ast_hash": "8b17a33ebdc0ff42215b044ea8b5c7a5",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/AltePr\u00fcfungen/WhatsApp Image 2026-11-16 at 17.29.38.jpeg": {
+    "mtime": 1794907958.9519827,
+    "seen": 1794914159.28753,
+    "ast_hash": "048ddd45a712e54f1ec8be2c90b6caf0",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Quellenanalyse/berlin-wall-1961.jpg": {
+    "mtime": 1794907958.9578974,
+    "seen": 1794914159.2994752,
+    "ast_hash": "202d07cacbdb82a42693ad033d2ccde5",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Quellenanalyse/simplicissimus-1919.jpg": {
+    "mtime": 1794907958.9611492,
+    "seen": 1794914159.2994752,
+    "ast_hash": "2715273a56eafb6564a5c51ac9a918ce",
+    "semantic_hash": ""
+  },
+  "Geschichte/Resourcen/Quellenanalyse/white-mans-burden.jpg": {
+    "mtime": 1794907958.9665637,
+    "seen": 1794914159.2994752,
+    "ast_hash": "4953e1b2b6af50d343e9ca90e5ab12f2",
     "semantic_hash": ""
   },
   ".mimocode/package-lock.json": {

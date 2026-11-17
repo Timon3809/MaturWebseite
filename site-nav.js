@@ -42,7 +42,7 @@
         { label: "Übersicht",         href: "index.html",                    icon: "◎", page: "overview" },
         { label: "Zusammenfassungen", href: "zusammenfassungen.html",        icon: "▧", page: "summaries" },
         { label: "Glossar",           href: "glossar.html",                  icon: "⌕", page: "glossary" },
-        { label: "Programme und Karten Trainer", href: "programme.html",   icon: "◈", page: "programs" },
+        { label: "Applets", href: "programme.html",   icon: "◈", page: "programs" },
         { label: "Dateien",           href: "dateien.html",                  icon: "↓", page: "files" }
       ]
     },
@@ -112,7 +112,6 @@
     const isActive  = link.page === currentPage;
     return `
       <a class="nav-link${isActive ? " is-active" : ""}" href="${navBase}${link.href}">
-        <span class="nav-icon">${link.icon}</span>
         ${link.label}
       </a>
     `;
