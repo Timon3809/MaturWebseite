@@ -13,11 +13,14 @@
   const rockDefs = window.rockData ?? [];
   const rockNames = rockDefs.map((rock) => rock.name);
   const rockCategories = window.rockCategories ?? {};
+  const rockImageBase = window.location.pathname.includes('/Geographie/') || window.location.pathname.includes('\\Geographie\\')
+    ? 'Gesteine/'
+    : '../Gesteine/';
   const rockEntry = (rock, file) => ({
     name: rock.name,
     accept: rock.accept,
     category: rockCategories[rock.category],
-    src: `../Gesteine/${encodeURI(file)}`
+    src: `${rockImageBase}${encodeURI(file)}`
   });
   const rockEntries = rockDefs.flatMap((rock) => rock.files.map((file) => rockEntry(rock, file)));
 

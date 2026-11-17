@@ -1,4 +1,4 @@
-// Gesteinsbilder für die Lernsektion "Steine" (Ordner Gesteine/ im Repo-Root).
+// Gesteinsbilder für die Lernsektion "Steine" (Ordner Geographie/Gesteine/).
 // accept = alternative Schreibweisen, die im Schreibmodus ebenfalls akzeptiert werden.
 // category = Ober- und Unterkategorie (Schlüssel aus window.rockCategories) für den Kategorie-Modus.
 window.rockCategories = {
