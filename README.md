@@ -29,7 +29,7 @@ Anschlussend `http://localhost:8080` öffnen.
 | **Geschichte** | vollständig | Zusammenfassungen, Glossar, ewige Daten, Dateien, Prüfungssimulator |
 | **Chemie** | Aufbau | Zusammenfassungen, Glossar, Dateien, Prüfungssimulator; Skripte zu Atombau und Molekularen Stoffen |
 | **Geographie** | aufgebaut | Zusammenfassungen in 5 Themen (Klimatologie, Geologie/Gletscher, Schweiz, Asien, USA) mit 123 Abbildungen, Glossar (Begriffe + Gesteine, nach Thema), Dateien |
-| **Biologie** | aufgebaut | 27 Zusammenfassungen (Neurobiologie, Genetik, Immunbiologie, Ökologie) mit 83 Abbildungen, Glossar mit 355 Begriffen in 5 Kategorien, Dateien, Prüfungssimulator |
+| **Biologie** | aufgebaut | 27 Zusammenfassungen (Neurobiologie, Genetik, Immunbiologie, Ökologie) mit 83 Abbildungen, Glossar mit 355 Begriffen in 5 Kategorien, Dateien |
 | Mathe, PhysikSP, Deutsch, Französisch | in Vorbereitung | Matur-Fächer, noch nicht verfügbar |
 
 ## Funktionen
@@ -72,7 +72,7 @@ Die Lernbereiche (Übersicht, Zusammenfassungen, Glossar, Dateien, Prüfungssimu
   - **Ökologie** (Umweltfaktoren, Temperaturanpassungen, Stoffkreisläufe, Energiefluss, Beziehungen und Nische, Konkurrenz, Populationen, Sukzession, Lotka-Volterra, Mensch und Umwelt)
   - Abbildungen aus den Unterrichtsunterlagen in `Biologie/Resourcen/Bilder/` (mit Quellenangabe in der Bildunterschrift)
 - **Glossar** — Kategorien Klassische Genetik, Molekulargenetik & Gentechnik, Immunbiologie, Ökologie, Umweltbiologie; Suche, Themenfilter, Mindmap (mehrere Ringe bei vielen Begriffen) und Lernmodi
-- **Dateien**, **Prüfungssimulator** — angelegt, Inhalte folgen
+- **Dateien** — wichtige Biologie-Dokumente herunterladen
 
 ## Projektstruktur
 
@@ -130,7 +130,6 @@ MaturWebseite/
     ├── zusammenfassungen.html
     ├── glossar.html
     ├── dateien.html
-    ├── pruefungssimulator.html
     └── Scripts/
         ├── data.js                 # Glossar (5 Kategorien) + 27 Themen (Neurobiologie, Genetik, Immunbiologie, Ökologie)
 ```
