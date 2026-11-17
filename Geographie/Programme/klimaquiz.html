@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Klimazonen-Detektiv – Köppen Quiz</title>
+<title>Klimazonen – Köppen Quiz</title>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -551,6 +551,7 @@ button:not(.theme-toggle):disabled {opacity:.5;cursor:not-allowed}
 .main-navigation button { min-width: 150px; }
 .main-navigation button.is-active { border-color: var(--ink); }
 .climate-detective > .page-heading { margin-top: 17px; }
+#usaQuizFrame { display: block; width: 100%; height: 1200px; min-height: calc(100vh - 240px); border: 0; background: var(--white); }
 #map, .atlas-map { border-radius: 7px; }
 #schema h2 { font: 600 20px var(--display); letter-spacing: -.4px; }
 #schema p, #schema li { color: var(--ink); font-size: 11px; }
@@ -597,30 +598,32 @@ button:not(.theme-toggle):disabled {opacity:.5;cursor:not-allowed}
   <span class="breadcrumb-divider">/</span>
   <a href="../programme.html">PROGRAMME</a>
   <span class="breadcrumb-divider">/</span>
-  <span>KLIMAZONEN-DETEKTIV</span>
+  <span>KLIMAZONEN</span>
  </div>
 </header>
 
 <main>
 <section class="content-view climate-detective">
  <div class="page-heading">
-  <span class="eyebrow dark-eyebrow">GEOGRAPHIE / ÜBEN</span>
-  <h1>Klimazonen-Detektiv</h1>
-  <p>Bestimme die Klimagruppen nach Köppen und ordne die Klimadiagramme ihren Standorten zu.</p>
+  <h1>Klimazonen</h1>
  </div>
 
 <nav class="main-navigation" aria-label="Ansicht wählen">
-    <button id="quizNavButton" class="is-active" type="button" aria-pressed="true">
-        Klimazonen-Detektiv
+    <button id="atlasNavButton" class="is-active" type="button" aria-pressed="true">
+        Weltkarte
     </button>
 
-    <button id="atlasNavButton" type="button" aria-pressed="false">
-        Interaktiver Klimaatlas
+    <button id="quizNavButton" type="button" aria-pressed="false">
+        Quiz Welt
+    </button>
+
+    <button id="usaQuizNavButton" type="button" aria-pressed="false">
+        Quiz USA
     </button>
 </nav>
 
 <!-- START -->
-<section class="card" id="start">
+<section class="card hidden" id="start">
  <h2>Neues Quiz</h2>
 
  <div class="controls">
@@ -651,13 +654,6 @@ button:not(.theme-toggle):disabled {opacity:.5;cursor:not-allowed}
  <div id="loading" class="hidden"></div>
  <p id="error" class="bad"></p>
 
- <p class="muted">
- Datenquelle:
- <a href="https://oer.fdagner.de/klimadiagramme/" target="_blank">OER Klimadiagramme</a>
- </p>
- <p class="muted">
- Die Diagramme basieren auf den frei nutzbaren Klimadaten des OER-Projekts.
- </p>
 </section>
 
 <!-- QUIZ -->
@@ -666,9 +662,8 @@ button:not(.theme-toggle):disabled {opacity:.5;cursor:not-allowed}
  <section class="card">
   <h2>Deine Aufgabe</h2>
   <p>
-   Du siehst alle Klimadiagramme gleichzeitig. Bestimme die Klimagruppe
-   und ordne jedes Diagramm dem richtigen nummerierten Standort auf der
-   Weltkarte zu.
+   Bestimme die Klimagruppe und ordne jedes Diagramm dem richtigen
+   nummerierten Standort auf der Weltkarte zu.
   </p>
 
   <div id="progressText"></div>
@@ -676,7 +671,7 @@ button:not(.theme-toggle):disabled {opacity:.5;cursor:not-allowed}
 
   <br>
   <button class="secondary" id="schemaButton">
-   📖 Köppen-Bestimmungsschema öffnen
+   Köppen-Bestimmungsschema öffnen
   </button>
  </section>
 
@@ -684,10 +679,6 @@ button:not(.theme-toggle):disabled {opacity:.5;cursor:not-allowed}
 
   <section class="card">
    <h2>1. Klimadiagramme</h2>
-   <p class="muted">
-    Die Ortsnamen und Klimazonen sind während des Quiz verborgen.
-    Wähle ein Diagramm aus, um es auf der Karte zuzuordnen.
-   </p>
    <div id="diagrams" class="diagrams"></div>
   </section>
 
@@ -715,10 +706,6 @@ button:not(.theme-toggle):disabled {opacity:.5;cursor:not-allowed}
 
  <section class="card">
   <h2>3. Auswertung</h2>
-  <p>
-   Wenn du alle Klimadiagramme bestimmt und zugeordnet hast,
-   kannst du deine Antworten überprüfen.
-  </p>
   <button id="finishButton">Quiz auswerten</button>
  </section>
 
@@ -736,11 +723,11 @@ button:not(.theme-toggle):disabled {opacity:.5;cursor:not-allowed}
 
 <!-- INTERAKTIVER KLIMAATLAS -->
 
-<section id="atlasPage" class="hidden">
+<section id="atlasPage">
 
     <section class="card">
 
-        <h1>🌍 Interaktiver Klimaatlas</h1>
+        <h1>Weltkarte</h1>
 
         <p>
             Entdecke die weltweite Verteilung der Köppen-Klimatypen.
@@ -780,11 +767,6 @@ button:not(.theme-toggle):disabled {opacity:.5;cursor:not-allowed}
 
         <h2>1. Weltkarte der Klimastationen</h2>
 
-        <p class="muted">
-            Die Farben kennzeichnen die Köppen-Klimagruppe
-            der jeweiligen Wetterstation.
-        </p>
-
         <div id="atlasLegend" class="atlas-legend"></div>
 
         <div id="climateMap" class="atlas-map"></div>
@@ -803,7 +785,7 @@ button:not(.theme-toggle):disabled {opacity:.5;cursor:not-allowed}
 
 <section class="card hidden" id="atlasDetailSection">
 
-    <h2>📊 Klimadiagramme im Vergleich</h2>
+    <h2>Klimadiagramme im Vergleich</h2>
 
     <div id="atlasDetailInfo" class="atlas-info"></div>
 
@@ -931,10 +913,18 @@ button:not(.theme-toggle):disabled {opacity:.5;cursor:not-allowed}
 
     </section>
 
-    <button id="atlasBackButton" class="secondary">
-        ← Zurück zum Klimazonen-Detektiv
-    </button>
+</section>
 
+<!-- USA-KÖPPEN-KARTENQUIZ -->
+<section id="usaQuizPage" class="hidden">
+    <section class="card">
+        <iframe
+            id="usaQuizFrame"
+            src="Koeppen-Kartenquiz-USA.html"
+            title="Köppen-Kartenquiz USA"
+            loading="lazy"
+        ></iframe>
+    </section>
 </section>
 
 
@@ -949,7 +939,7 @@ button:not(.theme-toggle):disabled {opacity:.5;cursor:not-allowed}
         ✕ Schließen
     </button>
 
-    <h2>🌍 Köppen-Klimaschlüssel</h2>
+    <h2>Köppen-Klimaschlüssel</h2>
 
     <p>
         Bestimme die Klimagruppe anhand der Monatsmitteltemperaturen
@@ -2310,6 +2300,7 @@ let atlasMarkers = [];
 let atlasCharts = [];
 let atlasVisible = 24;
 let atlasPreviousPage = "start";
+let usaQuizPreviousPage = "start";
 let atlasSelectedStation = null;
 let atlasDetailChart = null;
 let atlasDetailCharts = [];
@@ -2367,7 +2358,12 @@ function openAtlas() {
         return;
     }
 
-    if (!$("game").classList.contains("hidden")) {
+    if (!$("usaQuizPage").classList.contains("hidden")) {
+        atlasPreviousPage = usaQuizPreviousPage === "atlasPage"
+            ? atlasPreviousPage
+            : usaQuizPreviousPage;
+        $("usaQuizPage").classList.add("hidden");
+    } else if (!$("game").classList.contains("hidden")) {
         atlasPreviousPage = "game";
     } else if (!$("end").classList.contains("hidden")) {
         atlasPreviousPage = "end";
@@ -2378,23 +2374,33 @@ function openAtlas() {
     $("start").classList.add("hidden");
     $("game").classList.add("hidden");
     $("end").classList.add("hidden");
+    $("usaQuizPage").classList.add("hidden");
 
     $("atlasPage").classList.remove("hidden");
     $("quizNavButton").classList.remove("is-active");
     $("quizNavButton").setAttribute("aria-pressed", "false");
     $("atlasNavButton").classList.add("is-active");
     $("atlasNavButton").setAttribute("aria-pressed", "true");
+    $("usaQuizNavButton").classList.remove("is-active");
+    $("usaQuizNavButton").setAttribute("aria-pressed", "false");
 
     loadAtlas();
 }
 
 function backToQuiz() {
 
+    if (!$("usaQuizPage").classList.contains("hidden")) {
+        returnFromUsaQuiz();
+        return;
+    }
+
     $("atlasPage").classList.add("hidden");
     $("quizNavButton").classList.add("is-active");
     $("quizNavButton").setAttribute("aria-pressed", "true");
     $("atlasNavButton").classList.remove("is-active");
     $("atlasNavButton").setAttribute("aria-pressed", "false");
+    $("usaQuizNavButton").classList.remove("is-active");
+    $("usaQuizNavButton").setAttribute("aria-pressed", "false");
 
     $("start").classList.toggle(
         "hidden",
@@ -3171,6 +3177,67 @@ function focusAtlasStation(index) {
 
 }
 
+function openUsaQuiz() {
+
+    if (!$("usaQuizPage").classList.contains("hidden")) {
+        return;
+    }
+
+    if (!$("atlasPage").classList.contains("hidden")) {
+        usaQuizPreviousPage = "atlasPage";
+    } else if (!$("game").classList.contains("hidden")) {
+        usaQuizPreviousPage = "game";
+    } else if (!$("end").classList.contains("hidden")) {
+        usaQuizPreviousPage = "end";
+    } else {
+        usaQuizPreviousPage = "start";
+    }
+
+    $("start").classList.add("hidden");
+    $("game").classList.add("hidden");
+    $("end").classList.add("hidden");
+    $("atlasPage").classList.add("hidden");
+    $("usaQuizPage").classList.remove("hidden");
+
+    $("quizNavButton").classList.remove("is-active");
+    $("quizNavButton").setAttribute("aria-pressed", "false");
+    $("atlasNavButton").classList.remove("is-active");
+    $("atlasNavButton").setAttribute("aria-pressed", "false");
+    $("usaQuizNavButton").classList.add("is-active");
+    $("usaQuizNavButton").setAttribute("aria-pressed", "true");
+}
+
+function returnFromUsaQuiz() {
+
+    $("usaQuizPage").classList.add("hidden");
+
+    if (usaQuizPreviousPage === "atlasPage") {
+        $("atlasPage").classList.remove("hidden");
+        $("quizNavButton").classList.remove("is-active");
+        $("quizNavButton").setAttribute("aria-pressed", "false");
+        $("atlasNavButton").classList.add("is-active");
+        $("atlasNavButton").setAttribute("aria-pressed", "true");
+        if (atlasMap) {
+            setTimeout(() => atlasMap.invalidateSize(), 100);
+        }
+    } else {
+        $("start").classList.toggle("hidden", usaQuizPreviousPage !== "start");
+        $("game").classList.toggle("hidden", usaQuizPreviousPage !== "game");
+        $("end").classList.toggle("hidden", usaQuizPreviousPage !== "end");
+        $("quizNavButton").classList.add("is-active");
+        $("quizNavButton").setAttribute("aria-pressed", "true");
+        $("atlasNavButton").classList.remove("is-active");
+        $("atlasNavButton").setAttribute("aria-pressed", "false");
+        if (usaQuizPreviousPage === "game" && map) {
+            setTimeout(() => map.invalidateSize(), 100);
+        }
+    }
+
+    $("usaQuizNavButton").classList.remove("is-active");
+    $("usaQuizNavButton").setAttribute("aria-pressed", "false");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
 
 /* --------------------------------------------------
    BEDIENELEMENTE KLIMAATLAS
@@ -3186,9 +3253,9 @@ $("quizNavButton").addEventListener(
     backToQuiz
 );
 
-$("atlasBackButton").addEventListener(
+$("usaQuizNavButton").addEventListener(
     "click",
-    backToQuiz
+    openUsaQuiz
 );
 
 $("atlasClimateType").addEventListener(
@@ -3289,6 +3356,8 @@ document.getElementById("newQuiz")
   document.getElementById("error").textContent="";
   window.scrollTo({top:0,behavior:"smooth"});
  });
+
+loadAtlas();
 
 </script>
 </body>
