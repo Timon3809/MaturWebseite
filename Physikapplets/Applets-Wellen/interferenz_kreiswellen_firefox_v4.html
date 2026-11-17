@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Interferenz zweier Kreiswellen</title>
+<style>
+:root{--bg:#f4f7fb;--panel:#fff;--ink:#172033;--muted:#5d687b;--line:#d9e0ea;--accent:#1261a0;--accent2:#7a3db8;--good:#b82333;--bad:#1769aa;--shadow:0 10px 30px rgba(25,42,70,.10)}
+@media(prefers-color-scheme:dark){:root{--bg:#10151d;--panel:#18202b;--ink:#edf3fb;--muted:#b6c0cf;--line:#354152;--accent:#63b3ed;--accent2:#c69bff;--shadow:0 10px 30px rgba(0,0,0,.3)}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}main{max-width:1280px;margin:auto;padding:clamp(12px,2vw,24px)}h1{font-size:clamp(1.45rem,3vw,2.25rem);margin:.1rem 0 .35rem}.lead{color:var(--muted);margin:0 0 1rem}.layout{display:grid;grid-template-columns:minmax(260px,340px) minmax(0,1fr);gap:16px}@media(max-width:860px){.layout{grid-template-columns:1fr}}.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.controls{padding:16px}.group{border:0;border-top:1px solid var(--line);margin:14px 0 0;padding:14px 0 0}.group:first-of-type{border-top:0;margin-top:0;padding-top:0}legend{font-weight:750;padding:0 0 8px}.row{display:grid;grid-template-columns:1fr auto;align-items:center;gap:10px;margin:9px 0}.row label{font-size:.94rem}.value{font-variant-numeric:tabular-nums;color:var(--muted);min-width:70px;text-align:right}input[type=range]{width:100%;accent-color:var(--accent)}select,button{font:inherit;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);padding:.55rem .7rem}button{cursor:pointer;font-weight:700}button.primary{background:var(--accent);color:white;border-color:transparent}button:hover{filter:brightness(1.06)}button:focus-visible,input:focus-visible,select:focus-visible,canvas:focus-visible{outline:3px solid color-mix(in srgb,var(--accent) 55%,transparent);outline-offset:2px}.buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px}.check{display:flex;align-items:center;gap:8px;margin:8px 0}.stage{padding:12px;min-width:0}.canvas-wrap{position:relative;width:100%;aspect-ratio:16/10;min-height:340px;background:#f8fbff;border:1px solid var(--line);border-radius:13px;overflow:hidden}canvas{display:block;width:100%;height:100%;touch-action:none;cursor:crosshair}.badge{position:absolute;left:10px;top:10px;background:rgba(255,255,255,.88);color:#172033;border-radius:999px;padding:5px 9px;font-size:.8rem;font-weight:700;pointer-events:none}.readout{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:10px}.metric{border:1px solid var(--line);border-radius:12px;padding:9px;background:color-mix(in srgb,var(--panel) 92%,var(--accent) 8%)}.metric b,.metric span{display:block}.metric b{font-size:.77rem;color:var(--muted)}.metric span{font-variant-numeric:tabular-nums;font-weight:760}.classification{grid-column:span 2}@media(max-width:700px){.readout{grid-template-columns:repeat(2,1fr)}.classification{grid-column:span 2}}details{margin-top:14px}.help{padding:14px 16px}.formula{font-family:Cambria,"Times New Roman",serif;font-size:1.05rem}.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:.84rem;color:var(--muted);margin-top:8px}.swatch{display:inline-block;width:14px;height:4px;border-radius:3px;margin-right:5px;vertical-align:middle}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}html.presentation-mode,html.presentation-mode body,
+html:fullscreen,html:fullscreen body{overflow:hidden}
+html.presentation-mode main,html:fullscreen main{max-width:none;width:100vw;height:100vh;padding:8px;display:flex;flex-direction:column}
+html.presentation-mode h1,html.presentation-mode .lead,html.presentation-mode details,
+html:fullscreen h1,html:fullscreen .lead,html:fullscreen details{display:none}
+html.presentation-mode .layout,html:fullscreen .layout{display:grid;grid-template-columns:minmax(245px,310px) minmax(0,1fr);gap:8px;flex:1;min-height:0}
+html.presentation-mode .controls,html:fullscreen .controls{display:block;height:100%;overflow:auto;padding:12px;border-radius:12px}
+html.presentation-mode .stage,html:fullscreen .stage{display:flex;flex-direction:column;height:100%;min-height:0;border-radius:12px;box-shadow:none;padding:8px}
+html.presentation-mode .canvas-wrap,html:fullscreen .canvas-wrap{flex:1;height:auto;min-height:0;aspect-ratio:auto}
+html.presentation-mode .readout,html:fullscreen .readout{flex:0 0 auto}
+html.presentation-mode #fullscreen,html:fullscreen #fullscreen{position:sticky;bottom:0;z-index:20;background:#8b1e2d;color:#fff;border-color:transparent;box-shadow:0 4px 14px rgba(0,0,0,.28)}
+@media(max-width:760px){
+ html.presentation-mode .layout,html:fullscreen .layout{grid-template-columns:220px minmax(0,1fr)}
+ html.presentation-mode .controls,html:fullscreen .controls{font-size:.88rem;padding:8px}
+ html.presentation-mode .group,html:fullscreen .group{margin-top:8px;padding-top:8px}
+ html.presentation-mode .row,html:fullscreen .row{margin:5px 0}
+ html.presentation-mode .buttons,html:fullscreen .buttons{grid-template-columns:1fr}
+ html.presentation-mode .readout,html:fullscreen .readout{grid-template-columns:repeat(3,1fr);font-size:.82rem}
+ html.presentation-mode .classification,html:fullscreen .classification{grid-column:span 2}
+}
+@media(max-width:560px){
+ html.presentation-mode .layout,html:fullscreen .layout{grid-template-columns:180px minmax(0,1fr)}
+ html.presentation-mode .legend,html:fullscreen .legend{display:none}
+ html.presentation-mode .readout,html:fullscreen .readout{grid-template-columns:repeat(2,1fr)}
+}@media print{.controls,.lead,.badge{display:none}.layout{display:block}.panel{box-shadow:none}.stage{border:0}.canvas-wrap{min-height:500px}}
+</style>
+</head>
+<body>
+<main>
+<h1>Interferenz zweier Kreiswellen</h1>
+<p class="lead">Offlinefähige Ein-Datei-Simulation. Ziehen Sie den violetten Messpunkt im Feld.</p>
+<div class="layout">
+<section class="panel controls" aria-label="Steuerung">
+<fieldset class="group"><legend>Wellenparameter</legend>
+<div class="row"><label for="distance">Quellenabstand <i>d</i></label><output class="value" id="distanceOut"></output></div><input id="distance" type="range" min="2" max="14" step="0.1" value="8">
+<div class="row"><label for="wavelength">Wellenlänge <i>λ</i></label><output class="value" id="wavelengthOut"></output></div><input id="wavelength" type="range" min="0.8" max="6" step="0.1" value="2.5">
+<div class="row"><label for="frequency">Frequenz <i>f</i></label><output class="value" id="frequencyOut"></output></div><input id="frequency" type="range" min="0.1" max="1.5" step="0.05" value="0.55">
+<div class="row"><label for="speed">Animationstempo</label><output class="value" id="speedOut"></output></div><input id="speed" type="range" min="0" max="2" step="0.05" value="1">
+</fieldset>
+<fieldset class="group"><legend>Darstellung</legend>
+<div class="row"><label for="mode">Ansicht</label><select id="mode"><option value="field">Interferenzfeld</option><option value="circles">Kreiswellen</option><option value="both">Kombiniert</option></select></div>
+<label class="check"><input id="loci" type="checkbox" checked> Ortslinien der Maxima und Minima</label>
+<label class="check"><input id="grid" type="checkbox" checked> Koordinatengitter</label>
+<label class="check"><input id="labels" type="checkbox" checked> Beschriftungen</label>
+</fieldset>
+<fieldset class="group"><legend>Animation</legend><div class="buttons">
+<button id="pause" class="primary" type="button">Pause</button><button id="slow" type="button" aria-pressed="false">Zeitlupe</button>
+<button id="reset" type="button">Zurücksetzen</button><button id="fullscreen" type="button">Vollbild</button>
+</div></fieldset>
+</section>
+<section class="panel stage">
+<div class="canvas-wrap" id="canvasWrap"><canvas id="canvas" tabindex="0" aria-label="Simulation zweier interferierender Kreiswellen"></canvas><div class="badge">Messpunkt: ziehen oder klicken</div></div>
+<div class="readout" aria-live="polite">
+<div class="metric"><b>Abstand r₁</b><span id="r1">–</span></div><div class="metric"><b>Abstand r₂</b><span id="r2">–</span></div><div class="metric"><b>Gangunterschied Δs</b><span id="ds">–</span></div><div class="metric"><b>Phasendifferenz Δφ</b><span id="phase">–</span></div><div class="metric classification"><b>Interferenz am Messpunkt</b><span id="kind">–</span></div>
+</div>
+<div class="legend"><span><i class="swatch" style="background:#c6283b"></i>konstruktiv</span><span><i class="swatch" style="background:#1b69b0"></i>destruktiv</span><span><i class="swatch" style="background:#7a3db8"></i>Messpunkt</span></div>
+</section>
+</div>
+<details class="panel help"><summary><strong>Physikalisches Modell und Bedienung</strong></summary><p>Die Quellen S₁ und S₂ schwingen gleichphasig. Für den Messpunkt gilt <span class="formula">Δs = |r₁ − r₂|</span> und <span class="formula">Δφ = 2πΔs/λ</span>. Konstruktive Interferenz liegt bei <span class="formula">Δs = mλ</span>, destruktive bei <span class="formula">Δs = (m + ½)λ</span> vor. Die roten und blauen Ortslinien sind daher glatte Hyperbeln; die rote Mittellinie gehört zu <span class="formula">Δs = 0</span>. Die Feldfarbe zeigt die momentane Summe <span class="formula">sin(kr₁ − ωt) + sin(kr₂ − ωt)</span>. Tastatur: Pfeiltasten verschieben den Messpunkt, Leertaste pausiert. Im Vollbild bleiben die Steuerungen links sichtbar; „Vollbild verlassen“ oder Esc führt zurück.</p></details>
+<p class="sr-only" id="status" aria-live="polite"></p>
+</main>
+<script>
+'use strict';
+(() => {
+const $=id=>document.getElementById(id), canvas=$('canvas'), ctx=canvas.getContext('2d',{alpha:false});
+const els={distance:$('distance'),wavelength:$('wavelength'),frequency:$('frequency'),speed:$('speed'),mode:$('mode'),loci:$('loci'),grid:$('grid'),labels:$('labels'),pause:$('pause'),slow:$('slow'),reset:$('reset'),fullscreen:$('fullscreen')};
+const out={distance:$('distanceOut'),wavelength:$('wavelengthOut'),frequency:$('frequencyOut'),speed:$('speedOut'),r1:$('r1'),r2:$('r2'),ds:$('ds'),phase:$('phase'),kind:$('kind')};
+let W=800,H=500,dpr=1,last=0,time=0,running=true,slow=false,drag=false,fieldCanvas=document.createElement('canvas'),fieldCtx=fieldCanvas.getContext('2d');
+const state={point:{x:3.2,y:-2.3}, view:{xmin:-10,xmax:10,ymin:-6.25,ymax:6.25}};
+const num=e=>Number(e.value), fmt=(v,n=2)=>v.toLocaleString('de-CH',{minimumFractionDigits:n,maximumFractionDigits:n});
+function params(){return{d:num(els.distance),lambda:num(els.wavelength),f:num(els.frequency),speed:num(els.speed)}}
+function updateLabels(){out.distance.textContent=fmt(num(els.distance),1)+' cm';out.wavelength.textContent=fmt(num(els.wavelength),1)+' cm';out.frequency.textContent=fmt(num(els.frequency),2)+' Hz';out.speed.textContent=fmt(num(els.speed),2)+'×'}
+function fit(){const rect=canvas.getBoundingClientRect();dpr=Math.min(window.devicePixelRatio||1,2);W=Math.max(320,rect.width);H=Math.max(260,rect.height);canvas.width=Math.round(W*dpr);canvas.height=Math.round(H*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);const aspect=W/H;state.view.xmin=-10;state.view.xmax=10;state.view.ymin=-10/aspect;state.view.ymax=10/aspect;render();}
+function sx(x){return (x-state.view.xmin)/(state.view.xmax-state.view.xmin)*W} function sy(y){return H-(y-state.view.ymin)/(state.view.ymax-state.view.ymin)*H}
+function wx(x){return state.view.xmin+x/W*(state.view.xmax-state.view.xmin)} function wy(y){return state.view.ymax-y/H*(state.view.ymax-state.view.ymin)}
+function sources(){const d=num(els.distance);return[{x:-d/2,y:0},{x:d/2,y:0}]}
+function distances(x,y){const [a,b]=sources();return[Math.hypot(x-a.x,y-a.y),Math.hypot(x-b.x,y-b.y)]}
+function drawGrid(){if(!els.grid.checked)return;ctx.save();ctx.lineWidth=1;ctx.strokeStyle='rgba(110,125,145,.18)';ctx.fillStyle='rgba(90,105,125,.72)';ctx.font='12px system-ui';for(let x=Math.ceil(state.view.xmin);x<=state.view.xmax;x++){ctx.beginPath();ctx.moveTo(sx(x),0);ctx.lineTo(sx(x),H);ctx.stroke();if(x&&els.labels.checked)ctx.fillText(x,sx(x)+3,sy(0)-4)}for(let y=Math.ceil(state.view.ymin);y<=state.view.ymax;y++){ctx.beginPath();ctx.moveTo(0,sy(y));ctx.lineTo(W,sy(y));ctx.stroke();if(y&&els.labels.checked)ctx.fillText(y, sx(0)+4,sy(y)-3)}ctx.restore()}
+function drawField(p){const scale=3,fw=Math.ceil(W/scale),fh=Math.ceil(H/scale);if(fieldCanvas.width!==fw||fieldCanvas.height!==fh){fieldCanvas.width=fw;fieldCanvas.height=fh}const img=fieldCtx.createImageData(fw,fh),data=img.data,[a,b]=sources(),k=2*Math.PI/p.lambda,w=2*Math.PI*p.f;for(let j=0;j<fh;j++){const y=state.view.ymax-(j+.5)/fh*(state.view.ymax-state.view.ymin);for(let i=0;i<fw;i++){const x=state.view.xmin+(i+.5)/fw*(state.view.xmax-state.view.xmin),r1=Math.hypot(x-a.x,y-a.y),r2=Math.hypot(x-b.x,y-b.y),z=(Math.sin(k*r1-w*time)+Math.sin(k*r2-w*time))/2,q=(z+1)/2,idx=(j*fw+i)*4;data[idx]=Math.round(25+218*q);data[idx+1]=Math.round(63+150*(1-Math.abs(z)));data[idx+2]=Math.round(220-175*q);data[idx+3]=255}}fieldCtx.putImageData(img,0,0);ctx.imageSmoothingEnabled=true;ctx.drawImage(fieldCanvas,0,0,W,H)}
+function drawCircles(p){const [a,b]=sources(),pxPerCm=W/(state.view.xmax-state.view.xmin),maxR=Math.hypot(state.view.xmax-state.view.xmin,state.view.ymax-state.view.ymin);ctx.save();ctx.globalAlpha=els.mode.value==='both'?.55:.9;ctx.lineWidth=1.4;for(const s of [a,b]){for(let n=-2;n<maxR/p.lambda+2;n++){const crest=(n*p.lambda+(p.f*time*p.lambda))%p.lambda;if(crest>0){ctx.strokeStyle='#172033';ctx.beginPath();ctx.arc(sx(s.x),sy(s.y),crest*pxPerCm+Math.max(0,n)*p.lambda*pxPerCm,0,Math.PI*2);ctx.stroke()}const trough=crest+p.lambda/2;if(trough+Math.max(0,n)*p.lambda<maxR){ctx.strokeStyle='#8090a4';ctx.setLineDash([4,4]);ctx.beginPath();ctx.arc(sx(s.x),sy(s.y),(trough+Math.max(0,n)*p.lambda)*pxPerCm,0,Math.PI*2);ctx.stroke();ctx.setLineDash([])}}}ctx.restore()}
+function drawLoci(p){
+  if(!els.loci.checked)return;
+  const c=p.d/2;
+  const yMin=state.view.ymin, yMax=state.view.ymax;
+  ctx.save();
+  ctx.lineWidth=1.6;
+
+  function drawHyperbola(delta,color){
+    ctx.strokeStyle=color;
+    ctx.beginPath();
+
+    // Delta s = 0: Mittelsenkrechte der beiden Quellen.
+    if(delta<1e-9){
+      ctx.moveTo(sx(0),sy(yMin));
+      ctx.lineTo(sx(0),sy(yMax));
+      ctx.stroke();
+      return;
+    }
+
+    // |r1-r2|=delta ist eine Hyperbel mit Brennpunkten (+/-c,0).
+    // Standardform: x^2/a^2-y^2/b^2=1, 2a=delta, b^2=c^2-a^2.
+    const a=delta/2;
+    if(a>=c)return; // Bei delta=d entartet die Ortslinie und liegt ausserhalb des endlichen Zeichenfelds.
+    const b=Math.sqrt(c*c-a*a);
+
+    for(const sign of [-1,1]){
+      let started=false;
+      for(let py=0;py<=H;py+=2){
+        const y=wy(py);
+        const x=sign*a*Math.sqrt(1+(y*y)/(b*b));
+        const px=sx(x);
+        if(px>=-2&&px<=W+2){
+          if(!started){ctx.moveTo(px,py);started=true}else ctx.lineTo(px,py);
+        }else{
+          started=false;
+        }
+      }
+    }
+    ctx.stroke();
+  }
+
+  // Konstruktiv: Delta s=m*lambda, m=0,1,2,...
+  for(let m=0;m*p.lambda<p.d-1e-9;m++){
+    drawHyperbola(m*p.lambda,'rgba(184,35,51,.82)');
+  }
+  // Destruktiv: Delta s=(m+1/2)*lambda, m=0,1,2,...
+  for(let m=0;(m+.5)*p.lambda<p.d-1e-9;m++){
+    drawHyperbola((m+.5)*p.lambda,'rgba(23,105,170,.82)');
+  }
+  ctx.restore();
+}
+function drawObjects(p){const [a,b]=sources();ctx.save();for(const [i,s] of [a,b].entries()){ctx.fillStyle='#f2a900';ctx.strokeStyle='#6c4c00';ctx.lineWidth=2;ctx.beginPath();ctx.arc(sx(s.x),sy(s.y),7,0,Math.PI*2);ctx.fill();ctx.stroke();if(els.labels.checked){ctx.fillStyle='#172033';ctx.font='bold 14px system-ui';ctx.fillText('S'+(i+1),sx(s.x)+10,sy(s.y)-9)}}const x=sx(state.point.x),y=sy(state.point.y);ctx.strokeStyle='rgba(122,61,184,.45)';ctx.setLineDash([5,5]);ctx.beginPath();ctx.moveTo(sx(a.x),sy(a.y));ctx.lineTo(x,y);ctx.lineTo(sx(b.x),sy(b.y));ctx.stroke();ctx.setLineDash([]);ctx.fillStyle='#7a3db8';ctx.strokeStyle='white';ctx.lineWidth=3;ctx.beginPath();ctx.arc(x,y,8,0,Math.PI*2);ctx.fill();ctx.stroke();if(els.labels.checked){ctx.fillStyle='#5d2c8c';ctx.font='bold 14px system-ui';ctx.fillText('P',x+11,y-9)}ctx.restore()}
+function updateReadout(p){const [r1,r2]=distances(state.point.x,state.point.y),ds=Math.abs(r1-r2),cycles=ds/p.lambda,nearestInt=Math.abs(cycles-Math.round(cycles)),nearestHalf=Math.abs(cycles-(Math.floor(cycles)+.5));out.r1.textContent=fmt(r1)+' cm';out.r2.textContent=fmt(r2)+' cm';out.ds.textContent=fmt(ds)+' cm';out.phase.textContent=fmt(2*Math.PI*cycles)+' rad';let kind='Zwischenwert',color='var(--ink)';if(nearestInt<.06){kind='konstruktiv (Maximum)';color='var(--good)'}else if(nearestHalf<.06){kind='destruktiv (Minimum)';color='var(--bad)'}out.kind.textContent=kind+' · Δs/λ = '+fmt(cycles,2);out.kind.style.color=color}
+function render(){const p=params();ctx.setTransform(dpr,0,0,dpr,0,0);ctx.fillStyle='#f8fbff';ctx.fillRect(0,0,W,H);if(els.mode.value!=='circles')drawField(p);drawGrid();if(els.mode.value!=='field')drawCircles(p);drawLoci(p);drawObjects(p);updateReadout(p)}
+function tick(ts){if(!last)last=ts;const dt=Math.min(.05,(ts-last)/1000);last=ts;if(running)time+=dt*num(els.speed)*(slow?.2:1);render();requestAnimationFrame(tick)}
+function pointer(e){const r=canvas.getBoundingClientRect();state.point.x=wx(e.clientX-r.left);state.point.y=wy(e.clientY-r.top);render()}
+canvas.addEventListener('pointerdown',e=>{drag=true;canvas.setPointerCapture(e.pointerId);pointer(e)});canvas.addEventListener('pointermove',e=>{if(drag)pointer(e)});canvas.addEventListener('pointerup',()=>drag=false);canvas.addEventListener('pointercancel',()=>drag=false);
+canvas.addEventListener('keydown',e=>{const step=e.shiftKey?.5:.12;if(e.key===' '){e.preventDefault();els.pause.click();return}if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key))return;e.preventDefault();if(e.key==='ArrowLeft')state.point.x-=step;if(e.key==='ArrowRight')state.point.x+=step;if(e.key==='ArrowUp')state.point.y+=step;if(e.key==='ArrowDown')state.point.y-=step;render()});
+Object.values(els).forEach(el=>{if(el instanceof HTMLInputElement||el instanceof HTMLSelectElement)el.addEventListener('input',()=>{updateLabels();render()})});
+els.pause.addEventListener('click',()=>{running=!running;els.pause.textContent=running?'Pause':'Weiter';$('status').textContent=running?'Animation läuft':'Animation pausiert'});els.slow.addEventListener('click',()=>{slow=!slow;els.slow.setAttribute('aria-pressed',slow);els.slow.textContent=slow?'Zeitlupe ✓':'Zeitlupe'});els.reset.addEventListener('click',()=>{els.distance.value=8;els.wavelength.value=2.5;els.frequency.value=.55;els.speed.value=1;els.mode.value='field';els.loci.checked=els.grid.checked=els.labels.checked=true;state.point={x:3.2,y:-2.3};time=0;updateLabels();render()});
+els.fullscreen.addEventListener('click',async()=>{
+  const root=document.documentElement;
+  try{
+    if(document.fullscreenElement){
+      await document.exitFullscreen();
+      root.classList.remove('presentation-mode');
+      els.fullscreen.textContent='Vollbild';
+    }else if(document.fullscreenEnabled&&root.requestFullscreen){
+      await root.requestFullscreen();
+      els.fullscreen.textContent='Vollbild verlassen';
+    }else{
+      root.classList.toggle('presentation-mode');
+      els.fullscreen.textContent=root.classList.contains('presentation-mode')?'Ansicht verlassen':'Vollbild';
+      $('status').textContent='Browser-Vollbild ist nicht verfügbar. Präsentationsansicht wurde verwendet.';
+      setTimeout(fit,50);
+    }
+  }catch(e){
+    root.classList.toggle('presentation-mode');
+    els.fullscreen.textContent=root.classList.contains('presentation-mode')?'Ansicht verlassen':'Vollbild';
+    $('status').textContent='Firefox hat das echte Vollbild blockiert. Präsentationsansicht wurde verwendet; F11 blendet zusätzlich die Browserleisten aus.';
+    setTimeout(fit,50);
+  }
+});
+document.addEventListener('fullscreenchange',()=>{
+  if(!document.fullscreenElement){els.fullscreen.textContent='Vollbild'}
+  setTimeout(fit,50);
+});
+document.addEventListener('fullscreenerror',()=>{
+  document.documentElement.classList.add('presentation-mode');
+  els.fullscreen.textContent='Ansicht verlassen';
+  setTimeout(fit,50);
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&document.documentElement.classList.contains('presentation-mode')){
+    document.documentElement.classList.remove('presentation-mode');
+    els.fullscreen.textContent='Vollbild';
+    setTimeout(fit,50);
+  }
+});
+if('ResizeObserver'in window)new ResizeObserver(fit).observe($('canvasWrap'));else window.addEventListener('resize',fit);
+document.addEventListener('visibilitychange',()=>{last=0});updateLabels();fit();requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>
