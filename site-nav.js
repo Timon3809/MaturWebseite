@@ -46,6 +46,12 @@
         { label: "Dateien",           href: "dateien.html",                  icon: "↓", page: "files" }
       ]
     },
+    physikapplets: {
+      brand: { mark: "Ph", name: "Vormatur", tag: "PHYSIKAPPLETS", href: "../index.html" },
+      links: [
+        { label: "Übersicht", href: "index.html", icon: "◈", page: "overview" }
+      ]
+    },
     biologie: {
       brand: { mark: "B", name: "Vormatur", tag: "BIOLOGIE", href: "../index.html" },
       links: [
