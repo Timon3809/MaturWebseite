@@ -32,7 +32,7 @@
         { label: "Übersicht",         href: "index.html",                    icon: "⚗", page: "overview" },
         { label: "Zusammenfassungen", href: "zusammenfassungen.html",  icon: "▧", page: "summaries" },
         { label: "Glossar",           href: "glossar.html",            icon: "⌕", page: "glossary" },
-        { label: "Simulationen", href: "simulationen.html", icon: "⚛", page: "models" },
+        { label: "Applets", href: "simulationen.html", icon: "⚛", page: "models" },
         { label: "Dateien",           href: "dateien.html",            icon: "↓", page: "files" }
       ]
     },
@@ -85,7 +85,7 @@
     themeToggle.title = "Dunkelmodus";
     themeToggle.innerHTML = `
       <span class="theme-toggle-icon" aria-hidden="true">${isDark ? "☼" : "☾"}</span>
-      <span class="theme-toggle-label">Dunkel</span>
+      <span class="theme-toggle-label">${isDark ? "Dunkel" : "Hell"}</span>
       <span class="theme-toggle-track" aria-hidden="true"><span></span></span>
     `;
     themeToggle.addEventListener("click", () => {
@@ -93,6 +93,7 @@
       document.documentElement.dataset.theme = nextIsDark ? "dark" : "light";
       themeToggle.setAttribute("aria-checked", String(nextIsDark));
       themeToggle.querySelector(".theme-toggle-icon").textContent = nextIsDark ? "☼" : "☾";
+      themeToggle.querySelector(".theme-toggle-label").textContent = nextIsDark ? "Dunkel" : "Hell";
       localStorage.setItem(themeStorageKey, nextIsDark ? "dark" : "light");
     });
     topbarActions.append(themeToggle);

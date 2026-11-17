@@ -274,11 +274,11 @@ main { width: min(100%, 1180px); margin: 0 auto; padding: 31px 0 43px; }
 .glossary-filter { min-height: 41px; }
 .glossary-total { color: #999a90; font-size: 8px; letter-spacing: .4px; white-space: nowrap; }
 .glossary-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 8px; }
-.glossary-view-switch { display: flex; gap: 5px; margin: 0 0 12px; }
+.glossary-views { min-width: 0; }
+.glossary-view-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 0 0 12px; }
+.glossary-view-switch { display: flex; flex-wrap: wrap; gap: 5px; }
 .glossary-view-button { min-height: 32px; border: 1px solid #e3e0d7; border-radius: 5px; background: transparent; padding: 0 12px; color: #777970; font-size: 10px; cursor: pointer; }
 .glossary-view-button:hover, .glossary-view-button.is-active { border-color: var(--ink); background: var(--ink); color: #fffefa; }
-.mindmap-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 9px; }
-.mindmap-toolbar > p { margin: 0; color: #777970; font-size: 10px; line-height: 1.5; }
 .mindmap-controls { display: flex; flex: 0 0 auto; gap: 5px; }
 .mindmap-controls button { min-width: 31px; height: 31px; border: 1px solid #e3e0d7; border-radius: 5px; background: var(--white); padding: 0 8px; font-size: 11px; cursor: pointer; }
 .mindmap-controls button:hover { border-color: var(--ink); }
@@ -287,8 +287,8 @@ main { width: min(100%, 1180px); margin: 0 auto; padding: 31px 0 43px; }
   flex-direction: column;
   min-height: 0;
 }
-.glossary-map-view:fullscreen,
-.glossary-map-view:-webkit-full-screen {
+.glossary-views:fullscreen,
+.glossary-views:-webkit-full-screen {
   display: flex;
   flex-direction: column;
   background: var(--paper);
@@ -296,15 +296,20 @@ main { width: min(100%, 1180px); margin: 0 auto; padding: 31px 0 43px; }
   box-sizing: border-box;
   height: 100vh;
 }
-.glossary-map-view:fullscreen .mindmap-layout,
-.glossary-map-view:-webkit-full-screen .mindmap-layout {
+.glossary-views:fullscreen #glossary-map-view,
+.glossary-views:-webkit-full-screen #glossary-map-view {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+.glossary-views:fullscreen #glossary-map-view .mindmap-layout,
+.glossary-views:-webkit-full-screen #glossary-map-view .mindmap-layout {
   flex: 1 1 auto;
   min-height: 0;
   height: 100%;
   grid-template-columns: minmax(0, 1fr) 260px;
 }
-.glossary-map-view:fullscreen .mindmap-viewport,
-.glossary-map-view:-webkit-full-screen .mindmap-viewport {
+.glossary-views:fullscreen #glossary-map-view .mindmap-viewport,
+.glossary-views:-webkit-full-screen #glossary-map-view .mindmap-viewport {
   flex: 1 1 auto;
   min-height: 0;
   height: 100%;
@@ -492,7 +497,7 @@ button.mindmap-node:hover, button.mindmap-node:focus-visible, button.mindmap-nod
   .glossary-filter { grid-column: 1 / 2; }
   .glossary-total { grid-column: 2 / 3; }
   .glossary-grid { grid-template-columns: 1fr; }
-  .mindmap-toolbar { align-items: flex-start; flex-direction: column; }
+  .glossary-view-toolbar { align-items: flex-start; flex-wrap: wrap; }
   .mindmap-viewport { height: 55vh; min-height: 390px; }
   .mindmap-detail { padding: 13px; }
   .glossary-section-heading { align-items: flex-start; }
@@ -565,7 +570,6 @@ button.mindmap-node:hover, button.mindmap-node:focus-visible, button.mindmap-nod
 :root[data-theme="dark"] .summary-text ol,
 :root[data-theme="dark"] .summary-text table,
 :root[data-theme="dark"] .glossary-sections a,
-:root[data-theme="dark"] .mindmap-toolbar > p,
 :root[data-theme="dark"] .mindmap-detail p,
 :root[data-theme="dark"] .glossary-definition p,
 :root[data-theme="dark"] .learn-card-definition,

@@ -91,17 +91,17 @@
                     <div class="periodic-group-headings" aria-hidden="true"></div>
                     <div class="periodic-table" id="periodic-table" role="group" aria-label="Periodensystem"></div>
                   </div>
-                  <div class="periodic-legend" aria-label="Elementgruppen">
-                    <span><i class="periodic-swatch alkali"></i>Alkalimetalle</span>
-                    <span><i class="periodic-swatch alkaline"></i>Erdalkalimetalle</span>
-                    <span><i class="periodic-swatch transition"></i>Übergangsmetalle</span>
-                    <span><i class="periodic-swatch post-transition"></i>Weitere Metalle</span>
-                    <span><i class="periodic-swatch metalloid"></i>Halbmetalle</span>
-                    <span><i class="periodic-swatch nonmetal"></i>Nichtmetalle</span>
-                    <span><i class="periodic-swatch halogen"></i>Halogene</span>
-                    <span><i class="periodic-swatch noble-gas"></i>Edelgase</span>
-                    <span><i class="periodic-swatch lanthanide"></i>Lanthanoide</span>
-                    <span><i class="periodic-swatch actinide"></i>Actinoide</span>
+                  <div class="periodic-legend" role="group" aria-label="Elementgruppen">
+                    <button class="periodic-legend-item" type="button" data-category="alkali" aria-pressed="false"><i class="periodic-swatch alkali" aria-hidden="true"></i>Alkalimetalle</button>
+                    <button class="periodic-legend-item" type="button" data-category="alkaline" aria-pressed="false"><i class="periodic-swatch alkaline" aria-hidden="true"></i>Erdalkalimetalle</button>
+                    <button class="periodic-legend-item" type="button" data-category="transition" aria-pressed="false"><i class="periodic-swatch transition" aria-hidden="true"></i>Übergangsmetalle</button>
+                    <button class="periodic-legend-item" type="button" data-category="post-transition" aria-pressed="false"><i class="periodic-swatch post-transition" aria-hidden="true"></i>Weitere Metalle</button>
+                    <button class="periodic-legend-item" type="button" data-category="metalloid" aria-pressed="false"><i class="periodic-swatch metalloid" aria-hidden="true"></i>Halbmetalle</button>
+                    <button class="periodic-legend-item" type="button" data-category="nonmetal" aria-pressed="false"><i class="periodic-swatch nonmetal" aria-hidden="true"></i>Nichtmetalle</button>
+                    <button class="periodic-legend-item" type="button" data-category="halogen" aria-pressed="false"><i class="periodic-swatch halogen" aria-hidden="true"></i>Halogene</button>
+                    <button class="periodic-legend-item" type="button" data-category="noble-gas" aria-pressed="false"><i class="periodic-swatch noble-gas" aria-hidden="true"></i>Edelgase</button>
+                    <button class="periodic-legend-item" type="button" data-category="lanthanide" aria-pressed="false"><i class="periodic-swatch lanthanide" aria-hidden="true"></i>Lanthanoide</button>
+                    <button class="periodic-legend-item" type="button" data-category="actinide" aria-pressed="false"><i class="periodic-swatch actinide" aria-hidden="true"></i>Actinoide</button>
                   </div>
                 </div>
                 <div class="model-mode-switch atom-representation-switch" role="group" aria-label="Atomdarstellung wählen">
@@ -143,7 +143,6 @@
                     </dl>
                   </aside>
                 </div>
-                <p class="molecule-note" id="atom-representation-note">Schematische Darstellung eines neutralen Atoms im vereinfachten Bohr-Modell. Die Nuklide sind Beispiele; bei Elementen ohne stabile Isotope ist ein langlebiges Isotop gewählt. Kernteilchen, Abstände und Grössen sind nicht massstabsgetreu.</p>
               </section>
               <section class="equilibrium-view" id="equilibrium-view" aria-label="Reaktionen simulieren" hidden>
                 <div class="equilibrium-intro">

@@ -34,6 +34,7 @@
 .periodic-element.is-lanthanide-start { border: 1px dashed #87769d; }
 .periodic-element.is-actinide-start { border: 1px dashed #a17b61; }
 .periodic-element:hover { z-index: 1; transform: translateY(-2px); filter: brightness(.97); }
+.periodic-element.is-dimmed { filter: grayscale(1); opacity: .3; }
 .periodic-element:focus-visible { z-index: 2; outline: 2px solid #53645a; outline-offset: 1px; }
 .periodic-element.is-selected { border-color: #d87955; box-shadow: inset 0 0 0 1px #d87955; }
 .periodic-element[hidden] { display: none; }
@@ -49,9 +50,11 @@
 .periodic-element.noble-gas, .periodic-swatch.noble-gas { background-color: #f2dce2; }
 .periodic-element.lanthanide, .periodic-swatch.lanthanide { background-color: #e8e0f2; }
 .periodic-element.actinide, .periodic-swatch.actinide { background-color: #eee0d5; }
-.periodic-legend { display: flex; flex-wrap: wrap; gap: 7px 13px; padding: 11px 1px 2px; color: #74776d; font-size: 9px; }
-.periodic-legend span { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
-.periodic-swatch { display: inline-block; width: 9px; height: 9px; border: 1px solid #d5d4cb; border-radius: 2px; }
+.periodic-legend { display: flex; flex-wrap: wrap; gap: 5px 8px; padding: 11px 1px 2px; color: #74776d; font-size: 9px; }
+.periodic-legend-item { display: inline-flex; align-items: center; gap: 7px; border: 1px solid transparent; border-radius: 5px; background: transparent; padding: 3px 4px; color: inherit; font: inherit; white-space: nowrap; cursor: pointer; }
+.periodic-legend-item:hover, .periodic-legend-item[aria-pressed="true"] { border-color: #b7b9b0; background: var(--white); }
+.periodic-legend-item:focus-visible { outline: 2px solid #53645a; outline-offset: 1px; }
+.periodic-swatch { display: inline-block; flex: 0 0 auto; width: 18px; height: 18px; border: 2px solid #777c73; border-radius: 3px; box-shadow: inset 0 0 0 1px #ffffff45; }
 .molecule-layout { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(230px, .75fr); gap: 17px; padding-top: 17px; }
 .molecule-stage { min-width: 0; overflow: hidden; border: 1px solid #e8e5dc; border-radius: 7px; background: #fbfaf6; }
 .molecule-stage-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 15px 17px 5px; }
@@ -183,6 +186,7 @@
 .amount-converter-hint { color: #74776d; font-size: 10px; line-height: 1.45; }
 .amount-converter-input { display: flex; align-items: center; gap: 9px; }
 .amount-converter-input input { min-width: 0; width: 100%; }
+:root[data-theme="light"] .amount-converter-known-field .field-control { border-color: #b8b8b0; background: #fffefa; }
 .amount-converter-input span { color: #74776d; font-size: 11px; }
 .amount-converter-inputs-heading, .amount-converter-formula, .amount-converter-result { grid-column: 1 / -1; }
 .amount-converter-inputs-heading { margin: 0 0 -7px; color: #38443c; font: 600 16px var(--display); }
@@ -277,26 +281,29 @@
 :root[data-theme="dark"] .equilibrium-rate-scale,
 :root[data-theme="dark"] .molecule-note { color: #aeb4bb; }
 :root[data-theme="dark"] .periodic-element.alkali,
-:root[data-theme="dark"] .periodic-swatch.alkali { background-color: #49352f; }
+:root[data-theme="dark"] .periodic-swatch.alkali { background-color: #6b4038; }
 :root[data-theme="dark"] .periodic-element.alkaline,
-:root[data-theme="dark"] .periodic-swatch.alkaline { background-color: #49402a; }
+:root[data-theme="dark"] .periodic-swatch.alkaline { background-color: #695b32; }
 :root[data-theme="dark"] .periodic-element.transition,
-:root[data-theme="dark"] .periodic-swatch.transition { background-color: #3a3b3e; }
+:root[data-theme="dark"] .periodic-swatch.transition { background-color: #4a4b50; }
 :root[data-theme="dark"] .periodic-element.post-transition,
-:root[data-theme="dark"] .periodic-swatch.post-transition { background-color: #3a4039; }
+:root[data-theme="dark"] .periodic-swatch.post-transition { background-color: #485541; }
 :root[data-theme="dark"] .periodic-element.metalloid,
-:root[data-theme="dark"] .periodic-swatch.metalloid { background-color: #303f3c; }
+:root[data-theme="dark"] .periodic-swatch.metalloid { background-color: #35534a; }
 :root[data-theme="dark"] .periodic-element.nonmetal,
-:root[data-theme="dark"] .periodic-swatch.nonmetal { background-color: #293c48; }
+:root[data-theme="dark"] .periodic-swatch.nonmetal { background-color: #325366; }
 :root[data-theme="dark"] .periodic-element.halogen,
-:root[data-theme="dark"] .periodic-swatch.halogen { background-color: #3d3347; }
+:root[data-theme="dark"] .periodic-swatch.halogen { background-color: #59426b; }
 :root[data-theme="dark"] .periodic-element.noble-gas,
-:root[data-theme="dark"] .periodic-swatch.noble-gas { background-color: #49313a; }
+:root[data-theme="dark"] .periodic-swatch.noble-gas { background-color: #6b3f4c; }
 :root[data-theme="dark"] .periodic-element.lanthanide,
-:root[data-theme="dark"] .periodic-swatch.lanthanide { background-color: #3a3346; }
+:root[data-theme="dark"] .periodic-swatch.lanthanide { background-color: #4f4267; }
 :root[data-theme="dark"] .periodic-element.actinide,
-:root[data-theme="dark"] .periodic-swatch.actinide { background-color: #49382d; }
+:root[data-theme="dark"] .periodic-swatch.actinide { background-color: #684b35; }
 :root[data-theme="dark"] .periodic-element { color: #e8ede7; }
+:root[data-theme="dark"] .periodic-swatch { border-color: #b9c1bc; }
+:root[data-theme="dark"] .periodic-legend-item:hover,
+:root[data-theme="dark"] .periodic-legend-item[aria-pressed="true"] { border-color: #69716f; }
 :root[data-theme="dark"] .periodic-element-number { color: #bdc6bd; }
 :root[data-theme="dark"] .molecule-stage,
 :root[data-theme="dark"] .equilibrium-stage,

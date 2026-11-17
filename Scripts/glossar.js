@@ -28,6 +28,8 @@ const topicFilter         = document.getElementById("glossary-topic");
 const queryInput          = document.getElementById("glossary-search");
 const listView            = document.getElementById("glossary-list-view");
 const mapView             = document.getElementById("glossary-map-view");
+const glossaryViews       = document.getElementById("glossary-views");
+const mapControls         = document.getElementById("mindmap-controls");
 const mapViewport         = document.getElementById("mindmap-viewport");
 const mapSurface          = document.getElementById("mindmap-surface");
 const mapConnections      = document.getElementById("mindmap-connections");
@@ -113,7 +115,7 @@ function renderMindmap(entries) {
     selectedNode = null;
     selectedTerm = null;
     mapDetailTitle.textContent = "Begriff auswählen";
-    mapDetailDefinition.textContent = "Wähle einen Begriff in der Mindmap aus, um die Definition anzuzeigen.";
+    mapDetailDefinition.textContent = "";
     mapDetailTopic.textContent = "";
     return;
   }
@@ -168,7 +170,7 @@ function renderMindmap(entries) {
     selectedTerm = null;
     selectedNode = null;
     mapDetailTitle.textContent = "Begriff auswählen";
-    mapDetailDefinition.textContent = "Wähle einen Begriff in der Mindmap aus, um die Definition anzuzeigen.";
+    mapDetailDefinition.textContent = "";
     mapDetailTopic.textContent = "";
   }
 }
@@ -239,6 +241,7 @@ function initializeMindmapInteractions() {
       listView.hidden = view !== "list";
       mapView.hidden = view !== "mindmap";
       learnView.hidden = view !== "learn";
+      mapControls.hidden = view !== "mindmap";
       document.querySelectorAll(".glossary-view-button").forEach((viewButton) => {
         const active = viewButton === button;
         viewButton.classList.toggle("is-active", active);
@@ -296,8 +299,8 @@ function initializeMindmapInteractions() {
   document.getElementById("mindmap-center").addEventListener("click", centerMindmap);
   mapFullscreenToggle.addEventListener("click", () => {
     if (!document.fullscreenElement) {
-      if (mapView.requestFullscreen) {
-        mapView.requestFullscreen();
+      if (glossaryViews.requestFullscreen) {
+        glossaryViews.requestFullscreen();
       }
     } else if (document.exitFullscreen) {
       document.exitFullscreen();

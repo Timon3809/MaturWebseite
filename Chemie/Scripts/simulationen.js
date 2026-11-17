@@ -207,6 +207,7 @@
   const atomStructure = document.getElementById("atom-shells");
   const periodicTable = document.getElementById("periodic-table");
   const periodicHeadings = document.querySelector(".periodic-group-headings");
+  const periodicLegend = document.querySelector(".periodic-legend");
   const elementSearch = document.getElementById("element-search");
   const periodicCount = document.getElementById("periodic-count");
   const equilibriumParticles = document.getElementById("equilibrium-particles");
@@ -1012,11 +1013,19 @@
   function addNucleus(element) {
     const centerX = 360;
     const centerY = 280;
-    const nucleons = [
-      ...Array.from({ length: element.atomicNumber }, () => ({ type: "proton", label: "+" })),
-      ...Array.from({ length: element.massNumber - element.atomicNumber }, () => ({ type: "neutron", label: "n" }))
-    ];
+    const nucleons = Array.from({ length: element.massNumber }, (_, index) => {
+      const protonsBefore = Math.round((index * element.atomicNumber) / element.massNumber);
+      const protonsAfter = Math.round(((index + 1) * element.atomicNumber) / element.massNumber);
+      return protonsAfter > protonsBefore
+        ? { type: "proton", label: "+" }
+        : { type: "neutron", label: "n" };
+    });
     const positions = nucleusPositions(nucleons.length);
+    const maxPositionRadius = positions.reduce(
+      (maxRadius, position) => Math.max(maxRadius, Math.hypot(position.x, position.y)),
+      0
+    );
+    const scale = maxPositionRadius > 40 ? 40 / maxPositionRadius : 1;
     const core = svgElement("circle", {
       cx: centerX,
       cy: centerY,
@@ -1027,25 +1036,28 @@
     });
     atomStructure.append(core);
 
-    nucleons.slice(0, 37).forEach((nucleon, index) => {
+    nucleons.forEach((nucleon, index) => {
       const position = positions[index];
       const particle = svgElement("g", {
         class: `nucleon nucleon-${nucleon.type}`,
         "aria-label": nucleon.type === "proton" ? "Proton" : "Neutron"
       });
       particle.append(svgElement("circle", {
-        cx: centerX + position.x,
-        cy: centerY + position.y,
-        r: "7.4",
+        cx: centerX + position.x * scale,
+        cy: centerY + position.y * scale,
+        r: String(7.4 * scale),
         fill: `url(#atom-nucleus-${nucleon.type})`
       }));
-      const label = svgElement("text", {
-        x: centerX + position.x,
-        y: centerY + position.y + 0.5,
-        fill: nucleon.type === "proton" ? "#fffefa" : "#fffefa"
-      });
-      label.textContent = nucleon.label;
-      particle.append(label);
+      if (scale >= 0.7) {
+        const label = svgElement("text", {
+          x: centerX + position.x * scale,
+          y: centerY + position.y * scale + 0.5 * scale,
+          fill: "#fffefa",
+          "font-size": String(9 * scale)
+        });
+        label.textContent = nucleon.label;
+        particle.append(label);
+      }
       atomStructure.append(particle);
     });
   }
@@ -1164,15 +1176,10 @@
     document.querySelectorAll(".atom-legend-bohr-item").forEach((item) => { item.hidden = atomRepresentation !== "bohr"; });
     document.querySelector(".atom-legend-core-item").hidden = atomRepresentation !== "core";
     document.querySelector(".atom-legend-valence-item").hidden = atomRepresentation !== "core";
-    document.getElementById("atom-representation-note").textContent = atomRepresentation === "bohr"
-      ? "Schematische Darstellung eines neutralen Atoms im vereinfachten Bohr-Modell. Die Nuklide sind Beispiele; bei Elementen ohne stabile Isotope ist ein langlebiges Isotop gewählt. Kernteilchen, Abstände und Grössen sind nicht massstabsgetreu."
-      : "Der Atomrumpf umfasst den Kern und die inneren Elektronen; die Punkte zeigen die Elektronen der äussersten Schale. Die positive Ladung entspricht der Zahl dieser Valenzelektronen. Nicht massstabsgetreu.";
     document.getElementById("atom-diagram-title").textContent = atomRepresentation === "bohr"
       ? `Bohr-Modell von ${element.name}`
       : `Atomrumpf- und Valenzelektronenmodell von ${element.name}`;
-    const nucleusDescription = element.massNumber > 37
-      ? "Nur eine kleine Auswahl der Kernteilchen ist eingezeichnet."
-      : "Der Kern ist schematisch gezeichnet.";
+    const nucleusDescription = "Alle Kernteilchen sind schematisch dargestellt; Abstände und Grössen sind nicht massstabsgetreu.";
     document.getElementById("atom-diagram-desc").textContent = atomRepresentation === "bohr"
       ? `${element.atomicNumber} Proton${element.atomicNumber === 1 ? "" : "en"} und ${neutrons} Neutron${neutrons === 1 ? "" : "en"} im Kern; ${element.atomicNumber} Elektron${element.atomicNumber === 1 ? "" : "en"} auf ${shells.length} Schale${shells.length === 1 ? "" : "n"}: ${shells.join(", ")}. ${nucleusDescription}`
       : `${element.name}: Atomrumpf mit Ladung +${shells[shells.length - 1]} und ${shells[shells.length - 1]} Valenzelektron${shells[shells.length - 1] === 1 ? "" : "en"}.`;
@@ -1201,6 +1208,49 @@
       }
     });
     periodicCount.textContent = query ? `${visibleCount} von ${elements.length} Elementen` : `${elements.length} Elemente`;
+  }
+
+  function initializePeriodicLegend() {
+    let hoveredCategory = null;
+    let focusedCategory = null;
+    let pinnedCategory = null;
+
+    function updateHighlight() {
+      const activeCategory = hoveredCategory || focusedCategory || pinnedCategory;
+      periodicTable.querySelectorAll(".periodic-element").forEach((button) => {
+        button.classList.toggle(
+          "is-dimmed",
+          Boolean(activeCategory) && !button.classList.contains(activeCategory)
+        );
+      });
+      periodicLegend.querySelectorAll("[data-category]").forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.category === pinnedCategory));
+      });
+    }
+
+    periodicLegend.querySelectorAll("[data-category]").forEach((button) => {
+      const category = button.dataset.category;
+      button.addEventListener("pointerenter", () => {
+        hoveredCategory = category;
+        updateHighlight();
+      });
+      button.addEventListener("pointerleave", () => {
+        hoveredCategory = null;
+        updateHighlight();
+      });
+      button.addEventListener("focus", () => {
+        focusedCategory = category;
+        updateHighlight();
+      });
+      button.addEventListener("blur", () => {
+        focusedCategory = null;
+        updateHighlight();
+      });
+      button.addEventListener("click", () => {
+        pinnedCategory = pinnedCategory === category ? null : category;
+        updateHighlight();
+      });
+    });
   }
 
   function renderPeriodicTable() {
@@ -1828,6 +1878,7 @@
   const initialModelMode = restoreSimulationPreferences();
   renderPeriodicTable();
   filterElements();
+  initializePeriodicLegend();
   periodicTable.addEventListener("keydown", navigatePeriodicTable);
   elementSearch.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
