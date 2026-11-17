@@ -64,6 +64,7 @@
 
   const section     = sidebar.dataset.navSection;
   const currentPage = sidebar.dataset.navPage;
+  const navBase     = sidebar.dataset.navBase || "";
   const config      = sections[section];
 
   const header = document.querySelector(".workspace > header");
@@ -99,7 +100,7 @@
 
   const brand     = document.createElement("a");
   brand.className = "brand";
-  brand.href      = config.brand.href;
+  brand.href      = navBase + config.brand.href;
   brand.innerHTML = `
     <span class="brand-mark">${config.brand.mark}</span>
     <span class="brand-copy"><strong>${config.brand.name}</strong><small>${config.brand.tag}</small></span>
@@ -110,7 +111,7 @@
   nav.innerHTML = config.links.map((link) => {
     const isActive  = link.page === currentPage;
     return `
-      <a class="nav-link${isActive ? " is-active" : ""}" href="${link.href}">
+      <a class="nav-link${isActive ? " is-active" : ""}" href="${navBase}${link.href}">
         <span class="nav-icon">${link.icon}</span>
         ${link.label}
       </a>

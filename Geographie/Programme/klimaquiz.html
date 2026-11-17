@@ -9,56 +9,63 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<link rel="stylesheet" href="../../styles.css">
+<script src="../../site-nav.js" defer></script>
 
 <style>
 :root {
- --navy:#173d53;
- --blue:#00a6df;
+ --navy:var(--ink);
  --red:#be4b48;
- --green:#21845c;
- --bg:#edf2f6;
- --border:#dce4e9;
- --text:#263746;
+ --bg:var(--paper);
+ --border:var(--line);
+ --text:var(--ink);
 }
 * {box-sizing:border-box}
 body {
  margin:0;
  background:var(--bg);
  color:var(--text);
- font-family:Arial,sans-serif;
+ font-family:var(--sans);
 }
-header {
- background:var(--navy);
- color:white;
- padding:24px;
- text-align:center;
-}
-header h1 {margin:0 0 8px}
-main {max-width:1650px;margin:22px auto;padding:14px}
+main {width:min(100%,1180px);margin:0 auto;padding:31px 0 43px}
 .card {
- background:white;
- border-radius:12px;
- padding:20px;
- margin-bottom:18px;
- box-shadow:0 3px 12px #0000000b;
-}
-button,select {
- padding:10px 14px;
+ border:1px solid var(--line);
+ background:var(--white);
  border-radius:7px;
- border:1px solid var(--border);
- font-size:15px;
+ padding:20px;
+ margin-bottom:13px;
 }
-button {
- background:#267da7;
- color:white;
+button:not(.theme-toggle) {
+ display:inline-flex;
+ min-height:39px;
+ align-items:center;
+ justify-content:center;
+ gap:8px;
+ border:1px solid transparent;
+ border-radius:5px;
+ background:var(--ink);
+ color:var(--paper);
+ padding:0 14px;
+ font-size:11px;
+ font-weight:600;
  cursor:pointer;
- border:0;
+ transition:background .16s, color .16s, border-color .16s;
 }
-button:hover {filter:brightness(.92)}
-button:disabled {opacity:.5;cursor:not-allowed}
-.secondary {background:#657d8d}
+select {
+ min-height:41px;
+ border:1px solid var(--border);
+ border-radius:5px;
+ background:var(--white);
+ color:var(--ink);
+ padding:0 11px;
+ font:11px var(--sans);
+}
+button:not(.theme-toggle):hover {background:var(--green);color:var(--paper)}
+button:not(.theme-toggle):disabled {opacity:.5;cursor:not-allowed}
+.secondary {border-color:var(--border)!important;background:var(--white)!important;color:var(--ink)!important}
+.secondary:hover {background:var(--paper)!important}
 .hidden {display:none!important}
-.muted {color:#75838e;font-size:13px}
+.muted {color:var(--muted);font-size:10px}
 .controls {display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 .layout {
  display:grid;
@@ -72,15 +79,15 @@ button:disabled {opacity:.5;cursor:not-allowed}
  gap:15px;
 }
 .diagram {
- border:2px solid var(--border);
- border-radius:11px;
+ border:1px solid var(--border);
+ border-radius:7px;
  padding:12px;
  min-width:0;
  transition:.15s;
 }
 .diagram.active {
- border-color:#267da7;
- background:#f1faff;
+ border-color:var(--blue);
+ background:var(--paper);
 }
 .diagram.assigned {border-color:var(--green)}
 .diagram h3 {margin:2px 0 8px}
@@ -93,13 +100,14 @@ button:disabled {opacity:.5;cursor:not-allowed}
 .diagram .assign {
  width:100%;
  margin-top:8px;
- background:#657d8d;
+ background:var(--blue);
+ color:var(--ink);
 }
-.diagram .assign.selected {background:#267da7}
+.diagram .assign.selected {background:var(--ink);color:var(--paper)}
 .assignment {
  padding:8px;
  margin-top:8px;
- background:#f1f4f6;
+ background:var(--paper);
  border-radius:6px;
  font-size:13px;
 }
@@ -113,12 +121,12 @@ button:disabled {opacity:.5;cursor:not-allowed}
 #mapInfo {
  padding:12px;
  margin:12px 0;
- background:#edf6f8;
+ background:var(--paper);
  border-radius:8px;
 }
 .progress {
  height:10px;
- background:#e5ebef;
+ background:var(--line);
  border-radius:20px;
  overflow:hidden;
 }
@@ -135,7 +143,7 @@ button:disabled {opacity:.5;cursor:not-allowed}
  top:0;
  width:min(460px,95vw);
  height:100vh;
- background:white;
+ background:var(--white);
  box-shadow:-5px 0 25px #0003;
  padding:25px;
  overflow-y:auto;
@@ -148,9 +156,9 @@ button:disabled {opacity:.5;cursor:not-allowed}
  padding:14px 0;
  line-height:1.55;
 }
-.schema-section h3 {color:#17647d;margin-bottom:5px}
+.schema-section h3 {color:var(--green);margin-bottom:5px}
 .result {
- background:white;
+ background:var(--white);
  border:1px solid var(--border);
  border-radius:10px;
  padding:17px;
@@ -161,7 +169,7 @@ button:disabled {opacity:.5;cursor:not-allowed}
 .bad {color:#c34242;font-weight:bold}
 #loading {
  padding:14px;
- background:#e9f4f8;
+ background:var(--paper);
  border-radius:8px;
  margin-top:12px;
 }
@@ -235,19 +243,29 @@ button:disabled {opacity:.5;cursor:not-allowed}
 
 .main-navigation {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 12px;
-    padding: 15px;
-    background: white;
-    border-bottom: 1px solid var(--border);
+    gap: 6px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+    padding: 0 0 12px;
+}
+
+.main-navigation button:not(.is-active) {
+    border-color: var(--line);
+    background: var(--white);
+    color: var(--ink);
+}
+
+.main-navigation button:not(.is-active):hover {
+    background: var(--paper);
 }
 
 /* KLIMAATLAS */
 
 #atlasPage {
-    max-width: 1650px;
-    margin: 22px auto;
+    max-width: 100%;
+    margin: 0;
 }
 
 .atlas-map {
@@ -300,7 +318,7 @@ button:disabled {opacity:.5;cursor:not-allowed}
     border: 1px solid var(--border);
     border-radius: 10px;
     padding: 12px;
-    background: white;
+    background: var(--white);
     min-width: 0;
     cursor: pointer;
     transition: .15s;
@@ -308,12 +326,12 @@ button:disabled {opacity:.5;cursor:not-allowed}
 
 .atlas-chart-card:hover {
     border-color: var(--blue);
-    background: #f3faff;
+    background: var(--paper);
 }
 
 .atlas-chart-card.active {
     border: 2px solid var(--blue);
-    background: #f1faff;
+    background: var(--paper);
 }
 
 .atlas-chart-card h3 {
@@ -327,7 +345,7 @@ button:disabled {opacity:.5;cursor:not-allowed}
 }
 
 .atlas-info {
-    background: #edf6f8;
+    background: var(--paper);
     border-radius: 8px;
     padding: 12px;
     margin: 12px 0;
@@ -389,9 +407,9 @@ button:disabled {opacity:.5;cursor:not-allowed}
     top: 0;
     z-index: 5;
 
-    background: #f1faff;
-    border: 4px solid #267da7;
-    border-radius: 12px;
+    background: var(--paper);
+    border: 2px solid var(--blue);
+    border-radius: 7px;
     padding: 14px;
     box-shadow: 0 3px 12px #00000012;
 }
@@ -472,9 +490,9 @@ button:disabled {opacity:.5;cursor:not-allowed}
 
 
 .atlas-selected-card {
-    background: #f1faff;
-    border: 4px solid #267da7;
-    border-radius: 12px;
+    background: var(--paper);
+    border: 2px solid var(--blue);
+    border-radius: 7px;
     padding: 14px;
     box-shadow: 0 3px 12px #00000012;
 }
@@ -528,28 +546,78 @@ button:disabled {opacity:.5;cursor:not-allowed}
 
 }
 
+.card h2 { margin: 0 0 12px; font: 600 16px var(--display); letter-spacing: -.3px; }
+.card h3 { font: 600 13px var(--display); }
+.main-navigation button { min-width: 150px; }
+.main-navigation button.is-active { border-color: var(--ink); }
+.climate-detective > .page-heading { margin-top: 17px; }
+#map, .atlas-map { border-radius: 7px; }
+#schema h2 { font: 600 20px var(--display); letter-spacing: -.4px; }
+#schema p, #schema li { color: var(--ink); font-size: 11px; }
+#schema .schema-section h3 { font: 600 13px var(--display); }
+.atlas-chart-card.active { border-color: var(--blue); background: var(--paper); }
+.atlas-selected-card { box-shadow: none; }
+:root[data-theme="dark"] .diagram.active,
+:root[data-theme="dark"] .assignment,
+:root[data-theme="dark"] #mapInfo,
+:root[data-theme="dark"] .atlas-info,
+:root[data-theme="dark"] #loading { background: #30353b; color: var(--ink); }
+:root[data-theme="dark"] .diagram.active,
+:root[data-theme="dark"] .atlas-chart-card.active,
+:root[data-theme="dark"] .atlas-selected-card { border-color: var(--blue); }
+:root[data-theme="dark"] button:not(.secondary):not(.theme-toggle) { background: #aebac4; color: #1a1c20; }
+:root[data-theme="dark"] button:not(.secondary):not(.theme-toggle):hover { background: #c1cbd3; color: #1a1c20; }
+:root[data-theme="dark"] .main-navigation button:not(.is-active) { border-color: var(--line); background: var(--white); color: var(--ink); }
+:root[data-theme="dark"] .main-navigation button:not(.is-active):hover { background: #30353b; }
+:root[data-theme="dark"] .secondary { border-color: var(--line)!important; background: var(--white)!important; color: var(--ink)!important; }
+:root[data-theme="dark"] .secondary:hover { background: #30353b!important; }
+:root[data-theme="dark"] .atlas-chart-card:hover { background: #30353b; }
+:root[data-theme="dark"] .leaflet-popup-content-wrapper,
+:root[data-theme="dark"] .leaflet-popup-tip { background: var(--white); color: var(--ink); }
+:root[data-theme="dark"] .leaflet-control-zoom a,
+:root[data-theme="dark"] .leaflet-control-layers { border-color: var(--line); background: var(--white); color: var(--ink); }
+@media (max-width: 560px) {
+  .workspace > header .breadcrumb { flex: 1; min-width: 0; overflow: hidden; }
+  .workspace > header .breadcrumb > :not(:last-child) { display: none; }
+}
+
 
 </style>
 </head>
 
 <body>
-
+<div class="app-shell">
+<aside class="sidebar" data-nav-section="geographie" data-nav-page="programs" data-nav-base="../"></aside>
+<div class="workspace">
 <header>
- <h1>🌍 Klimazonen-Detektiv</h1>
- <p>Bestimme die Klimagruppen nach Köppen und ordne die Klimadiagramme ihren Standorten zu.</p>
+ <div class="breadcrumb">
+  <a href="../../index.html">VORMATUR</a>
+  <span class="breadcrumb-divider">/</span>
+  <a href="../index.html">GEOGRAPHIE</a>
+  <span class="breadcrumb-divider">/</span>
+  <a href="../programme.html">PROGRAMME</a>
+  <span class="breadcrumb-divider">/</span>
+  <span>KLIMAZONEN-DETEKTIV</span>
+ </div>
 </header>
 
-<nav class="main-navigation">
-    <button id="quizNavButton">
-        🧩 Klimazonen-Detektiv
+<main>
+<section class="content-view climate-detective">
+ <div class="page-heading">
+  <span class="eyebrow dark-eyebrow">GEOGRAPHIE / ÜBEN</span>
+  <h1>Klimazonen-Detektiv</h1>
+  <p>Bestimme die Klimagruppen nach Köppen und ordne die Klimadiagramme ihren Standorten zu.</p>
+ </div>
+
+<nav class="main-navigation" aria-label="Ansicht wählen">
+    <button id="quizNavButton" class="is-active" type="button" aria-pressed="true">
+        Klimazonen-Detektiv
     </button>
 
-    <button id="atlasNavButton" class="secondary">
-        🌍 Interaktiver Klimaatlas
+    <button id="atlasNavButton" type="button" aria-pressed="false">
+        Interaktiver Klimaatlas
     </button>
 </nav>
-
-<main>
 
 <!-- START -->
 <section class="card" id="start">
@@ -870,6 +938,7 @@ button:disabled {opacity:.5;cursor:not-allowed}
 </section>
 
 
+</section>
 </main>
 
 
@@ -1014,6 +1083,8 @@ button:disabled {opacity:.5;cursor:not-allowed}
     </div>
 
 </aside>
+</div>
+</div>
 
 <script>
 "use strict";
@@ -2309,6 +2380,10 @@ function openAtlas() {
     $("end").classList.add("hidden");
 
     $("atlasPage").classList.remove("hidden");
+    $("quizNavButton").classList.remove("is-active");
+    $("quizNavButton").setAttribute("aria-pressed", "false");
+    $("atlasNavButton").classList.add("is-active");
+    $("atlasNavButton").setAttribute("aria-pressed", "true");
 
     loadAtlas();
 }
@@ -2316,6 +2391,10 @@ function openAtlas() {
 function backToQuiz() {
 
     $("atlasPage").classList.add("hidden");
+    $("quizNavButton").classList.add("is-active");
+    $("quizNavButton").setAttribute("aria-pressed", "true");
+    $("atlasNavButton").classList.remove("is-active");
+    $("atlasNavButton").setAttribute("aria-pressed", "false");
 
     $("start").classList.toggle(
         "hidden",
