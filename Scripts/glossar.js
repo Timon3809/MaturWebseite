@@ -1,6 +1,6 @@
-const glossaryData = window.glossaryData;
+const glossaryData = window.subjectData?.glossary;
 if (!glossaryData?.categories) {
-  throw new Error("Glossardaten müssen unter window.glossaryData.categories verfügbar sein.");
+  throw new Error("Glossardaten müssen unter window.subjectData.glossary.categories verfügbar sein.");
 }
 
 const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (character) => ({

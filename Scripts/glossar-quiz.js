@@ -1,21 +1,17 @@
 // Lernmodus für die Glossarseiten (Biologie, Geographie):
 // Karteikarten, Multiple Choice mit 8 Optionen (beide Richtungen) und Schreibmodus.
 (() => {
-  // Chemie/Geschichte liefern window.glossaryData.categories,
-  // Biologie/Geographie window.historyData.glossary.
-  const glossaryData = window.glossaryData?.categories ?? window.historyData?.glossary ?? {};
+  const glossaryData = window.subjectData?.glossary?.categories ?? {};
   const topicNames = Object.keys(glossaryData);
   const glossaryEntries = Object.entries(glossaryData).flatMap(([topic, entries]) =>
     entries.map((entry) => ({ ...entry, topic }))
   );
 
-  // Gesteins-Lernsektion (nur Geographie): window.rockData aus Geographie/Scripts/glossar.js.
-  const rockDefs = window.rockData ?? [];
+  // Fachspezifische Lerninhalte leben in subjectData.features.
+  const rockDefs = window.subjectData?.features?.rocks?.data ?? [];
   const rockNames = rockDefs.map((rock) => rock.name);
-  const rockCategories = window.rockCategories ?? {};
-  const rockImageBase = window.location.pathname.includes('/Geographie/') || window.location.pathname.includes('\\Geographie\\')
-    ? 'Gesteine/'
-    : '../Gesteine/';
+  const rockCategories = window.subjectData?.features?.rocks?.categories ?? {};
+  const rockImageBase = 'Resourcen/Bilder/Gesteine/';
   const rockEntry = (rock, file) => ({
     name: rock.name,
     accept: rock.accept,

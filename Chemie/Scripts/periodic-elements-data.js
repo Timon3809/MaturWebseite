@@ -1,5 +1,7 @@
-﻿// Element positions, shell populations, and representative isotope mass numbers.
-window.periodicElements = [
+// Element positions, shell populations, and representative isotope mass numbers.
+window.subjectData = window.subjectData || {};
+window.subjectData.features = window.subjectData.features || {};
+window.subjectData.features.periodicElements = [
   { symbol: "H", name: "Wasserstoff", atomicNumber: 1, massNumber: 1, group: 1, period: 1, shells: [1], category: "nonmetal" },
   { symbol: "He", name: "Helium", atomicNumber: 2, massNumber: 4, group: 18, period: 1, shells: [2], category: "noble-gas" },
   { symbol: "Li", name: "Lithium", atomicNumber: 3, massNumber: 7, group: 1, period: 2, shells: [2,1], category: "alkali" },

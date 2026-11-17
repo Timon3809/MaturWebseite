@@ -1,4 +1,5 @@
-window.glossaryData = {
+window.subjectData = window.subjectData || {};
+window.subjectData.glossary = {
   mindmap: { name: "Chemie-Glossar" },
   categories: {
     "1 Atombau": [

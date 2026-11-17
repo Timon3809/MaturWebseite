@@ -175,7 +175,7 @@
     }
   ];
 
-  const elements = window.periodicElements;
+  const elements = window.subjectData.features.periodicElements;
 
   const svgNamespace = "http://www.w3.org/2000/svg";
   const maximumModelScale = 150;

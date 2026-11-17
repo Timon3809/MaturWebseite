@@ -1,4 +1,5 @@
-window.summaryData = {
+window.subjectData = window.subjectData || {};
+window.subjectData.summaries = {
   topics: [
     {
       id: "topic-1",

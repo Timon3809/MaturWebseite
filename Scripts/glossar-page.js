@@ -1,0 +1,134 @@
+(() => {
+  const root = document.getElementById("glossary-app");
+  const { navSection, sectionLabel, headingEyebrow, quizletUrl } = document.body.dataset;
+
+  if (!root || !navSection || !sectionLabel || !headingEyebrow) {
+    throw new Error("Glossarseite benötigt #glossary-app sowie navSection, sectionLabel und headingEyebrow.");
+  }
+
+  const hasRocks = Boolean(window.subjectData?.features?.rocks?.data?.length);
+
+  root.innerHTML = `
+    <div class="app-shell">
+      <aside class="sidebar"></aside>
+      <div class="workspace">
+        <header>
+          <div class="breadcrumb">
+            <a href="../index.html">VORMATUR</a>
+            <span class="breadcrumb-divider">/</span>
+            <a href="index.html" data-section-link></a>
+            <span class="breadcrumb-divider">/</span>
+            <span>GLOSSAR</span>
+          </div>
+        </header>
+        <main>
+          <section class="content-view">
+            <div class="page-heading">
+              <span class="eyebrow dark-eyebrow" data-heading-eyebrow></span>
+              <h1>Glossar</h1>
+              <a class="button button-primary" data-quizlet-link target="_blank" rel="noopener noreferrer" hidden>
+                Mit Quizlet lernen <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <section class="glossary-section" id="begriffe">
+              <div class="glossary-tools">
+                <label class="search-field">
+                  <span>⌕</span>
+                  <input id="glossary-search" type="search" placeholder="Begriff oder Definition suchen …" autocomplete="off">
+                </label>
+                <select class="field-control glossary-filter" id="glossary-topic">
+                  <option value="all">Alle Themen</option>
+                </select>
+                <span class="glossary-total" id="glossary-total"></span>
+              </div>
+              <div class="glossary-view-switch" role="group" aria-label="Darstellung wählen">
+                <button class="glossary-view-button is-active" type="button" data-view="list" aria-pressed="true">Liste</button>
+                <button class="glossary-view-button" type="button" data-view="mindmap" aria-pressed="false">Mindmap</button>
+                <button class="glossary-view-button" type="button" data-view="learn" aria-pressed="false">Lernen</button>
+              </div>
+              <div id="glossary-list-view">
+                <div class="glossary-grid" id="glossary-list"></div>
+                <p class="empty-state" id="glossary-empty" hidden>Keine passenden Begriffe gefunden. Versuche einen anderen Suchbegriff oder ein anderes Thema.</p>
+              </div>
+              <div class="glossary-map-view" id="glossary-map-view" hidden>
+                <div class="mindmap-toolbar">
+                  <p>Ziehe zum Verschieben, scrolle zum Zoomen und wähle einen Begriff für die Definition.</p>
+                  <div class="mindmap-controls" aria-label="Mindmap-Zoom">
+                    <button type="button" id="mindmap-zoom-in" aria-label="Heranzoomen">+</button>
+                    <button type="button" id="mindmap-zoom-out" aria-label="Herauszoomen">−</button>
+                    <button type="button" id="mindmap-center" aria-label="Mindmap zentrieren">Zentrieren</button>
+                    <button type="button" id="mindmap-fullscreen" aria-label="Mindmap im Vollbild anzeigen">Vollbild</button>
+                  </div>
+                </div>
+                <div class="mindmap-layout">
+                  <div class="mindmap-viewport" id="mindmap-viewport" tabindex="0" aria-label="Interaktive Glossar-Mindmap">
+                    <div class="mindmap-surface" id="mindmap-surface">
+                      <svg class="mindmap-connections" id="mindmap-connections" aria-hidden="true"></svg>
+                    </div>
+                  </div>
+                  <aside class="mindmap-detail" aria-live="polite">
+                    <span class="eyebrow dark-eyebrow">GLOSSAR</span>
+                    <h2 id="mindmap-detail-title">Begriff auswählen</h2>
+                    <p id="mindmap-detail-definition">Wähle einen Begriff in der Mindmap aus, um die Definition anzuzeigen.</p>
+                    <span id="mindmap-detail-topic"></span>
+                  </aside>
+                </div>
+                <p class="empty-state" id="mindmap-empty" hidden>Keine passenden Begriffe gefunden. Passe deine Suche oder den Themenfilter an.</p>
+              </div>
+              <div class="glossary-learn-view" id="glossary-learn-view" hidden>
+                <div class="learn-toolbar">
+                  <div class="learn-modes" id="learn-modes" role="group" aria-label="Lernmodus wählen">
+                    <button class="learn-mode is-active" type="button" data-mode="cards" aria-pressed="true">Karteikarten</button>
+                    <button class="learn-mode" type="button" data-mode="choice" aria-pressed="false">Multiple Choice</button>
+                    <button class="learn-mode" type="button" data-mode="write" aria-pressed="false">Schreiben</button>
+                    ${hasRocks ? '<button class="learn-mode" type="button" data-mode="rocks" aria-pressed="false">Steine</button>' : ""}
+                  </div>
+                  <div class="learn-directions" id="learn-direction" role="group" aria-label="Fragerichtung wählen" hidden>
+                    <button class="learn-mode is-active" type="button" data-direction="mixed" aria-pressed="true">Gemischt</button>
+                    <button class="learn-mode" type="button" data-direction="forward" aria-pressed="false">Begriff → Definition</button>
+                    <button class="learn-mode" type="button" data-direction="backward" aria-pressed="false">Definition → Begriff</button>
+                  </div>
+                  ${hasRocks ? `
+                    <div class="learn-directions" id="learn-rock-modes" role="group" aria-label="Stein-Antwortart wählen" hidden>
+                      <button class="learn-mode is-active" type="button" data-rockmode="choice" aria-pressed="true">Multiple Choice (8)</button>
+                      <button class="learn-mode" type="button" data-rockmode="name" aria-pressed="false">Benennen</button>
+                      <button class="learn-mode" type="button" data-rockmode="category" aria-pressed="false">Kategorie (7)</button>
+                    </div>
+                  ` : ""}
+                  <select class="field-control glossary-filter" id="learn-topic" aria-label="Thema filtern">
+                    <option value="all">Alle Themen</option>
+                  </select>
+                  <span class="glossary-total" id="learn-total"></span>
+                </div>
+                <div class="learn-stage" id="learn-stage"></div>
+                <div class="learn-actions" id="learn-actions"></div>
+              </div>
+            </section>
+          </section>
+        </main>
+      </div>
+    </div>
+  `;
+
+  const sidebar = root.querySelector(".sidebar");
+  sidebar.dataset.navSection = navSection;
+  sidebar.dataset.navPage = "glossary";
+  root.querySelector("[data-section-link]").textContent = sectionLabel;
+  root.querySelector("[data-heading-eyebrow]").textContent = headingEyebrow;
+
+  if (quizletUrl) {
+    const quizletLink = root.querySelector("[data-quizlet-link]");
+    quizletLink.href = quizletUrl;
+    quizletLink.hidden = false;
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const hash = window.location.hash.slice(1);
+    if (hash !== "lernen" && hash !== "steine") return;
+
+    root.querySelector('.glossary-view-button[data-view="learn"]')?.click();
+    if (hash === "steine" && hasRocks) {
+      root.querySelector('#learn-modes [data-mode="rocks"]')?.click();
+    }
+  }, { once: true });
+})();

@@ -21,9 +21,9 @@ const renderPlaceholder = (placeholder) => {
 };
 
 const summaryList = document.getElementById("summary-list");
-const summaryData = window.summaryData;
+const summaryData = window.subjectData?.summaries;
 if (!summaryList || !Array.isArray(summaryData?.topics)) {
-  throw new Error("Zusammenfassungen benötigen ein summary-list-Element und summaryData.topics.");
+  throw new Error("Zusammenfassungen benötigen ein summary-list-Element und subjectData.summaries.topics.");
 }
 
 const topicNumber = (topic) => {

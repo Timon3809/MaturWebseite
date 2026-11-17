@@ -8,7 +8,7 @@ const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (character) => (
 
 function getQuestionPool(questionType, selectedTopics) {
   const topicQuestions = selectedTopics.flatMap((topic) =>
-    (window.historyData.topicQuestions[topic.id]?.[questionType.id] ?? []).map((question) => ({
+    (window.subjectData.features.exam.topicQuestions[topic.id]?.[questionType.id] ?? []).map((question) => ({
       ...question,
       topic: topic.name,
       part: questionType.part,
@@ -21,7 +21,7 @@ function getQuestionPool(questionType, selectedTopics) {
   ])).values()];
 
   if (questionType.id === "eternalDate") {
-    return window.historyData.eternalDates.map(({ year, event }) => ({
+    return window.subjectData.features.timeline.dates.map(({ year, event }) => ({
       year,
       event,
       text: `In welchem Jahr fand «${event}» statt? ________`,
@@ -31,7 +31,7 @@ function getQuestionPool(questionType, selectedTopics) {
   }
   if (questionType.id !== "term") return uniqueQuestions;
 
-  const availableTerms = Object.values(window.historyData.glossary).flat()
+  const availableTerms = Object.values(window.subjectData.glossary.categories).flat()
     .map(({ term }) => term)
     .filter((term, index, terms) => terms.indexOf(term) === index)
     .map((term) => ({
@@ -58,7 +58,7 @@ function updateQuestionPlaceholders() {
   const selectionError = document.getElementById("topic-selection-error");
   const hasSelection = selectedTopics.length > 0;
 
-  placeholderContainer.innerHTML = window.historyData.examParts.map((part) => `
+  placeholderContainer.innerHTML = window.subjectData.features.exam.parts.map((part) => `
     <section class="exam-part-placeholder">
       <h4>${escapeHtml(part.name)}</h4>
       <ul>
@@ -82,7 +82,7 @@ function updateQuestionPlaceholders() {
 
 function populateTopics() {
   const options = document.getElementById("topic-options");
-  options.innerHTML = window.historyData.topics.map((topic) =>
+  options.innerHTML = window.subjectData.summaries.topics.map((topic) =>
     `<label class="topic-option"><input type="checkbox" name="topics" value="${escapeHtml(topic.id)}" checked><span>${escapeHtml(topic.id.replace("topic-", ""))}. ${escapeHtml(topic.name)}</span></label>`
   ).join("");
   updateQuestionPlaceholders();
@@ -92,11 +92,11 @@ function getSelectedTopics() {
   const selectedIds = new Set(
     [...document.querySelectorAll("#topic-options input:checked")].map((checkbox) => checkbox.value)
   );
-  return window.historyData.topics.filter((topic) => selectedIds.has(topic.id));
+  return window.subjectData.summaries.topics.filter((topic) => selectedIds.has(topic.id));
 }
 
 function chooseQuestions(selectedTopics) {
-  return window.historyData.examParts.flatMap((part) =>
+  return window.subjectData.features.exam.parts.flatMap((part) =>
     part.questionTypes.flatMap((questionType) => {
       const questionPool = getQuestionPool({ ...questionType, part: part.name }, selectedTopics);
       for (let index = questionPool.length - 1; index > 0; index -= 1) {
@@ -110,7 +110,7 @@ function chooseQuestions(selectedTopics) {
 
 function renderExam(questions, selectedTopics) {
   const result = document.getElementById("exam-result");
-  const topicName = selectedTopics.length === window.historyData.topics.length
+  const topicName = selectedTopics.length === window.subjectData.summaries.topics.length
     ? "Alle Themen"
     : selectedTopics.map((topic) => topic.name).join(", ");
   const includedParts = [...new Set(questions.map((question) => question.part))].join(" · ");
@@ -154,7 +154,7 @@ function getQuestionPoints(question) {
 }
 
 function getSourceImage(imageId) {
-  const image = window.historyQuestionImages?.[imageId];
+  const image = window.subjectData.features.questionImages?.[imageId];
   if (!image) throw new Error(`Die Quellenabbildung «${imageId}» ist nicht geladen.`);
   return image;
 }

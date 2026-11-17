@@ -1,5 +1,6 @@
-window.historyData = {
+window.subjectData = {
   glossary: {
+    categories: {
     "Klassische Genetik": [
       {
         term: "Allele",
@@ -1430,8 +1431,8 @@ window.historyData = {
         definition: "Überdüngung von Gewässern oder Ökosystemen mit Nährstoffen wie Stickstoff und Phosphor, die zu starkem Algenwachstum und Sauerstoffmangel führen kann."
       }
     ]
-  },
-  glossaryMindmap: {
+    },
+    mindmap: {
     name: "Biologiebegriffe",
     topics: [
       {
@@ -1564,8 +1565,10 @@ window.historyData = {
         ]
       }
     ]
+    }
   },
-  topics: [
+  summaries: {
+    topics: [
     {
       id: "topic-1",
       name: "Das Nervensystem des Menschen",
@@ -3260,5 +3263,6 @@ window.historyData = {
         }
       ]
     }
-  ]
+    ]
+  }
 };

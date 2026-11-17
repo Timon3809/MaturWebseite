@@ -81,6 +81,11 @@ MaturWebseite/
 ├── index.html              # Startseite / Fachübersicht
 ├── styles.css              # gesamtes Design (Sidebar, Cards, Timeline, …)
 ├── site-nav.js             # gemeinsame Sidebar-Navigation
+├── Scripts/                # gemeinsame Renderer und Lernlogik
+│   ├── glossar-page.js     # gemeinsames HTML-Gerüst aller Glossarseiten
+│   ├── glossar.js
+│   ├── glossar-quiz.js
+│   └── zusammenfassungen.js
 ├── Geschichte/
 │   ├── index.html          # Fachübersicht Geschichte
 │   ├── zusammenfassungen.html
@@ -91,8 +96,9 @@ MaturWebseite/
 │   ├── Scripts/
 │   │   ├── data.js             # alle Inhalte (Themen, Glossar, Fragen, …)
 │   │   ├── zusammenfassungen.js
-│   │   ├── glossar.js
 │   │   ├── ewige-daten.js
+│   │   ├── pruefungsfragen.js
+│   │   ├── pruefungsquellen.js
 │   │   └── pruefungssimulator.js
 │   └── Resourcen/
 │       ├── Bilder_Zusammenfassung/   # Abbildungen für die Themen
@@ -103,7 +109,12 @@ MaturWebseite/
 │   ├── glossar.html
 │   ├── dateien.html
 │   ├── pruefungssimulator.html
-│   └── Skript/                       # PDF-Skripte (Atombau, Molekulare Stoffe, …)
+│   ├── Scripts/
+│   │   ├── data.js
+│   │   ├── glossar-data.js
+│   │   ├── periodic-elements-data.js
+│   │   └── simulationen.js
+│   └── Skript/                 # PDF-Skripte (Atombau, Molekulare Stoffe, …)
 ├── Geographie/
 │   ├── index.html
 │   ├── zusammenfassungen.html
@@ -111,8 +122,6 @@ MaturWebseite/
 │   ├── dateien.html
 │   ├── Scripts/
 │   │   ├── data.js                 # 23 Themen + Glossar (nach Inhaltsverzeichnis Matur 2026)
-│   │   ├── glossar.js
-│   │   └── zusammenfassungen.js
 │   └── Resourcen/
 │       ├── Bilder/                 # Abbildungen (Gesteinskreislauf, Tethys-Profil, …)
 │       └── Dateien/                # Stoffpläne und Dokumente
@@ -124,31 +133,30 @@ MaturWebseite/
     ├── pruefungssimulator.html
     └── Scripts/
         ├── data.js                 # Glossar (5 Kategorien) + 27 Themen (Neurobiologie, Genetik, Immunbiologie, Ökologie)
-        ├── glossar.js
-        └── zusammenfassungen.js
 ```
 
 ## Technik
 
 - **Reines Frontend** — keine externen Frameworks, kein Backend, kein Build-Schritt
 - **Navigation** — `site-nav.js` baut die Sidebar je nach Fach und aktueller Seite auf (Attribute `data-nav-section` / `data-nav-page` am `<aside class="sidebar">`)
-- **Datenhaltung** — alle Lerninhalte liegen zentral in `Geschichte/Scripts/data.js` als `window.historyData`:
-  - `topics` — Zusammenfassungen mit HTML-Body
-  - `glossary` / `glossaryMindmap` — Begriffe und Struktur
-  - `eternalDates` / `timelineTopics` — Zeitstrahl
-  - `examParts` / `topicQuestions` — Prüfungsaufbau und Fragenpool
+- **Glossarseiten** — die vorhandenen `*/glossar.html`-Adressen bleiben bestehen; `Scripts/glossar-page.js` erzeugt das gemeinsame Gerüst, Fachseiten liefern nur ihre Metadaten und Datenquelle
+- **Datenhaltung** — Fach-Scripts stellen ihre Inhalte einheitlich über `window.subjectData` bereit:
+  - `glossary.categories` und optional `glossary.mindmap`
+  - `summaries.topics`
+  - optionale Fachfunktionen unter `features` (z. B. Zeitstrahl, Prüfung, Gesteine oder Simulationen)
+  - gemeinsame Renderer lesen diese Struktur fachunabhängig
 - **Export** — Word wird als HTML-basiertes `.doc` erzeugt, das PDF wird ohne Bibliothek direkt gebaut
 
 ## Inhalte erweitern
 
-Neue Geschichte-Themen oder Prüfungsfragen einfach in `Geschichte/Scripts/data.js` eintragen:
+Neue Geschichte-Themen oder Prüfungsfragen in `Geschichte/Scripts/data.js` ergänzen. Das Script veröffentlicht sie unter `window.subjectData`:
 
-1. **Zusammenfassung:** Eintrag unter `topics` mit `id`, `name` und `subtopics` (optional `summary` als HTML)
-2. **Prüfungsfragen:** Eintrag unter `topicQuestions` mit den Typen `term`, `trueFalse`, `understanding`, `analysis`
-3. **Glossar:** Begriff unter `glossary` (nach Epochen gruppiert) und in `glossaryMindmap` verknüpfen
-4. **Ewige Daten:** Ereignis unter `eternalDates` mit `year`, `event`, `explanation`
+1. **Zusammenfassung:** Daten unter `summaries.topics` mit `id`, `name` und `subtopics` (optional `summary` als HTML)
+2. **Prüfungsfragen:** Daten unter `features.exam.topicQuestions` mit den Typen `term`, `trueFalse`, `understanding`, `analysis`
+3. **Glossar:** Daten unter `glossary.categories` (nach Epochen gruppiert) und in `glossary.mindmap` verknüpfen
+4. **Ewige Daten:** Ereignisse unter `features.timeline.dates` mit `year`, `event`, `explanation`
 
-Für ein neues Fach (z. B. Chemie mit Inhalten): Ordnerstruktur von `Geschichte/` kopieren, Inhalte anpassen und im `site-nav.js`-Abschnitt `sections` einen eigenen Navigationsblock ergänzen.
+Fachspezifische Daten, die keine Zusammenfassung oder Glossar sind, gehören in `subjectData.features`. Für ein neues Fach können die gemeinsamen Renderer in `Scripts/` wiederverwendet werden; nur fachliche Inhalte und nötige Spezialfunktionen werden ergänzt.
 
 ## Hinweise
 

@@ -1,5 +1,4 @@
-window.summaryData = { topics: window.historyData.topics };
-window.summaryData.renderHtml = (html) => {
+window.subjectData.summaries.renderHtml = (html) => {
   const template = document.createElement("template");
   template.innerHTML = html;
   template.content.querySelectorAll(".summary-lazar").forEach((section) => {

@@ -1,5 +1,7 @@
-window.historyData = {
-  eternalDates: [
+window.subjectData = {
+  features: {
+    timeline: {
+      dates: [
   {
     year: 1815,
     event: "Wiener Kongress",
@@ -150,8 +152,8 @@ window.historyData = {
     event: "«9/11» – Terroranschläge in den USA",
     explanation: "Von Osama bin Ladens Terrornetzwerk Al-Qaida organisierte Anschläge mit entführten Passagierflugzeugen auf das World Trade Center in New York und andere Ziele in den USA fordern ca. 3'000 Todesopfer. Präsident George Bush Jr. ruft in einer Rede vor dem Kongress zum «War on Terrorism» auf; die USA marschieren in Afghanistan und 2003 in den Irak ein."
   }
-],
-  timelineTopics: [
+      ],
+      topics: [
   { name: "Industrialisierung",     start: 1760, end: 1914, color: "sage" },
   { name: "Nationalstaatsbildung",  start: 1815, end: 1871, color: "blue" },
   { name: "Imperialismus",          start: 1875, end: 1914, color: "ochre" },
@@ -160,8 +162,11 @@ window.historyData = {
   { name: "Zweiter Weltkrieg",      start: 1939, end: 1945, color: "rust" },
   { name: "Kalter Krieg",           start: 1945, end: 1991, color: "sage" },
   { name: "Globalisierung",         start: 2001, end: 2003, color: "ochre" }
-],
+      ]
+    }
+  },
   glossary: {
+    categories: {
   "Langes 19. Jahrhundert": [
   { term: "14-Punkte-Plan",                  definition: "Der 14-Punkte-Plan ist ein vom amerikanischen Präsidenten Woodrow Wilson eingeführtes Programm, dessen Ziel die Wiederherstellung des Friedens in Europa nach dem Ende des Ersten Weltkrieges war." },
   { term: "Alptraum der Koalitionen",        definition: "Alptraum der Koalitionen beschreibt Bismarcks Angst, dass Deutschland durch Bündnisse (Koalitionen) in einen Zweifrontenkrieg geraten könnte. Um dies zu verhindern, isolierte er Frankreich diplomatisch, indem er enge Beziehungen zu anderen europäischen Mächten pflegte (Russland und Österreich)." },
@@ -362,8 +367,8 @@ window.historyData = {
     definition: "Der Völkerbund war eine internationale Organisation, die nach dem Ersten Weltkrieg gegründet wurde. Er sollte die Zusammenarbeit zwischen Staaten fördern und für Frieden sorgen. Insgesamt gehörten ihm 63 Staaten an, aber nie alle gleichzeitig." 
   }
 ]
-},
-  glossaryMindmap: {
+    },
+    mindmap: {
     name: "Geschichtsbegriffe",
     topics: [
       {
@@ -465,12 +470,14 @@ window.historyData = {
         ]
       }
     ]
+    }
   },
 
 
 //Zusammenfassung
 //////////////////////////////////////////////
-  topics: [
+  summaries: {
+    topics: [
   {
     id: "topic-8",
     name: "Revolutionsjahre 1830 und 1848",
@@ -1486,15 +1493,16 @@ window.historyData = {
       { name: "Mauerfall und Zusammenbruch der UdSSR: Das Ende des Kalten Krieges" }
     ]
   }
-],
-
-
+    ]
+  }
+};
 
 
 
 //Prüfung
 ////////////////////////////////////////////
-  examParts: [
+window.subjectData.features.exam = {
+  parts: [
   {
     name: "Teil 1: Wissen und Begriffe",
     questionTypes: [

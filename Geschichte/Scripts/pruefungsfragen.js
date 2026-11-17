@@ -1,4 +1,4 @@
-window.historyData.topicQuestions = {
+window.subjectData.features.exam.topicQuestions = {
   "topic-8": {
     understanding: [
       {

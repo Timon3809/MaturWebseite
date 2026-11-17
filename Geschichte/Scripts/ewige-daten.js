@@ -1,5 +1,6 @@
-const firstYear     = Math.min(...window.historyData.eternalDates.map((entry) => entry.year));
-const lastYear      = Math.max(...window.historyData.eternalDates.map((entry) => entry.year));
+const timelineData  = window.subjectData.features.timeline;
+const firstYear     = Math.min(...timelineData.dates.map((entry) => entry.year));
+const lastYear      = Math.max(...timelineData.dates.map((entry) => entry.year));
 const yearSpan      = lastYear - firstYear;
 const scaleYears    = [1815, 1871, 1914, 1945, 1989, 2003];
 const periodsChart  = document.getElementById("periods-chart");
@@ -11,7 +12,7 @@ periodsChart.innerHTML = `
   <div class="periods-axis">
     ${scaleYears.map((year) => `<span style="--year-position:${((year - firstYear) / yearSpan) * 100}%">${year}</span>`).join("")}
   </div>
-  ${window.historyData.timelineTopics.map((topic) => {
+  ${timelineData.topics.map((topic) => {
     const left = ((topic.start - firstYear) / yearSpan) * 100;
     const width = ((topic.end - topic.start) / yearSpan) * 100;
     return `
@@ -25,7 +26,7 @@ periodsChart.innerHTML = `
 `;
 
 //Daten
-datesList.innerHTML = window.historyData.eternalDates.map((entry) => `
+datesList.innerHTML = timelineData.dates.map((entry) => `
   <li class="date-entry">
     <span class="timeline-marker"></span>
     <time>${entry.year}</time>
