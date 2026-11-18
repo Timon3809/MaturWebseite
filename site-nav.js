@@ -133,4 +133,40 @@
   }).join("");
 
   sidebar.replaceChildren(brand, nav);
+
+  // Sidebar ein-/ausklappen
+  const collapseKey = "vormatur-sidebar-collapsed";
+  const root = document.documentElement;
+  let collapsed = false;
+  try { collapsed = localStorage.getItem(collapseKey) === "1"; } catch (e) {}
+  root.classList.toggle("sidebar-collapsed", collapsed);
+
+  if (header) {
+    const left = document.createElement("div");
+    left.className = "topbar-left";
+    Array.from(header.children).forEach((child) => {
+      if (!child.classList.contains("topbar-right")) left.append(child);
+    });
+
+    const toggle = document.createElement("button");
+    toggle.className = "sidebar-toggle";
+    toggle.type = "button";
+    toggle.innerHTML = '<span aria-hidden="true">☰</span>';
+    const sync = () => {
+      const isCollapsed = root.classList.contains("sidebar-collapsed");
+      const label = isCollapsed ? "Menü ausklappen" : "Menü einklappen";
+      toggle.setAttribute("aria-label", label);
+      toggle.setAttribute("aria-expanded", String(!isCollapsed));
+      toggle.title = label;
+    };
+    toggle.addEventListener("click", () => {
+      const next = !root.classList.contains("sidebar-collapsed");
+      root.classList.toggle("sidebar-collapsed", next);
+      try { localStorage.setItem(collapseKey, next ? "1" : "0"); } catch (e) {}
+      sync();
+    });
+    sync();
+    left.prepend(toggle);
+    header.prepend(left);
+  }
 })();
