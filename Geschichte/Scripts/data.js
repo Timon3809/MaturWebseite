@@ -1466,19 +1466,94 @@ window.subjectData = {
   {
     id: "topic-24",
     name: "Die Zeit der Entspannung",
-    status: "not-covered",
     subtopics: [
-      { name: "Rüstungskontrollen und die \"Schlussakte\" von Helsinki" },
-      { name: "USA in den 1960er und -1970er Jahre" },
-      { name: "Die UdSSR: Vom \"Tauwetter\" zum Krieg in Afghanistan" }
+      {
+        name: "Rüstungskontrollen und die \"Schlussakte\" von Helsinki",
+        summary: `<h3>Entspannung trotz nuklearer Konkurrenz</h3>
+          <p>Im Kalten Krieg standen sich die USA und die UdSSR mit grossen Atomwaffenarsenalen gegenüber. Das Prinzip des «Gleichgewichts des Schreckens» sollte einen Angriff verhindern, machte aber einen Atomkrieg jederzeit möglich. Nach der Kubakrise wurde deutlicher, dass beide Supermächte Verantwortung für die Vermeidung einer Eskalation tragen. In den 1960er- und 1970er-Jahren vereinbarten sie deshalb Kommunikationswege und Regeln zur Begrenzung der Rüstung. Ziel war meist nicht vollständige Abrüstung, sondern eine begrenzte, gegenseitige Verbesserung statt gar keiner Einigung.</p>
+
+          <h3>Wichtige Abkommen zur Rüstungskontrolle</h3>
+          <ul>
+            <li><strong>1963 – «Heisser Draht»:</strong> Eine direkte Verbindung zwischen Washington und Moskau sollte die Kommunikation in Krisen beschleunigen. 1971 wurde sie modernisiert.</li>
+            <li><strong>1971 – Verringerung der Gefahr eines Atomkriegs:</strong> Die Supermächte verpflichteten sich zu Massnahmen, um das Risiko eines unbeabsichtigten Atomkriegs zu senken.</li>
+            <li><strong>1972 – SALT I und ABM-Vertrag:</strong> SALT I (Strategic Arms Limitation Talks) begrenzte bestimmte strategische Angriffswaffen. Der ABM-Vertrag schränkte Raketenabwehrsysteme ein, damit keine Seite auf einen Atomschlag hoffen konnte, ohne selbst verwundbar zu sein. Weitere Vereinbarungen sollten Zwischenfälle auf hoher See verhindern.</li>
+            <li><strong>1973 – Verhinderung eines Atomkriegs:</strong> USA und UdSSR vereinbarten Konsultationen und Zusammenarbeit, falls eine Gefahr eines Atomkriegs entstehen sollte.</li>
+            <li><strong>1974 und 1976 – Atomtestabkommen:</strong> Die Abkommen begrenzten unterirdische Atomtests; Tests zu friedlichen Zwecken blieben unter Bedingungen möglich.</li>
+            <li><strong>1979 – SALT II:</strong> Das Abkommen sollte die Zahl strategischer Atomwaffen und Trägersysteme weiter begrenzen. Es wurde nach dem sowjetischen Einmarsch in Afghanistan vom US-Senat nicht ratifiziert; beide Seiten hielten sich zunächst dennoch weitgehend an die vereinbarten Obergrenzen.</li>
+          </ul>
+
+          <h3>Die Schlussakte von Helsinki (1975)</h3>
+          <p>Auf der Konferenz über Sicherheit und Zusammenarbeit in Europa (KSZE) verständigten sich 35 Staaten aus Ost und West auf gemeinsame Grundsätze. Dazu gehörten die Achtung der bestehenden Grenzen und staatlichen Souveränität, der Verzicht auf Gewalt, die Nichteinmischung in innere Angelegenheiten sowie Zusammenarbeit und die Achtung der Menschenrechte. Die Schlussakte war politisch, aber nicht völkerrechtlich verbindlich. Die Sowjetunion akzeptierte damit die Nachkriegsordnung in Europa; zugleich konnten Menschenrechtsgruppen in den Ostblockstaaten die zugesagten Grundsätze als Argument nutzen, um staatliche Politik zu kritisieren.</p>
+
+          <h3>Bedeutung und Grenzen</h3>
+          <p>Die Abkommen beseitigten weder die Konkurrenz noch die Atomwaffen. Sie verbesserten aber die Kommunikation, verringerten bestimmte Risiken und schufen Regeln sowie Vertrauen für weitere Verhandlungen. Dass die Supermächte trotz ihrer Gegensätze miteinander verhandelten, war ein wichtiger Schritt der Entspannung. Die Einigung auf begrenzte Fortschritte war oft realistischer als der Anspruch auf vollständige Abrüstung.</p>`
+      },
+      {
+        name: "USA in den 1960er und -1970er Jahre",
+        summary: `<h3>Die Bürgerrechtsbewegung</h3>
+          <p>Auch nach dem Zweiten Weltkrieg waren Afroamerikanerinnen und Afroamerikaner besonders in den Südstaaten durch Rassentrennung und Diskriminierung benachteiligt. Präsident Truman setzte erste Schritte, etwa die Aufhebung der Rassentrennung in den Streitkräften 1948; eine umfassende Gleichstellung blieb jedoch umkämpft. Die Bürgerrechtsbewegung kämpfte mit Protesten und Gerichtsverfahren gegen die Segregation und für gleiche Rechte.</p>
+          <p><strong>Rosa Parks</strong> wurde 1955 in Montgomery verhaftet, weil sie ihren Sitzplatz im Bus nicht für einen weissen Fahrgast räumte. Der anschliessende Busboykott wurde zu einem wichtigen Erfolg des gewaltlosen Widerstands. Martin Luther King Jr. wurde zu einer führenden Stimme der Bewegung. Der <strong>Civil Rights Act von 1964</strong> verbot Diskriminierung und Rassentrennung unter anderem in öffentlichen Einrichtungen und im Arbeitsleben. Der Voting Rights Act von 1965 sollte diskriminierende Hindernisse bei Wahlen beseitigen. Gesetze beendeten jedoch nicht die alltägliche Benachteiligung und rassistische Gewalt.</p>
+          <p>Teile der Bewegung verlangten entschlosseneren Widerstand. Die 1966 gegründete <strong>Black Panther Party</strong> forderte in ihrem Programm unter anderem Selbstbestimmung, Arbeit, gute Wohn- und Bildungschancen sowie ein Ende der Polizeigewalt. Sie organisierte auch soziale Hilfsangebote in den Quartieren. <strong>Angela Davis</strong>, eine Schwarze Aktivistin und Wissenschaftlerin, setzte sich für Black Power und gegen Rassismus und politische Unterdrückung ein. Die Bewegung machte strukturelle Ungleichheit sichtbar, führte aber auch zu heftigen politischen Konflikten.</p>
+
+          <h3>Hintergrund des Vietnamkriegs</h3>
+          <p>Vietnam, Laos und Kambodscha hatten zur französischen Kolonie Indochina gehört. Nach der japanischen Besetzung im Zweiten Weltkrieg erklärte Ho Chi Minh 1945 die Unabhängigkeit Vietnams. Frankreich versuchte, seine Herrschaft wiederherzustellen; im Indochinakrieg besiegte die kommunistische Viet Minh die französischen Truppen 1954 bei Dien Bien Phu. Die Genfer Vereinbarungen teilten Vietnam vorläufig am 17. Breitengrad: Im Norden regierte Ho Chi Minh, im Süden entstand unter Ngo Dinh Diem ein von den USA unterstützter Staat. Geplante gesamtvietnamesische Wahlen fanden nicht statt. Der Vietcong, eine kommunistische Aufstandsbewegung im Süden, wurde vom Norden unterstützt.</p>
+          <p>Die USA verfolgten eine <strong>Containment-Politik</strong>: Sie wollten die Ausbreitung des Kommunismus eindämmen. Die «Domino-Theorie» besagte, dass weitere Länder kommunistisch werden könnten, falls Vietnam fiel. Damit wurde der Konflikt wie zuvor der Koreakrieg zu einem Stellvertreterkrieg im Kalten Krieg.</p>
+
+          <h3>Die Eskalation und der Krieg</h3>
+          <p>1964 führten Angriffe auf US-Schiffe im Golf von Tonkin – insbesondere der später umstrittene zweite Vorfall – dazu, dass der US-Kongress Präsident Lyndon B. Johnson weitreichende Vollmachten erteilte. Ab 1965 bombardierten die USA Nordvietnam im Rahmen der Operation «Rolling Thunder» und entsandten immer mehr Bodentruppen. Zeitweise standen über 500&nbsp;000 US-Soldaten in Vietnam. Die USA setzten ihre Luftüberlegenheit und enorme Feuerkraft ein; Bombardierungen und Angriffe trafen auch die Zivilbevölkerung.</p>
+          <p>Der Vietcong und Nordvietnam vermieden oft offene Schlachten und setzten auf Guerillataktik, Hinterhalte und die Unterstützung der Bevölkerung. Der Ho-Chi-Minh-Pfad durch Laos und Kambodscha versorgte die kommunistischen Truppen im Süden. Dschungel, schwieriges Gelände, unklare Fronten und die Schwäche der südvietnamesischen Regierung machten die militärische Überlegenheit der USA nur begrenzt wirksam. Die Tet-Offensive von 1968 war militärisch für die Kommunisten verlustreich, erschütterte in den USA aber das Vertrauen in die Erfolgsaussichten des Kriegs.</p>
+
+          <h3>Rückzug der USA und Folgen</h3>
+          <p>Wachsende Verluste, die Wehrpflicht und die immer kritischere Öffentlichkeit lösten in den USA grosse Proteste gegen den Krieg aus. Präsident Nixon verfolgte die «Vietnamisierung»: Südvietnamesische Truppen sollten den Kampf übernehmen, während US-Soldaten abgezogen wurden. Gleichzeitig weitete Nixon den Krieg auf Kambodscha und Laos aus. 1973 vereinbarten die Parteien in Paris den Abzug der US-Truppen. Der Krieg endete erst im April 1975 mit dem Sieg Nordvietnams und dem Fall Saigons; 1976 wurde Vietnam als Sozialistische Republik wiedervereinigt.</p>
+          <p>Laos und Kambodscha wurden ebenfalls in den Konflikt hineingezogen und erlebten Bürgerkriege und kommunistische Machtübernahmen. In den USA hinterliess der Krieg ein Trauma, viele Tote und Verletzte sowie grosses Misstrauen gegenüber politischen Begründungen für militärische Einsätze. Die Niederlage erschütterte zudem das Selbstbild der USA als unbesiegbare Weltmacht.</p>`
+      },
+      {
+        name: "Die UdSSR: Vom \"Tauwetter\" zum Krieg in Afghanistan",
+        summary: `<h3>Chruschtschows «Geheimrede» und das Tauwetter</h3>
+          <p>Nach Stalins Tod 1953 setzte sich Nikita Chruschtschow in der sowjetischen Führung durch. Am 20. Parteitag der KPdSU 1956 kritisierte er in einer nichtöffentlichen Rede Stalins Personenkult und Verbrechen. Chruschtschow stellte Stalin als Abweichung vom Marxismus-Leninismus dar und versprach einen neuen Kurs. Die Rede stärkte zunächst das Vertrauen in die neue Führung und leitete eine begrenzte <strong>Entstalinisierung</strong> ein: Stalin-Denkmäler wurden entfernt, politische Gefangene teilweise freigelassen und rehabilitiert, und Kunst sowie Wissenschaft erhielten zeitweise mehr Spielraum.</p>
+          <p>Das «Tauwetter» bedeutete jedoch keine Demokratie oder uneingeschränkte Meinungsfreiheit. Die Kommunistische Partei behielt die Macht und setzte weiterhin Grenzen für Kritik. Der Aufstand in Ungarn 1956 wurde von sowjetischen Truppen niedergeschlagen. Stalin-treue Parteigänger lehnten Chruschtschows Kurs ab; auch Mao Zedongs China und Nordkorea kritisierten die Entstalinisierung. Die sowjetisch-chinesischen Beziehungen verschlechterten sich zunehmend.</p>
+
+          <h3>Von Chruschtschow zu Breschnew</h3>
+          <p>Chruschtschow wurde 1964 abgesetzt und durch Leonid Breschnew ersetzt. Breschnews Führung setzte auf politische Stabilität und die Bewahrung der Parteiherrschaft. In der Praxis nahm die Stagnation zu: Reformen stockten, Dissidenten wurden verfolgt und die Meinungsfreiheit blieb eingeschränkt. 1968 rechtfertigte die Sowjetunion mit der sogenannten <strong>Breschnew-Doktrin</strong> die Niederschlagung des Prager Frühlings: Ein kommunistischer Staat sollte den Ostblock nicht verlassen dürfen.</p>
+
+          <h3>Afghanistan vor dem sowjetischen Einmarsch</h3>
+          <p>Afghanistan war ein gebirgiges, ethnisch vielfältiges Land an der Grenze zur Sowjetunion. Paschtunen bildeten die grösste Bevölkerungsgruppe; Tadschiken, Hazara und Usbeken waren ebenfalls bedeutende Gruppen. Die schwierige Gebirgslandschaft und die regionalen Unterschiede machten das Land schwer zu kontrollieren.</p>
+          <p>1973 stürzte Mohammed Daoud Khan die Monarchie und rief eine Republik aus. 1978 putschte die kommunistische Demokratische Volkspartei Afghanistans (DVPA) gegen ihn. Die Partei war gespalten; weitreichende Reformen stiessen bei der traditionell geprägten Landbevölkerung auf Widerstand. Nach der Ermordung des Parteiführers Nur Muhammad Taraki durch seinen Ministerpräsidenten Hafizullah Amin griff die Sowjetunion ein. Sie wollte den kommunistischen Verbündeten und ihren Einfluss an der Südgrenze sichern. Im Dezember 1979 marschierten sowjetische Truppen ein, beseitigten Amin und setzten Babrak Karmal als neuen Regierungschef ein.</p>
+
+          <h3>Der «sowjetische Vietnamkrieg»</h3>
+          <p>Die Sowjetunion konnte zwar Städte und wichtige Verkehrswege besetzen, aber das Land nicht dauerhaft kontrollieren. Die Mudschaheddin, islamistische und andere afghanische Widerstandsgruppen, nutzten Guerillataktiken und zogen sich in schwer zugängliche Gebirgsregionen zurück. Sie erhielten Waffen und Geld unter anderem über Pakistan von den USA, Saudi-Arabien und weiteren Unterstützern. Luftangriffe und Kämpfe forderten viele zivile Opfer. Der Krieg wurde für die Sowjetunion zu einem langen, kostspieligen Konflikt ohne militärischen Sieg – daher der Vergleich mit dem Vietnamkrieg der USA.</p>
+          <p>1988 vereinbarten Afghanistan, die Sowjetunion, die USA und Pakistan in Genf den Abzug. Am <strong>15. Februar 1989</strong> verliessen die letzten sowjetischen Soldaten das Land. Mehr als 15&nbsp;000 sowjetische Soldaten starben; die Zahl der afghanischen Opfer ist unklar, und Millionen Menschen wurden vertrieben. Der Abzug beendete die sowjetische Besetzung, nicht aber den afghanischen Bürgerkrieg: Die Kämpfe zwischen afghanischen Gruppen gingen weiter.</p>`
+      }
     ]
   },
   {
     id: "topic-25",
     name: "Blockfreiheit und nationale Wege",
-    status: "not-covered",
+    status: "partially-covered",
     subtopics: [
-      { name: "Aufstieg der Volksrepublik China" },
+      {
+        name: "Aufstieg der Volksrepublik China",
+        summary: `<h3>Von der Zersplitterung zur Volksrepublik</h3>
+          <p>Nach dem Ersten Weltkrieg war China politisch zersplittert und ausländischen Einflüssen ausgesetzt. Die Bewegung des <strong>Vierten Mai</strong> von 1919 wandte sich gegen die Behandlung Chinas im Versailler Vertrag und stärkte den Nationalismus. 1921 wurde die Kommunistische Partei Chinas (KPCh) gegründet. Zeitweise arbeiteten KPCh und nationalistische Guomindang (GMD) zusammen, um Warlords und ausländische Vorherrschaft zu bekämpfen.</p>
+          <p>Nach dem Sieg der GMD unter <strong>Chiang Kai-shek</strong> 1925/26 begann sie, die Kommunisten zu verfolgen. Diese zogen sich auf das Land zurück; der «Lange Marsch» von 1934/35 wurde später zum Gründungsmythos der KPCh. Während des japanischen Angriffskriegs (1937–1945) bildeten GMD und KPCh erneut eine gemeinsame Front. Nach Japans Niederlage flammte der Bürgerkrieg wieder auf. Die Kommunisten gewannen, Mao rief am <strong>1. Oktober 1949</strong> die Volksrepublik China aus. Chiang Kai-shek und die GMD flohen nach Taiwan.</p>
+
+          <h3>Maos Innen- und Gesellschaftspolitik</h3>
+          <p>Mao wollte eine kommunistische, klassenlose Gesellschaft schaffen und stützte sich dafür auf die Masse der Bevölkerung, besonders auf die Bauern. Land wurde umverteilt, Grossgrundbesitzer wurden enteignet und verfolgt. Die KPCh baute einen Einparteienstaat auf; politische Gegner und als «konterrevolutionär» bezeichnete Gruppen wurden unterdrückt. Mao sah die Revolution als dauerhaften Prozess und verlangte politische Loyalität statt unabhängiger Kritik.</p>
+
+          <h3>Der «Grosse Sprung nach vorn»</h3>
+          <p>Ab 1958 sollte China durch die Kollektivierung der Landwirtschaft und eine rasche Industrialisierung in kurzer Zeit zu einer modernen kommunistischen Grossmacht werden. Bauern wurden in Volkskommunen organisiert und sollten neben der Landwirtschaft auch Stahl herstellen, etwa in Hinterhoföfen. Unrealistische Produktionsvorgaben, Zwang und falsche Erfolgsmeldungen führten zu Fehlplanung und einem Einbruch der Ernten. Die Hungersnot kostete Millionen Menschen das Leben. Der «Grosse Sprung» scheiterte; pragmatischere Parteiführer wie Liu Shaoqi und Deng Xiaoping übernahmen zeitweise mehr Einfluss und leiteten eine wirtschaftliche Erholung ein.</p>
+
+          <h3>Kulturrevolution</h3>
+          <p>1966 startete Mao die <strong>Kulturrevolution</strong>, um seine Macht zu sichern und vermeintlich «kapitalistische» oder traditionelle Einflüsse zu bekämpfen. Er mobilisierte Jugendliche als <strong>Rote Garden</strong>; Maos «Rotes Büchlein» verbreitete seine Lehren. Schulen und Universitäten wurden zeitweise geschlossen, Funktionäre, Lehrpersonen und Intellektuelle verfolgt, gedemütigt oder getötet. Die Kampagne brachte Gewalt und Chaos und unterbrach die Bildung einer ganzen Generation. Nach Maos Tod 1976 wurde die sogenannte Viererbande verhaftet; die Kulturrevolution gilt als ein verlorenes Jahrzehnt.</p>
+
+          <h3>Aussenpolitik: vom Bündnis zur Öffnung</h3>
+          <ol>
+            <li><strong>Annäherung an die Sowjetunion:</strong> In den ersten Jahren erhielt China wirtschaftliche, technische und militärische Unterstützung aus Moskau.</li>
+            <li><strong>Sino-sowjetischer Bruch:</strong> Nach Stalins Tod verschärften sich die ideologischen und machtpolitischen Konflikte. Die Sowjetunion zog Fachleute ab; Grenzstreitigkeiten und bewaffnete Zwischenfälle folgten. China geriet zunehmend in Isolation.</li>
+            <li><strong>Öffnung gegenüber den USA:</strong> Aus Sorge vor der Sowjetunion näherte sich China den USA an. Präsident Nixon besuchte 1972 die Volksrepublik. 1971 erhielt die Volksrepublik Chinas Sitz in der UNO; Taiwan verlor ihn. Die Annäherung half China, seine internationale Isolation zu überwinden.</li>
+          </ol>
+          <p>Nach Maos Tod setzte sich unter Deng Xiaoping ab 1978 eine pragmatischere Politik durch: schrittweise Wirtschaftsreformen, technischer Fortschritt und Handel mit dem Ausland sollten den Wohlstand erhöhen. Anders als die Mao-Anhänger («Radikalen») betrachteten Deng und die «Gemässigten» Leistungsanreize und Fachwissen nicht als Gefahr für den Sozialismus. Die wirtschaftliche Öffnung bedeutete jedoch keine politische Demokratisierung: Die KPCh behielt ihre Macht.</p>`
+      },
       { name: "Die Schweiz während des Kalten Krieges" },
       { name: "Jugoslawien und die \"blockfreien\" Staaten" },
       { name: "Die Dekolonisation" }

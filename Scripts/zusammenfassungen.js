@@ -55,7 +55,7 @@ const renderTopic = (topic) => {
     <details class="summary-card">
       <summary>
         <span class="summary-number">${String(number).padStart(2, "0")}</span>
-        <span class="summary-title">${escapeHtml(topic.name)}${topic.status === "not-covered" ? '<span class="summary-status">NOCH NICHT BEHANDELT</span>' : ""}</span>
+        <span class="summary-title">${escapeHtml(topic.name)}${topic.status === "not-covered" ? '<span class="summary-status">NOCH NICHT BEHANDELT</span>' : topic.status === "partially-covered" ? '<span class="summary-status">TEILWEISE BEHANDELT</span>' : ""}</span>
         <span class="summary-toggle">+</span>
       </summary>
       <div class="summary-content">
