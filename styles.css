@@ -236,14 +236,8 @@ main { width: min(100%, 1180px); margin: 0 auto; padding: 31px 0 43px; }
 .summary-text .summary-svg svg { display: block; width: 100%; max-width: 640px; height: auto; margin: 12px auto 0; }
 .summary-text ol li::marker { color: #58745a; font-weight: 600; }
 .summary-text .summary-merke { max-width: 780px; margin: 12px 0; border-left: 3px solid #58745a; border-radius: 0 5px 5px 0; background: #f2f5ef; padding: 9px 12px; color: #4f5a4b; font-size: 11px; line-height: 1.7; }
-.summary-category { min-width: 0; border: 1px solid #c9d3c4; border-radius: 8px; background: #f2f5ef; }
-.summary-category > summary { display: grid; min-height: 64px; grid-template-columns: 1fr auto 24px; align-items: center; gap: 12px; padding: 0 18px; cursor: pointer; list-style: none; }
-.summary-category > summary::-webkit-details-marker { display: none; }
-.summary-category > summary .summary-title { font-size: 18px; font-weight: 600; color: #3f5a42; }
-.summary-category-count { color: #58745a; font: 500 11px var(--mono); }
-.summary-category > summary > .summary-toggle { justify-self: center; }
-.summary-category[open] > summary > .summary-toggle { transform: rotate(45deg); }
-.summary-category-body { display: grid; gap: 8px; padding: 0 12px 12px; }
+/* Oberkategorien (nur Biologie) sehen aus wie normale Themenkarten (.summary-card), wie bei Geographie */
+.summary-category-body { display: grid; gap: 8px; padding: 0 16px 16px; }
 /* Grid-Elemente dürfen schmaler als ihr Inhalt werden: breite Tabellen scrollen in .summary-table-wrap statt die Karte zu sprengen */
 .summary-card, .summary-subtopic, .summary-text { min-width: 0; }
 .summary-tag { color: #a09f94; font-size: 7px; letter-spacing: .45px; }
@@ -479,8 +473,6 @@ button.mindmap-node:hover, button.mindmap-node:focus-visible, button.mindmap-nod
   .exam-heading { align-items: flex-start; flex-direction: column; }
   .exam-actions { width: 100%; }
   .exam-actions .button { flex: 1; gap: 6px; padding: 0 8px; font-size: 9px; }
-  .summary-category > summary { grid-template-columns: 1fr 22px; padding: 0 12px; }
-  .summary-category-count { display: none; }
   .summary-category-body { padding: 0 6px 8px; }
   .summary-card summary { grid-template-columns: 28px 1fr 22px; gap: 7px; padding: 0 11px; }
   .summary-card > summary { grid-template-columns: 28px 1fr 22px; }
@@ -582,8 +574,7 @@ button.mindmap-node:hover, button.mindmap-node:focus-visible, button.mindmap-nod
 :root[data-theme="dark"] .summary-text h3,
 :root[data-theme="dark"] .summary-text h4,
 :root[data-theme="dark"] .summary-text caption,
-:root[data-theme="dark"] .summary-text th,
-:root[data-theme="dark"] .summary-category > summary .summary-title { color: var(--ink); }
+:root[data-theme="dark"] .summary-text th { color: var(--ink); }
 :root[data-theme="dark"] .subject-card-arrow,
 :root[data-theme="dark"] .placeholder-panel > span,
 :root[data-theme="dark"] .summary-number,
@@ -632,7 +623,6 @@ button.mindmap-node:hover, button.mindmap-node:focus-visible, button.mindmap-nod
 :root[data-theme="dark"] .simulator-aside,
 :root[data-theme="dark"] .summary-text th,
 :root[data-theme="dark"] .summary-merke,
-:root[data-theme="dark"] .summary-category,
 :root[data-theme="dark"] .learn-card-front,
 :root[data-theme="dark"] .learn-rock-image,
 :root[data-theme="dark"] .learn-option.is-correct { border-color: #4a5159; background: #2c3238; }
@@ -644,9 +634,8 @@ button.mindmap-node:hover, button.mindmap-node:focus-visible, button.mindmap-nod
 :root[data-theme="dark"] .summary-status { border-color: #66573b; background: #383225; color: #e0c58e; }
 :root[data-theme="dark"] .summary-text .summary-note-table td { border-color: #66573b; background: #383225; color: #e0c58e; }
 :root[data-theme="dark"] .summary-text .summary-merke { border-left-color: #aebac4; color: #d4d8dd; }
-:root[data-theme="dark"] .summary-category { border-color: #4c5258; }
-:root[data-theme="dark"] .summary-category > summary .summary-title,
-:root[data-theme="dark"] .summary-category-count { color: #c0c7ce; }
+/* Gezeichnete Schemata (Inline-SVG) im Dark-Mode auf hellem Feld wie die gescannten Abbildungen – ihre Farben sind für hellen Grund gewählt */
+:root[data-theme="dark"] .summary-text .summary-figure > svg { box-sizing: border-box; padding: 8px; border-radius: 6px; background: #f4f3ee; color: #454940; }
 :root[data-theme="dark"] .mindmap-viewport {
   border-color: var(--line);
   background-color: #24292e;
@@ -793,7 +782,6 @@ button.mindmap-node:hover, button.mindmap-node:focus-visible, button.mindmap-nod
 :root[data-theme] .feature-card,
 :root[data-theme] .panel,
 :root[data-theme] .exam-result,
-:root[data-theme] .summary-category,
 :root[data-theme] .learn-stage,
 :root[data-theme] .periods-panel,
 :root[data-theme] .mindmap-detail,
@@ -855,7 +843,6 @@ button.mindmap-node:hover, button.mindmap-node:focus-visible, button.mindmap-nod
 :root[data-theme] .learn-stage,
 :root[data-theme] .periods-panel,
 :root[data-theme] .mindmap-detail,
-:root[data-theme] .summary-category,
 :root[data-theme] .placeholder-panel { border-radius: var(--lg-radius); }
 :root[data-theme] .summary-card,
 :root[data-theme] .glossary-card,
@@ -952,8 +939,6 @@ button.mindmap-node:hover, button.mindmap-node:focus-visible, button.mindmap-nod
 :root[data-theme] .glossary-sections a:focus-visible { border-bottom-color: var(--lg-accent); }
 
 /* ---------- Zusammenfassungen ---------- */
-:root[data-theme] .summary-category > summary .summary-title,
-:root[data-theme] .summary-category-count,
 :root[data-theme] .summary-number,
 :root[data-theme] .date-entry time,
 :root[data-theme] .quizlet-link { color: var(--lg-accent-text); }

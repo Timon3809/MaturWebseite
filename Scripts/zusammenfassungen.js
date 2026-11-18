@@ -37,14 +37,16 @@ const topicNumber = (topic) => {
 
 // Optionales Feld "group": Themen mit gleicher Gruppe (z. B. Neurobiologie, Genetik, Immunbiologie, Ökologie)
 // werden in eine aufklappbare Oberkategorie gepackt. Themen ohne group bleiben unverändert auf oberster Ebene.
-const renderTopic = (topic) => {
-  const number = topicNumber(topic);
+// label: Nummer innerhalb einer Oberkategorie (z. B. "2.3"); ohne label gilt die eigene Themennummer.
+const renderTopic = (topic, label) => {
+  const number = label ?? topicNumber(topic);
+  const numberLabel = label ?? String(number).padStart(2, "0");
   const hasContent = topic.summary || topic.placeholder || topic.subtopics?.length;
   if (!hasContent) {
     return `
       <div class="summary-card summary-card-static">
         <div class="summary-static-row">
-          <span class="summary-number">${String(number).padStart(2, "0")}</span>
+          <span class="summary-number">${numberLabel}</span>
           <span class="summary-title">${escapeHtml(topic.name)}</span>
         </div>
       </div>
@@ -54,7 +56,7 @@ const renderTopic = (topic) => {
   return `
     <details class="summary-card">
       <summary>
-        <span class="summary-number">${String(number).padStart(2, "0")}</span>
+        <span class="summary-number">${numberLabel}</span>
         <span class="summary-title">${escapeHtml(topic.name)}${topic.status === "not-covered" ? '<span class="summary-status">NOCH NICHT BEHANDELT</span>' : topic.status === "partially-covered" ? '<span class="summary-status">TEILWEISE BEHANDELT</span>' : ""}</span>
         <span class="summary-toggle">+</span>
       </summary>
@@ -88,19 +90,19 @@ summaryData.topics.forEach((topic) => {
   else renderedEntries.push({ group: topic.group, topics: [topic] });
 });
 
+let groupCounter = 0;
 summaryList.innerHTML = renderedEntries.map((entry) => {
-  if (!entry.group) return entry.topics.map(renderTopic).join("");
-  const numbers = entry.topics.map(topicNumber);
-  const first = String(Math.min(...numbers)).padStart(2, "0");
-  const last = String(Math.max(...numbers)).padStart(2, "0");
+  if (!entry.group) return entry.topics.map((topic) => renderTopic(topic)).join("");
+  // Wie bei Geographie: Oberkategorie 01, 02, … und die Themen darin 1.1, 1.2, …
+  const groupNumber = ++groupCounter;
   return `
-    <details class="summary-category">
+    <details class="summary-card summary-category">
       <summary>
+        <span class="summary-number">${String(groupNumber).padStart(2, "0")}</span>
         <span class="summary-title">${escapeHtml(entry.group)}</span>
-        <span class="summary-category-count">${entry.topics.length} Themen · ${first}–${last}</span>
         <span class="summary-toggle">+</span>
       </summary>
-      <div class="summary-category-body">${entry.topics.map(renderTopic).join("")}</div>
+      <div class="summary-category-body">${entry.topics.map((topic, index) => renderTopic(topic, `${groupNumber}.${index + 1}`)).join("")}</div>
     </details>
   `;
 }).join("");
