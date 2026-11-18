@@ -52,6 +52,15 @@
         { label: "Übersicht", href: "index.html", icon: "◈", page: "overview" }
       ]
     },
+    franzoesisch: {
+      brand: { mark: "F", name: "Vormatur", tag: "FRANZÖSISCH", href: "../index.html" },
+      links: [
+        { label: "Übersicht",         href: "index.html",                    icon: "”", page: "overview" },
+        { label: "Zusammenfassungen", href: "zusammenfassungen.html",        icon: "▧", page: "summaries" },
+        { label: "Glossar",           href: "glossar.html",                  icon: "⌕", page: "glossary" },
+        { label: "Dateien",           href: "dateien.html",                  icon: "↓", page: "files" }
+      ]
+    },
     biologie: {
       brand: { mark: "B", name: "Vormatur", tag: "BIOLOGIE", href: "../index.html" },
       links: [
