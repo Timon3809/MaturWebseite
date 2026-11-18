@@ -42,9 +42,9 @@
     "semantic_hash": ""
   },
   "Geschichte/Scripts/data.js": {
-    "mtime": 1794907958.9705505,
-    "seen": 1794914159.05406,
-    "ast_hash": "807be95eaadd6e54a831d53957f60692",
+    "mtime": 1794997422.551892,
+    "seen": 1795011152.546766,
+    "ast_hash": "6fc5d24f7d89dd520fee8da294761706",
     "semantic_hash": ""
   },
   "Geschichte/Scripts/ewige-daten.js": {
@@ -66,21 +66,21 @@
     "semantic_hash": ""
   },
   "Scripts/glossar.js": {
-    "mtime": 1794907958.9938445,
-    "seen": 1794914159.05406,
-    "ast_hash": "5832ccc443e267493a9e5023f4529328",
+    "mtime": 1794997422.557205,
+    "seen": 1795011152.5477724,
+    "ast_hash": "48446fa91d47f07a3b492cf787ac8208",
     "semantic_hash": ""
   },
   "Scripts/zusammenfassungen.js": {
-    "mtime": 1794907958.995838,
-    "seen": 1794914159.05406,
-    "ast_hash": "e3c7c21bd148683bf59aa27e1b20ae70",
+    "mtime": 1794997422.558209,
+    "seen": 1795011152.5477724,
+    "ast_hash": "13acf9fcd4e4e23941fe035c09db0856",
     "semantic_hash": ""
   },
   "site-nav.js": {
-    "mtime": 1794915153.6990316,
-    "seen": 1794915197.4146852,
-    "ast_hash": "01952fa5f757c1114baa25234ddcc560",
+    "mtime": 1795008566.8980203,
+    "seen": 1795011152.5477724,
+    "ast_hash": "06af27377aaa588f821537d372ca1884",
     "semantic_hash": ""
   },
   ".claude/CLAUDE.md": {
@@ -132,9 +132,9 @@
     "semantic_hash": ""
   },
   "Chemie/index.html": {
-    "mtime": 1794915683.9677627,
-    "seen": 1794915707.1116421,
-    "ast_hash": "0b1c858699e4828a57faba4ea7aedd6a",
+    "mtime": 1794997422.5397074,
+    "seen": 1795011152.5487761,
+    "ast_hash": "42de0e04943012bd585738b96b0c8831",
     "semantic_hash": ""
   },
   "Chemie/zusammenfassungen.html": {
@@ -174,9 +174,9 @@
     "semantic_hash": ""
   },
   "Geschichte/ewige-daten.html": {
-    "mtime": 1794915586.183685,
-    "seen": 1794915609.9284952,
-    "ast_hash": "00bb62e810a96693ff5dacb84bd857f0",
+    "mtime": 1794997422.5529366,
+    "seen": 1795011152.5513349,
+    "ast_hash": "2579e253bae7c44e49f22107ab4db474",
     "semantic_hash": ""
   },
   "Geschichte/glossar.html": {
@@ -192,9 +192,9 @@
     "semantic_hash": ""
   },
   "Geschichte/pruefungssimulator.html": {
-    "mtime": 1794915586.1846817,
-    "seen": 1794915609.9284952,
-    "ast_hash": "fa3721c5d65dafec3506ae3ccb44219a",
+    "mtime": 1794997422.553943,
+    "seen": 1795011152.5513349,
+    "ast_hash": "93e19d1d24cf27540a542d8759f45a32",
     "semantic_hash": ""
   },
   "Geschichte/zusammenfassungen.html": {
@@ -210,9 +210,9 @@
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1794915153.1890855,
-    "seen": 1794915197.4294388,
-    "ast_hash": "aaf21cd6f782065b551b22f35db9ceed",
+    "mtime": 1794997422.6286519,
+    "seen": 1795011152.5513349,
+    "ast_hash": "960219f38c49159f2ceaeddab2a8f59a",
     "semantic_hash": ""
   },
   "Geographie/Resourcen/Bilder/svg-geologisches-profil.svg": {
@@ -618,15 +618,15 @@
     "semantic_hash": ""
   },
   "Chemie/Scripts/simulationen.js": {
-    "mtime": 1794907958.6837287,
-    "seen": 1794914159.0209365,
-    "ast_hash": "7bffa7c14e6dfd19b3aabb975a3382d2",
+    "mtime": 1794997422.538695,
+    "seen": 1795011152.543677,
+    "ast_hash": "d5f3c193bd27736f30b067318824a531",
     "semantic_hash": ""
   },
   "Chemie/simulationen.html": {
-    "mtime": 1794915586.177384,
-    "seen": 1794915609.922127,
-    "ast_hash": "67351620c7f0cf2cd8994234b6ad177c",
+    "mtime": 1794997422.5423985,
+    "seen": 1795011152.5487761,
+    "ast_hash": "6ca441ff7d8a08fd0f47566b96ff0f14",
     "semantic_hash": ""
   },
   "Chemie/Resourcen/Instruktionen Vormatur M6a.pdf": {
@@ -1176,15 +1176,15 @@
     "semantic_hash": ""
   },
   "Geographie/programme.html": {
-    "mtime": 1794915586.1816914,
-    "seen": 1794915609.9284952,
-    "ast_hash": "1b815f12d6a06d409c44300bce363b3e",
+    "mtime": 1794997422.5494738,
+    "seen": 1795011152.5513349,
+    "ast_hash": "74118d9787f7ccb72cf655bfc2b888e4",
     "semantic_hash": ""
   },
   "Geographie/Programme/klimaquiz.html": {
-    "mtime": 1794908288.8377876,
-    "seen": 1794914159.0695138,
-    "ast_hash": "9bff2ace5d4d7d380a53d60b8122c352",
+    "mtime": 1794997422.548468,
+    "seen": 1795011152.5502603,
+    "ast_hash": "3e5ec39fbcd0a43a7ebe33cb2afd7ebd",
     "semantic_hash": ""
   },
   ".claude/launch.json": {
@@ -1728,9 +1728,9 @@
     "semantic_hash": ""
   },
   "Geographie/Programme/Koeppen-Kartenquiz-USA.html": {
-    "mtime": 1794785287.4301407,
-    "seen": 1794816652.2796433,
-    "ast_hash": "f7102646b41abe674afc7d47f937cc6a",
+    "mtime": 1794997422.5459967,
+    "seen": 1795011152.5487761,
+    "ast_hash": "3d487b5699d8f7fc01443346918e916d",
     "semantic_hash": ""
   },
   "Geographie/Programme/Schweiz-Kartentrainer/Pruefbericht-Schweizer-Karte.md": {
@@ -1860,9 +1860,9 @@
     "semantic_hash": ""
   },
   "Scripts/glossar-page.js": {
-    "mtime": 1794915586.2397363,
-    "seen": 1794915609.9171433,
-    "ast_hash": "3a785aa9b5d6ad76298f10586f9ccd5b",
+    "mtime": 1794997422.5561652,
+    "seen": 1795011152.5477724,
+    "ast_hash": "f8a25e5afa6c784ea549d86665c1545f",
     "semantic_hash": ""
   },
   "Geographie/Resourcen/Bilder/Gesteine/Alpenkalk 1.jpg": {
@@ -2355,6 +2355,102 @@
     "mtime": 1794907958.9665637,
     "seen": 1794914159.2994752,
     "ast_hash": "4953e1b2b6af50d343e9ca90e5ab12f2",
+    "semantic_hash": ""
+  },
+  "Franz\u00f6sisch/Grammaire fran\u00e7aise \u2013 Matura_1.html": {
+    "mtime": 1795008091.732294,
+    "seen": 1795011152.5487761,
+    "ast_hash": "ba9cc55d021d548f861d71a7679ba4d6",
+    "semantic_hash": ""
+  },
+  "Franz\u00f6sisch/dateien.html": {
+    "mtime": 1795008273.6510553,
+    "seen": 1795011152.5487761,
+    "ast_hash": "22ab11382537a87c51e2d2e4220981d5",
+    "semantic_hash": ""
+  },
+  "Franz\u00f6sisch/grammatik.html": {
+    "mtime": 1795011137.492396,
+    "seen": 1795011152.5487761,
+    "ast_hash": "a78657ea5cf8d1ced83ba0954c7d6d00",
+    "semantic_hash": ""
+  },
+  "Franz\u00f6sisch/index.html": {
+    "mtime": 1795008273.6520517,
+    "seen": 1795011152.5487761,
+    "ast_hash": "28490d74287141b6cff24e5dae1f44f4",
+    "semantic_hash": ""
+  },
+  "Physikapplets/Applets-Wellen/interferenz_kreiswellen_firefox_v4.html": {
+    "mtime": 1792575534.0,
+    "seen": 1795011152.5513349,
+    "ast_hash": "8ddb6ae3e0938bdcfb283300fb9dd8c8",
+    "semantic_hash": ""
+  },
+  "Physikapplets/Applets-Wellen/reflexion_stehende_wellen_firefox_v3.html": {
+    "mtime": 1792575475.0,
+    "seen": 1795011152.5513349,
+    "ast_hash": "f0b455e2916145ee7900aeb5e2acfe19",
+    "semantic_hash": ""
+  },
+  "Physikapplets/Applets-Wellen/stehende_wellen_transversal_longitudinal_firefox_v3.html": {
+    "mtime": 1792575308.0,
+    "seen": 1795011152.5513349,
+    "ast_hash": "7e63078d7ba5e5bd3054e6551deb0fd8",
+    "semantic_hash": ""
+  },
+  "Physikapplets/Huygens/huygens_grenzflaechen_ebene_kreis_parabel_v3.html": {
+    "mtime": 1794149659.0,
+    "seen": 1795011152.5513349,
+    "ast_hash": "def3971840a164e1a26daaaa1105eda2",
+    "semantic_hash": ""
+  },
+  "Physikapplets/Huygens/huygens_linsenlabor_zwei_grenzflaechen_v6.html": {
+    "mtime": 1794151748.0,
+    "seen": 1795011152.5513349,
+    "ast_hash": "90000145d947f7738682366982ae5a48",
+    "semantic_hash": ""
+  },
+  "Physikapplets/Huygens/huygens_reflexion_brechung_v4.html": {
+    "mtime": 1794148141.0,
+    "seen": 1795011152.5513349,
+    "ast_hash": "17200f37e3552b3637f56421accdbcdc",
+    "semantic_hash": ""
+  },
+  "Physikapplets/Schwebung/schwebung_gruppengeschwindigkeit_applet_v4.html": {
+    "mtime": 1793197814.0,
+    "seen": 1795011152.5513349,
+    "ast_hash": "444d43e7ed86c0c622053eb4556f166b",
+    "semantic_hash": ""
+  },
+  "Physikapplets/Spalte/doppelspalt_beugung_interferenz.html": {
+    "mtime": 1794482455.0,
+    "seen": 1795011152.5513349,
+    "ast_hash": "9b303a4394f5913eb527dc9b5cba9c82",
+    "semantic_hash": ""
+  },
+  "Physikapplets/Spalte/einfachspalt_beugung_interferenz_v3.html": {
+    "mtime": 1794482479.0,
+    "seen": 1795011152.5513349,
+    "ast_hash": "b552e91d86305bda6bea15c77d4ec287",
+    "semantic_hash": ""
+  },
+  "Physikapplets/Spalte/mehrfachspalt_beugung_interferenz.html": {
+    "mtime": 1794483172.0,
+    "seen": 1795011152.5513349,
+    "ast_hash": "3114df94dee94eb5e259ef293684759f",
+    "semantic_hash": ""
+  },
+  "Physikapplets/index.html": {
+    "mtime": 1794919339.1876564,
+    "seen": 1795011152.5513349,
+    "ast_hash": "98cef5988333dc2e48e6b1cc7b83e5b9",
+    "semantic_hash": ""
+  },
+  "Franz\u00f6sisch/Franzoesisch_Grammatik_Zusammenfassung.pdf": {
+    "mtime": 1794997667.1149054,
+    "seen": 1795011152.5524566,
+    "ast_hash": "bffe00be4f617c33851eedc2fd56deb9",
     "semantic_hash": ""
   },
   ".mimocode/package-lock.json": {

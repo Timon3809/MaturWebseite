@@ -1016,3 +1016,20 @@ button.mindmap-node:hover, button.mindmap-node:focus-visible, button.mindmap-nod
 @media (max-width: 760px) {
   .sidebar-toggle { display: none; }
 }
+
+/* Seiten-Tabs (z. B. Französisch Grammatik) */
+.page-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: -8px 0 18px; border-bottom: 1px solid var(--line); }
+.page-tab { position: relative; margin-bottom: -1px; border: 1px solid transparent; border-bottom: 0; border-radius: 7px 7px 0 0; background: transparent; padding: 10px 15px; color: var(--muted); font: 600 13px var(--display); cursor: pointer; }
+.page-tab:hover { color: var(--ink); }
+.page-tab.is-active { border-color: var(--line); background: var(--white); color: var(--ink); box-shadow: 0 1px 0 var(--white); }
+.page-tab:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.video-intro { max-width: 780px; margin: 0 0 16px; color: #64675f; font-size: 12px; line-height: 1.7; }
+.video-intro a, .video-list .summary-text a { color: #4f6a51; font-weight: 600; text-decoration: underline; text-decoration-color: #c9d3c4; text-underline-offset: 3px; }
+.video-intro a:hover, .video-list .summary-text a:hover { color: var(--orange); text-decoration-color: currentColor; }
+.video-list .summary-text h3:first-child { margin-top: 2px; }
+.video-list .summary-text ul { font-size: 12px; }
+:root[data-theme="dark"] .video-intro { color: #bec3c9; }
+:root[data-theme="dark"] .video-intro a,
+:root[data-theme="dark"] .video-list .summary-text a { color: #b8cbb5; text-decoration-color: #56614f; }
+:root[data-theme="dark"] .video-intro a:hover,
+:root[data-theme="dark"] .video-list .summary-text a:hover { color: var(--orange); text-decoration-color: currentColor; }

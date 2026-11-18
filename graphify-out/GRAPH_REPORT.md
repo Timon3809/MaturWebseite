@@ -1,17 +1,17 @@
-# Graph Report - MaturWebseite  (2026-11-17)
+# Graph Report - MaturWebseite  (2026-11-18)
 
 ## Corpus Check
-- 52 files · ~204,375 words
+- 52 files · ~227,939 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 5 file(s) not represented in the graph (top: .css 4, (none) 1)
+- Unclassified: 9 file(s) not represented in the graph (top: .css 4, .zip 4, (none) 1)
 
 ## Summary
-- 1338 nodes · 2024 edges · 186 communities (99 shown, 87 thin omitted)
+- 1342 nodes · 2028 edges · 186 communities (99 shown, 87 thin omitted)
 - Extraction: 86% EXTRACTED · 14% INFERRED · 0% AMBIGUOUS · INFERRED: 286 edges (avg confidence: 0.84)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `85239c62`
+- Built from commit: `14a7c312`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -345,8 +345,8 @@ Cohesion: 0.09
 Nodes (27): Köppen Climate Classification Table, Af: Tropisches Regenwaldklima, Am: Tropisches Monsunklima mit Regenwald, Aw: Savannenklima, BS: Steppenklima, BW: Wüstenklima, Cf: Feuchtgemässigtes Klima, Cs: Warmes sommertrockenes Klima (Mittelmeerklima) (+19 more)
 
 ### Community 7 - "Glossar-Mindmap Script"
-Cohesion: 0.11
-Nodes (25): addMapNode(), centerMindmap(), drawMapLine(), escapeHtml(), glossaryEntries, initializeMindmapInteractions(), syncFullscreenState(), learnView (+17 more)
+Cohesion: 0.10
+Nodes (27): addMapNode(), centerMindmap(), drawMapLine(), escapeHtml(), glossaryEntries, glossaryViews, initializeMindmapInteractions(), syncFullscreenState() (+19 more)
 
 ### Community 10 - "Projektstruktur und FÃ¤cher"
 Cohesion: 0.13
@@ -697,8 +697,8 @@ Cohesion: 0.27
 Nodes (17): advance(), answerVariants(), buildDeck(), buildOptions(), buildRockOptions(), checkAnswer(), escapeAttr(), handleAction() (+9 more)
 
 ### Community 207 - "simulationen.js"
-Cohesion: 0.09
-Nodes (52): addNucleus(), animateEquilibriumParticles(), atomRadius(), chooseElement(), currentElement(), currentMolecule(), drawAtom(), drawAtomrumpf() (+44 more)
+Cohesion: 0.08
+Nodes (53): addNucleus(), animateEquilibriumParticles(), atomRadius(), chooseElement(), currentElement(), currentMolecule(), drawAtom(), drawAtomrumpf() (+45 more)
 
 ### Community 209 - "ovp.py"
 Cohesion: 0.18
@@ -740,19 +740,19 @@ Nodes (3): Datensatz neu erzeugen (`tools/pipeline/`), Schweizer Kartentrainer �
 
 ## Knowledge Gaps
 - **297 isolated node(s):** `Nagelfluh (Alpine Conglomerate)`, `Helvetikum`, `Tethys Ocean`, `Ur-Donau (Proto-Danube)`, `Die Organisation der NSDAP` (+292 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 416 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 419 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **87 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Lehrmittel Buch "Erde"` connect `Geographie Resourcen Dateien` to `Geographie Resourcen Dateien`, `Geographie Resourcen Dateien`, `Geographie Resourcen Dateien`, `Geographie Resourcen Dateien`?**
+- **Why does `Stufe 4: Die Schweiz` connect `Geographie Resourcen Dateien` to `Geographie Resourcen Dateien`, `Geographie Resourcen Dateien`, `Geographie Resourcen Dateien`, `Geographie Resourcen Dateien`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `Nagelfluh (Alpine Conglomerate)`, `Helvetikum`, `Tethys Ocean` to the rest of the system?**
   _297 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `app.js` be split into smaller, more focused modules?**
   _Cohesion score 0.0670886075949367 - nodes in this community are weakly interconnected._
-- **Why does `Stufe 4: Die Schweiz` connect `Geographie Resourcen Dateien` to `Geographie Resourcen Dateien`, `Geographie Resourcen Dateien`, `Geographie Resourcen Dateien`, `Geographie Resourcen Dateien`?**
+- **Why does `Lehrmittel Buch "Erde"` connect `Geographie Resourcen Dateien` to `Geographie Resourcen Dateien`, `Geographie Resourcen Dateien`, `Geographie Resourcen Dateien`, `Geographie Resourcen Dateien`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Should `Schweiz-Kartentrainer/src/app.js` be split into smaller, more focused modules?**
   _Cohesion score 0.0670886075949367 - nodes in this community are weakly interconnected._
