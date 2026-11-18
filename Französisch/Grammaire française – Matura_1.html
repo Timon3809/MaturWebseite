@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grammaire française – Matura</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Layout: feste Themenleiste links, Lesespalte rechts (~70 Zeichen), Übungen als nummeriertes Arbeitsblatt */
+  --paper:#f3f5fa; --surface:#ffffff; --ink:#151c33; --muted:#566079; --line:#d9dfec;
+  --accent:#2443b0; --accent-ink:#ffffff; --accent-soft:#e6ebfa;
+  --mark:#ffe27a;
+  --ok:#17744a; --ok-soft:#e1f2e8; --bad:#b8312a; --bad-soft:#fbe5e2; --near:#875a00; --near-soft:#fff0c7;
+  --f-display:"Fraunces", Georgia, "Times New Roman", serif;
+  --f-body:"Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --stick-top:0px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#10131d; --surface:#171b29; --ink:#e7eaf4; --muted:#a0a8c2; --line:#2a3047;
+    --accent:#8fa8ff; --accent-ink:#0f1530; --accent-soft:#1e2646;
+    --mark:#5c4a12;
+    --ok:#62d29a; --ok-soft:#13301f; --bad:#ff8f84; --bad-soft:#3b1a17; --near:#f1c35a; --near-soft:#3a2e0f;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#10131d; --surface:#171b29; --ink:#e7eaf4; --muted:#a0a8c2; --line:#2a3047;
+  --accent:#8fa8ff; --accent-ink:#0f1530; --accent-soft:#1e2646;
+  --mark:#5c4a12;
+  --ok:#62d29a; --ok-soft:#13301f; --bad:#ff8f84; --bad-soft:#3b1a17; --near:#f1c35a; --near-soft:#3a2e0f;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;height:100%}
+body{margin:0;min-height:100%;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6}
+a{color:var(--accent)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+h1,h2,h3{font-family:var(--f-display);font-weight:650;line-height:1.15;text-wrap:balance;margin:0}
+small{font-size:.8em}
+
+/* ---------- App-Gerüst ---------- */
+.app{display:grid;grid-template-columns:292px minmax(0,1fr);min-height:100%}
+.side{position:sticky;top:0;height:100vh;overflow-y:auto;background:var(--surface);border-right:1px solid var(--line);padding:22px 14px 32px}
+.brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--ink);padding:2px 8px 18px}
+.brand-mark{flex:none;width:40px;height:40px;border-radius:10px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-family:var(--f-display);font-weight:650;font-size:19px;letter-spacing:-.02em}
+.brand-t{font-family:var(--f-display);font-weight:650;font-size:1.05rem;line-height:1.15}
+.brand-t small{display:block;font-family:var(--f-body);font-weight:400;font-size:.78rem;color:var(--muted);margin-top:2px}
+.nav-label{font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);padding:12px 10px 6px;margin:0}
+.topicnav{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.navlink{display:flex;gap:10px;align-items:flex-start;padding:7px 10px;border-radius:8px;text-decoration:none;color:var(--ink)}
+.navlink:hover{background:var(--accent-soft)}
+.navlink.active{background:var(--accent);color:var(--accent-ink)}
+.navlink .n{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);padding-top:3px;min-width:1.7em}
+.navlink.active .n,.navlink.active small{color:inherit;opacity:.85}
+.navlink .nt{display:flex;flex-direction:column;line-height:1.25;font-size:.94rem}
+.navlink small{color:var(--muted);font-size:.78rem}
+.navlink .dot{margin-left:auto;align-self:center;width:8px;height:8px;border-radius:50%;background:var(--ok);flex:none}
+.topbar{display:none}
+.main{min-width:0;padding:44px clamp(16px,5vw,64px) 90px}
+.wrap{max-width:820px;margin:0 auto}
+
+/* ---------- Startseite ---------- */
+.eyebrow{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0 0 10px}
+.hero h1{font-size:clamp(2.3rem,5.4vw,3.6rem);letter-spacing:-.02em}
+.hero .lead{font-size:1.15rem;max-width:58ch;color:var(--muted);margin:14px 0 22px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.hero-stats{display:flex;flex-wrap:wrap;gap:22px;margin-top:26px;padding-top:18px;border-top:1px solid var(--line)}
+.hero-stats div{display:flex;flex-direction:column}
+.hero-stats b{font-family:var(--f-display);font-size:1.7rem;line-height:1;font-variant-numeric:tabular-nums}
+.hero-stats span{font-size:.85rem;color:var(--muted)}
+.howto{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:34px 0 8px}
+.howto div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.howto b{display:block;font-family:var(--f-mono);font-size:.78rem;color:var(--accent);margin-bottom:2px}
+.howto p{margin:0;font-size:.93rem}
+.sec-title{font-size:1.5rem;margin:40px 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(245px,1fr));gap:14px}
+.card{display:flex;flex-direction:column;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px 14px;text-decoration:none;color:var(--ink);transition:border-color .15s, transform .15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .num{font-family:var(--f-mono);font-size:.8rem;color:var(--accent)}
+.card h3{font-size:1.18rem}
+.card .de{font-size:.9rem;color:var(--muted);margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin:4px 0 2px;padding:0;list-style:none}
+.chips li{font-size:.74rem;background:var(--accent-soft);color:var(--ink);padding:2px 8px;border-radius:999px}
+.meter{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin-top:auto}
+.meter span{display:block;height:100%;background:var(--ok);border-radius:99px}
+.card .meta{font-size:.8rem;color:var(--muted);margin:4px 0 0;font-variant-numeric:tabular-nums}
+.card .meta.fresh{margin-top:auto}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--accent);background:var(--accent);color:var(--accent-ink);padding:9px 16px;border-radius:9px;font-weight:700;text-decoration:none;cursor:pointer;font-size:.95rem;line-height:1.2}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn.ghost:hover{background:var(--accent-soft);filter:none}
+.btn.sm{padding:6px 11px;font-size:.85rem;border-radius:8px}
+
+/* ---------- Themenseite ---------- */
+.t-head{padding-bottom:22px;border-bottom:1px solid var(--line);margin-bottom:8px}
+.t-nr{font-family:var(--f-mono);font-size:.82rem;color:var(--accent);margin:0 0 8px}
+.t-head h1{font-size:clamp(2rem,4.6vw,3rem);letter-spacing:-.015em}
+.t-de{font-size:1.15rem;color:var(--muted);margin:6px 0 14px}
+.t-head .lead{max-width:68ch;margin:0 0 18px}
+.toc{display:flex;flex-wrap:wrap;gap:6px}
+.toc button{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.84rem;cursor:pointer;color:var(--ink)}
+.toc button:hover{border-color:var(--accent);color:var(--accent)}
+.toc button.toc-ex{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.prose h2{font-size:1.5rem;margin:42px 0 12px;scroll-margin-top:calc(var(--stick-top) + 16px)}
+.why-box{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 18px 10px;margin:0 0 18px;max-width:72ch}
+.why-t{font-family:var(--f-display);font-weight:650;font-size:1.1rem;margin:0 0 6px}
+.why-box ul{margin:0;padding-left:1.15em}
+.why-box li{margin:0 0 6px}
+.why-box li::marker{color:var(--accent)}
+.wozu{display:grid;gap:6px;background:var(--accent-soft);border-radius:10px;padding:11px 15px;margin:0 0 16px;max-width:72ch;font-size:.95rem}
+.wozu p{margin:0;display:grid;grid-template-columns:4.6em 1fr;gap:8px;align-items:baseline}
+.wz-l{font-family:var(--f-mono);font-size:.78rem;font-weight:500;color:var(--accent);text-transform:uppercase;letter-spacing:.04em}
+.prose p,.prose ol,.prose ul:not(.ex):not(.list){max-width:68ch}
+.prose ol{padding-left:1.3em}
+.prose li{margin:3px 0}
+.prose b{font-weight:700}
+
+.tbl{overflow-x:auto;margin:14px 0 18px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.tbl table{border-collapse:collapse;width:100%;font-size:.93rem}
+.tbl th{background:var(--accent-soft);text-align:left;font-weight:700;padding:9px 12px;vertical-align:bottom;border-bottom:1px solid var(--line)}
+.tbl th small{font-weight:400;color:var(--muted)}
+.tbl td{padding:8px 12px;border-top:1px solid var(--line);vertical-align:top}
+.tbl tr:first-child td{border-top:0}
+.tbl td small{color:var(--muted)}
+.tbl.conj td:first-child{color:var(--muted);white-space:nowrap}
+.tbl.conj td:not(:first-child){font-family:var(--f-mono);font-size:.88rem}
+.tbl.conj{max-width:max-content;max-width:100%}
+
+.ex{list-style:none;margin:14px 0 18px;padding:0;display:grid;gap:8px}
+.ex li{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:9px 14px}
+.ex .fr{display:block;font-size:1.03rem}
+.ex .de{display:block;font-size:.88rem;color:var(--muted);font-style:italic;margin-top:2px}
+.fr b,.tbl b,.list b,[lang="fr"] b{background:linear-gradient(transparent 56%, var(--mark) 56%);padding:0 1px}
+
+.list{list-style:none;margin:12px 0 18px;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:6px}
+.list li{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 11px;font-size:.92rem}
+
+.box{border-radius:10px;padding:12px 16px;margin:16px 0;border:1px solid var(--line);border-left:5px solid var(--accent);background:var(--surface)}
+.box p{margin:6px 0}
+.box .ex{margin:8px 0 4px}
+.box-t{font-size:.75rem;letter-spacing:.09em;text-transform:uppercase;font-weight:700;margin:0 0 4px !important;color:var(--accent)}
+.box-warn{border-left-color:var(--bad)} .box-warn .box-t{color:var(--bad)}
+.box-tip{border-left-color:var(--near)} .box-tip .box-t{color:var(--near)}
+
+.order{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:14px 0;font-family:var(--f-mono);font-size:.92rem}
+.order span{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 12px;line-height:1.45;text-align:center}
+.order i{font-style:normal;color:var(--muted)}
+
+/* ---------- Übungen ---------- */
+.ex-sec{margin-top:54px;scroll-margin-top:calc(var(--stick-top) + 12px)}
+.ex-sec > h2{font-size:1.7rem;margin:0 0 6px}
+.ex-sec > .hint{color:var(--muted);margin:0 0 14px;max-width:68ch}
+.ex-bar{position:sticky;top:var(--stick-top);z-index:5;background:var(--paper);padding:10px 0;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}
+.score{font-variant-numeric:tabular-nums;font-size:.95rem;white-space:nowrap}
+.score strong{font-family:var(--f-display);font-size:1.35rem}
+.keys{display:flex;flex-wrap:wrap;gap:3px}
+.key{width:30px;height:30px;border:1px solid var(--line);background:var(--surface);border-radius:6px;cursor:pointer;font-size:.95rem;padding:0}
+.key:hover{border-color:var(--accent);color:var(--accent)}
+.bar-actions{display:flex;flex-wrap:wrap;gap:6px;margin-left:auto}
+.ex-list{list-style:none;counter-reset:ex;margin:0;padding:0}
+.ex-item{counter-increment:ex;position:relative;padding:16px 0 16px 46px;border-bottom:1px solid var(--line)}
+.ex-item::before{content:counter(ex);position:absolute;left:0;top:16px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-mono);font-size:.82rem;background:var(--accent-soft);color:var(--accent)}
+.ex-item.is-ok::before{content:"✓";background:var(--ok);color:var(--surface)}
+.ex-item.is-bad::before{content:"✗";background:var(--bad);color:var(--surface)}
+.ex-item.is-near::before{content:"~";background:var(--near);color:var(--surface)}
+.ex-item.is-shown::before{background:var(--line);color:var(--muted)}
+.ex-tag{display:inline-block;font-size:.74rem;text-decoration:none;background:var(--accent-soft);padding:1px 8px;border-radius:99px;margin-bottom:6px}
+.ex-q{margin:0;font-size:1.06rem;line-height:2}
+.ex-instr{margin:0;font-size:.92rem;color:var(--muted)}
+.ex-src{margin:2px 0 8px;font-size:1.06rem}
+.blank{font:inherit;color:var(--ink);background:var(--accent-soft);border:0;border-bottom:2px solid var(--accent);border-radius:4px 4px 0 0;padding:1px 6px;min-width:5ch;max-width:100%}
+.line{font:inherit;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:8px;padding:8px 11px;width:100%}
+.line:focus,.blank:focus{outline:2px solid var(--accent);outline-offset:1px}
+.is-ok .blank,.is-ok .line{border-color:var(--ok);background:var(--ok-soft)}
+.is-bad .blank,.is-bad .line{border-color:var(--bad);background:var(--bad-soft)}
+.is-near .blank,.is-near .line{border-color:var(--near);background:var(--near-soft)}
+.ex-ctl{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+.gap{font-family:var(--f-mono);color:var(--muted)}
+.opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.opt{border:1.5px solid var(--line);background:var(--surface);border-radius:9px;padding:7px 13px;cursor:pointer;text-align:left;font-size:.98rem}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt:disabled{cursor:default}
+.opt.right{border-color:var(--ok);background:var(--ok-soft);font-weight:700}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft);text-decoration:line-through}
+.fb:empty{display:none}
+.fb{margin-top:10px;border-radius:9px;padding:9px 13px;font-size:.94rem;background:var(--accent-soft)}
+.fb p{margin:2px 0}
+.fb .why{color:var(--ink)}
+.fb.ok{background:var(--ok-soft)} .fb.ok strong{color:var(--ok)}
+.fb.bad{background:var(--bad-soft)} .fb.bad strong{color:var(--bad)}
+.fb.near{background:var(--near-soft)} .fb.near strong{color:var(--near)}
+.fb .sol b{background:none;padding:0}
+.fb .alt{display:block;font-size:.85rem;color:var(--muted)}
+.result{margin-top:18px;padding:16px 18px;border-radius:12px;background:var(--surface);border:1px solid var(--line)}
+.result:empty{display:none}
+
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:48px}
+.pager a{display:flex;flex-direction:column;gap:2px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--surface);text-decoration:none;color:var(--ink)}
+.pager a:hover{border-color:var(--accent)}
+.pager small{color:var(--muted)}
+.pager .next{text-align:right;grid-column:2}
+.pager span{font-family:var(--f-display);font-weight:650}
+
+@media (max-width: 900px){
+  :root{--stick-top:56px}
+  .app{grid-template-columns:1fr}
+  .topbar{display:flex;position:sticky;top:0;z-index:30;height:56px;align-items:center;gap:10px;padding:0 16px;background:var(--surface);border-bottom:1px solid var(--line)}
+  .topbar .brand{padding:0}
+  .topbar .brand-mark{width:34px;height:34px;font-size:16px}
+  .menu-btn{margin-left:auto;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:6px 12px;cursor:pointer;font-weight:700;font-size:.9rem}
+  .side{display:none;position:fixed;top:56px;left:0;right:0;bottom:0;height:auto;z-index:29;border-right:0}
+  .side.open{display:block}
+  .side .brand{display:none}
+  .main{padding-top:28px}
+  .howto{grid-template-columns:1fr}
+}
+@media (max-width: 520px){
+  body{font-size:16px}
+  .ex-item{padding-left:40px}
+  .bar-actions{margin-left:0}
+  .pager{grid-template-columns:1fr}
+  .pager .next{grid-column:1}
+}
+@media (prefers-reduced-motion: reduce){
+  *{transition:none !important;scroll-behavior:auto !important}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <a class="brand" href="#start"><span class="brand-mark" aria-hidden="true">Fr</span><span class="brand-t">Grammaire<small>Matura Französisch</small></span></a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="side">Themen</button>
+  </header>
+  <aside class="side" id="side">
+    <a class="brand" href="#start"><span class="brand-mark" aria-hidden="true">Fr</span><span class="brand-t">Grammaire française<small>für die Schweizer Matura</small></span></a>
+    <nav aria-label="Themen">
+      <a class="navlink" href="#start" data-id="start"><span class="n">⌂</span><span class="nt">Übersicht</span></a>
+      <p class="nav-label">Themen</p>
+      <ul class="topicnav" id="topicnav"></ul>
+      <p class="nav-label">Training</p>
+      <a class="navlink" href="#test" data-id="test"><span class="n">✎</span><span class="nt">Gemischter Test<small>15 Aufgaben aus allen Themen</small></span></a>
+    </nav>
+  </aside>
+  <main class="main" id="main"></main>
+</div>
+<script>
+/* ---------- Inhalts-Helfer ---------- */
+const TOPICS = [];
+let __h = 0;
+function H(t){ return `<h2 data-toc>${t}</h2>`; }
+function EX(rows){ return `<ul class="ex">${rows.map(([fr,de])=>`<li><span class="fr" lang="fr">${fr}</span>${de?`<span class="de">${de}</span>`:''}</li>`).join('')}</ul>`; }
+function BOX(kind,title,html){ return `<div class="box box-${kind}"><p class="box-t">${title}</p>${html}</div>`; }
+function TBL(head,rows,cls){ return `<div class="tbl ${cls||''}"><table><thead><tr>${head.map(h=>`<th scope="col">${h}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`; }
+function LIST(items){ return `<ul class="list" lang="fr">${items.map(i=>`<li>${i}</li>`).join('')}</ul>`; }
+</script>
+<script>
+/* ===== Thema 1: Les temps du passé ===== */
+TOPICS.push({
+id:"temps-du-passe", fr:"Les temps du passé", de:"Die Vergangenheitszeiten",
+chips:["Passé composé","Imparfait","Plus-que-parfait","Passé simple","Accord du participe"],
+intro:"Im Französischen erzählst du mit mehreren Zeiten gleichzeitig: Das <i>passé composé</i> treibt die Handlung voran, das <i>imparfait</i> malt den Hintergrund, das <i>plus-que-parfait</i> blickt noch weiter zurück. Das <i>passé simple</i> musst du in literarischen Texten erkennen.",
+html:`
+${H("Passé composé: Bildung")}
+<p>Hilfsverb <b>avoir</b> oder <b>être</b> im Präsens + <b>participe passé</b> (Partizip Perfekt).</p>
+${TBL(["Verbgruppe","Participe passé","Beispiel"],[
+["-er","-é","parler → j'ai parl<b>é</b>"],
+["-ir (wie finir)","-i","finir → j'ai fin<b>i</b>"],
+["-re (wie vendre)","-u","vendre → j'ai vend<b>u</b>"]])}
+<p>Die wichtigsten unregelmässigen Partizipien:</p>
+${LIST(["avoir → eu","être → été","faire → fait","prendre → pris","mettre → mis","dire → dit","écrire → écrit","voir → vu","venir → venu","lire → lu","boire → bu","pouvoir → pu","vouloir → voulu","devoir → dû","savoir → su","ouvrir → ouvert","naître → né","mourir → mort","recevoir → reçu","vivre → vécu","croire → cru","connaître → connu","falloir → fallu","pleuvoir → plu"])}
+
+${H("Avoir oder être?")}
+<p>Die meisten Verben bilden das <i>passé composé</i> mit <b>avoir</b>. Mit <b>être</b> stehen:</p>
+<ol>
+<li>Verben der Bewegung und Zustandsveränderung: aller, venir, arriver, partir, entrer, sortir, monter, descendre, naître, mourir, rester, tomber, retourner, passer und ihre Ableitungen (revenir, devenir, rentrer …).</li>
+<li>Alle reflexiven (pronominalen) Verben: se lever, se souvenir, s'amuser …</li>
+</ol>
+${BOX("tip","Eselsbrücke","<p><b>DR &amp; MRS VANDERTRAMP</b>: <b>D</b>evenir, <b>R</b>evenir, <b>M</b>onter, <b>R</b>ester, <b>S</b>ortir, <b>V</b>enir, <b>A</b>ller, <b>N</b>aître, <b>D</b>escendre, <b>E</b>ntrer, <b>R</b>entrer, <b>T</b>omber, <b>R</b>etourner, <b>A</b>rriver, <b>M</b>ourir, <b>P</b>artir.</p>")}
+${BOX("warn","Achtung","<p><i>monter, descendre, sortir, rentrer, passer, retourner</i> nehmen <b>avoir</b>, wenn sie ein direktes Objekt haben.</p>"+EX([["Elle <b>est sortie</b>.","Sie ist hinausgegangen."],["Elle <b>a sorti</b> le chien.","Sie hat den Hund ausgeführt."],["Il <b>a monté</b> les valises.","Er hat die Koffer hinaufgetragen."]]))}
+
+${H("Accord du participe passé")}
+<p>Das Partizip wird wie ein Adjektiv angeglichen (+e für feminin, +s für Plural). Wann?</p>
+${TBL(["Fall","Regel","Beispiel"],[
+["mit <b>être</b>","Angleichung an das <b>Subjekt</b>","Elles sont part<b>ies</b>."],
+["mit <b>avoir</b>","<b>keine</b> Angleichung …","Elle a mang<b>é</b> une pomme."],
+["… ausser: direktes Objekt (COD) steht <b>vor</b> dem Verb","Angleichung an das COD","La pomme qu'elle a mang<b>ée</b>. / Je <b>les</b> ai v<b>us</b>."],
+["reflexive Verben","Angleichung, wenn das Reflexivpronomen COD ist","Elle s'est lav<b>ée</b>."],
+["reflexiv, COD steht danach","keine Angleichung","Elle s'est lav<b>é</b> les mains."],
+["reflexiv mit indirektem Objekt (parler <b>à</b>, téléphoner <b>à</b>)","keine Angleichung","Ils se sont parl<b>é</b>."]])}
+${BOX("rule","Merke","<p>Bei <b>en</b> gibt es keine Angleichung: <span lang=\"fr\">Des pommes ? J'en ai mangé.</span></p>")}
+
+${H("Imparfait: Bildung")}
+<p>Stamm der 1. Person Plural Präsens (<span lang="fr">nous <b>parl</b>ons</span>) + Endungen <b>-ais, -ais, -ait, -ions, -iez, -aient</b>. Die einzige Ausnahme ist <b>être → ét-</b>.</p>
+${TBL(["","parler","finir","faire","être"],[
+["je","parlais","finissais","faisais","étais"],
+["tu","parlais","finissais","faisais","étais"],
+["il/elle","parlait","finissait","faisait","était"],
+["nous","parlions","finissions","faisions","étions"],
+["vous","parliez","finissiez","faisiez","étiez"],
+["ils/elles","parlaient","finissaient","faisaient","étaient"]],"conj")}
+<p>Rechtschreibung: <span lang="fr">manger → je mang<b>e</b>ais</span>, <span lang="fr">commencer → je commen<b>ç</b>ais</span> (aber: nous mangions, nous commencions).</p>
+
+${H("Passé composé oder imparfait?")}
+${TBL(["Passé composé","Imparfait"],[
+["abgeschlossene, einmalige Handlung","Gewohnheit, Wiederholung"],
+["Handlungskette im Vordergrund: Was passiert?","Beschreibung, Hintergrund: Wie war es? (Wetter, Gefühle, Alter, Uhrzeit)"],
+["neu einsetzende Handlung","bereits laufende Handlung"],
+["<i>soudain, tout à coup, un jour, hier, en 2010, trois fois, puis, ensuite</i>","<i>d'habitude, souvent, toujours, chaque jour, le lundi, autrefois, à l'époque, pendant que</i>"]])}
+${EX([
+["Il <b>pleuvait</b> quand je <b>suis sorti</b>.","Es regnete, als ich hinausging."],
+["Quand j'<b>étais</b> petit, je <b>jouais</b> au foot tous les dimanches.","Als ich klein war, spielte ich jeden Sonntag Fussball."],
+["Nous <b>regardions</b> la télé quand le téléphone <b>a sonné</b>.","Wir schauten fern, als das Telefon klingelte."]])}
+${BOX("tip","Eselsbrücke","<p>Stell dir eine Theaterbühne vor: Das <b>imparfait</b> ist die Kulisse (Licht, Wetter, Stimmung), das <b>passé composé</b> sind die Schauspieler, die handeln.</p>")}
+
+${H("Plus-que-parfait")}
+<p>Bildung: <b>imparfait von avoir/être + participe passé</b>. Es drückt die <b>Vorvergangenheit</b> aus: eine Handlung, die vor einer anderen vergangenen Handlung abgeschlossen war. Es wird ausserdem im si-Satz Typ 3 und in der indirekten Rede gebraucht.</p>
+${EX([
+["Quand je suis arrivé, le film <b>avait</b> déjà <b>commencé</b>.","Als ich ankam, hatte der Film schon begonnen."],
+["Elle était fatiguée parce qu'elle n'<b>avait</b> pas <b>dormi</b>.","Sie war müde, weil sie nicht geschlafen hatte."],
+["Ils <b>étaient partis</b> avant midi.","Sie waren vor Mittag abgereist."]])}
+
+${H("Passé simple (erkennen)")}
+<p>Das <i>passé simple</i> ist die literarische Erzählzeit und entspricht in der Bedeutung dem <i>passé composé</i>. Du musst es in Texten <b>erkennen</b>, meist in der 3. Person.</p>
+${TBL(["Typ","Endungen","Beispiel"],[
+["-er-Verben","-ai, -as, -a, -âmes, -âtes, -èrent","il parl<b>a</b>, ils parl<b>èrent</b>"],
+["-ir / -re-Verben","-is, -is, -it, -îmes, -îtes, -irent","il fin<b>it</b>, ils prirent"],
+["viele -oir-Verben","-us, -us, -ut, -ûmes, -ûtes, -urent","il voul<b>ut</b>, ils purent"]])}
+${LIST(["être → il fut / ils furent","avoir → il eut / ils eurent","faire → il fit","venir → il vint / ils vinrent","prendre → il prit","mettre → il mit","voir → il vit","dire → il dit","pouvoir → il put","savoir → il sut","naître → il naquit","mourir → il mourut","vivre → il vécut","écrire → il écrivit"])}
+${BOX("warn","Achtung","<p><span lang=\"fr\">il vit</span> kann <i>passé simple</i> von <b>voir</b> (er sah) oder Präsens von <b>vivre</b> (er lebt) sein. Der Kontext entscheidet.</p>")}
+`,
+ex:[
+{t:"fill",q:"Hier soir, nous ___ (aller) au cinéma.",a:["sommes allés","sommes allées"],h:"<i>aller</i> bildet das passé composé mit <b>être</b>; das Partizip wird an <i>nous</i> angeglichen (Plural)."},
+{t:"fill",q:"Elle ___ (naître) en 2008 à Lausanne.",a:["est née"],h:"<i>naître</i> → être; Angleichung an das Subjekt <i>elle</i>."},
+{t:"fill",q:"Les lettres que j'ai ___ (écrire) sont sur la table.",a:["écrites"],h:"Das COD <i>que</i> (= les lettres, f. Pl.) steht <b>vor</b> avoir → Angleichung."},
+{t:"fill",q:"Quand j'étais petit, je ___ (passer) mes vacances chez ma grand-mère.",a:["passais"],h:"Gewohnheit in der Vergangenheit → imparfait."},
+{t:"fill",q:"Nous dormions quand soudain le téléphone ___ (sonner).",a:["a sonné"],h:"Neu einsetzende Handlung (Signalwort <i>soudain</i>) → passé composé."},
+{t:"fill",q:"Il ___ (faire) beau et les oiseaux chantaient.",a:["faisait"],h:"Beschreibung des Wetters (Hintergrund) → imparfait."},
+{t:"fill",q:"Quand nous sommes arrivés à la gare, le train ___ (déjà / partir).",a:["était déjà parti"],h:"Vorvergangenheit → plus-que-parfait. <i>partir</i> → être; kurzes Adverb zwischen Hilfsverb und Partizip."},
+{t:"mc",q:"Elle ___ les mains avant le repas.",o:["s'est lavé","s'est lavée","a lavé","s'est lavés"],c:0,h:"Das COD <i>les mains</i> steht <b>nach</b> dem Verb, <i>se</i> ist hier indirektes Objekt → keine Angleichung."},
+{t:"mc",q:"Ils ___ la valise au grenier.",o:["sont montés","ont monté","sont monté","ont montés"],c:1,h:"<i>monter</i> mit direktem Objekt (la valise) → avoir. Das COD steht danach → keine Angleichung."},
+{t:"fill",q:"Ces chaussures ? Je les ai ___ (acheter) hier.",a:["achetées"],h:"<i>les</i> (= ces chaussures, f. Pl.) steht vor avoir → Angleichung."},
+{t:"mc",q:"« Le roi mourut en 1715. » Welche Form ist <i>mourut</i>?",o:["passé simple von mourir","imparfait von mourir","passé simple von mûrir","présent von mourir"],c:0,h:"Die Endung <i>-ut</i> zeigt das passé simple; <i>mourir → il mourut</i>."},
+{t:"fill",q:"Elles se sont ___ (téléphoner) hier soir.",a:["téléphoné"],h:"<i>téléphoner <b>à</b> qn</i>: <i>se</i> ist indirektes Objekt → keine Angleichung."},
+{t:"mc",q:"Pendant que je ___ mes devoirs, ma sœur est rentrée.",o:["faisais","ai fait","avais fait","fis"],c:0,h:"Bereits laufende Handlung (<i>pendant que</i>) → imparfait."}
+]});
+
+/* ===== Thema 2: Futur et conditionnel ===== */
+TOPICS.push({
+id:"futur-conditionnel", fr:"Futur et conditionnel", de:"Zukunft und Konditional",
+chips:["Futur proche","Futur simple","Futur antérieur","Conditionnel présent","Conditionnel passé"],
+intro:"Futur und Conditionnel teilen sich denselben Stamm. Wenn du die unregelmässigen Futurstämme kannst, beherrschst du automatisch auch den Conditionnel.",
+html:`
+${H("Futur proche")}
+<p><b>aller</b> (Präsens) + <b>Infinitiv</b>. Für nahe oder fest geplante Zukunft, besonders in der gesprochenen Sprache.</p>
+${EX([["Je <b>vais partir</b> dans cinq minutes.","Ich gehe in fünf Minuten."],["Regarde ces nuages, il <b>va pleuvoir</b>.","Schau diese Wolken, es wird regnen."]])}
+
+${H("Futur simple: Bildung")}
+<p><b>Infinitiv + -ai, -as, -a, -ons, -ez, -ont</b>. Verben auf <i>-re</i> verlieren das <i>-e</i>: <span lang="fr">prendre → je prendr<b>ai</b></span>.</p>
+${TBL(["","parler","finir","prendre"],[
+["je","parlerai","finirai","prendrai"],["tu","parleras","finiras","prendras"],["il/elle","parlera","finira","prendra"],
+["nous","parlerons","finirons","prendrons"],["vous","parlerez","finirez","prendrez"],["ils/elles","parleront","finiront","prendront"]],"conj")}
+<p>Rechtschreibung: <span lang="fr">acheter → j'achèterai, appeler → j'appellerai, jeter → je jetterai, payer → je paierai</span>.</p>
+<p>Unregelmässige Stämme (die Endungen bleiben gleich):</p>
+${LIST(["être → ser-","avoir → aur-","aller → ir-","faire → fer-","venir → viendr-","tenir → tiendr-","voir → verr-","envoyer → enverr-","pouvoir → pourr-","vouloir → voudr-","devoir → devr-","savoir → saur-","recevoir → recevr-","courir → courr-","mourir → mourr-","falloir → il faudra","pleuvoir → il pleuvra","valoir → vaudr-"])}
+${BOX("warn","Achtung","<p>Nach <b>quand, lorsque, dès que, aussitôt que</b> steht im Französischen das Futur, wenn Zukunft gemeint ist. Im Deutschen steht dort Präsens!</p>"+EX([["Quand tu <b>seras</b> grand, tu comprendras.","Wenn du gross <b>bist</b>, wirst du es verstehen."]]))}
+
+${H("Futur antérieur")}
+<p>Bildung: <b>futur von avoir/être + participe passé</b>. Es bezeichnet eine Handlung, die in der Zukunft vor einer anderen abgeschlossen sein wird (vollendete Zukunft).</p>
+${EX([
+["Quand tu <b>auras fini</b> tes devoirs, tu pourras sortir.","Wenn du deine Hausaufgaben fertig gemacht hast, darfst du ausgehen."],
+["Dès que j'<b>aurai reçu</b> ta lettre, je te répondrai.","Sobald ich deinen Brief erhalten habe, antworte ich dir."],
+["D'ici juin, j'<b>aurai passé</b> la matu.","Bis Juni werde ich die Matur bestanden haben."]])}
+
+${H("Conditionnel présent")}
+<p>Bildung: <b>Futurstamm + Imparfait-Endungen</b> (-ais, -ais, -ait, -ions, -iez, -aient): <span lang="fr">je serais, j'aurais, je pourrais, je voudrais, il faudrait</span>.</p>
+${TBL(["Gebrauch","Beispiel"],[
+["Höflichkeit","<span lang=\"fr\">Je <b>voudrais</b> un café. <b>Pourriez</b>-vous m'aider ?</span>"],
+["Wunsch","<span lang=\"fr\">J'<b>aimerais</b> voyager au Japon.</span>"],
+["Ratschlag","<span lang=\"fr\">Tu <b>devrais</b> dormir plus.</span>"],
+["Irrealer Bedingungssatz (Typ 2)","<span lang=\"fr\">Si j'avais le temps, je <b>viendrais</b>.</span>"],
+["Unbestätigte Information (Medien)","<span lang=\"fr\">Selon la presse, le ministre <b>démissionnerait</b>.</span>"],
+["Zukunft in der Vergangenheit","<span lang=\"fr\">Il a dit qu'il <b>viendrait</b>.</span>"]])}
+${BOX("warn","Achtung, Verwechslungsgefahr","<p><span lang=\"fr\">je ser<b>ai</b></span> (Futur) ≠ <span lang=\"fr\">je ser<b>ais</b></span> (Conditionnel). <span lang=\"fr\">je voud<b>r</b>ais</span> (Conditionnel) ≠ <span lang=\"fr\">je voulais</span> (Imparfait). Das <b>r</b> vor der Endung verrät den Conditionnel.</p>")}
+
+${H("Conditionnel passé")}
+<p>Bildung: <b>conditionnel von avoir/être + participe passé</b>.</p>
+${EX([
+["J'<b>aurais dû</b> travailler plus.","Ich hätte mehr arbeiten sollen. (Bedauern)"],
+["Tu <b>aurais pu</b> me prévenir !","Du hättest mich warnen können! (Vorwurf)"],
+["Si tu m'avais appelé, je <b>serais venu</b>.","Wenn du mich angerufen hättest, wäre ich gekommen. (Typ 3)"],
+["L'accident <b>aurait fait</b> trois victimes.","Der Unfall soll drei Opfer gefordert haben. (unbestätigt)"]])}
+`,
+ex:[
+{t:"fill",q:"Demain, nous ___ (avoir) un examen de français.",a:["aurons"],h:"Futurstamm <i>aur-</i> + <i>-ons</i>."},
+{t:"fill",q:"Quand tu ___ (être) à Paris, envoie-moi une carte.",a:["seras"],h:"Nach <i>quand</i> mit Zukunftsbezug steht das Futur."},
+{t:"fill",q:"Je te ___ (envoyer) le document ce soir.",a:["enverrai"],h:"Unregelmässiger Futurstamm: <i>envoyer → enverr-</i>."},
+{t:"fill",q:"Il ___ (falloir) partir tôt demain.",a:["faudra"],h:"<i>falloir → il faudra</i>."},
+{t:"fill",q:"Dès que j'___ (finir) ce travail, je t'appellerai.",a:["aurai fini"],h:"Die Handlung ist abgeschlossen, bevor die andere beginnt → futur antérieur."},
+{t:"fill",q:"___ (pouvoir)-vous fermer la fenêtre, s'il vous plaît ?",a:["Pourriez"],h:"Höfliche Bitte → conditionnel présent."},
+{t:"fill",q:"À ta place, j'___ (aller) voir un médecin.",a:["irais"],h:"Ratschlag → conditionnel: Stamm <i>ir-</i> + <i>-ais</i>."},
+{t:"mc",q:"Selon la radio, l'incendie ___ deux maisons.",o:["aurait détruit","aura détruit","a détruirait","avait détruit"],c:0,h:"Unbestätigte Information über die Vergangenheit → conditionnel passé."},
+{t:"fill",q:"Tu ___ (devoir) me le dire plus tôt ! (Vorwurf)",a:["aurais dû"],h:"Vorwurf über die Vergangenheit → conditionnel passé von <i>devoir</i>."},
+{t:"mc",q:"Elle m'a promis qu'elle ___.",o:["viendra","viendrait","vienne","venait"],c:1,h:"Zukunft aus Sicht der Vergangenheit → conditionnel présent."},
+{t:"fill",q:"Nous ___ (voir) bien ce qui se passera.",a:["verrons"],h:"<i>voir → verr-</i>."},
+{t:"mc",q:"Welche Form ist conditionnel présent?",o:["je parlerai","je parlerais","je parlais","je parlai"],c:1,h:"Futurstamm (<i>parler-</i>) + Imparfait-Endung (<i>-ais</i>)."}
+]});
+
+/* ===== Thema 3: Phrases hypothétiques ===== */
+TOPICS.push({
+id:"phrases-hypothetiques", fr:"Les phrases hypothétiques", de:"Die Bedingungssätze (si-Sätze)",
+chips:["Réel","Potentiel / Irréel du présent","Irréel du passé","Mischformen","si = ob"],
+intro:"Ein si-Satz besteht aus einem Nebensatz mit der Bedingung (si …) und einem Hauptsatz mit der Folge. Die wichtigste Regel: Nach <b>si</b> (= wenn, falls) stehen nie Futur oder Conditionnel.",
+html:`
+${H("Die drei Typen im Überblick")}
+${TBL(["Typ","si-Satz","Hauptsatz","Beispiel"],[
+["1 · Réel<br><small>real, erfüllbar</small>","si + <b>présent</b>","présent / futur / impératif","<span lang=\"fr\">S'il <b>fait</b> beau demain, nous <b>irons</b> à la plage.</span>"],
+["2 · Potentiel / Irréel du présent<br><small>möglich oder irreal (Gegenwart)</small>","si + <b>imparfait</b>","<b>conditionnel présent</b>","<span lang=\"fr\">Si j'<b>avais</b> de l'argent, j'<b>achèterais</b> une voiture.</span>"],
+["3 · Irréel du passé<br><small>Vergangenheit, nicht mehr erfüllbar</small>","si + <b>plus-que-parfait</b>","<b>conditionnel passé</b>","<span lang=\"fr\">Si tu <b>avais travaillé</b>, tu <b>aurais réussi</b>.</span>"]])}
+${BOX("tip","Eselsbrücke","<p><b>« Les -rais n'aiment pas le si. »</b> Formen auf <i>-rai</i> / <i>-rais</i> (Futur, Conditionnel) stehen nie direkt nach <i>si</i> = wenn.</p>")}
+
+${H("Typ 1: Réel")}
+${EX([
+["Si tu <b>viens</b>, je <b>serai</b> content.","Wenn du kommst, werde ich froh sein."],
+["Si tu <b>as fini</b>, tu <b>peux</b> partir.","Wenn du fertig bist, kannst du gehen. (si + passé composé)"],
+["Si tu <b>vois</b> Paul, <b>dis</b>-lui bonjour.","Wenn du Paul siehst, grüss ihn."]])}
+
+${H("Typ 2: Potentiel / Irréel du présent")}
+${EX([
+["Si j'<b>étais</b> toi, je ne <b>ferais</b> pas ça.","Wenn ich du wäre, würde ich das nicht tun."],
+["Si nous <b>habitions</b> à Genève, nous <b>parlerions</b> plus souvent français.","Wenn wir in Genf wohnten, würden wir öfter Französisch sprechen."]])}
+
+${H("Typ 3: Irréel du passé")}
+${EX([
+["Si j'<b>avais su</b>, je <b>serais venu</b>.","Wenn ich das gewusst hätte, wäre ich gekommen."],
+["S'il n'<b>avait</b> pas <b>plu</b>, nous <b>aurions fait</b> un pique-nique.","Wenn es nicht geregnet hätte, hätten wir ein Picknick gemacht."]])}
+
+${H("Mischformen")}
+<p>Bedingung und Folge können in verschiedenen Zeitebenen liegen:</p>
+${EX([
+["Si j'<b>avais pris</b> le train de 8 heures, je <b>serais</b> déjà à Berne maintenant.","Vergangene Bedingung, Folge in der Gegenwart: plus-que-parfait → conditionnel présent"],
+["Si j'<b>étais</b> plus courageux, j'<b>aurais dit</b> la vérité.","Dauerhafte Eigenschaft, Folge in der Vergangenheit: imparfait → conditionnel passé"]])}
+
+${H("Achtung: si = ob")}
+<p>In <b>indirekten Fragen</b> bedeutet <i>si</i> „ob“. Dann sind Futur und Conditionnel erlaubt:</p>
+${EX([["Je ne sais pas s'il <b>viendra</b> demain.","Ich weiss nicht, ob er morgen kommt."],["Elle se demandait si elle <b>réussirait</b>.","Sie fragte sich, ob sie es schaffen würde."]])}
+
+${H("Weitere Ausdrücke der Bedingung")}
+${TBL(["Ausdruck","Modus","Beispiel"],[
+["<i>même si</i> (selbst wenn)","wie <i>si</i>","<span lang=\"fr\">Même s'il <b>pleuvait</b>, je sortirais.</span>"],
+["<i>au cas où</i> (falls)","conditionnel","<span lang=\"fr\">Au cas où tu <b>aurais</b> besoin d'aide, appelle-moi.</span>"],
+["<i>à condition que, pourvu que, à moins que</i>","subjonctif","<span lang=\"fr\">Je viendrai à condition que tu <b>viennes</b> aussi.</span>"],
+["<i>sans</i> + Nomen","—","<span lang=\"fr\">Sans ton aide, je n'aurais pas réussi.</span>"]])}
+${BOX("rule","Merke","<p>Elision: <span lang=\"fr\">si + il → <b>s'il</b>, si + ils → <b>s'ils</b></span>, aber <span lang=\"fr\">si elle</span>, <span lang=\"fr\">si on</span> (ohne Apostroph).</p>")}
+`,
+ex:[
+{t:"fill",q:"Si tu ___ (venir) demain, nous ferons un gâteau.",a:["viens"],h:"Typ 1: si + présent → futur."},
+{t:"fill",q:"Si j'___ (avoir) plus de temps, j'apprendrais le russe.",a:["avais"],h:"Typ 2: si + imparfait → conditionnel présent."},
+{t:"fill",q:"Si nous étions riches, nous ___ (voyager) autour du monde.",a:["voyagerions"],h:"Typ 2: Hauptsatz im conditionnel présent."},
+{t:"fill",q:"S'il ___ (pleuvoir), nous serions restés à la maison.",a:["avait plu"],h:"Typ 3: si + plus-que-parfait → conditionnel passé."},
+{t:"fill",q:"Si tu m'avais écouté, tu ___ (ne pas faire) cette erreur.",a:["n'aurais pas fait"],h:"Typ 3: conditionnel passé, verneint um das Hilfsverb."},
+{t:"fill",q:"Si vous ___ (voir) Marie, dites-lui bonjour.",a:["voyez"],h:"Typ 1 mit Imperativ im Hauptsatz: si + présent."},
+{t:"mc",q:"Welcher Satz ist korrekt?",o:["Si j'aurais su, je serais venu.","Si j'avais su, je serais venu.","Si je savais, je serais venu hier.","Si j'ai su, je serais venu."],c:1,h:"Typ 3: si + plus-que-parfait, Hauptsatz im conditionnel passé. Nie Conditionnel nach si!"},
+{t:"mc",q:"Je ne sais pas ___ demain.",o:["s'il viendra","si il vient","s'il viendrai","s'il viendrait"],c:0,h:"Hier heisst <i>si</i> „ob“ (indirekte Frage) → Futur ist erlaubt. <i>si il</i> wird zu <i>s'il</i>."},
+{t:"fill",q:"Si j'avais pris le bus, je ___ (être) déjà à la maison maintenant.",a:["serais"],h:"Mischform: vergangene Bedingung, Folge jetzt → conditionnel présent."},
+{t:"tr",q:"Bilde einen Satz vom Typ 2:",s:"Si je (gagner) au loto, je (acheter) une maison.",a:["Si je gagnais au loto, j'achèterais une maison"],h:"si + imparfait → conditionnel présent."},
+{t:"tr",q:"Forme in Typ 3 um:",s:"Si tu travailles, tu réussiras.",a:["Si tu avais travaillé, tu aurais réussi"],h:"si + plus-que-parfait → conditionnel passé."},
+{t:"mc",q:"Au cas où tu ___ en retard, préviens-moi.",o:["serais","seras","es","sois"],c:0,h:"Nach <i>au cas où</i> steht der conditionnel."}
+]});
+
+/* ===== Thema 4: Le subjonctif ===== */
+TOPICS.push({
+id:"subjonctif", fr:"Le subjonctif", de:"Der Subjonctif",
+chips:["Bildung","Wille & Gefühl","Zweifel","Konjunktionen","Subjonctif passé"],
+intro:"Der subjonctif ist ein Modus, keine Zeit. Er steht fast immer in einem Nebensatz mit <b>que</b> und drückt Subjektives aus: Wille, Gefühl, Zweifel, Notwendigkeit. Der Indikativ stellt dagegen Tatsachen dar.",
+html:`
+${H("Bildung (regelmässig)")}
+<p>Stamm der <b>3. Person Plural Präsens</b> (<span lang="fr">ils <b>parl</b>ent</span>) + <b>-e, -es, -e, -ions, -iez, -ent</b>.</p>
+${TBL(["","parler<br><small>ils parlent</small>","finir<br><small>ils finissent</small>","vendre<br><small>ils vendent</small>","partir<br><small>ils partent</small>"],[
+["que je","parle","finisse","vende","parte"],["que tu","parles","finisses","vendes","partes"],["qu'il/elle","parle","finisse","vende","parte"],
+["que nous","parlions","finissions","vendions","partions"],["que vous","parliez","finissiez","vendiez","partiez"],["qu'ils/elles","parlent","finissent","vendent","partent"]],"conj")}
+<p>Verben mit zwei Stämmen: <i>nous</i> und <i>vous</i> bilden den subjonctif vom <i>nous</i>-Stamm des Präsens.</p>
+${LIST(["prendre: que je prenne / que nous prenions","venir: que je vienne / que nous venions","boire: que je boive / que nous buvions","recevoir: que je reçoive / que nous recevions","devoir: que je doive / que nous devions","voir: que je voie / que nous voyions","croire: que je croie / que nous croyions","acheter: que j'achète / que nous achetions"])}
+
+${H("Unregelmässige Formen")}
+${TBL(["","être","avoir","aller","faire"],[
+["que je / j'","sois","aie","aille","fasse"],["que tu","sois","aies","ailles","fasses"],["qu'il","soit","ait","aille","fasse"],
+["que nous","soyons","ayons","allions","fassions"],["que vous","soyez","ayez","alliez","fassiez"],["qu'ils","soient","aient","aillent","fassent"]],"conj")}
+${LIST(["pouvoir: que je puisse, que nous puissions","savoir: que je sache, que nous sachions","vouloir: que je veuille, que nous voulions","valoir: que je vaille","falloir: qu'il faille","pleuvoir: qu'il pleuve"])}
+
+${H("Wann steht der subjonctif?")}
+${TBL(["Auslöser","Ausdrücke","Beispiel"],[
+["Wille, Wunsch, Befehl","vouloir que, souhaiter que, désirer que, exiger que, demander que, préférer que, aimer que, accepter que, interdire que, permettre que","<span lang=\"fr\">Je veux que tu <b>viennes</b>.</span>"],
+["Gefühl","être content / heureux / triste / désolé que, regretter que, avoir peur que, craindre que, s'étonner que, c'est dommage que","<span lang=\"fr\">Je suis content que tu <b>sois</b> là.</span>"],
+["Zweifel, Möglichkeit","douter que, il est possible que, il se peut que, il semble que, ne pas croire / ne pas penser que","<span lang=\"fr\">Je doute qu'il <b>puisse</b> venir.</span>"],
+["Notwendigkeit, Wertung","il faut que, il est nécessaire / important / essentiel que, il vaut mieux que, il est normal que, il est temps que","<span lang=\"fr\">Il faut que nous <b>partions</b>.</span>"],
+["Konjunktionen","bien que, quoique, pour que, afin que, avant que, à moins que, sans que, jusqu'à ce que, pourvu que, à condition que, de peur que","<span lang=\"fr\">Bien qu'il <b>soit</b> malade, il travaille.</span>"],
+["Superlativ, <i>le seul, le premier</i>, Gesuchtes im Relativsatz","le plus … que, le seul … qui, je cherche quelqu'un qui …","<span lang=\"fr\">C'est le plus beau film que j'<b>aie</b> jamais vu.</span>"]])}
+
+${H("Indikativ: nicht verwechseln!")}
+${BOX("warn","Diese Ausdrücke stehen mit Indikativ","<p><b>espérer que</b>, <b>penser / croire / trouver que</b> (bejaht), il est probable que, il est certain / sûr / évident que, il paraît que, <b>après que</b>, parce que, pendant que, tandis que, dès que, même si.</p>")}
+${EX([
+["J'espère que tu <b>viendras</b>.","Ich hoffe, dass du kommst. (Indikativ!)"],
+["Je pense qu'il <b>a</b> raison.","bejaht → Indikativ"],
+["Je ne pense pas qu'il <b>ait</b> raison.","verneint → subjonctif"],
+["Pensez-vous qu'il <b>ait</b> raison ?","Frage mit Inversion → subjonctif"]])}
+
+${H("Infinitiv statt subjonctif")}
+<p>Haben Haupt- und Nebensatz <b>dasselbe Subjekt</b>, steht der Infinitiv:</p>
+${EX([
+["Je veux <b>partir</b>.","(nicht: Je veux que je parte.)"],
+["Je suis content <b>d'être</b> là.","Ich bin froh, hier zu sein."],
+["Mange <b>avant de partir</b>.","Iss, bevor du gehst. (gleiches Subjekt: avant de + Infinitiv)"],
+["Mange avant que nous <b>partions</b>.","Iss, bevor wir gehen. (verschiedene Subjekte: avant que + subjonctif)"]])}
+
+${H("Subjonctif passé")}
+<p>Bildung: <b>subjonctif von avoir/être + participe passé</b>. Für Handlungen, die vor der Handlung des Hauptsatzes liegen oder abgeschlossen sind.</p>
+${EX([
+["Je suis content que tu <b>aies réussi</b> l'examen.","Ich freue mich, dass du die Prüfung bestanden hast."],
+["Je regrette qu'elle <b>soit partie</b>.","Ich bedaure, dass sie gegangen ist."],
+["Il faut que tu <b>aies fini</b> avant midi.","Du musst vor Mittag fertig sein."]])}
+${BOX("tip","Ne explétif","<p>Nach <i>avoir peur que, craindre que, avant que, à moins que</i> kann ein <b>ne</b> ohne verneinende Bedeutung stehen (gehobener Stil): <span lang=\"fr\">J'ai peur qu'il <b>ne</b> pleuve.</span> = Ich habe Angst, dass es regnet.</p>")}
+`,
+ex:[
+{t:"fill",q:"Il faut que tu ___ (faire) tes devoirs.",a:["fasses"],h:"<i>il faut que</i> → subjonctif; <i>faire</i> ist unregelmässig: <i>que tu fasses</i>."},
+{t:"fill",q:"Je veux que vous ___ (être) à l'heure.",a:["soyez"],h:"Wille → subjonctif; <i>être → que vous soyez</i>."},
+{t:"fill",q:"Bien qu'il ___ (pleuvoir), nous sortons.",a:["pleuve"],h:"<i>bien que</i> → subjonctif."},
+{t:"fill",q:"Je suis contente que tu ___ (pouvoir) venir.",a:["puisses"],h:"Gefühl → subjonctif; <i>pouvoir → que tu puisses</i>."},
+{t:"fill",q:"Il est important que nous ___ (prendre) une décision.",a:["prenions"],h:"<i>nous</i> vom nous-Stamm: <i>nous prenons → que nous prenions</i>."},
+{t:"fill",q:"J'espère que tu ___ (aller) bien.",a:["vas"],h:"<i>espérer que</i> steht mit <b>Indikativ</b>."},
+{t:"mc",q:"Je ne pense pas qu'il ___ raison.",o:["a","ait","aura","avait"],c:1,h:"<i>penser</i> verneint → subjonctif."},
+{t:"mc",q:"Je pense qu'il ___ raison.",o:["a","ait","aie","eût"],c:0,h:"<i>penser</i> bejaht → Indikativ."},
+{t:"fill",q:"Explique-le-moi encore une fois pour que je ___ (comprendre).",a:["comprenne"],h:"<i>pour que</i> → subjonctif; <i>ils comprennent → que je comprenne</i>."},
+{t:"fill",q:"Je doute qu'elle ___ (savoir) la vérité.",a:["sache"],h:"Zweifel → subjonctif; <i>savoir → que je sache</i>."},
+{t:"mc",q:"Je voudrais ___ demain.",o:["que je parte","partir","que je pars","de partir"],c:1,h:"Gleiches Subjekt → Infinitiv, und <i>vouloir</i> steht ohne <i>de</i>."},
+{t:"fill",q:"Je regrette que vous ___ (partir) si tôt hier soir.",a:["soyez partis","soyez parties","soyez parti","soyez partie"],h:"Vergangene Handlung → subjonctif passé; <i>partir</i> mit être."},
+{t:"fill",q:"Attends ici jusqu'à ce que je ___ (revenir).",a:["revienne"],h:"<i>jusqu'à ce que</i> → subjonctif."},
+{t:"mc",q:"Après qu'il ___, nous avons mangé.",o:["est arrivé","soit arrivé","arrive","arriverait"],c:0,h:"Nach der Norm steht <i>après que</i> mit Indikativ (im Gegensatz zu <i>avant que</i>)."}
+]});
+/* ===== Thema 5: Gérondif et participe présent ===== */
+TOPICS.push({
+id:"gerondif-participe", fr:"Gérondif et participe présent", de:"Gérondif und Partizip Präsens",
+chips:["Participe présent","Gérondif","Participe composé","Adjectif verbal"],
+intro:"Beide Formen enden auf <b>-ant</b>. Das <i>gérondif</i> (mit <b>en</b>) beschreibt Umstände einer Handlung desselben Subjekts. Das <i>participe présent</i> (ohne en) ersetzt vor allem in der Schriftsprache Relativ- und Kausalsätze.",
+html:`
+${H("Bildung des participe présent")}
+<p>Stamm der <b>1. Person Plural Präsens</b> + <b>-ant</b>.</p>
+${TBL(["Infinitiv","nous-Form","Participe présent"],[
+["chanter","nous chant<b>ons</b>","chant<b>ant</b>"],["finir","nous finiss<b>ons</b>","finiss<b>ant</b>"],["faire","nous fais<b>ons</b>","fais<b>ant</b>"],["prendre","nous pren<b>ons</b>","pren<b>ant</b>"],
+["manger","nous mange<b>ons</b>","mange<b>ant</b>"],["commencer","nous commen<b>ç</b>ons","commen<b>ç</b>ant"]])}
+${BOX("rule","Nur drei Ausnahmen","<p><span lang=\"fr\">être → <b>étant</b> · avoir → <b>ayant</b> · savoir → <b>sachant</b></span></p>")}
+
+${H("Gérondif: en + participe présent")}
+<p>Das <i>gérondif</i> ist <b>unveränderlich</b>. Es bezieht sich immer auf das <b>Subjekt des Hauptsatzes</b>.</p>
+${TBL(["Bedeutung","Deutsch","Beispiel"],[
+["Gleichzeitigkeit","während, beim …","<span lang=\"fr\">Il chante <b>en prenant</b> sa douche.</span>"],
+["Art und Weise, Mittel","indem, dadurch dass","<span lang=\"fr\">Elle a appris l'italien <b>en regardant</b> des films.</span>"],
+["Bedingung","wenn","<span lang=\"fr\"><b>En partant</b> maintenant, tu arriveras à l'heure.</span>"],
+["Gegensatz mit <b>tout en</b>","obwohl, zugleich","<span lang=\"fr\"><b>Tout en étant</b> malade, il est venu au cours.</span>"]])}
+${EX([["C'est <b>en forgeant</b> qu'on devient forgeron.","Übung macht den Meister. (wörtlich: Durch Schmieden wird man Schmied.)"]])}
+${BOX("warn","Achtung: Wer handelt?","<p><span lang=\"fr\">J'ai vu Paul <b>en sortant</b> du cinéma.</span> = <b>Ich</b> kam aus dem Kino.<br><span lang=\"fr\">J'ai vu Paul <b>sortant</b> du cinéma.</span> = <b>Paul</b> kam aus dem Kino.</p>")}
+
+${H("Participe présent (ohne en)")}
+<p>Vor allem schriftsprachlich und ebenfalls <b>unveränderlich</b>. Es ersetzt:</p>
+<p><b>einen Relativsatz mit qui</b></p>
+${EX([
+["Les élèves <b>ayant</b> réussi l'examen recevront un certificat.","= qui ont réussi …"],
+["On cherche un vendeur <b>parlant</b> allemand.","= qui parle allemand"]])}
+<p><b>einen Kausalsatz</b> (comme, puisque)</p>
+${EX([
+["<b>Étant</b> malade, il est resté au lit.","Da er krank war, blieb er im Bett."],
+["N'<b>ayant</b> pas d'argent, elle n'a pas pu partir.","Da sie kein Geld hatte, konnte sie nicht verreisen."]])}
+
+${H("Participe présent composé")}
+<p><b>ayant / étant + participe passé</b> drückt Vorzeitigkeit aus. Bei <i>étant</i> wird das Partizip angeglichen.</p>
+${EX([
+["<b>Ayant terminé</b> ses devoirs, il est sorti.","Nachdem er seine Hausaufgaben beendet hatte, ging er hinaus."],
+["<b>Étant arrivée</b> en retard, elle a manqué le début.","Da sie zu spät angekommen war, verpasste sie den Anfang."]])}
+
+${H("Adjectif verbal")}
+<p>Wird das Partizip als <b>Adjektiv</b> gebraucht (Eigenschaft statt Handlung), ist es <b>veränderlich</b>:</p>
+${EX([
+["une histoire <b>passionnante</b>, des enfants <b>obéissants</b>","Eigenschaft → angeglichen"],
+["des enfants <b>obéissant</b> à leurs parents","Handlung mit Ergänzung → unveränderlich"]])}
+<p>Manche Adjektive werden anders geschrieben als das Partizip:</p>
+${TBL(["Participe présent (Handlung)","Adjectif verbal (Eigenschaft)"],[
+["fatiguant","fatigant"],["convainquant","convaincant"],["provoquant","provocant"],["communiquant","communicant"],
+["précédant","précédent"],["différant","différent"],["négligeant","négligent"],["excellant","excellent"]])}
+`,
+ex:[
+{t:"fill",q:"Elle écoute de la musique ___ (faire) ses devoirs.",a:["en faisant"],h:"Gleichzeitigkeit, gleiches Subjekt → gérondif: <i>en</i> + participe présent."},
+{t:"fill",q:"C'est ___ (lire) beaucoup qu'on enrichit son vocabulaire.",a:["en lisant"],h:"Mittel (dadurch dass) → gérondif. <i>nous lisons → lisant</i>."},
+{t:"fill",q:"___ (être) malade, il n'est pas venu à l'école.",a:["Étant","Etant"],h:"Grund → participe présent; <i>être → étant</i> (Ausnahme)."},
+{t:"fill",q:"Les élèves ___ (avoir) moins de 18 ans doivent présenter une autorisation.",a:["ayant"],h:"Ersetzt den Relativsatz <i>qui ont</i>; <i>avoir → ayant</i>."},
+{t:"fill",q:"Il est tombé ___ (descendre) l'escalier.",a:["en descendant"],h:"Gleichzeitigkeit (beim Hinuntergehen) → gérondif."},
+{t:"fill",q:"___ (savoir) qu'il était tard, elle a pris un taxi.",a:["Sachant"],h:"<i>savoir → sachant</i> (Ausnahme)."},
+{t:"mc",q:"« Tout en sachant que c'était dangereux, il a continué. » Was bedeutet <i>tout en</i> hier?",o:["obwohl","weil","nachdem","damit"],c:0,h:"<i>tout en</i> + participe présent drückt einen Gegensatz aus."},
+{t:"mc",q:"C'est un travail très ___.",o:["fatiguant","fatigant","fatigants","en fatiguant"],c:1,h:"Eigenschaft → adjectif verbal, geschrieben <i>fatigant</i> (ohne u)."},
+{t:"fill",q:"___ (finir) son travail, il est rentré chez lui. (Vorzeitigkeit)",a:["Ayant fini"],h:"Vorzeitigkeit → participe présent composé: <i>ayant</i> + participe passé."},
+{t:"mc",q:"Welches ist das participe présent von <i>commencer</i>?",o:["commençant","commencant","commencent","commençons"],c:0,h:"Vor <i>a</i> braucht es die Cédille: <i>commençant</i>."},
+{t:"tr",q:"Ersetze den Relativsatz durch ein participe présent:",s:"Les touristes qui viennent de Chine visitent Lucerne.",a:["Les touristes venant de Chine visitent Lucerne"],h:"<i>qui viennent → venant</i> (unveränderlich)."},
+{t:"tr",q:"Ersetze den si-Satz durch ein gérondif:",s:"Si tu prends le train, tu arriveras plus vite.",a:["En prenant le train, tu arriveras plus vite"],h:"Bedingung mit gleichem Subjekt → <i>en prenant</i>."}
+]});
+
+/* ===== Thema 6: L'impératif ===== */
+TOPICS.push({
+id:"imperatif", fr:"L'impératif", de:"Der Imperativ",
+chips:["Bildung","Unregelmässige Formen","Pronomen","Verneinung","Reflexive Verben"],
+intro:"Der Imperativ hat drei Formen (tu, nous, vous) und kommt ohne Subjektpronomen aus. Schwierig wird es bei den Objektpronomen, die beim bejahten Imperativ hinter das Verb wandern.",
+html:`
+${H("Bildung")}
+<p>Man nimmt die Präsensformen von <i>tu, nous, vous</i> ohne Pronomen. Bei <b>-er-Verben</b> (und bei <i>aller, ouvrir, offrir, souffrir, cueillir</i>) fällt das <b>-s</b> der tu-Form weg.</p>
+${TBL(["","parler","finir","prendre","aller"],[
+["tu","parle !","finis !","prends !","va !"],["nous","parlons !","finissons !","prenons !","allons !"],["vous","parlez !","finissez !","prenez !","allez !"]],"conj")}
+${BOX("warn","Achtung","<p>Vor <b>y</b> und <b>en</b> kommt das -s zurück (wegen der Aussprache): <span lang=\"fr\">Va<b>s</b>-y ! Mange<b>s</b>-en ! Parle<b>s</b>-en à ton prof.</span></p>")}
+
+${H("Unregelmässige Formen")}
+${TBL(["","être","avoir","savoir","vouloir"],[
+["tu","sois","aie","sache","veuille"],["nous","soyons","ayons","sachons","veuillons"],["vous","soyez","ayez","sachez","veuillez"]],"conj")}
+${EX([["<b>Soyez</b> prudents !","Seid vorsichtig!"],["N'<b>aie</b> pas peur !","Hab keine Angst!"],["<b>Veuillez</b> agréer, Madame, mes salutations distinguées.","Briefschluss: Mit freundlichen Grüssen"]])}
+
+${H("Pronomen beim bejahten Imperativ")}
+<p>Die Pronomen stehen <b>nach dem Verb</b> und werden mit <b>Bindestrich</b> verbunden. <b>me → moi</b>, <b>te → toi</b>.</p>
+${BOX("rule","Reihenfolge","<p>Verb – <b>le / la / les</b> – <b>moi / toi / lui / nous / vous / leur</b> – <b>y</b> – <b>en</b></p>")}
+${EX([
+["Donne-<b>moi</b> le livre. → Donne-<b>le-moi</b>.","Gib es mir."],
+["Dis-<b>lui</b> la vérité. → Dis-<b>la-lui</b>.","Sag sie ihm."],
+["Achètes-<b>en</b> !","Kauf davon!"],
+["Donne-<b>m'en</b> !","Gib mir davon! (moi + en → m'en)"],
+["Allons-<b>y</b> !","Los geht's!"]])}
+
+${H("Verneinter Imperativ")}
+<p>Die Pronomen stehen <b>vor dem Verb</b>, in der normalen Reihenfolge (wie im Aussagesatz).</p>
+${EX([
+["<b>Ne me le</b> donne <b>pas</b>.","Gib es mir nicht."],
+["<b>Ne lui</b> dis <b>pas</b>.","Sag es ihm nicht."],
+["<b>N'y</b> va <b>pas</b> !","Geh nicht hin!"],
+["<b>N'en</b> mange <b>pas</b> trop.","Iss nicht zu viel davon."]])}
+
+${H("Reflexive Verben")}
+${TBL(["bejaht","verneint"],[
+["Lève-<b>toi</b> !","Ne <b>te</b> lève pas !"],["Levons-<b>nous</b> !","Ne <b>nous</b> levons pas !"],["Levez-<b>vous</b> !","Ne <b>vous</b> levez pas !"]])}
+
+${H("Alternativen zum Imperativ")}
+${TBL(["Situation","Form","Beispiel"],[
+["höfliche Bitte","conditionnel","<span lang=\"fr\">Pourriez-vous fermer la porte ?</span>"],
+["Anleitung, Schild, Rezept","Infinitiv","<span lang=\"fr\">Ne pas fumer. Mélanger la farine et le sucre.</span>"],
+["Aufforderung an eine 3. Person","que + subjonctif","<span lang=\"fr\">Qu'il entre !</span>"]])}
+`,
+ex:[
+{t:"fill",q:"___ (aller, tu) chercher le pain, s'il te plaît !",a:["Va"],h:"<i>aller</i> verliert in der tu-Form das -s: <i>va !</i>"},
+{t:"fill",q:"___ (être, vous) prudents sur la route !",a:["Soyez"],h:"Unregelmässig: <i>être → sois, soyons, soyez</i>."},
+{t:"fill",q:"N'___ (avoir, tu) pas peur !",a:["aie"],h:"Unregelmässig: <i>avoir → aie, ayons, ayez</i>."},
+{t:"tr",q:"Ersetze beide Objekte durch Pronomen:",s:"Donne le livre à Paul !",a:["Donne-le-lui"],h:"Bejahter Imperativ: Verb – le – lui, mit Bindestrichen."},
+{t:"tr",q:"Verneine:",s:"Lève-toi !",a:["Ne te lève pas"],h:"Verneint steht das Pronomen vor dem Verb, <i>toi</i> wird wieder zu <i>te</i>."},
+{t:"tr",q:"Ersetze das Objekt durch ein Pronomen:",s:"Prends des pommes !",a:["Prends-en"],h:"<i>des pommes</i> (Teilungsartikel) → <i>en</i>."},
+{t:"fill",q:"Tu veux aller au parc ? ___-y !",a:["Vas"],h:"Vor <i>y</i> bekommt <i>va</i> wieder ein -s: <i>Vas-y !</i>"},
+{t:"mc",q:"Wie lautet die Verneinung von « Dis-le-moi ! » ?",o:["Ne me le dis pas !","Ne le me dis pas !","Ne dis-le-moi pas !","Ne dis pas-le-moi !"],c:0,h:"Verneint: Pronomen vor dem Verb in der Reihenfolge me – le."},
+{t:"fill",q:"___ (savoir, vous) que l'école ferme à 18 heures.",a:["Sachez"],h:"Unregelmässig: <i>savoir → sache, sachons, sachez</i>."},
+{t:"tr",q:"Bejahe:",s:"Ne leur en parle pas !",a:["Parle-leur-en"],h:"Reihenfolge: Verb – leur – en. Das -s kommt nur, wenn y/en direkt auf das Verb folgt."},
+{t:"mc",q:"Welche Imperativform ist <b>falsch</b>?",o:["Mange !","Finis !","Vas ! (allein)","Prends !"],c:2,h:"Ohne folgendes <i>y</i> heisst es <i>Va !</i>."}
+]});
+
+/* ===== Thema 7: Les pronoms ===== */
+TOPICS.push({
+id:"pronoms", fr:"Les pronoms", de:"Die Pronomen",
+chips:["COD & COI","y & en","Stellung","Pronoms toniques","Démonstratifs","Possessifs"],
+intro:"Pronomen ersetzen bereits genannte Wörter und machen Texte flüssig. Entscheidend sind drei Fragen: Was wird ersetzt (direktes oder indirektes Objekt, à + Sache, de + Sache)? Wo steht das Pronomen? In welcher Reihenfolge?",
+html:`
+${H("Objektpronomen: COD und COI")}
+${TBL(["Person","COD (direktes Objekt)","COI (indirekt, mit à)","Pronom tonique"],[
+["je","me (m')","me (m')","moi"],["tu","te (t')","te (t')","toi"],["il","le (l')","lui","lui"],["elle","la (l')","lui","elle"],
+["nous","nous","nous","nous"],["vous","vous","vous","vous"],["ils","les","leur","eux"],["elles","les","leur","elles"]])}
+${EX([["Je vois <b>Marie</b>. → Je <b>la</b> vois.","COD"],["Je parle <b>à Marie</b>. → Je <b>lui</b> parle.","COI"]])}
+${BOX("warn","Andere Anschlüsse als im Deutschen","<p><b>Mit direktem Objekt (COD):</b> aider qn (<span lang=\"fr\">je <b>l'</b>aide</span> = ich helfe ihm), remercier qn, appeler qn, écouter qn, attendre qn, suivre qn.<br><b>Mit indirektem Objekt (COI):</b> téléphoner à qn (<span lang=\"fr\">je <b>lui</b> téléphone</span> = ich rufe ihn an), répondre à qn, ressembler à qn, demander à qn, conseiller à qn, plaire à qn, obéir à qn.</p>")}
+
+${H("Die Pronomen y und en")}
+${TBL(["Pronomen","ersetzt","Beispiel"],[
+["<b>y</b>","à + Sache","<span lang=\"fr\">Je pense à l'examen. → J'<b>y</b> pense.</span>"],
+["<b>y</b>","Ortsangabe (à, en, dans, chez, sur …)","<span lang=\"fr\">Je vais à Genève. → J'<b>y</b> vais.</span>"],
+["<b>en</b>","de + Sache","<span lang=\"fr\">Il parle de son voyage. → Il <b>en</b> parle.</span>"],
+["<b>en</b>","Teilungsartikel, unbestimmter Plural","<span lang=\"fr\">Tu veux du pain ? → Oui, j'<b>en</b> veux.</span>"],
+["<b>en</b>","Mengenangaben (Zahl bleibt stehen)","<span lang=\"fr\">J'ai trois frères. → J'<b>en</b> ai trois.</span>"],
+["<b>en</b>","Herkunft (de + Ort)","<span lang=\"fr\">Je viens de Berne. → J'<b>en</b> viens.</span>"]])}
+${BOX("warn","Bei Personen","<p>Nach <i>à</i> und <i>de</i> stehen bei Personen meist <b>pronoms toniques</b>, besonders bei <i>penser à, s'intéresser à, faire attention à, parler de, avoir peur de</i>:</p>"+EX([["Je pense à mes parents. → Je pense <b>à eux</b>.",""],["Il parle de sa sœur. → Il parle <b>d'elle</b>.",""]]))}
+
+${H("Stellung der Pronomen")}
+${TBL(["Satzbau","Stellung","Beispiel"],[
+["einfache Zeit","vor dem konjugierten Verb","<span lang=\"fr\">Je <b>le</b> vois. Je ne <b>le</b> vois pas.</span>"],
+["passé composé","vor dem Hilfsverb","<span lang=\"fr\">Je <b>l'</b>ai vu. Je ne <b>l'</b>ai pas vu.</span>"],
+["Verb + Infinitiv","vor dem Infinitiv","<span lang=\"fr\">Je veux <b>le</b> voir. Je vais <b>lui</b> téléphoner.</span>"],
+["bejahter Imperativ","nach dem Verb","<span lang=\"fr\">Regarde-<b>le</b> !</span> (→ Impératif)"]])}
+
+${H("Reihenfolge bei zwei Pronomen")}
+<div class="order" lang="fr"><span>me<br>te<br>se<br>nous<br>vous</span><i>→</i><span>le<br>la<br>les</span><i>→</i><span>lui<br>leur</span><i>→</i><span>y</span><i>→</i><span>en</span></div>
+${EX([
+["Il <b>me le</b> donne.","Er gibt es mir."],
+["Je <b>le lui</b> ai dit.","Ich habe es ihm gesagt."],
+["Je <b>leur en</b> ai parlé.","Ich habe mit ihnen darüber gesprochen."],
+["Il <b>y en</b> a.","Es gibt davon."]])}
+${BOX("tip","Eselsbrücke","<p><i>me, te, nous, vous</i> stehen <b>vor</b> <i>le, la, les</i>; <i>lui, leur</i> stehen <b>danach</b>. Und <b>« il y en a »</b> erinnert dich daran, dass y vor en kommt.</p>")}
+
+${H("Pronoms toniques")}
+<p>Die betonten Pronomen <i>moi, toi, lui, elle, nous, vous, eux, elles</i> stehen:</p>
+${EX([
+["<b>Moi</b>, je pense que …","zur Betonung"],
+["avec <b>moi</b>, chez <b>eux</b>, pour <b>elle</b>","nach Präpositionen"],
+["C'est <b>lui</b> !","nach c'est"],
+["Il est plus grand que <b>toi</b>.","im Vergleich"],
+["Qui veut du gâteau ? – <b>Moi</b> !","allein, ohne Verb"],
+["Je l'ai fait <b>moi-même</b>.","mit -même"]])}
+
+${H("Demonstrativpronomen")}
+<p><b>celui</b> (m. Sg.), <b>celle</b> (f. Sg.), <b>ceux</b> (m. Pl.), <b>celles</b> (f. Pl.) stehen nie allein, sondern immer mit:</p>
+${EX([
+["Quel pull ? <b>Celui-ci</b> ou <b>celui-là</b> ?","-ci / -là"],
+["Ma voiture et <b>celle de</b> mon frère.","de + Nomen"],
+["<b>Ceux qui</b> travaillent réussiront.","Relativpronomen"]])}
+<p>Neutral: <span lang="fr">ce, ceci, cela / ça</span> → <span lang="fr">Ça m'énerve. Ce qui est important, c'est …</span></p>
+
+${H("Possessivpronomen")}
+${TBL(["Besitzer","m. Sg.","f. Sg.","m. Pl.","f. Pl."],[
+["je","le mien","la mienne","les miens","les miennes"],["tu","le tien","la tienne","les tiens","les tiennes"],["il / elle","le sien","la sienne","les siens","les siennes"],
+["nous","le nôtre","la nôtre","les nôtres","les nôtres"],["vous","le vôtre","la vôtre","les vôtres","les vôtres"],["ils / elles","le leur","la leur","les leurs","les leurs"]],"conj")}
+${BOX("rule","Merke","<p>Das Pronomen richtet sich nach dem <b>Besitz</b>, nicht nach dem Besitzer: <span lang=\"fr\">C'est la voiture de Paul ? Oui, c'est <b>la sienne</b>.</span><br>Pronomen <i>le nôtre, le vôtre</i> mit Accent circonflexe, Begleiter <i>notre, votre</i> ohne.</p>")}
+`,
+ex:[
+{t:"tr",q:"Ersetze « Marie » durch ein Pronomen:",s:"Je vois Marie tous les jours.",a:["Je la vois tous les jours"],h:"<i>voir qn</i> → direktes Objekt, feminin → <i>la</i>."},
+{t:"tr",q:"Ersetze « à mes parents »:",s:"Je téléphone à mes parents.",a:["Je leur téléphone"],h:"<i>téléphoner à qn</i> → indirektes Objekt, Plural → <i>leur</i>."},
+{t:"tr",q:"Ersetze « mon frère »:",s:"J'aide mon frère.",a:["Je l'aide"],h:"<i>aider qn</i> hat ein direktes Objekt → <i>le</i>, elidiert zu <i>l'</i>."},
+{t:"tr",q:"Ersetze « à Lausanne »:",s:"Nous allons à Lausanne demain.",a:["Nous y allons demain"],h:"Ortsangabe mit à → <i>y</i>."},
+{t:"tr",q:"Ersetze « de la confiture »:",s:"Elle mange de la confiture.",a:["Elle en mange"],h:"Teilungsartikel → <i>en</i>."},
+{t:"tr",q:"Ersetze beide Objekte:",s:"Je donne le cadeau à ma mère.",a:["Je le lui donne"],h:"Reihenfolge: le vor lui."},
+{t:"tr",q:"Ersetze beide Objekte:",s:"Il a parlé de son projet à ses amis.",a:["Il leur en a parlé"],h:"<i>à ses amis → leur</i>, <i>de son projet → en</i>; beide vor dem Hilfsverb, leur vor en."},
+{t:"tr",q:"Ersetze « cette lettre »:",s:"Je vais écrire cette lettre.",a:["Je vais l'écrire"],h:"Bei Verb + Infinitiv steht das Pronomen vor dem Infinitiv."},
+{t:"mc",q:"Tu penses souvent à tes grands-parents ? – Oui, je pense souvent ___.",o:["à eux","leur","y","en"],c:0,h:"<i>penser à</i> + Person → à + pronom tonique."},
+{t:"mc",q:"Combien de sœurs as-tu ? – J'___ ai deux.",o:["en","y","les","leur"],c:0,h:"Mengenangabe → <i>en</i>, die Zahl bleibt stehen."},
+{t:"fill",q:"Ce n'est pas mon stylo, c'est ___ (deiner).",a:["le tien"],h:"<i>le stylo</i> ist maskulin Singular → <i>le tien</i>."},
+{t:"fill",q:"Ces chaussures sont moins chères que ___ de Julie.",a:["celles"],h:"Ersetzt <i>les chaussures</i> (f. Pl.) → <i>celles</i>."},
+{t:"mc",q:"Les clés ? Je ___ ai oubliées.",o:["les","leur","en","y"],c:0,h:"<i>oublier qc</i> → direktes Objekt <i>les</i>. Das Partizip wird angeglichen, weil das COD davor steht."},
+{t:"tr",q:"Ersetze « la règle » durch ein Pronomen:",s:"Elle nous a expliqué la règle.",a:["Elle nous l'a expliquée"],h:"<i>nous</i> vor <i>la</i> → <i>nous l'a</i>. Das COD <i>l'</i> (= la règle) steht jetzt vor avoir → <i>expliquée</i>."}
+]});
+
+/* ===== Thema 8: Adjectifs et adverbes ===== */
+TOPICS.push({
+id:"adjectifs-adverbes", fr:"Adjectifs et adverbes", de:"Adjektive und Adverbien",
+chips:["Angleichung","Stellung","Adverbbildung","Komparativ","Superlativ"],
+intro:"Das Adjektiv beschreibt ein Nomen und wird angeglichen. Das Adverb beschreibt ein Verb, ein Adjektiv oder einen ganzen Satz und bleibt unverändert.",
+html:`
+${H("Angleichung des Adjektivs")}
+<p>Grundregel: feminin <b>+e</b>, Plural <b>+s</b>. Endet das Adjektiv schon auf <i>-e</i>, ändert sich im Feminin nichts (<span lang="fr">jeune → jeune</span>).</p>
+${TBL(["Endung m.","Endung f.","Beispiel"],[
+["-er","-ère","cher → ch<b>ère</b>"],["-eux","-euse","heureux → heur<b>euse</b>"],["-if","-ive","sportif → sport<b>ive</b>"],["-el / -eil","-elle / -eille","naturel → natur<b>elle</b>, pareil → par<b>eille</b>"],
+["-en / -on","-enne / -onne","européen → europé<b>enne</b>, bon → b<b>onne</b>"],["-et","-ette (meist) / -ète","muet → mu<b>ette</b>; complet → compl<b>ète</b>, inquiet, discret, secret"],
+["-c","-che / -que","blanc → blan<b>che</b>, public → publi<b>que</b>"],["-g","-gue","long → lon<b>gue</b>"],["-eur","-euse / -rice","menteur → ment<b>euse</b>, créateur → créat<b>rice</b>"]])}
+${LIST(["doux → douce","faux → fausse","roux → rousse","frais → fraîche","sec → sèche","gentil → gentille","favori → favorite","fou → folle"])}
+<p>Plural: <b>-al → -aux</b> (national → nationaux; aber <i>banal, final, fatal, naval</i> → -als), <b>-eau → -eaux</b>, Endung auf <b>-s / -x</b> bleibt (gris, heureux).</p>
+
+${H("beau, nouveau, vieux")}
+<p>Vor einem maskulinen Nomen im Singular, das mit Vokal oder stummem h beginnt, gibt es eine Sonderform:</p>
+${TBL(["m. vor Konsonant","m. vor Vokal","f.","m. Pl."],[
+["beau","<b>bel</b> homme","belle","beaux"],["nouveau","<b>nouvel</b> appartement","nouvelle","nouveaux"],["vieux","<b>vieil</b> ami","vieille","vieux"]])}
+
+${H("Farbadjektive")}
+<p>Unveränderlich sind Farbadjektive, die von einem <b>Nomen</b> abgeleitet sind (orange, marron, crème, citron; Ausnahmen: rose, mauve) und <b>zusammengesetzte</b> Farben.</p>
+${EX([["des chaussures <b>marron</b>","nicht: marrons"],["une robe <b>bleu foncé</b>","nicht: bleue foncée"]])}
+
+${H("Stellung des Adjektivs")}
+<p>Meistens steht das Adjektiv <b>nach</b> dem Nomen, immer bei Farben, Nationalitäten, Formen und Partizipien: <span lang="fr">une voiture rouge, un film français</span>.</p>
+${BOX("tip","Eselsbrücke BAGS: diese stehen vor dem Nomen","<p><b>B</b>eauté (beau, joli) · <b>A</b>ge (jeune, vieux, nouveau) · <b>G</b>oodness (bon, mauvais, gentil) · <b>S</b>ize (grand, petit, gros, long)<br><span lang=\"fr\">une jolie maison, un petit chien, un bon repas</span></p>")}
+<p>Einige Adjektive ändern ihre Bedeutung je nach Stellung:</p>
+${TBL(["Adjektiv","vor dem Nomen","nach dem Nomen"],[
+["ancien","un ancien professeur (ehemalig)","un meuble ancien (antik)"],["grand","un grand homme (bedeutend)","un homme grand (gross gewachsen)"],
+["cher","mon cher ami (lieb)","une voiture chère (teuer)"],["propre","ma propre chambre (eigen)","une chambre propre (sauber)"],
+["pauvre","le pauvre garçon (bedauernswert)","un garçon pauvre (arm, ohne Geld)"],["seul","un seul enfant (einzig)","un enfant seul (allein)"],
+["même","la même idée (dieselbe)","l'idée même (die Idee selbst)"],["dernier","la dernière semaine (die letzte einer Reihe)","la semaine dernière (vergangene Woche)"]])}
+
+${H("Bildung der Adverbien")}
+${TBL(["Regel","Beispiel"],[
+["feminine Form + <b>-ment</b>","lent → lente → lente<b>ment</b>; heureux → heureuse<b>ment</b>; doux → douce<b>ment</b>"],
+["Adjektiv endet auf Vokal: maskuline Form + <b>-ment</b>","vrai → vrai<b>ment</b>; poli → poli<b>ment</b>; absolu → absolu<b>ment</b>"],
+["-ant → <b>-amment</b>","courant → cour<b>amment</b>; constant → const<b>amment</b>"],
+["-ent → <b>-emment</b> (gesprochen [amɑ̃])","évident → évid<b>emment</b>; prudent → prud<b>emment</b> (Ausnahme: lent → lentement)"],
+["einige auf <b>-ément</b>","précis → précis<b>ément</b>; énorme → énorm<b>ément</b>; profond → profond<b>ément</b>; intense → intens<b>ément</b>"],
+["unregelmässig","bon → <b>bien</b>; mauvais → <b>mal</b>; gentil → <b>gentiment</b>; bref → <b>brièvement</b>"]])}
+${BOX("warn","Adjektiv oder Adverb?","<p>Adjektiv beschreibt ein Nomen, Adverb ein Verb: <span lang=\"fr\">Ce gâteau est <b>bon</b>. / Elle chante <b>bien</b>.</span><br>Feste Wendungen mit unveränderlichem Adjektiv als Adverb: <span lang=\"fr\">parler fort, coûter cher, sentir bon, travailler dur, chanter faux</span>.</p>")}
+
+${H("Stellung der Adverbien")}
+${EX([
+["Il parle <b>souvent</b> de toi.","nach dem konjugierten Verb"],
+["J'ai <b>bien</b> dormi. Il a <b>déjà</b> mangé.","kurze Adverbien (bien, mal, déjà, beaucoup, trop, souvent, toujours, encore) zwischen Hilfsverb und Partizip"],
+["Il a répondu <b>poliment</b>.","lange Adverbien auf -ment meist nach dem Partizip"],
+["Je l'ai vu <b>hier</b>.","Zeit- und Ortsangaben am Satzende oder -anfang"]])}
+
+${H("Komparativ")}
+${TBL(["","Struktur","Beispiel"],[
+["Adjektiv / Adverb","plus / aussi / moins + Adj. + que","<span lang=\"fr\">Paul est <b>plus grand que</b> Luc. Elle court <b>aussi vite que</b> moi.</span>"],
+["Nomen","plus de / autant de / moins de + Nomen + que","<span lang=\"fr\">J'ai <b>plus de</b> livres <b>que</b> toi.</span>"],
+["Verb","Verb + plus / autant / moins + que","<span lang=\"fr\">Il travaille <b>autant que</b> moi.</span>"]])}
+${TBL(["Grundform","Komparativ","Superlativ"],[
+["bon (Adjektiv)","<b>meilleur</b>","le meilleur / la meilleure"],["bien (Adverb)","<b>mieux</b>","le mieux"],
+["mauvais","plus mauvais / <b>pire</b>","le plus mauvais / le pire"],["beaucoup","plus","le plus"],["peu","moins","le moins"]])}
+${BOX("warn","Achtung","<p><span lang=\"fr\">plus bon</span> ✗ → <b>meilleur</b> · <span lang=\"fr\">plus bien</span> ✗ → <b>mieux</b><br><span lang=\"fr\">Ce film est <b>meilleur</b>. / Il chante <b>mieux</b>.</span></p>")}
+
+${H("Superlativ")}
+${EX([
+["la <b>plus belle</b> ville","vorangestelltes Adjektiv"],
+["la ville <b>la plus intéressante</b>","nachgestelltes Adjektiv: Artikel wird wiederholt"],
+["le plus haut sommet <b>de</b> Suisse","Ergänzung mit de"],
+["C'est elle qui court <b>le plus</b> vite.","beim Adverb: immer le (unveränderlich)"]])}
+`,
+ex:[
+{t:"fill",q:"Ma sœur est très ___ (sportif).",a:["sportive"],h:"<i>-if → -ive</i>."},
+{t:"fill",q:"Ce sont des problèmes ___ (international).",a:["internationaux"],h:"<i>-al → -aux</i> im maskulinen Plural."},
+{t:"fill",q:"Il habite dans un ___ (vieux) appartement.",a:["vieil"],h:"Vor maskulinem Nomen mit Vokal: <i>vieil</i>."},
+{t:"fill",q:"J'ai acheté deux chemises ___ (marron).",a:["marron"],h:"Farbe, die von einem Nomen kommt (le marron = die Kastanie) → unveränderlich."},
+{t:"fill",q:"Elle parle ___ l'anglais. (courant → Adverb)",a:["couramment"],h:"<i>-ant → -amment</i>."},
+{t:"fill",q:"Conduis ___ ! (prudent → Adverb)",a:["prudemment"],h:"<i>-ent → -emment</i>."},
+{t:"fill",q:"Il a répondu ___ à la question. (précis → Adverb)",a:["précisément"],h:"Sonderform auf <i>-ément</i>."},
+{t:"fill",q:"Ce gâteau est ___ que celui d'hier. (bon, Komparativ +)",a:["meilleur"],h:"<i>bon</i> ist ein Adjektiv → Komparativ <i>meilleur</i>."},
+{t:"fill",q:"Elle chante ___ que moi. (bien, Komparativ +)",a:["mieux"],h:"<i>bien</i> ist ein Adverb → Komparativ <i>mieux</i>."},
+{t:"mc",q:"Was bedeutet « mon ancien professeur »?",o:["mein ehemaliger Lehrer","mein alter (betagter) Lehrer","mein antiker Lehrer","mein berühmter Lehrer"],c:0,h:"<i>ancien</i> vor dem Nomen = ehemalig."},
+{t:"mc",q:"Zurich est la ville ___ de Suisse.",o:["la plus grande","plus grande","la plus grand","le plus grande"],c:0,h:"Superlativ mit Artikel; Angleichung an <i>la ville</i>."},
+{t:"mc",q:"J'ai ___ dormi cette nuit.",o:["bien","bon","bonne","meilleur"],c:0,h:"Es beschreibt das Verb <i>dormir</i> → Adverb <i>bien</i>, zwischen Hilfsverb und Partizip."},
+{t:"fill",q:"Il m'a ___ aidé. (gentil → Adverb)",a:["gentiment"],h:"Unregelmässig: <i>gentil → gentiment</i>."},
+{t:"fill",q:"Une ___ (nouveau) élève est arrivée.",a:["nouvelle"],h:"Feminin: <i>nouvelle</i>."}
+]});
+/* ===== Thema 9: La négation ===== */
+TOPICS.push({
+id:"negation", fr:"La négation", de:"Die Verneinung",
+chips:["ne … pas & Co.","Stellung","Verneinung als Subjekt","de nach Verneinung","ne … que"],
+intro:"Die französische Verneinung besteht aus zwei Teilen: <b>ne</b> vor dem Verb und einem zweiten Wort (pas, plus, jamais …). Knifflig sind die Stellung in zusammengesetzten Zeiten und beim Infinitiv sowie der Artikel nach der Verneinung.",
+html:`
+${H("Die Verneinungsformen")}
+${TBL(["Form","Deutsch","Beispiel"],[
+["ne … pas","nicht","<span lang=\"fr\">Je <b>ne</b> parle <b>pas</b> russe.</span>"],
+["ne … plus","nicht mehr","<span lang=\"fr\">Il <b>n'</b>habite <b>plus</b> ici.</span>"],
+["ne … jamais","nie","<span lang=\"fr\">Elle <b>ne</b> ment <b>jamais</b>.</span>"],
+["ne … rien","nichts","<span lang=\"fr\">Je <b>ne</b> vois <b>rien</b>.</span>"],
+["ne … personne","niemand","<span lang=\"fr\">Il <b>ne</b> connaît <b>personne</b>.</span>"],
+["ne … aucun(e)","kein einziger","<span lang=\"fr\">Je <b>n'</b>ai <b>aucune</b> idée.</span>"],
+["ne … nulle part","nirgends","<span lang=\"fr\">Je <b>ne</b> le trouve <b>nulle part</b>.</span>"],
+["ne … ni … ni","weder … noch","<span lang=\"fr\">Il <b>ne</b> boit <b>ni</b> café <b>ni</b> thé.</span>"],
+["ne … pas encore","noch nicht","<span lang=\"fr\">Elle <b>n'</b>est <b>pas encore</b> là.</span>"],
+["ne … guère","kaum (gehoben)","<span lang=\"fr\">Il <b>ne</b> parle <b>guère</b>.</span>"],
+["ne … que","nur (keine echte Verneinung!)","<span lang=\"fr\">Je <b>n'</b>ai <b>que</b> dix francs.</span>"]])}
+
+${H("Stellung in einfachen Zeiten")}
+<p><b>ne</b> steht vor dem konjugierten Verb (und vor Objektpronomen), der zweite Teil danach.</p>
+${EX([["Je <b>ne le</b> vois <b>pas</b>.","Ich sehe ihn nicht."],["<b>Ne</b> viens-tu <b>pas</b> ?","Kommst du nicht?"]])}
+
+${H("Stellung in zusammengesetzten Zeiten")}
+<p><b>pas, plus, jamais, rien, guère</b> umklammern das <b>Hilfsverb</b>. <b>personne, aucun, nulle part, que, ni … ni</b> stehen <b>nach dem Partizip</b>.</p>
+${TBL(["vor dem Partizip","nach dem Partizip"],[
+["Je <b>n'</b>ai <b>pas</b> mangé.","Je <b>n'</b>ai vu <b>personne</b>."],
+["Il <b>n'</b>a <b>jamais</b> vu la mer.","Il <b>n'</b>a trouvé <b>aucune</b> solution."],
+["Je <b>n'</b>ai <b>rien</b> compris.","Je <b>ne</b> l'ai trouvé <b>nulle part</b>."],
+["Elle <b>n'</b>est <b>plus</b> venue.","Je <b>n'</b>ai mangé <b>qu'</b>une pomme."]])}
+
+${H("Verneinung beim Infinitiv")}
+<p><b>ne pas, ne plus, ne jamais, ne rien</b> stehen zusammen <b>vor</b> dem Infinitiv:</p>
+${EX([
+["Il m'a dit de <b>ne pas fumer</b>.","Er sagte mir, ich solle nicht rauchen."],
+["J'espère <b>ne plus</b> le voir.","Ich hoffe, ihn nicht mehr zu sehen."],
+["Il préfère <b>ne rien</b> dire.","Er zieht es vor, nichts zu sagen."],
+["Il a décidé de <b>ne</b> voir <b>personne</b>.","aber: personne und aucun stehen nach dem Infinitiv"]])}
+
+${H("Verneinung als Subjekt")}
+<p><i>personne, rien, aucun</i> und <i>ni … ni</i> können Subjekt sein. Dann stehen sie am Satzanfang, gefolgt von <b>ne</b>, und <b>pas</b> fällt weg.</p>
+${EX([["<b>Personne n'</b>est venu.","Niemand ist gekommen."],["<b>Rien ne</b> s'est passé.","Nichts ist passiert."],["<b>Aucun</b> élève <b>n'</b>a compris.","Kein Schüler hat es verstanden."],["<b>Ni</b> Paul <b>ni</b> Marie <b>ne</b> sont venus.","Weder Paul noch Marie sind gekommen."]])}
+
+${H("Artikel nach der Verneinung")}
+<p>Unbestimmter Artikel (<i>un, une, des</i>) und Teilungsartikel (<i>du, de la, de l'</i>) werden nach der Verneinung zu <b>de / d'</b>.</p>
+${EX([
+["J'ai une voiture. → Je n'ai pas <b>de</b> voiture.",""],
+["Il boit du café. → Il ne boit pas <b>de</b> café.",""],
+["Il y a des problèmes. → Il n'y a pas <b>de</b> problèmes.",""]])}
+${BOX("warn","Ausnahmen","<p>Nach <b>être</b> bleibt der Artikel: <span lang=\"fr\">Ce n'est pas <b>un</b> problème.</span><br>Bei einem Gegensatz: <span lang=\"fr\">Je ne bois pas <b>du</b> café, mais <b>du</b> thé.</span><br>Der bestimmte Artikel bleibt immer: <span lang=\"fr\">Je n'aime pas <b>le</b> café.</span><br>Bei <i>ne … que</i> (nur) bleibt der Artikel: <span lang=\"fr\">Il ne mange que <b>des</b> légumes.</span></p>")}
+
+${H("Kombinationen")}
+${EX([["Je ne dirai <b>plus jamais rien</b> à <b>personne</b>.","Ich werde nie mehr irgendjemandem etwas sagen."],["Il n'y a <b>plus personne</b>.","Es ist niemand mehr da."],["Elle ne fait <b>jamais rien</b>.","Sie macht nie etwas."]])}
+
+${H("Kurzantworten")}
+${TBL(["Situation","Antwort"],[
+["Zustimmung zu bejahtem Satz: <span lang=\"fr\">J'aime le jazz.</span>","<span lang=\"fr\">Moi <b>aussi</b>.</span>"],
+["Zustimmung zu verneintem Satz: <span lang=\"fr\">Je n'aime pas le jazz.</span>","<span lang=\"fr\">Moi <b>non plus</b>.</span>"],
+["Widerspruch zu verneinter Frage: <span lang=\"fr\">Tu ne viens pas ?</span>","<span lang=\"fr\"><b>Si</b>, je viens !</span>"]])}
+${BOX("rule","Merke","<p>Im gesprochenen Französisch fällt <i>ne</i> oft weg (<span lang=\"fr\">J'sais pas, c'est pas grave</span>). In der schriftlichen Matur schreibst du <b>immer mit ne</b>.</p>")}
+`,
+ex:[
+{t:"tr",q:"Verneine mit ne … pas:",s:"J'ai compris la question.",a:["Je n'ai pas compris la question"],h:"<i>ne … pas</i> umklammert das Hilfsverb."},
+{t:"tr",q:"Verneine mit ne … jamais:",s:"Il mange de la viande.",a:["Il ne mange jamais de viande"],h:"Teilungsartikel <i>de la</i> wird nach der Verneinung zu <i>de</i>."},
+{t:"tr",q:"Verneine mit ne … personne:",s:"J'ai vu quelqu'un.",a:["Je n'ai vu personne"],h:"<i>personne</i> steht nach dem Partizip."},
+{t:"tr",q:"Verneine mit ne … rien:",s:"Elle a dit quelque chose.",a:["Elle n'a rien dit"],h:"<i>rien</i> steht zwischen Hilfsverb und Partizip."},
+{t:"tr",q:"Verneine (Subjekt):",s:"Quelqu'un est venu.",a:["Personne n'est venu"],h:"<i>personne</i> als Subjekt + <i>ne</i>, ohne <i>pas</i>."},
+{t:"tr",q:"Verneine den Infinitiv mit ne … pas:",s:"Le médecin lui conseille de boire de l'alcool.",a:["Le médecin lui conseille de ne pas boire d'alcool"],h:"<i>ne pas</i> steht vor dem Infinitiv; <i>de l'alcool → d'alcool</i>."},
+{t:"mc",q:"Il n'y a pas ___ lait dans le frigo.",o:["de","du","le","des"],c:0,h:"Teilungsartikel nach Verneinung → <i>de</i>."},
+{t:"mc",q:"Ce n'est pas ___ problème.",o:["un","de","d'","du"],c:0,h:"Nach <i>être</i> bleibt der Artikel."},
+{t:"fill",q:"J'ai faim, je n'ai mangé ___ deux pommes aujourd'hui. (nur)",a:["que"],h:"<i>ne … que</i> = nur; <i>que</i> steht vor dem Wort, das eingeschränkt wird."},
+{t:"mc",q:"Tu n'aimes pas le chocolat ? – ___, je l'adore !",o:["Si","Oui","Non","Aussi"],c:0,h:"Widerspruch zu einer verneinten Frage → <i>si</i>."},
+{t:"mc",q:"Je ne fume pas. – Moi ___.",o:["non plus","aussi","pas plus","si"],c:0,h:"Zustimmung zu einem verneinten Satz → <i>non plus</i>."},
+{t:"tr",q:"Verneine mit ne … plus:",s:"Nous habitons à Bâle.",a:["Nous n'habitons plus à Bâle"],h:"Vor Vokal wird <i>ne</i> zu <i>n'</i>."},
+{t:"tr",q:"Verneine mit ne … aucun:",s:"J'ai une idée.",a:["Je n'ai aucune idée"],h:"<i>aucun</i> wird an das Nomen angeglichen: <i>aucune idée</i>."}
+]});
+
+/* ===== Thema 10: Propositions relatives et subordonnées ===== */
+TOPICS.push({
+id:"propositions", fr:"Propositions relatives et subordonnées", de:"Relativsätze und Nebensätze",
+chips:["qui · que · dont · où","lequel / auquel / duquel","ce qui · ce que","Konjunktionen","Indikativ oder subjonctif"],
+intro:"Mit Relativ- und Nebensätzen verbindest du Gedanken zu komplexen Sätzen, eine Kernkompetenz für Aufsatz und Textverständnis. Achte auf zwei Dinge: das richtige Relativpronomen und den richtigen Modus nach der Konjunktion.",
+html:`
+${H("qui und que")}
+${TBL(["Pronomen","Funktion","Beispiel"],[
+["<b>qui</b>","Subjekt des Relativsatzes (danach folgt meist direkt das Verb)","<span lang=\"fr\">L'homme <b>qui</b> parle est mon père.</span>"],
+["<b>que / qu'</b>","direktes Objekt (der Relativsatz hat ein eigenes Subjekt)","<span lang=\"fr\">Le livre <b>que</b> je lis est passionnant.</span>"]])}
+${BOX("tip","Test","<p>Folgt direkt ein <b>Verb</b>, ist es meist <i>qui</i>. Folgt ein <b>Subjekt</b> (je, tu, Paul …), ist es <i>que</i>. <i>qui</i> wird nie apostrophiert, <i>que</i> schon: <span lang=\"fr\">qu'il</span>.</p>")}
+${BOX("warn","Angleichung","<p>Nach <i>que</i> steht das COD vor dem Verb → das Partizip wird angeglichen: <span lang=\"fr\">la robe que j'ai achet<b>ée</b></span>.</p>")}
+
+${H("dont")}
+<p><b>dont</b> ersetzt eine Ergänzung mit <b>de</b>: bei Verben (parler de, avoir besoin de, se souvenir de, avoir peur de, rêver de, s'occuper de), bei Adjektiven (fier de, content de) und als Genitiv (dessen, deren).</p>
+${EX([
+["Le film <b>dont</b> je parle …","parler de"],
+["L'outil <b>dont</b> j'ai besoin …","avoir besoin de"],
+["Mon amie, <b>dont</b> le frère habite à Genève, …","Genitiv: deren Bruder"]])}
+${BOX("rule","Merke","<p>Nach <i>dont</i> folgt die normale Wortstellung: <span lang=\"fr\">dont <b>le frère habite</b></span>, nicht <span lang=\"fr\">dont habite le frère</span>.</p>")}
+
+${H("où")}
+<p><b>où</b> steht für <b>Ort</b> und <b>Zeit</b>.</p>
+${EX([["La ville <b>où</b> je suis né.","Die Stadt, in der ich geboren bin."],["Le jour <b>où</b> je t'ai rencontré.","Der Tag, an dem ich dich getroffen habe. (nicht: quand!)"]])}
+
+${H("Präposition + qui / lequel")}
+<p>Nach einer Präposition steht bei <b>Personen</b> meist <b>qui</b>, bei <b>Sachen</b> <b>lequel, laquelle, lesquels, lesquelles</b>.</p>
+${EX([["La fille <b>avec qui</b> je parle.","Person"],["Le stylo <b>avec lequel</b> j'écris.","Sache, m. Sg."],["La table <b>sur laquelle</b> …","Sache, f. Sg."]])}
+${TBL(["","m. Sg.","f. Sg.","m. Pl.","f. Pl."],[
+["à + lequel","<b>auquel</b>","à laquelle","<b>auxquels</b>","<b>auxquelles</b>"],
+["de + lequel","<b>duquel</b>","de laquelle","<b>desquels</b>","<b>desquelles</b>"]],"conj")}
+${EX([["Le projet <b>auquel</b> je pense.","penser à"],["Le parc <b>près duquel</b> j'habite.","près de (zusammengesetzte Präposition)"],["La maison <b>à côté de laquelle</b> …","à côté de"]])}
+
+${H("ce qui, ce que, ce dont, ce à quoi")}
+<p>Für <b>„das, was“</b> (ohne konkretes Bezugswort):</p>
+${EX([
+["<b>Ce qui</b> m'intéresse, c'est l'histoire.","Subjekt"],
+["Je ne comprends pas <b>ce que</b> tu dis.","direktes Objekt"],
+["Dis-moi <b>ce dont</b> tu as besoin.","avoir besoin de"],
+["<b>Ce à quoi</b> je pense, c'est …","penser à"]])}
+
+${H("Konjunktionen und Modus")}
+${TBL(["Sinn","+ Indikativ","+ Subjonctif"],[
+["Zeit","quand, lorsque, pendant que, depuis que, dès que, aussitôt que, <b>après que</b>, chaque fois que","<b>avant que</b>, jusqu'à ce que, en attendant que"],
+["Grund","parce que, puisque, comme, étant donné que, vu que","(non que, gehoben)"],
+["Folge","si bien que, de sorte que, tellement … que, si … que","—"],
+["Zweck","—","pour que, afin que, de peur que, de crainte que"],
+["Gegensatz, Einräumung","alors que, tandis que, même si","<b>bien que</b>, quoique, sans que"],
+["Bedingung","si, même si","à condition que, pourvu que, à moins que"]])}
+<p>Nach <b>au cas où</b> steht der conditionnel.</p>
+${BOX("warn","comme, parce que, puisque","<p><b>comme</b> (da) steht am Satzanfang: <span lang=\"fr\">Comme il pleuvait, nous sommes restés.</span><br><b>parce que</b> (weil) antwortet auf <i>pourquoi</i>.<br><b>puisque</b> (da ja) nennt einen bekannten Grund.</p>")}
+${BOX("tip","Infinitiv bei gleichem Subjekt","<p><span lang=\"fr\">pour / afin de / avant de / sans + Infinitiv</span>, <span lang=\"fr\">après + infinitif passé</span>: <span lang=\"fr\">Après <b>avoir mangé</b>, il est parti.</span></p>")}
+`,
+ex:[
+{t:"fill",q:"Le garçon ___ joue du piano est mon cousin.",a:["qui"],h:"Subjekt des Relativsatzes → <i>qui</i>."},
+{t:"fill",q:"La chanson ___ tu chantes est très belle.",a:["que"],h:"Direktes Objekt (Subjekt ist <i>tu</i>) → <i>que</i>."},
+{t:"fill",q:"Voici le livre ___ je t'ai parlé.",a:["dont"],h:"<i>parler de</i> → <i>dont</i>."},
+{t:"fill",q:"C'est la maison ___ j'ai grandi.",a:["où"],h:"Ortsangabe → <i>où</i>."},
+{t:"fill",q:"Je me souviens du jour ___ nous nous sommes rencontrés.",a:["où"],h:"Zeitangabe → ebenfalls <i>où</i> (nicht <i>quand</i>)."},
+{t:"fill",q:"Le stylo avec ___ j'écris est bleu.",a:["lequel"],h:"Präposition + Sache (m. Sg.) → <i>lequel</i>."},
+{t:"fill",q:"C'est un problème ___ je pense souvent.",a:["auquel"],h:"<i>penser à</i> + Sache (m. Sg.) → <i>à + lequel = auquel</i>."},
+{t:"fill",q:"Je ne sais pas ___ tu veux dire.",a:["ce que"],h:"„das, was“ als direktes Objekt → <i>ce que</i>."},
+{t:"fill",q:"___ m'énerve, c'est son retard.",a:["Ce qui"],h:"„das, was“ als Subjekt → <i>ce qui</i>."},
+{t:"fill",q:"Dis-moi ___ tu as besoin.",a:["ce dont"],h:"<i>avoir besoin de</i> → <i>ce dont</i>."},
+{t:"mc",q:"Nous partirons avant qu'il ___.",o:["pleuve","pleut","pleuvra","pleuvait"],c:0,h:"<i>avant que</i> → subjonctif."},
+{t:"mc",q:"___ il était malade, il n'est pas venu.",o:["Comme","Parce qu'","Bien qu'","Pour qu'"],c:0,h:"Grund am Satzanfang → <i>comme</i>."},
+{t:"mc",q:"Il travaille beaucoup ___ ses enfants puissent étudier.",o:["pour que","parce que","bien que","si bien que"],c:0,h:"Zweck → <i>pour que</i> + subjonctif (<i>puissent</i>)."},
+{t:"mc",q:"La femme ___ le fils est médecin habite ici.",o:["dont","que","qui","laquelle"],c:0,h:"Genitiv (deren Sohn) → <i>dont</i>."}
+]});
+
+/* ===== Thema 11: Le discours indirect ===== */
+TOPICS.push({
+id:"discours-indirect", fr:"Le discours indirect", de:"Die indirekte Rede",
+chips:["Zeitenfolge","Fragen","Befehle","Zeit- und Ortsangaben"],
+intro:"In der indirekten Rede gibst du wieder, was jemand gesagt hat. Pronomen und Possessivbegleiter passen sich immer an. Steht das Einleitungsverb in der Vergangenheit, verschieben sich zusätzlich die Zeiten (concordance des temps).",
+html:`
+${H("Grundprinzip")}
+${EX([
+["Paul dit : « <b>Je suis</b> fatigué. » → Paul dit qu'<b>il est</b> fatigué.","Einleitungsverb im Präsens: Zeit bleibt, nur Pronomen ändern sich."],
+["Paul a dit : « <b>Je suis</b> fatigué. » → Paul a dit qu'<b>il était</b> fatigué.","Einleitungsverb in der Vergangenheit: Zeitverschiebung."]])}
+
+${H("Zeitenfolge (Einleitung in der Vergangenheit)")}
+${TBL(["Direkte Rede","Indirekte Rede","Beispiel"],[
+["présent","<b>imparfait</b>","« J'ai faim. » → Il a dit qu'il <b>avait</b> faim."],
+["passé composé","<b>plus-que-parfait</b>","« J'ai perdu mes clés. » → Elle a dit qu'elle <b>avait perdu</b> ses clés."],
+["futur simple","<b>conditionnel présent</b>","« Je viendrai. » → Il a dit qu'il <b>viendrait</b>."],
+["futur antérieur","<b>conditionnel passé</b>","« J'aurai fini à 5 h. » → Elle a dit qu'elle <b>aurait fini</b> à 5 h."],
+["futur proche","<b>aller</b> im imparfait + Infinitiv","« Je vais partir. » → Il a dit qu'il <b>allait</b> partir."],
+["imparfait, plus-que-parfait, conditionnel, subjonctif","bleiben","« J'étais malade. » → Il a dit qu'il <b>était</b> malade."],
+["impératif","<b>de + Infinitiv</b>","« Ferme la porte ! » → Il m'a dit <b>de fermer</b> la porte."]])}
+${BOX("rule","Verneinter Befehl","<p><span lang=\"fr\">« Ne fume pas ! » → Il m'a dit <b>de ne pas fumer</b>.</span></p>")}
+
+${H("Indirekte Fragen")}
+${TBL(["Direkte Frage","Indirekt","Beispiel"],[
+["Ja/Nein-Frage (Intonation, est-ce que, Inversion)","<b>si</b>","« Tu viens ? » → Il demande <b>si</b> je viens."],
+["qu'est-ce que / que","<b>ce que</b>","« Qu'est-ce que tu fais ? » → Il demande <b>ce que</b> je fais."],
+["qu'est-ce qui","<b>ce qui</b>","« Qu'est-ce qui se passe ? » → Il demande <b>ce qui</b> se passe."],
+["où, quand, comment, pourquoi, qui, combien, quel","bleiben","« Où vas-tu ? » → Il demande <b>où</b> je vais."]])}
+${BOX("warn","Achtung","<p>In der indirekten Frage gibt es <b>keine Inversion</b>, <b>kein est-ce que</b> und <b>kein Fragezeichen</b>.</p>")}
+
+${H("Zeit- und Ortsangaben")}
+<p>Wenn das Gesagte nicht mehr „heute“ ist, verschieben sich die Angaben:</p>
+${TBL(["Direkte Rede","Indirekte Rede"],[
+["aujourd'hui","ce jour-là"],["hier","la veille"],["avant-hier","l'avant-veille"],["demain","le lendemain"],["après-demain","le surlendemain"],
+["maintenant","à ce moment-là"],["ce matin / ce soir","ce matin-là / ce soir-là"],["la semaine dernière","la semaine précédente / d'avant"],
+["la semaine prochaine","la semaine suivante / d'après"],["il y a deux jours","deux jours plus tôt / avant"],["dans deux jours","deux jours plus tard / après"],["ici","là"]])}
+
+${H("Einleitungsverben")}
+<p><span lang="fr">dire, affirmer, expliquer, répondre, ajouter, annoncer, promettre, raconter, déclarer, demander, vouloir savoir, se demander, ordonner, conseiller (de + Infinitiv)</span></p>
+${EX([["Marie a dit hier : « Je partirai demain avec mon frère. »<br>→ Marie a dit hier qu'<b>elle partirait le lendemain</b> avec <b>son</b> frère.","Pronomen, Possessiv, Zeit und Zeitangabe ändern sich."]])}
+`,
+ex:[
+{t:"tr",q:"Setze in die indirekte Rede:",s:"Il dit : « Je suis malade. »",a:["Il dit qu'il est malade"],h:"Einleitung im Präsens → keine Zeitverschiebung."},
+{t:"tr",q:"Setze in die indirekte Rede:",s:"Il a dit : « Je suis malade. »",a:["Il a dit qu'il était malade"],h:"présent → imparfait."},
+{t:"tr",q:"Setze in die indirekte Rede:",s:"Elle a dit : « J'ai raté le bus. »",a:["Elle a dit qu'elle avait raté le bus"],h:"passé composé → plus-que-parfait."},
+{t:"tr",q:"Setze in die indirekte Rede:",s:"Ils ont dit : « Nous viendrons demain. »",a:["Ils ont dit qu'ils viendraient le lendemain"],h:"futur → conditionnel; <i>demain → le lendemain</i>."},
+{t:"tr",q:"Setze in die indirekte Rede:",s:"Le prof nous a dit : « Ouvrez vos livres ! »",a:["Le prof nous a dit d'ouvrir nos livres"],h:"Imperativ → <i>de</i> + Infinitiv; <i>vos → nos</i>."},
+{t:"tr",q:"Setze in die indirekte Rede:",s:"Il m'a demandé : « Tu as faim ? »",a:["Il m'a demandé si j'avais faim"],h:"Ja/Nein-Frage → <i>si</i>; présent → imparfait."},
+{t:"tr",q:"Setze in die indirekte Rede:",s:"Elle m'a demandé : « Qu'est-ce que tu fais ce soir ? »",a:["Elle m'a demandé ce que je faisais ce soir-là"],h:"<i>qu'est-ce que → ce que</i>; <i>ce soir → ce soir-là</i>."},
+{t:"tr",q:"Setze in die indirekte Rede:",s:"Il a demandé : « Où est la gare ? »",a:["Il a demandé où était la gare","Il a demandé où la gare était"],h:"Fragewort bleibt; présent → imparfait."},
+{t:"mc",q:"« Qu'est-ce qui ne va pas ? » → Il m'a demandé ___ n'allait pas.",o:["ce qui","ce que","qu'est-ce qui","si"],c:0,h:"<i>qu'est-ce qui → ce qui</i>."},
+{t:"mc",q:"Was wird aus <i>hier</i> in der indirekten Rede (Vergangenheit)?",o:["la veille","le lendemain","ce jour-là","avant-hier"],c:0,h:"<i>hier → la veille</i> (am Vortag)."},
+{t:"fill",q:"Elle a promis : « Je vais t'aider. » → Elle a promis qu'elle ___ m'aider.",a:["allait"],h:"futur proche → <i>aller</i> im imparfait + Infinitiv."},
+{t:"tr",q:"Setze in die indirekte Rede:",s:"Mon père m'a dit : « Ne rentre pas trop tard ! »",a:["Mon père m'a dit de ne pas rentrer trop tard"],h:"Verneinter Imperativ → <i>de ne pas</i> + Infinitiv."}
+]});
+
+/* ===== Thema 12: Le passif ===== */
+TOPICS.push({
+id:"passif", fr:"Le passif", de:"Das Passiv",
+chips:["Bildung","Alle Zeiten","par oder de","Alternativen"],
+intro:"Im Passiv rückt das Objekt der Handlung in den Vordergrund. Die Zeit erkennst du an der Form von <b>être</b>; das Partizip des Hauptverbs wird immer an das Subjekt angeglichen.",
+html:`
+${H("Bildung")}
+<p><b>être</b> (in der Zeit des Aktivsatzes) + <b>participe passé</b> (angeglichen an das Subjekt). Nur Verben mit direktem Objekt (COD) können ins Passiv. Das Subjekt des Aktivsatzes wird zum Urheber mit <b>par</b>.</p>
+${EX([["Le chat mange <b>la souris</b>. → <b>La souris</b> est mangée <b>par le chat</b>.","Die Maus wird von der Katze gefressen."]])}
+
+${H("Das Passiv in allen Zeiten")}
+${TBL(["Zeit","Aktiv","Passiv"],[
+["présent","Le maire inaugure le pont.","Le pont <b>est</b> inauguré par le maire."],
+["passé composé","Le maire a inauguré le pont.","Le pont <b>a été</b> inauguré par le maire."],
+["imparfait","… inaugurait …","… <b>était</b> inauguré …"],
+["plus-que-parfait","… avait inauguré …","… <b>avait été</b> inauguré …"],
+["futur simple","… inaugurera …","… <b>sera</b> inauguré …"],
+["conditionnel","… inaugurerait …","… <b>serait</b> inauguré …"],
+["subjonctif","… qu'il inaugure …","… qu'il <b>soit</b> inauguré …"],
+["futur proche","… va inaugurer …","… <b>va être</b> inauguré …"]])}
+${BOX("tip","Zeit erkennen","<p>Die Zeit steckt immer in <b>être</b>: <span lang=\"fr\">a été</span> = passé composé, <span lang=\"fr\">sera</span> = futur usw.</p>")}
+${BOX("warn","Angleichung","<p><i>été</i> bleibt unverändert, nur das Partizip des Hauptverbs wird angeglichen: <span lang=\"fr\">Les lettres ont été écrit<b>es</b>.</span></p>")}
+
+${H("par oder de?")}
+<p>Meistens steht <b>par</b>. Bei Verben des <b>Gefühls</b> und bei <b>Zuständen</b> steht <b>de</b>: aimer, détester, respecter, admirer, craindre, connaître, entourer, couvrir, remplir, composer.</p>
+${EX([["Il est aimé <b>de</b> tous.","Er wird von allen geliebt."],["La ville est entourée <b>de</b> montagnes.","Die Stadt ist von Bergen umgeben."],["Le sommet est couvert <b>de</b> neige.","Der Gipfel ist mit Schnee bedeckt."]])}
+
+${H("Passiv ohne Urheber")}
+<p>Ist der Urheber unbekannt oder unwichtig, fällt er weg. Oft ist ein Aktivsatz mit <b>on</b> natürlicher:</p>
+${EX([["Mon vélo a été volé. = <b>On</b> a volé mon vélo.","Mein Velo wurde gestohlen."]])}
+
+${H("Alternativen zum Passiv")}
+${TBL(["Form","Gebrauch","Beispiel"],[
+["<b>on</b> + Aktiv","sehr häufig, besonders mündlich","<span lang=\"fr\">On parle français ici.</span>"],
+["<b>se</b> + Verb (pronominales Passiv)","allgemeine Tatsachen, Gewohnheiten","<span lang=\"fr\">Ce vin se boit frais. Ça ne se fait pas.</span>"],
+["<b>se faire</b> + Infinitiv","jemandem passiert etwas, oder man lässt etwas machen","<span lang=\"fr\">Il s'est fait voler son portable. Elle s'est fait couper les cheveux.</span>"]])}
+${BOX("warn","Kein Passiv bei indirektem Objekt","<p>Verben mit <i>à qn</i> (demander à, répondre à, téléphoner à) haben kein persönliches Passiv: „Ich wurde gefragt“ → <span lang=\"fr\"><b>On m'a demandé</b></span>.</p>")}
+`,
+ex:[
+{t:"tr",q:"Setze ins Passiv:",s:"Le professeur corrige les examens.",a:["Les examens sont corrigés par le professeur"],h:"présent → <i>sont</i> + Partizip, angeglichen (m. Pl.)."},
+{t:"tr",q:"Setze ins Passiv:",s:"Les pompiers ont sauvé la petite fille.",a:["La petite fille a été sauvée par les pompiers"],h:"passé composé → <i>a été</i> + Partizip (f. Sg.)."},
+{t:"tr",q:"Setze ins Passiv:",s:"Un architecte suisse construira le musée.",a:["Le musée sera construit par un architecte suisse"],h:"futur → <i>sera</i> + Partizip."},
+{t:"fill",q:"La maison ___ (détruire, passé composé, Passiv) par la tempête.",a:["a été détruite"],h:"<i>a été</i> + Partizip, angeglichen an <i>la maison</i>."},
+{t:"fill",q:"Ces romans ___ (écrire, présent, Passiv) par une autrice belge.",a:["sont écrits"],h:"<i>sont</i> + Partizip, m. Pl."},
+{t:"mc",q:"Le village est entouré ___ forêts.",o:["de","par","avec","des"],c:0,h:"Zustand (<i>entourer</i>) → <i>de</i>; <i>de + des</i> wird zu <i>de</i>."},
+{t:"mc",q:"« Mon vélo a été volé. » Welche Zeit ist das?",o:["passé composé","plus-que-parfait","présent","imparfait"],c:0,h:"<i>a été</i> = passé composé von être."},
+{t:"tr",q:"Forme ins Aktiv mit « on » um:",s:"La porte a été fermée.",a:["On a fermé la porte"],h:"Gleiche Zeit (passé composé), <i>on</i> als Subjekt."},
+{t:"mc",q:"Welcher Satz ist ein pronominales Passiv?",o:["Ce livre se vend bien.","Il se lave.","Ils se parlent.","Elle se souvient."],c:0,h:"<i>Ce livre se vend</i> = Dieses Buch wird gut verkauft."},
+{t:"fill",q:"Hier, Marc s'est ___ (faire) voler son sac.",a:["fait"],h:"<i>se faire</i> + Infinitiv: Das Partizip <i>fait</i> bleibt unverändert."},
+{t:"tr",q:"Setze ins Passiv:",s:"Les élèves avaient préparé la fête.",a:["La fête avait été préparée par les élèves"],h:"plus-que-parfait → <i>avait été</i> + Partizip (f. Sg.)."},
+{t:"fill",q:"Il faut que le travail ___ (être) terminé avant lundi.",a:["soit"],h:"Passiv im subjonctif (<i>il faut que</i>) → <i>soit</i> + Partizip."}
+]});
+/* ===== Wann und wozu? Pro Thema (Übersicht) und pro Abschnitt ===== */
+const WHY = {
+"temps-du-passe":[
+ "Immer, wenn du über Vergangenes schreibst oder sprichst: Erlebnisse, Zusammenfassungen, Erzählungen im Aufsatz.",
+ "Bei der Lektüre: Romane und Novellen sind im passé simple und imparfait geschrieben.",
+ "Im Deutschen gibt es diese Unterscheidung nicht: „ich ging“ kann passé composé oder imparfait sein. Deshalb ist die Wahl der Zeit eine der häufigsten Fehlerquellen."],
+"futur-conditionnel":[
+ "Für Pläne, Prognosen und Versprechen (Futur) und für alles Hypothetische, Höfliche oder Unsichere (Conditionnel).",
+ "Im Aufsatz für Ausblicke, Vorschläge und Argumente: « Il faudrait … », « Cela permettrait … ».",
+ "In Zeitungsartikeln zeigt der Conditionnel, dass eine Information nicht bestätigt ist. Das musst du im Textverständnis erkennen."],
+"phrases-hypothetiques":[
+ "Wann immer du über Bedingungen, Möglichkeiten oder Träume sprichst: „Was wäre, wenn …?“",
+ "Im Aufsatz für Argumente und Gedankenexperimente: « Si l'État investissait plus, … ».",
+ "Die Zeiten sind anders als im Deutschen („wenn ich hätte, würde ich“). Der typische Fehler (Conditionnel nach si) wird an der Matur fast immer geprüft."],
+"subjonctif":[
+ "Immer wenn du eine persönliche Haltung zu einer Handlung ausdrückst: was du willst, fühlst, bezweifelst oder für nötig hältst.",
+ "In argumentativen Texten und Briefen unverzichtbar: « Il faut que … », « Bien que … », « Je ne pense pas que … ».",
+ "Im Deutschen gibt es keinen Modus mit diesen Auslösern. Du musst sie darum auswendig kennen. Der subjonctif gehört zu den meistgeprüften Themen."],
+"gerondif-participe":[
+ "Um zwei Handlungen derselben Person elegant zu verbinden, ohne einen ganzen Nebensatz zu bilden.",
+ "Im Aufsatz macht es deinen Stil knapper und abwechslungsreicher: « En lisant ce texte, on comprend … ».",
+ "In Zeitungs- und Sachtexten begegnet dir das participe présent sehr oft. Du musst es sicher verstehen."],
+"imperatif":[
+ "Für Aufforderungen, Bitten, Ratschläge, Anleitungen und Verbote.",
+ "Im Gespräch, in Nachrichten und in Textsorten wie Brief, Anleitung, Werbung oder Appell.",
+ "Schwierig sind die Pronomen: Ihre Stellung ändert sich, je nachdem ob der Imperativ bejaht oder verneint ist."],
+"pronoms":[
+ "In jedem Text, damit du nicht dauernd dieselben Nomen wiederholst. Ohne Pronomen wirkt ein Text schwerfällig.",
+ "Im Textverständnis musst du erkennen, worauf sich lui, y oder en bezieht, sonst verlierst du den Zusammenhang.",
+ "Stellung und Reihenfolge funktionieren anders als im Deutschen. Darum sind sie ein klassisches Prüfungsthema."],
+"adjectifs-adverbes":[
+ "Für jede Beschreibung: Personen, Orte, Gefühle (Adjektive) und die Art, wie etwas geschieht (Adverbien).",
+ "Im Aufsatz machen präzise Adjektive und Adverbien deinen Ausdruck reicher. Vergleiche brauchst du zum Argumentieren.",
+ "Im Deutschen sehen Adjektiv und Adverb oft gleich aus („sie ist schnell“, „sie läuft schnell“), im Französischen nicht. Das führt zu typischen Fehlern."],
+"negation":[
+ "In fast jedem Text: Du verneinst Aussagen, widersprichst oder schränkst ein.",
+ "Im Aufsatz brauchst du differenzierte Verneinungen (ne … plus, ne … guère, ne … que) für präzise Argumente.",
+ "Die zweiteilige Form, die Stellung und der Artikel nach der Verneinung unterscheiden sich stark vom Deutschen."],
+"propositions":[
+ "Zum Verbinden von Gedanken: Statt vieler kurzer Hauptsätze baust du präzise, zusammenhängende Sätze.",
+ "Im Aufsatz zeigen Konjunktionen die Logik deiner Argumente (Grund, Folge, Gegensatz, Bedingung). Das zählt stark bei der Bewertung des Ausdrucks.",
+ "Im Textverständnis helfen sie dir, den Gedankengang des Autors zu verfolgen."],
+"discours-indirect":[
+ "Wenn du wiedergibst, was jemand gesagt, gefragt oder verlangt hat.",
+ "Unverzichtbar für Zusammenfassungen (résumé) und Kommentare: « L'auteur affirme que … », « Le personnage demande si … ».",
+ "Im Deutschen nimmt man dafür den Konjunktiv („er sagte, er sei müde“), im Französischen die Zeitenfolge. Diese Regeln musst du kennen."],
+"passif":[
+ "Wenn die Handlung oder das Ergebnis wichtiger ist als die Person, die handelt.",
+ "Typisch für Sachtexte, Zeitungsartikel, wissenschaftliche und geschichtliche Texte: « Le château a été construit en 1520. »",
+ "Mündlich wird das Passiv oft durch on ersetzt. Für Aufsatz und Textverständnis musst du beide Formen kennen."]
+};
+
+const WOZU = {
+"temps-du-passe":{
+ "Passé composé: Bildung":["Für einzelne, abgeschlossene Ereignisse in der Vergangenheit: Was ist passiert?","Es ist die wichtigste Vergangenheitszeit im Alltag, in Briefen, E-Mails und Berichten. Ohne sicheres passé composé kannst du nichts Vergangenes erzählen."],
+ "Avoir oder être?":["Bei jedem Verb im passé composé, plus-que-parfait, futur antérieur und conditionnel passé.","Ein falsches Hilfsverb fällt sofort auf. Ausserdem hängt davon ab, ob und wie du das Partizip angleichen musst."],
+ "Accord du participe passé":["Beim Schreiben jeder zusammengesetzten Zeit.","Man hört die Angleichung meistens nicht (mangé, mangée), darum ist sie ein klassischer Schreibfehler und ein beliebter Prüfungspunkt. Sie zeigt dem Leser, auf welches Wort sich das Partizip bezieht."],
+ "Imparfait: Bildung":["Für Beschreibungen, Zustände und Gewohnheiten in der Vergangenheit.","Ohne imparfait kannst du keine Situation, keine Person und keine Stimmung in der Vergangenheit beschreiben."],
+ "Passé composé oder imparfait?":["In jeder Erzählung über Vergangenes, also in fast jedem Aufsatz.","Die Zeitwahl bestimmt, was im Vordergrund und was im Hintergrund steht, und kann die Bedeutung verändern: « Il était malade » (Zustand) gegenüber « Il a été malade » (abgeschlossene Krankheitsphase)."],
+ "Plus-que-parfait":["Wenn du in einer Erzählung zurückblendest, weil etwas noch früher passiert ist.","Es macht die Reihenfolge klar. Ohne plus-que-parfait weiss der Leser nicht, was zuerst geschah. Du brauchst es ausserdem für si-Sätze Typ 3 und die indirekte Rede."],
+ "Passé simple (erkennen)":["Beim Lesen von Romanen, Märchen, Biografien und historischen Texten, also bei der Lektüre und im Textverständnis.","Du musst es nicht selbst schreiben, aber verstehen. Wer « il fut » nicht als „er war“ erkennt, versteht den Text nicht."]},
+"futur-conditionnel":{
+ "Futur proche":["Für Dinge, die bald passieren oder schon fest geplant sind, vor allem mündlich.","Es ist die einfachste Zukunftsform und klingt im Gespräch natürlicher als das futur simple."],
+ "Futur simple: Bildung":["Für Vorhersagen, Versprechen, weiter entfernte Pläne und in formellen Texten.","Im schriftlichen Französisch (Aufsatz, Brief) ist es die Standardform der Zukunft. Die unregelmässigen Stämme brauchst du zudem für den Conditionnel."],
+ "Futur antérieur":["Wenn zwei Handlungen in der Zukunft liegen und eine vor der anderen abgeschlossen sein wird.","Es zeigt die Reihenfolge in der Zukunft. Im Deutschen sagt man dafür meist Präsens oder Perfekt („wenn du fertig bist“), darum wird es oft vergessen."],
+ "Conditionnel présent":["Wenn etwas nicht sicher, nicht real oder höflich formuliert sein soll.","Er macht Bitten höflich, Ratschläge sanft und Hypothesen möglich. Im Aufsatz klingt « Il serait utile de … » viel differenzierter als « Il est utile de … »."],
+ "Conditionnel passé":["Wenn du über Vergangenes sprichst, das nicht (so) passiert ist.","Damit drückst du Bedauern, Vorwürfe und verpasste Möglichkeiten aus und bildest den si-Satz Typ 3."]},
+"phrases-hypothetiques":{
+ "Die drei Typen im Überblick":["Bei jedem Satz mit „wenn“ oder „falls“ im Sinn einer Bedingung.","Der Typ zeigt, wie wahrscheinlich die Bedingung ist: real (Typ 1), nur vorgestellt (Typ 2) oder verpasst (Typ 3)."],
+ "Typ 1: Réel":["Wenn die Bedingung realistisch erfüllbar ist.","Für Pläne, Abmachungen, Regeln und Warnungen: « Si tu ne travailles pas, tu échoueras. »"],
+ "Typ 2: Potentiel / Irréel du présent":["Wenn die Bedingung unwahrscheinlich oder in der Gegenwart unmöglich ist.","Für Wünsche, Träume, Ratschläge (« Si j'étais toi … ») und hypothetische Argumente im Aufsatz."],
+ "Typ 3: Irréel du passé":["Wenn die Bedingung in der Vergangenheit lag und nicht erfüllt wurde.","Für Bedauern, Vorwürfe und Überlegungen über verpasste Chancen, auch für historische Hypothesen."],
+ "Mischformen":["Wenn Bedingung und Folge in verschiedenen Zeiten liegen.","Damit sagst du präzise, dass etwas Vergangenes heute noch eine Auswirkung hätte, oder umgekehrt."],
+ "Achtung: si = ob":["Nach Verben wie savoir, se demander, demander, ne pas savoir.","Damit du die si-Regel nicht falsch anwendest: Nach „ob“ sind Futur und Conditionnel erlaubt."],
+ "Weitere Ausdrücke der Bedingung":["Wenn du eine Bedingung nuancierst (Einschränkung, Vorsichtsmassnahme) oder Abwechslung willst.","Dein Stil wirkt reicher, wenn nicht jeder Bedingungssatz mit si beginnt. Achte dabei auf den Modus, der zum Ausdruck gehört."]},
+"subjonctif":{
+ "Bildung (regelmässig)":["Nach jedem Auslöser mit que (siehe unten).","Bei vielen Verben hörst du den Unterschied zum Präsens nicht (que je parle), bei anderen schon (que je finisse). Wer die Bildung kann, macht weniger Fehler."],
+ "Unregelmässige Formen":["Diese Verben (être, avoir, faire, aller …) kommen in fast jedem Text vor.","Gerade « il faut que tu fasses / sois / ailles » brauchst du ständig. Fehler bei diesen Formen fallen besonders auf."],
+ "Wann steht der subjonctif?":["Wenn der Hauptsatz keine Tatsache feststellt, sondern eine Haltung ausdrückt.","Der subjonctif zeigt: Das Folgende ist gewünscht, befürchtet, bezweifelt oder nötig, aber (noch) nicht Realität."],
+ "Indikativ: nicht verwechseln!":["Bei Ausdrücken der Gewissheit, der Meinung und der Hoffnung.","Hier liegt die Fehlerfalle: « J'espère que » und « Je pense que » wirken subjektiv, gelten aber als Feststellung und stehen darum mit Indikativ."],
+ "Infinitiv statt subjonctif":["Wenn Haupt- und Nebensatz dasselbe Subjekt haben.","« Je veux que je parte » ist falsch. Der Infinitiv ist hier kürzer, eleganter und korrekt."],
+ "Subjonctif passé":["Wenn die Handlung im que-Satz schon abgeschlossen ist.","Damit zeigst du, dass sich dein Gefühl oder Urteil auf etwas Vergangenes bezieht: „dass du bestanden hast“, nicht „dass du bestehst“."]},
+"gerondif-participe":{
+ "Bildung des participe présent":["Als Grundlage für gérondif, participe présent und adjectif verbal.","Mit einer Regel und drei Ausnahmen beherrschst du die Form für alle Verben."],
+ "Gérondif: en + participe présent":["Wenn dieselbe Person zwei Dinge gleichzeitig tut oder wenn du sagst, wie oder wodurch etwas geschieht.","Es ersetzt Nebensätze mit pendant que, si oder parce que und macht Sätze kürzer. Im Deutschen entspricht es oft „indem“ oder „beim …“."],
+ "Participe présent (ohne en)":["Vor allem in schriftlichen, formellen Texten.","Es verkürzt Relativ- und Kausalsätze. Du erkennst damit typische Formulierungen in Zeitungen und offiziellen Texten."],
+ "Participe présent composé":["Wenn eine Handlung abgeschlossen war, bevor die nächste beginnt.","Es verbindet zwei aufeinanderfolgende Handlungen oder Grund und Folge in einem Satz („Nachdem er … hatte“, „Da er … hatte“)."],
+ "Adjectif verbal":["Wenn das -ant-Wort eine Eigenschaft beschreibt, also wie ein Adjektiv gebraucht wird.","Dann wird es angeglichen und manchmal anders geschrieben. Das ist eine beliebte Rechtschreibfalle (fatigant, fatiguant)."]},
+"imperatif":{
+ "Bildung":["Wenn du jemanden direkt aufforderst (du, ihr, Sie) oder etwas für „uns“ vorschlägst.","Der Imperativ ist die direkteste Art, jemanden zu etwas zu bewegen. Das fehlende -s bei -er-Verben ist ein häufiger Schreibfehler."],
+ "Unregelmässige Formen":["Bei sehr häufigen Aufforderungen: « Sois sage ! », « N'aie pas peur ! »","Diese Formen stammen vom subjonctif und lassen sich nicht ableiten. « Veuillez » brauchst du in formellen Briefen."],
+ "Pronomen beim bejahten Imperativ":["Wenn sich die Aufforderung auf etwas bereits Genanntes bezieht.","So vermeidest du Wiederholungen (« Donne-le-moi » statt « Donne-moi le livre »). Die Stellung nach dem Verb ist die einzige Ausnahme zur normalen Pronomenregel."],
+ "Verneinter Imperativ":["Bei Verboten und Warnungen.","Hier gilt wieder die normale Stellung vor dem Verb. Wer das verwechselt, schreibt Fehler wie « Ne dis-le pas »."],
+ "Reflexive Verben":["Bei Aufforderungen mit Verben wie se lever, se dépêcher, s'inquiéter.","Das Reflexivpronomen darf nicht fehlen. Beim bejahten Imperativ wird te zu toi."],
+ "Alternativen zum Imperativ":["Wenn ein Imperativ zu direkt oder unhöflich wäre.","Im formellen Brief oder gegenüber Fremden wirkt der Conditionnel höflicher. Infinitive sind typisch für Anleitungen und Schilder."]},
+"pronoms":{
+ "Objektpronomen: COD und COI":["Wenn ein Objekt schon genannt wurde.","Die Wahl hängt davon ab, ob das Verb mit oder ohne à steht, nicht vom deutschen Fall. Darum lohnt es sich, Verben immer mit ihrem Anschluss zu lernen (téléphoner à qn)."],
+ "Die Pronomen y und en":["Wenn du Orte, Sachen mit à oder de oder Mengen ersetzt.","Diese zwei Wörter haben keine direkte deutsche Entsprechung („dort“, „davon“, „daran“), sind im Französischen aber Pflicht: « J'en ai deux », nicht « J'ai deux »."],
+ "Stellung der Pronomen":["In jedem Satz mit Objektpronomen.","Im Französischen steht das Pronomen vor dem Verb, im Deutschen danach. Hier passieren die meisten Fehler."],
+ "Reihenfolge bei zwei Pronomen":["Wenn du zwei Objekte gleichzeitig ersetzt.","Typisch bei geben, sagen, zeigen, erklären: « Je le lui ai dit. » Die feste Reihenfolge musst du auswendig kennen."],
+ "Pronoms toniques":["Zur Betonung, nach Präpositionen und wenn kein Verb folgt.","me, le oder lui können nicht allein stehen: « avec il » oder « C'est je » sind falsch."],
+ "Demonstrativpronomen":["Wenn du zwischen mehreren Dingen auswählst oder vergleichst.","Du vermeidest Wiederholungen beim Vergleichen (« mon opinion et celle de l'auteur »). Das ist im Kommentar sehr nützlich."],
+ "Possessivpronomen":["Wenn du Besitz ausdrückst, ohne das Nomen zu wiederholen.","Typisch in Vergleichen und Gegenüberstellungen: « Sa vie est différente de la mienne. »"]},
+"adjectifs-adverbes":{
+ "Angleichung des Adjektivs":["Bei jedem Adjektiv, das sich auf ein Nomen bezieht.","Das Adjektiv muss zu Geschlecht und Zahl passen, auch wenn man es nicht hört. Das ist eine der häufigsten Fehlerquellen im Aufsatz."],
+ "beau, nouveau, vieux":["Wenn diese Adjektive vor einem männlichen Nomen mit Vokal oder stummem h stehen.","Die Sonderform verhindert ein Zusammenstossen zweier Vokale: nicht « un beau ami », sondern « un bel ami »."],
+ "Farbadjektive":["Bei Beschreibungen von Kleidung, Bildern und Gegenständen.","Hier gilt eine Ausnahme von der Angleichung, die gern geprüft wird."],
+ "Stellung des Adjektivs":["Bei jeder Verbindung von Nomen und Adjektiv.","Im Deutschen steht das Adjektiv immer davor, im Französischen meist danach. Bei einigen Adjektiven ändert die Stellung sogar die Bedeutung."],
+ "Bildung der Adverbien":["Wenn du beschreibst, wie jemand etwas tut.","Ein Adjektiv kann kein Verb beschreiben: « Il parle lent » ist falsch, « Il parle lentement » richtig."],
+ "Stellung der Adverbien":["In jedem Satz mit Adverb, besonders im passé composé.","Die Stellung ist anders als im Deutschen. « J'ai mangé bien » klingt für Französischsprachige falsch."],
+ "Komparativ":["Wenn du zwei Dinge oder Personen vergleichst.","Im argumentativen Aufsatz vergleichst du ständig Vor- und Nachteile. meilleur und mieux zu verwechseln ist ein typischer Fehler."],
+ "Superlativ":["Wenn etwas das Höchste oder Niedrigste in einer Gruppe ist.","Für Hervorhebungen und Wertungen. Beachte den wiederholten Artikel beim nachgestellten Adjektiv."]},
+"negation":{
+ "Die Verneinungsformen":["Immer, wenn du etwas verneinst oder einschränkst.","Jede Form hat eine genaue Bedeutung. Mit ne … pas allein kannst du weder „nie“ noch „niemand“ noch „nur“ ausdrücken."],
+ "Stellung in einfachen Zeiten":["Im Präsens, Imparfait, Futur und allen Zeiten ohne Hilfsverb.","ne und pas umrahmen das konjugierte Verb samt Pronomen. Das ist die Grundregel für alle anderen Fälle."],
+ "Stellung in zusammengesetzten Zeiten":["Im passé composé und in allen Zeiten mit Hilfsverb.","Je nach Verneinungswort steht der zweite Teil vor oder nach dem Partizip. Das ist eine beliebte Prüfungsfrage."],
+ "Verneinung beim Infinitiv":["Bei Ratschlägen, Anweisungen und Vorsätzen (de ne pas …).","Hier stehen beide Teile zusammen vor dem Infinitiv, anders als beim konjugierten Verb."],
+ "Verneinung als Subjekt":["Wenn „niemand“, „nichts“ oder „kein“ der Satzgegenstand ist.","Dann steht die Verneinung am Satzanfang und pas fällt weg. « Personne n'est pas venu » ist ein typischer Fehler."],
+ "Artikel nach der Verneinung":["Wenn du einen unbestimmten Artikel oder Teilungsartikel verneinst.","Aus „keine Zeit“ wird « pas de temps »: Der Artikel fällt weg, weil keine Menge mehr vorhanden ist."],
+ "Kombinationen":["Wenn du mehrere Verneinungen verbindest, zum Beispiel „nie mehr etwas“.","Anders als in der Logik heben sich mehrere Verneinungswörter nicht auf, sondern verstärken sich."],
+ "Kurzantworten":["Im Gespräch und in Dialogen, besonders an der mündlichen Prüfung.","« Si » und « non plus » zeigen in einem Wort, ob du zustimmst oder widersprichst."]},
+"propositions":{
+ "qui und que":["Wenn du ein Nomen mit einem ganzen Satz genauer beschreibst.","Statt « J'ai un ami. Il habite à Paris. » schreibst du flüssiger « J'ai un ami qui habite à Paris. »"],
+ "dont":["Bei Verben und Ausdrücken mit de und für „dessen“ oder „deren“.","dont ist typisch für gutes Schriftfranzösisch. Lernende ersetzen es oft fälschlich durch que."],
+ "où":["Für Orte und Zeitpunkte.","Bei Zeitangaben heisst es « le jour où », nicht « le jour quand ». Das ist ein typischer Germanismus."],
+ "Präposition + qui / lequel":["Wenn das Verb im Relativsatz eine Präposition braucht (avec, sur, pour, à côté de …).","Im Französischen darf die Präposition nicht am Satzende stehen. Sie muss vor das Relativpronomen."],
+ "ce qui, ce que, ce dont, ce à quoi":["Wenn sich das Relativpronomen nicht auf ein Nomen, sondern auf einen ganzen Gedanken bezieht („das, was“).","Sehr nützlich zum Hervorheben im Aufsatz: « Ce qui me frappe dans ce texte, c'est … »"],
+ "Konjunktionen und Modus":["In jedem Nebensatz mit Konjunktion.","Die Konjunktion bestimmt den Modus. Faustregel: Tatsachen stehen im Indikativ, Ziele, Einräumungen und noch nicht Eingetretenes im subjonctif."]},
+"discours-indirect":{
+ "Grundprinzip":["Bei jeder Wiedergabe fremder Aussagen.","Die Perspektive wechselt vom Sprecher zum Erzähler. Deshalb müssen sich Pronomen und Possessivbegleiter anpassen."],
+ "Zeitenfolge (Einleitung in der Vergangenheit)":["Wenn das Einleitungsverb in einer Vergangenheitszeit steht (a dit, disait …).","Die Zeiten passen sich an, damit die zeitlichen Verhältnisse aus Sicht der Vergangenheit stimmen. Das ist typisch für Erzähltexte und Berichte."],
+ "Indirekte Fragen":["Wenn du wiedergibst, was jemand gefragt hat, oder höflich nachfragst (« Pouvez-vous me dire où … »).","Die indirekte Frage hat die Wortstellung eines Aussagesatzes. Inversion und est-ce que fallen weg."],
+ "Zeit- und Ortsangaben":["Wenn die Aussage zu einem anderen Zeitpunkt oder an einem anderen Ort gemacht wurde.","„Morgen“ aus Sicht des Sprechers ist für den Erzähler nicht mehr morgen. Ohne Anpassung entstehen Missverständnisse."],
+ "Einleitungsverben":["In Zusammenfassungen, Kommentaren und Erzählungen.","Abwechslungsreiche Verben statt immer dire zeigen genau, wie etwas gesagt wurde (behaupten, versprechen, erklären), und verbessern deinen Stil."]},
+"passif":{
+ "Bildung":["Wenn das Objekt der Handlung zum Thema des Satzes werden soll.","So verschiebst du den Fokus: Wichtig ist nicht, wer handelt, sondern was geschieht."],
+ "Das Passiv in allen Zeiten":["In jedem Text, der Ereignisse sachlich darstellt.","Da die Zeit nur in être steckt, musst du dessen Form erkennen, um das Passiv richtig zu verstehen und zu bilden."],
+ "par oder de?":["Wenn du den Urheber nennst.","Die Präposition zeigt, ob es um eine konkrete Handlung (par) oder um einen Zustand oder ein Gefühl (de) geht."],
+ "Passiv ohne Urheber":["Wenn der Handelnde unbekannt, selbstverständlich oder unwichtig ist.","Das ist der häufigste Grund für das Passiv. Im Alltag sagt man dafür oft on."],
+ "Alternativen zum Passiv":["Wenn das Passiv schwerfällig klingt, besonders mündlich.","Französisch verwendet das Passiv seltener als Deutsch. on und pronominale Verben klingen oft natürlicher."]}
+};
+(function(){
+const main = document.getElementById('main');
+const side = document.getElementById('side');
+const nav = document.getElementById('topicnav');
+const menuBtn = document.getElementById('menuBtn');
+const STORE = 'fgm-progress-v1';
+const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+TOPICS.forEach((t,i)=>{ t.nr = i+1; });
+const TOTAL_EX = TOPICS.reduce((s,t)=>s+t.ex.length,0);
+const pad = n => String(n).padStart(2,'0');
+const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ---------- Fortschritt (nur in diesem Browser) ---------- */
+function load(){ try{ return JSON.parse(localStorage.getItem(STORE)) || {}; }catch(e){ return {}; } }
+function save(id, score, total){
+  try{
+    const p = load(); const prev = p[id];
+    if(!prev || score > prev.best){ p[id] = {best:score,total}; localStorage.setItem(STORE, JSON.stringify(p)); markNav(); }
+  }catch(e){}
+}
+
+/* ---------- Korrektur ---------- */
+function norm(s){
+  return String(s).normalize('NFC').toLowerCase()
+    .replace(/[’‘`´]/g,"'").replace(/œ/g,'oe').replace(/æ/g,'ae')
+    .replace(/[«»"“”]/g,' ')
+    .replace(/\s+/g,' ')
+    .replace(/\s*'\s*/g,"'")
+    .replace(/\s*-\s*/g,'-')
+    .replace(/\s+([,.!?;:])/g,'$1')
+    .replace(/[\s.!?;:,]+$/,'')
+    .trim();
+}
+const bare = s => s.normalize('NFD').replace(/[̀-ͯ]/g,'');
+
+/* ---------- Navigation ---------- */
+nav.innerHTML = TOPICS.map(t=>`<li><a class="navlink" href="#${t.id}" data-id="${t.id}"><span class="n">${pad(t.nr)}</span><span class="nt"><span lang="fr">${t.fr}</span><small>${t.de}</small></span></a></li>`).join('');
+function markNav(){
+  const p = load();
+  nav.querySelectorAll('.navlink').forEach(a=>{
+    const r = p[a.dataset.id]; let d = a.querySelector('.dot');
+    if(r && r.best/r.total >= .8){ if(!d){ d=document.createElement('span'); d.className='dot'; d.title='Mindestens 80 % richtig'; a.appendChild(d);} }
+    else if(d) d.remove();
+  });
+}
+menuBtn.addEventListener('click',()=>{
+  const open = side.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded', open);
+  menuBtn.textContent = open ? 'Schliessen' : 'Themen';
+});
+
+function setActive(id){
+  document.querySelectorAll('.navlink').forEach(a=>a.classList.toggle('active', a.dataset.id===id));
+  side.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); menuBtn.textContent='Themen';
+}
+
+/* ---------- Startseite ---------- */
+function renderHome(){
+  const p = load();
+  const done = TOPICS.filter(t=>p[t.id]).length;
+  main.innerHTML = `<div class="wrap">
+  <section class="hero">
+    <p class="eyebrow">Französisch · Schweizer Matura</p>
+    <h1 lang="fr">Grammaire française</h1>
+    <p class="lead">Alle Grammatikthemen, die du für die Maturprüfung brauchst: auf Deutsch erklärt, mit französischen Beispielen und Übungen, die sofort korrigiert werden.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#${TOPICS[0].id}">Mit Thema 1 beginnen</a>
+      <a class="btn ghost" href="#test">Gemischter Test</a>
+    </div>
+    <div class="hero-stats">
+      <div><b>${TOPICS.length}</b><span>Themen</span></div>
+      <div><b>${TOTAL_EX}</b><span>Übungen mit Lösung</span></div>
+      <div><b>${done}</b><span>Themen schon geübt</span></div>
+    </div>
+  </section>
+  <section class="howto" aria-label="So funktioniert es">
+    <div><b>1 · Lesen</b><p>Jede Regel auf Deutsch, jedes Beispiel auf Französisch mit Übersetzung.</p></div>
+    <div><b>2 · Üben</b><p>Lücke ausfüllen und mit Enter prüfen oder Antwort anklicken.</p></div>
+    <div><b>3 · Kontrollieren</b><p>Sofortige Korrektur mit Erklärung. Akzente zählen, die Sonderzeichen-Tasten helfen.</p></div>
+  </section>
+  <h2 class="sec-title">Die Themen</h2>
+  <div class="grid">${TOPICS.map(t=>{
+    const r = p[t.id];
+    const prog = r
+      ? `<div class="meter" aria-hidden="true"><span style="width:${Math.round(r.best/r.total*100)}%"></span></div><p class="meta">Bestes Resultat: ${r.best} / ${r.total}</p>`
+      : `<p class="meta fresh">${t.ex.length} Übungen · noch nicht geübt</p>`;
+    return `<a class="card" href="#${t.id}"><span class="num">${pad(t.nr)}</span><h3 lang="fr">${t.fr}</h3><p class="de">${t.de}</p><ul class="chips">${t.chips.map(c=>`<li>${c}</li>`).join('')}</ul>${prog}</a>`;
+  }).join('')}</div>
+  </div>`;
+}
+
+/* ---------- Themenseite ---------- */
+function renderTopic(t){
+  const i = TOPICS.indexOf(t), prev = TOPICS[i-1], next = TOPICS[i+1];
+  main.innerHTML = `<article class="wrap">
+    <header class="t-head">
+      <p class="t-nr">Thema ${pad(t.nr)} von ${TOPICS.length}</p>
+      <h1 lang="fr">${t.fr}</h1>
+      <p class="t-de">${t.de}</p>
+      <p class="lead">${t.intro}</p>
+      ${WHY[t.id]?`<div class="why-box"><p class="why-t">Wann brauchst du das?</p><ul>${WHY[t.id].map(w=>`<li>${w}</li>`).join('')}</ul></div>`:''}
+      <nav class="toc" aria-label="Inhalt dieser Seite"></nav>
+    </header>
+    <div class="prose">${t.html}</div>
+    <section class="ex-sec" id="uebungen">
+      <h2>Übungen</h2>
+      <p class="hint">${t.ex.length} Aufgaben. Schreib deine Antwort und drück <b>Enter</b> oder <b>Prüfen</b>. Bei Auswahlaufgaben wird sofort korrigiert.</p>
+      <div id="exwrap"></div>
+    </section>
+    <nav class="pager" aria-label="Weitere Themen">
+      ${prev?`<a class="prev" href="#${prev.id}"><small>← Vorheriges Thema</small><span lang="fr">${prev.fr}</span></a>`:''}
+      ${next?`<a class="next" href="#${next.id}"><small>Nächstes Thema →</small><span lang="fr">${next.fr}</span></a>`:`<a class="next" href="#test"><small>Alles geschafft? →</small><span>Gemischter Test</span></a>`}
+    </nav>
+  </article>`;
+  const toc = main.querySelector('.toc');
+  const wz = WOZU[t.id] || {};
+  main.querySelectorAll('.prose h2[data-toc]').forEach((h,k)=>{
+    h.id = 'sec-'+k;
+    const w = wz[h.textContent.trim()];
+    if(w){
+      const d = document.createElement('div'); d.className = 'wozu';
+      d.innerHTML = `<p><span class="wz-l">Wann?</span><span>${w[0]}</span></p><p><span class="wz-l">Wozu?</span><span>${w[1]}</span></p>`;
+      h.after(d);
+    }
+    const b = document.createElement('button'); b.type='button'; b.textContent = h.textContent;
+    b.addEventListener('click',()=>h.scrollIntoView({behavior:reduce?'auto':'smooth'}));
+    toc.appendChild(b);
+  });
+  const bx = document.createElement('button'); bx.type='button'; bx.className='toc-ex'; bx.textContent='Zu den Übungen ↓';
+  bx.addEventListener('click',()=>document.getElementById('uebungen').scrollIntoView({behavior:reduce?'auto':'smooth'}));
+  toc.appendChild(bx);
+  mountExercises(document.getElementById('exwrap'), t.ex.map(e=>Object.assign({},e)), t.id, true);
+}
+
+/* ---------- Gemischter Test ---------- */
+function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+function renderTest(){
+  const pool = [];
+  TOPICS.forEach(t=>t.ex.forEach(e=>pool.push(Object.assign({topic:t},e))));
+  const items = shuffle(pool).slice(0,15);
+  main.innerHTML = `<div class="wrap">
+    <header class="t-head">
+      <p class="t-nr">Training</p>
+      <h1>Gemischter Test</h1>
+      <p class="t-de">15 zufällige Aufgaben aus allen ${TOPICS.length} Themen</p>
+      <p class="lead">Wie an der Prüfung: Die Themen sind durchmischt. Bei jeder Aufgabe siehst du, aus welchem Kapitel sie stammt, und kannst dort die Regel nachlesen.</p>
+      <div class="hero-actions"><button class="btn" type="button" id="newTest">Neuen Test erstellen</button></div>
+    </header>
+    <section class="ex-sec" style="margin-top:28px"><div id="exwrap"></div></section>
+  </div>`;
+  document.getElementById('newTest').addEventListener('click',()=>{ renderTest(); window.scrollTo(0,0); });
+  mountExercises(document.getElementById('exwrap'), items, 'test', false);
+}
+
+/* ---------- Übungs-Engine ---------- */
+const KEYS = 'é è ê ë à â ç î ï ô û ù œ'.split(' ');
+function mountExercises(wrap, items, key, persist){
+  const n = items.length;
+  const state = new Array(n).fill(null);
+  let lastInput = null;
+
+  wrap.innerHTML = `<div class="ex-bar">
+      <div class="score" aria-live="polite"><strong class="sc">0</strong> von ${n} richtig</div>
+      <div class="keys" role="group" aria-label="Sonderzeichen einfügen">${KEYS.map(c=>`<button type="button" class="key" data-c="${c}" title="${c} einfügen">${c}</button>`).join('')}</div>
+      <div class="bar-actions">
+        <button type="button" class="btn sm" data-act="checkall">Alle prüfen</button>
+        <button type="button" class="btn sm ghost" data-act="showall">Alle Lösungen</button>
+        <button type="button" class="btn sm ghost" data-act="reset">Neu starten</button>
+      </div>
+    </div>
+    <ol class="ex-list">${items.map((it,i)=>itemHtml(it,i,key)).join('')}</ol>
+    <div class="result" aria-live="polite"></div>`;
+
+  const lis = wrap.querySelectorAll('.ex-item');
+  const scEl = wrap.querySelector('.sc');
+  const resEl = wrap.querySelector('.result');
+
+  function solution(it){ return it.t==='mc' ? it.o[it.c] : it.a[0]; }
+  function feedback(kind, it){
+    const head = {ok:'Richtig!', near:'Fast richtig: Prüfe die Akzente.', bad:'Leider falsch.', shown:'Lösung:'}[kind];
+    const sol = kind==='ok' ? '' : (kind==='shown' ? ` <span class="sol"><b lang="fr">${esc(solution(it))}</b></span>` : ` <span class="sol">Richtig ist: <b lang="fr">${esc(solution(it))}</b></span>`);
+    const alt = (kind!=='ok' && it.a && it.a.length>1) ? `<span class="alt">Ebenfalls richtig: <span lang="fr">${it.a.slice(1).map(esc).join(' · ')}</span></span>` : '';
+    return `<p><strong>${head}</strong>${sol}</p>${alt}${it.h?`<p class="why">${it.h}</p>`:''}`;
+  }
+  function setState(i, kind){
+    state[i] = kind;
+    const li = lis[i];
+    li.classList.remove('is-ok','is-bad','is-near','is-shown');
+    const fb = li.querySelector('.fb');
+    fb.className = 'fb';
+    if(kind){ li.classList.add('is-'+kind); fb.classList.add(kind==='shown'?'shown':kind); fb.innerHTML = feedback(kind, items[i]); }
+    else fb.innerHTML = '';
+    update();
+  }
+  function update(){
+    const ok = state.filter(s=>s==='ok').length;
+    scEl.textContent = ok;
+    if(persist) save(key, ok, n);
+    const doneAll = state.every(s=>s!==null);
+    if(doneAll){
+      const pct = Math.round(ok/n*100);
+      const msg = pct>=90 ? 'Ausgezeichnet, dieses Thema sitzt.' : pct>=70 ? 'Gut gemacht. Schau dir die roten Aufgaben noch einmal an.' : pct>=50 ? 'Halb geschafft. Lies die Regeln oben nochmals und starte neu.' : 'Lies die Erklärungen oben in Ruhe durch und versuche es dann noch einmal.';
+      resEl.innerHTML = `<p style="margin:0"><strong style="font-family:var(--f-display);font-size:1.3rem">${ok} von ${n} richtig (${pct} %)</strong></p><p style="margin:4px 0 0">${msg}</p>`;
+    } else resEl.innerHTML = '';
+  }
+  function check(i, silentEmpty){
+    const it = items[i];
+    if(it.t==='mc' || state[i]==='shown') return;
+    const inp = lis[i].querySelector('input');
+    const v = inp.value;
+    if(!v.trim()){
+      if(!silentEmpty){ const fb = lis[i].querySelector('.fb'); fb.className='fb'; fb.innerHTML='<p>Schreib zuerst eine Antwort in das Feld.</p>'; }
+      return;
+    }
+    const nv = norm(v);
+    const answers = it.a.map(norm);
+    if(answers.includes(nv)) setState(i,'ok');
+    else if(answers.some(a=>bare(a)===bare(nv))) setState(i,'near');
+    else setState(i,'bad');
+  }
+  function show(i){
+    const it = items[i];
+    if(state[i]==='ok') return;
+    if(it.t==='mc'){ revealMc(i, null); setState(i,'shown'); return; }
+    const inp = lis[i].querySelector('input');
+    inp.value = it.a[0];
+    setState(i,'shown');
+  }
+  function revealMc(i, chosen){
+    const it = items[i];
+    lis[i].querySelectorAll('.opt').forEach(b=>{
+      const j = +b.dataset.j; b.disabled = true;
+      if(j===it.c) b.classList.add('right');
+      else if(j===chosen) b.classList.add('wrong');
+    });
+  }
+
+  wrap.addEventListener('click', e=>{
+    const k = e.target.closest('.key');
+    if(k){
+      const target = lastInput && document.body.contains(lastInput) ? lastInput : wrap.querySelector('.ex-item input:not([disabled])');
+      if(!target) return;
+      const s = target.selectionStart ?? target.value.length, en = target.selectionEnd ?? target.value.length;
+      target.value = target.value.slice(0,s) + k.dataset.c + target.value.slice(en);
+      target.focus(); target.setSelectionRange(s+1,s+1);
+      target.dispatchEvent(new Event('input',{bubbles:true}));
+      return;
+    }
+    const act = e.target.closest('[data-act]');
+    if(act){
+      const a = act.dataset.act;
+      if(a==='checkall'){
+        items.forEach((it,i)=>check(i,true));
+        const firstOpen = [...lis].find((li,i)=>state[i]===null);
+        if(firstOpen){ const f = firstOpen.querySelector('input,.opt'); if(f) f.focus({preventScroll:false}); }
+      }
+      else if(a==='showall') items.forEach((it,i)=>{ if(state[i]!=='ok') show(i); });
+      else if(a==='reset'){ mountExercises(wrap, items, key, persist); }
+      return;
+    }
+    const li = e.target.closest('.ex-item'); if(!li) return;
+    const i = +li.dataset.i;
+    const opt = e.target.closest('.opt');
+    if(opt && !opt.disabled){
+      const j = +opt.dataset.j;
+      revealMc(i, j);
+      setState(i, j===items[i].c ? 'ok' : 'bad');
+      return;
+    }
+    if(e.target.closest('.do-check')) check(i,false);
+    else if(e.target.closest('.do-show')) show(i);
+  });
+  wrap.addEventListener('mousedown', e=>{ if(e.target.closest('.key')) e.preventDefault(); });
+  wrap.addEventListener('focusin', e=>{ if(e.target.matches('.ex-item input')) lastInput = e.target; });
+  wrap.addEventListener('keydown', e=>{
+    if(e.key==='Enter' && e.target.matches('.ex-item input')){
+      e.preventDefault();
+      const i = +e.target.closest('.ex-item').dataset.i;
+      check(i,false);
+      if(state[i]==='ok'){
+        const nxt = [...lis].slice(i+1).find((li,k)=>state[i+1+k]===null);
+        if(nxt){ const f = nxt.querySelector('input'); if(f) f.focus(); }
+      }
+    }
+  });
+  wrap.addEventListener('input', e=>{
+    if(!e.target.matches('.ex-item input')) return;
+    const i = +e.target.closest('.ex-item').dataset.i;
+    if(state[i] && state[i]!=='shown') setState(i,null);
+    else if(!state[i]){ const fb = lis[i].querySelector('.fb'); fb.className='fb'; fb.innerHTML=''; }
+  });
+}
+
+function itemHtml(it, i, key){
+  const id = `in-${key}-${i}`;
+  const tag = it.topic ? `<a class="ex-tag" href="#${it.topic.id}" lang="fr">${pad(it.topic.nr)} · ${it.topic.fr}</a><br>` : '';
+  const ctl = `<div class="ex-ctl"><button type="button" class="btn sm do-check">Prüfen</button><button type="button" class="btn sm ghost do-show">Lösung zeigen</button></div>`;
+  let body = '';
+  if(it.t==='fill'){
+    const parts = it.q.split('___');
+    const w = Math.min(28, Math.max(...it.a.map(s=>s.length)) + 3);
+    body = `<p class="ex-q" lang="fr">${parts[0]}<input id="${id}" class="blank" style="width:${w}ch" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Lücke in Aufgabe ${i+1}">${parts[1]||''}</p>${ctl}`;
+  } else if(it.t==='tr'){
+    body = `<p class="ex-instr">${it.q}</p><p class="ex-src" lang="fr">${it.s}</p><input id="${id}" class="line" type="text" lang="fr" autocomplete="off" autocapitalize="sentences" autocorrect="off" spellcheck="false" aria-label="Antwort zu Aufgabe ${i+1}" placeholder="Deine Lösung …">${ctl}`;
+  } else {
+    body = `<p class="ex-q" lang="fr">${it.q.replace('___','<span class="gap">___</span>')}</p><div class="opts" role="group" aria-label="Antwortmöglichkeiten">${it.o.map((o,j)=>`<button type="button" class="opt" data-j="${j}" lang="fr">${o}</button>`).join('')}</div>`;
+  }
+  return `<li class="ex-item" data-i="${i}">${tag}${body}<div class="fb" aria-live="polite"></div></li>`;
+}
+
+/* ---------- Router ---------- */
+function route(){
+  const h = decodeURIComponent(location.hash.slice(1));
+  const t = TOPICS.find(x=>x.id===h);
+  if(t){ renderTopic(t); setActive(t.id); document.title = t.fr + ' – Grammaire française'; }
+  else if(h==='test'){ renderTest(); setActive('test'); document.title = 'Gemischter Test – Grammaire française'; }
+  else { renderHome(); setActive('start'); document.title = 'Grammaire française – Matura'; }
+  window.scrollTo(0,0);
+}
+window.addEventListener('hashchange', route);
+markNav();
+route();
+})();
+</script>
+</body>
+</html>
