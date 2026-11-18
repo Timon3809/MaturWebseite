@@ -90,7 +90,7 @@
     themeToggle.setAttribute("aria-checked", String(isDark));
     themeToggle.title = "Dunkelmodus";
     themeToggle.innerHTML = `
-      <span class="theme-toggle-icon" aria-hidden="true">${isDark ? "☼" : "☾"}</span>
+      <span class="theme-toggle-icon" aria-hidden="true">${isDark ? "☾" : "☼"}</span>
       <span class="theme-toggle-label">${isDark ? "Dunkel" : "Hell"}</span>
       <span class="theme-toggle-track" aria-hidden="true"><span></span></span>
     `;
@@ -98,7 +98,7 @@
       const nextIsDark = document.documentElement.dataset.theme !== "dark";
       document.documentElement.dataset.theme = nextIsDark ? "dark" : "light";
       themeToggle.setAttribute("aria-checked", String(nextIsDark));
-      themeToggle.querySelector(".theme-toggle-icon").textContent = nextIsDark ? "☼" : "☾";
+      themeToggle.querySelector(".theme-toggle-icon").textContent = nextIsDark ? "☾" : "☼";
       themeToggle.querySelector(".theme-toggle-label").textContent = nextIsDark ? "Dunkel" : "Hell";
       localStorage.setItem(themeStorageKey, nextIsDark ? "dark" : "light");
     });

@@ -519,6 +519,7 @@ button.mindmap-node:hover, button.mindmap-node:focus-visible, button.mindmap-nod
   color: var(--ink);
   font-size: 9px;
   cursor: pointer;
+  transition: background-color .35s ease, border-color .35s ease, color .35s ease;
 }
 .theme-toggle-icon { font-size: 13px; }
 .theme-toggle-track {
@@ -530,7 +531,7 @@ button.mindmap-node:hover, button.mindmap-node:focus-visible, button.mindmap-nod
   border-radius: 10px;
   background: #e9e7df;
   padding: 2px;
-  transition: background .18s;
+  transition: background .35s ease;
 }
 .theme-toggle-track > span {
   width: 10px;
@@ -538,7 +539,7 @@ button.mindmap-node:hover, button.mindmap-node:focus-visible, button.mindmap-nod
   border-radius: 50%;
   background: #fffefa;
   box-shadow: 0 1px 2px #21262030;
-  transition: transform .18s;
+  transition: transform .35s ease;
 }
 
 :root[data-theme="dark"] {
