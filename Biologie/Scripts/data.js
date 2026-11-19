@@ -1430,6 +1430,314 @@ window.subjectData = {
         term: "Eutrophierung",
         definition: "Überdüngung von Gewässern oder Ökosystemen mit Nährstoffen wie Stickstoff und Phosphor, die zu starkem Algenwachstum und Sauerstoffmangel führen kann."
       }
+    ],
+    Enzymatik: [
+      {
+        term: "Enzym",
+        definition: "Protein, das als Biokatalysator eine bestimmte Stoffwechselreaktion beschleunigt, ohne dabei verbraucht zu werden. Enzymnamen enden auf -ase (z. B. Maltase, Saccharase)."
+      },
+      {
+        term: "Biokatalysator",
+        definition: "Katalysator aus einem Lebewesen (meist ein Enzym): Er senkt die Aktivierungsenergie einer Reaktion und geht unverändert aus ihr hervor."
+      },
+      {
+        term: "Aktivierungsenergie",
+        definition: "Energie, die zugeführt werden muss, damit eine Reaktion startet («Energieberg»). Enzyme senken sie, die Energiebilanz der Reaktion bleibt aber gleich."
+      },
+      {
+        term: "exergonisch und endergonisch",
+        definition: "Bei einer exergonischen Reaktion wird Energie frei (Produkte energieärmer als die Edukte), eine endergonische Reaktion benötigt Energie. Enzyme können eine endergonische nicht in eine exergonische Reaktion verwandeln."
+      },
+      {
+        term: "Substrat",
+        definition: "Stoff, der von einem Enzym umgesetzt wird. Aus ihm entsteht das Produkt."
+      },
+      {
+        term: "aktives Zentrum",
+        definition: "Bereich des Enzyms, in dem das Substrat räumlich passend gebunden und umgesetzt wird."
+      },
+      {
+        term: "Enzym-Substrat-Komplex",
+        definition: "Kurzzeitige Verbindung von Enzym und Substrat [ES] im aktiven Zentrum: E + S → [ES] → E + P."
+      },
+      {
+        term: "Schlüssel-Schloss-Prinzip",
+        definition: "Modell der Substratbindung: Substrat und aktives Zentrum passen von Anfang an starr zueinander wie Schlüssel und Schloss."
+      },
+      {
+        term: "Induced-fit-Modell",
+        definition: "Modell der induzierten Passform: Das aktive Zentrum ist flexibel und passt sich erst beim Binden des Substrats genau an."
+      },
+      {
+        term: "Substratspezifität",
+        definition: "Ein Enzym setzt nur ein bestimmtes Substrat (bzw. eine kleine Gruppe ähnlicher Substrate) um."
+      },
+      {
+        term: "Wirkungsspezifität",
+        definition: "Ein Enzym katalysiert nur eine bestimmte Reaktion seines Substrats (z. B. spalten, aber nicht verknüpfen)."
+      },
+      {
+        term: "Enzymklassen",
+        definition: "Einteilung der Enzyme nach ihrer Wirkung in sechs Klassen: Oxidoreduktasen, Transferasen, Hydrolasen, Lyasen, Isomerasen, Ligasen."
+      },
+      {
+        term: "Hydrolasen",
+        definition: "Enzymklasse, die Moleküle unter Einbau von Wasser spaltet (Hydrolyse), z. B. Verdauungsenzyme wie Pepsin und Trypsin."
+      },
+      {
+        term: "Apoenzym",
+        definition: "Proteinanteil eines Enzyms, der allein noch nicht wirksam ist."
+      },
+      {
+        term: "Holoenzym",
+        definition: "Funktionsfähiges Enzym aus Apoenzym und Cofaktor."
+      },
+      {
+        term: "Cofaktor",
+        definition: "Kleiner Nicht-Protein-Bestandteil (Molekül oder Ion), den ein Enzym für seine Funktion braucht: prosthetische Gruppe, Coenzym oder Metall-Ion."
+      },
+      {
+        term: "prosthetische Gruppe",
+        definition: "Organischer Cofaktor, der fest (kovalent) an das Enzym gebunden ist, es nie verlässt und am Enzym regeneriert wird (z. B. Häm)."
+      },
+      {
+        term: "Coenzym (Cosubstrat)",
+        definition: "Organischer Cofaktor, der nur locker bindet, bei der Reaktion wie ein Substrat verändert wird und das Enzym wieder verlässt, z. B. ATP und NAD. Viele Vitamine sind Vorstufen von Coenzymen."
+      },
+      {
+        term: "Sättigungskurve",
+        definition: "Verlauf der Reaktionsgeschwindigkeit bei steigender Substratkonzentration: zuerst steiler Anstieg, dann Annäherung an die Maximalgeschwindigkeit vmax, wenn alle aktiven Zentren besetzt sind."
+      },
+      {
+        term: "Michaelis-Konstante (Km)",
+        definition: "Substratkonzentration, bei der ein Enzym die halbe Maximalgeschwindigkeit erreicht. Ein kleiner Km-Wert bedeutet eine hohe Affinität zum Substrat."
+      },
+      {
+        term: "Temperaturoptimum",
+        definition: "Temperatur, bei der ein Enzym am aktivsten ist (beim Menschen etwa 37–40 °C). Darüber fällt die Aktivität durch Denaturierung steil ab."
+      },
+      {
+        term: "pH-Optimum",
+        definition: "pH-Wert, bei dem ein Enzym am aktivsten ist; passt zum Wirkort (Pepsin im Magen pH 2, Trypsin im Darm pH 8)."
+      },
+      {
+        term: "kompetitive Hemmung",
+        definition: "Ein dem Substrat ähnlicher Hemmstoff besetzt das aktive Zentrum und konkurriert mit dem Substrat. Viel Substrat verdrängt den Hemmstoff wieder."
+      },
+      {
+        term: "allosterische Hemmung",
+        definition: "Nichtkompetitive Hemmung: Der Hemmstoff bindet ausserhalb des aktiven Zentrums (allosterisches Zentrum) und verändert dessen Form. Mehr Substrat hebt die Hemmung nicht auf."
+      },
+      {
+        term: "Allosterie",
+        definition: "Veränderung der räumlichen Gestalt (Konformation) eines Enzyms durch Bindung eines Stoffes an einer anderen Stelle, wodurch das aktive Zentrum beeinflusst wird."
+      },
+      {
+        term: "irreversible Hemmung",
+        definition: "Dauerhafte Bindung eines Hemmstoffs an ein Enzym, das dadurch endgültig ausfällt (z. B. Penicillin, Schwermetall-Ionen als Enzymgifte)."
+      },
+      {
+        term: "Endprodukthemmung",
+        definition: "Feedback-Hemmung: Das Endprodukt eines Stoffwechselwegs hemmt allosterisch das erste Enzym dieses Wegs (z. B. Isoleucin-Synthese). Negative Rückkopplung."
+      }
+    ],
+    "Herz-Kreislauf": [
+      {
+        term: "Körperkreislauf",
+        definition: "Grosser Kreislauf: Die linke Kammer pumpt sauerstoffreiches Blut über die Aorta in alle Organe; venöses Blut fliesst über die Hohlvenen in den rechten Vorhof zurück."
+      },
+      {
+        term: "Lungenkreislauf",
+        definition: "Kleiner Kreislauf: Die rechte Kammer pumpt sauerstoffarmes Blut über die Lungenarterien zur Lunge; sauerstoffreiches Blut fliesst über die Lungenvenen in den linken Vorhof."
+      },
+      {
+        term: "geschlossenes Gefässsystem",
+        definition: "Kreislaufsystem, in dem das Blut die Gefässe nicht verlässt; nur so wird die nötige Transportgeschwindigkeit erreicht."
+      },
+      {
+        term: "Arterie",
+        definition: "Blutgefäss, das Blut vom Herzen wegführt; dicke, muskulöse und elastische Wand. Im Lungenkreislauf führt sie sauerstoffarmes Blut."
+      },
+      {
+        term: "Vene",
+        definition: "Blutgefäss, das Blut zum Herzen zurückführt; dünnere Wand, oft mit Venenklappen. Venen enthalten etwa zwei Drittel des Blutes."
+      },
+      {
+        term: "Kapillare",
+        definition: "Feinstes Blutgefäss (Durchmesser unter 0,01 mm) mit einer Wand aus nur einer Endothelschicht; hier findet der Stoffaustausch zwischen Blut und Gewebe statt."
+      },
+      {
+        term: "arterielles und venöses Blut",
+        definition: "Arterielles Blut ist sauerstoffreich (linke Herzhälfte), venöses Blut sauerstoffarm und kohlenstoffdioxidreich (rechte Herzhälfte)."
+      },
+      {
+        term: "Pfortader",
+        definition: "Vene, die das nährstoffreiche Blut aus Magen, Darm und Milz zuerst zur Leber führt."
+      },
+      {
+        term: "Windkesselfunktion",
+        definition: "Die elastische Aorta dehnt sich in der Systole, speichert Blut und gibt es in der Diastole weiter. So wird aus dem stossweisen Auswurf des Herzens ein kontinuierlicher Blutstrom."
+      },
+      {
+        term: "Puls",
+        definition: "Druckwelle, die beim Auswerfen des Blutes durch die Arterien läuft und an oberflächlichen Arterien tastbar ist; die Pulsfrequenz entspricht der Herzfrequenz."
+      },
+      {
+        term: "Filtration und Resorption",
+        definition: "Am arteriellen Kapillarende drückt der Blutdruck Wasser ins Gewebe (Filtration), am venösen Ende saugen die Plasmaproteine es osmotisch zurück (Resorption, ca. 90 %); der Rest fliesst über die Lymphe ab."
+      },
+      {
+        term: "Ödem",
+        definition: "Schwellung durch Wasseransammlung im Gewebe, wenn mehr Wasser aus den Kapillaren gepresst als zurückgeholt wird (z. B. hoher Kapillardruck, Proteinmangel)."
+      },
+      {
+        term: "Venenklappen",
+        definition: "Taschenförmige Ventile in den Venen, die das Zurückfliessen des Blutes verhindern."
+      },
+      {
+        term: "Muskelpumpe",
+        definition: "Kontrahierende Skelettmuskeln drücken die Venen zusammen und schieben das Blut dank der Venenklappen Richtung Herz."
+      },
+      {
+        term: "Krampfadern",
+        definition: "Erweiterte, geschlängelte Venen, die entstehen, wenn die Venenklappen nicht mehr schliessen (Venenklappeninsuffizienz)."
+      },
+      {
+        term: "Blutplasma",
+        definition: "Flüssiger Anteil des Blutes (55 %): Wasser, Proteine, Elektrolyte, Nährstoffe, Hormone, Exkrete; enthält auch die Gerinnungseiweisse."
+      },
+      {
+        term: "Blutserum",
+        definition: "Blutplasma ohne Gerinnungseiweisse; bleibt nach der Blutgerinnung über dem Blutkuchen stehen."
+      },
+      {
+        term: "Hämatokrit",
+        definition: "Volumenanteil der Blutkörperchen am Blut (Männer 42–50 %, Frauen 37–45 %). Je höher er ist, desto dickflüssiger ist das Blut."
+      },
+      {
+        term: "Erythrozyten",
+        definition: "Rote Blutkörperchen ohne Zellkern; transportieren mit dem Hämoglobin die Atemgase. 5 Mio. pro mm³, Lebensdauer 120 Tage."
+      },
+      {
+        term: "Thrombozyten",
+        definition: "Blutplättchen: kernlose Zellbruchstücke für die Blutstillung; 250 000 pro mm³, Lebensdauer 5–10 Tage."
+      },
+      {
+        term: "Hämoglobin",
+        definition: "Eisenhaltiger roter Blutfarbstoff in den Erythrozyten, der Sauerstoff bindet und transportiert."
+      },
+      {
+        term: "Blutbildung",
+        definition: "Bildung aller Blutzellen im roten Knochenmark aus pluripotenten Stammzellen (über 2,5 Millionen pro Sekunde)."
+      },
+      {
+        term: "Erythropoietin (EPO)",
+        definition: "Hormon der Niere, das bei Sauerstoffmangel vermehrt ausgeschüttet wird und im Knochenmark die Bildung von Erythrozyten anregt; bekannt als Dopingmittel."
+      },
+      {
+        term: "Anämie",
+        definition: "Blutarmut: zu wenig Erythrozyten bzw. Hämoglobin im Blut."
+      },
+      {
+        term: "Blutstillung",
+        definition: "Erster, provisorischer Wundverschluss durch Gefässkrampf und Thrombozytenpfropf (weisser Thrombus) innerhalb von 1–3 Minuten."
+      },
+      {
+        term: "Blutgerinnung",
+        definition: "Dauerhafter Wundverschluss: Über eine Kaskade wird Prothrombin zu Thrombin und Fibrinogen zu Fibrin; das Fibrinnetz bildet mit Blutkörperchen den roten Thrombus (5–10 Minuten)."
+      },
+      {
+        term: "Fibrin",
+        definition: "Unlösliche, elastische Proteinfäden, die bei der Gerinnung aus Fibrinogen entstehen und das Netz des Blutgerinnsels bilden."
+      },
+      {
+        term: "Thrombin",
+        definition: "Aktive Form des Gerinnungsfaktors Prothrombin; wandelt lösliches Fibrinogen in unlösliches Fibrin um."
+      },
+      {
+        term: "Thrombose",
+        definition: "Verengung oder Verschluss eines Blutgefässes durch ein Gerinnsel (Thrombus), das sich im Gefäss gebildet hat."
+      },
+      {
+        term: "Embolie",
+        definition: "Ein mitgerissener Thrombus (oder Luft, Fett) bleibt in einem engeren Gefäss stecken, z. B. Lungenembolie oder Hirnschlag."
+      },
+      {
+        term: "Arteriosklerose",
+        definition: "Verengung der Arterien durch Ablagerungen an der Gefässwand; begünstigt Thrombosen."
+      },
+      {
+        term: "AB0-System",
+        definition: "Blutgruppensystem mit den Gruppen A, B, AB und 0, benannt nach den Antigenen auf den Erythrozyten. Im Serum liegen die Antikörper gegen die fehlenden Antigene vor."
+      },
+      {
+        term: "Universalspender und Universalempfänger",
+        definition: "Blutgruppe 0 ist Universalspender (Erythrozyten ohne Antigene), Blutgruppe AB Universalempfänger (Serum ohne Anti-A und Anti-B)."
+      },
+      {
+        term: "Kreuzprobe",
+        definition: "Test vor einer Transfusion: Serum des Empfängers wird mit Erythrozyten des Spenders gemischt; nur ohne Agglutination wird übertragen."
+      },
+      {
+        term: "Rhesusfaktor",
+        definition: "Antigen D auf den Erythrozyten: Rh+ hat es, rh− nicht. Anti-D-Antikörper werden erst nach Kontakt mit dem Antigen gebildet."
+      },
+      {
+        term: "Rhesusunverträglichkeit",
+        definition: "Eine rh−-Mutter wird bei der Geburt eines Rh+-Kindes sensibilisiert; bei der nächsten Schwangerschaft schädigen ihre Anti-D-Antikörper die Erythrozyten des Kindes. Vorbeugung durch eine Anti-D-Spritze."
+      },
+      {
+        term: "Vorhof und Kammer",
+        definition: "Jede Herzhälfte besteht aus einem Vorhof (Atrium), der das Blut aus den Venen aufnimmt, und einer Kammer (Ventrikel), die es in die Arterien pumpt."
+      },
+      {
+        term: "Herzscheidewand (Septum)",
+        definition: "Wand, die das Herz in eine rechte und eine linke Hälfte trennt."
+      },
+      {
+        term: "Segelklappen",
+        definition: "Herzklappen zwischen Vorhof und Kammer, über Sehnen an den Papillarmuskeln befestigt; verhindern den Rückfluss in den Vorhof."
+      },
+      {
+        term: "Taschenklappen",
+        definition: "Herzklappen am Ausgang der Kammern zu Aorta und Lungenarterie; verhindern den Rückfluss in die Kammer."
+      },
+      {
+        term: "Herzkranzgefässe",
+        definition: "Gefässe, die den Herzmuskel selbst mit Sauerstoff und Nährstoffen versorgen; ihr Verschluss führt zum Herzinfarkt."
+      },
+      {
+        term: "Sinusknoten",
+        definition: "Natürlicher Schrittmacher in der Wand des rechten Vorhofs, der rhythmisch elektrische Erregungen erzeugt."
+      },
+      {
+        term: "AV-Knoten",
+        definition: "Leitet die Erregung von den Vorhöfen verzögert an das His-Bündel weiter, damit Vorhöfe und Kammern nicht gleichzeitig kontrahieren."
+      },
+      {
+        term: "Systole und Diastole",
+        definition: "Systole = Kontraktionsphase, Diastole = Erschlaffungsphase einer Herzhöhle."
+      },
+      {
+        term: "Herzminutenvolumen",
+        definition: "Blutmenge, die das Herz pro Minute auswirft (in Ruhe ca. 5 L/min) = Herzfrequenz × Schlagvolumen."
+      },
+      {
+        term: "Schlagvolumen",
+        definition: "Blutmenge, die pro Herzschlag ausgeworfen wird (in Ruhe ca. 70 ml, beim Sportler bis 125 ml)."
+      },
+      {
+        term: "Blutdruck",
+        definition: "Kraft, die das Blut auf die Gefässwände ausübt, gemessen in mmHg: systolischer (höchster) und diastolischer (tiefster) Wert, optimal unter 120/80 mmHg."
+      },
+      {
+        term: "Hypertonie",
+        definition: "Bluthochdruck: dauerhaft über 140/90 mmHg; belastet Herz und Gefässwände."
+      },
+      {
+        term: "Herzinfarkt",
+        definition: "Absterben von Herzmuskelgewebe, weil ein Herzkranzgefäss durch ein Gerinnsel verschlossen ist."
+      }
     ]
     },
     mindmap: {
@@ -1561,6 +1869,48 @@ window.subjectData = {
           {
             name: "Ökologische Bewertung",
             terms: ["ökologischer Fussabdruck", "Biokapazität", "globaler Hektar", "Lebenszyklusanalyse", "CO₂-Fussabdruck", "Umweltbelastungspunkte", "Ökoeffizienz"]
+          }
+        ]
+      },
+      {
+        name: "Enzymatik",
+        subcategories: [
+          {
+            name: "Grundlagen der Enzymkatalyse",
+            terms: ["Enzym", "Biokatalysator", "Aktivierungsenergie", "exergonisch und endergonisch", "Substrat", "aktives Zentrum", "Enzym-Substrat-Komplex", "Schlüssel-Schloss-Prinzip", "Induced-fit-Modell", "Substratspezifität", "Wirkungsspezifität"]
+          },
+          {
+            name: "Bau und Klassen",
+            terms: ["Enzymklassen", "Hydrolasen", "Apoenzym", "Holoenzym", "Cofaktor", "prosthetische Gruppe", "Coenzym (Cosubstrat)"]
+          },
+          {
+            name: "Regulation und Hemmung",
+            terms: ["Sättigungskurve", "Michaelis-Konstante (Km)", "Temperaturoptimum", "pH-Optimum", "kompetitive Hemmung", "allosterische Hemmung", "Allosterie", "irreversible Hemmung", "Endprodukthemmung"]
+          }
+        ]
+      },
+      {
+        name: "Herz-Kreislauf",
+        subcategories: [
+          {
+            name: "Kreislauf und Gefässe",
+            terms: ["Körperkreislauf", "Lungenkreislauf", "geschlossenes Gefässsystem", "Arterie", "Vene", "Kapillare", "arterielles und venöses Blut", "Pfortader", "Windkesselfunktion", "Puls", "Filtration und Resorption", "Ödem", "Venenklappen", "Muskelpumpe", "Krampfadern"]
+          },
+          {
+            name: "Blut",
+            terms: ["Blutplasma", "Blutserum", "Hämatokrit", "Erythrozyten", "Thrombozyten", "Hämoglobin", "Blutbildung", "Erythropoietin (EPO)", "Anämie"]
+          },
+          {
+            name: "Wundverschluss",
+            terms: ["Blutstillung", "Blutgerinnung", "Fibrin", "Thrombin", "Thrombose", "Embolie", "Arteriosklerose"]
+          },
+          {
+            name: "Blutgruppen",
+            terms: ["AB0-System", "Universalspender und Universalempfänger", "Kreuzprobe", "Rhesusfaktor", "Rhesusunverträglichkeit"]
+          },
+          {
+            name: "Herz",
+            terms: ["Vorhof und Kammer", "Herzscheidewand (Septum)", "Segelklappen", "Taschenklappen", "Herzkranzgefässe", "Sinusknoten", "AV-Knoten", "Systole und Diastole", "Herzminutenvolumen", "Schlagvolumen", "Blutdruck", "Hypertonie", "Herzinfarkt"]
           }
         ]
       }
