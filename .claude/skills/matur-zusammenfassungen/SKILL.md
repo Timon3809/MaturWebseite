@@ -1,6 +1,6 @@
 ---
 name: matur-zusammenfassungen
-description: Stil und Arbeitsablauf für die Lern-Zusammenfassungen der Vormatur-Webseite (Biologie, Chemie, Geographie, Geschichte) – dichte Lernkapitel mit vielen Abbildungen aus den Skripten, Tabellen, Merke-Kästen und selbst gezeichneten SVG-Schemata. Verwende diesen Skill immer, wenn eine Zusammenfassung oder ein Kapitel in der data.js eines Fachs (z. B. Geographie/Scripts/data.js) neu geschrieben, überarbeitet, ergänzt oder «im gleichen Stil» wie ein anderes Kapitel angepasst werden soll, wenn ein Skript, Arbeitsblatt, Praktikum oder Zeitungsartikel (PDF, DOCX, ZIP) in eine Zusammenfassung eingearbeitet werden soll, wenn «mehr Abbildungen / Tabellen / Details» gewünscht sind, wenn ein neuer Abschnitt bzw. neue Themen angelegt, die Reihenfolge der Abschnitte geändert oder Begriffe ins Glossar aufgenommen werden sollen, oder wenn eine Grafik aus Messwerten neu gezeichnet werden soll – auch wenn das Wort «Skill» oder «Stil» nicht fällt.
+description: Stil und Arbeitsablauf für die Lern-Zusammenfassungen der Vormatur-Webseite (Biologie, Chemie, Geographie, Geschichte, PhysikSP) – dichte Lernkapitel mit vielen Abbildungen aus den Skripten, Tabellen, Merke-Kästen und selbst gezeichneten SVG-Schemata. Verwende diesen Skill immer, wenn eine Zusammenfassung oder ein Kapitel in der data.js eines Fachs (z. B. Geographie/Scripts/data.js) neu geschrieben, überarbeitet, ergänzt oder «im gleichen Stil» wie ein anderes Kapitel angepasst werden soll, wenn ein Skript, Arbeitsblatt, Praktikum oder Zeitungsartikel (PDF, DOCX, ZIP) in eine Zusammenfassung eingearbeitet werden soll, wenn «mehr Abbildungen / Tabellen / Details» gewünscht sind, wenn ein neuer Abschnitt bzw. neue Themen angelegt, die Reihenfolge der Abschnitte geändert oder Begriffe ins Glossar aufgenommen werden sollen, oder wenn eine Grafik aus Messwerten neu gezeichnet werden soll – auch wenn das Wort «Skill» oder «Stil» nicht fällt.
 ---
 
 # Lern-Zusammenfassungen im Vormatur-Stil
@@ -17,9 +17,9 @@ Die HTML-Bausteine mit Klassen, Bildunterschriften und SVG-Regeln stehen in `ref
 4. **Merke-Kästen für das Prüfungsrelevante.** Pro Unterkapitel 1–3 `summary-merke` mit Definition, Merksatz, Eselsbrücke oder Fazit. Nicht jeden Absatz zum Merke machen, sonst verliert es die Wirkung.
 5. **Zeitungsartikel, Broschüren, Filme: Schlüsse statt Details.** Bei Texten, die Fallbeispiele liefern (z. B. Mosuo, «7 Milliarden», EU-Broschüre, Uiguren), nicht jede Zahl übernehmen. Stattdessen: kurzer Steckbrief in Tabellenform, dann die **wichtigen Schlüsse** als Liste oder Merke («Was lernt man daraus?»). Bei Skripten mit Prüfungsstoff dagegen vollständig bleiben.
 6. **Lücken im Skript füllen – sichtbar.** Wo das Skript leer ist, nur Stichworte enthält oder ein Thema im Titel nennt, aber nicht ausführt, wird ergänzt. Ergänztes immer erkennbar machen: Tabellen mit `class="summary-note-table"` und einer Caption wie «… – im Skript leer, hier ergänzt», Abbildungen mit `figure-source` «Ergänzung – nicht im Skript». Der Leser soll wissen, was er gegen den Unterricht prüfen muss.
-7. **Widersprüche offenlegen, nicht still entscheiden.** Wenn handschriftliche Lösungen im Skript den Daten oder dem gedruckten Text widersprechen (z. B. «34 m» als Lösung, aus der Tabelle folgen aber 40 m), die belegbare Variante verwenden und den Widerspruch in der Schlussnachricht nennen.
+7. **Fehler korrigieren – auf der Seite still, im Chat offen.** Wenn handschriftliche Lösungen oder Notizen falsch sind oder den Daten widersprechen (z. B. «34 m» als Lösung, aus der Tabelle folgen aber 40 m; eine falsch umgeformte Formel; ein Verschreiber wie «nγ/D» statt «nλ/D»), auf der Webseite **nur die richtige Version** schreiben – ohne Kasten, Caption, Fussnote oder Nebensatz wie «Verschreiber in den Notizen», «hier korrigiert», «Widerspruch», «in den Notizen steht … falsch», «bitte im Unterricht nachfragen». Die Seite ist ein Lernmittel, keine Fehlerliste. Was korrigiert wurde und was unklar ist (z. B. eine fragwürdige Aussage, ein nicht näher bezeichneter «Fehler im Applet»), steht **ausschliesslich in der Schlussnachricht im Chat**. Eine Probe oder Begründung, die die richtige Formel stützt, darf als normaler Inhalt auf die Seite (z. B. «Probe: bei x = 0 ist die Summe 0 – ein Knoten»), aber ohne Bezug auf den Fehler.
 8. **Sprache:** Deutsch mit Schweizer Rechtschreibung (ss statt ß), Fachbegriffe beim ersten Auftreten **fett**, sachlich und knapp. Zahlen mit Einheit und schmalem Tausenderabstand (1500 m, 200 000 Tiere).
-9. **Formeln** Neue Formeln sollten beim ersten Vorkommen kurz erklärt werden.
+9. **Formeln** Neue Formeln sollten beim ersten Vorkommen kurz erklärt werden. In PhysikSP werden Formeln als LaTeX geschrieben (`\( … \)` inline, `\[ … \]` abgesetzt) und von KaTeX gesetzt (eingebunden in `PhysikSP/zusammenfassungen.html`); im Fragment einfache Backslashes, `apply_fragments.js` verdoppelt sie für die data.js. Kein rohes `<` in Formeln – `\lt` oder ` &lt; ` verwenden.
 
 ## Arbeitsablauf
 
@@ -69,7 +69,7 @@ python -I .claude/skills/matur-zusammenfassungen/scripts/contact_sheet.py <scrat
 
 - Text zusätzlich mit pymupdf (`page.get_text()`) bzw. aus `word/document.xml` (DOCX) holen – zum Zitieren von Zahlen. Bilder aus DOCX liegen in `word/media/`. (`pymupdf` nur über `_deps.py` importieren, `import fitz` scheitert unter `python -I`.)
 - **Eingetippte Notizen erscheinen oft als Zeichensalat** (z. B. `+OT1GZGR_YGZUX…`): Die Zeichen sind um 26 verschoben (`chr(ord(c) + 26)` → «EinKatalysator…», `¥` = ä, `½` = ü, `·` = ö, Leerzeichen fehlen). Entschlüsseln lohnt sich – das sind die Lösungen des Users. Die Reihenfolge im extrahierten Text entspricht nicht der Lage auf der Seite; Zuordnung immer am gerenderten Bild prüfen.
-- **Die eingetragenen Lösungen sind Schülerlösungen und können falsch sein.** Jede gegen Skripttext und Fachwissen prüfen; falsche korrigieren, in der Caption «korrigiert» vermerken und in der Schlussnachricht auflisten (Grundsatz 7). Unklare, aber nicht widerlegbare Einträge stehen lassen und nur ergänzen.
+- **Die eingetragenen Lösungen sind Schülerlösungen und können falsch sein.** Jede gegen Skripttext und Fachwissen prüfen; falsche auf der Seite stillschweigend durch die richtige Lösung ersetzen und nur in der Schlussnachricht auflisten (Grundsatz 7). Unklare, aber nicht widerlegbare Einträge stehen lassen und nur ergänzen.
 - Notieren: Welche Teile sind Prüfungsstoff (vollständig übernehmen), welche Fallbeispiel (nur Schlüsse), welche leer (ergänzen und markieren)?
 
 ### 3. Abbildungen ausschneiden
@@ -168,7 +168,7 @@ Danach `graphify update .` (siehe CLAUDE.md des Projekts).
 In der Schlussnachricht an den User:
 - Tabelle «vorher / jetzt» pro Unterkapitel (Abbildungen, Tabellen).
 - Was **ergänzt** wurde (nicht im Skript) und was er gegen den Unterricht prüfen soll.
-- Gefundene **Widersprüche** zwischen Lösungen und Daten.
+- Gefundene **Fehler und Widersprüche** in Lösungen und Notizen mit der Korrektur (Notizen → richtig) sowie unklare Stellen, die der User im Unterricht klären soll. Diese Liste gehört nur hierher, nie auf die Webseite.
 - Welche Bilder ersetzt oder defekt waren, welche alten Dateien nun ungenutzt im Ordner liegen.
 - Was nicht geprüft werden konnte.
 

@@ -12,7 +12,9 @@
         { label: "Geschichte",    href: "Geschichte/index.html",      icon: "▣", page: "history" },
         { label: "Chemie",        href: "Chemie/index.html",         icon: "⚗", page: "chemistry" },
         { label: "Geographie",    href: "Geographie/index.html",      icon: "◎", page: "geography" },
-        { label: "Biologie",      href: "Biologie/index.html",        icon: "❀", page: "biology" }
+        { label: "Biologie",      href: "Biologie/index.html",        icon: "❀", page: "biology" },
+        { label: "PhysikSP",      href: "PhysikSP/index.html",        icon: "◈", page: "physics" },
+        { label: "Französisch",   href: "Französisch/index.html",     icon: "”", page: "french" }
       ]
     },
     geschichte: {
@@ -46,10 +48,12 @@
         { label: "Dateien",           href: "dateien.html",                  icon: "↓", page: "files" }
       ]
     },
-    physikapplets: {
-      brand: { mark: "Ph", name: "Vormatur", tag: "PHYSIKAPPLETS", href: "../index.html" },
+    physiksp: {
+      brand: { mark: "Ph", name: "Vormatur", tag: "PHYSIKSP", href: "../index.html" },
       links: [
-        { label: "Übersicht", href: "index.html", icon: "◈", page: "overview" }
+        { label: "Übersicht",         href: "index.html",             icon: "◈", page: "overview" },
+        { label: "Zusammenfassungen", href: "zusammenfassungen.html", icon: "▧", page: "summaries" },
+        { label: "Applets",           href: "applets.html",           icon: "∿", page: "applets" }
       ]
     },
     franzoesisch: {
