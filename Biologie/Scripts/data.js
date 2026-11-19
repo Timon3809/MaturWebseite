@@ -1570,164 +1570,1745 @@ window.subjectData = {
   summaries: {
     topics: [
     {
-      id: "topic-1",
-      name: "Das Nervensystem des Menschen",
-      group: "Neurobiologie",
+      id: "topic-30",
+      name: "Der Blutkreislauf",
+      group: "Herz-Kreislauf",
       subtopics: [
         {
-          name: "Überblick: Aufbau des Nervensystems",
-          summary: `<h3>Zentrales und peripheres Nervensystem</h3>
-            <p>Das <strong>zentrale Nervensystem (ZNS)</strong> besteht aus Gehirn und Rückenmark. Das <strong>periphere Nervensystem (PNS)</strong> umfasst alle Nerven ausserhalb von Gehirn und Rückenmark.</p>
-            <ul>
-              <li><strong>Somatisches Nervensystem:</strong> steuert willkürliche Vorgänge, z. B. die Skelettmuskulatur. Es besitzt afferente Nerven (zum ZNS hin, melden Reize) und efferente Nerven (vom ZNS weg, Befehle).</li>
-              <li><strong>Autonomes (vegetatives) Nervensystem:</strong> steuert unwillkürliche Vorgänge der inneren Organe. Die efferenten Nerven teilen sich in Sympathikus und Parasympathikus.</li>
-            </ul>
-            <p>Merkhilfe: <strong>afferent</strong> = ankommend (zum ZNS), <strong>efferent</strong> = express weg (vom ZNS).</p>
-            <h3>Graue und weisse Substanz</h3>
-            <ul>
-              <li><strong>Graue Substanz:</strong> Nervenzellkörper, Dendriten, Synapsen und marklose Fasern. Hier werden Informationen verarbeitet (Integration).</li>
-              <li><strong>Weisse Substanz:</strong> myelinisierte Axone (Leitungsbahnen). Das lipidreiche Myelin sieht weiss aus. Hier wird Information weitergeleitet.</li>
-              <li>Im Gehirn liegt die graue Substanz aussen (Hirnrinde), im Rückenmark innen (schmetterlingsförmig).</li>
-            </ul>
-            <p><strong>Afferent</strong> bedeutet sensorisch (vom Rezeptor zum ZNS, Input), <strong>efferent</strong> motorisch (vom ZNS zum Effektor, Output).</p>`
+          name: "Körper- und Lungenkreislauf",
+          summary: `<p>Das Blutsystem muss jede Zelle ihrem Bedarf entsprechend versorgen. Dazu muss das Blut <strong>schnell genug</strong> zirkulieren und in den Organen doch <strong>so langsam</strong> fliessen, dass Zeit für den Stoffaustausch bleibt. In den grossen Arterien fliesst es schnell; in den Organen verteilt es sich auf unzählige feine Kapillaren, deren <strong>Gesamtquerschnitt viel grösser</strong> ist, und fliesst dort langsam. In den Venen sammelt es sich wieder und fliesst schneller zum Herzen zurück.</p>
+<div class="summary-merke"><strong>Merke:</strong> Der Mensch hat ein <strong>geschlossenes Gefässsystem</strong>: Das Blut verlässt die Blutbahnen nicht. Nur so wird die nötige Transportgeschwindigkeit erreicht.</div>
+<div class="summary-table-wrap"><table><caption>Grundbegriffe</caption><thead><tr><th>Begriff</th><th>Bedeutung</th></tr></thead><tbody>
+<tr><td><strong>Arterie</strong></td><td>Gefäss, das Blut <strong>vom Herzen weg</strong> führt (unabhängig vom Sauerstoffgehalt)</td></tr>
+<tr><td><strong>Vene</strong></td><td>Gefäss, das Blut <strong>zum Herzen hin</strong> führt</td></tr>
+<tr><td><strong>arterielles Blut</strong></td><td>sauerstoffreiches Blut (rot), in der <strong>linken</strong> Herzhälfte</td></tr>
+<tr><td><strong>venöses Blut</strong></td><td>sauerstoffarmes, kohlenstoffdioxidreiches Blut (blau), in der <strong>rechten</strong> Herzhälfte</td></tr>
+</tbody></table></div>
+
+<h3>Zwei Kreisläufe, ein Herz</h3>
+<p>Das Herz ist durch eine Scheidewand in zwei Hälften getrennt. Es pumpt das Blut durch zwei hintereinandergeschaltete Kreisläufe:</p>
+<div class="summary-table-wrap"><table><thead><tr><th>Kriterium</th><th>Lungenkreislauf (kleiner Kreislauf)</th><th>Körperkreislauf (grosser Kreislauf)</th></tr></thead><tbody>
+<tr><td><strong>Start</strong></td><td>rechte Herzkammer</td><td>linke Herzkammer</td></tr>
+<tr><td><strong>Ziel</strong></td><td>Lunge: Blut nimmt O₂ auf, gibt CO₂ ab</td><td>alle Organe: Zellen entnehmen O₂ und Nährstoffe, geben CO₂ und Abfallstoffe ab</td></tr>
+<tr><td><strong>Blut in den Arterien</strong></td><td>venös (sauerstoffarm)</td><td>arteriell (sauerstoffreich)</td></tr>
+<tr><td><strong>Blut in den Venen</strong></td><td>arteriell (sauerstoffreich)</td><td>venös (sauerstoffarm)</td></tr>
+<tr><td><strong>Anteil am Blutvolumen</strong></td><td>12 %</td><td>80 % (das Herz selbst enthält 8 %)</td></tr>
+</tbody></table></div>
+<figure class="summary-figure summary-figure-wide"><a href="Resourcen/Bilder/kr-koerperkreislauf.jpg" target="_blank" rel="noopener"><img src="Resourcen/Bilder/kr-koerperkreislauf-rumpf.jpg" alt="Schema von Kopf und Rumpf mit rot eingezeichneten Arterien und blau eingezeichneten Venen" loading="lazy"></a><figcaption><strong>Abb. – Körper- und Lungenkreislauf</strong> (mit eingetragenen Lösungen; Ausschnitt Kopf und Rumpf – zum Vergrössern auf den ganzen Körper anklicken). Rot sind die Gefässe mit sauerstoffreichem (arteriellem) Blut, blau die mit sauerstoffarmem (venösem) Blut. Arterien und Venen verlaufen meist paarweise nebeneinander bis in Kopf, Arme und Beine.<span class="figure-source">Quelle: Skript «Humanbiologie: Der Blutkreislauf», S. 2.2 (Abb. 2.1, mit eingetragenen Lösungen)</span></figcaption></figure>
+<figure class="summary-figure"><img src="Resourcen/Bilder/kr-herz-lunge-detail.jpg" alt="Ausschnitt von Herz und Lunge mit nummerierten Gefässen, rot und blau ausgemalt" loading="lazy"><figcaption><strong>Abb. – Herz und Lunge im Detail</strong> (mit eingetragenen Lösungen). Die <strong>Lungenarterien</strong> (5) sind blau, weil sie venöses Blut zur Lunge bringen; die <strong>Lungenvenen</strong> (6) sind rot. Die Nummern sind in der Tabelle darunter erklärt.<span class="figure-source">Quelle: Skript «Humanbiologie: Der Blutkreislauf», S. 2.2 (Abb. 2.1, mit eingetragenen Lösungen)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Legende zu Abb. 2.1</caption><thead><tr><th>Nr.</th><th>Struktur</th><th>Nr.</th><th>Struktur</th></tr></thead><tbody>
+<tr><td><strong>1</strong></td><td>linker Vorhof</td><td><strong>6</strong></td><td>Lungenvenen</td></tr>
+<tr><td><strong>2</strong></td><td>linke Kammer</td><td><strong>7</strong></td><td>Aorta</td></tr>
+<tr><td><strong>3</strong></td><td>rechter Vorhof</td><td><strong>8</strong></td><td>obere Hohlvene</td></tr>
+<tr><td><strong>4</strong></td><td>rechte Kammer</td><td><strong>9</strong></td><td>untere Hohlvene</td></tr>
+<tr><td><strong>5</strong></td><td>Lungenarterien</td><td></td><td></td></tr>
+</tbody></table></div>
+<div class="summary-table-wrap"><table><caption>Aufgaben 3 und 4: Abschnitte der Kreisläufe in der richtigen Reihenfolge</caption><thead><tr><th>Schritt</th><th>Lungenkreislauf</th><th>Körperkreislauf</th></tr></thead><tbody>
+<tr><td><strong>1</strong></td><td>rechte Kammer</td><td>linke Kammer</td></tr>
+<tr><td><strong>2</strong></td><td>Lungenarterien</td><td>Aorta → Körperarterien</td></tr>
+<tr><td><strong>3</strong></td><td>Lungenkapillaren (Gasaustausch)</td><td>Körperkapillaren (Stoffaustausch)</td></tr>
+<tr><td><strong>4</strong></td><td>Lungenvenen</td><td>Körpervenen → obere und untere Hohlvene</td></tr>
+<tr><td><strong>5</strong></td><td>linker Vorhof</td><td>rechter Vorhof</td></tr>
+</tbody></table></div>
+
+<h3>Die Pfortader: ein Sonderweg über die Leber</h3>
+<p>Die <strong>Pfortader</strong> sammelt das Blut aus den unpaaren Bauchorganen (Magen, Darm, Milz, Bauchspeicheldrüse) und führt es zur <strong>Leber</strong>, nicht direkt zum Herzen. Ihr Blut ist <strong>sauerstoffarm</strong>, aber <strong>nährstoffreich</strong> und reich an Stoffwechsel-Abfallstoffen. Die Leber kann so die aufgenommenen Stoffe verarbeiten, speichern und entgiften, bevor sie in den Körper gelangen. Mit Sauerstoff wird die Leber über die <strong>Leberarterie</strong> versorgt.</p>
+
+<h3>Blutverteilung nach Bedarf</h3>
+<p>Das Blutvolumen beträgt etwa <strong>8 % des Körpergewichts</strong>: Ein 70 kg schwerer Mann hat also ca. 70 kg · 0,08 = <strong>5,6 kg (≈ 5,6 L) Blut</strong>. Die Menge schwankt je nach Flüssigkeits- und Salzaufnahme um etwa einen Liter; Frauen und alte Menschen haben etwas weniger Blut.</p>
+<p>Die Gesamtmenge reicht nicht, um alle Organe gleichzeitig maximal zu durchbluten. Das Blut wird deshalb nach der <strong>Aktivität der Organe</strong> verteilt: Die Arterien zu den einzelnen Organen <strong>erweitern oder verengen</strong> sich.</p>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/kr-blutverteilung.jpg" alt="Schema der Blutverteilung auf die Organe in Ruhe, beim Sport und beim Schwitzen" loading="lazy"><figcaption><strong>Abb. – Schema der Blutverteilung</strong> (mit eingetragenen Lösungen). Die Höhe der Kästchen zeigt, wie viel Blut pro Minute in jedes Organ fliesst. Beim Sport steigt das Herzminutenvolumen auf das Vierfache, und drei Viertel davon gehen in die Skelettmuskeln. Beim Schwitzen fliesst die Hälfte durch die Haut, die so Wärme abgibt.<span class="figure-source">Quelle: Skript «Humanbiologie: Der Blutkreislauf», S. 2.3 (Abb. 2.2)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Durchblutung der Organe in L/min (Anteil am Herzminutenvolumen)</caption><thead><tr><th>Organ</th><th>Ruhe</th><th>Sport</th><th>Schwitzen</th></tr></thead><tbody>
+<tr><td><strong>Herzminutenvolumen</strong></td><td><strong>5,0</strong></td><td><strong>20,0</strong></td><td><strong>8,0</strong></td></tr>
+<tr><td><strong>Gehirn</strong></td><td>0,75 (15 %)</td><td>0,70 (3,5 %)</td><td>0,70 (9 %)</td></tr>
+<tr><td><strong>Herz</strong></td><td>0,25 (5 %)</td><td>1,0 (5 %)</td><td>0,4 (5 %)</td></tr>
+<tr><td><strong>Nieren</strong></td><td>1,0 (20 %)</td><td>1,0 (5 %)</td><td>1,0 (12,5 %)</td></tr>
+<tr><td><strong>Verdauungsorgane</strong></td><td>1,5 (30 %)</td><td>0,5 (2,5 %)</td><td>1,0 (12,5 %)</td></tr>
+<tr><td><strong>Skelettmuskeln</strong></td><td>0,75 (15 %)</td><td><strong>15,0 (75 %)</strong></td><td>0,5 (6 %)</td></tr>
+<tr><td><strong>Haut</strong></td><td>0,35 (7 %)</td><td>1,4 (7 %)</td><td><strong>4,0 (50 %)</strong></td></tr>
+<tr><td><strong>Andere Organe</strong></td><td>0,4 (8 %)</td><td>0,4 (2 %)</td><td>0,4 (5 %)</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>Stark schwankend:</strong> Skelettmuskeln (Faktor 20 zwischen Ruhe und Sport), Haut (Temperaturregulation) und Verdauungsorgane (nach dem Essen viel, beim Sport wenig).</li>
+<li><strong>Konstant:</strong> Das <strong>Gehirn</strong> erhält immer etwa 0,7 L/min, die <strong>Nieren</strong> 1 L/min. Ihr Anteil in Prozent sinkt nur, weil das Herzminutenvolumen steigt.</li>
+</ul>
+<div class="summary-merke"><strong>Merke:</strong> Das Blut wird nach Bedarf verteilt, indem sich die zuführenden Arterien <strong>erweitern oder verengen</strong>. Die stärksten Schwankungen gibt es bei <strong>Skelettmuskulatur, Haut und Verdauungsorganen</strong>; Gehirn und Nieren werden immer gleich versorgt.</div>`
         },
         {
-          name: "Das vegetative Nervensystem",
-          summary: `<h3>Sympathikus und Parasympathikus</h3>
-            <p>Das vegetative Nervensystem arbeitet weitgehend unbewusst und reguliert die inneren Organe. Sympathikus und Parasympathikus sind Gegenspieler (Antagonisten).</p>
-            <ul>
-              <li><strong>Sympathikus:</strong> Leistung, Stress, «Kampf oder Flucht» (Gaspedal).</li>
-              <li><strong>Parasympathikus:</strong> Erholung, Ruhe, «Ruhe und Verdauung» (Bremse).</li>
-            </ul>
-            <h3>Wirkungen auf die Organe</h3>
-            <ul>
-              <li><strong>Pupille:</strong> Sympathikus erweitert, Parasympathikus verengt.</li>
-              <li><strong>Lunge:</strong> Sympathikus erweitert die Bronchien, Parasympathikus verengt sie.</li>
-              <li><strong>Herz:</strong> Sympathikus steigert Herzschlag und Blutdruck, Parasympathikus verlangsamt den Herzschlag.</li>
-              <li><strong>Magen/Darm:</strong> Sympathikus hemmt die Verdauungstätigkeit, Parasympathikus regt die Verdauung an.</li>
-              <li><strong>Leber:</strong> Sympathikus setzt Glucose frei (Energiebereitstellung), Parasympathikus fördert Speicherung von Glykogen und Gallebildung.</li>
-              <li><strong>Harnblase:</strong> Sympathikus spannt den Schliessmuskel an, Parasympathikus fördert die Entleerung.</li>
-            </ul>`
+          name: "Bau der Blutgefässe",
+          summary: `<p>Die <strong>linke Herzkammer</strong> presst das Blut in die <strong>Aorta</strong>, die grösste Schlagader. Sie verzweigt sich in <strong>Arterien</strong>, diese in immer feinere <strong>Arteriolen</strong> und schliesslich in haardünne <strong>Kapillaren</strong>. Durch deren dünne Wand werden Sauerstoff, Nährstoffe und Stoffwechselprodukte ausgetauscht. <strong>Venolen</strong> sammeln das sauerstoffarme Blut, vereinigen sich zu <strong>Venen</strong> und schliesslich zur oberen und unteren <strong>Hohlvene</strong>, die in den <strong>rechten Vorhof</strong> münden.</p>
+<figure class="summary-figure summary-svg"><svg viewBox="0 0 640 170" role="img" aria-label="Abfolge der Gefässe vom Herzen über Arterien, Arteriolen, Kapillaren, Venolen und Venen zurück zum Herzen" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+<defs><marker id="gf-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<g stroke-width="1.5">
+<rect x="6" y="40" width="88" height="44" rx="6" fill="rgba(181,83,60,.28)" stroke="#b5533c"/>
+<rect x="112" y="40" width="88" height="44" rx="6" fill="rgba(181,83,60,.2)" stroke="#b5533c"/>
+<rect x="218" y="40" width="88" height="44" rx="6" fill="rgba(181,83,60,.12)" stroke="#b5533c"/>
+<rect x="324" y="40" width="88" height="44" rx="6" fill="rgba(122,124,115,.15)" stroke="#7a7c73"/>
+<rect x="430" y="40" width="88" height="44" rx="6" fill="rgba(79,126,168,.15)" stroke="#3f6f9c"/>
+<rect x="536" y="40" width="98" height="44" rx="6" fill="rgba(79,126,168,.28)" stroke="#3f6f9c"/>
+</g>
+<g fill="currentColor" text-anchor="middle" font-weight="bold">
+<text x="50" y="58">Aorta</text><text x="156" y="58">Arterien</text><text x="262" y="58">Arteriolen</text><text x="368" y="58">Kapillaren</text><text x="474" y="58">Venolen</text><text x="585" y="58">Venen</text>
+</g>
+<g fill="currentColor" text-anchor="middle" font-size="11">
+<text x="50" y="75">⌀ bis 25 mm</text><text x="156" y="75">elastisch</text><text x="262" y="75">regeln Zufluss</text><text x="368" y="75">⌀ 0,01 mm</text><text x="474" y="75">sammeln</text><text x="585" y="75">Hohlvenen</text>
+</g>
+<g stroke="currentColor" stroke-width="1.5" marker-end="url(#gf-a)"><line x1="95" y1="62" x2="110" y2="62"/><line x1="201" y1="62" x2="216" y2="62"/><line x1="307" y1="62" x2="322" y2="62"/><line x1="413" y1="62" x2="428" y2="62"/><line x1="519" y1="62" x2="534" y2="62"/></g>
+<g fill="currentColor" font-size="11" text-anchor="middle">
+<text x="50" y="22">aus linker Kammer</text><text x="585" y="22">in rechten Vorhof</text>
+<text x="368" y="22" font-weight="bold">Stoffaustausch</text>
+</g>
+<line x1="20" y1="112" x2="620" y2="112" stroke="currentColor" stroke-opacity=".4"/>
+<g fill="currentColor" font-size="11">
+<text x="20" y="132">Fliessgeschwindigkeit:</text><text x="160" y="132">schnell (5–18 cm/s)</text><text x="330" y="132">sehr langsam (0,02–0,1 cm/s)</text><text x="520" y="132">mittel (1–6 cm/s)</text>
+<text x="20" y="152">Gesamtquerschnitt:</text><text x="160" y="152">klein</text><text x="330" y="152">sehr gross (10 Mia. Kapillaren)</text><text x="520" y="152">mittel</text>
+</g>
+</svg><figcaption><strong>Abb. – Vom Herzen durch die Gefässe zurück zum Herzen</strong> (digital gezeichnet). Je weiter sich die Gefässe verzweigen, desto grösser wird ihr Gesamtquerschnitt und desto langsamer fliesst das Blut. Am langsamsten ist es in den Kapillaren, wo der Stoffaustausch stattfindet.<span class="figure-source">Quelle: nach Skript «Humanbiologie: Der Blutkreislauf», S. 2.4–2.5</span></figcaption></figure>
+<p>Die rund <strong>10 Milliarden Kapillaren</strong> eines Menschen sind zusammen etwa <strong>1200 km</strong> lang. Der Lungenkreislauf ist genauso aufgebaut wie der Körperkreislauf.</p>
+<div class="summary-merke"><strong>Merke:</strong> <strong>Arterien</strong> führen das Blut <strong>vom Herzen weg</strong>: im Körperkreislauf sauerstoffreiches, im Lungenkreislauf sauerstoffarmes Blut. <strong>Venen</strong> führen es <strong>zum Herzen zurück</strong>: im Körperkreislauf sauerstoffarmes, im Lungenkreislauf sauerstoffreiches Blut.</div>
+
+<h3>Dreischichtiger Wandaufbau</h3>
+<figure class="summary-figure"><img src="Resourcen/Bilder/kr-wandaufbau.jpg" alt="Aufgeschnittenes Blutgefäss mit den drei Wandschichten 1 bis 3" loading="lazy"><figcaption><strong>Abb. – Wandaufbau eines Blutgefässes.</strong> 1 = Aussenschicht (gelblich), 2 = Mittelschicht (rot, Muskulatur), 3 = Innenschicht (hell, zum Gefässinneren).<span class="figure-source">Quelle: Skript «Humanbiologie: Der Blutkreislauf», S. 2.4 (Abb. 2.3)</span></figcaption></figure>
+<div class="summary-table-wrap"><table class="summary-note-table"><caption>Die drei Wandschichten – im Skript leer, hier ergänzt</caption><thead><tr><th>Schicht</th><th>Bau</th><th>Aufgabe</th></tr></thead><tbody>
+<tr><td><strong>1 Aussenschicht</strong> (Tunica externa / Adventitia)</td><td>lockeres Bindegewebe mit Kollagenfasern, Nerven und kleinen Blutgefässen</td><td>verankert das Gefäss im umliegenden Gewebe; <strong>Versorgung der Gefässwand</strong> bei grossen Gefässen über eigene kleine Blutgefässe</td></tr>
+<tr><td><strong>2 Mittelschicht</strong> (Tunica media)</td><td><strong>glatte Muskulatur</strong> und elastische Fasern; bei Arterien am dicksten</td><td><strong>Steuerung der Blutverteilung und des Blutdrucks</strong> durch Verengen und Erweitern; Elastizität (Windkessel)</td></tr>
+<tr><td><strong>3 Innenschicht</strong> (Tunica intima)</td><td>einschichtiges, glattes <strong>Endothel</strong> auf einer dünnen Bindegewebsschicht</td><td>glatte <strong>innere Oberfläche</strong>: geringe Reibung, verhindert Blutgerinnung an der Wand</td></tr>
+</tbody></table></div>
+
+<h3>Arterie, Vene und Kapillare im Vergleich</h3>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/kr-gefaesse-querschnitt.jpg" alt="Querschnitte durch Arterie, Vene und Kapillare im Grössenvergleich" loading="lazy"><figcaption><strong>Abb. – Querschnitte durch Arterie, Vene und Kapillare</strong> (von links). Die Arterie hat eine dicke, muskulöse Wand und ein enges Lumen, die Vene eine dünnere Wand und ein weites Lumen. Die Kapillare besteht nur aus einer einzigen Zellschicht.<span class="figure-source">Quelle: Skript «Humanbiologie: Der Blutkreislauf», S. 2.5 (Tab. 2.1)</span></figcaption></figure>
+<div class="summary-table-wrap"><table class="summary-note-table"><caption>Tab. 2.1: Aufbau und Eigenschaften der Blutgefässe – Zahlen aus dem Skript, die übrigen Felder (im Skript leer) ergänzt</caption><thead><tr><th>Eigenschaft</th><th>Arterie</th><th>Vene</th><th>Kapillare</th></tr></thead><tbody>
+<tr><td><strong>Wandaufbau</strong></td><td>drei Schichten</td><td>drei Schichten</td><td>nur Endothel (eine Zellschicht)</td></tr>
+<tr><td><strong>Dickste Wandschicht</strong></td><td>Mittelschicht (Muskulatur, elastische Fasern)</td><td>Aussenschicht (Bindegewebe)</td><td>–</td></tr>
+<tr><td><strong>Wanddicke</strong></td><td>1–2,5 mm</td><td>0,5–1,5 mm</td><td>0,001 mm (1 µm)</td></tr>
+<tr><td><strong>Durchmesser</strong></td><td>4–25 mm</td><td>5–30 mm</td><td>0,01 mm</td></tr>
+<tr><td><strong>Fliessgeschwindigkeit</strong></td><td>5–18 cm/s</td><td>1–6 cm/s</td><td>0,02–0,1 cm/s</td></tr>
+<tr><td><strong>Aufgabe</strong></td><td>Blut unter hohem Druck vom Herzen weg zu den Organen leiten</td><td>Blut unter niedrigem Druck zum Herzen zurückführen; Blutspeicher (≈ ⅔ des Blutes)</td><td>Stoff- und Gasaustausch zwischen Blut und Gewebe</td></tr>
+<tr><td><strong>Besonderes</strong></td><td>elastisch (Windkesselfunktion), Puls tastbar</td><td><strong>Venenklappen</strong>; Rücktransport durch Muskel- und Arterienpumpe</td><td>semipermeabel; riesige Austauschfläche (≈ 3000 m²)</td></tr>
+</tbody></table></div>`
         },
         {
-          name: "Input, Integration und Output",
-          summary: `<h3>Die Reiz-Reaktions-Kette</h3>
-            <p>Das Nervensystem erfüllt drei Hauptaufgaben — hier am Beispiel eines Tennisschlags:</p>
-            <p>Reiz → Rezeptor → sensorisches Neuron → Ganglion/Rückenmark → Interneuron → Gehirn → Motoneuron → Effektor → Reaktion</p>
-            <ul>
-              <li><strong>Reiz:</strong> Umweltinformation, die aufgenommen wird (der anfliegende Ball).</li>
-              <li><strong>Rezeptor:</strong> Sinneszelle, nimmt den Reiz auf (Netzhaut im Auge).</li>
-              <li><strong>sensorisches Neuron:</strong> leitet die Information zum ZNS — Input (Sehnerv).</li>
-              <li><strong>Ganglion:</strong> Ansammlung von Nervenzellkörpern ausserhalb des ZNS, Integrationszentrum.</li>
-              <li><strong>Interneuron:</strong> verschaltet sensorische Neuronen und Motoneurone im ZNS — Integration.</li>
-              <li><strong>Gehirn / Rückenmark:</strong> verarbeiten und interpretieren die Information.</li>
-              <li><strong>Motoneuron:</strong> leitet das Signal zum Effektor — Output.</li>
-              <li><strong>Effektor:</strong> Muskelzelle, führt die Antwort aus (Armmuskulatur).</li>
-            </ul>`
+          name: "Arterien und Windkesselfunktion",
+          summary: `<p>Das Herz pumpt das Blut <strong>stossweise</strong>: Nur während sich die Kammern zusammenziehen (<strong>Systole</strong>), wird Blut ausgeworfen. Während der <strong>Diastole</strong> (das Herz füllt sich) wird kein Blut gepumpt. Trotzdem fliesst das Blut in den Arterien <strong>kontinuierlich</strong> weiter. Möglich macht das die <strong>Windkesselfunktion</strong> der elastischen Arterien.</p>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/kr-windkessel.jpg" alt="Drei Bilder der Aorta über der linken Kammer: Ruhe, Dehnung in der Systole, Zusammenziehen in der Diastole" loading="lazy"><figcaption><strong>Abb. – Windkesselfunktion der Aorta.</strong> Bei der Kammer-Systole dehnt sich die Aorta und nimmt einen Teil des ausgeworfenen Blutes auf. Bei der Kammer-Diastole ist die Taschenklappe geschlossen; die Aorta zieht sich zusammen und stösst das gespeicherte Blut weiter.<span class="figure-source">Quelle: Skript «Humanbiologie: Der Blutkreislauf», S. 2.6 (Abb. 2.4)</span></figcaption></figure>
+<ol>
+<li><strong>Systole:</strong> Die linke Kammer presst Blut in die Aorta. Ihre elastische Wand wird <strong>gedehnt</strong> und speichert einen Teil des Blutes (und Energie).</li>
+<li><strong>Diastole:</strong> Die Taschenklappe schliesst. Die Aorta zieht sich <strong>elastisch zusammen</strong> und schiebt das gespeicherte Blut weiter.</li>
+<li>Dadurch dehnt sich der nächste Gefässabschnitt usw.: Eine <strong>Pulswelle</strong> läuft vom Herzen in die Peripherie.</li>
+<li>Folge: Der Druck in den Arterien sinkt in der Diastole nicht auf null, sondern nur auf <strong>70–80 mmHg</strong>.</li>
+</ol>
+<p>Der Name stammt vom <strong>Windkessel</strong> alter Feuerwehr-Kolbenpumpen: einem teilweise mit Luft gefüllten Ausgleichsbehälter, der dafür sorgte, dass das Wasser nicht stossweise, sondern gleichmässig herausfloss.</p>
+<div class="summary-table-wrap"><table class="summary-note-table"><caption>Modellversuch zur Windkesselfunktion – Zuordnung b aus dem Skript; Erklärungen, Pumpe und Beobachtung a (im Skript leer) ergänzt</caption><thead><tr><th>Teil des Modells</th><th>entspricht im Körper</th></tr></thead><tbody>
+<tr><td><strong>dicker Schlauch</strong></td><td><strong>Aorta</strong></td></tr>
+<tr><td><strong>dünner Schlauch</strong></td><td><strong>Arterien</strong> (ergänzt: die feineren Gefässe mit höherem Strömungswiderstand)</td></tr>
+<tr><td><strong>Ballon</strong></td><td>der <strong>Windkessel</strong>, also die dehnbare, elastische Wand der Aorta, die Blut zwischenspeichert</td></tr>
+<tr><td><strong>Wasserstrahl</strong></td><td><strong>Blut</strong>(strom)</td></tr>
+<tr><td><strong>Pumpe</strong> (ergänzt)</td><td>Herz (linke Kammer), pumpt stossweise</td></tr>
+<tr><td><strong>a) Beobachtung</strong></td><td>Ohne Ballon kommt das Wasser stossweise, im Takt des Pumpens. Mit Ballon fliesst es auch zwischen den Pumpstössen gleichmässig weiter, weil sich der gedehnte Ballon zusammenzieht.</td></tr>
+</tbody></table></div>
+<div class="summary-merke"><strong>Merke:</strong> Die elastischen Arterien verwandeln den <strong>stossweisen</strong> Blutausstoss des Herzens in einen <strong>kontinuierlichen</strong> Blutstrom (Windkesselfunktion). Die Dehnungswelle, die dabei durch die Arterien läuft, spürt man als <strong>Puls</strong>.</div>`
+        },
+        {
+          name: "Kapillaren: Stoffaustausch und Ödeme",
+          summary: `<p>Die feinsten Kapillaren haben einen Durchmesser von <strong>weniger als 7 µm</strong>, sodass sich sogar die roten Blutkörperchen verformen müssen. Ihre Wand ist nur <strong>1 µm</strong> dick und besteht aus einer einzigen Schicht flacher <strong>Endothelzellen</strong>. Sie ist <strong>semipermeabel</strong>: Wasser, Zucker und Aminosäuren gelangen leicht hindurch, Blutkörperchen und Plasmaproteine sind zu gross. Bei Entzündungen rücken die Wandzellen auseinander und lassen auch Makromoleküle und weisse Blutkörperchen durch.</p>
+<div class="summary-table-wrap"><table><caption>Kapillaren in Zahlen</caption><thead><tr><th>Merkmal</th><th>Wert</th></tr></thead><tbody>
+<tr><td><strong>Anzahl</strong></td><td>ca. 10 Milliarden</td></tr>
+<tr><td><strong>Austauschfläche</strong></td><td>ca. 3000 m²</td></tr>
+<tr><td><strong>Gesamtlänge</strong></td><td>ca. 1200 km</td></tr>
+<tr><td><strong>Fliessgeschwindigkeit</strong></td><td>ca. 0,2 mm/s</td></tr>
+<tr><td><strong>Dichte</strong></td><td>je nach Bedarf; im Hirngewebe 400 000 Kapillaren pro cm²</td></tr>
+</tbody></table></div>
+<div class="summary-table-wrap"><table><caption>Voraussetzungen für den Stoffaustausch zwischen Blut und Gewebe</caption><thead><tr><th>Voraussetzung</th><th>umgesetzt durch</th></tr></thead><tbody>
+<tr><td><strong>sehr dünne Gefässwand</strong></td><td>nur eine Endothelschicht (1 µm): kurze Diffusionswege</td></tr>
+<tr><td><strong>grosse Austauschfläche</strong></td><td>10 Milliarden Kapillaren mit zusammen ca. 3000 m²</td></tr>
+<tr><td><strong>langsames Fliesstempo</strong></td><td>grosser Gesamtquerschnitt → nur 0,2 mm/s → genug Zeit für den Austausch</td></tr>
+</tbody></table></div>
+
+<h3>Filtration und Resorption</h3>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/kr-kapillare-austausch.jpg" alt="Kapillare zwischen Arteriole und Venole: Wasser tritt am arteriellen Ende aus und wird am venösen Ende zurückgesogen, ein Teil fliesst ins Lymphgefäss" loading="lazy"><figcaption><strong>Abb. – Flüssigkeitsaustausch in den Kapillaren.</strong> Am <strong>arteriellen</strong> Ende ist der Blutdruck grösser als die osmotische Sogwirkung: Wasser verlässt die Kapillare. Am <strong>venösen</strong> Ende überwiegt die osmotische Sogwirkung: Etwa 90 % des Wassers werden zurückgesogen, die restlichen 10 % nimmt das Lymphgefäss auf.<span class="figure-source">Quelle: Skript «Humanbiologie: Der Blutkreislauf», S. 2.7 (Abb. 2.5)</span></figcaption></figure>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/kr-druck-kapillare.jpg" alt="Diagramm: Blutdruck fällt von Arteriole zu Venole, osmotischer Druck steigt leicht, die Kurven kreuzen sich in der Mitte der Kapillare" loading="lazy"><figcaption><strong>Abb. – Blutdruck (blau) und osmotischer Druck (rot) entlang einer Kapillare.</strong> Links vom Schnittpunkt überwiegt der Blutdruck (Filtration), rechts davon der osmotische Druck (Resorption).<span class="figure-source">Quelle: Skript «Humanbiologie: Der Blutkreislauf», S. 2.8 (Abb. 2.6)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><thead><tr><th>Kriterium</th><th>Filtration</th><th>Resorption</th></tr></thead><tbody>
+<tr><td><strong>Ort</strong></td><td>arterieller Teil der Kapillare</td><td>venöser Teil der Kapillare</td></tr>
+<tr><td><strong>Antrieb</strong></td><td><strong>Blutdruck</strong> &gt; osmotische Sogwirkung</td><td><strong>osmotische Sogwirkung</strong> &gt; Blutdruck</td></tr>
+<tr><td><strong>Richtung</strong></td><td>Wasser wird aus der Kapillare ins Gewebe gedrückt</td><td>Wasser wird in die Kapillare zurückgesogen</td></tr>
+<tr><td><strong>Menge</strong></td><td>ca. 20 L pro Tag</td><td>ca. 90 % davon (18 L); der Rest (≈ 2 L/Tag) gelangt über das <strong>Lymphsystem</strong> zurück ins Blut</td></tr>
+</tbody></table></div>
+<p>Weil die Konzentration kleiner Teilchen im Blut fast gleich ist wie im Gewebe, verursachen vor allem die <strong>Plasmaproteine</strong> die höhere osmotische Wirkung des Blutes. Sie können die Kapillare nicht verlassen und «ziehen» Wasser zurück.</p>
+<div class="summary-merke"><strong>Merke:</strong> Am arteriellen Ende der Kapillare <strong>drückt der Blutdruck</strong> Wasser hinaus (Filtration), am venösen Ende <strong>saugen die Plasmaproteine</strong> es osmotisch zurück (Resorption). Den Überschuss von etwa 10 % führt die Lymphe ab.</div>
+
+<h3>Ödeme</h3>
+<figure class="summary-figure"><img src="Resourcen/Bilder/kr-oedem.jpg" alt="Beine einer Person mit deutlich geschwollenem linken Unterschenkel und Fuss" loading="lazy"><figcaption><strong>Abb. – Linksseitiges Beinödem.</strong> Wasser hat sich im Gewebe von Unterschenkel und Fuss angesammelt; das Bein ist sichtbar geschwollen.<span class="figure-source">Quelle: Skript «Humanbiologie: Der Blutkreislauf», S. 2.8 (Abb. 2.7)</span></figcaption></figure>
+<p>Wird mehr Wasser aus den Kapillaren gepresst als zurückgeholt, schwillt das Gewebe an: ein <strong>Ödem</strong>.</p>
+<div class="summary-table-wrap"><table><thead><tr><th>Ursache</th><th>Was ist gestört?</th><th>Beispiel</th></tr></thead><tbody>
+<tr><td><strong>erhöhter Druck in den Kapillaren</strong></td><td>mehr Filtration</td><td>zu hoher Blutdruck, Blutstau in den Beinvenen (Beinödem)</td></tr>
+<tr><td><strong>zu wenig Plasmaproteine</strong></td><td>osmotische Wirkung des Blutes sinkt → zu wenig Resorption</td><td>andauernder Proteinmangel bei unterernährten Kindern → Wasser sammelt sich im Bauch (<strong>Hungerbauch</strong>)</td></tr>
+</tbody></table></div>`
+        },
+        {
+          name: "Venen: Rücktransport des Blutes",
+          summary: `<p>Venen sind <strong>grösser und dünnwandiger</strong> als die entsprechenden Arterien. Ihre Muskelschicht ist schwächer, weil der Druck in ihnen kleiner ist, und das Blut fliesst langsamer. Venen und Venolen enthalten etwa <strong>⅔ des gesamten Blutvolumens</strong>. Die grossen Venen des Körperkreislaufs besitzen <strong>Venenklappen</strong>: feine Taschen des Endothels, die wie die Taschenklappen im Herzen ein Zurückfliessen verhindern.</p>
+<p>Weil der Blutdruck in den Kapillaren praktisch auf null sinkt, ist der Rücktransport zum Herzen schwierig, vor allem aus den Beinen. Drei Mechanismen helfen:</p>
+<div class="summary-table-wrap"><table><caption>Wie das Blut in den Venen zum Herzen zurückkommt</caption><thead><tr><th>Mechanismus</th><th>Funktionsweise</th></tr></thead><tbody>
+<tr><td><strong>Arterienpumpe</strong></td><td>Vene und Arterie liegen in einer gemeinsamen <strong>Bindegewebshülle</strong>. Die Pulswelle der Arterie drückt die Vene zusammen und schiebt das Blut weiter.</td></tr>
+<tr><td><strong>Muskelpumpe</strong></td><td>Kontrahierende <strong>Skelettmuskeln</strong> drücken die Venen zusammen und entleeren sie Richtung Herz. Erschlafft der Muskel, füllt sich die Vene von unten wieder.</td></tr>
+<tr><td><strong>Sogwirkung des Herzens</strong></td><td>Beim Füllen des Herzens verhindern die Taschenklappen, dass Blut aus der Aorta zurückfliesst; das Herz kann also nur aus den Venen ansaugen, wie beim Trinken mit einem Strohhalm.</td></tr>
+</tbody></table></div>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/kr-venenpumpen.jpg" alt="Links Arterie und Vene in gemeinsamer Bindegewebshülle, rechts Wadenmuskel, der die Beinvene zusammendrückt" loading="lazy"><figcaption><strong>Abb. – Arterienpumpe (links) und Muskelpumpe (rechts).</strong> Links: Dehnt die Pulswelle die Arterie, wird die benachbarte Vene zusammengedrückt; die Venenklappen lassen das Blut nur nach oben strömen. Rechts: Der angespannte Wadenmuskel presst die Vene zusammen; die obere Klappe öffnet sich («valve open»), die untere schliesst sich («valve closed»), und das Blut wird nach oben gedrückt.<span class="figure-source">Quelle: Skript «Humanbiologie: Der Blutkreislauf», S. 2.9 (Abb. 2.9 und 2.10)</span></figcaption></figure>
+<div class="summary-merke"><strong>Merke:</strong> Wegen der Venenklappen kann jeder Venenabschnitt <strong>nur von unten gefüllt und nach oben entleert</strong> werden. Jeder Druck von aussen (Arterie, Muskel) treibt das Blut deshalb Richtung Herz.</div>
+<p><strong>Praxis:</strong> Das grosse Blutvolumen im venösen System nutzt man bei einem Kreislaufkollaps oder Schock: Hochlagern der Beine lässt das in den Beinvenen «versackte» Blut zum Herzen zurückfliessen.</p>
+
+<h3>Venenklappeninsuffizienz und Krampfadern</h3>
+<figure class="summary-figure"><img src="Resourcen/Bilder/kr-krampfadern.jpg" alt="Vene mit nicht schliessenden Klappen neben einer stark erweiterten, geschlängelten Vene" loading="lazy"><figcaption><strong>Abb. – Venenklappeninsuffizienz und Krampfadern.</strong> Links: Bei verminderter Wandspannung schliessen die Klappen nicht mehr, und das Blut fliesst zurück. Rechts: Die Venen weiten sich immer mehr aus und schlängeln sich (schwere Varikose).<span class="figure-source">Quelle: Skript «Humanbiologie: Der Blutkreislauf», S. 2.9 (Abb. 2.11)</span></figcaption></figure>
+<ol>
+<li>Die Venenwand hat zu wenig Spannung (z. B. durch Bindegewebsschwäche oder langes Stehen).</li>
+<li>Die Enden der Klappen entfernen sich voneinander: Die Klappen schliessen nicht mehr ganz (<strong>Venenklappeninsuffizienz</strong>).</li>
+<li>Blut fliesst zurück und staut sich, wodurch sich die Venen weiter ausdehnen: Es entstehen <strong>Krampfadern</strong> (Varizen).</li>
+</ol>
+<div class="summary-table-wrap"><table><caption>Arterien und Venen im Vergleich</caption><thead><tr><th>Kriterium</th><th>Arterien</th><th>Venen</th></tr></thead><tbody>
+<tr><td><strong>Richtung</strong></td><td>vom Herzen weg</td><td>zum Herzen hin</td></tr>
+<tr><td><strong>Druck</strong></td><td>hoch, pulsierend (Diastole noch 70–80 mmHg)</td><td>niedrig (Hohlvene ≈ 0 mmHg)</td></tr>
+<tr><td><strong>Wand</strong></td><td>dick, muskulös, elastisch</td><td>dünner, schwächere Muskulatur</td></tr>
+<tr><td><strong>Klappen</strong></td><td>keine (nur Taschenklappen am Herzausgang)</td><td>Venenklappen</td></tr>
+<tr><td><strong>Blutanteil</strong></td><td>klein</td><td>≈ ⅔ des Blutes</td></tr>
+<tr><td><strong>Antrieb</strong></td><td>Herz + Windkesselfunktion</td><td>Arterienpumpe, Muskelpumpe, Sogwirkung des Herzens</td></tr>
+</tbody></table></div>`
         }
       ]
     },
     {
-      id: "topic-2",
-      name: "Bau und Funktion von Nervenzellen",
-      group: "Neurobiologie",
+      id: "topic-31",
+      name: "Das Blut",
+      group: "Herz-Kreislauf",
       subtopics: [
         {
-          name: "Grundbauplan eines Neurons",
-          summary: `<h3>Bereiche der Nervenzelle</h3>
-            <p>Nervenzellen empfangen Informationen, wandeln sie in elektrische Signale (Nervenimpulse) um und geben sie an Zielzellen weiter (Nervenzellen, Muskelzellen).</p>
-            <ul>
-              <li><strong>Dendriten:</strong> fein verästelte Fortsätze, nehmen Informationen auf und leiten sie als Nervenimpulse zum Zellkörper.</li>
-              <li><strong>Zellkörper:</strong> enthält Zellkern und die meisten Zellorganellen. Hier werden die eingehenden Informationen verrechnet.</li>
-              <li><strong>Axonhügel:</strong> Übergang Zellkörper → Axon. Hier entstehen je nach Ergebnis der Verrechnung die Nervenimpulse.</li>
-              <li><strong>Axon:</strong> langer, meist unverzweigter Fortsatz (beim Menschen bis 1 m), verzweigt sich erst am Ende.</li>
-              <li><strong>Endknöpfchen:</strong> schliessen die Verzweigungen ab und stellen den Kontakt zur Zielzelle her. So kann ein Neuron gleichzeitig mehreren Zellen Nervenimpulse übermitteln.</li>
-            </ul>`
+          name: "Aufgaben und Zusammensetzung des Blutes",
+          summary: `<p>Das Blut ist das <strong>Transportsystem</strong> des Körpers. Es verbindet alle Organe miteinander, schützt den Körper und verteilt die Wärme.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/bl-aufgaben-blut.jpg" alt="Schema des Körpers mit Blutkreislauf und nummerierten Organen, rechts die transportierten Stoffe" loading="lazy"><figcaption><strong>Abb. – Aufgaben des Blutsystems.</strong> 1 Lungen, 2 Magen, 3 Darm, 4 Nieren, 5 Blase, 6 Hormondrüse, 7 Blutkreislauf, 8 Reparatur einer Verletzung, 9 Abwehrzellen. Das Blut bringt Sauerstoff, Nährstoffe und Hormone zu den Zellen und holt Kohlenstoffdioxid, Exkrete und Abwärme ab.<span class="figure-source">Quelle: Skript «Humanbiologie: Das Blut», S. 3.1 (Abb. 3.1, Legende mit eingetragenen Lösungen)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Die drei Aufgabenbereiche des Blutes (Wärmehaushalt im Skript leer, hier ergänzt)</caption><thead><tr><th>Aufgabe</th><th>Was das Blut leistet</th></tr></thead><tbody>
+<tr><td><strong>Transport</strong></td><td><strong>Sauerstoff</strong> (Lunge → Zellen), <strong>Kohlenstoffdioxid</strong> (Zellen → Lunge), <strong>Nährstoffe</strong> (Darm → Zellen), <strong>Exkrete</strong> (Abfallstoffe → Nieren), <strong>Hormone</strong> (Drüse → Zielorgan), <strong>Wasser</strong></td></tr>
+<tr><td><strong>Schutz</strong></td><td><strong>Blutstillung und Blutgerinnung</strong> (Wundverschluss) und <strong>Körperabwehr</strong> (weisse Blutkörperchen, Antikörper)</td></tr>
+<tr><td><strong>Wärmehaushalt</strong></td><td>Das Blut nimmt die <strong>Abwärme</strong> aktiver Organe (Muskeln, Leber) auf und <strong>verteilt</strong> sie im Körper. Über die Durchblutung der <strong>Haut</strong> wird geregelt, wie viel Wärme abgegeben wird: weite Hautgefässe = Wärmeabgabe, enge Hautgefässe = Wärme sparen.</td></tr>
+</tbody></table></div>
+
+<h3>Zusammensetzung</h3>
+<p>Obwohl es flüssig ist, ist das Blut ein <strong>Organ</strong>: Es enthält verschiedene Zellen und Zellabkömmlinge, die <strong>Blutkörperchen</strong>. Diese bilden keinen festen Verband, sondern treiben einzeln in der flüssigen Interzellularsubstanz, dem <strong>Blutplasma</strong>.</p>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/bl-zusammensetzung.jpg" alt="Übersicht: zelluläre Bestandteile 45 Prozent und Plasma 55 Prozent mit Untergliederung" loading="lazy"><figcaption><strong>Abb. – Zusammensetzung des Blutes.</strong> 45 Vol.-% sind Blutkörperchen, 55 Vol.-% Plasma. Das Plasma besteht zu 90 % aus Wasser, zu 8 % aus Proteinen und zu 2 % aus Elektrolyten, Nährstoffen, Hormonen und Exkreten.<span class="figure-source">Quelle: Skript «Humanbiologie: Das Blut», S. 3.2 (Abb. 3.2)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><thead><tr><th>Bestandteil</th><th>Anteil</th><th>Inhalt</th></tr></thead><tbody>
+<tr><td><strong>Zelluläre Bestandteile</strong></td><td>45 Vol.-%</td><td>Erythrozyten (5 Mio./mm³), Leukozyten (5000/mm³), Thrombozyten (250 000/mm³)</td></tr>
+<tr><td><strong>Plasma</strong></td><td>55 Vol.-%</td><td>Wasser (90 %), Proteine (8 %), Elektrolyte, Nährstoffe, Hormone, Exkrete (2 %)</td></tr>
+</tbody></table></div>
+
+<h3>Der Hämatokrit-Wert</h3>
+<p>Der <strong>Hämatokrit</strong> gibt den <strong>Volumenanteil der Blutkörperchen</strong> in Prozent an. 99,9 % davon sind Erythrozyten. Je höher der Hämatokrit, desto dickflüssiger (<strong>visköser</strong>) ist das Blut. Weil sich die Zusammensetzung bei vielen Krankheiten ändert, ist er ein wichtiger Laborwert.</p>
+<div class="summary-table-wrap"><table><caption>Normalwerte des Hämatokrits</caption><thead><tr><th>Gruppe</th><th>Hämatokrit</th></tr></thead><tbody>
+<tr><td><strong>Männer</strong></td><td>42–50 %</td></tr>
+<tr><td><strong>Frauen</strong></td><td>37–45 %</td></tr>
+</tbody></table></div>
+
+<h3>Blutplasma und Blutserum</h3>
+<figure class="summary-figure"><img src="Resourcen/Bilder/bl-plasma-serum.jpg" alt="Zwei Bechergläser: geronnenes Blut mit Blutkuchen und Serum, ungerinnbar gemachtes Blut mit Plasma und abgesetzten Blutkörperchen" loading="lazy"><figcaption><strong>Abb. – Blutplasma und Blutserum.</strong> Links gerinnt das Blut: Es bildet sich ein <strong>Blutkuchen</strong> (Blutkörperchen + Gerinnungseiweisse), darüber steht das <strong>Serum</strong>. Rechts verhindert ein Antigerinnungsmittel die Gerinnung: Die Blutkörperchen setzen sich ab, darüber steht das <strong>Plasma</strong>.<span class="figure-source">Quelle: Skript «Humanbiologie: Das Blut», S. 3.3 (Abb. 3.3)</span></figcaption></figure>
+<div class="summary-merke"><strong>Merke (im Skript leer, ergänzt):</strong> <strong>Blutserum = Blutplasma ohne Gerinnungseiweisse</strong> (v. a. ohne Fibrinogen). Plasma gewinnt man aus ungerinnbar gemachtem Blut, Serum aus geronnenem Blut.</div>
+
+<h3>Die osmotische Wirkung des Blutes</h3>
+<p>Wie jede wässrige Lösung hat Blut eine osmotische Wirkung: Es nimmt Wasser aus Zellen oder Gewebeflüssigkeit mit <strong>tieferer</strong> Teilchenkonzentration auf und gibt Wasser an Flüssigkeiten mit <strong>höherer</strong> Konzentration ab. Die Wirkung hängt von der <strong>Gesamtzahl gelöster Teilchen</strong> ab.</p>
+<div class="summary-table-wrap"><table class="summary-note-table"><caption>Welche Teilchen bestimmen die osmotische Wirkung? – im Skript leer, hier ergänzt</caption><thead><tr><th>Teilchen</th><th>Bedeutung</th></tr></thead><tbody>
+<tr><td><strong>Salze (Elektrolyte)</strong>, v. a. Na⁺ und Cl⁻</td><td>stellen die meisten gelösten Teilchen; bestimmen die Gesamtosmolarität. Isotonisch zum Blut ist eine <strong>0,9-%-Kochsalzlösung</strong>.</td></tr>
+<tr><td><strong>Plasmaproteine</strong> (v. a. Albumin)</td><td>können die Kapillarwand nicht passieren und halten deshalb Wasser im Blut zurück (wichtig für die Resorption in den Kapillaren).</td></tr>
+<tr><td><strong>Glucose und Harnstoff</strong></td><td>tragen einen kleineren Teil bei.</td></tr>
+</tbody></table></div>`
         },
         {
-          name: "Stofftransport im Axon",
-          summary: `<h3>Transport über die lange Strecke</h3>
-            <ul>
-              <li>Substanzen für das Axonende müssen vom Zellkörper herangeführt werden, weil nur dort die Organellen für die Synthese sind.</li>
-              <li>Verbrauchte Zellbestandteile werden ebenfalls nur im Zellkörper abgebaut.</li>
-              <li>Freie Diffusion über 1 m würde für ein Protein mehrere Jahre dauern.</li>
-              <li><strong>Motorproteine</strong> bewegen sich entlang der Mikrotubuli des Cytoskeletts (200 bis 400 µm pro Tag). Sie verändern dazu unter ATP-Verbrauch ihre räumliche Struktur und haben Vesikel gebunden, in denen das Transportgut liegt.</li>
-            </ul>`
+          name: "Blutkörperchen und Blutbildung",
+          summary: `<figure class="summary-figure summary-figure-full"><a href="Resourcen/Bilder/bl-blutkoerperchen.jpg" target="_blank" rel="noopener"><img src="Resourcen/Bilder/bl-blutkoerperchen.jpg" alt="Bilder von Erythrozyten, Makrophage, Granulozyt, Lymphozyt und Thrombozyten nebeneinander" loading="lazy"></a><figcaption><strong>Abb. – Die Blutkörperchen</strong> (von links): Erythrozyten, Makrophage, Granulozyt, Lymphozyt (alle drei sind Leukozyten), Thrombozyten. Zum Vergrössern anklicken.<span class="figure-source">Quelle: Skript «Humanbiologie: Das Blut», S. 3.4</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Aufbau und Aufgaben der Blutkörperchen (Tabelle S. 3.4, mit eingetragenen Lösungen; Einheiten korrigiert)</caption><thead><tr><th>Merkmal</th><th>Erythrozyten (rote Bk)</th><th>Makrophagen</th><th>Granulozyten</th><th>Lymphozyten</th><th>Thrombozyten (Blutplättchen)</th></tr></thead><tbody>
+<tr><td><strong>Grösse</strong></td><td>Ø 7,5 µm</td><td>Ø 15–20 µm</td><td>Ø 8–14 µm</td><td>Ø 8–10 µm</td><td>Ø 1–4 µm</td></tr>
+<tr><td><strong>Form / Bau</strong></td><td>runde, in der Mitte eingedellte Scheiben; <strong>kein Zellkern, keine Zellorganellen</strong></td><td>vollständige Zelle mit Zellorganellen</td><td>unregelmässiger (gelappter) Kern</td><td>grosser, runder Kern</td><td>unregelmässig geformte Zellbruchstücke ohne Kern</td></tr>
+<tr><td><strong>Anzahl</strong></td><td>5 Mio. pro mm³</td><td colspan="3">Leukozyten zusammen: 5000 pro mm³</td><td>250 000 pro mm³</td></tr>
+<tr><td><strong>Aufgabe</strong></td><td><strong>Transport der Atemgase</strong> (Hämoglobin)</td><td>nehmen fremde Zellen durch <strong>Phagocytose</strong> auf</td><td>unspezifische Immunabwehr</td><td><strong>spezifische Abwehr</strong> von Krankheitserregern</td><td><strong>Blutstillung</strong></td></tr>
+<tr><td><strong>Bildung / Abbau</strong></td><td>Bildung im roten Knochenmark, angeregt durch <strong>Erythropoietin</strong>; Abbau in der Milz</td><td>rotes Knochenmark</td><td>rotes Knochenmark</td><td>rotes Knochenmark; Vermehrung in den lymphatischen Organen</td><td>rotes Knochenmark; Abbau in der Milz</td></tr>
+<tr><td><strong>Lebensdauer</strong></td><td>120 Tage</td><td>wenige Tage bis Monate</td><td>wenige Stunden bis 10 Tage</td><td>Monate bis Jahre</td><td>5–10 Tage</td></tr>
+</tbody></table></div>
+
+<h3>Die Blutbildung</h3>
+<p>Jede Sekunde müssen im Knochenmark über <strong>2,5 Millionen</strong> Blutkörperchen gebildet werden. Alle gehen auf gemeinsame <strong>pluripotente Stammzellen</strong> zurück (pluripotent = «vielkönnend»: Zellen mit vielen Entwicklungsmöglichkeiten). Durch Teilung und Differenzierung, gesteuert von <strong>Wachstumsfaktoren</strong> wie dem Erythropoietin (EPO), entstehen die verschiedenen Blutkörperchen.</p>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/bl-blutbildung.jpg" alt="Stammbaum der Blutzellen: pluripotente Stammzelle, lymphatische und myeloische Stammzelle, daraus alle Blutzelltypen" loading="lazy"><figcaption><strong>Abb. – Blutbildung.</strong> Aus der pluripotenten Knochenmarksstammzelle gehen zwei Linien hervor: Die <strong>lymphatische</strong> Stammzelle bildet die Lymphozyten (B-Zellen, T-Zellen, natürliche Killerzellen; spezifische Abwehr). Die <strong>myeloische</strong> Stammzelle bildet Monozyten/Makrophagen und Granulozyten (unspezifische Abwehr), die Erythrozyten (O₂-Transport) und über die Megakaryozyten die Thrombozyten (Blutstillung).<span class="figure-source">Quelle: Skript «Humanbiologie: Das Blut», S. 3.5 (Abb. 3.4)</span></figcaption></figure>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/bl-knochenmark.jpg" alt="Skelett, bei dem die Knochen mit rotem Knochenmark rot und orange markiert sind" loading="lazy"><figcaption><strong>Abb. – Rotes, blutbildendes Knochenmark.</strong> Beim Erwachsenen liegt es v. a. in den kurzen und flachen Knochen (Becken, Rippen, Brustbein, Wirbel, Schädel) und in den Endstücken der Röhrenknochen (rot), beim Kind zusätzlich in den Schäften der Röhrenknochen (orange).<span class="figure-source">Quelle: Skript «Humanbiologie: Das Blut», S. 3.5 (Abb. 3.5)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Exkurs: Das Blut in Zahlen</caption><thead><tr><th>Grösse</th><th>Wert</th></tr></thead><tbody>
+<tr><td><strong>Anzahl Erythrozyten</strong></td><td>ca. 25 Billionen</td></tr>
+<tr><td><strong>Erythrozyten gestapelt</strong></td><td>50 000 km hoher Turm; als Band fünfmal um den Äquator</td></tr>
+<tr><td><strong>Oberfläche aller Erythrozyten</strong></td><td>3000 m², etwa 1500-mal die Körperoberfläche</td></tr>
+<tr><td><strong>Neubildung</strong></td><td>2,5 Millionen Erythrozyten pro Sekunde (alle in vier Monaten ersetzt)</td></tr>
+<tr><td><strong>Umläufe eines Erythrozyten</strong></td><td>75 000-mal Lunge → Organe → Lunge in vier Monaten</td></tr>
+</tbody></table></div>
+
+<h3>Die Wirkung von EPO (Erythropoietin)</h3>
+<p>Die Zahl der Erythrozyten wird über ein Glykoprotein der <strong>Niere</strong> gesteuert, das <strong>Erythropoietin (EPO)</strong>. In grossen Höhen steigt die Zahl der roten Blutkörperchen. Sportler legen sich mit einem Höhentraining so quasi Eigenblutreserven an, was die Sauerstoffversorgung und die Leistungsfähigkeit verbessert.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/bl-epo.jpg" alt="Regelkreis: Sauerstoffmangel im Blut fördert EPO-Bildung in der Niere, EPO regt die Erythrozytenbildung im Knochenmark an" loading="lazy"><figcaption><strong>Abb. – Steuerung der Erythrozytenbildung durch EPO.</strong> Die Niere misst den Sauerstoffgehalt des Blutes: Bei <strong>O₂-Mangel</strong> schüttet sie mehr EPO aus (+), bei <strong>O₂-Überschuss</strong> weniger (−). EPO regt im Knochenmark die Bildung von Erythrozyten an, die wieder mehr O₂ transportieren. Das ist ein Regelkreis mit <strong>negativer Rückkopplung</strong>.<span class="figure-source">Quelle: Skript «Humanbiologie: Das Blut», S. 3.6 (Abb. 3.6)</span></figcaption></figure>
+
+<h3>Fragen rund ums Blut</h3>
+<div class="summary-table-wrap"><table class="summary-note-table"><caption>Aufgaben S. 3.7 – Lösungen (Stichworte aus dem Skript, ausformuliert und ergänzt)</caption><thead><tr><th>Frage</th><th>Antwort</th></tr></thead><tbody>
+<tr><td><strong>a) Warum wird die Nase bei grosser Kälte rot?</strong></td><td>Die Hautkapillaren können sich schliessen und wieder öffnen. Bei Kälte werden sie zuerst eng (Wärme sparen). Damit das Gewebe nicht erfriert, öffnen sie sich zwischendurch wieder weit; dann strömt viel Blut durch die Haut, und die Nase wird rot.</td></tr>
+<tr><td><strong>b) Warum ist der Hämatokrit bei Frauen tiefer?</strong></td><td>Das männliche Hormon <strong>Testosteron</strong> fördert die Bildung von Erythrozyten. Zudem verlieren Frauen durch die Menstruation regelmässig Blut (und Eisen).</td></tr>
+<tr><td><strong>c.1) Erythrozyten in 10-%-Kochsalzlösung</strong></td><td>Die Lösung ist <strong>hypertonisch</strong> (konzentrierter als das Zellinnere): Wasser strömt aus den Zellen, und sie <strong>schrumpfen</strong>.</td></tr>
+<tr><td><strong>c.2) Erythrozyten in destilliertem Wasser</strong></td><td>Das Wasser ist <strong>hypotonisch</strong>: Wasser strömt in die Zellen, sie <strong>schwellen an und platzen</strong> (Hämolyse). Unverändert bleiben sie nur in einer isotonischen 0,9-%-Kochsalzlösung.</td></tr>
+<tr><td><strong>d) Warum fördert Höhentraining die Erythrozytenbildung?</strong></td><td>In der Höhe ist <strong>weniger Sauerstoff</strong> in der Luft und damit im Blut. Die Niere registriert den O₂-Mangel und bildet mehr EPO, das im Knochenmark die Erythrozytenbildung anregt.</td></tr>
+<tr><td><strong>e) Gesundheitliche Folgen zurück im Mittelland?</strong></td><td>Der Hämatokrit ist hoch, das Blut dickflüssig: Das Risiko für <strong>Thrombosen</strong> und Embolien steigt, das Herz muss gegen einen höheren Widerstand pumpen. Wegen des O₂-Überschusses wird die EPO-Bildung gedrosselt, bis sich der Wert normalisiert.</td></tr>
+<tr><td><strong>f) Wann ist EPO als Therapie sinnvoll?</strong></td><td>Bei <strong>Blutarmut (Anämie)</strong>, v. a. wenn die Niere zu wenig EPO bildet (chronisches Nierenversagen), oder nach einer Chemotherapie, die das Knochenmark geschädigt hat.</td></tr>
+</tbody></table></div>
+<div class="summary-merke"><strong>Merke:</strong> Alle Blutzellen entstehen im <strong>roten Knochenmark</strong> aus pluripotenten Stammzellen. Die Zahl der Erythrozyten wird über einen <strong>Regelkreis</strong> gesteuert: O₂-Mangel → Niere bildet EPO → Knochenmark bildet mehr Erythrozyten.</div>`
         },
         {
-          name: "Gliazellen und Myelin",
-          summary: `<h3>Gliazellen im Gehirn</h3>
-            <p>Gliazellen sind im Gehirn etwa zehnmal häufiger als Nervenzellen (griech. glia = Leim). <strong>Astrocyten</strong> (sternförmig) sind die häufigsten Gliazellen im Gehirn:</p>
-            <ul>
-              <li>sie versorgen Neuronen mit Nährstoffen und regulieren die Ionenkonzentration der extrazellulären Flüssigkeit</li>
-              <li>sie registrieren den Signalfluss und beeinflussen die Blutkapillaren, damit aktive Hirnregionen besser durchblutet werden</li>
-              <li>sie sind an der <strong>Blut-Hirn-Schranke</strong> beteiligt: Diese hält Krankheitserreger und viele Schadstoffe fern. Fettlösliche Substanzen wie Alkohol oder Narkosegase überwinden sie trotzdem.</li>
-            </ul>
-            <h3>Isolierung der Axone</h3>
-            <p>Gliazellen wickeln sich als <strong>Myelinscheiden</strong> in mehreren Schichten um Axonabschnitte. Myelin ist lipidreich und gibt den Fasern ihr weisses Aussehen.</p>
-            <ul>
-              <li><strong>Oligodendrozyten</strong> (ZNS): umhüllen mehrere Axone gleichzeitig.</li>
-              <li><strong>Schwann-Zellen</strong> (PNS): umhüllen nur je ein Axon.</li>
-            </ul>
-            <h3>Saltatorische Erregungsleitung</h3>
-            <ul>
-              <li>Zwischen den Myelinscheiden bleiben im Abstand von 1 bis 2 mm freie Stellen, die <strong>Ranvier-Schnürringe</strong>. Nur dort hat die Axonmembran Kontakt zur Aussenflüssigkeit, nur dort können Ionen fliessen und Aktionspotenziale entstehen.</li>
-              <li>Die Erregung springt von Schnürring zu Schnürring (saltatorische Erregungsleitung). Das ist deutlich schneller (bis ca. 100 m/s gegenüber ca. 1 m/s marklos) und energiesparender.</li>
-              <li>Bei <strong>Multipler Sklerose</strong> werden die Myelinscheiden angegriffen: Leitungsblockaden und neurologische Ausfälle.</li>
-            </ul>`
+          name: "Wundverschluss: Blutstillung und Blutgerinnung",
+          summary: `<p>Ständig werden im Körper kleinste Gefässe undicht, durch Wachstum, Entzündungen oder Stösse. Weil das arterielle System unter Druck steht, könnte man schon aus kleinen Verletzungen verbluten. Wunden müssen deshalb schnell verschlossen werden.</p>
+<div class="summary-table-wrap"><table><caption>Wie gefährlich ist ein Blutverlust?</caption><thead><tr><th>Blutverlust</th><th>Folge</th></tr></thead><tbody>
+<tr><td><strong>10 %</strong></td><td>wird schnell ausgeglichen</td></tr>
+<tr><td><strong>30 %</strong></td><td>bedrohlich</td></tr>
+<tr><td><strong>ab 50 %</strong></td><td>meist tödlich</td></tr>
+</tbody></table></div>
+<p>An Blutstillung und Gerinnung sind <strong>12 Gerinnungsfaktoren</strong> und <strong>Calcium (Ca²⁺)</strong> beteiligt.</p>
+<div class="summary-table-wrap"><table><caption>Kurzübersicht über den Wundverschluss</caption><thead><tr><th>Schritt</th><th>Was geschieht?</th><th>Dauer / Ergebnis</th></tr></thead><tbody>
+<tr><td><strong>Gefässkrampf</strong></td><td>Die Ringmuskeln der Gefässwand ziehen sich an der Verletzungsstelle zusammen, das Gefäss wird weniger durchblutet.</td><td>sofort</td></tr>
+<tr><td><strong>Thrombozytenpfropf</strong> (weisser Thrombus)</td><td>Blutplättchen heften sich an die Wundränder und verklumpen.</td><td>kurzzeitiger Verschluss nach 1–3 min (<strong>Blutungszeit</strong>)</td></tr>
+<tr><td><strong>Blutgerinnung</strong></td><td>Ein Netz aus <strong>Fibrinfäden</strong> fängt Blutkörperchen ein (roter Thrombus, Blutgerinnsel).</td><td>langfristiger Verschluss nach 5–10 min (<strong>Gerinnungszeit</strong>)</td></tr>
+</tbody></table></div>
+<div class="summary-merke"><strong>Merke:</strong> <strong>Blutstillung</strong> = Gefässkrampf + Thrombozytenpfropf (schnell, provisorisch). <strong>Blutgerinnung</strong> = Bildung eines Fibrinnetzes (langsamer, dauerhaft).</div>
+
+<h3>Ablauf des Wundverschlusses</h3>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/bl-wundverschluss.jpg" alt="Fünf Bilder eines Blutgefässes: intaktes Gefäss, Wunde mit Gefässverengung, Blutplättchenpfropf, Fibrinfäden, Kruste" loading="lazy"><figcaption><strong>Abb. – Schematische Darstellung des Wundverschlusses.</strong> 1 intaktes Blutgefäss · 2 Wunde, das Gefäss verengt sich (Gefässkrampf) · 3 Blutplättchen lagern sich an · 4 Fibrin-Eiweissfäden bilden ein Netz · 5 eine Kruste verschliesst die Wunde.<span class="figure-source">Quelle: Skript «Humanbiologie: Das Blut», S. 3.8 (Abb. 3.7)</span></figcaption></figure>
+<p>Die Textabschnitte (1)–(7) im Skript sind durcheinandergeraten. Die richtige Reihenfolge lautet <strong>5 – 3 – 6 – 1 – 7 – 4 – 2</strong>:</p>
+<ol>
+<li><strong>(5) Gefässkrampf:</strong> Die Gefässwand verengt sich an der Verletzungsstelle und schränkt den Blutverlust ein.</li>
+<li><strong>(3) Thrombozytenpfropf:</strong> Einzelne Thrombozyten heften sich an die Wundränder und setzen Stoffe frei, die weitere Thrombozyten anlocken und «klebrig» machen. Sie lagern sich an, zerfallen und verklumpen. Die Wunde ist nach 1–3 Minuten verschlossen (<strong>Blutungszeit</strong>, Vorgang = <strong>Blutstillung</strong>).</li>
+<li><strong>(6)</strong> Der Pfropf allein kann das Gefäss nicht dauerhaft verschliessen; dazu braucht es das Gerinnungssystem.</li>
+<li><strong>(1)</strong> Zerstörte Zellen und verklumpte Thrombozyten setzen <strong>Gerinnungsfaktoren</strong> frei, die mit den Faktoren des Plasmas eine Reaktionskette starten. Diese wandelt <strong>Prothrombin</strong> in seine aktive Form <strong>Thrombin</strong> um.</li>
+<li><strong>(7)</strong> Thrombin wandelt das lösliche <strong>Fibrinogen</strong> in unlösliches <strong>Fibrin</strong> um (elastische Proteinfäden).</li>
+<li><strong>(4)</strong> Die Fibrinfäden spinnen ein Netz um den Pfropf und ziehen sich zusammen. Darin verfangen sich Erythrozyten und Leukozyten: Der <strong>Thrombus</strong> (Blutgerinnsel) verschliesst die Wunde dauerhaft (<strong>Gerinnungszeit</strong> 5–10 Minuten).</li>
+<li><strong>(2)</strong> In den folgenden Tagen bis Wochen bilden die darunterliegenden Schichten neue Zellen, die die Wunde endgültig verschliessen.</li>
+</ol>
+
+<h3>Die Gerinnungskaskade</h3>
+<figure class="summary-figure summary-svg"><svg viewBox="0 0 640 345" role="img" aria-label="Vereinfachtes Schema der Blutgerinnung von der Verletzung über Thrombokinase, Thrombin und Fibrin zum roten Thrombus" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+<defs><marker id="gk-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<g stroke-width="1.5">
+<rect x="260" y="8" width="120" height="30" rx="6" fill="#fff" stroke="currentColor"/>
+<rect x="30" y="62" width="210" height="30" rx="6" fill="#fff" stroke="currentColor"/>
+<rect x="400" y="62" width="220" height="30" rx="6" fill="rgba(201,162,63,.22)" stroke="#c9a23f"/>
+<rect x="400" y="118" width="220" height="30" rx="6" fill="#fff" stroke="#7a7c73" stroke-dasharray="5 3"/>
+<rect x="30" y="178" width="210" height="30" rx="6" fill="#fff" stroke="currentColor"/>
+<rect x="360" y="178" width="260" height="30" rx="6" fill="rgba(201,162,63,.22)" stroke="#c9a23f"/>
+<rect x="30" y="238" width="210" height="30" rx="6" fill="rgba(79,126,168,.15)" stroke="#3f6f9c"/>
+<rect x="360" y="238" width="200" height="30" rx="6" fill="rgba(181,83,60,.2)" stroke="#b5533c"/>
+<rect x="30" y="298" width="210" height="30" rx="6" fill="rgba(79,126,168,.15)" stroke="#3f6f9c"/>
+<rect x="300" y="298" width="130" height="30" rx="6" fill="rgba(181,83,60,.2)" stroke="#b5533c"/>
+<rect x="460" y="298" width="170" height="30" rx="6" fill="rgba(181,83,60,.35)" stroke="#b5533c"/>
+</g>
+<g fill="currentColor" text-anchor="middle">
+<text x="320" y="28" font-weight="bold">Verletzung</text>
+<text x="135" y="82">Zerstörung von Gewebe</text>
+<text x="510" y="82">① Zerfall von Thrombozyten</text>
+<text x="510" y="138">weisser Thrombus (Pfropf)</text>
+<text x="135" y="198">inaktive Thrombokinase</text>
+<text x="490" y="198">② aktivierte Thrombokinase</text>
+<text x="135" y="258">③ Prothrombin (inaktiv)</text>
+<text x="460" y="258">④ Thrombin (aktiv)</text>
+<text x="135" y="318">⑤ Fibrinogen (löslich)</text>
+<text x="365" y="318">⑥ Fibrin (Fäden)</text>
+<text x="545" y="318" font-weight="bold">roter Thrombus</text>
+</g>
+<g stroke="currentColor" stroke-width="1.5" fill="none" marker-end="url(#gk-a)">
+<line x1="290" y1="38" x2="175" y2="60"/>
+<line x1="350" y1="38" x2="460" y2="60"/>
+<line x1="510" y1="92" x2="510" y2="116"/>
+<line x1="135" y1="92" x2="135" y2="176"/>
+<line x1="430" y1="92" x2="230" y2="176"/>
+<line x1="242" y1="193" x2="358" y2="193"/>
+<line x1="242" y1="253" x2="358" y2="253"/>
+<line x1="450" y1="208" x2="300" y2="250"/>
+<line x1="242" y1="313" x2="298" y2="313"/>
+<line x1="460" y1="268" x2="270" y2="310"/>
+<line x1="432" y1="313" x2="458" y2="313"/>
+</g>
+<g fill="currentColor" font-size="11">
+<text x="282" y="186" text-anchor="middle">+ Ca²⁺</text>
+<text x="305" y="226" fill-opacity=".75">wandelt um</text>
+<text x="470" y="292" fill-opacity=".75">wandelt um</text>
+</g>
+</svg><figcaption><strong>Abb. – Vereinfachtes Schema der Blutgerinnung</strong> (digital gezeichnet, Legende 1–6 mit den Lösungen eingesetzt). Jede Stufe aktiviert die nächste: Die aktivierte Thrombokinase (mit Ca²⁺) macht aus Prothrombin Thrombin, und Thrombin macht aus löslichem Fibrinogen unlösliches Fibrin, das mit den Blutkörperchen den roten Thrombus bildet.<span class="figure-source">Quelle: nach Skript «Humanbiologie: Das Blut», S. 3.9 (Abb. 3.8)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Legende zu Abb. 3.8 (Lösung)</caption><thead><tr><th>Nr.</th><th>Begriff</th><th>Nr.</th><th>Begriff</th></tr></thead><tbody>
+<tr><td><strong>1</strong></td><td>Zerfall von Thrombozyten</td><td><strong>4</strong></td><td>Thrombin</td></tr>
+<tr><td><strong>2</strong></td><td>aktivierte Thrombokinase</td><td><strong>5</strong></td><td>Fibrinogen</td></tr>
+<tr><td><strong>3</strong></td><td>Prothrombin</td><td><strong>6</strong></td><td>Fibrin</td></tr>
+</tbody></table></div>
+<div class="summary-table-wrap"><table class="summary-note-table"><caption>Fragen c und d – Lösungen (d im Skript leer, ergänzt)</caption><thead><tr><th>Frage</th><th>Antwort</th></tr></thead><tbody>
+<tr><td><strong>c) Warum verläuft die Gerinnung über so viele Zwischenstufen?</strong></td><td>Damit das Blut <strong>nur dann gerinnt, wenn es soll</strong>: Jede Stufe ist eine Kontrollstelle, an der die Gerinnung gestoppt werden kann. Zudem <strong>verstärkt</strong> jede Stufe das Signal (Kaskade): Wenige aktivierte Moleküle erzeugen sehr schnell sehr viel Fibrin.</td></tr>
+<tr><td><strong>d) Warum gerinnt Blut mit Citrat nicht?</strong></td><td>Citrat bindet die <strong>Calcium-Ionen</strong>. Ohne freies Ca²⁺ kann die Thrombokinase Prothrombin nicht zu Thrombin umwandeln; damit entsteht auch kein Fibrin. Die Kaskade bricht ab.</td></tr>
+</tbody></table></div>
+
+<h3>Thrombose und Embolie</h3>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/bl-arteriosklerose.jpg" alt="Drei Querschnitte einer Arterie mit zunehmenden Ablagerungen und einem Gerinnsel" loading="lazy"><figcaption><strong>Abb. – Fortschreitende Gefässverengung durch Arteriosklerose.</strong> Ablagerungen an der Gefässwand machen das Gefäss enger und die Wand uneben. An den rauen Stellen bilden sich leicht Gerinnsel, die das Gefäss schliesslich verschliessen.<span class="figure-source">Quelle: Skript «Humanbiologie: Das Blut», S. 3.10 (Abb. 3.9)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><thead><tr><th>Begriff</th><th>Bedeutung</th><th>Mögliche Folgen</th></tr></thead><tbody>
+<tr><td><strong>Thrombus</strong></td><td>Blutgerinnsel <strong>innerhalb</strong> eines Gefässes</td><td>–</td></tr>
+<tr><td><strong>Thrombose</strong></td><td>Ein Thrombus verengt oder verstopft das Gefäss <strong>an Ort und Stelle</strong>.</td><td>Absterben der nicht mehr versorgten Körperteile (z. B. «Raucherbein», Amputation); in den Herzkranzgefässen: <strong>Herzinfarkt</strong></td></tr>
+<tr><td><strong>Embolie</strong></td><td>Ein Thrombus wird vom Blutstrom <strong>mitgerissen</strong> und bleibt im nächsten engeren Gefäss stecken (auch Luft oder Fett möglich).</td><td><strong>Lungenembolie</strong>, Herzinfarkt, <strong>Hirnschlag</strong></td></tr>
+<tr><td><strong>Arteriosklerose</strong></td><td>Ablagerungen machen die Gefässe eng und die Wände uneben.</td><td>begünstigt die Bildung von Gerinnseln</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>Risikofaktoren:</strong> Alter, <strong>Übergewicht</strong>, <strong>Rauchen</strong>, <strong>Bewegungsmangel</strong>.</li>
+<li><strong>Behandlung und Vorbeugung:</strong> Medikamente, die die Gerinnungsfähigkeit herabsetzen (<strong>Antikoagulantien</strong>, «Blutverdünner»).</li>
+</ul>`
+        },
+        {
+          name: "Blutgruppen: das AB0-System",
+          summary: `<h3>Die Entdeckung der Blutgruppen</h3>
+<div class="summary-table-wrap"><table><caption>Zeitstrahl</caption><thead><tr><th>Jahr</th><th>Ereignis</th></tr></thead><tbody>
+<tr><td><strong>1818</strong></td><td>Der englische Arzt <strong>James Blundell</strong> wagt die erste Übertragung von Menschenblut. Nur jede zweite Transfusion gelingt, niemand weiss, warum.</td></tr>
+<tr><td><strong>1901</strong></td><td>Der Wiener Arzt <strong>Karl Landsteiner</strong> entdeckt die Blutgruppen A, B und 0 des AB0-Systems.</td></tr>
+<tr><td><strong>kurz darauf</strong></td><td>Die vierte Blutgruppe <strong>AB</strong> wird entdeckt.</td></tr>
+</tbody></table></div>
+<p>Landsteiner nahm seinen Assistenten Blut ab, trennte die <strong>Erythrozyten</strong> vom <strong>Serum</strong> und mischte sie wechselseitig. In einigen Fällen <strong>verklumpten (agglutinierten)</strong> die Erythrozyten.</p>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/bl-landsteiner.jpg" alt="Tabelle des Landsteiner-Versuchs: Spalten Erythrozyten, Zeilen Serum von sechs Personen, gelbe Felder mit Klumpen zeigen Agglutination" loading="lazy"><figcaption><strong>Abb. – Der Versuch von Karl Landsteiner.</strong> Spalten: Erythrozyten von …, Zeilen: Serum von … Gelbe Felder mit grossen Klumpen = Erythrozyten <strong>agglutinieren</strong>; gleichmässig verteilte Punkte = keine Agglutination. Die Erythrozyten von Störk und Landsteiner verklumpen nie (Blutgruppe 0).<span class="figure-source">Quelle: Skript «Humanbiologie: Das Blut», S. 3.11 (Abb. 3.10)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Auswertung des Landsteiner-Versuchs</caption><thead><tr><th>Personen</th><th>Ihre Erythrozyten agglutinieren …</th><th>Blutgruppe</th></tr></thead><tbody>
+<tr><td><strong>Störk, Landsteiner</strong></td><td>mit keinem Serum</td><td><strong>0</strong> (Null)</td></tr>
+<tr><td><strong>Pletschnig, Zaritsch</strong></td><td>mit allen Seren ausser dem eigenen und dem des anderen</td><td><strong>A</strong> (willkürlich benannt)</td></tr>
+<tr><td><strong>Sturli, Erdheim</strong></td><td>mit allen Seren ausser dem eigenen und dem des anderen</td><td><strong>B</strong> (willkürlich benannt)</td></tr>
+</tbody></table></div>
+<p>Echte Blutzellen lassen sich bis heute nicht künstlich herstellen; nur der Körper bildet Blut. Deshalb ist <strong>Blutspenden</strong> so wichtig.</p>
+
+<h3>Antigene und Antikörper</h3>
+<div class="summary-table-wrap"><table><thead><tr><th>Begriff</th><th>Bedeutung</th></tr></thead><tbody>
+<tr><td><strong>Antigen</strong></td><td>Molekül, das die Bildung von Antikörpern auslöst (gr. <em>anti</em> = gegen, <em>genan</em> = erzeugen). Die Blutgruppen-Antigene sitzen <strong>aussen auf der Membran der Erythrozyten</strong>.</td></tr>
+<tr><td><strong>Antikörper</strong></td><td>Protein im <strong>Blutserum</strong>, gebildet von B-Lymphozyten; bindet an ein bestimmtes Antigen und eliminiert oder markiert es. Jeder Antikörper hat mindestens <strong>zwei</strong> gleiche Bindungsstellen.</td></tr>
+<tr><td><strong>Agglutination</strong></td><td>Verklumpung: Antikörper vernetzen mehrere Zellen mit passenden Antigenen.</td></tr>
+</tbody></table></div>
+<figure class="summary-figure"><img src="Resourcen/Bilder/bl-agglutination.jpg" alt="Rote Blutkörperchen mit Antigenen werden durch Y-förmige Antikörper zu einem Klumpen vernetzt" loading="lazy"><figcaption><strong>Abb. – Agglutination von Erythrozyten.</strong> Weil jeder Antikörper (Y-Form) zwei Bindungsstellen hat, kann er zwei Erythrozyten mit passendem Antigen gleichzeitig binden. So entsteht ein Netz aus verklumpten Zellen.<span class="figure-source">Quelle: Skript «Humanbiologie: Das Blut», S. 3.12 (Abb. 3.11)</span></figcaption></figure>
+<p>Anti-A-Antikörper binden nur an Antigen A, Anti-B-Antikörper nur an Antigen B, wie ein Schlüssel zum Schloss. Treffen passende Antikörper auf die Erythrozyten, verklumpen diese. Diese Reaktion nutzt man für den <strong>Blutgruppentest</strong>.</p>
+<div class="summary-merke"><strong>Merke:</strong> Die Blutgruppe wird nach den <strong>Antigenen auf den Erythrozyten</strong> benannt. Im Serum hat man immer die Antikörper gegen die Antigene, die man <strong>nicht</strong> selbst besitzt: Gruppe A hat Anti-B, Gruppe B hat Anti-A, Gruppe 0 beide, Gruppe AB keine.</div>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/bl-ab0-antigene.jpg" alt="Tabelle mit Erythrozyten der Blutgruppen A, AB, 0 und B mit ihren Antigenen und den Antikörpern im Plasma" loading="lazy"><figcaption><strong>Abb. – Antigene und Antikörper im AB0-System</strong> (mit eingetragenen Lösungen). Die Form der Antigene (Zacken bzw. Kugeln) passt jeweils zur Bindungsstelle des Antikörpers. Erythrozyten der Gruppe 0 tragen keine Antigene.<span class="figure-source">Quelle: Skript «Humanbiologie: Das Blut», S. 3.13 (Abb. 3.12, oberer Teil)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Abb. 3.12 als Tabelle (Zeile «Agglutination mit …» korrigiert)</caption><thead><tr><th>Blutgruppe</th><th>A</th><th>B</th><th>AB</th><th>0</th></tr></thead><tbody>
+<tr><td><strong>Antigene auf den Erythrozyten</strong></td><td>A</td><td>B</td><td>A und B</td><td>keine</td></tr>
+<tr><td><strong>Antikörper im Plasma</strong></td><td>Anti-B</td><td>Anti-A</td><td>keine</td><td>Anti-A und Anti-B</td></tr>
+<tr><td><strong>Erythrozyten agglutinieren mit …</strong></td><td>Anti-A</td><td>Anti-B</td><td>Anti-A und Anti-B</td><td>keinem Antikörper</td></tr>
+<tr><td><strong>Häufigkeit in Europa</strong></td><td>43 %</td><td>14 %</td><td>6 %</td><td>37 %</td></tr>
+</tbody></table></div>
+<p><strong>Aufgabe 1:</strong> Die Agglutination bewirken a) auf den Erythrozyten die <strong>Antigene</strong>, b) im Blutserum die <strong>Antikörper</strong>.</p>
+
+<h3>Kreuzprobe und Bluttransfusion</h3>
+<p>Vor jeder Transfusion macht man die <strong>Kreuzprobe</strong>: Das <strong>Serum des Empfängers</strong> wird mit den <strong>Erythrozyten des Spenders</strong> gemischt. Nur wenn keine Agglutination entsteht, darf das Blut übertragen werden.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/bl-kreuzprobe.jpg" alt="Testkarte mit 16 Blutstropfen: Spalten Blutgruppen 0, A, B, AB, Zeilen Antiseren" loading="lazy"><figcaption><strong>Abb. – Blutgruppentest mit Antiseren.</strong> Spalten: Blut der Gruppen 0, A, B, AB. Zeilen: Testseren mit Anti-A, Anti-B, Anti-A + Anti-B («AB») und eine Kontrolle ohne Antikörper («O»). <strong>Hell und körnig</strong> = Agglutination, <strong>gleichmässig rot</strong> = keine Agglutination.<span class="figure-source">Quelle: Skript «Humanbiologie: Das Blut», S. 3.14 (Abb. 3.13)</span></figcaption></figure>
+<div class="summary-table-wrap"><table class="summary-note-table"><caption>Ablesen der Testkarte – Legende aus dem Skript (hell und körnig = Agglutination), Tabelle ergänzt</caption><thead><tr><th>Testserum</th><th>0</th><th>A</th><th>B</th><th>AB</th></tr></thead><tbody>
+<tr><td><strong>Anti-A</strong></td><td>–</td><td>agglutiniert</td><td>–</td><td>agglutiniert</td></tr>
+<tr><td><strong>Anti-B</strong></td><td>–</td><td>–</td><td>agglutiniert</td><td>agglutiniert</td></tr>
+<tr><td><strong>Anti-A + Anti-B</strong></td><td>–</td><td>agglutiniert</td><td>agglutiniert</td><td>agglutiniert</td></tr>
+<tr><td><strong>Kontrolle</strong></td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+</tbody></table></div>
+<p>Entscheidend sind die <strong>Erythrozyten des Spenders</strong> und die <strong>Antikörper des Empfängers</strong>: Es kommt darauf an, welche Antigene in den Empfängerkreislauf «eindringen». Heute erhält der Empfänger meist nur die Erythrozyten. Auch bei Vollblut spielen die Antikörper des Spenders kaum eine Rolle, weil sie im grossen Blutvolumen des Empfängers stark verdünnt werden.</p>
+<div class="summary-table-wrap"><table><caption>Aufgabe 4: Wer kann wem Blut spenden? (Zeile B korrigiert)</caption><thead><tr><th>Blutgruppe</th><th>kann Blut spenden an</th><th>verträgt Blut von</th></tr></thead><tbody>
+<tr><td><strong>A</strong></td><td>A, AB</td><td>A, 0</td></tr>
+<tr><td><strong>B</strong></td><td>B, AB</td><td>B, 0</td></tr>
+<tr><td><strong>AB</strong></td><td>AB</td><td>A, B, AB, 0</td></tr>
+<tr><td><strong>0</strong></td><td>A, B, AB, 0</td><td>0</td></tr>
+</tbody></table></div>
+<div class="summary-merke"><strong>Aufgabe 5:</strong> <strong>Universalspender</strong> ist die Blutgruppe <strong>0</strong>: Ihre Erythrozyten tragen keine Antigene und werden von keinem Empfänger-Serum verklumpt. <strong>Universalempfänger</strong> ist die Blutgruppe <strong>AB</strong>: Ihr Serum enthält keine Anti-A- und keine Anti-B-Antikörper.</div>`
+        },
+        {
+          name: "Rhesus-System und Vererbung der Blutgruppen",
+          summary: `<h3>Das Rhesus-System</h3>
+<p>Das Rhesus-System umfasst fünf Antigene; für die Transfusion zählt nur das <strong>Antigen D</strong>. Wer es auf den Erythrozyten trägt, ist <strong>rhesuspositiv (Rh⁺)</strong>, wer es nicht hat, <strong>rhesusnegativ (rh⁻)</strong>. Etwa 85 % aller Menschen sind Rh⁺ (in Europa ca. 75 %).</p>
+<div class="summary-table-wrap"><table><thead><tr><th>Kriterium</th><th>AB0-System</th><th>Rhesus-System</th></tr></thead><tbody>
+<tr><td><strong>Antikörper vorhanden …</strong></td><td>schon <strong>ab Geburt</strong> (Anti-A, Anti-B)</td><td>erst <strong>nach Kontakt</strong> mit dem Antigen D (Sensibilisierung)</td></tr>
+<tr><td><strong>Problem bei …</strong></td><td>falscher Bluttransfusion</td><td>Transfusion von Rh⁺-Blut an rh⁻-Personen (wiederholt) und Schwangerschaft einer rh⁻-Mutter mit Rh⁺-Kind</td></tr>
+</tbody></table></div>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/bl-rhesus.jpg" alt="Zwei Schwangerschaften im Vergleich: bei der ersten Sensibilisierung der Mutter, ab der zweiten gelangen Anti-D-Antikörper zum Kind" loading="lazy"><figcaption><strong>Abb. – Rhesusunverträglichkeit.</strong> 1. Schwangerschaft: Rh⁺-Erythrozyten des Kindes gelangen (v. a. bei der Geburt) zur rh⁻-Mutter und lösen die Sensibilisierung aus. Ab der 2. Schwangerschaft: Schon wenige kindliche Erythrozyten lösen eine massive Anti-D-Bildung aus; die Anti-D gelangen zum Kind und agglutinieren seine Erythrozyten.<span class="figure-source">Quelle: Skript «Humanbiologie: Das Blut», S. 3.15 (Abb. 3.14)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Ablauf der Rhesusunverträglichkeit (rh⁻-Mutter, Rh⁺-Kind)</caption><thead><tr><th>Phase</th><th>Was geschieht?</th><th>Folge für das Kind</th></tr></thead><tbody>
+<tr><td><strong>1. Schwangerschaft</strong></td><td>Die Kreisläufe sind getrennt; vor allem bei der Geburt gelangen Rh⁺-Erythrozyten zur Mutter. Sie bildet langsam Anti-D (<strong>Sensibilisierung</strong>).</td><td>keine, die Antikörperbildung ist gering und kommt zu spät</td></tr>
+<tr><td><strong>2. Schwangerschaft</strong> mit Rh⁺-Kind</td><td>Winzige Mengen kindlicher Erythrozyten lösen eine massive Antikörperproduktion aus (<strong>Sekundärreaktion</strong>). Anti-D gelangen in den Kreislauf des Kindes.</td><td>Agglutination der Erythrozyten → Blutarmut (Anämie), Gelbsucht, Hirn- und Nervenschäden, im schlimmsten Fall Tod</td></tr>
+<tr><td><strong>Vorbeugung</strong></td><td>Nach der ersten Geburt testet man, ob Rh⁺-Erythrozyten zur Mutter gelangt sind; wenn ja, spritzt man sofort <strong>Anti-D</strong>. Diese agglutinieren die kindlichen Zellen, Makrophagen beseitigen sie, <strong>bevor</strong> das Immunsystem der Mutter alarmiert wird.</td><td>Die Mutter bildet keine eigenen Anti-D → Rhesuskinder sind heute selten</td></tr>
+</tbody></table></div>
+<div class="summary-table-wrap"><table class="summary-note-table"><caption>Auftrag zum Rhesussystem – im Skript leer, hier ergänzt</caption><thead><tr><th>Frage</th><th>Antwort</th></tr></thead><tbody>
+<tr><td><strong>1. Was kann einem Rh⁺-Fötus einer rh⁻-Mutter geschehen?</strong></td><td>Ist die Mutter sensibilisiert, gelangen ihre Anti-D-Antikörper über die Plazenta zum Kind und agglutinieren seine Erythrozyten. Die Folgen sind Blutarmut, Gelbsucht (durch den Abbau der zerstörten Erythrozyten), Hirn- und Nervenschäden, im schlimmsten Fall der Tod.</td></tr>
+<tr><td><strong>2. Warum erst ab der zweiten Schwangerschaft?</strong></td><td>Die Mutter hat von Natur aus keine Anti-D. Sie wird erst durch den Blutkontakt bei der ersten Geburt sensibilisiert, und diese Primärreaktion ist langsam und schwach. Erst in der nächsten Schwangerschaft reagiert ihr Immunsystem schnell und massiv (Sekundärreaktion, immunologisches Gedächtnis).</td></tr>
+</tbody></table></div>
+
+<h3>Vererbung des AB0-Systems</h3>
+<p>Die Blutgruppe ändert sich im Leben nicht; sie wird <strong>vererbt</strong>. Das Blutgruppen-Gen kommt in drei Varianten (<strong>Allelen</strong>) vor: <strong>A, B und 0</strong>. Jeder Mensch hat zwei davon, eines von der Mutter und eines vom Vater.</p>
+<ul>
+<li><strong>A und B</strong> sind <strong>dominant</strong> über das <strong>rezessive</strong> Allel 0: Genotyp A0 → Blutgruppe A.</li>
+<li><strong>A und B</strong> sind untereinander <strong>kodominant</strong>: Beide wirken gleich stark, Genotyp AB → Blutgruppe AB.</li>
+</ul>
+<div class="summary-table-wrap"><table><caption>Wichtige genetische Begriffe</caption><thead><tr><th>Begriff</th><th>Bedeutung</th><th>Beispiel Blutgruppe</th></tr></thead><tbody>
+<tr><td><strong>Genotyp</strong></td><td>die Erbanlagen (Allelkombination) für ein Merkmal</td><td>A0</td></tr>
+<tr><td><strong>Phänotyp</strong></td><td>die sichtbare bzw. messbare Ausprägung des Merkmals</td><td>Blutgruppe A</td></tr>
+<tr><td><strong>Allel</strong></td><td>Variante eines Gens</td><td>A, B oder 0</td></tr>
+<tr><td><strong>homozygot</strong> (reinerbig)</td><td>zwei gleiche Allele</td><td>AA, 00</td></tr>
+<tr><td><strong>heterozygot</strong> (mischerbig)</td><td>zwei verschiedene Allele</td><td>A0, AB</td></tr>
+<tr><td><strong>dominant</strong></td><td>bestimmt den Phänotyp der Heterozygoten</td><td>A0 → A</td></tr>
+<tr><td><strong>rezessiv</strong></td><td>wirkt sich nur bei Homozygoten aus</td><td>0 nur bei 00</td></tr>
+<tr><td><strong>kodominant</strong></td><td>beide Allele gleichwertig ausgeprägt</td><td>AB → AB</td></tr>
+</tbody></table></div>
+<p><strong>Keimzellen</strong> (Eizellen, Spermien) enthalten nur <strong>ein</strong> Allel jedes Gens, weil die Erbsubstanz bei ihrer Bildung halbiert wird (Meiose). Welches der beiden Allele in eine Keimzelle gelangt, ist Zufall; im Mittel erhalten 50 % das eine, 50 % das andere.</p>
+<div class="summary-table-wrap"><table><caption>Phänotyp, Genotyp und mögliche Keimzellen</caption><thead><tr><th>Blutgruppe</th><th>Genotyp</th><th>Keimzellen</th></tr></thead><tbody>
+<tr><td><strong>A</strong></td><td>AA oder A0</td><td>AA: nur A · A0: 50 % A, 50 % 0</td></tr>
+<tr><td><strong>B</strong></td><td>BB oder B0</td><td>BB: nur B · B0: 50 % B, 50 % 0</td></tr>
+<tr><td><strong>AB</strong></td><td>AB</td><td>50 % A, 50 % B</td></tr>
+<tr><td><strong>0</strong></td><td>00</td><td>nur 0</td></tr>
+</tbody></table></div>
+<div class="summary-table-wrap"><table class="summary-note-table"><caption>Aufgabe 1: Mögliche Blutgruppen der Kinder – im Skript bis auf A × A leer, hier vollständig (alle Genotypen der Eltern berücksichtigt)</caption><thead><tr><th>Eltern</th><th>× A</th><th>× B</th><th>× AB</th><th>× 0</th></tr></thead><tbody>
+<tr><td><strong>A</strong></td><td>A, 0</td><td>A, B, AB, 0</td><td>A, B, AB</td><td>A, 0</td></tr>
+<tr><td><strong>B</strong></td><td>A, B, AB, 0</td><td>B, 0</td><td>A, B, AB</td><td>B, 0</td></tr>
+<tr><td><strong>AB</strong></td><td>A, B, AB</td><td>A, B, AB</td><td>A, B, AB</td><td>A, B</td></tr>
+<tr><td><strong>0</strong></td><td>A, 0</td><td>B, 0</td><td>A, B</td><td>0</td></tr>
+</tbody></table></div>
+<div class="summary-table-wrap"><table class="summary-note-table"><caption>Aufgaben 2–5 – im Skript leer, hier gelöst</caption><thead><tr><th>Frage</th><th>Antwort und Lösungsweg</th></tr></thead><tbody>
+<tr><td><strong>2. Frau A, Mann B: Kind mit Blutgruppe 0 möglich?</strong></td><td><strong>Ja</strong>, wenn beide heterozygot sind: Frau <strong>A0</strong> × Mann <strong>B0</strong>. Beide geben mit 50 % das Allel 0 weiter → Kind 00 mit einer Wahrscheinlichkeit von 25 %.</td></tr>
+<tr><td><strong>3. Mutter AB, Vater A: welche Blutgruppe kann das Kind nicht haben?</strong></td><td>Die Mutter gibt immer A oder B weiter, nie 0. Mögliche Kinder: AA/A0 (A), AB (AB), B0 (B, falls Vater A0). Das Kind kann also <strong>nicht Blutgruppe 0</strong> haben.</td></tr>
+<tr><td><strong>4. Vier Kinder mit A, B, 0 und AB: Eltern?</strong></td><td>Kind 0 braucht von jedem Elternteil ein 0, Kind AB braucht ein A und ein B. Also: ein Elternteil <strong>A0 (Blutgruppe A)</strong>, der andere <strong>B0 (Blutgruppe B)</strong>.</td></tr>
+<tr><td><strong>5. Kann eine Rh⁺-Frau ein rh⁻-Kind haben?</strong></td><td><strong>Ja</strong>, wenn sie heterozygot <strong>Dd</strong> ist. Das Kind (dd) braucht auch vom Vater ein d: Der Vater ist entweder rh⁻ (dd) oder heterozygot Rh⁺ (Dd).</td></tr>
+</tbody></table></div>
+<div class="summary-merke"><strong>Vorgehen bei Vererbungsaufgaben:</strong> 1. Für jeden Elternteil alle möglichen Genotypen aufschreiben. 2. Die möglichen Keimzellen bestimmen. 3. Alle Kombinationen bilden (Kreuzungsquadrat). 4. Aus den Genotypen der Kinder die Blutgruppen ablesen.</div>`
         }
       ]
     },
     {
-      id: "topic-3",
-      name: "Ruhe- und Aktionspotenzial",
-      group: "Neurobiologie",
+      id: "topic-32",
+      name: "Das Herz",
+      group: "Herz-Kreislauf",
       subtopics: [
         {
-          name: "Das Ruhepotenzial",
-          summary: `<h3>Ionenverteilung und Membran</h3>
-            <p>Alle Zellen haben ein Membranpotenzial (−100 bis +40 mV). Bei Nervenzellen heisst es <strong>Ruhepotenzial</strong> und beträgt <strong>−70 mV</strong>: Das Zellinnere ist gegenüber aussen negativ geladen.</p>
-            <ul>
-              <li><strong>K⁺</strong> ist innen hoch (120 bis 155 mmol/l), aussen niedrig (4 bis 5 mmol/l).</li>
-              <li><strong>Na⁺</strong> ist aussen hoch (140 bis 150 mmol/l), innen niedrig (5 bis 15 mmol/l).</li>
-              <li><strong>Protein-Anionen (A⁻)</strong> bleiben innen, da die Membran für sie undurchlässig ist.</li>
-            </ul>
-            <h3>Kanäle und Pumpe</h3>
-            <ul>
-              <li><strong>Spannungsunabhängige Hintergrundkanäle:</strong> immer offen; sehr viele für K⁺, nur wenige für Na⁺.</li>
-              <li><strong>Spannungsgesteuerte Kanäle:</strong> öffnen sich bei einem bestimmten Membranpotenzial (im Ruhezustand geschlossen).</li>
-              <li><strong>Ligandengesteuerte Kanäle:</strong> öffnen sich, wenn ein Botenstoff andockt (wichtig an Synapsen).</li>
-              <li><strong>Natrium-Kalium-Pumpe:</strong> transportiert unter ATP-Verbrauch 3 Na⁺ nach aussen und 2 K⁺ nach innen, gegen das Konzentrationsgefälle. Sie hält das Ruhepotenzial aufrecht und kompensiert den Na⁺-Leckeinstrom (Verbrauch: 30 bis 50 % der Stoffwechselenergie der Zelle).</li>
-            </ul>
-            <p>Ursachen des Ruhepotenzials: ungleiche Ionenkonzentrationen · unterschiedliche Permeabilität für K⁺ und Na⁺ · Na-K-Pumpe.</p>`
+          name: "Anatomie des Herzens",
+          summary: `<p>Das Herz ist ein <strong>Hohlmuskel</strong>, etwa 1,5-mal so gross wie die Faust seines Besitzers. Es liegt im Brustraum fast in der Mitte zwischen den Lungenflügeln, unter dem Brustbein, und ist von den Rippen geschützt. Die Herzachse zeigt von oben rechts nach unten links vorne; die <strong>Herzspitze</strong> liegt so nahe an der Brustwand, dass man den Herzschlag dort ertasten kann.</p>
+<div class="summary-table-wrap"><table><caption>Bauteile des Herzens</caption><thead><tr><th>Bauteil</th><th>Bau und Aufgabe</th></tr></thead><tbody>
+<tr><td><strong>Herzbeutel (Perikard)</strong></td><td>zwei Häute mit einem flüssigkeitsgefüllten Spalt dazwischen; die innere (Epikard) ist mit der Herzwand verwachsen, die äussere mit dem Brustfell. Ermöglicht ein fast reibungsfreies Pumpen.</td></tr>
+<tr><td><strong>Herzscheidewand (Septum)</strong></td><td>trennt das Herz in eine rechte und eine linke Hälfte</td></tr>
+<tr><td><strong>Vorhof (Atrium)</strong></td><td>nimmt das Blut aus den <strong>Venen</strong> auf (die Venen münden in die Vorhöfe)</td></tr>
+<tr><td><strong>Herzkammer (Ventrikel)</strong></td><td>pumpt das Blut in die Arterien (Aorta bzw. Lungenarterie)</td></tr>
+<tr><td><strong>Segelklappen</strong></td><td>zwischen Vorhof und Kammer; über feine <strong>Sehnen</strong> an den <strong>Papillarmuskeln</strong> (muskulöse Vorsprünge der Kammerwand) befestigt; verhindern den Rückfluss in den Vorhof</td></tr>
+<tr><td><strong>Taschenklappen</strong></td><td>am Ausgang der Kammern zur <strong>Aorta</strong> und <strong>Lungenarterie</strong>; verhindern den Rückfluss in die Kammer</td></tr>
+<tr><td><strong>Herzkranzgefässe</strong></td><td>versorgen den <strong>Herzmuskel</strong> selbst mit Sauerstoff und Nährstoffen</td></tr>
+</tbody></table></div>
+<div class="summary-merke"><strong>Achtung:</strong> Links und rechts gelten immer <strong>vom Patienten aus</strong> gesehen. Abbildungen des Herzens muss man deshalb seitenverkehrt lesen: Die linke Herzhälfte liegt im Bild rechts.</div>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/he-anatomie.jpg" alt="Herz von aussen und aufgeschnitten mit Nummern 1 bis 16" loading="lazy"><figcaption><strong>Abb. – Herz von aussen (links) und geöffnet (rechts).</strong> Rechts sieht man die viel dickere Wand der linken Kammer (10) gegenüber der rechten (9), die Segelklappen (13) mit ihren Sehnen (14) an den Papillarmuskeln (15) und die Taschenklappen (16). Legende in der Tabelle.<span class="figure-source">Quelle: Skript «Humanbiologie: Das Herz», S. 4.2 (Abb. 4.2 und 4.3)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Legende zu Abb. 4.2 und 4.3 (Nr. 2–5 präzisiert)</caption><thead><tr><th>Nr.</th><th>Struktur</th><th>Nr.</th><th>Struktur</th></tr></thead><tbody>
+<tr><td><strong>1</strong></td><td>Aorta</td><td><strong>9</strong></td><td>rechte Kammer</td></tr>
+<tr><td><strong>2</strong></td><td>Lungenarterie</td><td><strong>10</strong></td><td>linke Kammer</td></tr>
+<tr><td><strong>3</strong></td><td>obere Hohlvene</td><td><strong>11</strong></td><td>Herzscheidewand</td></tr>
+<tr><td><strong>4</strong></td><td>untere Hohlvene</td><td><strong>12</strong></td><td>Herzmuskel</td></tr>
+<tr><td><strong>5</strong></td><td>Lungenvenen</td><td><strong>13</strong></td><td>Segelklappen</td></tr>
+<tr><td><strong>6</strong></td><td>(linkes) Herzkranzgefäss</td><td><strong>14</strong></td><td>Sehnen</td></tr>
+<tr><td><strong>7</strong></td><td>rechter Vorhof</td><td><strong>15</strong></td><td>Papillarmuskeln</td></tr>
+<tr><td><strong>8</strong></td><td>linker Vorhof</td><td><strong>16</strong></td><td>Taschenklappe</td></tr>
+</tbody></table></div>
+<p>Nicht abgebildet ist der <strong>Herzbeutel (Perikard)</strong>.</p>
+
+<h3>Der Weg des Blutes durch das Herz</h3>
+<figure class="summary-figure summary-svg"><svg viewBox="0 0 640 250" role="img" aria-label="Weg des Blutes: Hohlvenen, rechter Vorhof, rechte Kammer, Lungenarterie, Lunge, Lungenvenen, linker Vorhof, linke Kammer, Aorta, Körper" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+<defs><marker id="hw-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<g stroke-width="1.5">
+<rect x="5" y="50" width="100" height="40" rx="6" fill="rgba(79,126,168,.22)" stroke="#3f6f9c"/>
+<rect x="135" y="50" width="100" height="40" rx="6" fill="rgba(79,126,168,.22)" stroke="#3f6f9c"/>
+<rect x="265" y="50" width="100" height="40" rx="6" fill="rgba(79,126,168,.22)" stroke="#3f6f9c"/>
+<rect x="395" y="50" width="100" height="40" rx="6" fill="rgba(79,126,168,.22)" stroke="#3f6f9c"/>
+<rect x="525" y="50" width="110" height="40" rx="6" fill="rgba(88,116,90,.2)" stroke="#58745a"/>
+<rect x="5" y="160" width="100" height="40" rx="6" fill="rgba(88,116,90,.2)" stroke="#58745a"/>
+<rect x="135" y="160" width="100" height="40" rx="6" fill="rgba(181,83,60,.2)" stroke="#b5533c"/>
+<rect x="265" y="160" width="100" height="40" rx="6" fill="rgba(181,83,60,.2)" stroke="#b5533c"/>
+<rect x="395" y="160" width="100" height="40" rx="6" fill="rgba(181,83,60,.2)" stroke="#b5533c"/>
+<rect x="525" y="160" width="110" height="40" rx="6" fill="rgba(181,83,60,.2)" stroke="#b5533c"/>
+</g>
+<g fill="currentColor" text-anchor="middle">
+<text x="55" y="75">Hohlvenen</text><text x="185" y="75" font-weight="bold">rechter Vorhof</text><text x="315" y="75" font-weight="bold">rechte Kammer</text><text x="445" y="75">Lungenarterie</text><text x="580" y="68">Lunge</text><text x="580" y="83" font-size="10">O₂ auf, CO₂ ab</text>
+<text x="55" y="178">Körper</text><text x="55" y="193" font-size="10">O₂ ab, CO₂ auf</text><text x="185" y="185">Aorta</text><text x="315" y="185" font-weight="bold">linke Kammer</text><text x="445" y="185" font-weight="bold">linker Vorhof</text><text x="580" y="185">Lungenvenen</text>
+</g>
+<g stroke="currentColor" stroke-width="1.5" fill="none" marker-end="url(#hw-a)">
+<line x1="106" y1="70" x2="133" y2="70"/><line x1="236" y1="70" x2="263" y2="70"/><line x1="366" y1="70" x2="393" y2="70"/><line x1="496" y1="70" x2="523" y2="70"/>
+<line x1="580" y1="91" x2="580" y2="158"/>
+<line x1="524" y1="180" x2="497" y2="180"/><line x1="394" y1="180" x2="367" y2="180"/><line x1="264" y1="180" x2="237" y2="180"/><line x1="134" y1="180" x2="107" y2="180"/>
+<line x1="55" y1="159" x2="55" y2="92"/>
+</g>
+<g fill="currentColor" font-size="11" text-anchor="middle">
+<text x="250" y="40">Segelklappe</text><text x="380" y="40">Taschenklappe</text>
+<text x="380" y="222">Segelklappe</text><text x="250" y="222">Taschenklappe</text>
+</g>
+<g font-size="12" font-weight="bold" text-anchor="middle">
+<text x="320" y="18" fill="#3f6f9c">rechte Herzhälfte: venöses (sauerstoffarmes) Blut → Lungenkreislauf</text>
+<text x="320" y="244" fill="#b5533c">linke Herzhälfte: arterielles (sauerstoffreiches) Blut → Körperkreislauf</text>
+</g>
+</svg><figcaption><strong>Abb. – Der Weg des Blutes durch das Herz</strong> (digital gezeichnet). Jede Herzhälfte hat den gleichen Ablauf: Vene → Vorhof → Segelklappe → Kammer → Taschenklappe → Arterie. Die rechte Hälfte pumpt in die Lunge, die linke in den Körper.<span class="figure-source">Quelle: nach Skript «Humanbiologie: Das Herz», S. 4.1–4.3</span></figcaption></figure>
+
+<h3>Die Versorgung des Herzmuskels</h3>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/he-kranzgefaesse.jpg" alt="Herz mit rechtem und linkem Kranzgefäss, nummeriert 1 bis 7" loading="lazy"><figcaption><strong>Abb. – Die Versorgung des Herzens.</strong> Die Herzkranzgefässe (1 rechtes, 2 linkes Kranzgefäss) umschliessen das Herz wie ein Kranz. Sie zweigen direkt oberhalb der Taschenklappen von der Aorta (6) ab.<span class="figure-source">Quelle: Skript «Humanbiologie: Das Herz», S. 4.1 (Abb. 4.1)</span></figcaption></figure>
+<p>Der Herzmuskel ist viel zu dick, um durch Diffusion aus dem Blut in den Kammern versorgt zu werden. Diese Aufgabe übernehmen die <strong>Herzkranzarterien</strong>. Das venöse Blut sammeln die <strong>Herzkranzvenen</strong> und führen es in den <strong>rechten Vorhof</strong> zurück. Verstopft ein Herzkranzgefäss (Thrombose), stirbt der dahinterliegende Muskel ab: <strong>Herzinfarkt</strong>.</p>
+
+<h3>Segel- und Taschenklappen</h3>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/he-taschenklappen.jpg" alt="Taschenklappe geschlossen und geöffnet, von oben und im Längsschnitt" loading="lazy"><figcaption><strong>Abb. – Funktionsprinzip der Taschenklappen.</strong> Oben: Ist der Druck im wegführenden Gefäss (Aorta, Lungenarterie) höher als in der Kammer, füllen sich die Taschen mit Blut und legen sich aneinander; das Blut kann nicht zurück. Unten: Ist der Druck in der Kammer höher, drückt das Blut die Taschen auf; sie werden geleert und an die Wand gepresst.<span class="figure-source">Quelle: Skript «Humanbiologie: Das Herz», S. 4.3 (Abb. 4.4)</span></figcaption></figure>
+<div class="summary-table-wrap"><table class="summary-note-table"><caption>Aufgabe 1: Segel- und Taschenklappen im Vergleich – im Skript leer, hier ergänzt</caption><thead><tr><th>Kriterium</th><th>Segelklappen</th><th>Taschenklappen</th></tr></thead><tbody>
+<tr><td><strong>Lage</strong></td><td>zwischen Vorhof und Kammer (rechts: Trikuspidalklappe, links: Mitralklappe)</td><td>zwischen Kammer und Arterie (Aortenklappe, Pulmonalklappe)</td></tr>
+<tr><td><strong>Aufgabe</strong></td><td>verhindern den Rückfluss von der <strong>Kammer in den Vorhof</strong> während der Kammer-Systole</td><td>verhindern den Rückfluss aus <strong>Aorta bzw. Lungenarterie in die Kammer</strong> während der Kammer-Diastole</td></tr>
+<tr><td><strong>Aufbau</strong></td><td>dünne, segelartige Hautlappen, über <strong>Sehnenfäden</strong> an den <strong>Papillarmuskeln</strong> befestigt</td><td>drei halbmondförmige <strong>Taschen</strong> aus Endothel, ohne Sehnen</td></tr>
+<tr><td><strong>Funktionsweise</strong></td><td>wie <strong>Schwingtüren</strong>: öffnen sich zur Kammer hin, wenn der Druck im Vorhof höher ist; schliessen sich, wenn die Kammer sich zusammenzieht. Sehnen und Papillarmuskeln verhindern, dass die Segel in den Vorhof durchschlagen.</td><td>passiv durch den Druck: Ist er in der Kammer höher, werden sie an die Wand gedrückt (offen); ist er in der Arterie höher, füllen sie sich mit Blut und legen sich aneinander (geschlossen).</td></tr>
+</tbody></table></div>
+<div class="summary-table-wrap"><table><caption>Aufgaben 2 und 3</caption><thead><tr><th>Frage</th><th>Antwort</th></tr></thead><tbody>
+<tr><td><strong>Welche Herzhälfte enthält arterielles Blut?</strong></td><td>Die <strong>linke</strong> Herzhälfte (Blut aus der Lunge).</td></tr>
+<tr><td><strong>Welche Hälfte hat die dickere Wand, und warum?</strong></td><td>Die <strong>linke</strong>. Sie muss das Blut gegen den viel höheren <strong>Widerstand des Körperkreislaufs</strong> mit hohem Druck in die Aorta pressen; die rechte Kammer pumpt nur in den nahen Lungenkreislauf mit geringem Widerstand (ergänzt: mittlerer Druck in der Aorta 100 mmHg, im Lungenkreislauf 15 mmHg).</td></tr>
+</tbody></table></div>`
         },
         {
-          name: "Das Aktionspotenzial",
-          summary: `<h3>Erregungsbildung</h3>
-            <p>Nerven-, Sinnes- und Muskelzellen sind erregbar. Im Zellkörper werden lokale Änderungen des Membranpotenzials verrechnet; am Axonhügel entstehen eventuell Aktionspotenziale, die als Salve (bis 100-mal pro Sekunde) bis zur Synapse geleitet werden.</p>
-            <h3>Ablauf in fünf Phasen</h3>
-            <ul>
-              <li><strong>1 Initiation:</strong> Ein Reiz öffnet wenige spannungsabhängige Na⁺-Kanäle, Na⁺ strömt ein, das Potenzial wird positiver (Depolarisation).</li>
-              <li><strong>2/3 Aufstrich:</strong> Beim Schwellenwert (ca. −50 mV) öffnen sich lawinenartig alle spannungsabhängigen Na⁺-Kanäle, Na⁺ strömt massenhaft ein, das Potenzial steigt auf ca. +30 mV (= Aktionspotenzial).</li>
-              <li><strong>4 Repolarisation:</strong> Kurz vor dem Maximum schliessen die Na⁺-Kanäle, die spannungsabhängigen K⁺-Kanäle öffnen sich, K⁺ strömt aus: Das negative Potenzial wird wiederhergestellt, oft kurz unter −70 mV (Hyperpolarisation).</li>
-              <li><strong>5 Wiederherstellung:</strong> Die Na-K-Pumpe stellt die ursprüngliche Ionenverteilung her.</li>
-            </ul>
-            <p>Begriffe: <strong>Depolarisation</strong> = Potenzial wird positiver · <strong>Repolarisation</strong> = Rückkehr zum negativen Wert · <strong>Hyperpolarisation</strong> = kurzzeitig negativer als das Ruhepotenzial.</p>
-            <h3>Alles-oder-Nichts und Refraktärzeit</h3>
-            <ul>
-              <li><strong>Alles-oder-Nichts-Gesetz:</strong> Wird der Schwellenwert überschritten, läuft das Aktionspotenzial immer gleich ab: ganz oder gar nicht. Überschwellig = Reiz erreicht den Schwellenwert, unterschwellig = nicht.</li>
-              <li><strong>Refraktärzeit:</strong> Nach einem Aktionspotenzial (1 bis 2 ms) lassen sich die Na⁺-Kanäle einige ms nicht öffnen. So kann ein Aktionspotenzial nicht rückwärts laufen. Wegen 2 bis 10 ms Refraktärzeit gibt es höchstens 500 AP/s.</li>
-            </ul>`
+          name: "Erregungsbildung und Erregungsleitung",
+          summary: `<p>Das Herz wird vom <strong>vegetativen Nervensystem</strong> (unbewusst) reguliert: Bei Anstrengung steigen Puls und Schlagvolumen automatisch. Die Atmung passt sich ebenfalls automatisch an, kann aber – im Gegensatz zum Herzschlag – auch <strong>aktiv beeinflusst</strong> werden (Luft anhalten).</p>
+<p>Wie jeder Muskel arbeitet der Herzmuskel nur, wenn er elektrisch erregt wird. Das Herz bildet diese Erregungen aber <strong>selbst (autonom)</strong>: Wird es über die Kranzgefässe mit Sauerstoff und Nährstoffen versorgt, schlägt es sogar ausserhalb des Körpers weiter.</p>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/he-erregungsbildung.jpg" alt="Herz mit Sinusknoten, AV-Knoten, His-Bündel und Purkinje-Fasern sowie fünf kleine Bilder der Erregungsausbreitung" loading="lazy"><figcaption><strong>Abb. – Erregungsbildung und Erregungsleitung.</strong> In der Mitte das Leitungssystem: Sinusknoten (rechter Vorhof), AV-Knoten, His-Bündel mit seinen Verzweigungen in der Scheidewand und Purkinje-Fasern. Ringsum (1–5) breitet sich die Erregung (violett) vom Vorhof über die Scheidewand bis in die Kammerwände aus.<span class="figure-source">Quelle: Skript «Humanbiologie: Das Herz», S. 4.4 (Abb. 4.5)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Ablauf der Erregung</caption><thead><tr><th>Schritt</th><th>Station</th><th>Was geschieht?</th></tr></thead><tbody>
+<tr><td><strong>1</strong></td><td><strong>Sinusknoten</strong> (Wand des rechten Vorhofs, bei der Mündung der oberen Hohlvene)</td><td>natürlicher <strong>Schrittmacher</strong>: erzeugt rhythmisch einen elektrischen Impuls (Erregung)</td></tr>
+<tr><td><strong>2</strong></td><td>Vorhofmuskulatur → <strong>AV-Knoten</strong></td><td>Die Erregung läuft über die Vorhöfe zum AV-Knoten.</td></tr>
+<tr><td><strong>3</strong></td><td>Vorhöfe; AV-Knoten → <strong>His-Bündel</strong></td><td>Die Vorhöfe kontrahieren. Der AV-Knoten leitet die Erregung <strong>verzögert</strong> an das His-Bündel weiter.</td></tr>
+<tr><td><strong>4</strong></td><td>His-Bündel (rechter und linker Schenkel) → <strong>Purkinje-Fasern</strong></td><td>Die Erregung läuft in der Herzscheidewand nach unten zur Herzspitze.</td></tr>
+<tr><td><strong>5</strong></td><td>Kammerwände</td><td>Von der Herzspitze breitet sich die Erregung über die Kammerwände aus; die <strong>Kammern kontrahieren</strong> (von unten nach oben, das Blut wird Richtung Arterien gepresst).</td></tr>
+</tbody></table></div>
+<div class="summary-merke"><strong>Merke:</strong> Die <strong>Verzögerung im AV-Knoten</strong> sorgt dafür, dass sich Vorhöfe und Kammern <strong>nicht gleichzeitig</strong> zusammenziehen: Zuerst füllen die Vorhöfe die Kammern, dann pumpen die Kammern.</div>
+<ul>
+<li><strong>Regulation:</strong> Trotz der autonomen Erregungsbildung untersteht das Herz dem vegetativen Nervensystem. Es regelt den Takt des Sinusknotens, das Schlagvolumen und die Kontraktionskraft.</li>
+<li><strong>Künstlicher Schrittmacher:</strong> Bei Funktionsstörungen erzeugt ein implantiertes Gerät rhythmische Impulse, die über Elektroden auf den Herzmuskel übertragen werden.</li>
+</ul>`
         },
         {
-          name: "Das Aktionspotenzial als Informationsträger",
-          summary: `<h3>Reizcodierung</h3>
-            <ul>
-              <li><strong>Unterschwellig:</strong> Die Depolarisation erreicht den Schwellenwert (≈ −50 mV) nicht. Es entsteht kein Aktionspotenzial.</li>
-              <li><strong>Überschwellig:</strong> Der Schwellenwert wird erreicht oder überschritten. Es entsteht ein vollständiges Aktionspotenzial (Alles-oder-Nichts).</li>
-              <li>Ein stärkerer Reiz macht das Aktionspotenzial nicht höher, aber er löst es früher und öfter aus.</li>
-              <li>Die <strong>Reizstärke wird nur über die Frequenz</strong> der Aktionspotenziale codiert, nicht über deren Höhe: Je stärker der Reiz, desto höher die Frequenz und desto schneller wird der Schwellenwert erreicht.</li>
-            </ul>`
+          name: "Ablauf eines Herzzyklus",
+          summary: `<p>Das Herz ist eine <strong>Doppelpumpe</strong>: Beide Hälften pumpen <strong>gleichzeitig</strong> und befördern die <strong>gleiche Menge</strong> Blut. Weil der Widerstand im Körperkreislauf höher ist, muss die linke Kammer mit höherem Druck pumpen; ihr Muskel ist dicker und stärker.</p>
+<div class="summary-table-wrap"><table><caption>Grundbegriffe</caption><thead><tr><th>Begriff</th><th>Bedeutung</th></tr></thead><tbody>
+<tr><td><strong>Systole</strong></td><td>Kontraktionsphase (Zusammenziehen) einer Herzhöhle</td></tr>
+<tr><td><strong>Diastole</strong></td><td>Erschlaffungsphase einer Herzhöhle</td></tr>
+<tr><td><strong>Herzaktion</strong></td><td>ein Herzschlag; dauert etwa <strong>eine Sekunde</strong> (Ruhepuls beim Erwachsenen 50–70/min)</td></tr>
+<tr><td><strong>Schlagvolumen</strong></td><td>Das Kammervolumen sinkt bei der Systole von etwa 140 ml auf die Hälfte: ca. <strong>70 ml</strong> werden ausgeworfen.</td></tr>
+</tbody></table></div>
+<p>Weil die Segelklappen während der Kammerkontraktion geschlossen sind, kann in dieser Zeit kein Blut aus den Venen in die Kammern. Die <strong>Vorhöfe sammeln</strong> deshalb währenddessen das Blut aus den Venen. Zudem wird der Vorhof bei der Kammer-Systole grösser, das Herz <strong>saugt</strong> so Blut aus den Venen an.</p>
+
+<h3>Die vier Phasen</h3>
+<div class="summary-table-wrap"><table><caption>Abb. 4.7: Ablauf des Herzzyklus (Lösung; vierte Phase korrigiert)</caption><thead><tr><th>Phase</th><th>Vorhöfe</th><th>Kammern</th><th>Segelklappen</th><th>Taschenklappen</th><th>Blutfluss</th></tr></thead><tbody>
+<tr><td><strong>1 Vorhof-Systole</strong></td><td>kontrahieren</td><td>erschlafft, füllen sich bis zur maximalen Füllung</td><td><strong>offen</strong></td><td>geschlossen</td><td>Vorhof → Kammer</td></tr>
+<tr><td><strong>2 Kammer-Systole: Anspannung</strong></td><td>erschlafft, füllen sich</td><td>kontrahieren, voll; Druck steigt stark, Volumen bleibt gleich</td><td>geschlossen</td><td>geschlossen</td><td>kein Fluss aus der Kammer (nur Venen → Vorhof)</td></tr>
+<tr><td><strong>3 Kammer-Systole: Austreibung</strong></td><td>erschlafft, füllen sich</td><td>kontrahieren, werfen ca. 70 ml aus</td><td>geschlossen</td><td><strong>offen</strong></td><td>Kammer → Aorta bzw. Lungenarterie; Venen → Vorhof</td></tr>
+<tr><td><strong>4 Kammer-Diastole</strong></td><td>erschlafft</td><td>erschlaffen; nach der kurzen Entspannung füllen sie sich</td><td><strong>offen</strong> (sobald Kammerdruck &lt; Vorhofdruck)</td><td>geschlossen</td><td>Venen → Vorhof → Kammer</td></tr>
+</tbody></table></div>
+<div class="summary-merke"><strong>Merke:</strong> Die Klappen öffnen und schliessen sich <strong>passiv durch Druckunterschiede</strong>. In der Kammer-Systole sind die Segelklappen zu, in der Kammer-Diastole die Taschenklappen. In der Anspannungs- und der Entspannungsphase sind <strong>alle Klappen geschlossen</strong>.</div>
+
+<h3>Druckverhältnisse während eines Herzzyklus</h3>
+<figure class="summary-figure summary-figure-full"><a href="Resourcen/Bilder/he-herzzyklus-druck.jpg" target="_blank" rel="noopener"><img src="Resourcen/Bilder/he-herzzyklus-druck.jpg" alt="Diagramm von Vorhof- und Kammervolumen, Klappenstellungen und Kammerdruck während eines Herzzyklus von 0,8 Sekunden" loading="lazy"></a><figcaption><strong>Abb. – Druckverhältnisse während eines Herzzyklus</strong> (0,8 s). Oben das Volumen von Vorhof und Kammer mit den Klappenebenen, unten der Druck in der Kammer. Beim 1. Herzton beginnt die Anspannung, beim 2. Herzton die Entspannung. Zum Vergrössern anklicken.<span class="figure-source">Quelle: Skript «Humanbiologie: Das Herz», S. 4.5 (Abb. 4.6)</span></figcaption></figure>
+<div class="summary-table-wrap"><table class="summary-note-table"><caption>Aufgabe 1: Zeichen im Schema (x und o aus dem Skript; A, B, C im Skript leer bzw. falsch, hier ergänzt)</caption><thead><tr><th>Zeichen</th><th>Bedeutung</th></tr></thead><tbody>
+<tr><td><strong>x</strong></td><td><strong>Schliessen</strong> einer Klappe (Segelklappe am Beginn der Anspannung, Taschenklappe am Ende der Austreibung)</td></tr>
+<tr><td><strong>o</strong></td><td><strong>Öffnen</strong> einer Klappe (Taschenklappe am Ende der Anspannung, Segelklappe am Ende der Entspannung)</td></tr>
+<tr><td><strong>A</strong></td><td>Blut strömt aus den Venen in den <strong>Vorhof</strong> (Vorhof-Diastole: der Vorhof füllt sich).</td></tr>
+<tr><td><strong>B</strong></td><td>Blut strömt bei offener Segelklappe vom Vorhof in die <strong>Kammer</strong> (Füllung in der Kammer-Diastole).</td></tr>
+<tr><td><strong>C</strong></td><td>Blut wird bei offener Taschenklappe aus der Kammer in die <strong>Aorta</strong> bzw. Lungenarterie ausgeworfen (Austreibung).</td></tr>
+<tr><td><strong>Kästchen 1–4</strong> (Interpretation)</td><td>1 Füllungsphase, 2 Beginn der Anspannung (Segelklappenschluss), 3 Austreibung, 4 Entspannung (Taschenklappenschluss)</td></tr>
+</tbody></table></div>
+<div class="summary-table-wrap"><table class="summary-note-table"><caption>Aufgabe 2: Druckverlauf in der linken Kammer während der Systole – im Skript nur angefangen, hier ergänzt</caption><thead><tr><th>Abschnitt</th><th>Druckverlauf</th><th>Begründung</th></tr></thead><tbody>
+<tr><td><strong>Anspannungsphase</strong></td><td>steigt sehr steil an</td><td>Alle Klappen sind geschlossen; der Muskel spannt sich um das eingeschlossene Blut an, das Volumen bleibt gleich (1. Herzton).</td></tr>
+<tr><td><strong>Öffnung der Taschenklappe (o)</strong></td><td>–</td><td>Der Kammerdruck übersteigt den Druck in der Aorta (ca. 80 mmHg).</td></tr>
+<tr><td><strong>Austreibungsphase</strong></td><td>steigt weiter bis zum Maximum (ca. 120 mmHg) und sinkt dann wieder</td><td>Das Blut strömt aus; gegen Ende lässt die Kontraktion nach.</td></tr>
+<tr><td><strong>Schliessen der Taschenklappe (x)</strong></td><td>–</td><td>Der Kammerdruck fällt unter den Aortendruck (2. Herzton).</td></tr>
+<tr><td><strong>Entspannungsphase</strong></td><td>fällt steil ab</td><td>Wieder sind alle Klappen geschlossen; sobald der Druck unter den Vorhofdruck sinkt, öffnet sich die Segelklappe.</td></tr>
+</tbody></table></div>`
+        },
+        {
+          name: "Herzleistung",
+          summary: `<p>Das Auswerfen des Blutes löst eine <strong>Druckwelle</strong> aus, die durch Aorta und Arterien in die Peripherie läuft. An oberflächlichen Arterien kann man sie als <strong>Puls</strong> ertasten, meist auf der Daumenseite des Unterarms oberhalb des Handgelenks.</p>
+<div class="summary-table-wrap"><table><thead><tr><th>Begriff</th><th>Bedeutung</th><th>Ruhewert (Untrainierter)</th></tr></thead><tbody>
+<tr><td><strong>Herzfrequenz</strong> (= Pulsfrequenz)</td><td>Herzschläge pro Minute</td><td>70/min</td></tr>
+<tr><td><strong>Herzschlagvolumen</strong></td><td>Blutmenge, die pro Herzaktion ausgeworfen wird</td><td>70 ml</td></tr>
+<tr><td><strong>Herzminutenvolumen</strong></td><td>Blutmenge, die das Herz pro Minute auswirft; abhängig von der körperlichen Anstrengung</td><td>5 L/min</td></tr>
+</tbody></table></div>
+<p><strong>Formel (ergänzt):</strong> Herzminutenvolumen = Herzfrequenz × Schlagvolumen. Beispiel: 70/min × 70 ml = 4900 ml/min ≈ 5 L/min. Will das Herz mehr Blut fördern, kann es schneller schlagen oder pro Schlag mehr auswerfen.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/he-sportlerherz.jpg" alt="Balkenvergleich der Herzkennzahlen von Untrainiertem und Hochleistungssportler" loading="lazy"><figcaption><strong>Abb. – Herzkennzahlen von Untrainiertem (orange) und Hochleistungssportler (rot).</strong> Das Sportlerherz ist grösser und wirft pro Schlag fast doppelt so viel Blut aus. Deshalb genügen ihm in Ruhe 40 statt 70 Schläge pro Minute für dasselbe Herzminutenvolumen von 5 L/min.<span class="figure-source">Quelle: Skript «Humanbiologie: Das Herz», S. 4.8 (Abb. 4.8)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Abb. 4.8 als Tabelle</caption><thead><tr><th>Kennzahl</th><th>Untrainierter</th><th>Hochleistungssportler</th></tr></thead><tbody>
+<tr><td><strong>Herzgrösse</strong></td><td>300 g</td><td>500 g</td></tr>
+<tr><td><strong>Herzschlagvolumen</strong></td><td>70 ml</td><td>125 ml</td></tr>
+<tr><td><strong>Ruhefrequenz</strong></td><td>70/min</td><td>40/min</td></tr>
+<tr><td><strong>maximale Herzfrequenz</strong></td><td>200/min</td><td>200/min</td></tr>
+<tr><td><strong>Herzminutenvolumen in Ruhe</strong></td><td>5 L/min</td><td>5 L/min</td></tr>
+<tr><td><strong>Herzminutenvolumen maximal</strong></td><td>15 L/min</td><td>25 L/min</td></tr>
+</tbody></table></div>
+
+<h3>Auftrag zur Herzleistung</h3>
+<p><strong>1. Blutmenge pro Tag (Untrainierter, in Ruhe):</strong> 5 L/min × 60 min × 24 h = <strong>7200 L</strong> pro Tag.</p>
+<div class="summary-table-wrap"><table><caption>2. Herzschläge von Untrainiertem und Sportler (Ruhepuls)</caption><thead><tr><th>Zeitraum</th><th>Untrainierter (70/min)</th><th>Sportler (40/min)</th></tr></thead><tbody>
+<tr><td><strong>pro Minute</strong></td><td>70</td><td>40</td></tr>
+<tr><td><strong>pro Stunde</strong> (× 60)</td><td>4200</td><td>2400</td></tr>
+<tr><td><strong>pro Tag</strong> (× 24)</td><td>100 800</td><td>57 600</td></tr>
+<tr><td><strong>pro Jahr</strong> (× 365)</td><td>36 792 000</td><td>21 024 000</td></tr>
+<tr><td><strong>pro Leben</strong> (× 80)</td><td>2 943 360 000</td><td>1 681 920 000</td></tr>
+<tr><td><strong>Differenz pro Leben</strong></td><td colspan="2"><strong>1 261 440 000</strong> Herzschläge (≈ 1,26 Milliarden) spart das Sportlerherz</td></tr>
+</tbody></table></div>
+<div class="summary-merke"><strong>3. Warum ist der Ruhepuls eines Sportlers tiefer?</strong> Durch Training wird der Herzmuskel <strong>grösser und kräftiger</strong> (500 statt 300 g) und wirft pro Schlag mehr Blut aus (125 statt 70 ml). Für das gleiche Herzminutenvolumen von 5 L/min braucht er deshalb weniger Schläge (40 × 125 ml = 5 L). Unter Belastung kann er dafür bis zu 25 statt 15 L/min fördern.</div>`
+        },
+        {
+          name: "Blutdruck und Blutdruckmessung",
+          summary: `<p><strong>Definition:</strong> Der <strong>Blutdruck</strong> ist die Kraft, die das Blut auf die Gefässwände ausübt. Blut strömt immer vom Ort höheren zum Ort niedrigeren Drucks. Dieses <strong>Druckgefälle</strong> erzeugt das Herz: Mit jedem Schlag baut es in den herznahen Gefässen hohen Druck auf.</p>
+<div class="summary-table-wrap"><table><caption>Mittlerer Blutdruck in verschiedenen Gefässen</caption><thead><tr><th>Gefäss</th><th>mittlerer Druck</th></tr></thead><tbody>
+<tr><td><strong>Aorta</strong></td><td>100 mmHg</td></tr>
+<tr><td><strong>Kapillaren</strong></td><td>&lt; 20 mmHg</td></tr>
+<tr><td><strong>Hohlvene</strong></td><td>praktisch 0 mmHg</td></tr>
+<tr><td><strong>Lungenkreislauf</strong></td><td>15 mmHg</td></tr>
+</tbody></table></div>
+<div class="summary-table-wrap"><table><caption>Wovon hängt die Höhe des Blutdrucks ab?</caption><thead><tr><th>Faktor</th><th>Wirkung</th></tr></thead><tbody>
+<tr><td><strong>Herzminutenvolumen</strong></td><td>sinkt das Herzminutenvolumen, sinkt der Blutdruck</td></tr>
+<tr><td><strong>Blutvolumen</strong></td><td>weniger Blut (z. B. nach schwerer Blutung) → tieferer Blutdruck</td></tr>
+<tr><td><strong>Strömungswiderstand</strong></td><td>je enger die Gefässe und je dickflüssiger das Blut (hoher Hämatokrit), desto höher der Blutdruck; je höher der Widerstand, desto langsamer fliesst das Blut</td></tr>
+</tbody></table></div>
+<p>Weil der Druck in den Arterien im Verlauf der Herzaktion schwankt, misst man zwei Werte: den höchsten, <strong>systolischen</strong> Druck (Kontraktion der Kammer) und den tiefsten, <strong>diastolischen</strong> Druck (Entspannung der Kammer). Gemessen wird in <strong>mmHg</strong> (Millimeter Quecksilbersäule): 1 mmHg = 133 Pa = 1,33 mbar.</p>
+
+<h3>Blutdruckmessung nach Riva-Rocci</h3>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/he-blutdruckmessung.jpg" alt="Blutdruckmessung mit Manschette und Stethoskop in drei Stufen, darunter Druckkurve und Geräusche" loading="lazy"><figcaption><strong>Abb. – Blutdruckmessung.</strong> Oben: Manschette um den Oberarm, Stethoskop in der Ellenbeuge; von oben nach unten sinkt der Manschettendruck. Darunter: Der Manschettendruck (Gerade) fällt durch die pulsierende Arteriendruckkurve. Die Geräusche sind nur zwischen systolischem und diastolischem Druck zu hören.<span class="figure-source">Quelle: Skript «Humanbiologie: Das Herz», S. 4.10 (Abb. 4.9)</span></figcaption></figure>
+<ol>
+<li>Manschette direkt über dem Ellbogen um den leicht gebeugten Arm legen, Unterarm auf dem Tisch, Stethoskop in der Armbeuge. Die Person sitzt vorher einige Minuten ruhig.</li>
+<li>Manschette aufpumpen, bis der Blutfluss unterbunden und am Handgelenk kein Puls mehr tastbar ist (ca. 160–180 mmHg).</li>
+<li>Druck <strong>langsam</strong> ablassen. Sobald der Manschettendruck knapp unter dem <strong>systolischen</strong> Druck liegt, zwängt sich das Blut während der Systole durch die zusammengedrückte Arterie: Man hört ein <strong>Geräusch</strong>, der Zeiger beginnt zu schwanken → <strong>oberer Wert</strong>.</li>
+<li>Druck weiter senken: Das Geräusch wird erst lauter, dann leiser und <strong>verschwindet</strong> beim <strong>diastolischen</strong> Druck. Jetzt ist die Arterie dauernd offen, das Blut fliesst lautlos → <strong>unterer Wert</strong>.</li>
+</ol>
+<div class="summary-table-wrap"><table><caption>Manschettendruck und Zustand der Arterie</caption><thead><tr><th>Manschettendruck</th><th>Arterie</th><th>Geräusche</th></tr></thead><tbody>
+<tr><td><strong>höher als systolischer Druck</strong></td><td>dauernd geschlossen (ganz abgeklemmt)</td><td>keine</td></tr>
+<tr><td><strong>zwischen systolischem und diastolischem Druck</strong></td><td>in der Systole offen, in der Diastole geschlossen</td><td>pochende Geräusche (Blut zwängt sich durch)</td></tr>
+<tr><td><strong>tiefer als diastolischer Druck</strong></td><td>dauernd offen, glatte Strömung</td><td>keine</td></tr>
+</tbody></table></div>
+<div class="summary-merke"><strong>Gemessen werden zwei Grenzwerte:</strong> <strong>Systolischer Wert</strong> = der <em>geringste</em> Manschettendruck, bei dem die Arterie noch ganz abgeklemmt ist (Beginn der Geräusche). <strong>Diastolischer Wert</strong> = der <em>höchste</em> Manschettendruck, bei dem die Arterie ganz offen ist (Ende der Geräusche). Automatische Geräte messen statt der Geräusche die Druckschwankungen in der Manschette.</div>
+
+<h3>Blutdruckwerte</h3>
+<div class="summary-table-wrap"><table><caption>Klassifizierung des Blutdrucks für Erwachsene (WHO)</caption><thead><tr><th>Kategorie</th><th>systolisch (mmHg)</th><th>diastolisch (mmHg)</th></tr></thead><tbody>
+<tr><td><strong>optimal</strong></td><td>&lt; 120</td><td>&lt; 80</td></tr>
+<tr><td><strong>normal</strong></td><td>120–130</td><td>80–85</td></tr>
+<tr><td><strong>Hypertonie</strong> (Bluthochdruck)</td><td>&gt; 140</td><td>&gt; 90</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>Ein einzelner Messwert sagt wenig aus.</strong> Erst wiederholte Messungen zu verschiedenen Zeiten zeigen den individuellen Blutdruck.</li>
+<li>Der Blutdruck schwankt im Tagesverlauf: Er steigt bei Anstrengung, Stress und Aufregung und sinkt in Ruhephasen.</li>
+<li>Etwa <strong>20 %</strong> der Bevölkerung in Industrieländern haben einen Blutdruck über 140/90 mmHg, viele ohne Beschwerden und ohne es zu wissen.</li>
+<li>Bei <strong>Hypertonie</strong> bleibt der Druck auch in Ruhe erhöht: Das Herz muss ständig gegen einen höheren Druck pumpen, was Herz und Gefässwände langfristig schädigt.</li>
+</ul>`
+        }
+      ]
+    },
+    {
+      id: "topic-19",
+      name: "Grundlagen der Ökologie und Umweltfaktoren",
+      group: "Ökologie",
+      subtopics: [
+        {
+          name: "Was ist Ökologie?",
+          summary: `<p>Der Begriff stammt von griech. <em>oikos</em> (Haus, Platz) und <em>logos</em> (Lehre). Ernst <strong>Haeckel</strong> definierte 1866 Ökologie als «Wissenschaft von den Beziehungen der Organismen zur umgebenden Aussenwelt», J. von Uexküll 1921 als «Wissenschaft von den Beziehungen zwischen den Lebewesen und ihrer Umwelt».</p>
+<p><strong>Leitfragen der Ökologie:</strong> Wo kommen Lebewesen vor? Wie viele gibt es? Warum kommen sie (nicht) vor? Wie beeinflussen sie sich gegenseitig (z. B. Räuber und Beute, Mensch und Umwelt)? Die Antworten sind z. B. für Artenschutz und Landwirtschaft wichtig.</p>
+<h3>Ökologische Faktoren</h3>
+<div class="summary-table-wrap"><table><caption>Abiotische und biotische Faktoren</caption><thead><tr><th></th><th>Abiotische Faktoren</th><th>Biotische Faktoren</th></tr></thead><tbody><tr><td>Definition</td><td>Einflüsse der <strong>unbelebten</strong> Umwelt (chemisch und physikalisch)</td><td>Einflüsse, die direkt von <strong>Lebewesen</strong> (Beziehungspartnern) ausgehen</td></tr><tr><td>Beispiele</td><td>Temperatur, Licht, Wasser/Feuchtigkeit, Niederschlag, Wind, Bodeneigenschaften (pH, Nährstoffe), Luftzusammensetzung, Relief/Lage, Klima</td><td>Nahrung, Fressfeinde (Räuber), Parasiten und Krankheitserreger, Konkurrenten (eigene und andere Arten), Symbionten, Fortpflanzungspartner, Artgenossen</td></tr></tbody></table></div>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-faktoren-maus.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Ökologische Faktoren, die auf eine Maus wirken</strong>, und ihre Einteilung in abiotische (links) und biotische Faktoren (rechts) bzw. trophische Faktoren (Nahrung) im Zentrum.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 2, S. 2.1 (Abb. 2.1)</span></figcaption></figure>
+<p><strong>Beispiel Igel in der Stadt:</strong> abiotisch sind Lärm, Licht, Abgase, Wärme (Asphalt speichert Sonnenenergie), Trockenheit und die Aussentemperatur, die den Winterschlaf beendet (etwa 15 °C); biotisch sind Menschen, Futter, Fressfeinde (Fuchs, Dachs), Parasiten (Zecken, Fliegenmaden, Lungenwürmer), Nahrung (Regenwürmer, Schnecken) und Artgenossen.</p>`
+        },
+        {
+          name: "Toleranz gegenüber Umweltfaktoren",
+          summary: `<p>Jede Art kann nur innerhalb bestimmter Grenzen eines Umweltfaktors leben. Ermitteln lässt sich das z. B. mit einer <strong>Temperaturorgel</strong>: eine Rinne mit Temperaturgefälle, in der sich Tiere (z. B. Kellerasseln) frei verteilen. Alle anderen Faktoren (Licht, Feuchtigkeit) müssen gleich gehalten werden. Die Häufigkeitsverteilung zeigt eine glockenförmige <strong>Toleranzkurve</strong>.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-temperaturorgel.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Temperaturorgel und Temperaturtoleranzkurve der Kellerassel.</strong> Die meisten Tiere halten sich in einem engen Temperaturbereich auf (Präferendum).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 1, S. 1.2 (Abb. 1.1, 1.2)</span></figcaption></figure>
+<figure class="summary-figure summary-svg"><svg viewBox="0 0 640 300" role="img" aria-label="Toleranzkurve" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+<line x1="50" y1="250" x2="620" y2="250" stroke="#454940"/><line x1="50" y1="250" x2="50" y2="20" stroke="#454940"/>
+<polygon points="620,250 612,246 612,254" fill="#454940"/><polygon points="50,20 46,28 54,28" fill="#454940"/>
+<text x="58" y="30" fill="#454940">Vitalität / Individuenzahl</text><text x="520" y="272" fill="#454940">Umweltfaktor</text>
+<path d="M90,250 C170,248 210,60 335,55 C460,60 500,248 580,250" fill="rgba(88,116,90,.12)" stroke="#58745a" stroke-width="2.5"/>
+<line x1="90" y1="250" x2="90" y2="262" stroke="#c47b59"/><text x="70" y="290" fill="#c47b59">Minimum</text>
+<line x1="580" y1="250" x2="580" y2="262" stroke="#c47b59"/><text x="555" y="290" fill="#c47b59">Maximum</text>
+<line x1="335" y1="55" x2="335" y2="250" stroke="#58745a" stroke-dasharray="4 4"/><text x="310" y="45" fill="#58745a" font-weight="bold">Optimum</text>
+<line x1="185" y1="200" x2="485" y2="200" stroke="#7a7c73" stroke-dasharray="3 3"/>
+<text x="210" y="192" fill="#7a7c73">Fortpflanzungsbereich (Präferendum innerhalb)</text>
+<text x="110" y="238" fill="#7a7c73">Pessimum</text><text x="500" y="238" fill="#7a7c73">Pessimum</text>
+<line x1="90" y1="268" x2="580" y2="268" stroke="#454940"/><text x="230" y="284" fill="#454940">Toleranzbereich (physiologische Potenz)</text>
+</svg><figcaption><strong>Abb. – Toleranzkurve</strong> (digital nachgezeichnet). Zwischen Minimum und Maximum liegt der Toleranzbereich; am Optimum ist die Vitalität am grössten. In den Pessimum-Bereichen nahe den Grenzwerten überlebt die Art, kann sich aber nicht fortpflanzen.<span class="figure-source">Quelle: nach Vorlesung.zip, Lektion 1, S. 1.2 (Abb. 1.3)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><thead><tr><th>Begriff</th><th>Bedeutung</th></tr></thead><tbody><tr><td><strong>Minimum / Maximum</strong></td><td>untere bzw. obere Grenze des Faktors, bei der die Art gerade noch überlebt</td></tr><tr><td><strong>Toleranzbereich</strong> (physiologische Potenz)</td><td>Bereich zwischen Minimum und Maximum, in dem die Art leben kann</td></tr><tr><td><strong>Optimum</strong></td><td>Wert mit der höchsten Vitalität (Wachstum, Aktivität)</td></tr><tr><td><strong>Präferendum</strong></td><td>Bereich, den die Tiere bei freier Wahl bevorzugt aufsuchen</td></tr><tr><td><strong>Pessimum</strong></td><td>Randbereiche des Toleranzbereichs: Überleben möglich, aber keine Fortpflanzung</td></tr><tr><td><strong>Fortpflanzungsbereich</strong></td><td>Bereich, in dem Fortpflanzung möglich ist (enger als der Toleranzbereich)</td></tr></tbody></table></div>
+<p>Gemessene Toleranzkurven zeigen Verhältnisse im Labor; in der Natur kommen weitere Faktoren und Konkurrenz hinzu. Beispiel Küchenschabe und Heimchen: Ihre Toleranzbereiche überlappen sich, aber die bevorzugten Temperaturen unterscheiden sich deutlich – deshalb treten sie kaum in direkte Konkurrenz und lassen auf unterschiedliche natürliche Verbreitungsgebiete schliessen.</p>
+<h3>Euryök und stenök</h3>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-euryoek-stenoek.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Toleranzkurven von Hochmoorameise (oben) und Sumpfschrecke (unten).</strong> Die Ameise toleriert nur einen schmalen Temperaturbereich (stenök), die Sumpfschrecke einen breiten (euryök).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 2, S. 2.1 (Abb. 2.2)</span></figcaption></figure>
+<ul>
+<li><strong>Stenök</strong> (griech. <em>stenos</em>, eng): enger Toleranzbereich bezüglich eines Faktors, z. B. Koala (frisst fast nur Eukalyptus), Panda (Bambus), Bergforelle (Temperatur etwa 10–20 °C). Stenöke Arten sind gute Zeiger für bestimmte Umweltbedingungen.</li>
+<li><strong>Euryök</strong> (griech. <em>eurys</em>, breit): weiter Toleranzbereich, z. B. Fuchs und Ratte (pflanzliche und tierische Nahrung), Spatz, Maus, Mensch.</li>
+</ul>
+<p>Die Begriffe beziehen sich immer auf einen bestimmten Faktor (z. B. euryök bezüglich Nahrung, stenotherm bezüglich Temperatur). Beispiel Getreidesorten: Eine Sorte mit schmaler Temperaturkurve ist stenök, eine mit breiter euryök; Sorten mit unterschiedlichen Optima eignen sich für verschiedene Klimaregionen und konkurrieren kaum miteinander.</p>`
+        },
+        {
+          name: "Temperatur: wechselwarme und gleichwarme Tiere",
+          summary: `<p>Die Temperatur ist ein besonders wichtiger abiotischer Faktor, vor allem für wechselwarme Tiere.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-poikilo-homoiotherm.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Intensität der Lebensvorgänge in Abhängigkeit von der Umgebungstemperatur.</strong> Oben ein wechselwarmes Tier: Aktivität nur in einem Temperaturbereich, darunter Kältestarre, darüber Wärmestarre und Hitzetod. Unten ein gleichwarmes Tier: über einen weiten Bereich konstante Aktivität.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 2, S. 2.2 (Abb. 2.3)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><thead><tr><th></th><th>Wechselwarm (poikilotherm, ektotherm)</th><th>Gleichwarm (homoiotherm, endotherm)</th></tr></thead><tbody><tr><td>Körpertemperatur</td><td>folgt weitgehend der Umgebungstemperatur</td><td>wird durch eigene Wärmeproduktion konstant gehalten</td></tr><tr><td>Aktivität</td><td>nur in einem bestimmten Temperaturbereich; bei Kälte Kältestarre</td><td>über einen weiten Temperaturbereich gleich</td></tr><tr><td>Energiebedarf</td><td>gering</td><td>hoch (Stoffwechselwärme)</td></tr><tr><td>Beispiele</td><td>Fische, Amphibien, Reptilien, die meisten wirbellosen Tiere</td><td>Vögel, Säugetiere</td></tr></tbody></table></div>
+<h3>Warum gibt es Temperaturgrenzen?</h3>
+<ul>
+<li><strong>RGT-Regel</strong> (Reaktionsgeschwindigkeit-Temperatur-Regel): Eine Temperaturerhöhung um 10 °C verdoppelt bis verdreifacht die Geschwindigkeit chemischer Reaktionen – bei Wechselwarmen sinkt die Stoffwechselaktivität bei Kälte entsprechend.</li>
+<li><strong>Minimum:</strong> Unter 0 °C kann Wasser in den Zellen gefrieren; Eiskristalle sprengen die Zellen.</li>
+<li><strong>Maximum:</strong> Hohe Temperaturen <strong>denaturieren</strong> Proteine: Sie verlieren ihre Raumstruktur, Enzyme funktionieren nicht mehr.</li>
+<li>Aussen- und Innentemperatur eines Organismus sind nicht zwingend gleich.</li>
+</ul>`
+        },
+        {
+          name: "Licht, Wasser und Bioindikatoren",
+          summary: `<p>Neben der Temperatur sind <strong>Licht</strong> (Energiequelle der Fotosynthese, Taktgeber für Tages- und Jahresrhythmen) und <strong>Wasser</strong> (Lösungs- und Transportmittel, Ausgangsstoff der Fotosynthese) wichtige abiotische Faktoren. Pflanzen passen sich an Trockenheit z. B. durch verkleinerte Blattoberflächen (Nadeln) oder Wasserspeicherung an.</p>
+<h3>Bioindikatoren (Zeigerorganismen, Charakterformen)</h3>
+<p><strong>Bioindikatoren</strong> sind meist stenöke Organismen, deren Vorkommen oder Fehlen Rückschlüsse auf die Lebensbedingungen eines Standorts zulässt. Sie müssen häufig vorkommen und gut bestimmbar sein; oft sind es Pflanzen. Sie zeigen die Bedingungen über längere Zeit an (biologische Langzeituntersuchung).</p>
+<ul>
+<li><strong>Zeigerpflanzen</strong> zeigen z. B. Trockenheit, Feuchtigkeit, Stickstoffreichtum (z. B. Brennnessel) oder -mangel, Salz, Kalkreichtum oder Kalkmangel an.</li>
+<li><strong>Flechten</strong> als Zeiger der Luftqualität: Je nach SO₂-Belastung kommen andere Arten vor – bei stark belasteter Luft (0,1–0,15 mg SO₂/m³) fast nur Krustenflechten wie die Schüsselchenflechte, bei gering belasteter (bis 0,06 mg) Laubflechten wie die Wandgelbflechte, bei sehr guter Luft (&lt; 0,05 mg) Strauch- und Bartflechten (<em>Usnea</em>).</li>
+<li><strong>Gewässergüte:</strong> Die Wirbellosen unter Steinen im Bach (Charakterformen) zeigen die Belastung eines Fliessgewässers an.</li>
+</ul>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-flechten-zeiger.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Flechten als Zeigerorganismen für die Luftbelastung</strong>: von Krustenflechten (stark belastete Luft) über Laubflechten bis zu Bartflechten (sehr saubere Luft).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 4, S. 4.2 (Abb. 4.1)</span></figcaption></figure>`
+        }
+      ]
+    },
+    {
+      id: "topic-20",
+      name: "Anpassungen an die Temperatur",
+      group: "Ökologie",
+      subtopics: [
+        {
+          name: "Bergmannsche Regel und Oberflächen-Volumen-Verhältnis",
+          summary: `<div class="summary-merke"><strong>Merke:</strong> <strong>Bergmannsche Regel:</strong> Gleichwarme Tiere (Vögel und Säugetiere) sind in kalten Gebieten grösser als nahe verwandte Arten bzw. Unterarten in warmen Gebieten.</div>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-bergmann-tiger.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Verbreitung verschiedener Tigerarten.</strong> Der Sibirische Tiger (bis 280 cm, 300 kg) lebt im kalten Norden, der Sumatra-Tiger (ca. 180 cm) in den Tropen.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 2, S. 2.3 (Abb. 2.4)</span></figcaption></figure>
+<h3>Erklärung: Oberfläche und Volumen</h3>
+<p>Wärme wird über die Körperoberfläche abgegeben, aber im ganzen Volumen produziert. Vergrössert man einen Körper, wächst die Oberfläche (∝ r²) langsamer als das Volumen (∝ r³):</p>
+<div class="summary-table-wrap"><table><caption>Oberflächen-Volumen-Verhältnis (nach Lektion 2, Abb. 2.5)</caption><thead><tr><th>Kantenlänge r (Würfel)</th><th>Oberfläche O = 6r²</th><th>Volumen V = r³</th><th>O/V = 6/r</th></tr></thead><tbody><tr><td>0,01 m</td><td>0,0006 m²</td><td>0,000001 m³</td><td>600</td></tr><tr><td>1 m</td><td>6 m²</td><td>1 m³</td><td>6</td></tr><tr><td>10 m</td><td>600 m²</td><td>1000 m³</td><td>0,6</td></tr><tr><td>1000 m</td><td>6 000 000 m²</td><td>1 000 000 000 m³</td><td>0,006</td></tr></tbody></table></div>
+<p>Ein grösseres Tier hat ein <strong>kleineres Oberflächen-Volumen-Verhältnis</strong> und verliert relativ weniger Wärme – ein Vorteil in kalten Gebieten. Das Prinzip nutzen auch Gruppen: Kaiserpinguine drängen sich dicht zusammen und verkleinern so die gemeinsame Oberfläche.</p>
+<p><strong>Beispiele:</strong> Kaiserpinguin (Antarktis, gross) – Magellan- und Humboldtpinguin – Galapagospinguin (Äquator, klein). Gegenargument «Elefanten leben in warmen Gebieten»: Die Regel gilt für den Vergleich <em>nahe verwandter</em> Arten; Elefanten verringern die Überhitzung mit anderen Anpassungen (z. B. grosse, gut durchblutete Ohren).</p>`
+        },
+        {
+          name: "Allensche Regel und Gegenstromprinzip",
+          summary: `<div class="summary-merke"><strong>Merke:</strong> <strong>Allensche Regel:</strong> Abstehende Körperteile (Ohren, Schwanz, Extremitäten) sind bei gleichwarmen Arten in kalten Gebieten kleiner als bei nahe verwandten Arten in warmen Gebieten.</div>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-allen-fuechse.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Allensche Regel bei Füchsen:</strong> Wüstenfuchs (Fennek, Afrika, sehr grosse Ohren), Rotfuchs (Europa) und Polarfuchs (Arktis, kleine Ohren) mit ihren Verbreitungsgebieten.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 3, S. 3.1 (Abb. 3.1)</span></figcaption></figure>
+<p>Grosse Ohren vergrössern die Oberfläche und dienen in heissen Gebieten der Wärmeabgabe; kleine Körperanhänge verringern in der Kälte den Wärmeverlust. Beispiel Lemminge: Kurzer Schwanz und kompakter Körper sprechen für die Arktis (Halsbandlemming), längerer Schwanz und kleinerer Körper für die wärmere Waldregion.</p>
+<h3>Gegenstromprinzip</h3>
+<p>In Beinen und Flossen von Pinguinen, Enten oder Robben liegen Arterien (warmes Blut vom Körper) und Venen (kaltes Blut aus den Extremitäten) eng nebeneinander und fliessen in <strong>entgegengesetzte Richtungen</strong>. Die Wärme geht vom arteriellen auf das venöse Blut über: Das Blut kommt abgekühlt in den Füssen an (geringer Wärmeverlust an die Umgebung) und vorgewärmt zurück in den Körper.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-gegenstrom-schema.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Blutgefässe unter der Haut beim Pinguin.</strong> A (Kälte): Arterie und Venen liegen eng beisammen; Wärme geht vom arteriellen auf das venöse Blut über, die Haut bleibt kühl. B (Wärme oder nach starker Bewegung): Das Blut fliesst über oberflächliche Venen zurück, Wärme wird an die Haut abgegeben.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 3, S. 3.2 (Abb. 3.3)</span></figcaption></figure>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-gegenstrom-pinguin.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Wärmeverteilung beim Adeliepinguin und im Entenbein:</strong> Bei kalter Umgebung sind die Füsse viel kühler als der Körperkern; durch den Wärmeaustausch im Gegenstrom kühlt das arterielle Blut auf dem Weg in den Fuss ab.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 3, S. 3.2 (Abb. 3.2)</span></figcaption></figure>
+<p>Die Durchblutung kann zusätzlich durch Verengung der Gefässe (<strong>Vasokonstriktion</strong>) reguliert werden.</p>`
+        },
+        {
+          name: "Weitere Strategien gegen Kälte",
+          summary: `<h3>Eisbär</h3>
+<ul>
+<li>gross und kompakt (Optimierung des Oberflächen-Volumen-Verhältnisses), kleine Ohren</li>
+<li>dicke Fettschicht und dichtes Fell; behaarte Fusssohlen</li>
+<li><strong>schwarze Haut</strong> unter weissem Fell: Die farblosen, hohlen Haare lassen Licht zur Haut durch und isolieren gleichzeitig mit der eingeschlossenen Luft; die schwarze Haut absorbiert die Wärme.</li>
+</ul>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-eisbaer-absorption.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Vergleich der Wärmeabsorption:</strong> Bei schwarzem Fell wird die Wärme aussen absorbiert und zum Teil wieder abgestrahlt; beim weissen Fell des Eisbären gelangt Licht durch die Haare bis zur schwarzen Haut und wird unter der isolierenden Schicht absorbiert.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 3, S. 3.3 (Abb. 3.5)</span></figcaption></figure>
+<h3>Frostschutzmittel</h3>
+<p>Manche Fische, Insekten und Amphibien bilden «Gefrierschutzmittel» im Blut (z. B. <strong>Glykoproteine</strong>), die das Gefrieren der Körperflüssigkeiten verhindern. Einige Arten tolerieren sogar das Einfrieren und tauen im Frühling wieder auf.</p>
+<h3>Winterschlaf, Winterruhe, Winterstarre</h3>
+<div class="summary-table-wrap"><table><caption>Strategien während kalter Jahreszeiten</caption><thead><tr><th></th><th>Winterschlaf</th><th>Winterruhe</th><th>Winterstarre</th></tr></thead><tbody><tr><td>Beispiel</td><td>Murmeltier, Igel</td><td>Dachs, Eichhörnchen, Bär</td><td>Ringelnatter, wechselwarme Tiere</td></tr><tr><td>Körpertemperatur</td><td>stark gesenkt (auf etwa 1/10 der normalen Temperatur), aber reguliert</td><td>sinkt kaum</td><td>entspricht der Aussentemperatur</td></tr><tr><td>Merkmale</td><td>Stoffwechsel stark reduziert; sinkt die Temperatur zu tief, wacht das Tier auf (Bewegung erzeugt Wärme) – sehr energieaufwändig</td><td>Stoffwechsel verringert, lange Schlafphasen; Tiere wachen auf und leben von Fettpolstern und Vorräten</td><td>keine Regulation; Tier ist bewegungsunfähig, bei Frost Gefahr des Erfrierens</td></tr></tbody></table></div>
+<div class="summary-table-wrap"><table><caption>Winterschlaf beim Murmeltier (Lektion 3, Tab. 3.2). Zum Vergleich: Ein Mensch verbraucht 8000–10 000 kJ/d.</caption><thead><tr><th></th><th>wach</th><th>Winterschlaf</th></tr></thead><tbody><tr><td>Körpertemperatur</td><td>36 °C</td><td>3 °C</td></tr><tr><td>Herzfrequenz</td><td>80/min</td><td>4–5/min</td></tr><tr><td>Atemzüge</td><td>25–30/min</td><td>alle 5 min</td></tr><tr><td>Energieverbrauch</td><td>1700 kJ/d</td><td>113 kJ/d</td></tr></tbody></table></div>
+<h3>Verhalten und Wachstum</h3>
+<ul>
+<li><strong>Temperaturregulierendes Verhalten</strong> wechselwarmer Tiere (z. B. Agame): morgens Sonnenbaden, bei Hitze Rückzug in den Schatten oder in Höhlen, Spreizstellung, um den Körper vom heissen Boden abzuheben.</li>
+<li><strong>Saisonale Wanderungen</strong> (Vogelzug) – auch wegen der Nahrung.</li>
+<li><strong>Pflanzen:</strong> Laubabwurf (Wasser würde in den Blättern gefrieren, Austrocknung), Überdauerungsorgane (Knospen, Zwiebeln), kleine Blattoberflächen (Nadeln), schmaler Wuchs, damit Äste unter Schneelast nicht brechen, langsames Wachstum (Kiefern im Norden bleiben bei gleichem Alter viel kleiner).</li>
+<li>Bei manchen Reptilien (z. B. Krokodilen, Schildkröten) bestimmt die <strong>Bruttemperatur</strong> das Geschlecht der Jungtiere.</li>
+</ul>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-agame-verhalten.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Temperaturregulierendes Verhalten einer australischen Agame:</strong> A Sonnenbaden, B Aktivität, C Spreizstellung, D Rückzug – jeweils mit Luft- und Körpertemperatur.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 3, S. 3.5</span></figcaption></figure>`
+        }
+      ]
+    },
+    {
+      id: "topic-21",
+      name: "Nahrungsbeziehungen und Stoffkreisläufe",
+      group: "Ökologie",
+      subtopics: [
+        {
+          name: "Nahrungsketten, Nahrungsnetze und Trophiestufen",
+          summary: `<p>Biotische Faktoren wirken zwischen verschiedenen Arten (interspezifisch) und zwischen Tieren derselben Art (intraspezifisch). Die wichtigsten Beziehungen sind Nahrungsbeziehungen.</p>
+<ul>
+<li><strong>Nahrungskette:</strong> lineare Abfolge von Organismen, bei der jeder dem nächsten als Nahrung dient, z. B. Algen → Zooplankton → Hering → Makrele → Thunfisch → Mensch. Die Pfeile zeigen die Richtung des <strong>Energie- und Stoffflusses</strong> («wird gefressen von»).</li>
+<li><strong>Nahrungsnetz:</strong> die verknüpften Nahrungsketten eines Ökosystems. Die meisten Arten ernähren sich von mehreren Arten und haben mehrere Fressfeinde.</li>
+</ul>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-nahrungsnetze.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Nahrungskette im Meer</strong> (links: Algen → Zooplankton → Hering → Makrele → Thunfisch → Mensch) und Nahrungskette an der Eiche (rechts, von den Blättern über Raupe, Kohlmeise bis zum Sperber).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 4, S. 4.2 (Abb. 4.3)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Produzenten, Konsumenten, Reduzenten</caption><thead><tr><th>Rolle</th><th>Ernährung</th><th>Beispiele</th></tr></thead><tbody><tr><td><strong>Produzenten</strong></td><td>bauen mit Fotosynthese aus anorganischen Stoffen (CO₂, Wasser, Mineralsalze) und Sonnenenergie organische Stoffe auf (autotroph)</td><td>grüne Pflanzen, Algen, Phytoplankton</td></tr><tr><td><strong>Konsumenten</strong></td><td>ernähren sich von organischer Substanz anderer Lebewesen (heterotroph): Primärkonsumenten (Pflanzenfresser), Sekundärkonsumenten (Fleischfresser 1. Ordnung), Tertiärkonsumenten …</td><td>Hirsch → Puma → Geier</td></tr><tr><td><strong>Reduzenten</strong> (Destruenten, Zersetzer)</td><td>bauen tote organische Substanz (Leichen, Kot, Laub) zu anorganischen Stoffen ab (Mineralisierung), die wieder den Produzenten zur Verfügung stehen</td><td>Bakterien, Pilze, auch Bodentiere</td></tr></tbody></table></div>
+<p><strong>Trophiestufen</strong> (Ernährungsstufen) beschreiben die Stellung eines Organismus in der Nahrungskette: Produzenten (1. Trophiestufe), Primärkonsumenten (2.), Sekundärkonsumenten (3.) usw. Tote Biomasse aller Stufen geht in die Zersetzerkette.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-trophiestufen.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Trophiestufen mit Stoffkreislauf:</strong> Produzenten → Primär-, Sekundär-, Tertiärkonsumenten (Lebend-Fresser-Kette); tote Biomasse gelangt zu den Destruenten, deren Mineralstoffe wieder von den Produzenten aufgenommen werden.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 4, S. 4.4 (Abb. 4.5)</span></figcaption></figure>
+<h3>Biologisches Gleichgewicht</h3>
+<p>Einzelne Arten können für ein ganzes Ökosystem entscheidend sein. <strong>Beispiel Kaimane am Amazonas</strong> (Hypothese von Fittkau, 1973): Fische laichten in den nährstoffarmen Flussmündungsseen und wurden dort teilweise von Kaimanen gefressen. Die Ausscheidungen der Kaimane düngten das Wasser, sodass reiches Plankton als Nahrung für die Jungfische entstand. Man schoss die Kaimane, um mehr Fische zu haben – doch ohne Kaimane blieben die Seen nährstoffarm, das Plankton fehlte, und die Fischbestände nahmen ab. Eine solche Hypothese liesse sich experimentell prüfen (z. B. Nährstoffmessungen in Seen mit und ohne Kaimane).</p>`
+        },
+        {
+          name: "Stoffkreisläufe: Nährstoffe, Atmung und Kohlenstoff",
+          summary: `<p>Während die Energie ein Ökosystem nur durchfliesst, werden Stoffe im Kreislauf immer wieder verwendet.</p>
+<h3>Nährstoff- und Atmungskreislauf</h3>
+<p>Pflanzen (Produzenten) bauen Nährstoffe auf. Ein Hirsch frisst Knospen und Rinde (1. Konsument), verbraucht einen Teil für seine Bewegung und speichert einen Teil in seinem Körper. Ein Puma erbeutet den Hirsch (2. Konsument), ein Geier frisst vom toten Puma (3. Konsument). Bakterien und Pilze zersetzen die Reste zu einfachen Stoffen, die als Mineralsalze mit dem Wasser wieder von den Pflanzen aufgenommen werden.</p>
+<p>Parallel läuft der <strong>Atmungskreislauf</strong>: Die Fotosynthese der Pflanzen setzt O₂ frei und bindet CO₂; Pflanzen, Tiere und Zersetzer veratmen organische Stoffe mit O₂ zu CO₂. Ohne Fotosynthese hätten die Konsumenten keine Nahrung, ohne Zellatmung fehlte langfristig das CO₂ für die Pflanzen – Fotosynthese (<strong>Assimilation</strong>) und Zellatmung (<strong>Dissimilation</strong>) bedingen sich gegenseitig.</p>
+<h3>Kohlenstoffkreislauf</h3>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/oek-kohlenstoffkreislauf.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Kohlenstoffkreislauf.</strong> Depots in Gigatonnen C (Gt C), Flüsse in Gt C pro Jahr. An Land halten sich Fotosynthese und Atmung (je 110) die Waage; zusätzlich gelangen jährlich etwa 6 Gt C aus fossilen Brennstoffen und 2 Gt C durch Brandrodung in die Atmosphäre.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 5, S. 5.1</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Kohlenstoffspeicher (Lektion 5, Abb. 5.2)</caption><thead><tr><th>Speicher (Depot)</th><th>Gt C</th></tr></thead><tbody><tr><td>Atmosphäre (CO₂)</td><td>750</td></tr><tr><td>Biomasse an Land</td><td>700</td></tr><tr><td>tote Biomasse (Torf, Humus)</td><td>1800</td></tr><tr><td>im Wasser gelöst</td><td>40 000</td></tr><tr><td>Biomasse im Meer</td><td>3</td></tr><tr><td>fossile Reservoire (Kohle, Erdöl, Erdgas)</td><td>5000–10 000</td></tr><tr><td>Lithosphäre (Kalkgestein)</td><td>66 000 000</td></tr></tbody></table></div>
+<p>Der Kreislauf ist «biogen»: Organismen setzen CO₂ ständig um. Wälder werden oft «grüne Lunge» genannt, weil sie O₂ abgeben. Betrachtet man den gesamten Sauerstoffkreislauf eines Waldes mit gleichbleibender Biomasse, verbrauchen Atmung und Zersetzung aber etwa gleich viel O₂, wie die Fotosynthese liefert – ein Netto-Gewinn entsteht nur, solange Biomasse zunimmt.</p>
+<h3>Bioakkumulation</h3>
+<p>Schwer abbaubare Gifte (z. B. Pestizide in Saatbeizmitteln) werden in Organismen in bestimmten Organen (Leber, Fettgewebe) angereichert. Weil jedes Glied der Nahrungskette viele Beutetiere frisst, steigt die Konzentration von Stufe zu Stufe: Pflanzen → Mäuse → Mäusebussard (bis 20 Mäuse pro Tag). Endkonsumenten wie Greifvögel sind am stärksten betroffen. Totfunde von Greifvögeln traten vom Herbst bis zum Vorfrühling auf – nach der Aussaat gebeizter Saaten nahmen die Mäuse das Gift auf und gaben es über die Nahrungskette weiter.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-bioakkumulation.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Bioakkumulation:</strong> Die Giftkonzentration (Punkte) nimmt in der Nahrungskette Saat → Maus → Greifvogel von Stufe zu Stufe zu.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 5, S. 5.2 (Abb. 5.3)</span></figcaption></figure>`
+        },
+        {
+          name: "Wasser- und Stickstoffkreislauf",
+          summary: `<h3>Wasserkreislauf</h3>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-wasserkreislauf.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Geologischer Wasserkreislauf</strong> (in 1000 km³ pro Jahr): Über dem Meer verdunsten 425 und fallen 385 als Niederschlag; 40 werden als Wasserdampf zum Land transportiert. Über Land fallen 111, davon verdunsten bzw. transpirieren 71; 40 fliessen über Flüsse und Grundwasser zurück ins Meer.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 4, S. 4.4 (Abb. 4.6)</span></figcaption></figure>
+<p>Die Bilanz geht auf: Über dem Meer verdunstet mehr (425) als dort niederschlägt (385); dieser Überschuss (40) regnet über Land ab und fliesst als Oberflächen- und Grundwasser zurück (40). Pflanzen tragen über die <strong>Transpiration</strong> wesentlich zur Verdunstung über Land bei.</p>
+<h3>Stickstoffkreislauf</h3>
+<p>Stickstoff ist Bestandteil aller Proteine und Nukleinsäuren.</p>
+<ol><li>Die Atmosphäre besteht zu 78 % aus <strong>N₂</strong>, das Pflanzen und Tiere aber nicht verwerten können.</li><li><strong>Stickstofffixierung:</strong> Bestimmte Bakterien – frei im Boden oder in den Wurzelknöllchen von Pflanzen (z. B. Hülsenfrüchtler) – binden Luftstickstoff und setzen ihn als <strong>Ammonium</strong> (NH₃ bzw. NH₄⁺) frei.</li><li><strong>Mineralisierung (Ammonifikation):</strong> Über Kot, Urin und abgestorbene Organismen gelangt stickstoffhaltiges Material (Eiweisse) in den Boden; Destruenten (Pilze, Bakterien) setzen den Stickstoff als Ammonium frei.</li><li><strong>Nitrifikation:</strong> Nitrifizierende Bakterien oxidieren Ammonium zuerst zu <strong>Nitrit</strong> (NO₂⁻), dann zu <strong>Nitrat</strong> (NO₃⁻).</li><li><strong>Aufnahme:</strong> Pflanzen nehmen Nitrat mit dem Wasser auf und brauchen es für die Eiweisssynthese; Tiere erhalten den Stickstoff über die Nahrung.</li><li><strong>Denitrifikation:</strong> Denitrifizierende Bakterien reduzieren Nitrat zu N₂, das als Gas aus dem Boden entweicht (Stickstoffverlust des Bodens).</li></ol>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-stickstoffkreislauf.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Stickstoffkreislauf:</strong> N₂-fixierende Bakterien (frei und in Wurzelknöllchen), Destruenten, nitrifizierende Bakterien (NH₄⁺ → NO₂⁻ → NO₃⁻), Aufnahme durch Pflanzen und denitrifizierende Bakterien, die N₂ in die Atmosphäre zurückgeben.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 5, S. 5.2 (Abb. 5.4)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Stoffkreisläufe im Vergleich</caption><thead><tr><th>Kreislauf</th><th>Hauptspeicher</th><th>wichtigste Prozesse</th><th>Rolle der Organismen</th></tr></thead><tbody><tr><td>Kohlenstoff</td><td>Lithosphäre, Meer (gelöst), fossile Lager, Atmosphäre</td><td>Fotosynthese, Zellatmung, Zersetzung, Verbrennung</td><td>Produzenten binden CO₂, alle Organismen setzen es frei</td></tr><tr><td>Stickstoff</td><td>Atmosphäre (N₂)</td><td>Fixierung, Ammonifikation, Nitrifikation, Denitrifikation</td><td>fast nur Bakterien können N₂ binden bzw. freisetzen</td></tr><tr><td>Wasser</td><td>Meere</td><td>Verdunstung, Transpiration, Niederschlag, Abfluss</td><td>Pflanzen über Transpiration</td></tr></tbody></table></div>`
+        }
+      ]
+    },
+    {
+      id: "topic-22",
+      name: "Energiefluss und Produktivität",
+      group: "Ökologie",
+      subtopics: [
+        {
+          name: "Energiefluss durch das Ökosystem",
+          summary: `<p>Energie fliesst – im Gegensatz zu den Stoffen – nur in <strong>eine Richtung</strong> durch das Ökosystem: von der Sonne über die Produzenten zu den Konsumenten und Destruenten; sie verlässt das System als Wärme. Ökosysteme brauchen deshalb ständig Energiezufuhr.</p>
+<ul>
+<li>Pflanzen nutzen nur etwa <strong>1 %</strong> des eingestrahlten Sonnenlichts für die Fotosynthese.</li>
+<li>Von einer Trophiestufe zur nächsten werden nur etwa <strong>10 %</strong> der Energie weitergegeben (<strong>10-%-Regel</strong>); der Rest wird veratmet, bleibt unverdaut oder geht in tote Biomasse.</li>
+</ul>
+<h3>Brutto- und Nettoproduktion</h3>
+<ul>
+<li><strong>Bruttoprimärproduktion:</strong> die gesamte von den Produzenten durch Fotosynthese gebundene Energie bzw. organische Substanz (= 100 %).</li>
+<li><strong>Nettoprimärproduktion:</strong> Bruttoproduktion minus die von den Produzenten selbst veratmete Energie (Dissimilation). Sie steht für Wachstum und Fortpflanzung und damit als Nahrung für Konsumenten und Destruenten zur Verfügung.</li>
+<li>Für Konsumenten gilt analog: Aufgenommene und verdaute Nahrung = Bruttoproduktion; davon wird ein Teil als Betriebsenergie veratmet (CO₂ und Exkrete werden ausgeschieden), der Rest dient als Nettoproduktion dem Aufbau von Baustoffen für Wachstum, Reparatur und Fortpflanzung. Unverdautes gelangt mit Kot in die Zersetzerkette.</li>
+</ul>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-bruttoprimaerproduktion.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Brutto- und Nettoprimärproduktion</strong> (Prozent der Bruttoprimärproduktion).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 5, S. 5.3 (Abb. 5.6)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Energiefluss in Prozent der Bruttoprimärproduktion (digitalisiert nach Abb. 5.6)</caption><thead><tr><th>Grösse</th><th>Anteil</th></tr></thead><tbody><tr><td>Sonnenenergie</td><td>10 000 %</td></tr><tr><td>Bruttoprimärproduktion der Produzenten</td><td>100 %</td></tr><tr><td>davon Dissimilation (Zellatmung) der Produzenten</td><td>50 %</td></tr><tr><td>Nettoprimärproduktion</td><td>50 %</td></tr><tr><td>→ zu den Destruenten</td><td>40 %</td></tr><tr><td>→ zu den Konsumenten</td><td>10 %</td></tr><tr><td>Primärkonsumenten: veratmet / an Destruenten / weitergegeben</td><td>5 % / 4 % / 1 %</td></tr><tr><td>Sekundärkonsumenten: veratmet / an Destruenten / Rest</td><td>0,5 % / 0,4 % / 0,1 %</td></tr><tr><td>insgesamt von Destruenten abgebaut</td><td>44,4 %</td></tr><tr><td>insgesamt von Produzenten und Konsumenten abgebaut</td><td>55,6 %</td></tr></tbody></table></div>`
+        },
+        {
+          name: "Ökologische Pyramiden und Produktivität",
+          summary: `<p>Wegen der Verluste von Stufe zu Stufe stehen auf jeder höheren Trophiestufe weniger Energie und meist auch weniger Biomasse zur Verfügung. Dargestellt wird dies in Pyramiden:</p>
+<ul>
+<li><strong>Energiepyramide</strong> (Nettoproduktion pro Fläche und Zeit, z. B. kJ/(m²·d)): immer eine echte Pyramide.</li>
+<li><strong>Zahlenpyramide</strong> (Individuen pro Fläche) und <strong>Biomassepyramide</strong> (kg/m²): nicht immer pyramidenförmig. Im <strong>Wald</strong> tragen wenige grosse Bäume viele Pflanzenfresser – die Zahlenpyramide steht auf dem Kopf. Im <strong>offenen Meer</strong> ist die Biomasse des sehr produktiven, aber kurzlebigen Phytoplanktons zeitweise kleiner als die des Zooplanktons.</li>
+</ul>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/oek-pyramiden-wald-meer.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Vergleich Wald und offenes Meer:</strong> Individuenzahl pro Fläche (links), Biomasse pro Fläche (Mitte) und Nettoproduktion (rechts). Nur die Produktionspyramide hat in beiden Ökosystemen die typische Form.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 5, S. 5.5 (Abb. 5.10)</span></figcaption></figure>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-energiepyramide-meer.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Energie- und Nahrungspyramide im Meer:</strong> Phytoplankton → Zooplankton → Planktonfresser → Raubfische → Robben → Schwertwale.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 5, S. 5.4 (Abb. 5.9)</span></figcaption></figure>
+<h3>Folgerungen</h3>
+<ul>
+<li>Nahrungsketten sind selten länger als 4–5 Glieder, weil auf den oberen Stufen zu wenig Energie bleibt.</li>
+<li>Das grösste Tier, der <strong>Bartenwal</strong>, ernährt sich von Produzenten und Primärkonsumenten (Plankton, Krill): Als Endkonsument einer langen Kette stünde ihm viel zu wenig Energie zur Verfügung.</li>
+<li><strong>Ernährung des Menschen:</strong> Für 1 kcal Brot braucht es viel weniger Sonnenenergie und Fläche als für 1 kcal Rindfleisch, das eine Trophiestufe höher liegt.</li>
+<li>Die <strong>Produktivität</strong> der Landwirtschaft (Energieertrag : Energieaufwand) sinkt mit zunehmender Technisierung: Hackbau ohne Dünger und Spritzmittel hat ein günstiges Verhältnis, intensiver Anbau mit Dünger, Spritzmitteln und Maschinen ein ungünstigeres.</li>
+</ul>`
+        }
+      ]
+    },
+    {
+      id: "topic-23",
+      name: "Biotische Beziehungen und ökologische Nische",
+      group: "Ökologie",
+      subtopics: [
+        {
+          name: "Beziehungen zwischen Arten",
+          summary: `<p>Die Beziehungen zwischen zwei Arten lassen sich nach Nutzen (+), Schaden (−) und Neutralität (0) für die Partner einteilen:</p>
+<div class="summary-table-wrap"><table><caption>Beziehungen zwischen Arten</caption><thead><tr><th>Beziehung</th><th>Zeichen</th><th>Beschreibung</th><th>Beispiele</th></tr></thead><tbody><tr><td><strong>Karpose</strong></td><td>+/0</td><td>nur ein Partner profitiert, der andere wird nicht geschädigt</td><td>Brandgans brütet in Fuchsbauten (wird wegen einer Beisshemmung nicht gefressen)</td></tr><tr><td><strong>Kommensalismus</strong> (Mitessertum)</td><td>+/0</td><td>ein Partner ernährt sich von Nahrungsresten eines anderen, ohne ihm zu schaden</td><td>Aasfresser an Beuteresten; Silberfischchen im Haus</td></tr><tr><td><strong>Symbiose</strong> (im engeren Sinn)</td><td>+/+</td><td>langfristige, oft lebenslange Gemeinschaft zum Vorteil beider; oft obligatorisch (lebensnotwendig)</td><td>Flechten (Pilz + Alge), Darmbakterien des Menschen (Verdauung, Schutz vor anderen Bakterien)</td></tr><tr><td><strong>Mutualismus</strong></td><td>+/+</td><td>kurzfristige, regelmässig wiederkehrende Gemeinschaft zum Vorteil beider</td><td>Blütenpflanzen und Bienen (teilweise gemeinsam entwickelt)</td></tr><tr><td><strong>Parasitismus</strong></td><td>+/−</td><td>der Parasit schädigt den meist deutlich grösseren Wirt, ohne ihn unmittelbar zu töten; <em>Ektoparasiten</em> leben aussen, <em>Endoparasiten</em> im Wirt</td><td>Zecke, Floh, Blutegel (ekto); Bandwurm (endo)</td></tr><tr><td><strong>Parasitoide</strong></td><td>+/−</td><td>Parasiten, die ihren Wirt schliesslich töten</td><td>Schlupfwespen legen Eier in Raupen, die Larven fressen die Raupe von innen auf</td></tr><tr><td><strong>Räuber-Beute-Beziehung</strong></td><td>+/−</td><td>der Räuber tötet und frisst die Beute; Pflanzenfresser gehören im weiten Sinn auch dazu</td><td>Luchs – Schneeschuhhase; Karnivoren und Herbivoren</td></tr><tr><td><strong>Konkurrenz</strong></td><td>−/−</td><td>Wettbewerb um Nahrung, Raum oder andere Ressourcen, zwischen Arten (<em>interspezifisch</em>) oder innerhalb einer Art (<em>intraspezifisch</em>)</td><td>Zebra und Gnu um Gras; Artgenossen um Reviere</td></tr></tbody></table></div>
+<p>Karpose, Kommensalismus, Parasitismus, Parasitoide und Räuber-Beute werden je nach Einteilung als <strong>Antibiose</strong> (+/−) bzw. einseitige Beziehungen zusammengefasst. Die Übergänge sind fliessend: Seepocken auf Walen nützen z. B. den Transport (Karpose), können den Wal bei starkem Befall aber schädigen.</p>
+<p><strong>Grössenverhältnisse:</strong> Räuber sind meist grösser als ihre Beute; durch spezielle Jagdtechniken (Jagd im Rudel, Gift) können sie aber auch viel grössere Beute erlegen. Parasiten und Parasitoide sind kleiner als ihr Wirt.</p>`
+        },
+        {
+          name: "Die ökologische Nische",
+          summary: `<p>Die <strong>ökologische Nische</strong> ist die Gesamtheit aller Ansprüche einer Art an die biotischen und abiotischen Umweltfaktoren, die für ihr Bestehen wichtig sind – und die Art, wie sie ihre Umwelt nutzt. Sie ist kein Ort, sondern ein «Beruf» der Art, mathematisch ein n-dimensionaler Raum (eine Dimension pro Faktor).</p>
+<p><strong>Beispiel Seevögel:</strong> Möwen greifen Fische an der Wasseroberfläche und sammeln Wirbellose am Strand; Seeschwalben und Basstölpel sind Stosstaucher; Alken und Kormorane jagen als Paddel- bzw. Flugtaucher. Watvögel nutzen mit unterschiedlich langen Schnäbeln Beute in verschiedenen Bodentiefen. So konkurrieren die Arten kaum direkt um Nahrung.</p>
+<h3>Fundamentale und reale Nische</h3>
+<ul>
+<li><strong>Fundamentale Nische</strong> (physiologische Potenz): Bereich der Umweltfaktoren, in dem eine Art ohne Konkurrenz leben könnte – ermittelt z. B. mit Laborwerten.</li>
+<li><strong>Reale Nische</strong> (ökologische Potenz): Bereich, den die Art unter Konkurrenz in der Natur tatsächlich besiedelt – ermittelt mit Beobachtungswerten. Die reale Nische ist meist kleiner.</li>
+</ul>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-nischenraummodell.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Nischenraummodell mit drei Variablen.</strong> A: fundamentale Nische (physiologische Potenz) von Art A; B: reale Nische (ökologische Potenz) von Art A bei Konkurrenz mit Art B.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 6, S. 6.4 (Abb. 6.1)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><thead><tr><th>Physiologische Potenz</th><th>Ökologische Potenz</th></tr></thead><tbody><tr><td>= Toleranzbereich eines Umweltfaktors, in dem eine Art <strong>ohne Konkurrenz</strong> vorkommen kann (autökologisch)</td><td>Bereich eines Umweltfaktors, in dem eine Art <strong>mit Konkurrenz</strong> vorkommen kann (synökologisch)</td></tr></tbody></table></div>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-baumarten-nische.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Umweltansprüche von Rotbuche, Stieleiche und Waldkiefer</strong> bezüglich Bodenfeuchtigkeit und Säuregehalt: Wachstum möglich (hell), optimales Wachstum (dunkel) und natürliches Vorkommen in Mischkulturen (schraffiert).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 6, S. 6.6 (Abb. 6.4)</span></figcaption></figure>
+<p>Alle drei Baumarten wachsen allein am besten auf mittleren Böden. In Mischkultur verdrängt die konkurrenzstarke <strong>Rotbuche</strong> die anderen aus dem Optimalbereich: Die <strong>Stieleiche</strong> weicht auf nasse, die <strong>Waldkiefer</strong> auf trockene oder nasse, saure Böden aus – Bereiche, die für sie physiologisch gar nicht optimal sind. Ebenso zeigt die Waldkiefer im Versuchsbeet ihr Optimum auf frischem Boden, in der Natur kommt sie aber v. a. an trockenen und nassen Standorten vor. Die realen Nischen der Arten überlappen sich kaum.</p>`
+        }
+      ]
+    },
+    {
+      id: "topic-24",
+      name: "Minimumgesetz, Konvergenz und Konkurrenz",
+      group: "Ökologie",
+      subtopics: [
+        {
+          name: "Minimumgesetz und Konvergenz",
+          summary: `<h3>Minimum- oder Pessimumgesetz</h3>
+<div class="summary-merke"><strong>Merke:</strong> Das Vorkommen und die Häufigkeit einer Art werden von demjenigen Umweltfaktor am stärksten begrenzt, der am weitesten vom Optimum entfernt ist bzw. im Pessimum liegt (Liebig).</div>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-liebig-fass.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Liebigs Fassmodell:</strong> Die kürzeste Daube (der Minimumfaktor, z. B. ein Nährstoff wie N, K, P) bestimmt die Höhe des Flüssigkeitsspiegels, also den Ernteertrag.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 7, S. 7.1 (Abb. 7.1)</span></figcaption></figure>
+<p>Für die Landwirtschaft heisst das: Dünger mit reichlich vorhandenen Nährstoffen nützt nichts, solange ein anderer Nährstoff im Minimum ist.</p>
+<h3>Konvergenz (Analogie)</h3>
+<p><strong>Konvergenz</strong> ist die Ähnlichkeit im Körperbau (oder Verhalten) zwischen nicht näher verwandten Organismen, entstanden durch Anpassung an ähnliche Umweltbedingungen bzw. eine ähnliche ökologische Nische. Solche Merkmale heissen <em>analog</em>.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-konvergenz.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Konvergente Entwicklung:</strong> stromlinienförmige Körper bei Delfin, Hai, Knochenfisch, Lederschildkröte und Pinguin (links); ähnliche Formen bei Beuteltieren Australiens und Plazentatieren anderer Kontinente (rechts), z. B. Beutelwolf – Wolf, Flugbeutler – Flughörnchen.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 7, S. 7.1 (Abb. 7.2)</span></figcaption></figure>
+<ul>
+<li>Nektarvögel verschiedener Kontinente: langer, dünner Schnabel (Nektar aus Blüten).</li>
+<li>Sukkulente Pflanzen (Kakteen, Wolfsmilch): wasserspeichernde Stängel, Blätter fehlen weitgehend – Anpassung an Trockenheit.</li>
+<li>Wühlende Säugetiere (Maulwurf, Goldmull, Beutelmull): kräftige Grabkrallen, kleine Augen.</li>
+</ul>
+<p>Um trotz äusserer Ähnlichkeit die Verwandtschaft zu prüfen, untersucht man innere Anatomie, Fortpflanzung (z. B. Beutel oder Plazenta) und die DNA.</p>`
+        },
+        {
+          name: "Konkurrenz und Konkurrenzausschlussprinzip",
+          summary: `<p>Eine <strong>Population</strong> ist die Gesamtheit der Individuen einer Art in einem bestimmten Gebiet, die eine Fortpflanzungsgemeinschaft bilden. Konkurrenz entsteht, wenn Arten oder Individuen dieselben begrenzten Ressourcen nutzen.</p>
+<h3>Experiment mit Pantoffeltierchen (Gause)</h3>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-pantoffeltierchen.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Populationswachstum zweier Pantoffeltierchen-Arten.</strong> Getrennt gehalten wachsen <em>P. aurelia</em> und <em>P. caudatum</em> beide bis zu einer stabilen Dichte. Zusammen im selben Gefäss überlebt nur <em>P. aurelia</em>; <em>P. caudatum</em> wird eliminiert.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 7, S. 7.2 (Abb. 7.3)</span></figcaption></figure>
+<div class="summary-merke"><strong>Merke:</strong> <strong>Konkurrenzausschlussprinzip:</strong> Zwei Arten mit genau gleicher ökologischer Nische können nicht dauerhaft im selben Lebensraum zusammen vorkommen.</div>
+<p><strong>Versuch mit Mehlkäfern:</strong> In Mehl allein verdrängt der Reismehlkäfer den kleineren Getreideplattkäfer vollständig (beide fressen auch artfremde Larven). Bietet man kleine Glasröhrchen als Unterschlupf an, in die nur die kleinen Larven des Getreideplattkäfers passen, überleben beide Arten: Die Strukturierung des Lebensraums schafft eine zusätzliche Nische.</p>
+<h3>Konsequenzen des Konkurrenzausschlussprinzips</h3>
+<div class="summary-table-wrap"><table><caption>Folgen von Konkurrenz</caption><thead><tr><th>Konsequenz</th><th>Beschreibung</th><th>Beispiele</th></tr></thead><tbody><tr><td><strong>I. Aussterben / Verdrängung</strong></td><td>unter bestimmten Bedingungen verdrängt die stärkere Art die schwächere</td><td><em>P. aurelia</em> verdrängt <em>P. caudatum</em></td></tr><tr><td><strong>II. Einnischung (Koexistenz)</strong></td><td>durch Selektion spezialisieren sich die Arten auf unterschiedliche Nischen; aus einer Art können zwei werden</td><td>Darwinfinken auf den Galapagosinseln</td></tr><tr><td><strong>III. Ausweichen</strong></td><td>die Arten nutzen verschiedene Lebensräume, Aktivitätszeiten, Orte der Nahrungssuche oder Beutespektren</td><td>Sperber (tagaktiv) und Waldkauz (nachtaktiv); Kohlmeise und Blaumeise suchen in verschiedenen Bereichen des Baums Nahrung</td></tr></tbody></table></div>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-einnischung.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Modell der Einnischung durch Selektionsdruck.</strong> Konkurrenz im Bereich des alten Anpassungsoptimums (Mitte) begünstigt Individuen mit abweichenden Merkmalen; es entstehen zwei neue Anpassungsoptima – aus einer Art werden zwei.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 7, S. 7.3 (Abb. 7.4)</span></figcaption></figure>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-darwinfinken.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Darwinfinken:</strong> Aus einer körnerfressenden Ausgangsart vom Festland entstanden auf den Galapagosinseln Arten mit unterschiedlichen Schnabelformen für Insekten, Kakteen, Körner am Boden und in Bäumen (adaptive Radiation).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 7, S. 7.3 (Abb. 7.5)</span></figcaption></figure>`
+        }
+      ]
+    },
+    {
+      id: "topic-25",
+      name: "Populationsökologie",
+      group: "Ökologie",
+      subtopics: [
+        {
+          name: "Populationsstruktur",
+          summary: `<p>Ein <strong>Ökosystem</strong> ist ein dynamisches Beziehungsgefüge aus einer Lebensgemeinschaft (Biozönose) und ihrem Lebensraum (Biotop), verbunden durch Stoffkreisläufe und Energiefluss.</p>
+<h3>Populationsgrösse – beeinflussende Grössen</h3>
+<ul>
+<li><strong>Geburtenrate</strong> (Fertilität) und Alter bei der Geschlechtsreife (<strong>Generationszeit</strong>)</li>
+<li><strong>Sterberate</strong> und Sterblichkeit pro Altersklasse – entscheidend ist, ob Individuen vor oder nach der Fortpflanzung sterben</li>
+<li>weitere Faktoren: Nahrung, Krankheiten, Feinde, Konkurrenz, Ein- und Auswanderung</li>
+</ul>
+<p>Zwei Populationen mit gleicher Kinderzahl pro Individuum entwickeln sich unterschiedlich, wenn die Generationszeit verschieden ist: Wer früher Nachkommen hat, wächst schneller. Grössere Arten haben in der Regel längere Generationszeiten (Stunden bei Bakterien, Jahrzehnte bei Walen).</p>
+<h3>Dichte, Verteilung und Zusammensetzung</h3>
+<ul>
+<li><strong>Populationsdichte:</strong> Individuenzahl pro Fläche (oder Volumen).</li>
+<li><strong>Räumliche Verteilung:</strong> zufällig, gleichmässig (z. B. bei Revieren), entlang eines Gradienten oder geklumpt (z. B. um Ressourcen, in Gruppen).</li>
+<li><strong>Demografische Zusammensetzung:</strong> Alters- und Geschlechtsstruktur, dargestellt in Alterspyramiden.</li>
+</ul>`
+        },
+        {
+          name: "Populationswachstum: exponentiell und logistisch",
+          summary: `<p>Die <strong>Wachstumsrate</strong> r einer Population hängt von Geburten und Todesfällen ab:</p>
+<p style="text-align:center"><strong>r = (b − d) / N</strong></p>
+<p>b = Anzahl Geburten, d = Anzahl Todesfälle pro Zeiteinheit, N = Individuenzahl. <em>Beispiel:</em> 1000 Individuen, 300 Geburten, 100 Todesfälle pro Jahr: r = (300 − 100)/1000 = 0,2 = 20 % pro Jahr.</p>
+<h3>Exponentielles Wachstum</h3>
+<p>Bei unbegrenzten Ressourcen und konstanter Wachstumsrate r &gt; 0 wächst die Population <strong>exponentiell</strong>: Die Verdoppelungszeit bleibt konstant, die Kurve wird immer steiler (J-Kurve). Bei r = 0 bleibt die Grösse konstant, bei r &lt; 0 nimmt sie exponentiell ab.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-exponentielles-wachstum.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Populationsgrösse in Abhängigkeit von der Wachstumsrate:</strong> exponentielle Zunahme bei r &gt; 0 (links), konstante Grösse bei r = 0 und exponentielle Abnahme bei r &lt; 0 (rechts).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 8, S. 8.4 (Abb. 8.6)</span></figcaption></figure>
+<h3>Logistisches Wachstum</h3>
+<p>In der Natur sind Ressourcen begrenzt. Das Wachstum folgt einer S-förmigen Kurve:</p>
+<ol><li><strong>Anlaufphase:</strong> wenige Individuen, langsamer Zuwachs.</li><li><strong>Exponentielle Phase:</strong> rasche Zunahme; der tägliche Zuwachs steigt.</li><li><strong>Wendepunkt bei K/2:</strong> Der tägliche Zuwachs ist maximal und nimmt danach ab, weil Ressourcen knapper werden.</li><li><strong>Stationäre Phase:</strong> Die Population pendelt um die <strong>Umweltkapazität K</strong>; Geburten- und Sterberate sind gleich hoch, r = 0.</li></ol>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-logistisches-wachstum.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Logistisches Wachstum:</strong> Die Populationsgrösse nähert sich der Umweltkapazität K; der tägliche Zuwachs erreicht am Wendepunkt sein Maximum; die relative Wachstumsrate bleibt zuerst konstant und sinkt dann auf null.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 8, S. 8.4 (Abb. 8.7)</span></figcaption></figure>
+<p><strong>Umweltkapazität K</strong> (carrying capacity): die maximale Anzahl Individuen einer Art, die in einem Ökosystem dauerhaft überleben kann. Beispiel Schafpopulation in Südaustralien (1840–1930): nach starkem Anstieg Schwankungen um einen Mittelwert, beeinflusst durch die jährlichen Niederschläge.</p>`
+        },
+        {
+          name: "Dichteabhängige und dichteunabhängige Faktoren",
+          summary: `<ul>
+<li><strong>Dichteabhängige Faktoren</strong> beeinflussen die Populationsgrösse und hängen selbst von der Dichte ab: Ihre negative Wirkung verstärkt sich mit zunehmender Dichte. Sie wirken <strong>regulierend</strong> (negative Rückkopplung, «Kreis»).</li>
+<li><strong>Dichteunabhängige Faktoren</strong> wirken unabhängig von der Dichte. Sie wirken <strong>limitierend, aber nicht regulierend</strong>.</li>
+</ul>
+<div class="summary-table-wrap"><table><caption>Dichteunabhängige und dichteabhängige Faktoren (Lektion 9, Tab. 9.1)</caption><thead><tr><th>Dichteunabhängige Faktoren</th><th>Dichteabhängige Faktoren</th></tr></thead><tbody><tr><td>abiotische Faktoren: Wetter, Temperatur, Wasser, Naturkatastrophen, Radioaktivität, Chemikalien</td><td>Dichtestress (sozialer Stress), Abwanderung</td></tr><tr><td>interspezifische Konkurrenz</td><td>intraspezifische Konkurrenz (Nahrung, Raum)</td></tr><tr><td>nicht ansteckende Krankheiten</td><td>ansteckende (epidemische) Krankheiten</td></tr><tr><td>unspezifische Fressfeinde (Räuber, die andere Beute bevorzugen)</td><td>artspezifische Fressfeinde und Parasiten</td></tr></tbody></table></div>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-dichteregulation.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Wirkung dichteabhängiger und dichteunabhängiger Faktoren auf die Populationsdichte.</strong> Dichteabhängige Faktoren (oben) bilden mit der Dichte einen Regelkreis; dichteunabhängige (unten) wirken nur in eine Richtung.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 9, S. 9.1 (Abb. 9.1)</span></figcaption></figure>
+<p><strong>Beispiele:</strong> Bei Reismehlkäfern steigt die Sterberate mit der Anfangszahl der Eier (Kannibalismus, Nahrungsmangel); bei Dünengras sinkt die Samenzahl pro Pflanze mit zunehmender Pflanzendichte (Konkurrenz um Licht, Wasser, Nährstoffe). Beides sind dichteabhängige Effekte.</p>`
+        },
+        {
+          name: "r- und K-Strategen, Überlebenskurven",
+          summary: `<p>Die Bezeichnungen leiten sich aus der logistischen Wachstumskurve ab: <strong>r-Strategen</strong> setzen auf eine hohe Wachstumsrate r, <strong>K-Strategen</strong> auf ein Leben nahe der Umweltkapazität K.</p>
+<div class="summary-table-wrap"><table><caption>Typische Merkmale von r- und K-Strategen (Lektion 9, Tab. 9.2)</caption><thead><tr><th>Kennzeichen</th><th>r-Stratege</th><th>K-Stratege</th></tr></thead><tbody><tr><td>Anzahl Nachkommen</td><td>viele</td><td>wenige</td></tr><tr><td>Grösse der Nachkommen</td><td>klein</td><td>gross</td></tr><tr><td>Selbstständigkeit der Nachkommen</td><td>gross (früh selbstständig)</td><td>klein</td></tr><tr><td>elterliche Fürsorge</td><td>gering oder fehlend</td><td>intensiv</td></tr><tr><td>Körpergrösse</td><td>meist klein</td><td>meist gross</td></tr><tr><td>Generationszeit</td><td>kurz</td><td>lang</td></tr><tr><td>Lebenserwartung</td><td>kurz</td><td>lang</td></tr><tr><td>Wachstumsgeschwindigkeit der Population</td><td>schnell</td><td>langsam</td></tr><tr><td>Populationsgrösse</td><td>stark schwankend, oft gross</td><td>relativ konstant nahe K</td></tr><tr><td>Abhängigkeit von Umweltschwankungen</td><td>gross</td><td>klein</td></tr><tr><td>Stärke der Strategie</td><td>rasche Neubesiedlung instabiler Lebensräume</td><td>Konkurrenzstärke in stabilen Lebensräumen</td></tr><tr><td>Beispiele</td><td>Bakterien, Insekten, Mäuse, Kaninchen, Amphibien, Fische</td><td>Elefanten, Wale, Menschenaffen, Mensch, Greifvögel</td></tr></tbody></table></div>
+<p>Die meisten Arten liegen zwischen den Extremen; die Einteilung ist relativ (eine Maus ist r-Stratege im Vergleich zum Elefanten, aber K-Stratege im Vergleich zum Insekt).</p>
+<h3>Überlebenskurven</h3>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-ueberlebenskurven.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Überlebenskurven</strong> (Anzahl Überlebende, logarithmisch, gegen Prozent der maximalen Lebensspanne). Typ I: hohe Sterblichkeit erst im Alter (z. B. moderner Mensch, viele grosse Säugetiere). Typ II: konstante Sterblichkeit (z. B. viele Vögel und Echsen). Typ III: sehr hohe Sterblichkeit in der Jugend (z. B. Fische, Insekten, viele Pflanzen).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 9, S. 9.3 (Abb. 9.4)</span></figcaption></figure>
+<p>K-Strategen zeigen typischerweise Kurven vom Typ I, r-Strategen vom Typ III.</p>`
+        }
+      ]
+    },
+    {
+      id: "topic-26",
+      name: "Sukzession, Stabilität und Räuber-Beute-Dynamik",
+      group: "Ökologie",
+      subtopics: [
+        {
+          name: "Sukzession und Klimax",
+          summary: `<ul>
+<li><strong>Sukzession:</strong> die zeitliche Abfolge (Ablösung) von Lebensgemeinschaften an einem Ort, weil sich das Gefüge der ökologischen Faktoren verändert – oft durch die Organismen selbst (z. B. Bodenbildung, Beschattung).</li>
+<li><strong>Klimax:</strong> die Schlussgesellschaft – das verhältnismässig stabile Endstadium der Vegetationsentwicklung in einem Gebiet unter natürlichen Bedingungen (in Mitteleuropa meist Buchen-Eichen-Mischwald).</li>
+<li><strong>Primärsukzession:</strong> Besiedlung eines völlig neu entstandenen Lebensraums ohne Boden, z. B. Vulkaninsel, Gletschervorfeld.</li>
+<li><strong>Sekundärsukzession:</strong> Wiederbesiedlung nach einer grossen Störung, bei der der Boden erhalten bleibt, z. B. Brand, Kahlschlag, Sturm.</li>
+</ul>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/oek-sukzession-mitteleuropa.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Natürliche Sukzession in Mitteleuropa:</strong> Kraut-Gras-Flur (0–10 Jahre: Kreuzkraut, Adlerfarn, Weidenröschen) → Gebüsch (Brombeere, Himbeere, Holunder) → Pionierwald (20–100 Jahre: Birke, Zitterpappel, Kiefer, Vogelbeere) → Klimaxwald (über 100 Jahre: Buche, Eiche, Fichte). Die Nettoproduktion steigt früh an, die Biomasse nimmt bis zur Klimax zu.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 9, S. 9.4 (Abb. 9.5)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Veränderungen im Verlauf der Sukzession</caption><thead><tr><th></th><th>Pionierstadium</th><th>Klimaxstadium</th></tr></thead><tbody><tr><td>Produktion : Abbau</td><td>Produktion grösser als Abbau (Biomasse nimmt zu)</td><td>Produktion ≈ Abbau</td></tr><tr><td>Strategen</td><td>eher r-Strategen</td><td>eher K-Strategen</td></tr><tr><td>Spezialisierung</td><td>eher Generalisten</td><td>eher Spezialisten</td></tr><tr><td>Nahrungsnetz</td><td>einfach, kurze Ketten</td><td>lange, verzweigte Nahrungsketten</td></tr><tr><td>Artenzahl</td><td>tief</td><td>hoch</td></tr></tbody></table></div>
+<h3>Zonation</h3>
+<p><strong>Zonation</strong> ist das räumliche Nebeneinander verschiedener Lebensgemeinschaften, z. B. die Gürtel am Ufer eines verlandenden Sees (Wasserpflanzen, Röhricht, Seggen, Bruchwald). Merke: <strong>Zonation = räumlich, Sukzession = zeitlich</strong>. Bei der Verlandung wandern die Zonen mit der Zeit seewärts – das räumliche Nebeneinander spiegelt die zeitliche Abfolge.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-zonation.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Zonation eines Ufergürtels:</strong> Waagrecht das räumliche Nebeneinander der Zonen A–D (Zonation), senkrecht ihre zeitliche Verschiebung beim Verlanden (Sukzession).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 9, S. 9.5 (Abb. 9.7)</span></figcaption></figure>`
+        },
+        {
+          name: "Mosaik-Zyklus-Modell",
+          summary: `<p>Das <strong>Mosaik-Zyklus-Modell</strong> geht davon aus, dass Ökosysteme eine wiederkehrende Abfolge (Zyklus) verschiedener Reifestadien durchlaufen. Innerhalb eines Ökosystems findet man auf Teilflächen (Mosaik) gleichzeitig verschiedene Sukzessionsstadien – typisch für vom Menschen unbeeinflusste Urwälder. Die Natur «steht nicht still».</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-mosaik-zyklus.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Schema der ablaufenden Sukzession in einem Urwaldgebiet in Österreich:</strong> Die Waldstadien folgen zyklisch aufeinander und kommen gleichzeitig nebeneinander vor.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 10, S. 10.1 (Abb. 10.1)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Mosaikmodell eines Buchen-Eichen-Mischwaldes (Lösung Aufgabe 9.4, Lektion 10, S. 10.2)</caption><thead><tr><th>Phase</th><th>Dauer (ca.)</th><th>Prägende Arten und Merkmale</th></tr></thead><tbody><tr><td>Pionierwaldphase</td><td>15 Jahre</td><td>Brennnessel, Brombeere, Weiden, Pappeln; Haselhuhn</td></tr><tr><td>Dickungsphase</td><td>60 Jahre</td><td>Buche, Eiche, Fichte, Bäume bis etwa 10 m hoch; Sperber</td></tr><tr><td>Klimax (Optimalphase)</td><td>300 Jahre</td><td>Buche, Eiche, Fichte, Kronendach geschlossen; Buntspecht</td></tr><tr><td>Absterbephase (Zerfallsphase)</td><td>100 Jahre</td><td>Buche, Eiche, Fichte, Totholz prägend; Waldkauz</td></tr></tbody></table></div>`
+        },
+        {
+          name: "Stabilität von Ökosystemen",
+          summary: `<ul>
+<li><strong>Resistenz:</strong> Mass für die Fähigkeit eines Ökosystems bzw. einer Population, bei Störungen mehr oder weniger im gleichen Zustand zu bleiben (Widerstand gegen Veränderung).</li>
+<li><strong>Resilienz:</strong> Mass für die Geschwindigkeit, mit der ein System nach einer Störung in den Ausgangszustand zurückkehrt (Erholungsfähigkeit).</li>
+</ul>
+<p>Ein resistentes System schwankt nach einer Störung wenig; ein resilientes kann stark ausgelenkt werden, erholt sich aber schnell.</p>`
+        },
+        {
+          name: "Räuber-Beute-Dynamik und Lotka-Volterra-Regeln",
+          summary: `<figure class="summary-figure"><img src="Resourcen/Bilder/oek-hudson-bay.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Fellstatistik der Hudson Bay Company (1845–1935):</strong> Die Zahl der erbeuteten Schneeschuhhasen und Luchse schwankt periodisch (etwa alle 10 Jahre), die Luchsmaxima folgen den Hasenmaxima zeitversetzt.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 10, S. 10.3 (Abb. 10.4)</span></figcaption></figure>
+<p>Modellvorstellung (negative Rückkopplung): Je mehr Beute, desto mehr Räuber (mehr Nahrung, mehr Nachkommen); je mehr Räuber, desto weniger Beute; je weniger Beute, desto weniger Räuber; je weniger Räuber, desto mehr Beute.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-raeuber-beute-modell.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Modellvorstellung zur Entwicklung von Räuber- und Beutepopulationen:</strong> Die Wechselwirkung bildet einen Regelkreis mit gegenläufigen Wirkungen (+/−).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 10, S. 10.3 (Abb. 10.5)</span></figcaption></figure>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-lotka-volterra.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Grafische Darstellung des Lotka-Volterra-Modells:</strong> Beute- (durchgezogen) und Räuberpopulation (gestrichelt) schwanken periodisch und phasenverschoben um konstante Mittelwerte.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 10, S. 10.3 (Abb. 10.6)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Die Lotka-Volterra-Regeln</caption><thead><tr><th>Regel</th><th>Aussage</th></tr></thead><tbody><tr><td><strong>1. Periodische Populationsschwankungen</strong></td><td>Die Individuenzahlen von Räuber und Beute schwanken periodisch; die Maxima der Räuber folgen phasenverschoben auf die Maxima der Beute.</td></tr><tr><td><strong>2. Konstanz der Mittelwerte</strong></td><td>Trotz der Schwankungen bleiben die Mittelwerte beider Populationen über längere Zeit konstant, sofern sich die Bedingungen nicht ändern.</td></tr><tr><td><strong>3. Störung der Mittelwerte</strong></td><td>Werden Räuber und Beute gleich stark (im Verhältnis zu ihrer Dichte) dezimiert, erholt sich die Beutepopulation schneller als die Räuberpopulation: Der Mittelwert der Beute steigt kurzfristig, der der Räuber sinkt kurzfristig.</td></tr></tbody></table></div>
+<p><strong>Gründe für Regel 3:</strong> Ohne Fressfeinde wächst die Beutepopulation schneller als sonst; die Generationszeit der Räuber ist meist länger als die der Beute.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-lotka-volterra-regel3.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Erholung von Beute- und Räuberpopulation nach einem dezimierenden Eingriff:</strong> Die Beute erholt sich rasch, die Räuber folgen verzögert.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 10, S. 10.4 (Abb. 10.8)</span></figcaption></figure>
+<p><strong>Bedeutung für die Schädlingsbekämpfung:</strong> Insektizide wirken nicht nur auf Schädlinge, sondern oft noch stärker auf deren Fressfeinde. Danach kann sich der Schädling schneller vermehren als vor der Behandlung – der Schaden ist dann grösser als ohne Bekämpfung.</p>
+<p><strong>Grenzen des Modells:</strong> Es gilt streng nur für eine Räuber- und eine Beuteart ohne weitere Einflüsse. In der Natur haben Räuber mehrere Beutearten, Beute mehrere Feinde, und Nahrung, Krankheiten und Wetter wirken mit. Beispiel Neufundland: Nach der Einführung des Schneeschuhhasen (1864) und der Ausrottung des Wolfs stieg der Luchsbestand; als die Hasenpopulation um 1915 zusammenbrach, wichen die Luchse auf Schneehasen und Karibukälber aus (1925 starben 70 % der Karibukälber in den ersten Lebensmonaten).</p>`
+        }
+      ]
+    },
+    {
+      id: "topic-27",
+      name: "Mensch und Umwelt",
+      group: "Ökologie",
+      subtopics: [
+        {
+          name: "Umweltschutz und planetare Belastbarkeitsgrenzen",
+          summary: `<p><strong>Umweltschutz</strong> ist die Gesamtheit aller Massnahmen zum Schutz der Umwelt, um die Gesundheit des Menschen zu erhalten. Seine Ziele decken sich nicht zwingend mit denen von Natur- oder Tierschutz. Ökosysteme erbringen für den Menschen wertvolle <strong>ökologische Leistungen</strong> (Schutzwald, Holz, Trinkwasser, landwirtschaftliche Produktion, Erholung, Fischfang, Erosionsschutz, unbekannte Wirkstoffe), deren Wert man in Geld abzuschätzen versucht.</p>
+<h3>Planetare Belastbarkeitsgrenzen</h3>
+<p>Das Konzept der planetaren Grenzen (Steffen et al. 2015) beschreibt Bereiche, in denen die Menschheit einen «sicheren Handlungsraum» nicht verlassen sollte, weil sonst gravierende, oft <strong>nicht umkehrbare</strong> Folgen drohen.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-planetare-grenzen.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Planetare Belastbarkeitsgrenzen</strong> (Steffen et al. 2015, übersetzt). Der innere Kreis markiert den sicheren Handlungsraum; die Sektoren zeigen, wie weit die Menschheit ihn je Bereich bereits überschritten hat.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 11, S. 3</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Planetare Grenzen nach Steffen et al. 2015</caption><thead><tr><th>Bereich</th><th>Zustand (Stand der Abbildung)</th></tr></thead><tbody><tr><td>Biodiversitätsverlust (genetische Vielfalt)</td><td>sicherer Bereich verlassen – hohes Risiko</td></tr><tr><td>biogeochemische Flüsse (Stickstoff, Phosphor)</td><td>sicherer Bereich verlassen – hohes Risiko</td></tr><tr><td>Klimawandel</td><td>sicherer Bereich verlassen – erhöhtes Risiko</td></tr><tr><td>Landnutzungswandel (Abholzung)</td><td>sicherer Bereich verlassen – erhöhtes Risiko</td></tr><tr><td>Süsswassernutzung, Ozonverlust in der Stratosphäre, Versauerung der Meere</td><td>noch im sicheren Bereich</td></tr><tr><td>funktionale Vielfalt, neue chemische Substanzen/veränderte Organismen, Aerosole</td><td>Grenze (noch) nicht definiert</td></tr></tbody></table></div>
+<h3>Ursachen globaler Umweltbelastungen</h3>
+<ul>
+<li><strong>Bevölkerungswachstum:</strong> Die Weltbevölkerung hat sich seit 1900 vervielfacht.</li>
+<li><strong>Pro-Kopf-Verbrauch</strong> an Ressourcen und Energie steigt.</li>
+<li><strong>Endliche Ressourcen:</strong> Die Ackerfläche wächst kaum noch; höhere Ernten wurden durch Effizienzsteigerung erreicht – aber auch das hat Grenzen («Grenzen des Wachstums»).</li>
+</ul>
+<p><strong>Anthropozän:</strong> vorgeschlagener Name für eine neue geochronologische Epoche, in der der Mensch zu einem der wichtigsten Einflussfaktoren auf biologische, geologische und atmosphärische Prozesse geworden ist (Klimawandel, Artensterben, Lichtverschmutzung). Seine Spuren werden noch lange nachweisbar sein. Der Mensch ist nicht der erste Faktor, der die Erde stark verändert, aber der erste, der dafür verantwortlich ist.</p>`
+        },
+        {
+          name: "Nachhaltigkeit",
+          summary: `<p>Die Menschen brauchen immer mehr Ressourcen, viele davon sind begrenzt, und vieles Handeln ist nur kurzfristig möglich – daraus entstand der Ruf nach <strong>Nachhaltigkeit</strong> (langfristigem Handeln).</p>
+<h3>Zwei Definitionen</h3>
+<ul>
+<li>Prinzip, nach dem nicht mehr verbraucht werden darf, als jeweils nachwächst, sich regeneriert oder künftig wieder bereitgestellt werden kann.</li>
+<li>Entwicklung, die gewährleistet, dass künftige Generationen nicht schlechter gestellt sind, ihre Bedürfnisse zu befriedigen, als die heute lebenden.</li>
+</ul>
+<p>Nachhaltigkeit verbindet im Idealfall drei Dimensionen: <strong>ökologisch</strong> (Umwelt), <strong>ökonomisch</strong> (Wirtschaft) und <strong>sozial</strong> (Gesellschaft). Nur wo alle drei erfüllt sind, ist eine Entwicklung nachhaltig; ökologisch und sozial ergibt «lebenswert», ökologisch und ökonomisch «lebensfähig», sozial und ökonomisch «gerecht». Eine Dimension allein reicht nicht.</p>`
+        },
+        {
+          name: "Ökologische Bewertungen",
+          summary: `<p>Ökologische Bewertungen sind systematische Analysen der Umweltwirkungen von Produkten oder Lebensstilen.</p>
+<h3>Ökologischer Fussabdruck und Biokapazität</h3>
+<ul>
+<li><strong>Ökologischer Fussabdruck:</strong> die biologisch produktive Fläche, die ein Mensch mit seinem Lebensstandard und den heutigen Technologien benötigen würde, um nachhaltig zu leben – in globalen Hektaren (gha).</li>
+<li><strong>Biokapazität:</strong> die Kapazität der Erde oder eines Landes, nutzbare biologische Materialien bereitzustellen und Abfallstoffe umweltverträglich aufzunehmen. Weltweit stehen jedem Menschen etwa <strong>1,63 gha</strong> zur Verfügung.</li>
+<li><strong>Anzahl benötigter Erden</strong> = Fussabdruck des Landes / Biokapazität der Welt (bzw. / Biokapazität des Landes).</li>
+</ul>
+<div class="summary-table-wrap"><table><caption>Ökologischer Fussabdruck und Biokapazität pro Person (footprintnetwork.org, 2016). Erden ① = Fussabdruck / 1,63; Erden ② = Fussabdruck / Biokapazität des Landes</caption><thead><tr><th>Land</th><th>Fussabdruck (gha)</th><th>Biokapazität (gha)</th><th>Erden ①</th><th>Reserve (+)/Defizit (−)</th><th>Erden ②</th></tr></thead><tbody><tr><td>Äthiopien</td><td>1,0</td><td>0,6</td><td>0,6</td><td>−0,4</td><td>1,7</td></tr><tr><td>Brasilien</td><td>2,8</td><td>8,7</td><td>1,7</td><td>+5,9</td><td>0,3</td></tr><tr><td>Deutschland</td><td>4,8</td><td>1,6</td><td>2,9</td><td>−3,2</td><td>3,0</td></tr><tr><td>Frankreich</td><td>4,4</td><td>2,4</td><td>2,7</td><td>−2,0</td><td>1,8</td></tr><tr><td>Finnland</td><td>6,6</td><td>13,7</td><td>4,0</td><td>+7,1</td><td>0,5</td></tr><tr><td>Indien</td><td>1,2</td><td>0,4</td><td>0,7</td><td>−0,8</td><td>3</td></tr><tr><td>Japan</td><td>4,5</td><td>0,6</td><td>2,8</td><td>−3,9</td><td>7,5</td></tr><tr><td>Katar</td><td>14,4</td><td>1,0</td><td>8,8</td><td>−13,4</td><td>14,4</td></tr><tr><td>USA</td><td>8,1</td><td>3,6</td><td>5,0</td><td>−6,6</td><td>2,3</td></tr><tr><td>VR China</td><td>3,6</td><td>1,0</td><td>2,2</td><td>−2,6</td><td>3,6</td></tr><tr><td><strong>Schweiz</strong></td><td>4,6</td><td>1,0</td><td>2,8</td><td>−3,6</td><td>4,6</td></tr><tr><td><strong>Welt</strong></td><td>2,75</td><td>1,63</td><td>1,7</td><td>−1,12</td><td>1,7</td></tr></tbody></table></div>
+<figure class="summary-figure"><img src="Resourcen/Bilder/oek-fussabdruck-schweiz.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Ökologischer Fussabdruck der Schweiz im Vergleich zur Biokapazität der Welt (1961–2014):</strong> Der Schweizer Fussabdruck liegt seit Jahrzehnten weit über der pro Kopf verfügbaren Biokapazität, die mit wachsender Weltbevölkerung sinkt.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 11, S. 18</span></figcaption></figure>
+<h3>Ökobilanz – Lebenszyklusanalyse</h3>
+<p>Eine <strong>Lebenszyklusanalyse</strong> untersucht systematisch die Umweltwirkungen eines Produkts während seines gesamten Lebensweges «von der Wiege bis zur Bahre» (Rohstoffe, Herstellung, Transport, Nutzung, Entsorgung), z. B. eines Handys. Instrumente sind:</p>
+<ul>
+<li><strong>Treibhausgasbilanz (CO₂-Fussabdruck):</strong> Summe der Treibhausgasemissionen in CO₂-Äquivalenten. Beispiel Getränkeverpackungen (kg CO₂ pro 1000 l, Produktion, Abfüllung und Transport): Dose 200, PET-Einweg 1,5 l 122, Karton 1 l 81, Glas-Mehrweg 0,7 l 72, PET-Mehrweg 1 l 62. Eine <strong>Ökoeffizienzanalyse</strong> setzt zusätzlich Umweltbelastung und Kosten ins Verhältnis: Für Mineralwasser im Umkreis von 300 km schnitten dort Wasserspender-Mehrwegflaschen und PET-Einwegflaschen besser ab als schwere Glas-Mehrwegflaschen – das Ergebnis hängt also vom gewählten Rahmen (Transportweg, Gewicht, Umläufe) ab.</li>
+<li><strong>Umweltbelastungspunkte (UBP):</strong> Die Methode der ökologischen Knappheit vergleicht die aktuelle Belastung (Ist-Menge) mit der gesellschaftspolitisch als zulässig angesehenen Belastung (Toleranzmenge) und fasst viele Faktoren (Emissionen, Ressourcenverbrauch, Abfälle) in einer Zahl zusammen. Ein Schweizer verursacht durchschnittlich etwa <strong>21 Millionen UBP pro Jahr</strong> (zum Vergleich pro Jahr: Pferd 7,8 Mio., Hund 1,3 Mio., Katze 0,5 Mio.).</li>
+</ul>
+<div class="summary-table-wrap"><table><caption>Was entspricht 1000 Umweltbelastungspunkten? (Lektion 11, S. 17)</caption><thead><tr><th>Bereich</th><th>Produkt oder Aktivität</th><th>≈ 1000 UBP entsprechen</th></tr></thead><tbody><tr><td>Verkehr</td><td>Autofahrt (1,6 Personen)</td><td>3 km</td></tr><tr><td></td><td>Zugfahrt SBB-Regionalzug</td><td>24 km</td></tr><tr><td></td><td>Flugreise innerhalb Europas</td><td>6 km</td></tr><tr><td>Kleidung, Hygiene</td><td>T-Shirt aus Baumwolle</td><td>1/6 T-Shirt</td></tr><tr><td></td><td>Seife</td><td>200 g</td></tr><tr><td></td><td>WC-Papier (FSC)</td><td>5 Rollen</td></tr><tr><td>Papier</td><td>Recyclingpapier 80 g/m²</td><td>190 Blatt A4</td></tr><tr><td></td><td>FSC-Papier 80 g/m²</td><td>60 Blatt A4</td></tr><tr><td>Nahrungsmittel</td><td>Rindfleisch</td><td>12 g</td></tr><tr><td></td><td>Brot</td><td>300 g</td></tr><tr><td></td><td>Bier</td><td>1 l</td></tr><tr><td></td><td>Kaffee</td><td>8 Tassen Lungo</td></tr><tr><td></td><td>Zucker</td><td>1 kg</td></tr><tr><td>Elektrizität</td><td>Laptop</td><td>20 h Nutzung</td></tr><tr><td></td><td>12-W-Energiesparlampe</td><td>13 Tage (424 h)</td></tr><tr><td></td><td>Strom-Mix CH ab Steckdose</td><td>3,8 kWh</td></tr><tr><td>Wärme</td><td>Heizen mit Gas</td><td>0,7 m³ Erdgas</td></tr><tr><td></td><td>Heizen mit Öl</td><td>360 g Heizöl</td></tr><tr><td>Lebensstil</td><td>durchschnittliche Person in der Schweiz</td><td>25 Minuten</td></tr></tbody></table></div>`
+        },
+        {
+          name: "Fakten und Zahlen für die Schweiz",
+          summary: `<ul>
+<li>Der ökologische Fussabdruck der Schweiz beträgt etwa <strong>4,6 gha pro Person</strong>, die Biokapazität der Schweiz nur etwa <strong>1,0 gha</strong> (Defizit −3,6 gha). Würden alle Menschen so leben, bräuchte es rund <strong>2,8 Erden</strong>.</li>
+<li><strong>Konsumbereiche:</strong> Die Ernährung verursacht <strong>28 %</strong> der Umweltbelastung des Schweizer Endkonsums und ist damit der wichtigste Bereich, gefolgt von Wohnen (v. a. Heizenergie und Strom) und privater Mobilität (Treibstoff, Flugreisen). Innerhalb der Ernährung entfallen <strong>44 %</strong> auf tierische Produkte und <strong>18,6 %</strong> auf Getränke (v. a. Wein, Bier, Kaffee). Ein grosser Teil der Belastung entsteht im Ausland (importierte Güter).</li>
+<li><strong>Ernährungsstile:</strong> Eine vegane Ernährung halbiert die Umweltbelastung gegenüber einem sehr fleischlastigen Stil (2 kg Fleisch pro Woche). Schon ein zurückhaltender Fleischkonsum («Flexitarier», 300 g pro Woche) verbessert die Bilanz ähnlich stark wie eine vegetarische Ernährung; ein gesundheitlich und ökologisch optimierter Stil («FOODprints») senkt sie noch weiter.</li>
+</ul>
+<h3>Die Schweiz und die planetaren Grenzen</h3>
+<p>Die Schweiz trägt über Inlandbelastungen und über die in Importen «versteckten» Emissionen überdurchschnittlich zum Druck auf Klima, Gewässer und Biodiversität sowie zur Überdüngung (Eutrophierung) durch Stickstoff bei.</p>
+<div class="summary-table-wrap"><table><caption>Fussabdrücke der Schweiz im Vergleich zu den planetaren Schwellenwerten (Dao et al. 2015; BAFU 2018)</caption><thead><tr><th>Bereich</th><th>Fussabdruck pro Person</th><th>Schwellenwert pro Person</th><th>Überschreitung</th></tr></thead><tbody><tr><td>Treibhausgase</td><td>14 t CO₂-Äquivalente</td><td>0,6 t</td><td>23-fach</td></tr><tr><td>Ozeanversauerung (nur CO₂)</td><td>10,5 t</td><td>0,5 t</td><td>21-fach</td></tr><tr><td>Biodiversität</td><td>–</td><td>–</td><td>3,7-fach</td></tr><tr><td>Eutrophierung (Stickstoff)</td><td>–</td><td>–</td><td>2-fach</td></tr></tbody></table></div>
+<p>Der Schwellenwert für Treibhausgase ergibt sich aus einem Budget, das für eine 50-%-Chance reicht, die Erwärmung bis 2100 unter 2 °C zu halten, heruntergerechnet auf die einzelne Person.</p>`
+        }
+      ]
+    },
+    {
+      id: "topic-12",
+      name: "Infektionskrankheiten und Lymphsystem",
+      group: "Immunbiologie",
+      subtopics: [
+        {
+          name: "Infektionskrankheiten und Krankheitserreger",
+          summary: `<p>Unser Körper muss sich ständig verteidigen – vor allem gegen mikroskopisch kleine Feinde. <strong>Infektionskrankheiten</strong> (lat. <em>inficere</em>, anstecken) werden durch das Eindringen von <strong>Krankheitserregern</strong> verursacht: Bakterien, Viren oder Parasiten (z. B. Würmer, Einzeller). Weil die Erreger meist von Kranken auf Gesunde übergehen, sind sie mehr oder weniger ansteckend (früher: Seuchen). <strong>Pathogen</strong> heisst krankmachend.</p>
+<h3>Wie Erreger schaden</h3>
+<ul>
+<li>Sie zehren von unseren Stoffen, zerstören Zellen und beeinträchtigen Organfunktionen.</li>
+<li>Vor allem schaden ihre <strong>Ausscheidungen</strong> (Stoffwechselabfälle, Toxine), die für uns giftig sind.</li>
+</ul>
+<h3>Begriffe</h3>
+<div class="summary-table-wrap"><table><thead><tr><th>Begriff</th><th>Bedeutung</th></tr></thead><tbody><tr><td><strong>Infektion</strong></td><td>das Eindringen von Krankheitserregern in den Körper (und ihre Vermehrung dort)</td></tr><tr><td><strong>Inkubation</strong></td><td>Vorgang, bei dem sich die eingedrungenen Erreger vermehren, bevor Symptome auftreten</td></tr><tr><td><strong>Inkubationszeit</strong></td><td>Zeitspanne zwischen der Infektion und dem Auftreten der ersten Symptome</td></tr></tbody></table></div>
+<h3>Übertragungswege</h3>
+<ul>
+<li><strong>Tröpfcheninfektion:</strong> beim Husten, Niesen, Sprechen und Atmen (z. B. Grippe, Masern, Covid-19, Tuberkulose)</li>
+<li><strong>Schmier- oder Kontaktinfektion:</strong> über Hände und Gegenstände; <strong>fäkal-oral</strong> über verunreinigtes Wasser und Lebensmittel (z. B. Cholera, Typhus)</li>
+<li><strong>Blut und Körperflüssigkeiten</strong>, auch beim Geschlechtsverkehr (z. B. HIV, Syphilis)</li>
+<li><strong>Überträger (Vektoren):</strong> Stiche oder Bisse von Insekten bzw. Tieren (z. B. Malaria, Pest, Tollwut)</li>
+<li><strong>Wundinfektion</strong> (z. B. Tetanus)</li>
+</ul>
+<p>Für die Übertragung ist entscheidend, in welchem Organsystem ein Erreger lebt und wie er dorthin gelangt: Darmbewohner wechseln den Wirt leichter als Blutbewohner, kleine Erreger dringen leichter ein als grosse, widerstandsfähige überleben den Weg zum neuen Wirt eher.</p>
+<p><strong>Geschichte:</strong> Lange vermutete man «schlechte Körpersäfte» oder «faule Luft» (daher der Name Malaria) als Ursache von Seuchen. Erst 1876 wies <strong>Robert Koch</strong> am Beispiel des Milzbrands nach, dass Bakterien ansteckende Krankheiten verursachen.</p>
+<div class="summary-table-wrap"><table><caption>Beispiele von Infektionskrankheiten (digitalisiert nach Immunbiologie.pdf, S. 3, Tab. 1.2)</caption><thead><tr><th>Krankheit</th><th>Erreger</th><th>Erregertyp</th><th>Übertragung</th></tr></thead><tbody><tr><td>Tuberkulose</td><td><em>Mycobacterium tuberculosis</em></td><td>Bakterium</td><td>Tröpfcheninfektion</td></tr><tr><td>Typhus, Cholera</td><td><em>Salmonella</em>, <em>Vibrio cholerae</em></td><td>Bakterien</td><td>fäkal-oral (infiziertes Wasser)</td></tr><tr><td>Pest</td><td><em>Yersinia pestis</em></td><td>Bakterium</td><td>Überträger (infizierte Flöhe)</td></tr><tr><td>Syphilis</td><td><em>Treponema pallidum</em></td><td>Bakterium</td><td>Körperflüssigkeiten beim Geschlechtsverkehr</td></tr><tr><td>Tetanus</td><td><em>Clostridium tetani</em></td><td>Bakterium</td><td>Wundinfektion</td></tr><tr><td>Covid-19</td><td>SARS-CoV-2</td><td>Virus</td><td>Tröpfcheninfektion</td></tr><tr><td>Grippe, Masern</td><td>Influenzaviren, Morbilliviren</td><td>Viren</td><td>Tröpfcheninfektion</td></tr><tr><td>AIDS</td><td>HI-Viren</td><td>Virus</td><td>Blut oder Körperflüssigkeiten</td></tr><tr><td>Tollwut</td><td>Rabiesvirus</td><td>Virus</td><td>Biss eines erkrankten Tieres</td></tr><tr><td>Gelbfieber</td><td>Flavivirus</td><td>Virus</td><td>Stich infizierter Gelbfieber-Mücken</td></tr><tr><td>Malaria</td><td><em>Plasmodium</em></td><td>Einzeller</td><td>Stich infizierter Anopheles-Mücken</td></tr><tr><td>Schlafkrankheit</td><td>Trypanosomen</td><td>Einzeller</td><td>Stich infizierter Tsetse-Fliegen</td></tr><tr><td>Amöbenruhr</td><td><em>Entamoeba histolytica</em></td><td>Einzeller</td><td>fäkal-oral</td></tr><tr><td>Trichomoniasis</td><td><em>Trichomonas vaginalis</em></td><td>Einzeller</td><td>Körperflüssigkeiten beim Geschlechtsverkehr</td></tr><tr><td>Taeniasis</td><td><em>Taenia saginata</em> (Rinderbandwurm)</td><td>Wurm</td><td>Verzehr von rohem, kontaminiertem Rindfleisch</td></tr><tr><td>Bilharziose</td><td><em>Schistosoma</em> (Pärchenegel)</td><td>Wurm</td><td>Kontakt mit kontaminiertem Wasser</td></tr></tbody></table></div>
+<div class="summary-table-wrap"><table><caption>Todesursachen beim Menschen (Immunbiologie.pdf, S. 3, Tab. 1.1)</caption><thead><tr><th></th><th>Infektionen</th><th>Tumore</th><th>Kreislaufkrankheiten</th><th>Unfälle</th><th>Total/Jahr</th></tr></thead><tbody><tr><td>Entwicklungsländer</td><td>34 %</td><td>9 %</td><td>21 %</td><td>8 %</td><td>48 Mio.</td></tr><tr><td>Industrieländer</td><td>1 %</td><td>25 %</td><td>48 %</td><td>5 %</td><td>13 Mio.</td></tr></tbody></table></div>
+<p>In Industrieländern spielen Infektionskrankheiten dank Hygiene, medizinischer Versorgung und Medikamenten eine untergeordnete Rolle – die Covid-19-Pandemie (SARS-CoV-2) hat aber gezeigt, dass neue Erreger ganze Gesellschaften lahmlegen können.</p>`
+        },
+        {
+          name: "Das Lymphsystem",
+          summary: `<p>Trotz natürlicher Barrieren gelangen manchmal Mikroorganismen durch Darmwand, Haut oder Schleimhäute in den Körper. Meist befinden sie sich dann in der <strong>Gewebeflüssigkeit</strong> im Interzellularraum. Aus den Blutkapillaren tritt ständig Blutflüssigkeit ins Gewebe aus und fliesst über die Lymphgefässe wieder ab.</p>
+<p><strong>Bestandteile:</strong> Lymphgefässe, Lymphknoten, die Lymphe (Gewebeflüssigkeit in den Lymphgefässen) und die lymphatischen Organe (Thymus, Milz, Mandeln, Knochenmark).</p>
+<h3>Drei Hauptaufgaben</h3>
+<ul>
+<li><strong>Abwehr</strong> körperfremder Zellen und Stoffe</li>
+<li><strong>Rücktransport</strong> von Gewebeflüssigkeit in den Blutkreislauf</li>
+<li><strong>Fettstoffwechsel:</strong> Transport von Fettbestandteilen vom Darm ins Blut</li>
+</ul>
+<h3>Lymphatische Organe</h3>
+<div class="summary-table-wrap"><table><thead><tr><th></th><th>Organe</th><th>Funktion</th></tr></thead><tbody><tr><td><strong>primäre</strong> lymphatische Organe</td><td>rotes Knochenmark, Thymus</td><td>Bildung und Reifung (Prägung) der Lymphozyten: B-Lymphozyten werden im Knochenmark gebildet und reifen dort; T-Lymphozyten werden im Knochenmark gebildet und reifen im <strong>T</strong>hymus</td></tr><tr><td><strong>sekundäre</strong> lymphatische Organe</td><td>Lymphknoten, Milz, Mandeln (Tonsillen), lymphatisches Gewebe von Darm (Peyer-Plaques) und Schleimhäuten</td><td>Ort der Immunreaktion: Hier treffen Lymphozyten auf Antigene, werden aktiviert und vermehren sich</td></tr></tbody></table></div>
+<h3>Transport der Lymphe</h3>
+<p>Täglich werden etwa <strong>2 Liter Lymphe</strong> zurücktransportiert: Lymphkapillaren im Gewebe → Lymphgefässe (mit <strong>Klappen</strong> gegen Rückstrom) → Lymphknoten (Filter) → Hauptlymphgang → Einmündung in eine grosse Vene nahe dem Herzen. Die Lymphe wird nicht vom Herzen gepumpt, sondern durch die umgebende Muskulatur (Muskelpumpe), die Pulsation benachbarter Arterien und die Klappen vorwärtsbewegt. Eine <strong>Lymphdrainage</strong> ist eine spezielle Massage, die den Lymphabfluss anregt und Schwellungen (Ödeme) reduziert.</p>
+<h3>Aufbau eines Lymphknotens</h3>
+<figure class="summary-figure"><img src="Resourcen/Bilder/imm-lymphknoten.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Aufbau eines Lymphknotens</strong> (Beschriftung handschriftlich): Zuführende Lymphgefässe (mit Klappen gegen Rückstrom), bindegewebige Kapsel, Randsinus, Rinde (Cortex) mit Lymphfollikeln, Paracortex, Mark (Medulla) und wegführendes Gefäss (Vas efferens).<span class="figure-source">Quelle: Immunbiologie.pdf, S. 6 (Abb. 1.2)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><thead><tr><th>Bereich</th><th>Immunzellen</th></tr></thead><tbody><tr><td>Lymphfollikel (Lymphknötchen) in der Rinde</td><td>v. a. B-Lymphozyten, einige Makrophagen</td></tr><tr><td>Paracortex</td><td>v. a. T-Lymphozyten (und dendritische Zellen)</td></tr><tr><td>Mark (Medulla)</td><td>Makrophagen und Plasmazellen (produzieren Antikörper)</td></tr></tbody></table></div>
+<p>Geschwollene Lymphknoten zeigen eine Immunreaktion: Dringt z. B. ein Holzsplitter mit Bakterien in die Fingerkuppe ein, gelangen Erreger mit der Lymphe in die Lymphknoten der Achselhöhle; dort vermehren sich die aktivierten Lymphozyten – nach etwa 24 Stunden ist ein Knoten tastbar.</p>
+<p><strong>Milz:</strong> baut alte rote Blutkörperchen ab (Blutfilter), speichert Monozyten und erfüllt für das Blut ähnliche Abwehraufgaben wie die Lymphknoten für die Lymphe.</p>`
+        }
+      ]
+    },
+    {
+      id: "topic-13",
+      name: "Abwehrsysteme und unspezifische Immunabwehr",
+      group: "Immunbiologie",
+      subtopics: [
+        {
+          name: "Aufgaben und Methoden der Abwehrsysteme",
+          summary: `<h3>Aufgaben der Körperabwehr</h3>
+<ul>
+<li>das Eindringen von Krankheitserregern erschweren oder verhindern</li>
+<li>eingedrungene Erreger und körperfremde Zellen eliminieren (auch bei Organtransplantationen!)</li>
+<li>Fremdstoffe aus Luft, Nahrung oder Haut und Ausscheidungen der Erreger eliminieren</li>
+<li>defekte Körperzellen wie <strong>Krebszellen</strong> eliminieren, die spontan oder durch Strahlen und krebserzeugende Stoffe entstehen und sich unkontrolliert vermehren</li>
+</ul>
+<h3>Unspezifische und spezifische Abwehr</h3>
+<div class="summary-table-wrap"><table><caption>Unspezifische und spezifische Abwehr im Vergleich (vgl. Immunbiologie.pdf, S. 7, Tab. 1.3)</caption><thead><tr><th></th><th>Unspezifische Abwehr</th><th>Spezifische Abwehr</th></tr></thead><tbody><tr><td><strong>andere Namen</strong></td><td>angeborene Immunabwehr, Resistenz</td><td>erworbene, adaptive Immunabwehr, Immunsystem im engeren Sinn</td></tr><tr><td><strong>Herkunft</strong></td><td>angeboren, von Geburt an wirksam</td><td>erlernt: muss jeden Erreger zuerst kennenlernen</td></tr><tr><td><strong>Bekämpft werden</strong></td><td>alle Erreger mit bestimmten, weit verbreiteten Kennzeichen; grobes «gut–böse»-Muster</td><td>jeweils eine einzige Art von Erregern (ein bestimmtes Antigen)</td></tr><tr><td><strong>Geschwindigkeit</strong></td><td>sofort</td><td>bei Erstkontakt verzögert (Tage) – man wird meist krank</td></tr><tr><td><strong>Gedächtnis</strong></td><td>nein, kann nicht dazulernen</td><td>ja – danach Immunität (lat. <em>immunitas</em>, Freisein)</td></tr><tr><td><strong>Instrumente</strong></td><td>mechanische und chemische Barrieren, Fresszellen (Makrophagen, Granulozyten), natürliche Killerzellen, Komplementsystem, Interferone, Fieber, Entzündung</td><td>Lymphozyten (B- und T-Zellen) und Antikörper</td></tr><tr><td><strong>Bewirkt</strong></td><td>Resistenz (allgemeine Widerstandsfähigkeit)</td><td>Immunität gegen einen bestimmten Erreger</td></tr></tbody></table></div>
+<p>Beide Systeme bekämpfen Erreger auf zwei Arten:</p>
+<ul>
+<li><strong>zellulär</strong>: durch Abwehrzellen</li>
+<li><strong>humoral</strong> (lat. <em>humor</em>, Feuchtigkeit): durch Abwehrstoffe in Körperflüssigkeiten (z. B. Komplementproteine, Antikörper)</li>
+</ul>`
+        },
+        {
+          name: "Die Zellen des Immunsystems",
+          summary: `<p>Im roten Knochenmark entstehen aus <strong>Stammzellen</strong> verschiedene Vorläuferzellen, aus denen sich die weissen Blutkörperchen (<strong>Leukozyten</strong>) differenzieren.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/imm-zellen-immunsystem.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Die Zellen des Immunsystems.</strong> Aus Stammzellen des Knochenmarks gehen über eine Vorläuferzelle die Phagocyten (Granulocyten, Monocyten → Makrophagen) und Mastzellen hervor, über lymphatische Vorläuferzellen die Lymphocyten (B-Lymphocyten → Plasmazellen; T-Lymphocyten → T-Helferzellen, T-Killerzellen, regulatorische T-Zellen).<span class="figure-source">Quelle: Immunbiologie.pdf, S. 8 (Abb. aus Biologie heute, mit Notizen)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Übersicht über die Immunzellen</caption><thead><tr><th>Zelltyp</th><th>Herkunft / Reifung</th><th>Funktion</th><th>Abwehr</th></tr></thead><tbody><tr><td><strong>Granulozyten</strong></td><td>Knochenmark (myeloische Vorläuferzelle)</td><td>Fresszellen: Vernichtung von Bakterien, Abwehr von Parasiten; körniges Zellplasma; Lebensdauer nur wenige Tage; Hauptbestandteil des Eiters</td><td>unspezifisch</td></tr><tr><td><strong>Monozyten → Makrophagen</strong></td><td>Knochenmark; Monozyten wandern ins Gewebe und werden zu Makrophagen</td><td>wichtigste Fresszellen (Phagozytose); <strong>Antigenpräsentation</strong> an T-Helferzellen; Lebensdauer mehrere Monate</td><td>unspezifisch und Bindeglied zur spezifischen</td></tr><tr><td><strong>dendritische Zellen</strong></td><td>Knochenmark</td><td>Fresszellen in Geweben, präsentieren Antigene</td><td>unspezifisch / Bindeglied</td></tr><tr><td><strong>Mastzellen</strong></td><td>Knochenmark</td><td>speichern entzündungsauslösende Stoffe wie Histamin (Entzündung, Allergie)</td><td>unspezifisch</td></tr><tr><td><strong>natürliche Killerzellen (NK-Zellen)</strong></td><td>Knochenmark (lymphatisch)</td><td>erkennen virusinfizierte und Tumorzellen an Veränderungen der Oberfläche und töten sie mit zytotoxischen Stoffen</td><td>unspezifisch</td></tr><tr><td><strong>B-Lymphozyten</strong></td><td>Bildung und Reifung im Knochenmark</td><td>erkennen ein bestimmtes Antigen mit ihrem B-Zell-Rezeptor; werden zu <strong>Plasmazellen</strong> (bilden Antikörper) und Gedächtniszellen</td><td>spezifisch, humoral</td></tr><tr><td><strong>T-Helferzellen</strong> (CD4)</td><td>Bildung im Knochenmark, Reifung im Thymus</td><td>«Kommandozentrale»: aktivieren B-Zellen und T-Killerzellen mit Cytokinen</td><td>spezifisch</td></tr><tr><td><strong>T-Killerzellen</strong> (zytotoxische T-Zellen, CD8)</td><td>Knochenmark, Reifung im Thymus</td><td>töten infizierte und entartete Körperzellen</td><td>spezifisch, zellulär</td></tr><tr><td><strong>regulatorische T-Zellen</strong></td><td>Knochenmark, Thymus</td><td>unterdrücken bzw. beenden die Immunreaktion (im Unterricht nicht vertieft)</td><td>spezifisch</td></tr></tbody></table></div>`
+        },
+        {
+          name: "Erste Verteidigungslinie: äussere Barrieren",
+          summary: `<p>Die unspezifische Abwehr erkennt Erreger an relativ unspezifischen Kennzeichen, die bei vielen Arten vorkommen. Zu ihr gehört auch der Schutz vor dem Eindringen. Die meisten Erreger scheitern an mechanischen und chemischen Barrieren:</p>
+<div class="summary-table-wrap"><table><caption>Äussere Barrieren der Immunabwehr (digitalisiert nach Immunbiologie.pdf, S. 9, Abb. 1.3)</caption><thead><tr><th>Ort</th><th>Schutzmechanismen</th></tr></thead><tbody><tr><td><strong>Augen</strong></td><td>Befeuchtung durch den Lidschlag; Enzyme wie <strong>Lysozym</strong> in der Tränenflüssigkeit (löst Zellwände von Bakterien auf)</td></tr><tr><td><strong>Mund, Nase, Ohren</strong></td><td>Niesen, Husten; Flimmerhärchen des Nasenepithels; Speichel, Schleim und Ohrenschmalz mit Enzymen (Lysozym)</td></tr><tr><td><strong>Lunge</strong></td><td>Flimmerhärchen des Bronchienepithels schlagen koordiniert Richtung Ausgang und befördern Fremdstoffe hinaus; Schleim mit Enzymen</td></tr><tr><td><strong>Haut</strong></td><td>mechanische Barriere (dicke, verhornte Hornschicht); chemische Barriere (Schweiss, Talg, Säuren); Konkurrenz durch harmlose Bakterien der Hautflora</td></tr><tr><td><strong>Magen</strong></td><td>salzsäureproduzierende Schleimhaut: Säure tötet Bakterien</td></tr><tr><td><strong>Darm</strong></td><td>antibakterielle Proteine; Konkurrenz durch die Darmflora; Peristaltik verhindert das Einnisten von Erregern</td></tr><tr><td><strong>Harntrakt</strong></td><td>saurer pH-Wert des Harns; Ausspülen durch den Harn</td></tr><tr><td><strong>Genitalsystem</strong></td><td>saures Milieu durch Milchsäurebakterien in der Vagina</td></tr></tbody></table></div>`
+        },
+        {
+          name: "Zweite Verteidigungslinie: Fresszellen, Komplement, Interferone",
+          summary: `<p>Gelingt einem Erreger das Eindringen, wird die unspezifische Abwehrreaktion ausgelöst: Fresszellen, natürliche Killerzellen, Abwehrproteine, Fieber und Entzündung.</p>
+<h3>Fresszellen und Phagozytose</h3>
+<p>Fresszellen (v. a. Granulozyten, Makrophagen und dendritische Zellen) patrouillieren im ganzen Körper: Sie können die Blutgefässe verlassen und durchs Gewebe wandern. Alles, was sie als gefährlich erkennen (Bakterien, Viren, Fremd- und Giftstoffe), wird <strong>phagozytiert</strong>:</p>
+<ol><li>Erkennen und Binden des Erregers an die Zellmembran</li><li>Umfliessen und Einschliessen in ein Membranbläschen (Phagosom)</li><li>Verschmelzen mit Lysosomen, deren Enzyme den Erreger verdauen (auflösen)</li><li>Ausscheiden der Reste; Makrophagen präsentieren Bruchstücke (Antigene) auf ihrer Oberfläche</li></ol>
+<h3>Natürliche Killerzellen</h3>
+<p>NK-Zellen richten sich gegen virusinfizierte oder tumorartig veränderte Körperzellen. Sie nehmen Veränderungen auf deren Oberfläche wahr und zerstören sie mit zytotoxischen (zellschädigenden) Substanzen.</p>
+<h3>Komplementsystem</h3>
+<p>Das Komplementsystem ist eine Gruppe von <strong>Abwehrproteinen</strong> im Blut, die bei Gewebeverletzungen aktiviert werden. Sie binden an Eindringlinge und</p>
+<ul><li><strong>zerstören</strong> sie, indem sie Löcher in ihre Membran bilden (Lyse),</li><li><strong>verklumpen</strong> sie und <strong>markieren</strong> sie für die Fresszellen,</li><li><strong>locken</strong> Fresszellen aus der Blutbahn zum Infektionsort.</li></ul>
+<figure class="summary-figure"><img src="Resourcen/Bilder/imm-komplementsystem.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Wirkungsweise des Komplementsystems:</strong> Komplementproteine markieren Bakterien, Fresszellen binden und schliessen sie ein; Komplementproteine können Bakterien auch direkt auflösen (Lyse).<span class="figure-source">Quelle: Immunbiologie.pdf, S. 10 (Abb. 1.4)</span></figcaption></figure>
+<h3>Interferone</h3>
+<p>Von Viren befallene Zellen geben <strong>Interferone</strong> ab. Diese Proteine hemmen die Virenvermehrung und warnen Nachbarzellen; diese bilden daraufhin Proteine, die das Eindringen von Viren verhindern oder ihre Vermehrung in der Zelle hemmen.</p>`
+        },
+        {
+          name: "Fieber und Temperaturregulation",
+          summary: `<p>Der Sollwert der Körperkerntemperatur liegt bei etwa <strong>36,6 °C</strong>. Innere und äussere Störgrössen wirken laufend darauf ein, deshalb wird die Temperatur ständig in einem <strong>Regelkreis</strong> kontrolliert:</p>
+<ol><li>Der <strong>Hypothalamus</strong> (Teil des Zwischenhirns, wichtigstes Steuerzentrum des vegetativen Nervensystems) ist der <strong>Regler</strong>. Führungsgrössen melden ihm den <strong>Sollwert</strong>.</li><li>Wärme- und Kältesensoren in Haut und Körperkern messen den <strong>Istwert</strong> (Regelgrösse Körpertemperatur) und melden ihn dem Hypothalamus.</li><li>Der Hypothalamus vergleicht Ist- und Sollwert und sendet <strong>Stellgrössen</strong> an Stellglieder (z. B. Muskulatur, Hautgefässe, Schweissdrüsen).</li><li>Die Stellglieder reagieren: z. B. Muskelzittern und Gefässverengung (Wärmebildung bzw. -erhaltung) oder Gefässerweiterung und Schwitzen (Wärmeabgabe).</li></ol>
+<figure class="summary-figure"><img src="Resourcen/Bilder/imm-regelkreis-temperatur.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Regelkreis zur Temperaturregulation.</strong> Führungsgrössen (z. B. Tageszeit, Menstruation, Fieber) bestimmen den Sollwert; der Hypothalamus als Regler vergleicht ihn mit dem Istwert der Sensoren und steuert die Stellglieder.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 10 (Abb. 1.5)</span></figcaption></figure>
+<p><strong>Fieber</strong> ist kein Defekt der Temperatursteuerung, sondern eine gezielte Abwehrmassnahme: Der <strong>Sollwert wird aktiv erhöht</strong>. Die Erhöhung um 2–3 °C tötet Erreger zwar nicht direkt ab, beschleunigt aber nach der <strong>RGT-Regel</strong> (Reaktionsgeschwindigkeit-Temperatur-Regel) die Abwehrreaktionen und das Ausscheiden von Giftstoffen. Fiebersenkende Mittel sind erst angebracht, wenn die Temperatur gefährlich wird (ab etwa 39 °C).</p>`
+        },
+        {
+          name: "Die Entzündungsreaktion",
+          summary: `<p>Eine zentrale Rolle in der unspezifischen Abwehr spielt die <strong>Entzündung</strong> – z. B. bei einem Pickel, einer eiternden Schnittwunde oder beim Schnupfen. Lokale Entzündungen dienen der Abwehr; gefährlich wird es, wenn der ganze Körper betroffen ist: Eine <strong>Sepsis</strong> («Blutvergiftung») kann zu Multiorganversagen und Tod führen.</p>
+<h3>Ablauf</h3>
+<ol><li>Erreger dringen durch eine Wunde ein; verletzte Zellen und <strong>Mastzellen</strong> setzen Signalstoffe frei, v. a. <strong>Histamin</strong>.</li><li>Histamin erweitert die Blutgefässe und macht die Kapillarwände durchlässiger: Mehr Blut fliesst ins Gebiet, Flüssigkeit tritt ins Gewebe aus.</li><li>Signalstoffe locken Fresszellen (neutrophile Granulozyten, Makrophagen) an; sie verlassen die Kapillaren und phagozytieren die Erreger.</li><li>Abgestorbene Fresszellen, Erreger, Zelltrümmer und Gewebeflüssigkeit bilden <strong>Eiter</strong>. Er wird von Makrophagen abgebaut, über die Lymphe abtransportiert oder nach aussen entleert.</li></ol>
+<div class="summary-table-wrap"><table><caption>Die Wirkung von Histamin (Immunbiologie.pdf, S. 12, Tab. 1.4)</caption><thead><tr><th>Wirkungsort</th><th>Wirkung von Histamin</th><th>Symptom</th></tr></thead><tbody><tr><td>Blutgefässe</td><td>Erweiterung</td><td>Rötung, Wärme</td></tr><tr><td>Kapillaren</td><td>erhöhte Durchlässigkeit</td><td>Schwellung (Ödem)</td></tr><tr><td>freie Nervenenden</td><td>Reizung</td><td>Schmerz, Juckreiz</td></tr><tr><td>Drüsen</td><td>verstärkte Sekretion (Flüssigkeits-/Schleimabsonderung)</td><td>laufende Nase, tränende Augen</td></tr><tr><td>glatte Muskelzellen (z. B. Bronchien)</td><td>Kontraktion</td><td>Atemnot (Asthma)</td></tr><tr><td>Abwehrzellen</td><td>Anlockung von neutrophilen Granulozyten</td><td>Eiterbildung</td></tr></tbody></table></div>
+<div class="summary-merke"><strong>Merke:</strong> Die vier <strong>Kardinalsymptome</strong> (charakteristische Symptome) einer Entzündung sind <strong>Rötung</strong> (rubor) und <strong>Wärme</strong> (calor) durch stärkere Durchblutung, <strong>Schwellung</strong> (tumor) durch austretende Flüssigkeit und <strong>Schmerz</strong> (dolor) durch Reizung der Nervenenden. Häufig kommt eine eingeschränkte Funktion (functio laesa) hinzu.</div>
+<p><strong>Stärke und Schwäche der unspezifischen Abwehr:</strong> Sie reagiert sofort, schnell und effizient gegen viele Erreger. Sie kann aber nicht dazulernen und ist hilflos gegen Erreger, für die kein ererbter, passender Rezeptor vorhanden ist (neue oder stark veränderliche Erreger wie HIV oder Grippeviren). Mit diesen muss die spezifische Abwehr fertigwerden.</p>`
+        }
+      ]
+    },
+    {
+      id: "topic-14",
+      name: "Spezifische Abwehr: Antigene, Antikörper und MHC",
+      group: "Immunbiologie",
+      subtopics: [
+        {
+          name: "Antigene und Epitope",
+          summary: `<p>Die spezifische Abwehr identifiziert jeden Eindringling, bevor sie ihn bekämpft. Nur Wirbeltiere besitzen eine leistungsfähige spezifische Immunabwehr.</p>
+<ul>
+<li><strong>Antigene</strong> sind Moleküle (meist Proteine oder Kohlenhydrate auf Oberflächen von Erregern, Fremdzellen oder Fremdstoffen), die vom Immunsystem als fremd erkannt werden und die Bildung von Antikörpern auslösen (<strong>Anti</strong>körper-<strong>gen</strong>erierend).</li>
+<li>Ein <strong>Epitop</strong> (antigene Determinante) ist der kleine Bereich eines Antigens, an den ein bestimmter Antikörper bzw. Rezeptor tatsächlich bindet.</li>
+<li>Viele Antigene besitzen <strong>mehrere verschiedene Epitope</strong>. Vorteil: Gegen ein Antigen werden mehrere Antikörpersorten gebildet; der Erreger wird von mehreren Seiten erkannt und kann besser vernetzt und bekämpft werden. Verändert sich ein Epitop durch Mutation, binden die anderen Antikörper weiterhin.</li>
+</ul>
+<figure class="summary-figure"><img src="Resourcen/Bilder/imm-antikoerper-antigen-bindung.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Antikörper-Antigen-Bindung.</strong> Ein Antigen trägt mehrere Epitope; die Bindungsstelle des Antikörpers passt nur zu einem davon (Epitop 1).<span class="figure-source">Quelle: Immunbiologie.pdf, S. 13 (Abb. 1.6)</span></figcaption></figure>`
+        },
+        {
+          name: "Bau und Funktion der Antikörper",
+          summary: `<p><strong>Antikörper</strong> (Immunglobuline, Ig) sind Y-förmige Proteine, die spezifisch an Antigene binden und diese so markieren und bekämpfen. Sie werden von <strong>Plasmazellen</strong> (aktivierten B-Lymphozyten) gebildet und kommen im Blut, in der Lymphe, in der Gewebeflüssigkeit und auf Schleimhäuten vor.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/imm-antikoerper-bau.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Bau eines Antikörpers</strong> (links Peptidketten als Rechtecke, rechts als Ketten): 1 Bindungsstelle, 2 variable Region, 3 konstante Region, 4 schwere Kette (H-Kette), 5 leichte Kette (L-Kette), 6 Disulfidbrücken, 7 Kohlenhydrat.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 13 (Abb. 1.7, Beschriftung handschriftlich)</span></figcaption></figure>
+<ul>
+<li>vier Peptidketten: <strong>zwei schwere (H)</strong> und <strong>zwei leichte Ketten (L)</strong>, durch <strong>Disulfidbrücken</strong> verbunden</li>
+<li><strong>variable Region</strong> an den Armenden: bildet die zwei identischen <strong>Antigen-Bindungsstellen</strong>; ihre Form passt nach dem <strong>Schlüssel-Schloss-Prinzip</strong> nur zu einem Epitop</li>
+<li><strong>konstante Region</strong> (Stamm, «Fussteil»): bestimmt die Antikörperklasse und bindet an Fresszellen, Komplement oder Mastzellen</li>
+</ul>
+<h3>Wirkungen der Antikörper</h3>
+<div class="summary-table-wrap"><table><thead><tr><th>Wirkung</th><th>Beschreibung</th></tr></thead><tbody><tr><td><strong>Neutralisation</strong></td><td>Antikörper besetzen die Bindungsstellen von Viren oder Toxinen, die so nicht mehr an Körperzellen andocken bzw. wirken können.</td></tr><tr><td><strong>Agglutination</strong> (Verklumpung)</td><td>Weil jeder Antikörper zwei Bindungsstellen hat, vernetzt er mehrere Erreger zu Klumpen.</td></tr><tr><td><strong>Präzipitation</strong> (Ausfällung)</td><td>gelöste Antigene werden zu unlöslichen Komplexen vernetzt.</td></tr><tr><td><strong>Markierung</strong></td><td>Die Komplexe werden von Fresszellen erkannt und phagozytiert; Antikörper aktivieren auch das Komplementsystem (Lyse).</td></tr></tbody></table></div>
+<p><strong>Wichtig:</strong> Antikörper töten Erreger nicht selbst ab – sie machen sie unschädlich und markieren sie für die Fresszellen und das Komplementsystem.</p>
+<h3>Experiment zum Nachweis der Antikörperbildung</h3>
+<figure class="summary-figure"><img src="Resourcen/Bilder/imm-maus-experiment.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Experiment zum Nachweis der Entstehung von Antikörpern.</strong> Einer Maus wird bakterienhaltige Flüssigkeit (Antigene) gespritzt; nach einigen Wochen wird Blut entnommen und getrennt. Gibt man das Serum zu den Bakterien, verklumpen diese (Ausflockung).<span class="figure-source">Quelle: Immunbiologie.pdf, S. 13 (Abb. 1.8)</span></figcaption></figure>
+<p>Deutung: Die Maus hat gegen die Bakterien spezifische Antikörper gebildet; diese befinden sich im Blutserum (nicht in den Blutzellen) und verklumpen die Bakterien auch ausserhalb des Körpers (Agglutination).</p>`
+        },
+        {
+          name: "Die fünf Antikörperklassen",
+          summary: `<figure class="summary-figure"><img src="Resourcen/Bilder/imm-antikoerperklassen.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Die fünf Antikörperklassen</strong>: Struktur, Häufigkeit und Wirkungsweise (Wirkungsweise handschriftlich ergänzt). IgM ist ein Pentamer, IgA meist ein Dimer.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 15 (Abb. 1.9)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Antikörperklassen (digitalisiert nach Immunbiologie.pdf, S. 15)</caption><thead><tr><th>Klasse</th><th>Struktur</th><th>Anteil</th><th>Wirkungsweise / Vorkommen</th></tr></thead><tbody><tr><td><strong>IgG</strong></td><td>Monomer (Y)</td><td>80 %</td><td>häufigster Antikörper in Blut, Lymphe und Gewebe; wird bei der Immunantwort <strong>spät</strong> gebildet und dominiert die Sekundärantwort; als einzige Klasse <strong>plazentagängig</strong> (Schutz des Ungeborenen)</td></tr><tr><td><strong>IgM</strong></td><td>Pentamer (5 Y, 10 Bindungsstellen)</td><td>6 %</td><td>wird als <strong>erster</strong> Antikörper der Primärantwort gebildet; bindet Antigene v. a. im Blut, verklumpt stark; zu gross für die Plazentaschranke (deshalb keine Probleme mit AB0-Antikörpern in der Schwangerschaft)</td></tr><tr><td><strong>IgA</strong></td><td>meist Dimer</td><td>13 %</td><td>Abwehr auf den <strong>Schleimhäuten</strong> und in Sekreten (Speichel, Tränen); auch in der <strong>Muttermilch</strong></td></tr><tr><td><strong>IgD</strong></td><td>Monomer</td><td>1 %</td><td>sitzt auf der Oberfläche von B-Lymphozyten und dient ihrer <strong>Aktivierung</strong> (Antigenrezeptor)</td></tr><tr><td><strong>IgE</strong></td><td>Monomer</td><td>0,002 %</td><td>bindet an Mastzellen; Abwehr von <strong>Parasiten</strong> (Würmer); verantwortlich für <strong>Allergien</strong> vom Soforttyp</td></tr></tbody></table></div>
+<p>Eine (unbelegte) Vermutung zur Häufung von Allergien in westlichen Ländern: Weil dort kaum Parasiten vorkommen, ist das IgE-System «unterbeschäftigt» und reagiert auf harmlose Stoffe.</p>`
+        },
+        {
+          name: "Kreuzreaktion und Blutgruppenantikörper",
+          summary: `<p>Hat der Körper gegen Antigen A drei Antikörpersorten gebildet, hängt der Schutz gegen ähnliche Antigene davon ab, wie gut deren Epitope passen:</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/imm-kreuzreaktion.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Kreuzreaktion</strong> (stark schematisch, je nur eine Bindungsstelle gezeichnet): Antikörper 1–3 passen zu Antigen A. Antigen B besitzt ein Epitop, an das Antikörper 2 binden kann; zu Antigen C passt keiner.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 15 (Abb. 1.10)</span></figcaption></figure>
+<ul>
+<li><strong>Antigen B:</strong> Nur Antikörper 2 kann binden (<strong>Kreuzreaktion</strong>). B wird teilweise, aber schlechter bekämpft, bis neue, besser passende Antikörper gebildet sind.</li>
+<li><strong>Antigen C:</strong> Kein vorhandener Antikörper passt – der Körper muss zuerst eine neue Immunantwort aufbauen.</li>
+</ul>
+<h3>Exkurs: Blutgruppenantikörper</h3>
+<p>Rhesus-Antikörper bildet eine rhesusnegative Person erst nach Kontakt mit rhesuspositivem Blut – eine normale Immunreaktion. Antikörper gegen die Blutgruppenmerkmale A und B sind dagegen schon vorhanden, wenn man diese Merkmale nicht selbst besitzt. Grund: A- und B-ähnliche Strukturen kommen auch bei Darmbakterien (<em>E. coli</em>) vor. Jeder Mensch bildet Antikörper gegen diese Bakterien, die infolge <strong>Kreuzreaktion</strong> auch fremde Blutzellen angreifen. Antikörper gegen körpereigene Strukturen werden nicht gebildet bzw. zerstört – deshalb fehlen diejenigen, die die eigenen Blutzellen verklumpen würden.</p>`
+        },
+        {
+          name: "Fremdes erkennen: MHC und antigenpräsentierende Zellen",
+          summary: `<p>Die angeborene Abwehr ist hilflos, wenn kein passender ererbter Rezeptor vorhanden ist. Rezeptoren verändern sich zwar über Generationen durch Mutationen, aber auch Erreger verändern sich. Gegen neue (z. B. HIV) oder sehr veränderliche Erreger (z. B. Grippeviren) braucht es die adaptive, spezifische Abwehr. Eine Schlüsselrolle spielen <strong>antigenpräsentierende Zellen</strong> (APZ, engl. APC) – v. a. <strong>Makrophagen</strong>, dendritische Zellen und <strong>B-Lymphozyten</strong>.</p>
+<h3>Der MHC – ein molekularer Personalausweis</h3>
+<p>Jede körpereigene Zelle trägt angeborene molekulare «Etiketten»: Glykoproteine (Proteine mit Zuckerresten) der Zellmembran, codiert von einer Genfamilie, dem <strong>Haupthistokompatibilitätskomplex (MHC</strong>, major histocompatibility complex; beim Menschen auch HLA, humanes Leukozyten-Antigen). Das Immunsystem lernt, diese als «selbst» zu tolerieren.</p>
+<div class="summary-table-wrap"><table><caption>MHC-Klassen (CD = cluster of differentiation)</caption><thead><tr><th></th><th>MHC-Klasse-I</th><th>MHC-Klasse-II</th></tr></thead><tbody><tr><td>Vorkommen</td><td>auf <strong>allen kernhaltigen Körperzellen</strong></td><td>nur auf <strong>antigenpräsentierenden Zellen</strong> (Makrophagen, dendritische Zellen, B-Zellen) – ein «Sonderausweis»</td></tr><tr><td>präsentiert</td><td>Proteinbruchstücke aus dem Zellinneren, z. B. von Viren, die sich in der Zelle vermehren</td><td>Bruchstücke von Material, das durch Phagozytose aufgenommen oder an den B-Zell-Rezeptor gebunden wurde</td></tr><tr><td>erkannt von</td><td><strong>zytotoxischen T-Zellen</strong> (Tc, T-Killerzellen) mit dem Oberflächenmolekül <strong>CD8</strong></td><td><strong>T-Helferzellen</strong> (T<sub>H</sub>) mit dem Oberflächenmolekül <strong>CD4</strong></td></tr><tr><td>Folge</td><td>die infizierte Zelle wird getötet</td><td>die T-Helferzelle wird aktiviert und unterstützt die Immunantwort</td></tr></tbody></table></div>
+<p>Weil es von jedem MHC-Gen zahlreiche Allele gibt, besitzen zwei Menschen – ausser eineiigen Zwillingen – praktisch nie denselben Satz MHC-Moleküle: Der MHC ist ein individueller Fingerabdruck. Darum werden transplantierte Organe abgestossen, wenn die Gewebemerkmale nicht passen.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/imm-mhc-t-zellen.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Wechselwirkung zwischen T-Zellen und MHC-Molekülen.</strong> Links: Eine infizierte Zelle präsentiert ein Antigenfragment auf MHC I; die zytotoxische T-Zelle erkennt die Kombination mit ihrem T-Zell-Rezeptor (TCR) und CD8. Rechts: Eine APC präsentiert ein Fragment einer phagozytierten Mikrobe auf MHC II; die T-Helferzelle erkennt es mit TCR und CD4.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 16 (Abb. 1.11)</span></figcaption></figure>
+<p>T-Zellen erkennen also nie ein freies Antigen, sondern nur die <strong>Kombination aus Antigenfragment und eigenem MHC-Molekül</strong> mit ihrem <strong>T-Zell-Rezeptor (TCR)</strong>. Makrophagen und B-Zellen präsentieren auf MHC II statt MHC I, weil MHC-I-Präsentation das Signal «diese Zelle ist infiziert – töten» bedeutet; die APZ sollen aber nicht zerstört werden, sondern T-Helferzellen aktivieren.</p>`
+        }
+      ]
+    },
+    {
+      id: "topic-15",
+      name: "Humorale und zelluläre Immunantwort",
+      group: "Immunbiologie",
+      subtopics: [
+        {
+          name: "Humorale Immunantwort: Aktivierung der B-Lymphozyten",
+          summary: `<p>Die <strong>humorale Immunantwort</strong> richtet sich gegen Erreger und Toxine in den Körperflüssigkeiten. Hauptverantwortlich sind die Antikörper. Sie werden zwar von Zellen (B-Lymphozyten bzw. Plasmazellen) hergestellt, wirken aber in Blut und Lymphe – daher «humoral».</p>
+<p>Jeder B-Lymphozyt trägt auf seiner Oberfläche einen eigenen, bei der Reifung zufällig entstandenen <strong>B-Zell-Rezeptor</strong> (membrangebundener Antikörper, z. B. IgD). Die B-Zellen unterscheiden sich also in ihrem Rezeptor; zu fast jedem Antigen existieren einige wenige passende B-Zellen.</p>
+<h3>Ablauf bei einer Erstinfektion</h3>
+<ol><li><strong>Antigenerkennung:</strong> Ein Antigen bindet an den passenden B-Zell-Rezeptor (erstes Aktivierungssignal). Die B-Zelle nimmt das Antigen auf, zerlegt es und präsentiert Bruchstücke auf <strong>MHC-II</strong>.</li><li><strong>Antigenpräsentation durch Makrophagen:</strong> Gleichzeitig phagozytieren Makrophagen Erreger und präsentieren deren Fragmente auf MHC-II einer passenden <strong>T-Helferzelle</strong>, die dadurch aktiviert wird und sich vermehrt.</li><li><strong>Aktivierung der B-Zelle:</strong> Eine aktivierte T-Helferzelle erkennt das von der B-Zelle präsentierte Antigen und schüttet <strong>Cytokine</strong> (Botenstoffe) aus – das zweite Aktivierungssignal.</li><li><strong>Klonale Selektion und Vermehrung:</strong> Nur die passende B-Zelle wird ausgewählt und teilt sich vielfach: Es entsteht ein <strong>Klon</strong> identischer Zellen.</li><li><strong>Differenzierung:</strong> Die meisten Zellen des Klons werden zu <strong>Plasmazellen</strong>, die massenhaft Antikörper mit derselben Spezifität ins Blut abgeben; einige werden zu langlebigen <strong>B-Gedächtniszellen</strong>.</li><li><strong>Wirkung:</strong> Die Antikörper neutralisieren und verklumpen die Erreger; Makrophagen phagozytieren die Antigen-Antikörper-Komplexe.</li><li><strong>Abschalten:</strong> Ist der Erreger beseitigt, sinkt die Antikörperkonzentration wieder, weil Antikörper laufend abgebaut werden und keine neuen Plasmazellen mehr entstehen.</li></ol>`
+        },
+        {
+          name: "Primär- und Sekundärantwort, immunologisches Gedächtnis",
+          summary: `<ul>
+<li><strong>Primärantwort</strong> (erster Kontakt): Es dauert einige Tage bis wenige Wochen, bis passende B-Zellen ausgewählt, vermehrt und zu Plasmazellen geworden sind. Zuerst werden vor allem <strong>IgM</strong>, später <strong>IgG</strong> gebildet. Die Antikörperkonzentration bleibt vergleichsweise niedrig – der Mensch erkrankt meist.</li>
+<li><strong>Sekundärantwort</strong> (erneuter Kontakt mit demselben Antigen): Die <strong>Gedächtniszellen</strong> erkennen das Antigen sofort und vermehren sich rasch. Es werden <strong>schneller, mehr und länger</strong> Antikörper gebildet, vor allem IgG. Der Erreger wird meist beseitigt, bevor Symptome auftreten – man ist <strong>immun</strong>.</li>
+</ul>
+<div class="summary-table-wrap"><table><caption>Primär- und Sekundärantwort</caption><thead><tr><th>Kriterium</th><th>Primärantwort</th><th>Sekundärantwort</th></tr></thead><tbody><tr><td>Auslöser</td><td>erster Kontakt mit dem Antigen</td><td>wiederholter Kontakt</td></tr><tr><td>beteiligte Zellen</td><td>naive B- und T-Zellen, wenige passende Zellen</td><td>zahlreiche Gedächtniszellen</td></tr><tr><td>Verzögerung</td><td>lang (Tage bis Wochen)</td><td>kurz (wenige Tage)</td></tr><tr><td>Antikörpermenge</td><td>gering</td><td>viel höher</td></tr><tr><td>Hauptantikörper</td><td>zuerst IgM, dann IgG</td><td>IgG</td></tr><tr><td>Folge</td><td>Krankheit meist mit Symptomen</td><td>meist keine oder schwache Symptome</td></tr></tbody></table></div>
+<p><strong>Warum treten Kinderkrankheiten nur einmal auf, Grippe aber jedes Jahr?</strong> Masern-, Mumps-, Röteln- oder Polioviren verändern ihre Antigene kaum; die Gedächtniszellen schützen oft lebenslang. Grippeviren mutieren dagegen ständig und verändern ihre Oberflächenantigene; die vorhandenen Gedächtniszellen erkennen das neue Virus nicht mehr (oder nur schlecht).</p>
+<p>Ein starkes Immunsystem ist immer ein Kompromiss: Eine ständige maximale Abwehrbereitschaft würde zu viel Energie kosten.</p>`
+        },
+        {
+          name: "Zelluläre Immunantwort: T-Killerzellen",
+          summary: `<p>Antikörper erreichen Viren nur ausserhalb der Zellen. Hat sich ein Virus bereits in einer Körperzelle eingenistet, oder ist eine Zelle zur Tumorzelle entartet, greift die <strong>zelluläre Immunantwort</strong>: Hauptakteure sind die <strong>T-Killerzellen</strong> (zytotoxische T-Zellen). Sie richten sich gegen körpereigene, aber veränderte Zellen und zerstören sie.</p>
+<ol><li>Eine infizierte Körperzelle präsentiert Bruchstücke der Virusproteine auf <strong>MHC-I</strong> an ihrer Oberfläche.</li><li>Eine T-Killerzelle mit passendem Rezeptor erkennt mit ihrem TCR und CD8 die Kombination aus MHC-I und Antigen (erstes Signal).</li><li>Eine durch Makrophagen aktivierte <strong>T-Helferzelle</strong> gibt Cytokine ab – zweites Signal zur Aktivierung.</li><li>Die aktivierte T-Killerzelle vermehrt sich zu einem Klon; einige Zellen werden zu <strong>T-Gedächtniszellen</strong>.</li><li>Die T-Killerzellen binden an infizierte Zellen und geben zellschädigende (zytotoxische) Stoffe ab, die Löcher in die Membran bilden: Die Zelle stirbt ab (Lyse) – mitsamt den Viren darin. Makrophagen beseitigen die Reste.</li></ol>
+<p><strong>Rolle der T-Helferzellen:</strong> Sie sind die «Kommandozentrale» bzw. Schaltstelle der gesamten spezifischen Abwehr: Ohne ihre Cytokine werden weder B-Zellen noch T-Killerzellen voll aktiviert. Deshalb ist HIV, das die T-Helferzellen zerstört, so gefährlich.</p>`
+        },
+        {
+          name: "Übersicht und Vergleich",
+          summary: `<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/imm-uebersicht-spezifische-abwehr.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Übersicht über die spezifische Immunabwehr bei einer Erstinfektion.</strong> Humorale Antwort (links): B-Lymphocyt mit passendem Rezeptor → Aktivierung durch T-Helferzelle → Vermehrung → Plasmazellen (Antikörper) und Gedächtnis-B-Zellen. Mitte: Makrophage phagozytiert das Virus und aktiviert T-Helferzellen. Zelluläre Antwort (rechts): T-Killerzelle mit passendem Rezeptor → Vermehrung → zerstört infizierte Körperzellen; Gedächtnis-T-Zellen.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 20 (Abb. 1.14)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Humorale und zelluläre Immunantwort</caption><thead><tr><th></th><th>Humorale Immunantwort</th><th>Zelluläre Immunantwort</th></tr></thead><tbody><tr><td>Ziel</td><td>Erreger und Toxine in Körperflüssigkeiten (ausserhalb von Zellen)</td><td>infizierte und entartete Körperzellen</td></tr><tr><td>Hauptakteure</td><td>B-Lymphozyten → Plasmazellen, Antikörper</td><td>T-Killerzellen</td></tr><tr><td>Erkennung</td><td>B-Zell-Rezeptor bindet freies Antigen</td><td>TCR + CD8 erkennt Antigen auf MHC-I</td></tr><tr><td>Wirkung</td><td>Neutralisation, Agglutination, Präzipitation, Markierung für Fresszellen</td><td>Abtöten der Zielzelle (Lyse)</td></tr><tr><td>Gemeinsam</td><td>Aktivierung durch T-Helferzellen (Cytokine), klonale Vermehrung, Bildung von Gedächtniszellen</td><td>–</td></tr></tbody></table></div>
+<div class="summary-table-wrap"><table><caption>B- und T-Lymphozyten im Vergleich</caption><thead><tr><th></th><th>B-Lymphozyten</th><th>T-Lymphozyten</th></tr></thead><tbody><tr><td>Bildung / Reifung</td><td>Knochenmark / Knochenmark</td><td>Knochenmark / Thymus</td></tr><tr><td>Rezeptor</td><td>B-Zell-Rezeptor (Antikörper), bindet freies Antigen</td><td>T-Zell-Rezeptor, erkennt nur an MHC gebundene Fragmente</td></tr><tr><td>Untertypen</td><td>Plasmazellen, B-Gedächtniszellen</td><td>T-Helferzellen (CD4), T-Killerzellen (CD8), regulatorische T-Zellen, T-Gedächtniszellen</td></tr><tr><td>Funktion</td><td>Antikörperbildung (humoral)</td><td>Steuerung (T<sub>H</sub>) und Zerstörung infizierter Zellen (Tc, zellulär)</td></tr></tbody></table></div>`
+        }
+      ]
+    },
+    {
+      id: "topic-16",
+      name: "Immunisierung und Impfung",
+      group: "Immunbiologie",
+      subtopics: [
+        {
+          name: "Aktive und passive Immunisierung",
+          summary: `<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/imm-aktive-passive-immunisierung.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Aktive (links) und passive Immunisierung (rechts).</strong> Links: abgeschwächte oder abgetötete Erreger bzw. Erregerantigene werden geimpft; der Körper bildet selbst Antikörper. Rechts: einem Tier wird der Erreger gespritzt, aus seinem Blut werden Antikörper isoliert und dem Menschen injiziert.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 21 (Abb. 1.15, 1.16)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Aktive und passive Immunisierung</caption><thead><tr><th></th><th>Aktive Immunisierung (Schutzimpfung)</th><th>Passive Immunisierung (Heilimpfung)</th></tr></thead><tbody><tr><td>Was wird gespritzt?</td><td>Antigene: abgeschwächte oder abgetötete Erreger, Erregerbestandteile oder deren Bauanleitung (mRNA)</td><td>fertige Antikörper (Immunserum, z. B. aus Tieren oder Menschen)</td></tr><tr><td>Reaktion des Körpers</td><td>eigene Primärantwort: Bildung von Antikörpern und <strong>Gedächtniszellen</strong></td><td>keine eigene Immunreaktion, keine Gedächtniszellen</td></tr><tr><td>Wirkungseintritt</td><td>verzögert (Tage bis Wochen)</td><td>sofort</td></tr><tr><td>Schutzdauer</td><td>lang (Jahre, teils lebenslang; evtl. Auffrischimpfung)</td><td>kurz (Wochen), weil fremde Antikörper abgebaut werden</td></tr><tr><td>Einsatz</td><td>vorbeugend</td><td>bei bereits erfolgter Infektion oder akuter Gefahr (z. B. Tetanus, Schlangengift, Tollwut)</td></tr></tbody></table></div>
+<p>Der Begriff «passive Immunisierung» ist irreführend: Man wird nicht im eigentlichen Sinn immun, weil der Körper keine eigenen Gedächtniszellen bildet. Natürliche passive Immunisierungen gibt es auch: IgG der Mutter gelangt über die Plazenta ins ungeborene Kind, IgA über die Muttermilch.</p>
+<p><strong>Zentraler Vorgang jeder Immunität</strong> ist die Bildung von <strong>Gedächtniszellen</strong>.</p>
+<h3>Edward Jenner – die erste Impfung</h3>
+<p>Jenner impfte 1796 einen Jungen mit Material aus Kuhpocken-Pusteln und infizierte ihn später mit echten Pocken – der Junge erkrankte nicht. Das Kuhpockenvirus ist dem Pockenvirus ähnlich (gemeinsame Antigene, Kreuzreaktion), aber für Menschen harmlos. Es handelte sich um eine <strong>aktive Immunisierung</strong>; von lat. <em>vacca</em> (Kuh) stammt das Wort Vakzine.</p>
+<h3>Fragen zur Impfung</h3>
+<ul>
+<li><strong>Abgetötete Bakterien</strong> eignen sich als Impfstoff, weil sie noch dieselben Antigene tragen: Der Körper bildet Antikörper und Gedächtniszellen, ohne zu erkranken.</li>
+<li>Impfungen gegen schnell mutierende Viren (z. B. Grippe, Coronaviren) verlieren rasch ihre Wirkung, weil sich die Antigene verändern. Der Grippeimpfstoff wird deshalb jedes Jahr neu zusammengestellt.</li>
+<li>Ein gegen Masern Geimpfter kann sich mit dem Virus infizieren, erkrankt aber in der Regel nicht, weil die Sekundärantwort das Virus beseitigt, bevor es sich stark vermehrt.</li>
+</ul>`
+        },
+        {
+          name: "mRNA-Impfstoffe",
+          summary: `<p>Klassische Impfstoffe enthalten das Antigen (Erreger oder Fragmente). <strong>mRNA-Impfstoffe</strong> (z. B. die Covid-19-Impfstoffe von Pfizer-BioNTech und Moderna) enthalten stattdessen die <strong>Bauanleitung</strong> für ein Antigen – eine im Labor hergestellte <strong>mRNA</strong>, ein Zwischenprodukt der Proteinbiosynthese.</p>
+<ol><li>Die mRNA ist in <strong>Lipid-Nanopartikel</strong> verpackt; ohne diese Hülle käme sie nicht in die Zellen.</li><li>Körperzellen nehmen die Nanopartikel auf; die mRNA gelangt ins Cytoplasma.</li><li>Die Ribosomen übersetzen die mRNA in ein Virusprotein – bei SARS-CoV-2 das <strong>Spike-Protein</strong> der Virusoberfläche.</li><li>Stücke des Virusproteins werden an der Zelloberfläche präsentiert; das Immunsystem erkennt sie als fremd, bildet Antikörper und Gedächtniszellen – die Immunantwort hat eingesetzt.</li><li>Der Körper baut die mRNA innerhalb von Stunden und die Spike-Proteine innerhalb weniger Tage vollständig ab.</li></ol>
+<figure class="summary-figure"><img src="Resourcen/Bilder/imm-mrna-impfstoff.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Wirkungsweise von mRNA-Impfstoffen.</strong> Lipid-Nanopartikel mit mRNA werden von der Zelle aufgenommen; die mRNA wird am Ribosom in ein Virusprotein übersetzt, dessen Stücke an der Oberfläche präsentiert werden; das Immunsystem bildet Antikörper gegen das Virus.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 23 (Abb. 1.18)</span></figcaption></figure>
+<ul>
+<li><strong>Vorteile:</strong> relativ einfache und schnelle Herstellung; es braucht keine zusätzlichen Impfverstärker; es wird kein Erreger gespritzt.</li>
+<li><strong>Erbgut:</strong> Eine Veränderung der DNA ist äusserst unwahrscheinlich, weil die mRNA <strong>nicht in den Zellkern</strong> gelangt und von der Zelle wie zelleigene mRNA behandelt und abgebaut wird.</li>
+<li>Das Prinzip ist nicht neu: Seit Ende der 1990er-Jahre wurde es in der Grundlagenforschung entwickelt; es stammt aus der Tumorforschung (Factsheet Swissmedic, Januar 2021).</li>
+</ul>`
+        },
+        {
+          name: "Schweizerischer Impfplan",
+          summary: `<p>Das Bundesamt für Gesundheit (BAG) veröffentlicht jährlich den <strong>Schweizerischen Impfplan</strong>. Der Unterricht verwendet die Synopsis 2025. Er unterscheidet:</p>
+<ul>
+<li><strong>Basisimpfungen:</strong> Impfziel sind der individuelle Schutz <em>und</em> der Schutz der öffentlichen Gesundheit.</li>
+<li><strong>Ergänzende Impfungen:</strong> Im Vordergrund steht der individuelle Schutz.</li>
+<li>Zusätzlich gibt es Empfehlungen für <strong>Risikogruppen</strong> und regelmässig wiederkehrende Impfungen.</li>
+</ul>
+<p>Die Synopsis 2025 enthält u. a. Impfungen gegen Diphtherie, Tetanus, Keuchhusten (DTP), Kinderlähmung (Polio), <em>Haemophilus influenzae</em> Typ b (Hib), Hepatitis B, Pneumokokken, RSV (Antikörpergabe für Säuglinge), Rotaviren, Meningokokken B und ACWY, Masern–Mumps–Röteln (MMR), Windpocken (Varizellen), HPV, Herpes Zoster sowie jährlich Influenza und Covid-19 (für bestimmte Personengruppen). Die genauen Zeitpunkte und die Einteilung legt der jeweils aktuelle Impfplan fest.</p>
+<p>Beispiel HPV-Impfung: Im Alter von 11–14 Jahren 2 Dosen (0 und 6 Monate), von 15 bis 26 Jahren 3 Dosen (0, 2, 6 Monate). Aktuelle Details: <em>bag.admin.ch</em> und <em>infovac.ch</em>.</p>`
+        }
+      ]
+    },
+    {
+      id: "topic-17",
+      name: "Allergien: Überreaktionen des Immunsystems",
+      group: "Immunbiologie",
+      subtopics: [
+        {
+          name: "Allergie und Allergen",
+          summary: `<ul>
+<li>Eine <strong>Allergie</strong> ist eine Überreaktion (Überempfindlichkeit) des Immunsystems gegen an sich harmlose körperfremde Stoffe.</li>
+<li>Ein <strong>Allergen</strong> ist ein Antigen, das eine allergische Reaktion auslöst. Genau genommen ist nicht das ganze Pollenkorn oder Tierhaar das Allergen, sondern ein ganz bestimmtes Molekül bzw. Epitop davon. Beispiele: Pollen (Heuschnupfen), Hausstaubmilben, Tierhaare, Nüsse, Hühnereiweiss, Insektengifte, Medikamente.</li>
+</ul>
+<p>Eine allergische Reaktion kann <strong>örtlich begrenzt</strong> sein (z. B. Heuschnupfen) oder <strong>generalisiert</strong> am ganzen Körper auftreten. Dann können sich die peripheren Blutgefässe plötzlich erweitern, der Blutdruck fällt stark ab: Innerhalb von Sekunden bis Minuten (z. B. nach Insektenstich oder Medikamenteninjektion) kann ein lebensbedrohlicher <strong>anaphylaktischer Schock</strong> entstehen, wenn nicht sofort <strong>Adrenalin</strong> als Gegenmittel verabreicht wird.</p>`
+        },
+        {
+          name: "Allergie vom Soforttyp (Typ I): Ablauf",
+          summary: `<p>Allergische Symptome des Typs I treten innerhalb von Sekunden (Insektenstich), Minuten (Hausstaub) oder einer halben Stunde (Nahrungsmittel) auf. Beispiel: <strong>Heuschnupfen</strong> (Pollenallergie; betrifft etwa die Hälfte aller Allergiker).</p>
+<h3>A: Sensibilisierung (Erstkontakt)</h3>
+<ol><li>Allergische Beschwerden verursachen vor allem Pollen von <strong>Windbestäubern</strong> (Gräser, Birke, Hasel, Ambrosia): Sie werden in riesigen Mengen gebildet, weit verteilt und sind winzig. Die Pollenhülle ist nicht allergen; auf der feuchten Schleimhaut keimt der Pollen aber, und es treten allergene Inhaltsstoffe aus.</li><li>Die Allergene dringen durch die Schleimhaut ein. <strong>Makrophagen</strong> phagozytieren sie, zerlegen sie und präsentieren die Fragmente auf <strong>MHC-II</strong> den T-Helferzellen.</li><li>Die <strong>T-Helferzellen</strong> aktivieren mit Cytokinen <strong>B-Lymphozyten</strong>, die durch Kontakt mit dem Allergen bereits ein erstes Aktivierungssignal erhalten haben.</li><li>Die zweifach aktivierten B-Lymphozyten werden zu <strong>Plasmazellen</strong>, die massenhaft Antikörper produzieren.</li><li>Diese Antikörper sind vom Typ <strong>IgE</strong>: Sie haften mit ihrem Fussteil an <strong>Mastzellen</strong> und behalten zwei freie Bindungsstellen für das Antigen.</li><li>Mastzellen kommen überall im Körper vor, auch in der Nasenschleimhaut. Sie besitzen über 10 000 IgE-Rezeptoren und speichern in Vesikeln u. a. <strong>Histamin</strong>.</li><li>Normalerweise trägt eine Mastzelle viele verschiedene IgE-Typen. Nach der Massenproduktion eines IgE-Typs ist sie nun mit gleichartigen, allergenspezifischen IgE übersät.</li></ol>
+<figure class="summary-figure"><img src="Resourcen/Bilder/imm-allergie-sensibilisierung.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Sensibilisierung auf ein Allergen</strong> (Beschriftung handschriftlich): Makrophage mit MHC II präsentiert Allergenfragmente der T-Helferzelle; diese aktiviert per Cytokinen die B-Zelle; die Plasmazelle bildet IgE, das an die Rezeptoren der Mastzellen (mit Histamin-Vesikeln) bindet.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 26 (Abb. 1.19)</span></figcaption></figure>
+<p>Während der Sensibilisierung bleibt der Mensch <strong>völlig symptomfrei</strong>. Die IgE-Bildung kann monate- bis jahrelang anhalten, die Mastzellen bleiben sensibel.</p>
+<h3>B: Zweitkontakt</h3>
+<p>Beim erneuten Kontakt bindet das Allergen an die IgE-Antikörper auf den Mastzellen und <strong>verbrückt</strong> dabei benachbarte IgE-Moleküle. Das löst die Entleerung der Vesikel aus: <strong>Histamin</strong> und weitere Entzündungsstoffe werden freigesetzt und verursachen die allergischen Symptome (Niesen, Fliessschnupfen, juckende, tränende Augen; Schwellung; bei Asthma Verengung der Bronchien).</p>
+<h3>Therapien und Verhalten</h3>
+<p>Bei vielen Betroffenen bessert sich der Heuschnupfen mit dem Alter; die Veranlagung bleibt aber – neue Allergien (Nahrungsmittel, Haustiere) können jederzeit entstehen. Empfohlen: Pollenprognosen verfolgen (z. B. pollenundallergie.ch), Medikamente gezielt und vorbeugend einnehmen, Freizeit planen (Wassersport statt Jogging), abends Haare waschen, Kleider nicht im Schlafzimmer ausziehen, nachts Fenster schliessen – allgemein der maximalen Pollenbelastung ausweichen.</p>`
+        },
+        {
+          name: "Allergietypen und Pseudoallergie",
+          summary: `<p>In der Medizin unterscheidet man vier Typen allergischer Reaktionen (Einteilung nach Coombs und Gell):</p>
+<div class="summary-table-wrap"><table><caption>Die vier Allergietypen</caption><thead><tr><th>Typ</th><th>Bezeichnung</th><th>Auslöser / Mechanismus</th><th>Hauptakteure</th><th>Beispiele</th></tr></thead><tbody><tr><td><strong>I</strong></td><td>Soforttyp (anaphylaktischer Typ)</td><td>Allergen verbrückt IgE auf Mastzellen → Histaminfreisetzung; Sekunden bis Minuten</td><td>IgE, Mastzellen, Histamin</td><td>Heuschnupfen, allergisches Asthma, Nahrungsmittel-, Insektengiftallergie, anaphylaktischer Schock</td></tr><tr><td><strong>II</strong></td><td>zytotoxischer Typ</td><td>Antikörper binden an Antigene auf Körperzellen; das Komplementsystem führt zur Zellauflösung</td><td>IgG (IgM), Komplement</td><td>Transfusionszwischenfall bei falscher Blutgruppe, Rhesus-Unverträglichkeit, manche Medikamentenallergien</td></tr><tr><td><strong>III</strong></td><td>Immunkomplex-Typ</td><td>Antigen-Antikörper-Komplexe lagern sich in Geweben/Gefässen ab; das Komplementsystem führt zu Entzündungen; Stunden</td><td>IgG, Immunkomplexe, Komplement</td><td>Farmerlunge, Serumkrankheit, Gefässentzündungen</td></tr><tr><td><strong>IV</strong></td><td>Spättyp (zellvermittelt)</td><td>aktivierte T-Lymphozyten setzen Cytokine frei und aktivieren Makrophagen → Gewebeschädigung; 1–3 Tage</td><td>T-Zellen, Makrophagen, Cytokine</td><td>Kontaktallergie (z. B. Nickel), Tuberkulintest, Transplantatabstossung</td></tr></tbody></table></div>
+<p>Typ I–III werden durch Antikörper vermittelt, Typ IV durch Zellen.</p>
+<h3>Pseudoallergie</h3>
+<p>Eine <strong>Pseudoallergie</strong> verursacht ähnliche Symptome wie eine Allergie, beruht aber nicht auf einer spezifischen Immunreaktion: Es findet keine Sensibilisierung statt und es werden keine Antikörper gebildet. Auslöser (z. B. bestimmte Zusatzstoffe oder histaminhaltige Nahrungsmittel) setzen direkt Histamin frei oder wirken selbst wie Histamin. Die Reaktion ist dosisabhängig und kann schon beim ersten Kontakt auftreten. Sie gehört zu den Nahrungsmittelunverträglichkeiten, die nicht immunologisch bedingt sind.</p>`
+        }
+      ]
+    },
+    {
+      id: "topic-18",
+      name: "Anwendungen der Antigen-Antikörper-Reaktion",
+      group: "Immunbiologie",
+      subtopics: [
+        {
+          name: "Polyklonale und monoklonale Antikörper",
+          summary: `<p>Jeder Antikörper passt mit seiner variablen Region nach dem Schlüssel-Schloss-Prinzip nur an «sein» Epitop. Diese Spezifität nutzt man in Medizin und Forschung, um Bestandteile von Bakterien und Viren, Hormone, Giftstoffe und vieles mehr nachzuweisen.</p>
+<ul>
+<li><strong>Polyklonale Antikörper:</strong> Im Blut von Menschen und Versuchstieren findet sich ein Gemisch vieler verschiedener Antikörper in unterschiedlicher Konzentration (von vielen B-Zell-Klonen).</li>
+<li><strong>Monoklonale Antikörper (MAK):</strong> völlig identische Antikörper gegen ein einziges Epitop, gebildet von einem einzigen Zellklon. Für die meisten Anwendungen braucht man sie.</li>
+</ul>
+<h3>Herstellung (Hybridomtechnik)</h3>
+<ol><li>Einem Versuchstier (meist Maus) wird das gewünschte Antigen gespritzt (z. B. das Schwangerschaftshormon hCG).</li><li>Aus dem Blut bzw. der Milz werden antikörperproduzierende Plasmazellen isoliert.</li><li>Die Plasmazellen werden künstlich mit <strong>Krebszellen</strong> verschmolzen. Die entstehenden <strong>Hybridomzellen</strong> vereinen beide Eigenschaften: Sie produzieren den spezifischen Antikörper und sind unbegrenzt teilungsfähig.</li><li>Ein Hybridom-Klon, der den gewünschten Antikörper bildet, wird ausgewählt, dauerhaft in Kultur gehalten und die monoklonalen Antikörper werden isoliert.</li></ol>`
+        },
+        {
+          name: "Der ELISA-Test",
+          summary: `<p><strong>ELISA</strong> = enzyme-linked immunosorbent assay (enzymgekoppelter Immunadsorptionstest): quantitativer Nachweis bestimmter Antikörper oder Antigene. Früher wurde damit untersucht, ob jemand HIV-positiv ist – nachgewiesen werden dabei nicht die Viren, sondern die <strong>Antikörper gegen HIV</strong>.</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/imm-elisa.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Ablauf des ELISA-Tests:</strong> mit Antigen beschichtetes Probengefäss; ein Antikörper aus der Probe bindet; nach dem Auswaschen bindet ein enzymmarkierter Zweitantikörper, dessen Enzym ein Substrat in einen Farbstoff umwandelt.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 31 (Abb. 1, Biologie heute)</span></figcaption></figure>
+<ol><li>Die Wand der Probengefässe wird mit dem <strong>Antigen</strong> beschichtet (z. B. HIV-Proteinfragmente).</li><li>Man gibt Blutserum der untersuchten Person zu. Enthält es passende Antikörper, binden diese an das Antigen.</li><li><strong>Waschen:</strong> freie, nicht gebundene Antikörper werden entfernt.</li><li>Ein <strong>zweiter Antikörper</strong> wird zugegeben, der spezifisch an den ersten (menschlichen) Antikörper bindet; an ihn ist ein <strong>Enzym</strong> gekoppelt.</li><li>Erneutes <strong>Waschen</strong> entfernt ungebundene Zweitantikörper.</li><li>Ein farbloses <strong>Substrat</strong> wird zugegeben; das Enzym wandelt es in ein farbiges Produkt um. Eine Farbreaktion tritt nur auf, wenn der erste Antikörper vorhanden war.</li></ol>
+<p>Das <strong>Waschen</strong> ist entscheidend: Bleiben ungebundene enzymgekoppelte Antikörper zurück, gibt es eine Farbreaktion auch ohne gesuchten Antikörper (falsch positiv). Mit Vergleichslösungen bekannter Konzentration lässt sich aus der <strong>Farbintensität</strong> auf die Antikörperkonzentration schliessen.</p>
+<h3>Sandwich-ELISA</h3>
+<p>Damit weist man <strong>Antigene</strong> nach: Zwei verschiedene Antikörper binden an verschiedene Stellen desselben Antigens. Der erste ist an der Gefässwand fixiert und fängt das Antigen aus der Probe; der zweite, enzymgekoppelte, bindet danach ebenfalls an das Antigen. Anwendungen: Hormonkonzentrationen im Blut, Tumormarker im Serum.</p>`
+        },
+        {
+          name: "Schwangerschaftstest und weitere Anwendungen",
+          summary: `<h3>Schwangerschaftstest</h3>
+<p>Der Embryo und die Plazenta geben das Hormon <strong>hCG</strong> (humanes Choriongonadotropin) ab; es ist etwa 14 Tage nach der Befruchtung im Urin nachweisbar. Monoklonale Maus-Antikörper gegen hCG werden mit der Hybridomtechnik gewonnen (Maus mit hCG immunisieren usw.).</p>
+<ol><li>Der Urin wandert durch den Teststreifen. Im Startbereich sind bewegliche, mit Farbstoff gekoppelte Anti-hCG-Antikörper; vorhandenes hCG bindet daran.</li><li>In der Testzone sind weitere Anti-hCG-Antikörper fixiert. Sie halten die hCG-Farbstoff-Antikörper-Komplexe fest – ein farbiger Streifen erscheint: schwanger.</li><li>Ohne hCG wandern die Farbstoff-Antikörper an der Testzone vorbei; in einer Kontrollzone werden sie von Antikörpern gegen Maus-Antikörper gebunden. Der Kontrollstreifen zeigt, dass der Test funktioniert hat.</li></ol>
+<p>Der Test ist im Wesentlichen qualitativ (ja/nein); die Farbintensität gibt höchstens einen groben Hinweis auf die Konzentration.</p>
+<p><strong>Vergleich mit dem HIV-ELISA:</strong> Beide nutzen die Spezifität von Antikörpern und bilden einen Immunkomplex auf einem Trägermaterial. Beim HIV-Test ist das <strong>Antigen fixiert</strong> und gesucht werden <strong>Antikörper</strong>, sichtbar gemacht durch ein Enzym, das ein Substrat umsetzt. Beim Schwangerschaftstest ist ein <strong>Antikörper fixiert</strong> und gesucht wird ein <strong>Antigen</strong> (hCG), sichtbar gemacht durch einen direkt gekoppelten Farbstoff.</p>
+<h3>Weitere Anwendungen</h3>
+<ul>
+<li><strong>Zellforschung:</strong> Monoklonale Antikörper gegen Tubulin, gekoppelt mit einem Fluoreszenzfarbstoff, machen die Mikrotubuli des Cytoskeletts im Fluoreszenzmikroskop sichtbar.</li>
+<li><strong>Diagnose:</strong> Mit radioaktiv markierten monoklonalen Antikörpern lassen sich Tumorzellen markieren und Grösse und Lage von Tumoren bestimmen.</li>
+<li><strong>Medikamente:</strong> Antikörper bringen Wirkstoffe gezielt zu Zellen mit bestimmten Oberflächenstrukturen (z. B. Krebszellen). <strong>TNF-Blocker</strong> binden den Signalstoff Tumornekrosefaktor, der an Rheuma und chronischen Darmentzündungen beteiligt ist.</li>
+</ul>`
+        }
+      ]
+    },
+    {
+      id: "topic-28",
+      name: "Enzyme: Biokatalysatoren des Stoffwechsels",
+      group: "Enzymatik",
+      subtopics: [
+        {
+          name: "Aktivierungsenergie und Enzymkatalyse",
+          summary: `<p><strong>Enzyme</strong> sind Proteine, die als <strong>Biokatalysatoren</strong> Stoffwechselreaktionen beschleunigen, ohne dabei selbst verbraucht zu werden. Ohne sie liefen die meisten Reaktionen bei Körpertemperatur so langsam ab, dass kein Leben möglich wäre. Gleichzeitig bestimmen sie durch ihre hohe Selektivität, <em>welche</em> Reaktionen in der Zelle überhaupt stattfinden.</p>
+<div class="summary-table-wrap"><table><caption>Grundbegriffe</caption><thead><tr><th>Begriff</th><th>Bedeutung</th></tr></thead><tbody>
+<tr><td><strong>Katalysator</strong></td><td>Stoff, der eine Reaktion beschleunigt, indem er die Aktivierungsenergie senkt; er geht unverändert aus der Reaktion hervor.</td></tr>
+<tr><td><strong>Aktivierungsenergie</strong></td><td>Energie, die zugeführt werden muss, damit eine Reaktion startet («Energieberg», den die Moleküle überwinden müssen).</td></tr>
+<tr><td><strong>exergonische Reaktion</strong></td><td>Reaktion, bei der Energie frei wird: Die Produkte enthalten weniger freie Energie als die Ausgangsstoffe (Edukte).</td></tr>
+<tr><td><strong>endergonische Reaktion</strong></td><td>Reaktion, die Energie benötigt: Die Produkte enthalten mehr freie Energie als die Edukte.</td></tr>
+<tr><td><strong>Substrat (S)</strong></td><td>Stoff, der vom Enzym umgesetzt wird.</td></tr>
+<tr><td><strong>Produkt (P)</strong></td><td>Stoff, der aus dem Substrat entsteht.</td></tr>
+</tbody></table></div>
+
+<h3>Enzyme setzen die Aktivierungsenergie herab</h3>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/enz-aktivierungsenergie.jpg" alt="Energiediagramm einer Reaktion mit und ohne Enzym sowie Ball-Modell für stabilen und instabilen Zustand" loading="lazy"><figcaption><strong>Abb. – Einfluss von Enzymen auf die Aktivierungsenergie.</strong> Links: Energieverlauf einer exergonischen Reaktion. Ohne Biokatalysator muss der hohe Berg (2) überwunden werden, mit Enzym nur der niedrige (3). Ausgangs- und Endniveau, (1) und (5), bleiben gleich, und damit auch die frei werdende Energie (4). Rechts das Ball-Modell: Ein Ball in einer Mulde ist «stabil» und braucht einen Anstoss (Aktivierungsenergie), bevor er bergab rollen kann.<span class="figure-source">Quelle: Skript «Stoffwechselbiologie: Enzyme», S. 1.1 (Abb. 1.1)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Legende zum Energiediagramm</caption><thead><tr><th>Nr.</th><th>Bedeutung</th><th>Ändert sich durch das Enzym?</th></tr></thead><tbody>
+<tr><td><strong>(1)</strong></td><td>Energiegehalt des Substrats</td><td>nein</td></tr>
+<tr><td><strong>(2)</strong></td><td>Aktivierungsenergie ohne Biokatalysator</td><td>– (wird umgangen)</td></tr>
+<tr><td><strong>(3)</strong></td><td>Aktivierungsenergie mit Biokatalysator</td><td><strong>ja, viel kleiner</strong></td></tr>
+<tr><td><strong>(4)</strong></td><td>freigesetzte Reaktionsenergie</td><td>nein</td></tr>
+<tr><td><strong>(5)</strong></td><td>Energiegehalt der Produkte</td><td>nein</td></tr>
+</tbody></table></div>
+<p>Proteine, DNA und andere komplexe Moleküle sind reich an freier Energie und könnten eigentlich spontan zerfallen. Sie existieren nur, weil bei Körpertemperatur <strong>nur wenige</strong> Moleküle den <strong>Berg der Aktivierungsenergie</strong> überwinden. Enzyme senken diesen Berg gezielt für einzelne Reaktionen.</p>
+<div class="summary-merke"><strong>Merke:</strong> Ein Enzym macht aus einer endergonischen Reaktion <strong>keine exergonische</strong>. Es beschleunigt nur Reaktionen, die ohnehin ablaufen würden, indem es die <strong>Aktivierungsenergie senkt</strong>. Die Energiebilanz der Reaktion bleibt gleich.</div>
+
+<h3>Das aktive Zentrum und der Katalysezyklus</h3>
+<p>Eine Enzymreaktion lässt sich mit folgendem Schema beschreiben:</p>
+<p><strong>E + S → [ES] → E + P</strong> &nbsp;(E = Enzym, S = Substrat, [ES] = Enzym-Substrat-Komplex, P = Produkt)</p>
+<figure class="summary-figure"><img src="Resourcen/Bilder/enz-kreislauf-katalyse.jpg" alt="Kreislauf der Enzymkatalyse am Beispiel der Saccharase, die Saccharose in Glucose und Fructose spaltet" loading="lazy"><figcaption><strong>Abb. – Kreislauf einer Enzymkatalyse (Saccharase).</strong> Das Substrat Saccharose bindet im <strong>aktiven Zentrum</strong>, es entsteht der Enzym-Substrat-Komplex. Unter Einbau von Wasser wird die Saccharose in Glucose und Fructose gespalten. Die Produkte lösen sich, und das Enzym steht <strong>unverändert</strong> für das nächste Substratmolekül bereit.<span class="figure-source">Quelle: Skript «Stoffwechselbiologie: Enzyme», S. 1.2 (Abb. 1.3)</span></figcaption></figure>
+<ol>
+<li><strong>Bindung:</strong> Das Substrat lagert sich im aktiven Zentrum an.</li>
+<li><strong>Enzym-Substrat-Komplex [ES]:</strong> Bindungen im Substrat werden gelockert, die Aktivierungsenergie sinkt.</li>
+<li><strong>Umsetzung:</strong> Das Substrat wird zum Produkt umgebaut (hier: gespalten).</li>
+<li><strong>Freisetzung:</strong> Die Produkte lösen sich, das Enzym ist wieder frei.</li>
+</ol>
+
+<h3>Substratbindung: Schlüssel-Schloss- und Induced-fit-Modell</h3>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/enz-schluessel-schloss-induced-fit.jpg" alt="Gegenüberstellung von Schlüssel-Schloss-Modell und Modell der induzierten Passform mit Karikaturen" loading="lazy"><figcaption><strong>Abb. – Substratspezifität.</strong> A: <strong>Schlüssel-Schloss-Modell</strong>: Substrat und aktives Zentrum passen von Anfang an starr zueinander, wie ein Schlüssel ins Schloss. B: <strong>Induced-fit-Modell</strong> (induzierte Passform): Das aktive Zentrum passt sich beim Binden des Substrats an, wie ein Sessel, der sich der Person anpasst.<span class="figure-source">Quelle: Skript «Stoffwechselbiologie: Enzyme», S. 1.2 (Abb. 1.4)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><thead><tr><th>Kriterium</th><th>Schlüssel-Schloss-Modell</th><th>Induced-fit-Modell</th></tr></thead><tbody>
+<tr><td><strong>Aktives Zentrum</strong></td><td>starr, passt genau zum Substrat</td><td>flexibel, verändert beim Binden seine Form</td></tr>
+<tr><td><strong>Passform</strong></td><td>schon vor der Bindung vorhanden</td><td>entsteht erst durch die Bindung</td></tr>
+<tr><td><strong>Erklärt</strong></td><td>die hohe Substratspezifität</td><td>Spezifität <em>und</em> das Lockern von Bindungen im Substrat</td></tr>
+</tbody></table></div>
+
+<h3>Aufgaben: Enzyme sind Biokatalysatoren</h3>
+<div class="summary-table-wrap"><table class="summary-note-table"><caption>Auftrag S. 1.3 – Lösungen (Antworten im Skript abgeschnitten bzw. ergänzt)</caption><thead><tr><th>Frage</th><th>Antwort</th></tr></thead><tbody>
+<tr><td><strong>1. Was ist ein Katalysator?</strong></td><td>Ein Stoff, der eine chemische Reaktion beschleunigt, indem er die Aktivierungsenergie herabsetzt. Er wird dabei nicht verbraucht und liegt nach der Reaktion unverändert vor.</td></tr>
+<tr><td><strong>2. Warum sind Enzyme im Stoffwechsel so wichtig?</strong></td><td>Ohne Enzyme liefen die Reaktionen bei 37 °C viel zu langsam ab. Weil jedes Enzym nur eine bestimmte Reaktion katalysiert, steuern Enzyme, <strong>welche</strong> Reaktionen <strong>wann</strong> ablaufen, und machen so einen geregelten, dynamischen Stoffwechsel möglich.</td></tr>
+<tr><td><strong>3. Trifft Definition A oder B zu?</strong></td><td>Keine ganz. Richtig ist jeweils nur der erste Teil: Enzyme sind <strong>substratspezifisch</strong> (nur ein bestimmtes Substrat) <strong>und wirkungsspezifisch</strong> (nur eine bestimmte Reaktion). Falsch sind die Nachsätze: Nicht jede mögliche Reaktion des Substrats wird katalysiert (A), und die Reaktion ist nicht mit jedem Substrat möglich (B).</td></tr>
+<tr><td><strong>4. Welche Aussage stimmt?</strong></td><td><strong>c</strong>: Es gibt sehr viele verschiedene Enzyme (für jede Reaktion ein eigenes), aber von jeder Sorte nur mässig viele, weil ein Enzym nicht verbraucht wird und sehr viele Substratmoleküle nacheinander umsetzen kann.</td></tr>
+</tbody></table></div>
+<div class="summary-merke"><strong>Merke:</strong> Enzyme sind <strong>substratspezifisch</strong> (welcher Stoff?) und <strong>wirkungsspezifisch</strong> (welche Reaktion?). Grundlage ist die räumliche Passform von Substrat und <strong>aktivem Zentrum</strong>.</div>`
+        },
+        {
+          name: "Enzymklassen und Namensgebung",
+          summary: `<p>Enzymnamen enden auf <strong>-ase</strong>. Meist verrät der Name das Substrat oder die Reaktion: Die <strong>Maltase</strong> spaltet den Zweifachzucker Maltose in zwei Glucose, die <strong>Saccharase</strong> spaltet Saccharose, eine <strong>Dehydrogenase</strong> entzieht Wasserstoff. Nach ihrer Wirkungsweise teilt man Enzyme in <strong>sechs Klassen</strong> ein.</p>
+<div class="summary-table-wrap"><table><caption>Die sechs Enzymklassen (Tab. 1.1 im Skript)</caption><thead><tr><th>Klasse</th><th>Reaktion</th><th>katalysiert …</th><th>Beispiele</th></tr></thead><tbody>
+<tr><td><strong>1 Oxidoreduktasen</strong></td><td>A⁻ + B → A + B⁻</td><td>Redoxreaktionen (Übertragung von Elektronen bzw. Wasserstoff)</td><td><strong>Alkohol-Dehydrogenase</strong> (Alkoholabbau): C₂H₅OH + NAD⁺ → C₂H₄O + NADH + H⁺ (Ethanol → Acetaldehyd)</td></tr>
+<tr><td><strong>2 Transferasen</strong></td><td>A–X + B → A + B–X</td><td>Übertragung einer funktionellen Gruppe (z. B. Methyl- oder Phosphatgruppe)</td><td><strong>Kinasen</strong> übertragen Phosphat von ATP auf andere Moleküle (Hexokinase phosphoryliert Glucose); DNA- und RNA-Polymerasen</td></tr>
+<tr><td><strong>3 Hydrolasen</strong></td><td>A–B + H₂O ⇌ A–H + B–OH</td><td>Spaltung unter Einbau von Wasser (Hydrolyse)</td><td>viele <strong>Verdauungsenzyme</strong>, z. B. Pepsin und Trypsin (Proteinspaltung); ergänzt: Maltase, Saccharase. Im Skript steht hier zusätzlich «DNA- und RNA-Polymerasen»: Diese verknüpfen Nukleotide und gehören zu den Transferasen.</td></tr>
+<tr><td><strong>4 Lyasen</strong></td><td>A–B → A + B</td><td>Spaltung eines Moleküls ohne Wasser</td><td><strong>Carboanhydrase</strong>: HCO₃⁻ + H⁺ ⇌ H₂O + CO₂</td></tr>
+<tr><td><strong>5 Isomerasen</strong></td><td>Umlagerung im Molekül</td><td>Umwandlung in ein <strong>Isomer</strong> (gleiche Summenformel, andere Strukturformel)</td><td><strong>Triosephosphat-Isomerase</strong>: wandelt im Glucoseabbau eine Ketose in eine Aldose um</td></tr>
+<tr><td><strong>6 Ligasen</strong></td><td>A + B → A–B</td><td>Verknüpfung zweier Moleküle durch eine kovalente Bindung</td><td><strong>DNA-Ligase</strong> kittet Brüche in der DNA; Synthetasen</td></tr>
+</tbody></table></div>
+<div class="summary-merke"><strong>Eselsbrücke für die Reihenfolge (ergänzt):</strong> «<strong>O</strong>tto <strong>T</strong>rinkt <strong>H</strong>eute <strong>L</strong>ieber <strong>I</strong>mmer <strong>L</strong>imo» – Oxidoreduktasen, Transferasen, Hydrolasen, Lyasen, Isomerasen, Ligasen.</div>
+<div class="summary-table-wrap"><table class="summary-note-table"><caption>Lyase, Hydrolase oder Ligase? Unterscheidung – ergänzt, steht so nicht im Skript</caption><thead><tr><th>Klasse</th><th>Woran erkennt man sie?</th></tr></thead><tbody>
+<tr><td><strong>Hydrolase</strong></td><td>spaltet <strong>mit</strong> Wasser (H₂O steht auf der Eduktseite).</td></tr>
+<tr><td><strong>Lyase</strong></td><td>spaltet <strong>ohne</strong> Wasser.</td></tr>
+<tr><td><strong>Ligase</strong></td><td>verknüpft zwei Moleküle (meist unter ATP-Verbrauch), das Gegenstück zur Spaltung.</td></tr>
+<tr><td><strong>Transferase</strong></td><td>es wird nichts gespalten oder verknüpft, sondern eine Gruppe von einem Molekül auf ein anderes übertragen.</td></tr>
+</tbody></table></div>`
+        },
+        {
+          name: "Cofaktoren: prosthetische Gruppen, Coenzyme und Metall-Ionen",
+          summary: `<p>Einige Enzyme bestehen nur aus Protein. Die meisten brauchen aber zusätzlich einen kleinen <strong>Nicht-Protein-Bestandteil</strong>, einen <strong>Cofaktor</strong>. Ohne ihn ist das Enzym nicht reaktionsfähig.</p>
+<div class="summary-table-wrap"><table><thead><tr><th>Begriff</th><th>Bedeutung</th></tr></thead><tbody>
+<tr><td><strong>Apoenzym</strong></td><td>der Proteinanteil eines Enzyms</td></tr>
+<tr><td><strong>Cofaktor</strong></td><td>kleines Nicht-Protein-Molekül oder Ion, das für die Funktion nötig ist</td></tr>
+<tr><td><strong>Holoenzym</strong></td><td>funktionsfähiger Komplex aus Apoenzym + Cofaktor</td></tr>
+</tbody></table></div>
+
+<h3>Das Experiment von Harden und Young (1905)</h3>
+<p>Schon 1882 war bekannt, dass Hefeextrakt ohne Sauerstoff Glucose zu <strong>Kohlenstoffdioxid und Ethanol</strong> umsetzt, also auch <strong>ohne lebende Zellen</strong>. Harden und Young zermörserten Hefezellen mit Sand und Wasser, filtrierten den Zellsaft (Filtrat ①) und dialysierten einen Teil davon 24 Stunden lang. Die Dialysemembran lässt kleine Moleküle durch, grosse nicht. So erhielten sie das Dialysat ② (Inhalt des Schlauchs, grosse Moleküle) und das Aussenmedium ③ (kleine Moleküle).</p>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/enz-harden-young.jpg" alt="Versuchsaufbau von Harden und Young: Hefezellen mörsern, filtrieren, dialysieren, Proben auf CO2-Entwicklung testen" loading="lazy"><figcaption><strong>Abb. – Experiment von Harden und Young (1905).</strong> Versuchsreihe 1: Nur das Filtrat ① bildet mit Glucose CO₂, Dialysat ② und Aussenmedium ③ allein nicht. Versuchsreihe 2: Gibt man ③ zu ② zurück, entsteht wieder CO₂ (a). Das gilt auch, wenn ③ vorher erhitzt wurde (b), aber nicht, wenn ② erhitzt wurde (c).<span class="figure-source">Quelle: Skript «Stoffwechselbiologie: Enzyme», S. 1.5 (Abb. 1.5)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Auswertung der Versuche</caption><thead><tr><th>Versuch</th><th>Ergebnis</th><th>Schlussfolgerung</th></tr></thead><tbody>
+<tr><td><strong>Filtrat ① + Glucose</strong></td><td>CO₂-Entwicklung</td><td>Der zellfreie Zellsaft ist katalytisch aktiv; dazu braucht es keine intakten Zellen und keine Membranen.</td></tr>
+<tr><td><strong>Dialysat ② + Glucose</strong></td><td>keine CO₂-Entwicklung</td><td>Die grossen Moleküle allein genügen nicht.</td></tr>
+<tr><td><strong>Aussenmedium ③ + Glucose</strong></td><td>keine CO₂-Entwicklung</td><td>Die kleinen Moleküle allein genügen auch nicht.</td></tr>
+<tr><td><strong>a) ③ + ②</strong></td><td>CO₂-Entwicklung</td><td>Es braucht <strong>beide</strong> Anteile zusammen.</td></tr>
+<tr><td><strong>b) ③ erhitzt + ②</strong></td><td>CO₂-Entwicklung</td><td>Der kleine Anteil ist <strong>hitzestabil</strong>: kein Protein, sondern ein Cofaktor.</td></tr>
+<tr><td><strong>c) ③ + ② erhitzt</strong></td><td>keine CO₂-Entwicklung</td><td>Der grosse Anteil ist <strong>hitzeempfindlich</strong>: ein Protein (Apoenzym), das durch Hitze denaturiert.</td></tr>
+</tbody></table></div>
+<div class="summary-table-wrap"><table class="summary-note-table"><caption>Fragen S. 1.6 – Lösungen (teilweise im Skript beantwortet, hier ausformuliert)</caption><thead><tr><th>Frage</th><th>Antwort</th></tr></thead><tbody>
+<tr><td><strong>1. Wo befinden sich die katalytisch wirksamen Moleküle?</strong></td><td>Frei im <strong>Cytoplasma</strong>: Das membranfreie Filtrat ist voll wirksam.</td></tr>
+<tr><td><strong>2. Rückschlüsse auf Aufbau und Wirkung des Enzyms</strong></td><td>Das Enzym besteht aus zwei Teilen: einem grossen, hitzeempfindlichen <strong>Proteinanteil</strong> (Apoenzym, bleibt im Dialyseschlauch) und einem kleinen, hitzestabilen <strong>Nicht-Protein-Anteil</strong> (Cofaktor, wandert durch die Membran). Nur zusammen sind sie wirksam (Holoenzym).</td></tr>
+<tr><td><strong>3. Warum heissen Coenzyme auch Cosubstrate?</strong></td><td>Weil sie bei der Reaktion <strong>wie ein Substrat verändert</strong> werden: Sie nehmen Elektronen, Protonen oder Gruppen auf oder geben sie ab und müssen danach in einer zweiten Reaktion regeneriert werden.</td></tr>
+</tbody></table></div>
+
+<h3>Drei Klassen von Cofaktoren</h3>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/enz-cofaktoren.jpg" alt="Schema eines Enzyms mit prosthetischer Gruppe und eines Enzyms mit Coenzym" loading="lazy"><figcaption><strong>Abb. – Arbeitsweise eines Enzyms mit prosthetischer Gruppe (links) und mit Coenzym (rechts).</strong> Die prosthetische Gruppe (roter Punkt) bleibt fest im Enzym und wird dort verändert und wieder regeneriert. Das Coenzym (rot) bindet nur locker, übernimmt eine Gruppe, ein Proton oder ein Elektron vom Substrat und verlässt das Enzym danach wieder.<span class="figure-source">Quelle: Skript «Stoffwechselbiologie: Enzyme», S. 1.6 (Abb. 1.6 und 1.7)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><thead><tr><th>Kriterium</th><th>Prosthetische Gruppe</th><th>Coenzym (Cosubstrat)</th><th>Metall-Ion</th></tr></thead><tbody>
+<tr><td><strong>Stoffart</strong></td><td>organisches Molekül</td><td>organisches Molekül</td><td>anorganisch (Fe²⁺/³⁺, Cu²⁺, Mn²⁺ …)</td></tr>
+<tr><td><strong>Bindung ans Enzym</strong></td><td><strong>kovalent</strong>, fest, verlässt das Enzym nie</td><td><strong>nicht kovalent</strong>, locker, verlässt das Enzym nach der Reaktion</td><td>meist locker gebunden</td></tr>
+<tr><td><strong>Funktion</strong></td><td>wird bei der Katalyse verändert und <strong>am Enzym</strong> regeneriert</td><td>gibt Elektronen, Protonen oder Gruppen ab oder nimmt sie auf; wird <strong>in einer zweiten Reaktion</strong> regeneriert</td><td>stabilisiert die Raumstruktur oder hilft, das Substrat zu binden</td></tr>
+<tr><td><strong>Beispiele</strong></td><td>Häm im Hämoglobin</td><td><strong>ATP</strong> (Energieüberträger), <strong>NAD</strong> (überträgt Protonen und Elektronen; wird aus dem Vitamin Niacin gebildet)</td><td>Eisen im Hämoglobin</td></tr>
+</tbody></table></div>
+<div class="summary-merke"><strong>Merke:</strong> <strong>Apoenzym + Cofaktor = Holoenzym.</strong> Viele <strong>Vitamine</strong> sind Vorstufen oder Bestandteile von Coenzymen. Deshalb führt Vitaminmangel zu Stoffwechselstörungen: Das Enzym ist zwar vorhanden, aber ohne Coenzym wirkungslos.</div>`
+        }
+      ]
+    },
+    {
+      id: "topic-29",
+      name: "Regulation der Enzymaktivität",
+      group: "Enzymatik",
+      subtopics: [
+        {
+          name: "Substratkonzentration, Temperatur und pH-Wert",
+          summary: `<p>Enzyme verlieren ihre Wirkung nicht von selbst. Damit der Stoffwechsel nicht chaotisch abläuft, muss ihre Aktivität geregelt werden: über die <strong>Enzymmenge</strong> (Synthese und Abbau), über <strong>Hemmstoffe und Aktivatoren</strong> und über die <strong>Reaktionsbedingungen</strong>.</p>
+<div class="summary-table-wrap"><table><caption>Wie die Zelle die Enzymaktivität steuert</caption><thead><tr><th>Ebene</th><th>Mechanismus</th></tr></thead><tbody>
+<tr><td><strong>Enzymkonzentration</strong></td><td>Ein benötigtes Enzym wird <strong>laufend neu produziert</strong> und gleichzeitig laufend abgebaut. Stoppt die Synthese, sinkt die Menge rasch, und die Reaktion verlangsamt sich oder hört auf.</td></tr>
+<tr><td><strong>Hemmstoffe / Aktivatoren</strong></td><td>Andere Moleküle binden ans Enzym und schalten es ab oder an (siehe nächstes Unterkapitel).</td></tr>
+<tr><td><strong>Reaktionsbedingungen</strong></td><td>Substratkonzentration, Temperatur und pH-Wert bestimmen, wie schnell das Enzym arbeitet.</td></tr>
+</tbody></table></div>
+
+<h3>Einfluss der Substratkonzentration</h3>
+<figure class="summary-figure"><img src="Resourcen/Bilder/enz-substrat.jpg" alt="Sättigungskurve der Reaktionsgeschwindigkeit in Abhängigkeit der Substratkonzentration mit vmax und Km" loading="lazy"><figcaption><strong>Abb. – Reaktionsgeschwindigkeit in Abhängigkeit der Substratkonzentration</strong> (bei konstanter Enzymmenge). Bei wenig Substrat (1) sind die meisten Enzyme frei, und jedes zusätzliche Substratmolekül beschleunigt die Reaktion. Bei sehr viel Substrat (3) sind alle aktiven Zentren besetzt, und die Kurve nähert sich dem Grenzwert <strong>v<sub>max</sub></strong>. K<sub>m</sub> ist die Substratkonzentration bei ½ v<sub>max</sub>.<span class="figure-source">Quelle: Skript «Stoffwechselbiologie: Enzyme», S. 1.7 (Abb. 1.8)</span></figcaption></figure>
+<ul>
+<li><strong>Anstieg:</strong> Je mehr Substrat, desto häufiger treffen Substrat und Enzym aufeinander, und desto schneller läuft die Reaktion.</li>
+<li><strong>Sättigung:</strong> Ab einer bestimmten Konzentration sind alle Enzyme ständig besetzt. Mehr Substrat bringt nichts mehr, die Geschwindigkeit bleibt bei v<sub>max</sub>. Steigern lässt sie sich jetzt nur noch mit <strong>mehr Enzym</strong>.</li>
+<li><strong>K<sub>m</sub> (Michaelis-Konstante)</strong> (ergänzt, wird im Skript nur in der Grafik genannt): Substratkonzentration, bei der die halbe Maximalgeschwindigkeit erreicht ist. Ein kleiner K<sub>m</sub> bedeutet eine hohe <strong>Affinität</strong>: Das Enzym arbeitet schon bei wenig Substrat schnell.</li>
+</ul>
+
+<h3>Einfluss von Temperatur und pH-Wert</h3>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/enz-temperatur-ph.jpg" alt="Optimumkurven der Enzymaktivität für Temperatur (menschliches Enzym und Enzym thermophiler Bakterien) und pH-Wert (Pepsin, Amylase, Trypsin)" loading="lazy"><figcaption><strong>Abb. – Enzymaktivität in Abhängigkeit von Temperatur und pH-Wert.</strong> Links: Ein typisches menschliches Enzym hat sein Optimum bei etwa 37–40 °C und fällt danach steil ab (Denaturierung ab etwa 45–50 °C). Enzyme aus thermophilen (hitzeliebenden) Bakterien haben ihr Optimum bei etwa 75–80 °C. Rechts: Pepsin (Magen) arbeitet am besten bei pH 2, Amylase (Speichel) bei etwa pH 7, Trypsin (Dünndarm) bei etwa pH 8.<span class="figure-source">Quelle: Skript «Stoffwechselbiologie: Enzyme», S. 1.7 (Abb. 1.8)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Auftrag S. 1.7: Kurvenverläufe deuten</caption><thead><tr><th>Faktor</th><th>Kurvenverlauf</th><th>Begründung</th></tr></thead><tbody>
+<tr><td><strong>Substratkonzentration</strong></td><td>steigt erst steil, dann immer flacher an und nähert sich v<sub>max</sub> (Sättigungskurve)</td><td>Erst gibt es mehr Treffer zwischen Enzym und Substrat; dann sind alle aktiven Zentren besetzt.</td></tr>
+<tr><td><strong>Temperatur</strong></td><td>Optimumkurve: langsamer Anstieg bis zum Optimum, danach <strong>steiler Abfall</strong> auf null</td><td>Wärme beschleunigt die Teilchenbewegung (RGT-Regel, ergänzt: +10 °C ≈ doppelte bis dreifache Geschwindigkeit). Zu viel Wärme zerstört die Raumstruktur des Proteins (<strong>Denaturierung</strong>), und das aktive Zentrum verliert seine Form. Das ist meist <strong>irreversibel</strong>.</td></tr>
+<tr><td><strong>pH-Wert</strong></td><td>Optimumkurve mit einem schmalen Bereich hoher Aktivität; jedes Enzym hat ein <strong>eigenes pH-Optimum</strong></td><td>H⁺- bzw. OH⁻-Ionen verändern die Ladungen der Aminosäuren und damit die Raumstruktur und das aktive Zentrum. Das Optimum passt zum Wirkort (Magen sauer, Darm leicht basisch).</td></tr>
+</tbody></table></div>
+<p>Notiz im Skript, hier ausformuliert: Enzyme sind bei bestimmten Bedingungen (pH-Wert, Temperatur) am aktivsten, und verschiedene Enzyme haben verschiedene Optima. Das ist <strong>evolutionär</strong> entstanden (Anpassung an den Lebensraum, z. B. heisse Quellen) und dient auch dazu, Reaktionen <strong>räumlich zu trennen und zu steuern</strong>: Pepsin arbeitet nur im sauren Magen, Trypsin nur im Darm. Bei mehr Substrat sind die Enzyme aktiver, aber nur bis zu einem bestimmten Punkt (Sättigung).</p>
+<div class="summary-merke"><strong>Merke:</strong> Temperatur und pH-Wert ergeben <strong>Optimumkurven</strong>, die Substratkonzentration eine <strong>Sättigungskurve</strong>. Zu hohe Temperatur und ein falscher pH-Wert <strong>denaturieren</strong> das Enzym, weil sich die Raumstruktur des aktiven Zentrums verändert.</div>`
+        },
+        {
+          name: "Kompetitive, allosterische und irreversible Hemmung",
+          summary: `<p>Binden ausser dem Substrat noch andere Stoffe ans Enzym, kann die Aktivität sinken. Solche Stoffe heissen <strong>Hemmstoffe</strong> oder <strong>Inhibitoren</strong> (I). Man unterscheidet die Hemmung danach, <strong>wo</strong> der Hemmstoff bindet und <strong>ob</strong> er sich wieder löst.</p>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/enz-hemmung-uebersicht.jpg" alt="Kompetitive Hemmung durch Oxalessigsäure am aktiven Zentrum und allosterische Hemmung durch Isoleucin an einer anderen Stelle" loading="lazy"><figcaption><strong>Abb. – Kompetitive und allosterische Hemmung.</strong> Links: <strong>Oxalessigsäure</strong> ist dem eigentlichen Substrat Bernsteinsäure ähnlich und besetzt das aktive Zentrum, es kommt zu keiner Umsetzung. Rechts: <strong>Isoleucin</strong> bindet an einer anderen Stelle (allosterisches Zentrum) und verformt dadurch das aktive Zentrum, sodass das Substrat Threonin nicht mehr passt.<span class="figure-source">Quelle: Skript «Stoffwechselbiologie: Enzyme», S. 1.9 (Abb. 1.9)</span></figcaption></figure>
+
+<h3>Kompetitive Hemmung</h3>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/enz-kompetitive-hemmung.jpg" alt="Reaktionsschema, Modell und Geschwindigkeitskurve der kompetitiven Hemmung" loading="lazy"><figcaption><strong>Abb. – Mechanismus der kompetitiven Hemmung.</strong> Substrat und Inhibitor konkurrieren um das aktive Zentrum: Es bildet sich entweder ES oder EI. Die Kurve der gehemmten Reaktion steigt langsamer, erreicht bei sehr viel Substrat aber <strong>fast dieselbe Maximalgeschwindigkeit</strong>, weil der Hemmstoff verdrängt wird.<span class="figure-source">Quelle: Skript «Stoffwechselbiologie: Enzyme», S. 1.10 (Abb. 1.11)</span></figcaption></figure>
+
+<h3>Nichtkompetitive (allosterische) Hemmung</h3>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/enz-allosterische-hemmung.jpg" alt="Reaktionsschema, Modell und Geschwindigkeitskurve der nichtkompetitiven allosterischen Hemmung" loading="lazy"><figcaption><strong>Abb. – Mechanismus der nichtkompetitiven (allosterischen) Hemmung.</strong> Der Inhibitor bindet ausserhalb des aktiven Zentrums. Auch wenn das Substrat gebunden ist (ESI), entsteht kein Produkt. Mehr Substrat hilft nicht: Die Maximalgeschwindigkeit bleibt <strong>dauerhaft tiefer</strong>.<span class="figure-source">Quelle: Skript «Stoffwechselbiologie: Enzyme», S. 1.10 (Abb. 1.12)</span></figcaption></figure>
+<p><strong>Allosterie</strong> bezeichnet die Veränderung der räumlichen Gestalt (Konformation) eines Enzyms, die das aktive Zentrum beeinflusst. Die Bindestelle des Effektors heisst <strong>allosterisches Zentrum</strong>.</p>
+<div class="summary-table-wrap"><table><caption>Aufgabe 1: Wodurch unterscheiden sich die beiden Hemmtypen?</caption><thead><tr><th>Kriterium</th><th>Kompetitive Hemmung</th><th>Allosterische (nichtkompetitive) Hemmung</th></tr></thead><tbody>
+<tr><td><strong>Bindungsort des Hemmstoffs</strong></td><td>im <strong>aktiven Zentrum</strong></td><td>an einer <strong>anderen Stelle</strong> (allosterisches Zentrum)</td></tr>
+<tr><td><strong>Bau des Hemmstoffs</strong></td><td>dem Substrat <strong>ähnlich</strong></td><td>dem Substrat meist <strong>nicht</strong> ähnlich</td></tr>
+<tr><td><strong>Wirkung</strong></td><td>blockiert das aktive Zentrum; Substrat und Hemmstoff «konkurrieren»</td><td>verändert die Raumstruktur, sodass das aktive Zentrum nicht mehr passt</td></tr>
+<tr><td><strong>Mehr Substrat …</strong></td><td>verdrängt den Hemmstoff; v<sub>max</sub> wird fast wieder erreicht</td><td>hilft nicht; v<sub>max</sub> bleibt erniedrigt</td></tr>
+<tr><td><strong>Beispiel</strong></td><td>Oxalessigsäure hemmt den Umbau von Bernsteinsäure; Ethanol hemmt den Methanolabbau</td><td>Isoleucin hemmt Enzym 1 seiner eigenen Synthese</td></tr>
+</tbody></table></div>
+
+<h3>Endprodukthemmung: die Isoleucin-Synthese</h3>
+<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/enz-isoleucin-feedback.jpg" alt="Syntheseweg von Threonin über fünf Enzyme zu Isoleucin mit Rückkopplung des Endprodukts auf Enzym 1" loading="lazy"><figcaption><strong>Abb. – Isoleucin-Synthese mit Feedback-Hemmung.</strong> Threonin wird über vier Zwischenprodukte und fünf Enzyme zu Isoleucin umgebaut. Das Endprodukt Isoleucin bindet am allosterischen Zentrum von <strong>Enzym 1</strong> (Threonindesaminase), und das aktive Zentrum bindet dann kein Threonin mehr.<span class="figure-source">Quelle: Skript «Stoffwechselbiologie: Enzyme», S. 1.9 (Abb. 1.10)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Aufgabe 2: Warum kommt die Isoleucin-Synthese zum Stillstand?</caption><thead><tr><th>Frage</th><th>Antwort</th></tr></thead><tbody>
+<tr><td><strong>Mechanismus</strong></td><td><strong>Endprodukthemmung (negative Rückkopplung, Feedback-Hemmung)</strong>: Das Endprodukt Isoleucin ist der allosterische Hemmstoff des ersten Enzyms im Syntheseweg.</td></tr>
+<tr><td><strong>Ablauf</strong></td><td>Viel Isoleucin → viele Enzym-1-Moleküle sind gehemmt → die Synthese stoppt. Wird Isoleucin verbraucht, löst es sich wieder (reversibel) → die Synthese läuft wieder an.</td></tr>
+<tr><td><strong>Biologische Bedeutung</strong></td><td>Der Stoffwechsel <strong>regelt sich selbst</strong>: Es wird nur so viel produziert, wie gebraucht wird. Weil gleich das <strong>erste</strong> Enzym gehemmt wird, entstehen auch keine unnötigen Zwischenprodukte, was Energie und Material spart.</td></tr>
+</tbody></table></div>
+<div class="summary-merke"><strong>Merke:</strong> Bei der <strong>Endprodukthemmung</strong> hemmt das Endprodukt eines Stoffwechselwegs allosterisch das <strong>erste</strong> Enzym dieses Wegs. Das ist ein Regelkreis mit negativer Rückkopplung.</div>
+
+<h3>Irreversible Hemmung</h3>
+<p>Kompetitive und allosterische Inhibitoren können auch <strong>dauerhaft</strong> binden. Das Enzym ist dann für immer ausgeschaltet und muss neu gebildet werden.</p>
+<div class="summary-table-wrap"><table><thead><tr><th>Beispiel</th><th>Bindungsort</th><th>Wirkung</th></tr></thead><tbody>
+<tr><td><strong>Penicillin</strong> (Antibiotikum)</td><td>im <strong>aktiven Zentrum</strong> der bakteriellen Transpeptidase (bindet an einen Aminosäurerest)</td><td>Das Enzym für den Aufbau der Zellwand ist inaktiv; die Bakterien können nach der Teilung keine neue Zellwand bilden und sterben ab. Menschliche Zellen haben keine Zellwand und sind daher nicht betroffen.</td></tr>
+<tr><td><strong>Schwermetall-Ionen</strong> (z. B. Quecksilber, Blei) und <strong>Cyanid</strong></td><td><strong>ausserhalb</strong> des aktiven Zentrums</td><td>zerstören Disulfidbrücken und damit die Raumstruktur, sodass kein Substrat mehr umgesetzt wird. Sie wirken als <strong>Enzymgifte</strong>.</td></tr>
+</tbody></table></div>
+<div class="summary-merke"><strong>Das Wichtigste:</strong> <strong>Reversible</strong> Hemmung (kompetitiv oder allosterisch) dient der <strong>Regulation</strong>. <strong>Irreversible</strong> Hemmung schaltet ein Enzym endgültig aus und ist das Wirkprinzip vieler <strong>Gifte und Medikamente</strong>.</div>`
+        },
+        {
+          name: "Fallbeispiel: Methanolvergiftung",
+          summary: `<p>Am Beispiel einer Methanolvergiftung lässt sich zeigen, wie man eine <strong>Enzymhemmung als Therapie</strong> nutzt.</p>
+<div class="summary-table-wrap"><table><caption>Steckbrief: «Tod auf der Klassenfahrt»</caption><thead><tr><th>Merkmal</th><th>Inhalt</th></tr></thead><tbody>
+<tr><td><strong>Fall</strong></td><td>2009 starben drei Lübecker Schüler auf einer Klassenfahrt in die Türkei an billigem, mit Methanol verunreinigtem Wodka.</td></tr>
+<tr><td><strong>Verlauf</strong></td><td>Kaum betrunken, aber rasch müde, Erbrechen in der Nacht; trotz sofortiger Therapie Koma und Tod.</td></tr>
+<tr><td><strong>Ursache</strong></td><td>schlecht destillierter Selbstgebrannter oder absichtlich mit billigem Methanol gestreckte («gepanschte») Getränke</td></tr>
+<tr><td><strong>Gefährliche Dosis</strong></td><td>etwa <strong>1 g Methanol pro kg Körpergewicht</strong></td></tr>
+</tbody></table></div>
+
+<h3>Abbau von Ethanol und Methanol in der Leber</h3>
+<figure class="summary-figure summary-svg"><svg viewBox="0 0 640 330" role="img" aria-label="Abbauwege von Ethanol und Methanol über die Alkohol-Dehydrogenase, Methanol wird zu giftigem Formaldehyd und Ameisensäure" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+<defs><marker id="me-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<text x="320" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="currentColor">Abbau von Ethanol und Methanol in der Leber</text>
+<g stroke-width="1.5">
+<rect x="10" y="44" width="100" height="46" rx="6" fill="rgba(88,116,90,.18)" stroke="#58745a"/>
+<rect x="190" y="44" width="120" height="46" rx="6" fill="rgba(88,116,90,.18)" stroke="#58745a"/>
+<rect x="370" y="44" width="115" height="46" rx="6" fill="rgba(88,116,90,.18)" stroke="#58745a"/>
+<rect x="510" y="44" width="120" height="46" rx="6" fill="rgba(88,116,90,.18)" stroke="#58745a"/>
+<rect x="10" y="214" width="100" height="46" rx="6" fill="rgba(196,123,89,.18)" stroke="#b5533c"/>
+<rect x="190" y="214" width="120" height="46" rx="6" fill="rgba(181,83,60,.3)" stroke="#b5533c"/>
+<rect x="370" y="214" width="115" height="46" rx="6" fill="rgba(181,83,60,.3)" stroke="#b5533c"/>
+<rect x="510" y="214" width="120" height="46" rx="6" fill="rgba(88,116,90,.12)" stroke="#58745a"/>
+</g>
+<g fill="currentColor" text-anchor="middle">
+<text x="60" y="64" font-weight="bold">Ethanol</text><text x="60" y="80" font-size="11">(Trinkalkohol)</text>
+<text x="250" y="64" font-weight="bold">Ethanal</text><text x="250" y="80" font-size="11">(Acetaldehyd)</text>
+<text x="427" y="64" font-weight="bold">Ethansäure</text><text x="427" y="80" font-size="11">(Essigsäure)</text>
+<text x="570" y="64" font-weight="bold">Acetyl-CoA</text><text x="570" y="80" font-size="11">→ Citratzyklus</text>
+<text x="60" y="234" font-weight="bold">Methanol</text><text x="60" y="250" font-size="11">(Holzgeist)</text>
+<text x="250" y="234" font-weight="bold">Methanal</text><text x="250" y="250" font-size="11">Formaldehyd – giftig</text>
+<text x="427" y="234" font-weight="bold">Methansäure</text><text x="427" y="250" font-size="11">Ameisensäure – giftig</text>
+<text x="570" y="234" font-weight="bold">Entgiftung</text><text x="570" y="250" font-size="11">durch Tetrahydrofolsäure</text>
+</g>
+<g stroke="currentColor" stroke-width="1.6" marker-end="url(#me-a)">
+<line x1="112" y1="67" x2="186" y2="67"/><line x1="312" y1="67" x2="366" y2="67"/><line x1="487" y1="67" x2="506" y2="67"/>
+<line x1="112" y1="237" x2="186" y2="237" stroke-dasharray="5 4"/><line x1="312" y1="237" x2="366" y2="237"/><line x1="487" y1="237" x2="506" y2="237"/>
+</g>
+<g fill="currentColor" font-size="11" text-anchor="middle">
+<text x="149" y="60" font-weight="bold">ADH</text>
+<text x="339" y="60">ALDH</text>
+<text x="149" y="230" font-weight="bold">ADH</text><text x="149" y="275">langsam</text>
+<text x="339" y="230">ALDH</text>
+</g>
+<rect x="40" y="110" width="560" height="84" rx="8" fill="#fff" stroke="#4f7ea8" stroke-width="1.5"/>
+<g fill="currentColor" text-anchor="middle">
+<text x="320" y="130" font-weight="bold">Beide Alkohole konkurrieren um dasselbe aktive Zentrum der Alkohol-Dehydrogenase (ADH).</text>
+<text x="320" y="149">Ethanol hat die viel höhere Affinität → es besetzt die ADH, Methanol wird kaum umgesetzt</text>
+<text x="320" y="165">(kompetitive Hemmung) und kann langsam unverändert über die Nieren ausgeschieden werden.</text>
+<text x="320" y="183" font-size="11">Fomepizol hemmt die ADH direkt → weder Ethanol noch Methanol werden abgebaut.</text>
+</g>
+<g fill="currentColor" font-size="11" text-anchor="middle">
+<text x="320" y="300">Formaldehyd: schädigt Sehnerv (Erblindung), Zentralnervensystem, Nieren und Leber.</text>
+<text x="320" y="316">Ameisensäure: reichert sich an, weil die Nieren sie nur langsam ausscheiden → lebensgefährliche Übersäuerung.</text>
+</g>
+</svg><figcaption><strong>Abb. – Abbau von Ethanol und Methanol</strong> (digital gezeichnet). Beide Alkohole werden vom <strong>gleichen Enzym</strong>, der Alkohol-Dehydrogenase, oxidiert. Aus Ethanol entsteht das relativ harmlose Acetaldehyd, aus Methanol das hochgiftige Formaldehyd und daraus Ameisensäure. Methanol hat eine wesentlich <strong>geringere Affinität</strong> zur ADH und wird deshalb langsamer umgesetzt.<span class="figure-source">Quelle: nach Skript «Stoffwechselbiologie: Enzyme», S. 1.11 (Schülerunterlagen A/B)</span></figcaption></figure>
+<div class="summary-table-wrap"><table><caption>Verlauf einer Methanolvergiftung</caption><thead><tr><th>Phase</th><th>Symptome</th><th>Ursache</th></tr></thead><tbody>
+<tr><td><strong>zuerst</strong></td><td>wie ein gewöhnlicher Rausch: Schwindel, Rausch, Übelkeit</td><td>Methanol selbst wirkt wie Alkohol</td></tr>
+<tr><td><strong>danach</strong></td><td>Kopfschmerzen, Sehstörungen, Bewusstlosigkeit, Atemstillstand</td><td>Formaldehyd schädigt Nerven (Sehnerv), ZNS, Nieren, Leber</td></tr>
+<tr><td><strong>Stunden bis Tage später</strong></td><td>lebensbedrohliche Übersäuerung von Blut und Gewebe</td><td>Ameisensäure reichert sich an</td></tr>
+</tbody></table></div>
+
+<h3>Zwei Behandlungsmethoden</h3>
+<div class="summary-table-wrap"><table><thead><tr><th>Kriterium</th><th>A: Ethanol (früher)</th><th>B: Fomepizol (heute)</th></tr></thead><tbody>
+<tr><td><strong>Vorgehen</strong></td><td>grosse Mengen Trinkalkohol (z. B. hochprozentiger Schnaps); Blutalkohol über längere Zeit bei 0,5–0,8 ‰ halten</td><td>Medikament Fomepizol, das die ADH hemmt; die (hohe) Konzentration muss über längere Zeit aufrechterhalten werden</td></tr>
+<tr><td><strong>Wirkprinzip</strong></td><td><strong>kompetitive Hemmung</strong>: Ethanol verdrängt Methanol aus dem aktiven Zentrum der ADH</td><td>Hemmung der ADH durch einen Hemmstoff</td></tr>
+<tr><td><strong>Folge</strong></td><td colspan="2">Methanol wird kaum zu Formaldehyd und Ameisensäure umgesetzt und in dieser Zeit langsam unverändert über die Nieren ausgeschieden.</td></tr>
+</tbody></table></div>
+<div class="summary-table-wrap"><table class="summary-note-table"><caption>Fragen zu den Schülerunterlagen A und B – Lösungen (Blatt B im Skript leer, Antwort A1 korrigiert)</caption><thead><tr><th>Frage</th><th>Antwort</th></tr></thead><tbody>
+<tr><td><strong>A1 / B1: Wie funktioniert die Behandlung?</strong></td><td><strong>Ethanol:</strong> Es hat eine viel höhere Affinität zur ADH als Methanol und besetzt deren aktive Zentren (kompetitive Hemmung). Dadurch wird Methanol <em>nicht</em> abgebaut, es entstehen also kein Formaldehyd und keine Ameisensäure, und Methanol wird langsam über die Nieren ausgeschieden. <strong>Fomepizol:</strong> blockiert die ADH; die Wirkung ist dieselbe.</td></tr>
+<tr><td><strong>A2: Nachteil der Ethanol-Behandlung?</strong></td><td>Der Patient ist über lange Zeit (Tage) betrunken; Ethanol belastet selbst Leber und Nervensystem, und die Dosierung ist schwierig. Weil Ethanol ständig abgebaut wird, muss laufend nachgegeben werden.</td></tr>
+<tr><td><strong>B2: Wie könnte man den Abbau im Reagenzglas verhindern? Geht das auch beim Menschen?</strong></td><td>Im Reagenzglas könnte man die ADH <strong>denaturieren</strong> (Hitze, starke Säure/Base) oder mit Schwermetall-Ionen <strong>irreversibel</strong> hemmen. Beim Menschen ist das unmöglich, weil dabei alle Proteine bzw. Zellen geschädigt würden; Schwermetalle sind selbst Gifte.</td></tr>
+<tr><td><strong>A3 / B3: Welche Eigenschaften müsste ein Medikament haben, das nicht mit Methanol konkurriert?</strong></td><td>Es müsste ein <strong>allosterischer (nichtkompetitiver) Hemmstoff</strong> sein: Er bindet ausserhalb des aktiven Zentrums, verändert dessen Form und wirkt unabhängig davon, wie viel Methanol vorhanden ist. Ausserdem sollte er reversibel binden, gut verträglich sein und nur die ADH hemmen.</td></tr>
+<tr><td><strong>A4 / B4: Ethanol und Fomepizol gleichzeitig geben?</strong></td><td>Nicht sinnvoll: Fomepizol blockiert die ADH bereits. Das Ethanol bringt keinen zusätzlichen Schutz und kann selbst nicht abgebaut werden; der Patient bliebe noch länger und stärker betrunken.</td></tr>
+</tbody></table></div>
+<div class="summary-merke"><strong>Schluss:</strong> Methanol ist nicht selbst so gefährlich, sondern seine <strong>Abbauprodukte</strong> (Giftung durch die ADH). Die Therapie besteht deshalb darin, die <strong>ADH zu hemmen</strong>, damit Methanol unverändert ausgeschieden wird: früher kompetitiv mit Ethanol, heute mit Fomepizol.</div>`
         }
       ]
     },
@@ -2497,769 +4078,164 @@ window.subjectData = {
       ]
     },
     {
-      id: "topic-12",
-      name: "Infektionskrankheiten und Lymphsystem",
-      group: "Immunbiologie",
+      id: "topic-1",
+      name: "Das Nervensystem des Menschen",
+      group: "Neurobiologie",
       subtopics: [
         {
-          name: "Infektionskrankheiten und Krankheitserreger",
-          summary: `<p>Unser Körper muss sich ständig verteidigen – vor allem gegen mikroskopisch kleine Feinde. <strong>Infektionskrankheiten</strong> (lat. <em>inficere</em>, anstecken) werden durch das Eindringen von <strong>Krankheitserregern</strong> verursacht: Bakterien, Viren oder Parasiten (z. B. Würmer, Einzeller). Weil die Erreger meist von Kranken auf Gesunde übergehen, sind sie mehr oder weniger ansteckend (früher: Seuchen). <strong>Pathogen</strong> heisst krankmachend.</p>
-<h3>Wie Erreger schaden</h3>
-<ul>
-<li>Sie zehren von unseren Stoffen, zerstören Zellen und beeinträchtigen Organfunktionen.</li>
-<li>Vor allem schaden ihre <strong>Ausscheidungen</strong> (Stoffwechselabfälle, Toxine), die für uns giftig sind.</li>
-</ul>
-<h3>Begriffe</h3>
-<div class="summary-table-wrap"><table><thead><tr><th>Begriff</th><th>Bedeutung</th></tr></thead><tbody><tr><td><strong>Infektion</strong></td><td>das Eindringen von Krankheitserregern in den Körper (und ihre Vermehrung dort)</td></tr><tr><td><strong>Inkubation</strong></td><td>Vorgang, bei dem sich die eingedrungenen Erreger vermehren, bevor Symptome auftreten</td></tr><tr><td><strong>Inkubationszeit</strong></td><td>Zeitspanne zwischen der Infektion und dem Auftreten der ersten Symptome</td></tr></tbody></table></div>
-<h3>Übertragungswege</h3>
-<ul>
-<li><strong>Tröpfcheninfektion:</strong> beim Husten, Niesen, Sprechen und Atmen (z. B. Grippe, Masern, Covid-19, Tuberkulose)</li>
-<li><strong>Schmier- oder Kontaktinfektion:</strong> über Hände und Gegenstände; <strong>fäkal-oral</strong> über verunreinigtes Wasser und Lebensmittel (z. B. Cholera, Typhus)</li>
-<li><strong>Blut und Körperflüssigkeiten</strong>, auch beim Geschlechtsverkehr (z. B. HIV, Syphilis)</li>
-<li><strong>Überträger (Vektoren):</strong> Stiche oder Bisse von Insekten bzw. Tieren (z. B. Malaria, Pest, Tollwut)</li>
-<li><strong>Wundinfektion</strong> (z. B. Tetanus)</li>
-</ul>
-<p>Für die Übertragung ist entscheidend, in welchem Organsystem ein Erreger lebt und wie er dorthin gelangt: Darmbewohner wechseln den Wirt leichter als Blutbewohner, kleine Erreger dringen leichter ein als grosse, widerstandsfähige überleben den Weg zum neuen Wirt eher.</p>
-<p><strong>Geschichte:</strong> Lange vermutete man «schlechte Körpersäfte» oder «faule Luft» (daher der Name Malaria) als Ursache von Seuchen. Erst 1876 wies <strong>Robert Koch</strong> am Beispiel des Milzbrands nach, dass Bakterien ansteckende Krankheiten verursachen.</p>
-<div class="summary-table-wrap"><table><caption>Beispiele von Infektionskrankheiten (digitalisiert nach Immunbiologie.pdf, S. 3, Tab. 1.2)</caption><thead><tr><th>Krankheit</th><th>Erreger</th><th>Erregertyp</th><th>Übertragung</th></tr></thead><tbody><tr><td>Tuberkulose</td><td><em>Mycobacterium tuberculosis</em></td><td>Bakterium</td><td>Tröpfcheninfektion</td></tr><tr><td>Typhus, Cholera</td><td><em>Salmonella</em>, <em>Vibrio cholerae</em></td><td>Bakterien</td><td>fäkal-oral (infiziertes Wasser)</td></tr><tr><td>Pest</td><td><em>Yersinia pestis</em></td><td>Bakterium</td><td>Überträger (infizierte Flöhe)</td></tr><tr><td>Syphilis</td><td><em>Treponema pallidum</em></td><td>Bakterium</td><td>Körperflüssigkeiten beim Geschlechtsverkehr</td></tr><tr><td>Tetanus</td><td><em>Clostridium tetani</em></td><td>Bakterium</td><td>Wundinfektion</td></tr><tr><td>Covid-19</td><td>SARS-CoV-2</td><td>Virus</td><td>Tröpfcheninfektion</td></tr><tr><td>Grippe, Masern</td><td>Influenzaviren, Morbilliviren</td><td>Viren</td><td>Tröpfcheninfektion</td></tr><tr><td>AIDS</td><td>HI-Viren</td><td>Virus</td><td>Blut oder Körperflüssigkeiten</td></tr><tr><td>Tollwut</td><td>Rabiesvirus</td><td>Virus</td><td>Biss eines erkrankten Tieres</td></tr><tr><td>Gelbfieber</td><td>Flavivirus</td><td>Virus</td><td>Stich infizierter Gelbfieber-Mücken</td></tr><tr><td>Malaria</td><td><em>Plasmodium</em></td><td>Einzeller</td><td>Stich infizierter Anopheles-Mücken</td></tr><tr><td>Schlafkrankheit</td><td>Trypanosomen</td><td>Einzeller</td><td>Stich infizierter Tsetse-Fliegen</td></tr><tr><td>Amöbenruhr</td><td><em>Entamoeba histolytica</em></td><td>Einzeller</td><td>fäkal-oral</td></tr><tr><td>Trichomoniasis</td><td><em>Trichomonas vaginalis</em></td><td>Einzeller</td><td>Körperflüssigkeiten beim Geschlechtsverkehr</td></tr><tr><td>Taeniasis</td><td><em>Taenia saginata</em> (Rinderbandwurm)</td><td>Wurm</td><td>Verzehr von rohem, kontaminiertem Rindfleisch</td></tr><tr><td>Bilharziose</td><td><em>Schistosoma</em> (Pärchenegel)</td><td>Wurm</td><td>Kontakt mit kontaminiertem Wasser</td></tr></tbody></table></div>
-<div class="summary-table-wrap"><table><caption>Todesursachen beim Menschen (Immunbiologie.pdf, S. 3, Tab. 1.1)</caption><thead><tr><th></th><th>Infektionen</th><th>Tumore</th><th>Kreislaufkrankheiten</th><th>Unfälle</th><th>Total/Jahr</th></tr></thead><tbody><tr><td>Entwicklungsländer</td><td>34 %</td><td>9 %</td><td>21 %</td><td>8 %</td><td>48 Mio.</td></tr><tr><td>Industrieländer</td><td>1 %</td><td>25 %</td><td>48 %</td><td>5 %</td><td>13 Mio.</td></tr></tbody></table></div>
-<p>In Industrieländern spielen Infektionskrankheiten dank Hygiene, medizinischer Versorgung und Medikamenten eine untergeordnete Rolle – die Covid-19-Pandemie (SARS-CoV-2) hat aber gezeigt, dass neue Erreger ganze Gesellschaften lahmlegen können.</p>`
+          name: "Überblick: Aufbau des Nervensystems",
+          summary: `<h3>Zentrales und peripheres Nervensystem</h3>
+            <p>Das <strong>zentrale Nervensystem (ZNS)</strong> besteht aus Gehirn und Rückenmark. Das <strong>periphere Nervensystem (PNS)</strong> umfasst alle Nerven ausserhalb von Gehirn und Rückenmark.</p>
+            <ul>
+              <li><strong>Somatisches Nervensystem:</strong> steuert willkürliche Vorgänge, z. B. die Skelettmuskulatur. Es besitzt afferente Nerven (zum ZNS hin, melden Reize) und efferente Nerven (vom ZNS weg, Befehle).</li>
+              <li><strong>Autonomes (vegetatives) Nervensystem:</strong> steuert unwillkürliche Vorgänge der inneren Organe. Die efferenten Nerven teilen sich in Sympathikus und Parasympathikus.</li>
+            </ul>
+            <p>Merkhilfe: <strong>afferent</strong> = ankommend (zum ZNS), <strong>efferent</strong> = express weg (vom ZNS).</p>
+            <h3>Graue und weisse Substanz</h3>
+            <ul>
+              <li><strong>Graue Substanz:</strong> Nervenzellkörper, Dendriten, Synapsen und marklose Fasern. Hier werden Informationen verarbeitet (Integration).</li>
+              <li><strong>Weisse Substanz:</strong> myelinisierte Axone (Leitungsbahnen). Das lipidreiche Myelin sieht weiss aus. Hier wird Information weitergeleitet.</li>
+              <li>Im Gehirn liegt die graue Substanz aussen (Hirnrinde), im Rückenmark innen (schmetterlingsförmig).</li>
+            </ul>
+            <p><strong>Afferent</strong> bedeutet sensorisch (vom Rezeptor zum ZNS, Input), <strong>efferent</strong> motorisch (vom ZNS zum Effektor, Output).</p>`
         },
         {
-          name: "Das Lymphsystem",
-          summary: `<p>Trotz natürlicher Barrieren gelangen manchmal Mikroorganismen durch Darmwand, Haut oder Schleimhäute in den Körper. Meist befinden sie sich dann in der <strong>Gewebeflüssigkeit</strong> im Interzellularraum. Aus den Blutkapillaren tritt ständig Blutflüssigkeit ins Gewebe aus und fliesst über die Lymphgefässe wieder ab.</p>
-<p><strong>Bestandteile:</strong> Lymphgefässe, Lymphknoten, die Lymphe (Gewebeflüssigkeit in den Lymphgefässen) und die lymphatischen Organe (Thymus, Milz, Mandeln, Knochenmark).</p>
-<h3>Drei Hauptaufgaben</h3>
-<ul>
-<li><strong>Abwehr</strong> körperfremder Zellen und Stoffe</li>
-<li><strong>Rücktransport</strong> von Gewebeflüssigkeit in den Blutkreislauf</li>
-<li><strong>Fettstoffwechsel:</strong> Transport von Fettbestandteilen vom Darm ins Blut</li>
-</ul>
-<h3>Lymphatische Organe</h3>
-<div class="summary-table-wrap"><table><thead><tr><th></th><th>Organe</th><th>Funktion</th></tr></thead><tbody><tr><td><strong>primäre</strong> lymphatische Organe</td><td>rotes Knochenmark, Thymus</td><td>Bildung und Reifung (Prägung) der Lymphozyten: B-Lymphozyten werden im Knochenmark gebildet und reifen dort; T-Lymphozyten werden im Knochenmark gebildet und reifen im <strong>T</strong>hymus</td></tr><tr><td><strong>sekundäre</strong> lymphatische Organe</td><td>Lymphknoten, Milz, Mandeln (Tonsillen), lymphatisches Gewebe von Darm (Peyer-Plaques) und Schleimhäuten</td><td>Ort der Immunreaktion: Hier treffen Lymphozyten auf Antigene, werden aktiviert und vermehren sich</td></tr></tbody></table></div>
-<h3>Transport der Lymphe</h3>
-<p>Täglich werden etwa <strong>2 Liter Lymphe</strong> zurücktransportiert: Lymphkapillaren im Gewebe → Lymphgefässe (mit <strong>Klappen</strong> gegen Rückstrom) → Lymphknoten (Filter) → Hauptlymphgang → Einmündung in eine grosse Vene nahe dem Herzen. Die Lymphe wird nicht vom Herzen gepumpt, sondern durch die umgebende Muskulatur (Muskelpumpe), die Pulsation benachbarter Arterien und die Klappen vorwärtsbewegt. Eine <strong>Lymphdrainage</strong> ist eine spezielle Massage, die den Lymphabfluss anregt und Schwellungen (Ödeme) reduziert.</p>
-<h3>Aufbau eines Lymphknotens</h3>
-<figure class="summary-figure"><img src="Resourcen/Bilder/imm-lymphknoten.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Aufbau eines Lymphknotens</strong> (Beschriftung handschriftlich): Zuführende Lymphgefässe (mit Klappen gegen Rückstrom), bindegewebige Kapsel, Randsinus, Rinde (Cortex) mit Lymphfollikeln, Paracortex, Mark (Medulla) und wegführendes Gefäss (Vas efferens).<span class="figure-source">Quelle: Immunbiologie.pdf, S. 6 (Abb. 1.2)</span></figcaption></figure>
-<div class="summary-table-wrap"><table><thead><tr><th>Bereich</th><th>Immunzellen</th></tr></thead><tbody><tr><td>Lymphfollikel (Lymphknötchen) in der Rinde</td><td>v. a. B-Lymphozyten, einige Makrophagen</td></tr><tr><td>Paracortex</td><td>v. a. T-Lymphozyten (und dendritische Zellen)</td></tr><tr><td>Mark (Medulla)</td><td>Makrophagen und Plasmazellen (produzieren Antikörper)</td></tr></tbody></table></div>
-<p>Geschwollene Lymphknoten zeigen eine Immunreaktion: Dringt z. B. ein Holzsplitter mit Bakterien in die Fingerkuppe ein, gelangen Erreger mit der Lymphe in die Lymphknoten der Achselhöhle; dort vermehren sich die aktivierten Lymphozyten – nach etwa 24 Stunden ist ein Knoten tastbar.</p>
-<p><strong>Milz:</strong> baut alte rote Blutkörperchen ab (Blutfilter), speichert Monozyten und erfüllt für das Blut ähnliche Abwehraufgaben wie die Lymphknoten für die Lymphe.</p>`
+          name: "Das vegetative Nervensystem",
+          summary: `<h3>Sympathikus und Parasympathikus</h3>
+            <p>Das vegetative Nervensystem arbeitet weitgehend unbewusst und reguliert die inneren Organe. Sympathikus und Parasympathikus sind Gegenspieler (Antagonisten).</p>
+            <ul>
+              <li><strong>Sympathikus:</strong> Leistung, Stress, «Kampf oder Flucht» (Gaspedal).</li>
+              <li><strong>Parasympathikus:</strong> Erholung, Ruhe, «Ruhe und Verdauung» (Bremse).</li>
+            </ul>
+            <h3>Wirkungen auf die Organe</h3>
+            <ul>
+              <li><strong>Pupille:</strong> Sympathikus erweitert, Parasympathikus verengt.</li>
+              <li><strong>Lunge:</strong> Sympathikus erweitert die Bronchien, Parasympathikus verengt sie.</li>
+              <li><strong>Herz:</strong> Sympathikus steigert Herzschlag und Blutdruck, Parasympathikus verlangsamt den Herzschlag.</li>
+              <li><strong>Magen/Darm:</strong> Sympathikus hemmt die Verdauungstätigkeit, Parasympathikus regt die Verdauung an.</li>
+              <li><strong>Leber:</strong> Sympathikus setzt Glucose frei (Energiebereitstellung), Parasympathikus fördert Speicherung von Glykogen und Gallebildung.</li>
+              <li><strong>Harnblase:</strong> Sympathikus spannt den Schliessmuskel an, Parasympathikus fördert die Entleerung.</li>
+            </ul>`
+        },
+        {
+          name: "Input, Integration und Output",
+          summary: `<h3>Die Reiz-Reaktions-Kette</h3>
+            <p>Das Nervensystem erfüllt drei Hauptaufgaben — hier am Beispiel eines Tennisschlags:</p>
+            <p>Reiz → Rezeptor → sensorisches Neuron → Ganglion/Rückenmark → Interneuron → Gehirn → Motoneuron → Effektor → Reaktion</p>
+            <ul>
+              <li><strong>Reiz:</strong> Umweltinformation, die aufgenommen wird (der anfliegende Ball).</li>
+              <li><strong>Rezeptor:</strong> Sinneszelle, nimmt den Reiz auf (Netzhaut im Auge).</li>
+              <li><strong>sensorisches Neuron:</strong> leitet die Information zum ZNS — Input (Sehnerv).</li>
+              <li><strong>Ganglion:</strong> Ansammlung von Nervenzellkörpern ausserhalb des ZNS, Integrationszentrum.</li>
+              <li><strong>Interneuron:</strong> verschaltet sensorische Neuronen und Motoneurone im ZNS — Integration.</li>
+              <li><strong>Gehirn / Rückenmark:</strong> verarbeiten und interpretieren die Information.</li>
+              <li><strong>Motoneuron:</strong> leitet das Signal zum Effektor — Output.</li>
+              <li><strong>Effektor:</strong> Muskelzelle, führt die Antwort aus (Armmuskulatur).</li>
+            </ul>`
         }
       ]
     },
     {
-      id: "topic-13",
-      name: "Abwehrsysteme und unspezifische Immunabwehr",
-      group: "Immunbiologie",
+      id: "topic-2",
+      name: "Bau und Funktion von Nervenzellen",
+      group: "Neurobiologie",
       subtopics: [
         {
-          name: "Aufgaben und Methoden der Abwehrsysteme",
-          summary: `<h3>Aufgaben der Körperabwehr</h3>
-<ul>
-<li>das Eindringen von Krankheitserregern erschweren oder verhindern</li>
-<li>eingedrungene Erreger und körperfremde Zellen eliminieren (auch bei Organtransplantationen!)</li>
-<li>Fremdstoffe aus Luft, Nahrung oder Haut und Ausscheidungen der Erreger eliminieren</li>
-<li>defekte Körperzellen wie <strong>Krebszellen</strong> eliminieren, die spontan oder durch Strahlen und krebserzeugende Stoffe entstehen und sich unkontrolliert vermehren</li>
-</ul>
-<h3>Unspezifische und spezifische Abwehr</h3>
-<div class="summary-table-wrap"><table><caption>Unspezifische und spezifische Abwehr im Vergleich (vgl. Immunbiologie.pdf, S. 7, Tab. 1.3)</caption><thead><tr><th></th><th>Unspezifische Abwehr</th><th>Spezifische Abwehr</th></tr></thead><tbody><tr><td><strong>andere Namen</strong></td><td>angeborene Immunabwehr, Resistenz</td><td>erworbene, adaptive Immunabwehr, Immunsystem im engeren Sinn</td></tr><tr><td><strong>Herkunft</strong></td><td>angeboren, von Geburt an wirksam</td><td>erlernt: muss jeden Erreger zuerst kennenlernen</td></tr><tr><td><strong>Bekämpft werden</strong></td><td>alle Erreger mit bestimmten, weit verbreiteten Kennzeichen; grobes «gut–böse»-Muster</td><td>jeweils eine einzige Art von Erregern (ein bestimmtes Antigen)</td></tr><tr><td><strong>Geschwindigkeit</strong></td><td>sofort</td><td>bei Erstkontakt verzögert (Tage) – man wird meist krank</td></tr><tr><td><strong>Gedächtnis</strong></td><td>nein, kann nicht dazulernen</td><td>ja – danach Immunität (lat. <em>immunitas</em>, Freisein)</td></tr><tr><td><strong>Instrumente</strong></td><td>mechanische und chemische Barrieren, Fresszellen (Makrophagen, Granulozyten), natürliche Killerzellen, Komplementsystem, Interferone, Fieber, Entzündung</td><td>Lymphozyten (B- und T-Zellen) und Antikörper</td></tr><tr><td><strong>Bewirkt</strong></td><td>Resistenz (allgemeine Widerstandsfähigkeit)</td><td>Immunität gegen einen bestimmten Erreger</td></tr></tbody></table></div>
-<p>Beide Systeme bekämpfen Erreger auf zwei Arten:</p>
-<ul>
-<li><strong>zellulär</strong>: durch Abwehrzellen</li>
-<li><strong>humoral</strong> (lat. <em>humor</em>, Feuchtigkeit): durch Abwehrstoffe in Körperflüssigkeiten (z. B. Komplementproteine, Antikörper)</li>
-</ul>`
+          name: "Grundbauplan eines Neurons",
+          summary: `<h3>Bereiche der Nervenzelle</h3>
+            <p>Nervenzellen empfangen Informationen, wandeln sie in elektrische Signale (Nervenimpulse) um und geben sie an Zielzellen weiter (Nervenzellen, Muskelzellen).</p>
+            <ul>
+              <li><strong>Dendriten:</strong> fein verästelte Fortsätze, nehmen Informationen auf und leiten sie als Nervenimpulse zum Zellkörper.</li>
+              <li><strong>Zellkörper:</strong> enthält Zellkern und die meisten Zellorganellen. Hier werden die eingehenden Informationen verrechnet.</li>
+              <li><strong>Axonhügel:</strong> Übergang Zellkörper → Axon. Hier entstehen je nach Ergebnis der Verrechnung die Nervenimpulse.</li>
+              <li><strong>Axon:</strong> langer, meist unverzweigter Fortsatz (beim Menschen bis 1 m), verzweigt sich erst am Ende.</li>
+              <li><strong>Endknöpfchen:</strong> schliessen die Verzweigungen ab und stellen den Kontakt zur Zielzelle her. So kann ein Neuron gleichzeitig mehreren Zellen Nervenimpulse übermitteln.</li>
+            </ul>`
         },
         {
-          name: "Die Zellen des Immunsystems",
-          summary: `<p>Im roten Knochenmark entstehen aus <strong>Stammzellen</strong> verschiedene Vorläuferzellen, aus denen sich die weissen Blutkörperchen (<strong>Leukozyten</strong>) differenzieren.</p>
-<figure class="summary-figure"><img src="Resourcen/Bilder/imm-zellen-immunsystem.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Die Zellen des Immunsystems.</strong> Aus Stammzellen des Knochenmarks gehen über eine Vorläuferzelle die Phagocyten (Granulocyten, Monocyten → Makrophagen) und Mastzellen hervor, über lymphatische Vorläuferzellen die Lymphocyten (B-Lymphocyten → Plasmazellen; T-Lymphocyten → T-Helferzellen, T-Killerzellen, regulatorische T-Zellen).<span class="figure-source">Quelle: Immunbiologie.pdf, S. 8 (Abb. aus Biologie heute, mit Notizen)</span></figcaption></figure>
-<div class="summary-table-wrap"><table><caption>Übersicht über die Immunzellen</caption><thead><tr><th>Zelltyp</th><th>Herkunft / Reifung</th><th>Funktion</th><th>Abwehr</th></tr></thead><tbody><tr><td><strong>Granulozyten</strong></td><td>Knochenmark (myeloische Vorläuferzelle)</td><td>Fresszellen: Vernichtung von Bakterien, Abwehr von Parasiten; körniges Zellplasma; Lebensdauer nur wenige Tage; Hauptbestandteil des Eiters</td><td>unspezifisch</td></tr><tr><td><strong>Monozyten → Makrophagen</strong></td><td>Knochenmark; Monozyten wandern ins Gewebe und werden zu Makrophagen</td><td>wichtigste Fresszellen (Phagozytose); <strong>Antigenpräsentation</strong> an T-Helferzellen; Lebensdauer mehrere Monate</td><td>unspezifisch und Bindeglied zur spezifischen</td></tr><tr><td><strong>dendritische Zellen</strong></td><td>Knochenmark</td><td>Fresszellen in Geweben, präsentieren Antigene</td><td>unspezifisch / Bindeglied</td></tr><tr><td><strong>Mastzellen</strong></td><td>Knochenmark</td><td>speichern entzündungsauslösende Stoffe wie Histamin (Entzündung, Allergie)</td><td>unspezifisch</td></tr><tr><td><strong>natürliche Killerzellen (NK-Zellen)</strong></td><td>Knochenmark (lymphatisch)</td><td>erkennen virusinfizierte und Tumorzellen an Veränderungen der Oberfläche und töten sie mit zytotoxischen Stoffen</td><td>unspezifisch</td></tr><tr><td><strong>B-Lymphozyten</strong></td><td>Bildung und Reifung im Knochenmark</td><td>erkennen ein bestimmtes Antigen mit ihrem B-Zell-Rezeptor; werden zu <strong>Plasmazellen</strong> (bilden Antikörper) und Gedächtniszellen</td><td>spezifisch, humoral</td></tr><tr><td><strong>T-Helferzellen</strong> (CD4)</td><td>Bildung im Knochenmark, Reifung im Thymus</td><td>«Kommandozentrale»: aktivieren B-Zellen und T-Killerzellen mit Cytokinen</td><td>spezifisch</td></tr><tr><td><strong>T-Killerzellen</strong> (zytotoxische T-Zellen, CD8)</td><td>Knochenmark, Reifung im Thymus</td><td>töten infizierte und entartete Körperzellen</td><td>spezifisch, zellulär</td></tr><tr><td><strong>regulatorische T-Zellen</strong></td><td>Knochenmark, Thymus</td><td>unterdrücken bzw. beenden die Immunreaktion (im Unterricht nicht vertieft)</td><td>spezifisch</td></tr></tbody></table></div>`
+          name: "Stofftransport im Axon",
+          summary: `<h3>Transport über die lange Strecke</h3>
+            <ul>
+              <li>Substanzen für das Axonende müssen vom Zellkörper herangeführt werden, weil nur dort die Organellen für die Synthese sind.</li>
+              <li>Verbrauchte Zellbestandteile werden ebenfalls nur im Zellkörper abgebaut.</li>
+              <li>Freie Diffusion über 1 m würde für ein Protein mehrere Jahre dauern.</li>
+              <li><strong>Motorproteine</strong> bewegen sich entlang der Mikrotubuli des Cytoskeletts (200 bis 400 µm pro Tag). Sie verändern dazu unter ATP-Verbrauch ihre räumliche Struktur und haben Vesikel gebunden, in denen das Transportgut liegt.</li>
+            </ul>`
         },
         {
-          name: "Erste Verteidigungslinie: äussere Barrieren",
-          summary: `<p>Die unspezifische Abwehr erkennt Erreger an relativ unspezifischen Kennzeichen, die bei vielen Arten vorkommen. Zu ihr gehört auch der Schutz vor dem Eindringen. Die meisten Erreger scheitern an mechanischen und chemischen Barrieren:</p>
-<div class="summary-table-wrap"><table><caption>Äussere Barrieren der Immunabwehr (digitalisiert nach Immunbiologie.pdf, S. 9, Abb. 1.3)</caption><thead><tr><th>Ort</th><th>Schutzmechanismen</th></tr></thead><tbody><tr><td><strong>Augen</strong></td><td>Befeuchtung durch den Lidschlag; Enzyme wie <strong>Lysozym</strong> in der Tränenflüssigkeit (löst Zellwände von Bakterien auf)</td></tr><tr><td><strong>Mund, Nase, Ohren</strong></td><td>Niesen, Husten; Flimmerhärchen des Nasenepithels; Speichel, Schleim und Ohrenschmalz mit Enzymen (Lysozym)</td></tr><tr><td><strong>Lunge</strong></td><td>Flimmerhärchen des Bronchienepithels schlagen koordiniert Richtung Ausgang und befördern Fremdstoffe hinaus; Schleim mit Enzymen</td></tr><tr><td><strong>Haut</strong></td><td>mechanische Barriere (dicke, verhornte Hornschicht); chemische Barriere (Schweiss, Talg, Säuren); Konkurrenz durch harmlose Bakterien der Hautflora</td></tr><tr><td><strong>Magen</strong></td><td>salzsäureproduzierende Schleimhaut: Säure tötet Bakterien</td></tr><tr><td><strong>Darm</strong></td><td>antibakterielle Proteine; Konkurrenz durch die Darmflora; Peristaltik verhindert das Einnisten von Erregern</td></tr><tr><td><strong>Harntrakt</strong></td><td>saurer pH-Wert des Harns; Ausspülen durch den Harn</td></tr><tr><td><strong>Genitalsystem</strong></td><td>saures Milieu durch Milchsäurebakterien in der Vagina</td></tr></tbody></table></div>`
-        },
-        {
-          name: "Zweite Verteidigungslinie: Fresszellen, Komplement, Interferone",
-          summary: `<p>Gelingt einem Erreger das Eindringen, wird die unspezifische Abwehrreaktion ausgelöst: Fresszellen, natürliche Killerzellen, Abwehrproteine, Fieber und Entzündung.</p>
-<h3>Fresszellen und Phagozytose</h3>
-<p>Fresszellen (v. a. Granulozyten, Makrophagen und dendritische Zellen) patrouillieren im ganzen Körper: Sie können die Blutgefässe verlassen und durchs Gewebe wandern. Alles, was sie als gefährlich erkennen (Bakterien, Viren, Fremd- und Giftstoffe), wird <strong>phagozytiert</strong>:</p>
-<ol><li>Erkennen und Binden des Erregers an die Zellmembran</li><li>Umfliessen und Einschliessen in ein Membranbläschen (Phagosom)</li><li>Verschmelzen mit Lysosomen, deren Enzyme den Erreger verdauen (auflösen)</li><li>Ausscheiden der Reste; Makrophagen präsentieren Bruchstücke (Antigene) auf ihrer Oberfläche</li></ol>
-<h3>Natürliche Killerzellen</h3>
-<p>NK-Zellen richten sich gegen virusinfizierte oder tumorartig veränderte Körperzellen. Sie nehmen Veränderungen auf deren Oberfläche wahr und zerstören sie mit zytotoxischen (zellschädigenden) Substanzen.</p>
-<h3>Komplementsystem</h3>
-<p>Das Komplementsystem ist eine Gruppe von <strong>Abwehrproteinen</strong> im Blut, die bei Gewebeverletzungen aktiviert werden. Sie binden an Eindringlinge und</p>
-<ul><li><strong>zerstören</strong> sie, indem sie Löcher in ihre Membran bilden (Lyse),</li><li><strong>verklumpen</strong> sie und <strong>markieren</strong> sie für die Fresszellen,</li><li><strong>locken</strong> Fresszellen aus der Blutbahn zum Infektionsort.</li></ul>
-<figure class="summary-figure"><img src="Resourcen/Bilder/imm-komplementsystem.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Wirkungsweise des Komplementsystems:</strong> Komplementproteine markieren Bakterien, Fresszellen binden und schliessen sie ein; Komplementproteine können Bakterien auch direkt auflösen (Lyse).<span class="figure-source">Quelle: Immunbiologie.pdf, S. 10 (Abb. 1.4)</span></figcaption></figure>
-<h3>Interferone</h3>
-<p>Von Viren befallene Zellen geben <strong>Interferone</strong> ab. Diese Proteine hemmen die Virenvermehrung und warnen Nachbarzellen; diese bilden daraufhin Proteine, die das Eindringen von Viren verhindern oder ihre Vermehrung in der Zelle hemmen.</p>`
-        },
-        {
-          name: "Fieber und Temperaturregulation",
-          summary: `<p>Der Sollwert der Körperkerntemperatur liegt bei etwa <strong>36,6 °C</strong>. Innere und äussere Störgrössen wirken laufend darauf ein, deshalb wird die Temperatur ständig in einem <strong>Regelkreis</strong> kontrolliert:</p>
-<ol><li>Der <strong>Hypothalamus</strong> (Teil des Zwischenhirns, wichtigstes Steuerzentrum des vegetativen Nervensystems) ist der <strong>Regler</strong>. Führungsgrössen melden ihm den <strong>Sollwert</strong>.</li><li>Wärme- und Kältesensoren in Haut und Körperkern messen den <strong>Istwert</strong> (Regelgrösse Körpertemperatur) und melden ihn dem Hypothalamus.</li><li>Der Hypothalamus vergleicht Ist- und Sollwert und sendet <strong>Stellgrössen</strong> an Stellglieder (z. B. Muskulatur, Hautgefässe, Schweissdrüsen).</li><li>Die Stellglieder reagieren: z. B. Muskelzittern und Gefässverengung (Wärmebildung bzw. -erhaltung) oder Gefässerweiterung und Schwitzen (Wärmeabgabe).</li></ol>
-<figure class="summary-figure"><img src="Resourcen/Bilder/imm-regelkreis-temperatur.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Regelkreis zur Temperaturregulation.</strong> Führungsgrössen (z. B. Tageszeit, Menstruation, Fieber) bestimmen den Sollwert; der Hypothalamus als Regler vergleicht ihn mit dem Istwert der Sensoren und steuert die Stellglieder.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 10 (Abb. 1.5)</span></figcaption></figure>
-<p><strong>Fieber</strong> ist kein Defekt der Temperatursteuerung, sondern eine gezielte Abwehrmassnahme: Der <strong>Sollwert wird aktiv erhöht</strong>. Die Erhöhung um 2–3 °C tötet Erreger zwar nicht direkt ab, beschleunigt aber nach der <strong>RGT-Regel</strong> (Reaktionsgeschwindigkeit-Temperatur-Regel) die Abwehrreaktionen und das Ausscheiden von Giftstoffen. Fiebersenkende Mittel sind erst angebracht, wenn die Temperatur gefährlich wird (ab etwa 39 °C).</p>`
-        },
-        {
-          name: "Die Entzündungsreaktion",
-          summary: `<p>Eine zentrale Rolle in der unspezifischen Abwehr spielt die <strong>Entzündung</strong> – z. B. bei einem Pickel, einer eiternden Schnittwunde oder beim Schnupfen. Lokale Entzündungen dienen der Abwehr; gefährlich wird es, wenn der ganze Körper betroffen ist: Eine <strong>Sepsis</strong> («Blutvergiftung») kann zu Multiorganversagen und Tod führen.</p>
-<h3>Ablauf</h3>
-<ol><li>Erreger dringen durch eine Wunde ein; verletzte Zellen und <strong>Mastzellen</strong> setzen Signalstoffe frei, v. a. <strong>Histamin</strong>.</li><li>Histamin erweitert die Blutgefässe und macht die Kapillarwände durchlässiger: Mehr Blut fliesst ins Gebiet, Flüssigkeit tritt ins Gewebe aus.</li><li>Signalstoffe locken Fresszellen (neutrophile Granulozyten, Makrophagen) an; sie verlassen die Kapillaren und phagozytieren die Erreger.</li><li>Abgestorbene Fresszellen, Erreger, Zelltrümmer und Gewebeflüssigkeit bilden <strong>Eiter</strong>. Er wird von Makrophagen abgebaut, über die Lymphe abtransportiert oder nach aussen entleert.</li></ol>
-<div class="summary-table-wrap"><table><caption>Die Wirkung von Histamin (Immunbiologie.pdf, S. 12, Tab. 1.4)</caption><thead><tr><th>Wirkungsort</th><th>Wirkung von Histamin</th><th>Symptom</th></tr></thead><tbody><tr><td>Blutgefässe</td><td>Erweiterung</td><td>Rötung, Wärme</td></tr><tr><td>Kapillaren</td><td>erhöhte Durchlässigkeit</td><td>Schwellung (Ödem)</td></tr><tr><td>freie Nervenenden</td><td>Reizung</td><td>Schmerz, Juckreiz</td></tr><tr><td>Drüsen</td><td>verstärkte Sekretion (Flüssigkeits-/Schleimabsonderung)</td><td>laufende Nase, tränende Augen</td></tr><tr><td>glatte Muskelzellen (z. B. Bronchien)</td><td>Kontraktion</td><td>Atemnot (Asthma)</td></tr><tr><td>Abwehrzellen</td><td>Anlockung von neutrophilen Granulozyten</td><td>Eiterbildung</td></tr></tbody></table></div>
-<div class="summary-merke"><strong>Merke:</strong> Die vier <strong>Kardinalsymptome</strong> (charakteristische Symptome) einer Entzündung sind <strong>Rötung</strong> (rubor) und <strong>Wärme</strong> (calor) durch stärkere Durchblutung, <strong>Schwellung</strong> (tumor) durch austretende Flüssigkeit und <strong>Schmerz</strong> (dolor) durch Reizung der Nervenenden. Häufig kommt eine eingeschränkte Funktion (functio laesa) hinzu.</div>
-<p><strong>Stärke und Schwäche der unspezifischen Abwehr:</strong> Sie reagiert sofort, schnell und effizient gegen viele Erreger. Sie kann aber nicht dazulernen und ist hilflos gegen Erreger, für die kein ererbter, passender Rezeptor vorhanden ist (neue oder stark veränderliche Erreger wie HIV oder Grippeviren). Mit diesen muss die spezifische Abwehr fertigwerden.</p>`
+          name: "Gliazellen und Myelin",
+          summary: `<h3>Gliazellen im Gehirn</h3>
+            <p>Gliazellen sind im Gehirn etwa zehnmal häufiger als Nervenzellen (griech. glia = Leim). <strong>Astrocyten</strong> (sternförmig) sind die häufigsten Gliazellen im Gehirn:</p>
+            <ul>
+              <li>sie versorgen Neuronen mit Nährstoffen und regulieren die Ionenkonzentration der extrazellulären Flüssigkeit</li>
+              <li>sie registrieren den Signalfluss und beeinflussen die Blutkapillaren, damit aktive Hirnregionen besser durchblutet werden</li>
+              <li>sie sind an der <strong>Blut-Hirn-Schranke</strong> beteiligt: Diese hält Krankheitserreger und viele Schadstoffe fern. Fettlösliche Substanzen wie Alkohol oder Narkosegase überwinden sie trotzdem.</li>
+            </ul>
+            <h3>Isolierung der Axone</h3>
+            <p>Gliazellen wickeln sich als <strong>Myelinscheiden</strong> in mehreren Schichten um Axonabschnitte. Myelin ist lipidreich und gibt den Fasern ihr weisses Aussehen.</p>
+            <ul>
+              <li><strong>Oligodendrozyten</strong> (ZNS): umhüllen mehrere Axone gleichzeitig.</li>
+              <li><strong>Schwann-Zellen</strong> (PNS): umhüllen nur je ein Axon.</li>
+            </ul>
+            <h3>Saltatorische Erregungsleitung</h3>
+            <ul>
+              <li>Zwischen den Myelinscheiden bleiben im Abstand von 1 bis 2 mm freie Stellen, die <strong>Ranvier-Schnürringe</strong>. Nur dort hat die Axonmembran Kontakt zur Aussenflüssigkeit, nur dort können Ionen fliessen und Aktionspotenziale entstehen.</li>
+              <li>Die Erregung springt von Schnürring zu Schnürring (saltatorische Erregungsleitung). Das ist deutlich schneller (bis ca. 100 m/s gegenüber ca. 1 m/s marklos) und energiesparender.</li>
+              <li>Bei <strong>Multipler Sklerose</strong> werden die Myelinscheiden angegriffen: Leitungsblockaden und neurologische Ausfälle.</li>
+            </ul>`
         }
       ]
     },
     {
-      id: "topic-14",
-      name: "Spezifische Abwehr: Antigene, Antikörper und MHC",
-      group: "Immunbiologie",
+      id: "topic-3",
+      name: "Ruhe- und Aktionspotenzial",
+      group: "Neurobiologie",
       subtopics: [
         {
-          name: "Antigene und Epitope",
-          summary: `<p>Die spezifische Abwehr identifiziert jeden Eindringling, bevor sie ihn bekämpft. Nur Wirbeltiere besitzen eine leistungsfähige spezifische Immunabwehr.</p>
-<ul>
-<li><strong>Antigene</strong> sind Moleküle (meist Proteine oder Kohlenhydrate auf Oberflächen von Erregern, Fremdzellen oder Fremdstoffen), die vom Immunsystem als fremd erkannt werden und die Bildung von Antikörpern auslösen (<strong>Anti</strong>körper-<strong>gen</strong>erierend).</li>
-<li>Ein <strong>Epitop</strong> (antigene Determinante) ist der kleine Bereich eines Antigens, an den ein bestimmter Antikörper bzw. Rezeptor tatsächlich bindet.</li>
-<li>Viele Antigene besitzen <strong>mehrere verschiedene Epitope</strong>. Vorteil: Gegen ein Antigen werden mehrere Antikörpersorten gebildet; der Erreger wird von mehreren Seiten erkannt und kann besser vernetzt und bekämpft werden. Verändert sich ein Epitop durch Mutation, binden die anderen Antikörper weiterhin.</li>
-</ul>
-<figure class="summary-figure"><img src="Resourcen/Bilder/imm-antikoerper-antigen-bindung.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Antikörper-Antigen-Bindung.</strong> Ein Antigen trägt mehrere Epitope; die Bindungsstelle des Antikörpers passt nur zu einem davon (Epitop 1).<span class="figure-source">Quelle: Immunbiologie.pdf, S. 13 (Abb. 1.6)</span></figcaption></figure>`
+          name: "Das Ruhepotenzial",
+          summary: `<h3>Ionenverteilung und Membran</h3>
+            <p>Alle Zellen haben ein Membranpotenzial (−100 bis +40 mV). Bei Nervenzellen heisst es <strong>Ruhepotenzial</strong> und beträgt <strong>−70 mV</strong>: Das Zellinnere ist gegenüber aussen negativ geladen.</p>
+            <ul>
+              <li><strong>K⁺</strong> ist innen hoch (120 bis 155 mmol/l), aussen niedrig (4 bis 5 mmol/l).</li>
+              <li><strong>Na⁺</strong> ist aussen hoch (140 bis 150 mmol/l), innen niedrig (5 bis 15 mmol/l).</li>
+              <li><strong>Protein-Anionen (A⁻)</strong> bleiben innen, da die Membran für sie undurchlässig ist.</li>
+            </ul>
+            <h3>Kanäle und Pumpe</h3>
+            <ul>
+              <li><strong>Spannungsunabhängige Hintergrundkanäle:</strong> immer offen; sehr viele für K⁺, nur wenige für Na⁺.</li>
+              <li><strong>Spannungsgesteuerte Kanäle:</strong> öffnen sich bei einem bestimmten Membranpotenzial (im Ruhezustand geschlossen).</li>
+              <li><strong>Ligandengesteuerte Kanäle:</strong> öffnen sich, wenn ein Botenstoff andockt (wichtig an Synapsen).</li>
+              <li><strong>Natrium-Kalium-Pumpe:</strong> transportiert unter ATP-Verbrauch 3 Na⁺ nach aussen und 2 K⁺ nach innen, gegen das Konzentrationsgefälle. Sie hält das Ruhepotenzial aufrecht und kompensiert den Na⁺-Leckeinstrom (Verbrauch: 30 bis 50 % der Stoffwechselenergie der Zelle).</li>
+            </ul>
+            <p>Ursachen des Ruhepotenzials: ungleiche Ionenkonzentrationen · unterschiedliche Permeabilität für K⁺ und Na⁺ · Na-K-Pumpe.</p>`
         },
         {
-          name: "Bau und Funktion der Antikörper",
-          summary: `<p><strong>Antikörper</strong> (Immunglobuline, Ig) sind Y-förmige Proteine, die spezifisch an Antigene binden und diese so markieren und bekämpfen. Sie werden von <strong>Plasmazellen</strong> (aktivierten B-Lymphozyten) gebildet und kommen im Blut, in der Lymphe, in der Gewebeflüssigkeit und auf Schleimhäuten vor.</p>
-<figure class="summary-figure"><img src="Resourcen/Bilder/imm-antikoerper-bau.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Bau eines Antikörpers</strong> (links Peptidketten als Rechtecke, rechts als Ketten): 1 Bindungsstelle, 2 variable Region, 3 konstante Region, 4 schwere Kette (H-Kette), 5 leichte Kette (L-Kette), 6 Disulfidbrücken, 7 Kohlenhydrat.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 13 (Abb. 1.7, Beschriftung handschriftlich)</span></figcaption></figure>
-<ul>
-<li>vier Peptidketten: <strong>zwei schwere (H)</strong> und <strong>zwei leichte Ketten (L)</strong>, durch <strong>Disulfidbrücken</strong> verbunden</li>
-<li><strong>variable Region</strong> an den Armenden: bildet die zwei identischen <strong>Antigen-Bindungsstellen</strong>; ihre Form passt nach dem <strong>Schlüssel-Schloss-Prinzip</strong> nur zu einem Epitop</li>
-<li><strong>konstante Region</strong> (Stamm, «Fussteil»): bestimmt die Antikörperklasse und bindet an Fresszellen, Komplement oder Mastzellen</li>
-</ul>
-<h3>Wirkungen der Antikörper</h3>
-<div class="summary-table-wrap"><table><thead><tr><th>Wirkung</th><th>Beschreibung</th></tr></thead><tbody><tr><td><strong>Neutralisation</strong></td><td>Antikörper besetzen die Bindungsstellen von Viren oder Toxinen, die so nicht mehr an Körperzellen andocken bzw. wirken können.</td></tr><tr><td><strong>Agglutination</strong> (Verklumpung)</td><td>Weil jeder Antikörper zwei Bindungsstellen hat, vernetzt er mehrere Erreger zu Klumpen.</td></tr><tr><td><strong>Präzipitation</strong> (Ausfällung)</td><td>gelöste Antigene werden zu unlöslichen Komplexen vernetzt.</td></tr><tr><td><strong>Markierung</strong></td><td>Die Komplexe werden von Fresszellen erkannt und phagozytiert; Antikörper aktivieren auch das Komplementsystem (Lyse).</td></tr></tbody></table></div>
-<p><strong>Wichtig:</strong> Antikörper töten Erreger nicht selbst ab – sie machen sie unschädlich und markieren sie für die Fresszellen und das Komplementsystem.</p>
-<h3>Experiment zum Nachweis der Antikörperbildung</h3>
-<figure class="summary-figure"><img src="Resourcen/Bilder/imm-maus-experiment.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Experiment zum Nachweis der Entstehung von Antikörpern.</strong> Einer Maus wird bakterienhaltige Flüssigkeit (Antigene) gespritzt; nach einigen Wochen wird Blut entnommen und getrennt. Gibt man das Serum zu den Bakterien, verklumpen diese (Ausflockung).<span class="figure-source">Quelle: Immunbiologie.pdf, S. 13 (Abb. 1.8)</span></figcaption></figure>
-<p>Deutung: Die Maus hat gegen die Bakterien spezifische Antikörper gebildet; diese befinden sich im Blutserum (nicht in den Blutzellen) und verklumpen die Bakterien auch ausserhalb des Körpers (Agglutination).</p>`
+          name: "Das Aktionspotenzial",
+          summary: `<h3>Erregungsbildung</h3>
+            <p>Nerven-, Sinnes- und Muskelzellen sind erregbar. Im Zellkörper werden lokale Änderungen des Membranpotenzials verrechnet; am Axonhügel entstehen eventuell Aktionspotenziale, die als Salve (bis 100-mal pro Sekunde) bis zur Synapse geleitet werden.</p>
+            <h3>Ablauf in fünf Phasen</h3>
+            <ul>
+              <li><strong>1 Initiation:</strong> Ein Reiz öffnet wenige spannungsabhängige Na⁺-Kanäle, Na⁺ strömt ein, das Potenzial wird positiver (Depolarisation).</li>
+              <li><strong>2/3 Aufstrich:</strong> Beim Schwellenwert (ca. −50 mV) öffnen sich lawinenartig alle spannungsabhängigen Na⁺-Kanäle, Na⁺ strömt massenhaft ein, das Potenzial steigt auf ca. +30 mV (= Aktionspotenzial).</li>
+              <li><strong>4 Repolarisation:</strong> Kurz vor dem Maximum schliessen die Na⁺-Kanäle, die spannungsabhängigen K⁺-Kanäle öffnen sich, K⁺ strömt aus: Das negative Potenzial wird wiederhergestellt, oft kurz unter −70 mV (Hyperpolarisation).</li>
+              <li><strong>5 Wiederherstellung:</strong> Die Na-K-Pumpe stellt die ursprüngliche Ionenverteilung her.</li>
+            </ul>
+            <p>Begriffe: <strong>Depolarisation</strong> = Potenzial wird positiver · <strong>Repolarisation</strong> = Rückkehr zum negativen Wert · <strong>Hyperpolarisation</strong> = kurzzeitig negativer als das Ruhepotenzial.</p>
+            <h3>Alles-oder-Nichts und Refraktärzeit</h3>
+            <ul>
+              <li><strong>Alles-oder-Nichts-Gesetz:</strong> Wird der Schwellenwert überschritten, läuft das Aktionspotenzial immer gleich ab: ganz oder gar nicht. Überschwellig = Reiz erreicht den Schwellenwert, unterschwellig = nicht.</li>
+              <li><strong>Refraktärzeit:</strong> Nach einem Aktionspotenzial (1 bis 2 ms) lassen sich die Na⁺-Kanäle einige ms nicht öffnen. So kann ein Aktionspotenzial nicht rückwärts laufen. Wegen 2 bis 10 ms Refraktärzeit gibt es höchstens 500 AP/s.</li>
+            </ul>`
         },
         {
-          name: "Die fünf Antikörperklassen",
-          summary: `<figure class="summary-figure"><img src="Resourcen/Bilder/imm-antikoerperklassen.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Die fünf Antikörperklassen</strong>: Struktur, Häufigkeit und Wirkungsweise (Wirkungsweise handschriftlich ergänzt). IgM ist ein Pentamer, IgA meist ein Dimer.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 15 (Abb. 1.9)</span></figcaption></figure>
-<div class="summary-table-wrap"><table><caption>Antikörperklassen (digitalisiert nach Immunbiologie.pdf, S. 15)</caption><thead><tr><th>Klasse</th><th>Struktur</th><th>Anteil</th><th>Wirkungsweise / Vorkommen</th></tr></thead><tbody><tr><td><strong>IgG</strong></td><td>Monomer (Y)</td><td>80 %</td><td>häufigster Antikörper in Blut, Lymphe und Gewebe; wird bei der Immunantwort <strong>spät</strong> gebildet und dominiert die Sekundärantwort; als einzige Klasse <strong>plazentagängig</strong> (Schutz des Ungeborenen)</td></tr><tr><td><strong>IgM</strong></td><td>Pentamer (5 Y, 10 Bindungsstellen)</td><td>6 %</td><td>wird als <strong>erster</strong> Antikörper der Primärantwort gebildet; bindet Antigene v. a. im Blut, verklumpt stark; zu gross für die Plazentaschranke (deshalb keine Probleme mit AB0-Antikörpern in der Schwangerschaft)</td></tr><tr><td><strong>IgA</strong></td><td>meist Dimer</td><td>13 %</td><td>Abwehr auf den <strong>Schleimhäuten</strong> und in Sekreten (Speichel, Tränen); auch in der <strong>Muttermilch</strong></td></tr><tr><td><strong>IgD</strong></td><td>Monomer</td><td>1 %</td><td>sitzt auf der Oberfläche von B-Lymphozyten und dient ihrer <strong>Aktivierung</strong> (Antigenrezeptor)</td></tr><tr><td><strong>IgE</strong></td><td>Monomer</td><td>0,002 %</td><td>bindet an Mastzellen; Abwehr von <strong>Parasiten</strong> (Würmer); verantwortlich für <strong>Allergien</strong> vom Soforttyp</td></tr></tbody></table></div>
-<p>Eine (unbelegte) Vermutung zur Häufung von Allergien in westlichen Ländern: Weil dort kaum Parasiten vorkommen, ist das IgE-System «unterbeschäftigt» und reagiert auf harmlose Stoffe.</p>`
-        },
-        {
-          name: "Kreuzreaktion und Blutgruppenantikörper",
-          summary: `<p>Hat der Körper gegen Antigen A drei Antikörpersorten gebildet, hängt der Schutz gegen ähnliche Antigene davon ab, wie gut deren Epitope passen:</p>
-<figure class="summary-figure"><img src="Resourcen/Bilder/imm-kreuzreaktion.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Kreuzreaktion</strong> (stark schematisch, je nur eine Bindungsstelle gezeichnet): Antikörper 1–3 passen zu Antigen A. Antigen B besitzt ein Epitop, an das Antikörper 2 binden kann; zu Antigen C passt keiner.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 15 (Abb. 1.10)</span></figcaption></figure>
-<ul>
-<li><strong>Antigen B:</strong> Nur Antikörper 2 kann binden (<strong>Kreuzreaktion</strong>). B wird teilweise, aber schlechter bekämpft, bis neue, besser passende Antikörper gebildet sind.</li>
-<li><strong>Antigen C:</strong> Kein vorhandener Antikörper passt – der Körper muss zuerst eine neue Immunantwort aufbauen.</li>
-</ul>
-<h3>Exkurs: Blutgruppenantikörper</h3>
-<p>Rhesus-Antikörper bildet eine rhesusnegative Person erst nach Kontakt mit rhesuspositivem Blut – eine normale Immunreaktion. Antikörper gegen die Blutgruppenmerkmale A und B sind dagegen schon vorhanden, wenn man diese Merkmale nicht selbst besitzt. Grund: A- und B-ähnliche Strukturen kommen auch bei Darmbakterien (<em>E. coli</em>) vor. Jeder Mensch bildet Antikörper gegen diese Bakterien, die infolge <strong>Kreuzreaktion</strong> auch fremde Blutzellen angreifen. Antikörper gegen körpereigene Strukturen werden nicht gebildet bzw. zerstört – deshalb fehlen diejenigen, die die eigenen Blutzellen verklumpen würden.</p>`
-        },
-        {
-          name: "Fremdes erkennen: MHC und antigenpräsentierende Zellen",
-          summary: `<p>Die angeborene Abwehr ist hilflos, wenn kein passender ererbter Rezeptor vorhanden ist. Rezeptoren verändern sich zwar über Generationen durch Mutationen, aber auch Erreger verändern sich. Gegen neue (z. B. HIV) oder sehr veränderliche Erreger (z. B. Grippeviren) braucht es die adaptive, spezifische Abwehr. Eine Schlüsselrolle spielen <strong>antigenpräsentierende Zellen</strong> (APZ, engl. APC) – v. a. <strong>Makrophagen</strong>, dendritische Zellen und <strong>B-Lymphozyten</strong>.</p>
-<h3>Der MHC – ein molekularer Personalausweis</h3>
-<p>Jede körpereigene Zelle trägt angeborene molekulare «Etiketten»: Glykoproteine (Proteine mit Zuckerresten) der Zellmembran, codiert von einer Genfamilie, dem <strong>Haupthistokompatibilitätskomplex (MHC</strong>, major histocompatibility complex; beim Menschen auch HLA, humanes Leukozyten-Antigen). Das Immunsystem lernt, diese als «selbst» zu tolerieren.</p>
-<div class="summary-table-wrap"><table><caption>MHC-Klassen (CD = cluster of differentiation)</caption><thead><tr><th></th><th>MHC-Klasse-I</th><th>MHC-Klasse-II</th></tr></thead><tbody><tr><td>Vorkommen</td><td>auf <strong>allen kernhaltigen Körperzellen</strong></td><td>nur auf <strong>antigenpräsentierenden Zellen</strong> (Makrophagen, dendritische Zellen, B-Zellen) – ein «Sonderausweis»</td></tr><tr><td>präsentiert</td><td>Proteinbruchstücke aus dem Zellinneren, z. B. von Viren, die sich in der Zelle vermehren</td><td>Bruchstücke von Material, das durch Phagozytose aufgenommen oder an den B-Zell-Rezeptor gebunden wurde</td></tr><tr><td>erkannt von</td><td><strong>zytotoxischen T-Zellen</strong> (Tc, T-Killerzellen) mit dem Oberflächenmolekül <strong>CD8</strong></td><td><strong>T-Helferzellen</strong> (T<sub>H</sub>) mit dem Oberflächenmolekül <strong>CD4</strong></td></tr><tr><td>Folge</td><td>die infizierte Zelle wird getötet</td><td>die T-Helferzelle wird aktiviert und unterstützt die Immunantwort</td></tr></tbody></table></div>
-<p>Weil es von jedem MHC-Gen zahlreiche Allele gibt, besitzen zwei Menschen – ausser eineiigen Zwillingen – praktisch nie denselben Satz MHC-Moleküle: Der MHC ist ein individueller Fingerabdruck. Darum werden transplantierte Organe abgestossen, wenn die Gewebemerkmale nicht passen.</p>
-<figure class="summary-figure"><img src="Resourcen/Bilder/imm-mhc-t-zellen.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Wechselwirkung zwischen T-Zellen und MHC-Molekülen.</strong> Links: Eine infizierte Zelle präsentiert ein Antigenfragment auf MHC I; die zytotoxische T-Zelle erkennt die Kombination mit ihrem T-Zell-Rezeptor (TCR) und CD8. Rechts: Eine APC präsentiert ein Fragment einer phagozytierten Mikrobe auf MHC II; die T-Helferzelle erkennt es mit TCR und CD4.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 16 (Abb. 1.11)</span></figcaption></figure>
-<p>T-Zellen erkennen also nie ein freies Antigen, sondern nur die <strong>Kombination aus Antigenfragment und eigenem MHC-Molekül</strong> mit ihrem <strong>T-Zell-Rezeptor (TCR)</strong>. Makrophagen und B-Zellen präsentieren auf MHC II statt MHC I, weil MHC-I-Präsentation das Signal «diese Zelle ist infiziert – töten» bedeutet; die APZ sollen aber nicht zerstört werden, sondern T-Helferzellen aktivieren.</p>`
-        }
-      ]
-    },
-    {
-      id: "topic-15",
-      name: "Humorale und zelluläre Immunantwort",
-      group: "Immunbiologie",
-      subtopics: [
-        {
-          name: "Humorale Immunantwort: Aktivierung der B-Lymphozyten",
-          summary: `<p>Die <strong>humorale Immunantwort</strong> richtet sich gegen Erreger und Toxine in den Körperflüssigkeiten. Hauptverantwortlich sind die Antikörper. Sie werden zwar von Zellen (B-Lymphozyten bzw. Plasmazellen) hergestellt, wirken aber in Blut und Lymphe – daher «humoral».</p>
-<p>Jeder B-Lymphozyt trägt auf seiner Oberfläche einen eigenen, bei der Reifung zufällig entstandenen <strong>B-Zell-Rezeptor</strong> (membrangebundener Antikörper, z. B. IgD). Die B-Zellen unterscheiden sich also in ihrem Rezeptor; zu fast jedem Antigen existieren einige wenige passende B-Zellen.</p>
-<h3>Ablauf bei einer Erstinfektion</h3>
-<ol><li><strong>Antigenerkennung:</strong> Ein Antigen bindet an den passenden B-Zell-Rezeptor (erstes Aktivierungssignal). Die B-Zelle nimmt das Antigen auf, zerlegt es und präsentiert Bruchstücke auf <strong>MHC-II</strong>.</li><li><strong>Antigenpräsentation durch Makrophagen:</strong> Gleichzeitig phagozytieren Makrophagen Erreger und präsentieren deren Fragmente auf MHC-II einer passenden <strong>T-Helferzelle</strong>, die dadurch aktiviert wird und sich vermehrt.</li><li><strong>Aktivierung der B-Zelle:</strong> Eine aktivierte T-Helferzelle erkennt das von der B-Zelle präsentierte Antigen und schüttet <strong>Cytokine</strong> (Botenstoffe) aus – das zweite Aktivierungssignal.</li><li><strong>Klonale Selektion und Vermehrung:</strong> Nur die passende B-Zelle wird ausgewählt und teilt sich vielfach: Es entsteht ein <strong>Klon</strong> identischer Zellen.</li><li><strong>Differenzierung:</strong> Die meisten Zellen des Klons werden zu <strong>Plasmazellen</strong>, die massenhaft Antikörper mit derselben Spezifität ins Blut abgeben; einige werden zu langlebigen <strong>B-Gedächtniszellen</strong>.</li><li><strong>Wirkung:</strong> Die Antikörper neutralisieren und verklumpen die Erreger; Makrophagen phagozytieren die Antigen-Antikörper-Komplexe.</li><li><strong>Abschalten:</strong> Ist der Erreger beseitigt, sinkt die Antikörperkonzentration wieder, weil Antikörper laufend abgebaut werden und keine neuen Plasmazellen mehr entstehen.</li></ol>`
-        },
-        {
-          name: "Primär- und Sekundärantwort, immunologisches Gedächtnis",
-          summary: `<ul>
-<li><strong>Primärantwort</strong> (erster Kontakt): Es dauert einige Tage bis wenige Wochen, bis passende B-Zellen ausgewählt, vermehrt und zu Plasmazellen geworden sind. Zuerst werden vor allem <strong>IgM</strong>, später <strong>IgG</strong> gebildet. Die Antikörperkonzentration bleibt vergleichsweise niedrig – der Mensch erkrankt meist.</li>
-<li><strong>Sekundärantwort</strong> (erneuter Kontakt mit demselben Antigen): Die <strong>Gedächtniszellen</strong> erkennen das Antigen sofort und vermehren sich rasch. Es werden <strong>schneller, mehr und länger</strong> Antikörper gebildet, vor allem IgG. Der Erreger wird meist beseitigt, bevor Symptome auftreten – man ist <strong>immun</strong>.</li>
-</ul>
-<div class="summary-table-wrap"><table><caption>Primär- und Sekundärantwort</caption><thead><tr><th>Kriterium</th><th>Primärantwort</th><th>Sekundärantwort</th></tr></thead><tbody><tr><td>Auslöser</td><td>erster Kontakt mit dem Antigen</td><td>wiederholter Kontakt</td></tr><tr><td>beteiligte Zellen</td><td>naive B- und T-Zellen, wenige passende Zellen</td><td>zahlreiche Gedächtniszellen</td></tr><tr><td>Verzögerung</td><td>lang (Tage bis Wochen)</td><td>kurz (wenige Tage)</td></tr><tr><td>Antikörpermenge</td><td>gering</td><td>viel höher</td></tr><tr><td>Hauptantikörper</td><td>zuerst IgM, dann IgG</td><td>IgG</td></tr><tr><td>Folge</td><td>Krankheit meist mit Symptomen</td><td>meist keine oder schwache Symptome</td></tr></tbody></table></div>
-<p><strong>Warum treten Kinderkrankheiten nur einmal auf, Grippe aber jedes Jahr?</strong> Masern-, Mumps-, Röteln- oder Polioviren verändern ihre Antigene kaum; die Gedächtniszellen schützen oft lebenslang. Grippeviren mutieren dagegen ständig und verändern ihre Oberflächenantigene; die vorhandenen Gedächtniszellen erkennen das neue Virus nicht mehr (oder nur schlecht).</p>
-<p>Ein starkes Immunsystem ist immer ein Kompromiss: Eine ständige maximale Abwehrbereitschaft würde zu viel Energie kosten.</p>`
-        },
-        {
-          name: "Zelluläre Immunantwort: T-Killerzellen",
-          summary: `<p>Antikörper erreichen Viren nur ausserhalb der Zellen. Hat sich ein Virus bereits in einer Körperzelle eingenistet, oder ist eine Zelle zur Tumorzelle entartet, greift die <strong>zelluläre Immunantwort</strong>: Hauptakteure sind die <strong>T-Killerzellen</strong> (zytotoxische T-Zellen). Sie richten sich gegen körpereigene, aber veränderte Zellen und zerstören sie.</p>
-<ol><li>Eine infizierte Körperzelle präsentiert Bruchstücke der Virusproteine auf <strong>MHC-I</strong> an ihrer Oberfläche.</li><li>Eine T-Killerzelle mit passendem Rezeptor erkennt mit ihrem TCR und CD8 die Kombination aus MHC-I und Antigen (erstes Signal).</li><li>Eine durch Makrophagen aktivierte <strong>T-Helferzelle</strong> gibt Cytokine ab – zweites Signal zur Aktivierung.</li><li>Die aktivierte T-Killerzelle vermehrt sich zu einem Klon; einige Zellen werden zu <strong>T-Gedächtniszellen</strong>.</li><li>Die T-Killerzellen binden an infizierte Zellen und geben zellschädigende (zytotoxische) Stoffe ab, die Löcher in die Membran bilden: Die Zelle stirbt ab (Lyse) – mitsamt den Viren darin. Makrophagen beseitigen die Reste.</li></ol>
-<p><strong>Rolle der T-Helferzellen:</strong> Sie sind die «Kommandozentrale» bzw. Schaltstelle der gesamten spezifischen Abwehr: Ohne ihre Cytokine werden weder B-Zellen noch T-Killerzellen voll aktiviert. Deshalb ist HIV, das die T-Helferzellen zerstört, so gefährlich.</p>`
-        },
-        {
-          name: "Übersicht und Vergleich",
-          summary: `<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/imm-uebersicht-spezifische-abwehr.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Übersicht über die spezifische Immunabwehr bei einer Erstinfektion.</strong> Humorale Antwort (links): B-Lymphocyt mit passendem Rezeptor → Aktivierung durch T-Helferzelle → Vermehrung → Plasmazellen (Antikörper) und Gedächtnis-B-Zellen. Mitte: Makrophage phagozytiert das Virus und aktiviert T-Helferzellen. Zelluläre Antwort (rechts): T-Killerzelle mit passendem Rezeptor → Vermehrung → zerstört infizierte Körperzellen; Gedächtnis-T-Zellen.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 20 (Abb. 1.14)</span></figcaption></figure>
-<div class="summary-table-wrap"><table><caption>Humorale und zelluläre Immunantwort</caption><thead><tr><th></th><th>Humorale Immunantwort</th><th>Zelluläre Immunantwort</th></tr></thead><tbody><tr><td>Ziel</td><td>Erreger und Toxine in Körperflüssigkeiten (ausserhalb von Zellen)</td><td>infizierte und entartete Körperzellen</td></tr><tr><td>Hauptakteure</td><td>B-Lymphozyten → Plasmazellen, Antikörper</td><td>T-Killerzellen</td></tr><tr><td>Erkennung</td><td>B-Zell-Rezeptor bindet freies Antigen</td><td>TCR + CD8 erkennt Antigen auf MHC-I</td></tr><tr><td>Wirkung</td><td>Neutralisation, Agglutination, Präzipitation, Markierung für Fresszellen</td><td>Abtöten der Zielzelle (Lyse)</td></tr><tr><td>Gemeinsam</td><td>Aktivierung durch T-Helferzellen (Cytokine), klonale Vermehrung, Bildung von Gedächtniszellen</td><td>–</td></tr></tbody></table></div>
-<div class="summary-table-wrap"><table><caption>B- und T-Lymphozyten im Vergleich</caption><thead><tr><th></th><th>B-Lymphozyten</th><th>T-Lymphozyten</th></tr></thead><tbody><tr><td>Bildung / Reifung</td><td>Knochenmark / Knochenmark</td><td>Knochenmark / Thymus</td></tr><tr><td>Rezeptor</td><td>B-Zell-Rezeptor (Antikörper), bindet freies Antigen</td><td>T-Zell-Rezeptor, erkennt nur an MHC gebundene Fragmente</td></tr><tr><td>Untertypen</td><td>Plasmazellen, B-Gedächtniszellen</td><td>T-Helferzellen (CD4), T-Killerzellen (CD8), regulatorische T-Zellen, T-Gedächtniszellen</td></tr><tr><td>Funktion</td><td>Antikörperbildung (humoral)</td><td>Steuerung (T<sub>H</sub>) und Zerstörung infizierter Zellen (Tc, zellulär)</td></tr></tbody></table></div>`
-        }
-      ]
-    },
-    {
-      id: "topic-16",
-      name: "Immunisierung und Impfung",
-      group: "Immunbiologie",
-      subtopics: [
-        {
-          name: "Aktive und passive Immunisierung",
-          summary: `<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/imm-aktive-passive-immunisierung.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Aktive (links) und passive Immunisierung (rechts).</strong> Links: abgeschwächte oder abgetötete Erreger bzw. Erregerantigene werden geimpft; der Körper bildet selbst Antikörper. Rechts: einem Tier wird der Erreger gespritzt, aus seinem Blut werden Antikörper isoliert und dem Menschen injiziert.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 21 (Abb. 1.15, 1.16)</span></figcaption></figure>
-<div class="summary-table-wrap"><table><caption>Aktive und passive Immunisierung</caption><thead><tr><th></th><th>Aktive Immunisierung (Schutzimpfung)</th><th>Passive Immunisierung (Heilimpfung)</th></tr></thead><tbody><tr><td>Was wird gespritzt?</td><td>Antigene: abgeschwächte oder abgetötete Erreger, Erregerbestandteile oder deren Bauanleitung (mRNA)</td><td>fertige Antikörper (Immunserum, z. B. aus Tieren oder Menschen)</td></tr><tr><td>Reaktion des Körpers</td><td>eigene Primärantwort: Bildung von Antikörpern und <strong>Gedächtniszellen</strong></td><td>keine eigene Immunreaktion, keine Gedächtniszellen</td></tr><tr><td>Wirkungseintritt</td><td>verzögert (Tage bis Wochen)</td><td>sofort</td></tr><tr><td>Schutzdauer</td><td>lang (Jahre, teils lebenslang; evtl. Auffrischimpfung)</td><td>kurz (Wochen), weil fremde Antikörper abgebaut werden</td></tr><tr><td>Einsatz</td><td>vorbeugend</td><td>bei bereits erfolgter Infektion oder akuter Gefahr (z. B. Tetanus, Schlangengift, Tollwut)</td></tr></tbody></table></div>
-<p>Der Begriff «passive Immunisierung» ist irreführend: Man wird nicht im eigentlichen Sinn immun, weil der Körper keine eigenen Gedächtniszellen bildet. Natürliche passive Immunisierungen gibt es auch: IgG der Mutter gelangt über die Plazenta ins ungeborene Kind, IgA über die Muttermilch.</p>
-<p><strong>Zentraler Vorgang jeder Immunität</strong> ist die Bildung von <strong>Gedächtniszellen</strong>.</p>
-<h3>Edward Jenner – die erste Impfung</h3>
-<p>Jenner impfte 1796 einen Jungen mit Material aus Kuhpocken-Pusteln und infizierte ihn später mit echten Pocken – der Junge erkrankte nicht. Das Kuhpockenvirus ist dem Pockenvirus ähnlich (gemeinsame Antigene, Kreuzreaktion), aber für Menschen harmlos. Es handelte sich um eine <strong>aktive Immunisierung</strong>; von lat. <em>vacca</em> (Kuh) stammt das Wort Vakzine.</p>
-<h3>Fragen zur Impfung</h3>
-<ul>
-<li><strong>Abgetötete Bakterien</strong> eignen sich als Impfstoff, weil sie noch dieselben Antigene tragen: Der Körper bildet Antikörper und Gedächtniszellen, ohne zu erkranken.</li>
-<li>Impfungen gegen schnell mutierende Viren (z. B. Grippe, Coronaviren) verlieren rasch ihre Wirkung, weil sich die Antigene verändern. Der Grippeimpfstoff wird deshalb jedes Jahr neu zusammengestellt.</li>
-<li>Ein gegen Masern Geimpfter kann sich mit dem Virus infizieren, erkrankt aber in der Regel nicht, weil die Sekundärantwort das Virus beseitigt, bevor es sich stark vermehrt.</li>
-</ul>`
-        },
-        {
-          name: "mRNA-Impfstoffe",
-          summary: `<p>Klassische Impfstoffe enthalten das Antigen (Erreger oder Fragmente). <strong>mRNA-Impfstoffe</strong> (z. B. die Covid-19-Impfstoffe von Pfizer-BioNTech und Moderna) enthalten stattdessen die <strong>Bauanleitung</strong> für ein Antigen – eine im Labor hergestellte <strong>mRNA</strong>, ein Zwischenprodukt der Proteinbiosynthese.</p>
-<ol><li>Die mRNA ist in <strong>Lipid-Nanopartikel</strong> verpackt; ohne diese Hülle käme sie nicht in die Zellen.</li><li>Körperzellen nehmen die Nanopartikel auf; die mRNA gelangt ins Cytoplasma.</li><li>Die Ribosomen übersetzen die mRNA in ein Virusprotein – bei SARS-CoV-2 das <strong>Spike-Protein</strong> der Virusoberfläche.</li><li>Stücke des Virusproteins werden an der Zelloberfläche präsentiert; das Immunsystem erkennt sie als fremd, bildet Antikörper und Gedächtniszellen – die Immunantwort hat eingesetzt.</li><li>Der Körper baut die mRNA innerhalb von Stunden und die Spike-Proteine innerhalb weniger Tage vollständig ab.</li></ol>
-<figure class="summary-figure"><img src="Resourcen/Bilder/imm-mrna-impfstoff.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Wirkungsweise von mRNA-Impfstoffen.</strong> Lipid-Nanopartikel mit mRNA werden von der Zelle aufgenommen; die mRNA wird am Ribosom in ein Virusprotein übersetzt, dessen Stücke an der Oberfläche präsentiert werden; das Immunsystem bildet Antikörper gegen das Virus.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 23 (Abb. 1.18)</span></figcaption></figure>
-<ul>
-<li><strong>Vorteile:</strong> relativ einfache und schnelle Herstellung; es braucht keine zusätzlichen Impfverstärker; es wird kein Erreger gespritzt.</li>
-<li><strong>Erbgut:</strong> Eine Veränderung der DNA ist äusserst unwahrscheinlich, weil die mRNA <strong>nicht in den Zellkern</strong> gelangt und von der Zelle wie zelleigene mRNA behandelt und abgebaut wird.</li>
-<li>Das Prinzip ist nicht neu: Seit Ende der 1990er-Jahre wurde es in der Grundlagenforschung entwickelt; es stammt aus der Tumorforschung (Factsheet Swissmedic, Januar 2021).</li>
-</ul>`
-        },
-        {
-          name: "Schweizerischer Impfplan",
-          summary: `<p>Das Bundesamt für Gesundheit (BAG) veröffentlicht jährlich den <strong>Schweizerischen Impfplan</strong>. Der Unterricht verwendet die Synopsis 2025. Er unterscheidet:</p>
-<ul>
-<li><strong>Basisimpfungen:</strong> Impfziel sind der individuelle Schutz <em>und</em> der Schutz der öffentlichen Gesundheit.</li>
-<li><strong>Ergänzende Impfungen:</strong> Im Vordergrund steht der individuelle Schutz.</li>
-<li>Zusätzlich gibt es Empfehlungen für <strong>Risikogruppen</strong> und regelmässig wiederkehrende Impfungen.</li>
-</ul>
-<p>Die Synopsis 2025 enthält u. a. Impfungen gegen Diphtherie, Tetanus, Keuchhusten (DTP), Kinderlähmung (Polio), <em>Haemophilus influenzae</em> Typ b (Hib), Hepatitis B, Pneumokokken, RSV (Antikörpergabe für Säuglinge), Rotaviren, Meningokokken B und ACWY, Masern–Mumps–Röteln (MMR), Windpocken (Varizellen), HPV, Herpes Zoster sowie jährlich Influenza und Covid-19 (für bestimmte Personengruppen). Die genauen Zeitpunkte und die Einteilung legt der jeweils aktuelle Impfplan fest.</p>
-<p>Beispiel HPV-Impfung: Im Alter von 11–14 Jahren 2 Dosen (0 und 6 Monate), von 15 bis 26 Jahren 3 Dosen (0, 2, 6 Monate). Aktuelle Details: <em>bag.admin.ch</em> und <em>infovac.ch</em>.</p>`
-        }
-      ]
-    },
-    {
-      id: "topic-17",
-      name: "Allergien: Überreaktionen des Immunsystems",
-      group: "Immunbiologie",
-      subtopics: [
-        {
-          name: "Allergie und Allergen",
-          summary: `<ul>
-<li>Eine <strong>Allergie</strong> ist eine Überreaktion (Überempfindlichkeit) des Immunsystems gegen an sich harmlose körperfremde Stoffe.</li>
-<li>Ein <strong>Allergen</strong> ist ein Antigen, das eine allergische Reaktion auslöst. Genau genommen ist nicht das ganze Pollenkorn oder Tierhaar das Allergen, sondern ein ganz bestimmtes Molekül bzw. Epitop davon. Beispiele: Pollen (Heuschnupfen), Hausstaubmilben, Tierhaare, Nüsse, Hühnereiweiss, Insektengifte, Medikamente.</li>
-</ul>
-<p>Eine allergische Reaktion kann <strong>örtlich begrenzt</strong> sein (z. B. Heuschnupfen) oder <strong>generalisiert</strong> am ganzen Körper auftreten. Dann können sich die peripheren Blutgefässe plötzlich erweitern, der Blutdruck fällt stark ab: Innerhalb von Sekunden bis Minuten (z. B. nach Insektenstich oder Medikamenteninjektion) kann ein lebensbedrohlicher <strong>anaphylaktischer Schock</strong> entstehen, wenn nicht sofort <strong>Adrenalin</strong> als Gegenmittel verabreicht wird.</p>`
-        },
-        {
-          name: "Allergie vom Soforttyp (Typ I): Ablauf",
-          summary: `<p>Allergische Symptome des Typs I treten innerhalb von Sekunden (Insektenstich), Minuten (Hausstaub) oder einer halben Stunde (Nahrungsmittel) auf. Beispiel: <strong>Heuschnupfen</strong> (Pollenallergie; betrifft etwa die Hälfte aller Allergiker).</p>
-<h3>A: Sensibilisierung (Erstkontakt)</h3>
-<ol><li>Allergische Beschwerden verursachen vor allem Pollen von <strong>Windbestäubern</strong> (Gräser, Birke, Hasel, Ambrosia): Sie werden in riesigen Mengen gebildet, weit verteilt und sind winzig. Die Pollenhülle ist nicht allergen; auf der feuchten Schleimhaut keimt der Pollen aber, und es treten allergene Inhaltsstoffe aus.</li><li>Die Allergene dringen durch die Schleimhaut ein. <strong>Makrophagen</strong> phagozytieren sie, zerlegen sie und präsentieren die Fragmente auf <strong>MHC-II</strong> den T-Helferzellen.</li><li>Die <strong>T-Helferzellen</strong> aktivieren mit Cytokinen <strong>B-Lymphozyten</strong>, die durch Kontakt mit dem Allergen bereits ein erstes Aktivierungssignal erhalten haben.</li><li>Die zweifach aktivierten B-Lymphozyten werden zu <strong>Plasmazellen</strong>, die massenhaft Antikörper produzieren.</li><li>Diese Antikörper sind vom Typ <strong>IgE</strong>: Sie haften mit ihrem Fussteil an <strong>Mastzellen</strong> und behalten zwei freie Bindungsstellen für das Antigen.</li><li>Mastzellen kommen überall im Körper vor, auch in der Nasenschleimhaut. Sie besitzen über 10 000 IgE-Rezeptoren und speichern in Vesikeln u. a. <strong>Histamin</strong>.</li><li>Normalerweise trägt eine Mastzelle viele verschiedene IgE-Typen. Nach der Massenproduktion eines IgE-Typs ist sie nun mit gleichartigen, allergenspezifischen IgE übersät.</li></ol>
-<figure class="summary-figure"><img src="Resourcen/Bilder/imm-allergie-sensibilisierung.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Sensibilisierung auf ein Allergen</strong> (Beschriftung handschriftlich): Makrophage mit MHC II präsentiert Allergenfragmente der T-Helferzelle; diese aktiviert per Cytokinen die B-Zelle; die Plasmazelle bildet IgE, das an die Rezeptoren der Mastzellen (mit Histamin-Vesikeln) bindet.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 26 (Abb. 1.19)</span></figcaption></figure>
-<p>Während der Sensibilisierung bleibt der Mensch <strong>völlig symptomfrei</strong>. Die IgE-Bildung kann monate- bis jahrelang anhalten, die Mastzellen bleiben sensibel.</p>
-<h3>B: Zweitkontakt</h3>
-<p>Beim erneuten Kontakt bindet das Allergen an die IgE-Antikörper auf den Mastzellen und <strong>verbrückt</strong> dabei benachbarte IgE-Moleküle. Das löst die Entleerung der Vesikel aus: <strong>Histamin</strong> und weitere Entzündungsstoffe werden freigesetzt und verursachen die allergischen Symptome (Niesen, Fliessschnupfen, juckende, tränende Augen; Schwellung; bei Asthma Verengung der Bronchien).</p>
-<h3>Therapien und Verhalten</h3>
-<p>Bei vielen Betroffenen bessert sich der Heuschnupfen mit dem Alter; die Veranlagung bleibt aber – neue Allergien (Nahrungsmittel, Haustiere) können jederzeit entstehen. Empfohlen: Pollenprognosen verfolgen (z. B. pollenundallergie.ch), Medikamente gezielt und vorbeugend einnehmen, Freizeit planen (Wassersport statt Jogging), abends Haare waschen, Kleider nicht im Schlafzimmer ausziehen, nachts Fenster schliessen – allgemein der maximalen Pollenbelastung ausweichen.</p>`
-        },
-        {
-          name: "Allergietypen und Pseudoallergie",
-          summary: `<p>In der Medizin unterscheidet man vier Typen allergischer Reaktionen (Einteilung nach Coombs und Gell):</p>
-<div class="summary-table-wrap"><table><caption>Die vier Allergietypen</caption><thead><tr><th>Typ</th><th>Bezeichnung</th><th>Auslöser / Mechanismus</th><th>Hauptakteure</th><th>Beispiele</th></tr></thead><tbody><tr><td><strong>I</strong></td><td>Soforttyp (anaphylaktischer Typ)</td><td>Allergen verbrückt IgE auf Mastzellen → Histaminfreisetzung; Sekunden bis Minuten</td><td>IgE, Mastzellen, Histamin</td><td>Heuschnupfen, allergisches Asthma, Nahrungsmittel-, Insektengiftallergie, anaphylaktischer Schock</td></tr><tr><td><strong>II</strong></td><td>zytotoxischer Typ</td><td>Antikörper binden an Antigene auf Körperzellen; das Komplementsystem führt zur Zellauflösung</td><td>IgG (IgM), Komplement</td><td>Transfusionszwischenfall bei falscher Blutgruppe, Rhesus-Unverträglichkeit, manche Medikamentenallergien</td></tr><tr><td><strong>III</strong></td><td>Immunkomplex-Typ</td><td>Antigen-Antikörper-Komplexe lagern sich in Geweben/Gefässen ab; das Komplementsystem führt zu Entzündungen; Stunden</td><td>IgG, Immunkomplexe, Komplement</td><td>Farmerlunge, Serumkrankheit, Gefässentzündungen</td></tr><tr><td><strong>IV</strong></td><td>Spättyp (zellvermittelt)</td><td>aktivierte T-Lymphozyten setzen Cytokine frei und aktivieren Makrophagen → Gewebeschädigung; 1–3 Tage</td><td>T-Zellen, Makrophagen, Cytokine</td><td>Kontaktallergie (z. B. Nickel), Tuberkulintest, Transplantatabstossung</td></tr></tbody></table></div>
-<p>Typ I–III werden durch Antikörper vermittelt, Typ IV durch Zellen.</p>
-<h3>Pseudoallergie</h3>
-<p>Eine <strong>Pseudoallergie</strong> verursacht ähnliche Symptome wie eine Allergie, beruht aber nicht auf einer spezifischen Immunreaktion: Es findet keine Sensibilisierung statt und es werden keine Antikörper gebildet. Auslöser (z. B. bestimmte Zusatzstoffe oder histaminhaltige Nahrungsmittel) setzen direkt Histamin frei oder wirken selbst wie Histamin. Die Reaktion ist dosisabhängig und kann schon beim ersten Kontakt auftreten. Sie gehört zu den Nahrungsmittelunverträglichkeiten, die nicht immunologisch bedingt sind.</p>`
-        }
-      ]
-    },
-    {
-      id: "topic-18",
-      name: "Anwendungen der Antigen-Antikörper-Reaktion",
-      group: "Immunbiologie",
-      subtopics: [
-        {
-          name: "Polyklonale und monoklonale Antikörper",
-          summary: `<p>Jeder Antikörper passt mit seiner variablen Region nach dem Schlüssel-Schloss-Prinzip nur an «sein» Epitop. Diese Spezifität nutzt man in Medizin und Forschung, um Bestandteile von Bakterien und Viren, Hormone, Giftstoffe und vieles mehr nachzuweisen.</p>
-<ul>
-<li><strong>Polyklonale Antikörper:</strong> Im Blut von Menschen und Versuchstieren findet sich ein Gemisch vieler verschiedener Antikörper in unterschiedlicher Konzentration (von vielen B-Zell-Klonen).</li>
-<li><strong>Monoklonale Antikörper (MAK):</strong> völlig identische Antikörper gegen ein einziges Epitop, gebildet von einem einzigen Zellklon. Für die meisten Anwendungen braucht man sie.</li>
-</ul>
-<h3>Herstellung (Hybridomtechnik)</h3>
-<ol><li>Einem Versuchstier (meist Maus) wird das gewünschte Antigen gespritzt (z. B. das Schwangerschaftshormon hCG).</li><li>Aus dem Blut bzw. der Milz werden antikörperproduzierende Plasmazellen isoliert.</li><li>Die Plasmazellen werden künstlich mit <strong>Krebszellen</strong> verschmolzen. Die entstehenden <strong>Hybridomzellen</strong> vereinen beide Eigenschaften: Sie produzieren den spezifischen Antikörper und sind unbegrenzt teilungsfähig.</li><li>Ein Hybridom-Klon, der den gewünschten Antikörper bildet, wird ausgewählt, dauerhaft in Kultur gehalten und die monoklonalen Antikörper werden isoliert.</li></ol>`
-        },
-        {
-          name: "Der ELISA-Test",
-          summary: `<p><strong>ELISA</strong> = enzyme-linked immunosorbent assay (enzymgekoppelter Immunadsorptionstest): quantitativer Nachweis bestimmter Antikörper oder Antigene. Früher wurde damit untersucht, ob jemand HIV-positiv ist – nachgewiesen werden dabei nicht die Viren, sondern die <strong>Antikörper gegen HIV</strong>.</p>
-<figure class="summary-figure"><img src="Resourcen/Bilder/imm-elisa.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Ablauf des ELISA-Tests:</strong> mit Antigen beschichtetes Probengefäss; ein Antikörper aus der Probe bindet; nach dem Auswaschen bindet ein enzymmarkierter Zweitantikörper, dessen Enzym ein Substrat in einen Farbstoff umwandelt.<span class="figure-source">Quelle: Immunbiologie.pdf, S. 31 (Abb. 1, Biologie heute)</span></figcaption></figure>
-<ol><li>Die Wand der Probengefässe wird mit dem <strong>Antigen</strong> beschichtet (z. B. HIV-Proteinfragmente).</li><li>Man gibt Blutserum der untersuchten Person zu. Enthält es passende Antikörper, binden diese an das Antigen.</li><li><strong>Waschen:</strong> freie, nicht gebundene Antikörper werden entfernt.</li><li>Ein <strong>zweiter Antikörper</strong> wird zugegeben, der spezifisch an den ersten (menschlichen) Antikörper bindet; an ihn ist ein <strong>Enzym</strong> gekoppelt.</li><li>Erneutes <strong>Waschen</strong> entfernt ungebundene Zweitantikörper.</li><li>Ein farbloses <strong>Substrat</strong> wird zugegeben; das Enzym wandelt es in ein farbiges Produkt um. Eine Farbreaktion tritt nur auf, wenn der erste Antikörper vorhanden war.</li></ol>
-<p>Das <strong>Waschen</strong> ist entscheidend: Bleiben ungebundene enzymgekoppelte Antikörper zurück, gibt es eine Farbreaktion auch ohne gesuchten Antikörper (falsch positiv). Mit Vergleichslösungen bekannter Konzentration lässt sich aus der <strong>Farbintensität</strong> auf die Antikörperkonzentration schliessen.</p>
-<h3>Sandwich-ELISA</h3>
-<p>Damit weist man <strong>Antigene</strong> nach: Zwei verschiedene Antikörper binden an verschiedene Stellen desselben Antigens. Der erste ist an der Gefässwand fixiert und fängt das Antigen aus der Probe; der zweite, enzymgekoppelte, bindet danach ebenfalls an das Antigen. Anwendungen: Hormonkonzentrationen im Blut, Tumormarker im Serum.</p>`
-        },
-        {
-          name: "Schwangerschaftstest und weitere Anwendungen",
-          summary: `<h3>Schwangerschaftstest</h3>
-<p>Der Embryo und die Plazenta geben das Hormon <strong>hCG</strong> (humanes Choriongonadotropin) ab; es ist etwa 14 Tage nach der Befruchtung im Urin nachweisbar. Monoklonale Maus-Antikörper gegen hCG werden mit der Hybridomtechnik gewonnen (Maus mit hCG immunisieren usw.).</p>
-<ol><li>Der Urin wandert durch den Teststreifen. Im Startbereich sind bewegliche, mit Farbstoff gekoppelte Anti-hCG-Antikörper; vorhandenes hCG bindet daran.</li><li>In der Testzone sind weitere Anti-hCG-Antikörper fixiert. Sie halten die hCG-Farbstoff-Antikörper-Komplexe fest – ein farbiger Streifen erscheint: schwanger.</li><li>Ohne hCG wandern die Farbstoff-Antikörper an der Testzone vorbei; in einer Kontrollzone werden sie von Antikörpern gegen Maus-Antikörper gebunden. Der Kontrollstreifen zeigt, dass der Test funktioniert hat.</li></ol>
-<p>Der Test ist im Wesentlichen qualitativ (ja/nein); die Farbintensität gibt höchstens einen groben Hinweis auf die Konzentration.</p>
-<p><strong>Vergleich mit dem HIV-ELISA:</strong> Beide nutzen die Spezifität von Antikörpern und bilden einen Immunkomplex auf einem Trägermaterial. Beim HIV-Test ist das <strong>Antigen fixiert</strong> und gesucht werden <strong>Antikörper</strong>, sichtbar gemacht durch ein Enzym, das ein Substrat umsetzt. Beim Schwangerschaftstest ist ein <strong>Antikörper fixiert</strong> und gesucht wird ein <strong>Antigen</strong> (hCG), sichtbar gemacht durch einen direkt gekoppelten Farbstoff.</p>
-<h3>Weitere Anwendungen</h3>
-<ul>
-<li><strong>Zellforschung:</strong> Monoklonale Antikörper gegen Tubulin, gekoppelt mit einem Fluoreszenzfarbstoff, machen die Mikrotubuli des Cytoskeletts im Fluoreszenzmikroskop sichtbar.</li>
-<li><strong>Diagnose:</strong> Mit radioaktiv markierten monoklonalen Antikörpern lassen sich Tumorzellen markieren und Grösse und Lage von Tumoren bestimmen.</li>
-<li><strong>Medikamente:</strong> Antikörper bringen Wirkstoffe gezielt zu Zellen mit bestimmten Oberflächenstrukturen (z. B. Krebszellen). <strong>TNF-Blocker</strong> binden den Signalstoff Tumornekrosefaktor, der an Rheuma und chronischen Darmentzündungen beteiligt ist.</li>
-</ul>`
-        }
-      ]
-    },
-    {
-      id: "topic-19",
-      name: "Grundlagen der Ökologie und Umweltfaktoren",
-      group: "Ökologie",
-      subtopics: [
-        {
-          name: "Was ist Ökologie?",
-          summary: `<p>Der Begriff stammt von griech. <em>oikos</em> (Haus, Platz) und <em>logos</em> (Lehre). Ernst <strong>Haeckel</strong> definierte 1866 Ökologie als «Wissenschaft von den Beziehungen der Organismen zur umgebenden Aussenwelt», J. von Uexküll 1921 als «Wissenschaft von den Beziehungen zwischen den Lebewesen und ihrer Umwelt».</p>
-<p><strong>Leitfragen der Ökologie:</strong> Wo kommen Lebewesen vor? Wie viele gibt es? Warum kommen sie (nicht) vor? Wie beeinflussen sie sich gegenseitig (z. B. Räuber und Beute, Mensch und Umwelt)? Die Antworten sind z. B. für Artenschutz und Landwirtschaft wichtig.</p>
-<h3>Ökologische Faktoren</h3>
-<div class="summary-table-wrap"><table><caption>Abiotische und biotische Faktoren</caption><thead><tr><th></th><th>Abiotische Faktoren</th><th>Biotische Faktoren</th></tr></thead><tbody><tr><td>Definition</td><td>Einflüsse der <strong>unbelebten</strong> Umwelt (chemisch und physikalisch)</td><td>Einflüsse, die direkt von <strong>Lebewesen</strong> (Beziehungspartnern) ausgehen</td></tr><tr><td>Beispiele</td><td>Temperatur, Licht, Wasser/Feuchtigkeit, Niederschlag, Wind, Bodeneigenschaften (pH, Nährstoffe), Luftzusammensetzung, Relief/Lage, Klima</td><td>Nahrung, Fressfeinde (Räuber), Parasiten und Krankheitserreger, Konkurrenten (eigene und andere Arten), Symbionten, Fortpflanzungspartner, Artgenossen</td></tr></tbody></table></div>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-faktoren-maus.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Ökologische Faktoren, die auf eine Maus wirken</strong>, und ihre Einteilung in abiotische (links) und biotische Faktoren (rechts) bzw. trophische Faktoren (Nahrung) im Zentrum.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 2, S. 2.1 (Abb. 2.1)</span></figcaption></figure>
-<p><strong>Beispiel Igel in der Stadt:</strong> abiotisch sind Lärm, Licht, Abgase, Wärme (Asphalt speichert Sonnenenergie), Trockenheit und die Aussentemperatur, die den Winterschlaf beendet (etwa 15 °C); biotisch sind Menschen, Futter, Fressfeinde (Fuchs, Dachs), Parasiten (Zecken, Fliegenmaden, Lungenwürmer), Nahrung (Regenwürmer, Schnecken) und Artgenossen.</p>`
-        },
-        {
-          name: "Toleranz gegenüber Umweltfaktoren",
-          summary: `<p>Jede Art kann nur innerhalb bestimmter Grenzen eines Umweltfaktors leben. Ermitteln lässt sich das z. B. mit einer <strong>Temperaturorgel</strong>: eine Rinne mit Temperaturgefälle, in der sich Tiere (z. B. Kellerasseln) frei verteilen. Alle anderen Faktoren (Licht, Feuchtigkeit) müssen gleich gehalten werden. Die Häufigkeitsverteilung zeigt eine glockenförmige <strong>Toleranzkurve</strong>.</p>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-temperaturorgel.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Temperaturorgel und Temperaturtoleranzkurve der Kellerassel.</strong> Die meisten Tiere halten sich in einem engen Temperaturbereich auf (Präferendum).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 1, S. 1.2 (Abb. 1.1, 1.2)</span></figcaption></figure>
-<figure class="summary-figure summary-svg"><svg viewBox="0 0 640 300" role="img" aria-label="Toleranzkurve" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-<line x1="50" y1="250" x2="620" y2="250" stroke="#454940"/><line x1="50" y1="250" x2="50" y2="20" stroke="#454940"/>
-<polygon points="620,250 612,246 612,254" fill="#454940"/><polygon points="50,20 46,28 54,28" fill="#454940"/>
-<text x="58" y="30" fill="#454940">Vitalität / Individuenzahl</text><text x="520" y="272" fill="#454940">Umweltfaktor</text>
-<path d="M90,250 C170,248 210,60 335,55 C460,60 500,248 580,250" fill="rgba(88,116,90,.12)" stroke="#58745a" stroke-width="2.5"/>
-<line x1="90" y1="250" x2="90" y2="262" stroke="#c47b59"/><text x="70" y="290" fill="#c47b59">Minimum</text>
-<line x1="580" y1="250" x2="580" y2="262" stroke="#c47b59"/><text x="555" y="290" fill="#c47b59">Maximum</text>
-<line x1="335" y1="55" x2="335" y2="250" stroke="#58745a" stroke-dasharray="4 4"/><text x="310" y="45" fill="#58745a" font-weight="bold">Optimum</text>
-<line x1="185" y1="200" x2="485" y2="200" stroke="#7a7c73" stroke-dasharray="3 3"/>
-<text x="210" y="192" fill="#7a7c73">Fortpflanzungsbereich (Präferendum innerhalb)</text>
-<text x="110" y="238" fill="#7a7c73">Pessimum</text><text x="500" y="238" fill="#7a7c73">Pessimum</text>
-<line x1="90" y1="268" x2="580" y2="268" stroke="#454940"/><text x="230" y="284" fill="#454940">Toleranzbereich (physiologische Potenz)</text>
-</svg><figcaption><strong>Abb. – Toleranzkurve</strong> (digital nachgezeichnet). Zwischen Minimum und Maximum liegt der Toleranzbereich; am Optimum ist die Vitalität am grössten. In den Pessimum-Bereichen nahe den Grenzwerten überlebt die Art, kann sich aber nicht fortpflanzen.<span class="figure-source">Quelle: nach Vorlesung.zip, Lektion 1, S. 1.2 (Abb. 1.3)</span></figcaption></figure>
-<div class="summary-table-wrap"><table><thead><tr><th>Begriff</th><th>Bedeutung</th></tr></thead><tbody><tr><td><strong>Minimum / Maximum</strong></td><td>untere bzw. obere Grenze des Faktors, bei der die Art gerade noch überlebt</td></tr><tr><td><strong>Toleranzbereich</strong> (physiologische Potenz)</td><td>Bereich zwischen Minimum und Maximum, in dem die Art leben kann</td></tr><tr><td><strong>Optimum</strong></td><td>Wert mit der höchsten Vitalität (Wachstum, Aktivität)</td></tr><tr><td><strong>Präferendum</strong></td><td>Bereich, den die Tiere bei freier Wahl bevorzugt aufsuchen</td></tr><tr><td><strong>Pessimum</strong></td><td>Randbereiche des Toleranzbereichs: Überleben möglich, aber keine Fortpflanzung</td></tr><tr><td><strong>Fortpflanzungsbereich</strong></td><td>Bereich, in dem Fortpflanzung möglich ist (enger als der Toleranzbereich)</td></tr></tbody></table></div>
-<p>Gemessene Toleranzkurven zeigen Verhältnisse im Labor; in der Natur kommen weitere Faktoren und Konkurrenz hinzu. Beispiel Küchenschabe und Heimchen: Ihre Toleranzbereiche überlappen sich, aber die bevorzugten Temperaturen unterscheiden sich deutlich – deshalb treten sie kaum in direkte Konkurrenz und lassen auf unterschiedliche natürliche Verbreitungsgebiete schliessen.</p>
-<h3>Euryök und stenök</h3>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-euryoek-stenoek.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Toleranzkurven von Hochmoorameise (oben) und Sumpfschrecke (unten).</strong> Die Ameise toleriert nur einen schmalen Temperaturbereich (stenök), die Sumpfschrecke einen breiten (euryök).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 2, S. 2.1 (Abb. 2.2)</span></figcaption></figure>
-<ul>
-<li><strong>Stenök</strong> (griech. <em>stenos</em>, eng): enger Toleranzbereich bezüglich eines Faktors, z. B. Koala (frisst fast nur Eukalyptus), Panda (Bambus), Bergforelle (Temperatur etwa 10–20 °C). Stenöke Arten sind gute Zeiger für bestimmte Umweltbedingungen.</li>
-<li><strong>Euryök</strong> (griech. <em>eurys</em>, breit): weiter Toleranzbereich, z. B. Fuchs und Ratte (pflanzliche und tierische Nahrung), Spatz, Maus, Mensch.</li>
-</ul>
-<p>Die Begriffe beziehen sich immer auf einen bestimmten Faktor (z. B. euryök bezüglich Nahrung, stenotherm bezüglich Temperatur). Beispiel Getreidesorten: Eine Sorte mit schmaler Temperaturkurve ist stenök, eine mit breiter euryök; Sorten mit unterschiedlichen Optima eignen sich für verschiedene Klimaregionen und konkurrieren kaum miteinander.</p>`
-        },
-        {
-          name: "Temperatur: wechselwarme und gleichwarme Tiere",
-          summary: `<p>Die Temperatur ist ein besonders wichtiger abiotischer Faktor, vor allem für wechselwarme Tiere.</p>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-poikilo-homoiotherm.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Intensität der Lebensvorgänge in Abhängigkeit von der Umgebungstemperatur.</strong> Oben ein wechselwarmes Tier: Aktivität nur in einem Temperaturbereich, darunter Kältestarre, darüber Wärmestarre und Hitzetod. Unten ein gleichwarmes Tier: über einen weiten Bereich konstante Aktivität.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 2, S. 2.2 (Abb. 2.3)</span></figcaption></figure>
-<div class="summary-table-wrap"><table><thead><tr><th></th><th>Wechselwarm (poikilotherm, ektotherm)</th><th>Gleichwarm (homoiotherm, endotherm)</th></tr></thead><tbody><tr><td>Körpertemperatur</td><td>folgt weitgehend der Umgebungstemperatur</td><td>wird durch eigene Wärmeproduktion konstant gehalten</td></tr><tr><td>Aktivität</td><td>nur in einem bestimmten Temperaturbereich; bei Kälte Kältestarre</td><td>über einen weiten Temperaturbereich gleich</td></tr><tr><td>Energiebedarf</td><td>gering</td><td>hoch (Stoffwechselwärme)</td></tr><tr><td>Beispiele</td><td>Fische, Amphibien, Reptilien, die meisten wirbellosen Tiere</td><td>Vögel, Säugetiere</td></tr></tbody></table></div>
-<h3>Warum gibt es Temperaturgrenzen?</h3>
-<ul>
-<li><strong>RGT-Regel</strong> (Reaktionsgeschwindigkeit-Temperatur-Regel): Eine Temperaturerhöhung um 10 °C verdoppelt bis verdreifacht die Geschwindigkeit chemischer Reaktionen – bei Wechselwarmen sinkt die Stoffwechselaktivität bei Kälte entsprechend.</li>
-<li><strong>Minimum:</strong> Unter 0 °C kann Wasser in den Zellen gefrieren; Eiskristalle sprengen die Zellen.</li>
-<li><strong>Maximum:</strong> Hohe Temperaturen <strong>denaturieren</strong> Proteine: Sie verlieren ihre Raumstruktur, Enzyme funktionieren nicht mehr.</li>
-<li>Aussen- und Innentemperatur eines Organismus sind nicht zwingend gleich.</li>
-</ul>`
-        },
-        {
-          name: "Licht, Wasser und Bioindikatoren",
-          summary: `<p>Neben der Temperatur sind <strong>Licht</strong> (Energiequelle der Fotosynthese, Taktgeber für Tages- und Jahresrhythmen) und <strong>Wasser</strong> (Lösungs- und Transportmittel, Ausgangsstoff der Fotosynthese) wichtige abiotische Faktoren. Pflanzen passen sich an Trockenheit z. B. durch verkleinerte Blattoberflächen (Nadeln) oder Wasserspeicherung an.</p>
-<h3>Bioindikatoren (Zeigerorganismen, Charakterformen)</h3>
-<p><strong>Bioindikatoren</strong> sind meist stenöke Organismen, deren Vorkommen oder Fehlen Rückschlüsse auf die Lebensbedingungen eines Standorts zulässt. Sie müssen häufig vorkommen und gut bestimmbar sein; oft sind es Pflanzen. Sie zeigen die Bedingungen über längere Zeit an (biologische Langzeituntersuchung).</p>
-<ul>
-<li><strong>Zeigerpflanzen</strong> zeigen z. B. Trockenheit, Feuchtigkeit, Stickstoffreichtum (z. B. Brennnessel) oder -mangel, Salz, Kalkreichtum oder Kalkmangel an.</li>
-<li><strong>Flechten</strong> als Zeiger der Luftqualität: Je nach SO₂-Belastung kommen andere Arten vor – bei stark belasteter Luft (0,1–0,15 mg SO₂/m³) fast nur Krustenflechten wie die Schüsselchenflechte, bei gering belasteter (bis 0,06 mg) Laubflechten wie die Wandgelbflechte, bei sehr guter Luft (&lt; 0,05 mg) Strauch- und Bartflechten (<em>Usnea</em>).</li>
-<li><strong>Gewässergüte:</strong> Die Wirbellosen unter Steinen im Bach (Charakterformen) zeigen die Belastung eines Fliessgewässers an.</li>
-</ul>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-flechten-zeiger.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Flechten als Zeigerorganismen für die Luftbelastung</strong>: von Krustenflechten (stark belastete Luft) über Laubflechten bis zu Bartflechten (sehr saubere Luft).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 4, S. 4.2 (Abb. 4.1)</span></figcaption></figure>`
-        }
-      ]
-    },
-    {
-      id: "topic-20",
-      name: "Anpassungen an die Temperatur",
-      group: "Ökologie",
-      subtopics: [
-        {
-          name: "Bergmannsche Regel und Oberflächen-Volumen-Verhältnis",
-          summary: `<div class="summary-merke"><strong>Merke:</strong> <strong>Bergmannsche Regel:</strong> Gleichwarme Tiere (Vögel und Säugetiere) sind in kalten Gebieten grösser als nahe verwandte Arten bzw. Unterarten in warmen Gebieten.</div>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-bergmann-tiger.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Verbreitung verschiedener Tigerarten.</strong> Der Sibirische Tiger (bis 280 cm, 300 kg) lebt im kalten Norden, der Sumatra-Tiger (ca. 180 cm) in den Tropen.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 2, S. 2.3 (Abb. 2.4)</span></figcaption></figure>
-<h3>Erklärung: Oberfläche und Volumen</h3>
-<p>Wärme wird über die Körperoberfläche abgegeben, aber im ganzen Volumen produziert. Vergrössert man einen Körper, wächst die Oberfläche (∝ r²) langsamer als das Volumen (∝ r³):</p>
-<div class="summary-table-wrap"><table><caption>Oberflächen-Volumen-Verhältnis (nach Lektion 2, Abb. 2.5)</caption><thead><tr><th>Kantenlänge r (Würfel)</th><th>Oberfläche O = 6r²</th><th>Volumen V = r³</th><th>O/V = 6/r</th></tr></thead><tbody><tr><td>0,01 m</td><td>0,0006 m²</td><td>0,000001 m³</td><td>600</td></tr><tr><td>1 m</td><td>6 m²</td><td>1 m³</td><td>6</td></tr><tr><td>10 m</td><td>600 m²</td><td>1000 m³</td><td>0,6</td></tr><tr><td>1000 m</td><td>6 000 000 m²</td><td>1 000 000 000 m³</td><td>0,006</td></tr></tbody></table></div>
-<p>Ein grösseres Tier hat ein <strong>kleineres Oberflächen-Volumen-Verhältnis</strong> und verliert relativ weniger Wärme – ein Vorteil in kalten Gebieten. Das Prinzip nutzen auch Gruppen: Kaiserpinguine drängen sich dicht zusammen und verkleinern so die gemeinsame Oberfläche.</p>
-<p><strong>Beispiele:</strong> Kaiserpinguin (Antarktis, gross) – Magellan- und Humboldtpinguin – Galapagospinguin (Äquator, klein). Gegenargument «Elefanten leben in warmen Gebieten»: Die Regel gilt für den Vergleich <em>nahe verwandter</em> Arten; Elefanten verringern die Überhitzung mit anderen Anpassungen (z. B. grosse, gut durchblutete Ohren).</p>`
-        },
-        {
-          name: "Allensche Regel und Gegenstromprinzip",
-          summary: `<div class="summary-merke"><strong>Merke:</strong> <strong>Allensche Regel:</strong> Abstehende Körperteile (Ohren, Schwanz, Extremitäten) sind bei gleichwarmen Arten in kalten Gebieten kleiner als bei nahe verwandten Arten in warmen Gebieten.</div>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-allen-fuechse.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Allensche Regel bei Füchsen:</strong> Wüstenfuchs (Fennek, Afrika, sehr grosse Ohren), Rotfuchs (Europa) und Polarfuchs (Arktis, kleine Ohren) mit ihren Verbreitungsgebieten.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 3, S. 3.1 (Abb. 3.1)</span></figcaption></figure>
-<p>Grosse Ohren vergrössern die Oberfläche und dienen in heissen Gebieten der Wärmeabgabe; kleine Körperanhänge verringern in der Kälte den Wärmeverlust. Beispiel Lemminge: Kurzer Schwanz und kompakter Körper sprechen für die Arktis (Halsbandlemming), längerer Schwanz und kleinerer Körper für die wärmere Waldregion.</p>
-<h3>Gegenstromprinzip</h3>
-<p>In Beinen und Flossen von Pinguinen, Enten oder Robben liegen Arterien (warmes Blut vom Körper) und Venen (kaltes Blut aus den Extremitäten) eng nebeneinander und fliessen in <strong>entgegengesetzte Richtungen</strong>. Die Wärme geht vom arteriellen auf das venöse Blut über: Das Blut kommt abgekühlt in den Füssen an (geringer Wärmeverlust an die Umgebung) und vorgewärmt zurück in den Körper.</p>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-gegenstrom-schema.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Blutgefässe unter der Haut beim Pinguin.</strong> A (Kälte): Arterie und Venen liegen eng beisammen; Wärme geht vom arteriellen auf das venöse Blut über, die Haut bleibt kühl. B (Wärme oder nach starker Bewegung): Das Blut fliesst über oberflächliche Venen zurück, Wärme wird an die Haut abgegeben.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 3, S. 3.2 (Abb. 3.3)</span></figcaption></figure>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-gegenstrom-pinguin.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Wärmeverteilung beim Adeliepinguin und im Entenbein:</strong> Bei kalter Umgebung sind die Füsse viel kühler als der Körperkern; durch den Wärmeaustausch im Gegenstrom kühlt das arterielle Blut auf dem Weg in den Fuss ab.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 3, S. 3.2 (Abb. 3.2)</span></figcaption></figure>
-<p>Die Durchblutung kann zusätzlich durch Verengung der Gefässe (<strong>Vasokonstriktion</strong>) reguliert werden.</p>`
-        },
-        {
-          name: "Weitere Strategien gegen Kälte",
-          summary: `<h3>Eisbär</h3>
-<ul>
-<li>gross und kompakt (Optimierung des Oberflächen-Volumen-Verhältnisses), kleine Ohren</li>
-<li>dicke Fettschicht und dichtes Fell; behaarte Fusssohlen</li>
-<li><strong>schwarze Haut</strong> unter weissem Fell: Die farblosen, hohlen Haare lassen Licht zur Haut durch und isolieren gleichzeitig mit der eingeschlossenen Luft; die schwarze Haut absorbiert die Wärme.</li>
-</ul>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-eisbaer-absorption.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Vergleich der Wärmeabsorption:</strong> Bei schwarzem Fell wird die Wärme aussen absorbiert und zum Teil wieder abgestrahlt; beim weissen Fell des Eisbären gelangt Licht durch die Haare bis zur schwarzen Haut und wird unter der isolierenden Schicht absorbiert.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 3, S. 3.3 (Abb. 3.5)</span></figcaption></figure>
-<h3>Frostschutzmittel</h3>
-<p>Manche Fische, Insekten und Amphibien bilden «Gefrierschutzmittel» im Blut (z. B. <strong>Glykoproteine</strong>), die das Gefrieren der Körperflüssigkeiten verhindern. Einige Arten tolerieren sogar das Einfrieren und tauen im Frühling wieder auf.</p>
-<h3>Winterschlaf, Winterruhe, Winterstarre</h3>
-<div class="summary-table-wrap"><table><caption>Strategien während kalter Jahreszeiten</caption><thead><tr><th></th><th>Winterschlaf</th><th>Winterruhe</th><th>Winterstarre</th></tr></thead><tbody><tr><td>Beispiel</td><td>Murmeltier, Igel</td><td>Dachs, Eichhörnchen, Bär</td><td>Ringelnatter, wechselwarme Tiere</td></tr><tr><td>Körpertemperatur</td><td>stark gesenkt (auf etwa 1/10 der normalen Temperatur), aber reguliert</td><td>sinkt kaum</td><td>entspricht der Aussentemperatur</td></tr><tr><td>Merkmale</td><td>Stoffwechsel stark reduziert; sinkt die Temperatur zu tief, wacht das Tier auf (Bewegung erzeugt Wärme) – sehr energieaufwändig</td><td>Stoffwechsel verringert, lange Schlafphasen; Tiere wachen auf und leben von Fettpolstern und Vorräten</td><td>keine Regulation; Tier ist bewegungsunfähig, bei Frost Gefahr des Erfrierens</td></tr></tbody></table></div>
-<div class="summary-table-wrap"><table><caption>Winterschlaf beim Murmeltier (Lektion 3, Tab. 3.2). Zum Vergleich: Ein Mensch verbraucht 8000–10 000 kJ/d.</caption><thead><tr><th></th><th>wach</th><th>Winterschlaf</th></tr></thead><tbody><tr><td>Körpertemperatur</td><td>36 °C</td><td>3 °C</td></tr><tr><td>Herzfrequenz</td><td>80/min</td><td>4–5/min</td></tr><tr><td>Atemzüge</td><td>25–30/min</td><td>alle 5 min</td></tr><tr><td>Energieverbrauch</td><td>1700 kJ/d</td><td>113 kJ/d</td></tr></tbody></table></div>
-<h3>Verhalten und Wachstum</h3>
-<ul>
-<li><strong>Temperaturregulierendes Verhalten</strong> wechselwarmer Tiere (z. B. Agame): morgens Sonnenbaden, bei Hitze Rückzug in den Schatten oder in Höhlen, Spreizstellung, um den Körper vom heissen Boden abzuheben.</li>
-<li><strong>Saisonale Wanderungen</strong> (Vogelzug) – auch wegen der Nahrung.</li>
-<li><strong>Pflanzen:</strong> Laubabwurf (Wasser würde in den Blättern gefrieren, Austrocknung), Überdauerungsorgane (Knospen, Zwiebeln), kleine Blattoberflächen (Nadeln), schmaler Wuchs, damit Äste unter Schneelast nicht brechen, langsames Wachstum (Kiefern im Norden bleiben bei gleichem Alter viel kleiner).</li>
-<li>Bei manchen Reptilien (z. B. Krokodilen, Schildkröten) bestimmt die <strong>Bruttemperatur</strong> das Geschlecht der Jungtiere.</li>
-</ul>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-agame-verhalten.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Temperaturregulierendes Verhalten einer australischen Agame:</strong> A Sonnenbaden, B Aktivität, C Spreizstellung, D Rückzug – jeweils mit Luft- und Körpertemperatur.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 3, S. 3.5</span></figcaption></figure>`
-        }
-      ]
-    },
-    {
-      id: "topic-21",
-      name: "Nahrungsbeziehungen und Stoffkreisläufe",
-      group: "Ökologie",
-      subtopics: [
-        {
-          name: "Nahrungsketten, Nahrungsnetze und Trophiestufen",
-          summary: `<p>Biotische Faktoren wirken zwischen verschiedenen Arten (interspezifisch) und zwischen Tieren derselben Art (intraspezifisch). Die wichtigsten Beziehungen sind Nahrungsbeziehungen.</p>
-<ul>
-<li><strong>Nahrungskette:</strong> lineare Abfolge von Organismen, bei der jeder dem nächsten als Nahrung dient, z. B. Algen → Zooplankton → Hering → Makrele → Thunfisch → Mensch. Die Pfeile zeigen die Richtung des <strong>Energie- und Stoffflusses</strong> («wird gefressen von»).</li>
-<li><strong>Nahrungsnetz:</strong> die verknüpften Nahrungsketten eines Ökosystems. Die meisten Arten ernähren sich von mehreren Arten und haben mehrere Fressfeinde.</li>
-</ul>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-nahrungsnetze.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Nahrungskette im Meer</strong> (links: Algen → Zooplankton → Hering → Makrele → Thunfisch → Mensch) und Nahrungskette an der Eiche (rechts, von den Blättern über Raupe, Kohlmeise bis zum Sperber).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 4, S. 4.2 (Abb. 4.3)</span></figcaption></figure>
-<div class="summary-table-wrap"><table><caption>Produzenten, Konsumenten, Reduzenten</caption><thead><tr><th>Rolle</th><th>Ernährung</th><th>Beispiele</th></tr></thead><tbody><tr><td><strong>Produzenten</strong></td><td>bauen mit Fotosynthese aus anorganischen Stoffen (CO₂, Wasser, Mineralsalze) und Sonnenenergie organische Stoffe auf (autotroph)</td><td>grüne Pflanzen, Algen, Phytoplankton</td></tr><tr><td><strong>Konsumenten</strong></td><td>ernähren sich von organischer Substanz anderer Lebewesen (heterotroph): Primärkonsumenten (Pflanzenfresser), Sekundärkonsumenten (Fleischfresser 1. Ordnung), Tertiärkonsumenten …</td><td>Hirsch → Puma → Geier</td></tr><tr><td><strong>Reduzenten</strong> (Destruenten, Zersetzer)</td><td>bauen tote organische Substanz (Leichen, Kot, Laub) zu anorganischen Stoffen ab (Mineralisierung), die wieder den Produzenten zur Verfügung stehen</td><td>Bakterien, Pilze, auch Bodentiere</td></tr></tbody></table></div>
-<p><strong>Trophiestufen</strong> (Ernährungsstufen) beschreiben die Stellung eines Organismus in der Nahrungskette: Produzenten (1. Trophiestufe), Primärkonsumenten (2.), Sekundärkonsumenten (3.) usw. Tote Biomasse aller Stufen geht in die Zersetzerkette.</p>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-trophiestufen.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Trophiestufen mit Stoffkreislauf:</strong> Produzenten → Primär-, Sekundär-, Tertiärkonsumenten (Lebend-Fresser-Kette); tote Biomasse gelangt zu den Destruenten, deren Mineralstoffe wieder von den Produzenten aufgenommen werden.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 4, S. 4.4 (Abb. 4.5)</span></figcaption></figure>
-<h3>Biologisches Gleichgewicht</h3>
-<p>Einzelne Arten können für ein ganzes Ökosystem entscheidend sein. <strong>Beispiel Kaimane am Amazonas</strong> (Hypothese von Fittkau, 1973): Fische laichten in den nährstoffarmen Flussmündungsseen und wurden dort teilweise von Kaimanen gefressen. Die Ausscheidungen der Kaimane düngten das Wasser, sodass reiches Plankton als Nahrung für die Jungfische entstand. Man schoss die Kaimane, um mehr Fische zu haben – doch ohne Kaimane blieben die Seen nährstoffarm, das Plankton fehlte, und die Fischbestände nahmen ab. Eine solche Hypothese liesse sich experimentell prüfen (z. B. Nährstoffmessungen in Seen mit und ohne Kaimane).</p>`
-        },
-        {
-          name: "Stoffkreisläufe: Nährstoffe, Atmung und Kohlenstoff",
-          summary: `<p>Während die Energie ein Ökosystem nur durchfliesst, werden Stoffe im Kreislauf immer wieder verwendet.</p>
-<h3>Nährstoff- und Atmungskreislauf</h3>
-<p>Pflanzen (Produzenten) bauen Nährstoffe auf. Ein Hirsch frisst Knospen und Rinde (1. Konsument), verbraucht einen Teil für seine Bewegung und speichert einen Teil in seinem Körper. Ein Puma erbeutet den Hirsch (2. Konsument), ein Geier frisst vom toten Puma (3. Konsument). Bakterien und Pilze zersetzen die Reste zu einfachen Stoffen, die als Mineralsalze mit dem Wasser wieder von den Pflanzen aufgenommen werden.</p>
-<p>Parallel läuft der <strong>Atmungskreislauf</strong>: Die Fotosynthese der Pflanzen setzt O₂ frei und bindet CO₂; Pflanzen, Tiere und Zersetzer veratmen organische Stoffe mit O₂ zu CO₂. Ohne Fotosynthese hätten die Konsumenten keine Nahrung, ohne Zellatmung fehlte langfristig das CO₂ für die Pflanzen – Fotosynthese (<strong>Assimilation</strong>) und Zellatmung (<strong>Dissimilation</strong>) bedingen sich gegenseitig.</p>
-<h3>Kohlenstoffkreislauf</h3>
-<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/oek-kohlenstoffkreislauf.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Kohlenstoffkreislauf.</strong> Depots in Gigatonnen C (Gt C), Flüsse in Gt C pro Jahr. An Land halten sich Fotosynthese und Atmung (je 110) die Waage; zusätzlich gelangen jährlich etwa 6 Gt C aus fossilen Brennstoffen und 2 Gt C durch Brandrodung in die Atmosphäre.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 5, S. 5.1</span></figcaption></figure>
-<div class="summary-table-wrap"><table><caption>Kohlenstoffspeicher (Lektion 5, Abb. 5.2)</caption><thead><tr><th>Speicher (Depot)</th><th>Gt C</th></tr></thead><tbody><tr><td>Atmosphäre (CO₂)</td><td>750</td></tr><tr><td>Biomasse an Land</td><td>700</td></tr><tr><td>tote Biomasse (Torf, Humus)</td><td>1800</td></tr><tr><td>im Wasser gelöst</td><td>40 000</td></tr><tr><td>Biomasse im Meer</td><td>3</td></tr><tr><td>fossile Reservoire (Kohle, Erdöl, Erdgas)</td><td>5000–10 000</td></tr><tr><td>Lithosphäre (Kalkgestein)</td><td>66 000 000</td></tr></tbody></table></div>
-<p>Der Kreislauf ist «biogen»: Organismen setzen CO₂ ständig um. Wälder werden oft «grüne Lunge» genannt, weil sie O₂ abgeben. Betrachtet man den gesamten Sauerstoffkreislauf eines Waldes mit gleichbleibender Biomasse, verbrauchen Atmung und Zersetzung aber etwa gleich viel O₂, wie die Fotosynthese liefert – ein Netto-Gewinn entsteht nur, solange Biomasse zunimmt.</p>
-<h3>Bioakkumulation</h3>
-<p>Schwer abbaubare Gifte (z. B. Pestizide in Saatbeizmitteln) werden in Organismen in bestimmten Organen (Leber, Fettgewebe) angereichert. Weil jedes Glied der Nahrungskette viele Beutetiere frisst, steigt die Konzentration von Stufe zu Stufe: Pflanzen → Mäuse → Mäusebussard (bis 20 Mäuse pro Tag). Endkonsumenten wie Greifvögel sind am stärksten betroffen. Totfunde von Greifvögeln traten vom Herbst bis zum Vorfrühling auf – nach der Aussaat gebeizter Saaten nahmen die Mäuse das Gift auf und gaben es über die Nahrungskette weiter.</p>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-bioakkumulation.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Bioakkumulation:</strong> Die Giftkonzentration (Punkte) nimmt in der Nahrungskette Saat → Maus → Greifvogel von Stufe zu Stufe zu.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 5, S. 5.2 (Abb. 5.3)</span></figcaption></figure>`
-        },
-        {
-          name: "Wasser- und Stickstoffkreislauf",
-          summary: `<h3>Wasserkreislauf</h3>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-wasserkreislauf.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Geologischer Wasserkreislauf</strong> (in 1000 km³ pro Jahr): Über dem Meer verdunsten 425 und fallen 385 als Niederschlag; 40 werden als Wasserdampf zum Land transportiert. Über Land fallen 111, davon verdunsten bzw. transpirieren 71; 40 fliessen über Flüsse und Grundwasser zurück ins Meer.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 4, S. 4.4 (Abb. 4.6)</span></figcaption></figure>
-<p>Die Bilanz geht auf: Über dem Meer verdunstet mehr (425) als dort niederschlägt (385); dieser Überschuss (40) regnet über Land ab und fliesst als Oberflächen- und Grundwasser zurück (40). Pflanzen tragen über die <strong>Transpiration</strong> wesentlich zur Verdunstung über Land bei.</p>
-<h3>Stickstoffkreislauf</h3>
-<p>Stickstoff ist Bestandteil aller Proteine und Nukleinsäuren.</p>
-<ol><li>Die Atmosphäre besteht zu 78 % aus <strong>N₂</strong>, das Pflanzen und Tiere aber nicht verwerten können.</li><li><strong>Stickstofffixierung:</strong> Bestimmte Bakterien – frei im Boden oder in den Wurzelknöllchen von Pflanzen (z. B. Hülsenfrüchtler) – binden Luftstickstoff und setzen ihn als <strong>Ammonium</strong> (NH₃ bzw. NH₄⁺) frei.</li><li><strong>Mineralisierung (Ammonifikation):</strong> Über Kot, Urin und abgestorbene Organismen gelangt stickstoffhaltiges Material (Eiweisse) in den Boden; Destruenten (Pilze, Bakterien) setzen den Stickstoff als Ammonium frei.</li><li><strong>Nitrifikation:</strong> Nitrifizierende Bakterien oxidieren Ammonium zuerst zu <strong>Nitrit</strong> (NO₂⁻), dann zu <strong>Nitrat</strong> (NO₃⁻).</li><li><strong>Aufnahme:</strong> Pflanzen nehmen Nitrat mit dem Wasser auf und brauchen es für die Eiweisssynthese; Tiere erhalten den Stickstoff über die Nahrung.</li><li><strong>Denitrifikation:</strong> Denitrifizierende Bakterien reduzieren Nitrat zu N₂, das als Gas aus dem Boden entweicht (Stickstoffverlust des Bodens).</li></ol>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-stickstoffkreislauf.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Stickstoffkreislauf:</strong> N₂-fixierende Bakterien (frei und in Wurzelknöllchen), Destruenten, nitrifizierende Bakterien (NH₄⁺ → NO₂⁻ → NO₃⁻), Aufnahme durch Pflanzen und denitrifizierende Bakterien, die N₂ in die Atmosphäre zurückgeben.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 5, S. 5.2 (Abb. 5.4)</span></figcaption></figure>
-<div class="summary-table-wrap"><table><caption>Stoffkreisläufe im Vergleich</caption><thead><tr><th>Kreislauf</th><th>Hauptspeicher</th><th>wichtigste Prozesse</th><th>Rolle der Organismen</th></tr></thead><tbody><tr><td>Kohlenstoff</td><td>Lithosphäre, Meer (gelöst), fossile Lager, Atmosphäre</td><td>Fotosynthese, Zellatmung, Zersetzung, Verbrennung</td><td>Produzenten binden CO₂, alle Organismen setzen es frei</td></tr><tr><td>Stickstoff</td><td>Atmosphäre (N₂)</td><td>Fixierung, Ammonifikation, Nitrifikation, Denitrifikation</td><td>fast nur Bakterien können N₂ binden bzw. freisetzen</td></tr><tr><td>Wasser</td><td>Meere</td><td>Verdunstung, Transpiration, Niederschlag, Abfluss</td><td>Pflanzen über Transpiration</td></tr></tbody></table></div>`
-        }
-      ]
-    },
-    {
-      id: "topic-22",
-      name: "Energiefluss und Produktivität",
-      group: "Ökologie",
-      subtopics: [
-        {
-          name: "Energiefluss durch das Ökosystem",
-          summary: `<p>Energie fliesst – im Gegensatz zu den Stoffen – nur in <strong>eine Richtung</strong> durch das Ökosystem: von der Sonne über die Produzenten zu den Konsumenten und Destruenten; sie verlässt das System als Wärme. Ökosysteme brauchen deshalb ständig Energiezufuhr.</p>
-<ul>
-<li>Pflanzen nutzen nur etwa <strong>1 %</strong> des eingestrahlten Sonnenlichts für die Fotosynthese.</li>
-<li>Von einer Trophiestufe zur nächsten werden nur etwa <strong>10 %</strong> der Energie weitergegeben (<strong>10-%-Regel</strong>); der Rest wird veratmet, bleibt unverdaut oder geht in tote Biomasse.</li>
-</ul>
-<h3>Brutto- und Nettoproduktion</h3>
-<ul>
-<li><strong>Bruttoprimärproduktion:</strong> die gesamte von den Produzenten durch Fotosynthese gebundene Energie bzw. organische Substanz (= 100 %).</li>
-<li><strong>Nettoprimärproduktion:</strong> Bruttoproduktion minus die von den Produzenten selbst veratmete Energie (Dissimilation). Sie steht für Wachstum und Fortpflanzung und damit als Nahrung für Konsumenten und Destruenten zur Verfügung.</li>
-<li>Für Konsumenten gilt analog: Aufgenommene und verdaute Nahrung = Bruttoproduktion; davon wird ein Teil als Betriebsenergie veratmet (CO₂ und Exkrete werden ausgeschieden), der Rest dient als Nettoproduktion dem Aufbau von Baustoffen für Wachstum, Reparatur und Fortpflanzung. Unverdautes gelangt mit Kot in die Zersetzerkette.</li>
-</ul>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-bruttoprimaerproduktion.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Brutto- und Nettoprimärproduktion</strong> (Prozent der Bruttoprimärproduktion).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 5, S. 5.3 (Abb. 5.6)</span></figcaption></figure>
-<div class="summary-table-wrap"><table><caption>Energiefluss in Prozent der Bruttoprimärproduktion (digitalisiert nach Abb. 5.6)</caption><thead><tr><th>Grösse</th><th>Anteil</th></tr></thead><tbody><tr><td>Sonnenenergie</td><td>10 000 %</td></tr><tr><td>Bruttoprimärproduktion der Produzenten</td><td>100 %</td></tr><tr><td>davon Dissimilation (Zellatmung) der Produzenten</td><td>50 %</td></tr><tr><td>Nettoprimärproduktion</td><td>50 %</td></tr><tr><td>→ zu den Destruenten</td><td>40 %</td></tr><tr><td>→ zu den Konsumenten</td><td>10 %</td></tr><tr><td>Primärkonsumenten: veratmet / an Destruenten / weitergegeben</td><td>5 % / 4 % / 1 %</td></tr><tr><td>Sekundärkonsumenten: veratmet / an Destruenten / Rest</td><td>0,5 % / 0,4 % / 0,1 %</td></tr><tr><td>insgesamt von Destruenten abgebaut</td><td>44,4 %</td></tr><tr><td>insgesamt von Produzenten und Konsumenten abgebaut</td><td>55,6 %</td></tr></tbody></table></div>`
-        },
-        {
-          name: "Ökologische Pyramiden und Produktivität",
-          summary: `<p>Wegen der Verluste von Stufe zu Stufe stehen auf jeder höheren Trophiestufe weniger Energie und meist auch weniger Biomasse zur Verfügung. Dargestellt wird dies in Pyramiden:</p>
-<ul>
-<li><strong>Energiepyramide</strong> (Nettoproduktion pro Fläche und Zeit, z. B. kJ/(m²·d)): immer eine echte Pyramide.</li>
-<li><strong>Zahlenpyramide</strong> (Individuen pro Fläche) und <strong>Biomassepyramide</strong> (kg/m²): nicht immer pyramidenförmig. Im <strong>Wald</strong> tragen wenige grosse Bäume viele Pflanzenfresser – die Zahlenpyramide steht auf dem Kopf. Im <strong>offenen Meer</strong> ist die Biomasse des sehr produktiven, aber kurzlebigen Phytoplanktons zeitweise kleiner als die des Zooplanktons.</li>
-</ul>
-<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/oek-pyramiden-wald-meer.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Vergleich Wald und offenes Meer:</strong> Individuenzahl pro Fläche (links), Biomasse pro Fläche (Mitte) und Nettoproduktion (rechts). Nur die Produktionspyramide hat in beiden Ökosystemen die typische Form.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 5, S. 5.5 (Abb. 5.10)</span></figcaption></figure>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-energiepyramide-meer.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Energie- und Nahrungspyramide im Meer:</strong> Phytoplankton → Zooplankton → Planktonfresser → Raubfische → Robben → Schwertwale.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 5, S. 5.4 (Abb. 5.9)</span></figcaption></figure>
-<h3>Folgerungen</h3>
-<ul>
-<li>Nahrungsketten sind selten länger als 4–5 Glieder, weil auf den oberen Stufen zu wenig Energie bleibt.</li>
-<li>Das grösste Tier, der <strong>Bartenwal</strong>, ernährt sich von Produzenten und Primärkonsumenten (Plankton, Krill): Als Endkonsument einer langen Kette stünde ihm viel zu wenig Energie zur Verfügung.</li>
-<li><strong>Ernährung des Menschen:</strong> Für 1 kcal Brot braucht es viel weniger Sonnenenergie und Fläche als für 1 kcal Rindfleisch, das eine Trophiestufe höher liegt.</li>
-<li>Die <strong>Produktivität</strong> der Landwirtschaft (Energieertrag : Energieaufwand) sinkt mit zunehmender Technisierung: Hackbau ohne Dünger und Spritzmittel hat ein günstiges Verhältnis, intensiver Anbau mit Dünger, Spritzmitteln und Maschinen ein ungünstigeres.</li>
-</ul>`
-        }
-      ]
-    },
-    {
-      id: "topic-23",
-      name: "Biotische Beziehungen und ökologische Nische",
-      group: "Ökologie",
-      subtopics: [
-        {
-          name: "Beziehungen zwischen Arten",
-          summary: `<p>Die Beziehungen zwischen zwei Arten lassen sich nach Nutzen (+), Schaden (−) und Neutralität (0) für die Partner einteilen:</p>
-<div class="summary-table-wrap"><table><caption>Beziehungen zwischen Arten</caption><thead><tr><th>Beziehung</th><th>Zeichen</th><th>Beschreibung</th><th>Beispiele</th></tr></thead><tbody><tr><td><strong>Karpose</strong></td><td>+/0</td><td>nur ein Partner profitiert, der andere wird nicht geschädigt</td><td>Brandgans brütet in Fuchsbauten (wird wegen einer Beisshemmung nicht gefressen)</td></tr><tr><td><strong>Kommensalismus</strong> (Mitessertum)</td><td>+/0</td><td>ein Partner ernährt sich von Nahrungsresten eines anderen, ohne ihm zu schaden</td><td>Aasfresser an Beuteresten; Silberfischchen im Haus</td></tr><tr><td><strong>Symbiose</strong> (im engeren Sinn)</td><td>+/+</td><td>langfristige, oft lebenslange Gemeinschaft zum Vorteil beider; oft obligatorisch (lebensnotwendig)</td><td>Flechten (Pilz + Alge), Darmbakterien des Menschen (Verdauung, Schutz vor anderen Bakterien)</td></tr><tr><td><strong>Mutualismus</strong></td><td>+/+</td><td>kurzfristige, regelmässig wiederkehrende Gemeinschaft zum Vorteil beider</td><td>Blütenpflanzen und Bienen (teilweise gemeinsam entwickelt)</td></tr><tr><td><strong>Parasitismus</strong></td><td>+/−</td><td>der Parasit schädigt den meist deutlich grösseren Wirt, ohne ihn unmittelbar zu töten; <em>Ektoparasiten</em> leben aussen, <em>Endoparasiten</em> im Wirt</td><td>Zecke, Floh, Blutegel (ekto); Bandwurm (endo)</td></tr><tr><td><strong>Parasitoide</strong></td><td>+/−</td><td>Parasiten, die ihren Wirt schliesslich töten</td><td>Schlupfwespen legen Eier in Raupen, die Larven fressen die Raupe von innen auf</td></tr><tr><td><strong>Räuber-Beute-Beziehung</strong></td><td>+/−</td><td>der Räuber tötet und frisst die Beute; Pflanzenfresser gehören im weiten Sinn auch dazu</td><td>Luchs – Schneeschuhhase; Karnivoren und Herbivoren</td></tr><tr><td><strong>Konkurrenz</strong></td><td>−/−</td><td>Wettbewerb um Nahrung, Raum oder andere Ressourcen, zwischen Arten (<em>interspezifisch</em>) oder innerhalb einer Art (<em>intraspezifisch</em>)</td><td>Zebra und Gnu um Gras; Artgenossen um Reviere</td></tr></tbody></table></div>
-<p>Karpose, Kommensalismus, Parasitismus, Parasitoide und Räuber-Beute werden je nach Einteilung als <strong>Antibiose</strong> (+/−) bzw. einseitige Beziehungen zusammengefasst. Die Übergänge sind fliessend: Seepocken auf Walen nützen z. B. den Transport (Karpose), können den Wal bei starkem Befall aber schädigen.</p>
-<p><strong>Grössenverhältnisse:</strong> Räuber sind meist grösser als ihre Beute; durch spezielle Jagdtechniken (Jagd im Rudel, Gift) können sie aber auch viel grössere Beute erlegen. Parasiten und Parasitoide sind kleiner als ihr Wirt.</p>`
-        },
-        {
-          name: "Die ökologische Nische",
-          summary: `<p>Die <strong>ökologische Nische</strong> ist die Gesamtheit aller Ansprüche einer Art an die biotischen und abiotischen Umweltfaktoren, die für ihr Bestehen wichtig sind – und die Art, wie sie ihre Umwelt nutzt. Sie ist kein Ort, sondern ein «Beruf» der Art, mathematisch ein n-dimensionaler Raum (eine Dimension pro Faktor).</p>
-<p><strong>Beispiel Seevögel:</strong> Möwen greifen Fische an der Wasseroberfläche und sammeln Wirbellose am Strand; Seeschwalben und Basstölpel sind Stosstaucher; Alken und Kormorane jagen als Paddel- bzw. Flugtaucher. Watvögel nutzen mit unterschiedlich langen Schnäbeln Beute in verschiedenen Bodentiefen. So konkurrieren die Arten kaum direkt um Nahrung.</p>
-<h3>Fundamentale und reale Nische</h3>
-<ul>
-<li><strong>Fundamentale Nische</strong> (physiologische Potenz): Bereich der Umweltfaktoren, in dem eine Art ohne Konkurrenz leben könnte – ermittelt z. B. mit Laborwerten.</li>
-<li><strong>Reale Nische</strong> (ökologische Potenz): Bereich, den die Art unter Konkurrenz in der Natur tatsächlich besiedelt – ermittelt mit Beobachtungswerten. Die reale Nische ist meist kleiner.</li>
-</ul>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-nischenraummodell.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Nischenraummodell mit drei Variablen.</strong> A: fundamentale Nische (physiologische Potenz) von Art A; B: reale Nische (ökologische Potenz) von Art A bei Konkurrenz mit Art B.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 6, S. 6.4 (Abb. 6.1)</span></figcaption></figure>
-<div class="summary-table-wrap"><table><thead><tr><th>Physiologische Potenz</th><th>Ökologische Potenz</th></tr></thead><tbody><tr><td>= Toleranzbereich eines Umweltfaktors, in dem eine Art <strong>ohne Konkurrenz</strong> vorkommen kann (autökologisch)</td><td>Bereich eines Umweltfaktors, in dem eine Art <strong>mit Konkurrenz</strong> vorkommen kann (synökologisch)</td></tr></tbody></table></div>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-baumarten-nische.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Umweltansprüche von Rotbuche, Stieleiche und Waldkiefer</strong> bezüglich Bodenfeuchtigkeit und Säuregehalt: Wachstum möglich (hell), optimales Wachstum (dunkel) und natürliches Vorkommen in Mischkulturen (schraffiert).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 6, S. 6.6 (Abb. 6.4)</span></figcaption></figure>
-<p>Alle drei Baumarten wachsen allein am besten auf mittleren Böden. In Mischkultur verdrängt die konkurrenzstarke <strong>Rotbuche</strong> die anderen aus dem Optimalbereich: Die <strong>Stieleiche</strong> weicht auf nasse, die <strong>Waldkiefer</strong> auf trockene oder nasse, saure Böden aus – Bereiche, die für sie physiologisch gar nicht optimal sind. Ebenso zeigt die Waldkiefer im Versuchsbeet ihr Optimum auf frischem Boden, in der Natur kommt sie aber v. a. an trockenen und nassen Standorten vor. Die realen Nischen der Arten überlappen sich kaum.</p>`
-        }
-      ]
-    },
-    {
-      id: "topic-24",
-      name: "Minimumgesetz, Konvergenz und Konkurrenz",
-      group: "Ökologie",
-      subtopics: [
-        {
-          name: "Minimumgesetz und Konvergenz",
-          summary: `<h3>Minimum- oder Pessimumgesetz</h3>
-<div class="summary-merke"><strong>Merke:</strong> Das Vorkommen und die Häufigkeit einer Art werden von demjenigen Umweltfaktor am stärksten begrenzt, der am weitesten vom Optimum entfernt ist bzw. im Pessimum liegt (Liebig).</div>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-liebig-fass.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Liebigs Fassmodell:</strong> Die kürzeste Daube (der Minimumfaktor, z. B. ein Nährstoff wie N, K, P) bestimmt die Höhe des Flüssigkeitsspiegels, also den Ernteertrag.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 7, S. 7.1 (Abb. 7.1)</span></figcaption></figure>
-<p>Für die Landwirtschaft heisst das: Dünger mit reichlich vorhandenen Nährstoffen nützt nichts, solange ein anderer Nährstoff im Minimum ist.</p>
-<h3>Konvergenz (Analogie)</h3>
-<p><strong>Konvergenz</strong> ist die Ähnlichkeit im Körperbau (oder Verhalten) zwischen nicht näher verwandten Organismen, entstanden durch Anpassung an ähnliche Umweltbedingungen bzw. eine ähnliche ökologische Nische. Solche Merkmale heissen <em>analog</em>.</p>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-konvergenz.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Konvergente Entwicklung:</strong> stromlinienförmige Körper bei Delfin, Hai, Knochenfisch, Lederschildkröte und Pinguin (links); ähnliche Formen bei Beuteltieren Australiens und Plazentatieren anderer Kontinente (rechts), z. B. Beutelwolf – Wolf, Flugbeutler – Flughörnchen.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 7, S. 7.1 (Abb. 7.2)</span></figcaption></figure>
-<ul>
-<li>Nektarvögel verschiedener Kontinente: langer, dünner Schnabel (Nektar aus Blüten).</li>
-<li>Sukkulente Pflanzen (Kakteen, Wolfsmilch): wasserspeichernde Stängel, Blätter fehlen weitgehend – Anpassung an Trockenheit.</li>
-<li>Wühlende Säugetiere (Maulwurf, Goldmull, Beutelmull): kräftige Grabkrallen, kleine Augen.</li>
-</ul>
-<p>Um trotz äusserer Ähnlichkeit die Verwandtschaft zu prüfen, untersucht man innere Anatomie, Fortpflanzung (z. B. Beutel oder Plazenta) und die DNA.</p>`
-        },
-        {
-          name: "Konkurrenz und Konkurrenzausschlussprinzip",
-          summary: `<p>Eine <strong>Population</strong> ist die Gesamtheit der Individuen einer Art in einem bestimmten Gebiet, die eine Fortpflanzungsgemeinschaft bilden. Konkurrenz entsteht, wenn Arten oder Individuen dieselben begrenzten Ressourcen nutzen.</p>
-<h3>Experiment mit Pantoffeltierchen (Gause)</h3>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-pantoffeltierchen.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Populationswachstum zweier Pantoffeltierchen-Arten.</strong> Getrennt gehalten wachsen <em>P. aurelia</em> und <em>P. caudatum</em> beide bis zu einer stabilen Dichte. Zusammen im selben Gefäss überlebt nur <em>P. aurelia</em>; <em>P. caudatum</em> wird eliminiert.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 7, S. 7.2 (Abb. 7.3)</span></figcaption></figure>
-<div class="summary-merke"><strong>Merke:</strong> <strong>Konkurrenzausschlussprinzip:</strong> Zwei Arten mit genau gleicher ökologischer Nische können nicht dauerhaft im selben Lebensraum zusammen vorkommen.</div>
-<p><strong>Versuch mit Mehlkäfern:</strong> In Mehl allein verdrängt der Reismehlkäfer den kleineren Getreideplattkäfer vollständig (beide fressen auch artfremde Larven). Bietet man kleine Glasröhrchen als Unterschlupf an, in die nur die kleinen Larven des Getreideplattkäfers passen, überleben beide Arten: Die Strukturierung des Lebensraums schafft eine zusätzliche Nische.</p>
-<h3>Konsequenzen des Konkurrenzausschlussprinzips</h3>
-<div class="summary-table-wrap"><table><caption>Folgen von Konkurrenz</caption><thead><tr><th>Konsequenz</th><th>Beschreibung</th><th>Beispiele</th></tr></thead><tbody><tr><td><strong>I. Aussterben / Verdrängung</strong></td><td>unter bestimmten Bedingungen verdrängt die stärkere Art die schwächere</td><td><em>P. aurelia</em> verdrängt <em>P. caudatum</em></td></tr><tr><td><strong>II. Einnischung (Koexistenz)</strong></td><td>durch Selektion spezialisieren sich die Arten auf unterschiedliche Nischen; aus einer Art können zwei werden</td><td>Darwinfinken auf den Galapagosinseln</td></tr><tr><td><strong>III. Ausweichen</strong></td><td>die Arten nutzen verschiedene Lebensräume, Aktivitätszeiten, Orte der Nahrungssuche oder Beutespektren</td><td>Sperber (tagaktiv) und Waldkauz (nachtaktiv); Kohlmeise und Blaumeise suchen in verschiedenen Bereichen des Baums Nahrung</td></tr></tbody></table></div>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-einnischung.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Modell der Einnischung durch Selektionsdruck.</strong> Konkurrenz im Bereich des alten Anpassungsoptimums (Mitte) begünstigt Individuen mit abweichenden Merkmalen; es entstehen zwei neue Anpassungsoptima – aus einer Art werden zwei.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 7, S. 7.3 (Abb. 7.4)</span></figcaption></figure>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-darwinfinken.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Darwinfinken:</strong> Aus einer körnerfressenden Ausgangsart vom Festland entstanden auf den Galapagosinseln Arten mit unterschiedlichen Schnabelformen für Insekten, Kakteen, Körner am Boden und in Bäumen (adaptive Radiation).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 7, S. 7.3 (Abb. 7.5)</span></figcaption></figure>`
-        }
-      ]
-    },
-    {
-      id: "topic-25",
-      name: "Populationsökologie",
-      group: "Ökologie",
-      subtopics: [
-        {
-          name: "Populationsstruktur",
-          summary: `<p>Ein <strong>Ökosystem</strong> ist ein dynamisches Beziehungsgefüge aus einer Lebensgemeinschaft (Biozönose) und ihrem Lebensraum (Biotop), verbunden durch Stoffkreisläufe und Energiefluss.</p>
-<h3>Populationsgrösse – beeinflussende Grössen</h3>
-<ul>
-<li><strong>Geburtenrate</strong> (Fertilität) und Alter bei der Geschlechtsreife (<strong>Generationszeit</strong>)</li>
-<li><strong>Sterberate</strong> und Sterblichkeit pro Altersklasse – entscheidend ist, ob Individuen vor oder nach der Fortpflanzung sterben</li>
-<li>weitere Faktoren: Nahrung, Krankheiten, Feinde, Konkurrenz, Ein- und Auswanderung</li>
-</ul>
-<p>Zwei Populationen mit gleicher Kinderzahl pro Individuum entwickeln sich unterschiedlich, wenn die Generationszeit verschieden ist: Wer früher Nachkommen hat, wächst schneller. Grössere Arten haben in der Regel längere Generationszeiten (Stunden bei Bakterien, Jahrzehnte bei Walen).</p>
-<h3>Dichte, Verteilung und Zusammensetzung</h3>
-<ul>
-<li><strong>Populationsdichte:</strong> Individuenzahl pro Fläche (oder Volumen).</li>
-<li><strong>Räumliche Verteilung:</strong> zufällig, gleichmässig (z. B. bei Revieren), entlang eines Gradienten oder geklumpt (z. B. um Ressourcen, in Gruppen).</li>
-<li><strong>Demografische Zusammensetzung:</strong> Alters- und Geschlechtsstruktur, dargestellt in Alterspyramiden.</li>
-</ul>`
-        },
-        {
-          name: "Populationswachstum: exponentiell und logistisch",
-          summary: `<p>Die <strong>Wachstumsrate</strong> r einer Population hängt von Geburten und Todesfällen ab:</p>
-<p style="text-align:center"><strong>r = (b − d) / N</strong></p>
-<p>b = Anzahl Geburten, d = Anzahl Todesfälle pro Zeiteinheit, N = Individuenzahl. <em>Beispiel:</em> 1000 Individuen, 300 Geburten, 100 Todesfälle pro Jahr: r = (300 − 100)/1000 = 0,2 = 20 % pro Jahr.</p>
-<h3>Exponentielles Wachstum</h3>
-<p>Bei unbegrenzten Ressourcen und konstanter Wachstumsrate r &gt; 0 wächst die Population <strong>exponentiell</strong>: Die Verdoppelungszeit bleibt konstant, die Kurve wird immer steiler (J-Kurve). Bei r = 0 bleibt die Grösse konstant, bei r &lt; 0 nimmt sie exponentiell ab.</p>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-exponentielles-wachstum.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Populationsgrösse in Abhängigkeit von der Wachstumsrate:</strong> exponentielle Zunahme bei r &gt; 0 (links), konstante Grösse bei r = 0 und exponentielle Abnahme bei r &lt; 0 (rechts).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 8, S. 8.4 (Abb. 8.6)</span></figcaption></figure>
-<h3>Logistisches Wachstum</h3>
-<p>In der Natur sind Ressourcen begrenzt. Das Wachstum folgt einer S-förmigen Kurve:</p>
-<ol><li><strong>Anlaufphase:</strong> wenige Individuen, langsamer Zuwachs.</li><li><strong>Exponentielle Phase:</strong> rasche Zunahme; der tägliche Zuwachs steigt.</li><li><strong>Wendepunkt bei K/2:</strong> Der tägliche Zuwachs ist maximal und nimmt danach ab, weil Ressourcen knapper werden.</li><li><strong>Stationäre Phase:</strong> Die Population pendelt um die <strong>Umweltkapazität K</strong>; Geburten- und Sterberate sind gleich hoch, r = 0.</li></ol>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-logistisches-wachstum.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Logistisches Wachstum:</strong> Die Populationsgrösse nähert sich der Umweltkapazität K; der tägliche Zuwachs erreicht am Wendepunkt sein Maximum; die relative Wachstumsrate bleibt zuerst konstant und sinkt dann auf null.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 8, S. 8.4 (Abb. 8.7)</span></figcaption></figure>
-<p><strong>Umweltkapazität K</strong> (carrying capacity): die maximale Anzahl Individuen einer Art, die in einem Ökosystem dauerhaft überleben kann. Beispiel Schafpopulation in Südaustralien (1840–1930): nach starkem Anstieg Schwankungen um einen Mittelwert, beeinflusst durch die jährlichen Niederschläge.</p>`
-        },
-        {
-          name: "Dichteabhängige und dichteunabhängige Faktoren",
-          summary: `<ul>
-<li><strong>Dichteabhängige Faktoren</strong> beeinflussen die Populationsgrösse und hängen selbst von der Dichte ab: Ihre negative Wirkung verstärkt sich mit zunehmender Dichte. Sie wirken <strong>regulierend</strong> (negative Rückkopplung, «Kreis»).</li>
-<li><strong>Dichteunabhängige Faktoren</strong> wirken unabhängig von der Dichte. Sie wirken <strong>limitierend, aber nicht regulierend</strong>.</li>
-</ul>
-<div class="summary-table-wrap"><table><caption>Dichteunabhängige und dichteabhängige Faktoren (Lektion 9, Tab. 9.1)</caption><thead><tr><th>Dichteunabhängige Faktoren</th><th>Dichteabhängige Faktoren</th></tr></thead><tbody><tr><td>abiotische Faktoren: Wetter, Temperatur, Wasser, Naturkatastrophen, Radioaktivität, Chemikalien</td><td>Dichtestress (sozialer Stress), Abwanderung</td></tr><tr><td>interspezifische Konkurrenz</td><td>intraspezifische Konkurrenz (Nahrung, Raum)</td></tr><tr><td>nicht ansteckende Krankheiten</td><td>ansteckende (epidemische) Krankheiten</td></tr><tr><td>unspezifische Fressfeinde (Räuber, die andere Beute bevorzugen)</td><td>artspezifische Fressfeinde und Parasiten</td></tr></tbody></table></div>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-dichteregulation.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Wirkung dichteabhängiger und dichteunabhängiger Faktoren auf die Populationsdichte.</strong> Dichteabhängige Faktoren (oben) bilden mit der Dichte einen Regelkreis; dichteunabhängige (unten) wirken nur in eine Richtung.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 9, S. 9.1 (Abb. 9.1)</span></figcaption></figure>
-<p><strong>Beispiele:</strong> Bei Reismehlkäfern steigt die Sterberate mit der Anfangszahl der Eier (Kannibalismus, Nahrungsmangel); bei Dünengras sinkt die Samenzahl pro Pflanze mit zunehmender Pflanzendichte (Konkurrenz um Licht, Wasser, Nährstoffe). Beides sind dichteabhängige Effekte.</p>`
-        },
-        {
-          name: "r- und K-Strategen, Überlebenskurven",
-          summary: `<p>Die Bezeichnungen leiten sich aus der logistischen Wachstumskurve ab: <strong>r-Strategen</strong> setzen auf eine hohe Wachstumsrate r, <strong>K-Strategen</strong> auf ein Leben nahe der Umweltkapazität K.</p>
-<div class="summary-table-wrap"><table><caption>Typische Merkmale von r- und K-Strategen (Lektion 9, Tab. 9.2)</caption><thead><tr><th>Kennzeichen</th><th>r-Stratege</th><th>K-Stratege</th></tr></thead><tbody><tr><td>Anzahl Nachkommen</td><td>viele</td><td>wenige</td></tr><tr><td>Grösse der Nachkommen</td><td>klein</td><td>gross</td></tr><tr><td>Selbstständigkeit der Nachkommen</td><td>gross (früh selbstständig)</td><td>klein</td></tr><tr><td>elterliche Fürsorge</td><td>gering oder fehlend</td><td>intensiv</td></tr><tr><td>Körpergrösse</td><td>meist klein</td><td>meist gross</td></tr><tr><td>Generationszeit</td><td>kurz</td><td>lang</td></tr><tr><td>Lebenserwartung</td><td>kurz</td><td>lang</td></tr><tr><td>Wachstumsgeschwindigkeit der Population</td><td>schnell</td><td>langsam</td></tr><tr><td>Populationsgrösse</td><td>stark schwankend, oft gross</td><td>relativ konstant nahe K</td></tr><tr><td>Abhängigkeit von Umweltschwankungen</td><td>gross</td><td>klein</td></tr><tr><td>Stärke der Strategie</td><td>rasche Neubesiedlung instabiler Lebensräume</td><td>Konkurrenzstärke in stabilen Lebensräumen</td></tr><tr><td>Beispiele</td><td>Bakterien, Insekten, Mäuse, Kaninchen, Amphibien, Fische</td><td>Elefanten, Wale, Menschenaffen, Mensch, Greifvögel</td></tr></tbody></table></div>
-<p>Die meisten Arten liegen zwischen den Extremen; die Einteilung ist relativ (eine Maus ist r-Stratege im Vergleich zum Elefanten, aber K-Stratege im Vergleich zum Insekt).</p>
-<h3>Überlebenskurven</h3>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-ueberlebenskurven.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Überlebenskurven</strong> (Anzahl Überlebende, logarithmisch, gegen Prozent der maximalen Lebensspanne). Typ I: hohe Sterblichkeit erst im Alter (z. B. moderner Mensch, viele grosse Säugetiere). Typ II: konstante Sterblichkeit (z. B. viele Vögel und Echsen). Typ III: sehr hohe Sterblichkeit in der Jugend (z. B. Fische, Insekten, viele Pflanzen).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 9, S. 9.3 (Abb. 9.4)</span></figcaption></figure>
-<p>K-Strategen zeigen typischerweise Kurven vom Typ I, r-Strategen vom Typ III.</p>`
-        }
-      ]
-    },
-    {
-      id: "topic-26",
-      name: "Sukzession, Stabilität und Räuber-Beute-Dynamik",
-      group: "Ökologie",
-      subtopics: [
-        {
-          name: "Sukzession und Klimax",
-          summary: `<ul>
-<li><strong>Sukzession:</strong> die zeitliche Abfolge (Ablösung) von Lebensgemeinschaften an einem Ort, weil sich das Gefüge der ökologischen Faktoren verändert – oft durch die Organismen selbst (z. B. Bodenbildung, Beschattung).</li>
-<li><strong>Klimax:</strong> die Schlussgesellschaft – das verhältnismässig stabile Endstadium der Vegetationsentwicklung in einem Gebiet unter natürlichen Bedingungen (in Mitteleuropa meist Buchen-Eichen-Mischwald).</li>
-<li><strong>Primärsukzession:</strong> Besiedlung eines völlig neu entstandenen Lebensraums ohne Boden, z. B. Vulkaninsel, Gletschervorfeld.</li>
-<li><strong>Sekundärsukzession:</strong> Wiederbesiedlung nach einer grossen Störung, bei der der Boden erhalten bleibt, z. B. Brand, Kahlschlag, Sturm.</li>
-</ul>
-<figure class="summary-figure summary-figure-wide"><img src="Resourcen/Bilder/oek-sukzession-mitteleuropa.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Natürliche Sukzession in Mitteleuropa:</strong> Kraut-Gras-Flur (0–10 Jahre: Kreuzkraut, Adlerfarn, Weidenröschen) → Gebüsch (Brombeere, Himbeere, Holunder) → Pionierwald (20–100 Jahre: Birke, Zitterpappel, Kiefer, Vogelbeere) → Klimaxwald (über 100 Jahre: Buche, Eiche, Fichte). Die Nettoproduktion steigt früh an, die Biomasse nimmt bis zur Klimax zu.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 9, S. 9.4 (Abb. 9.5)</span></figcaption></figure>
-<div class="summary-table-wrap"><table><caption>Veränderungen im Verlauf der Sukzession</caption><thead><tr><th></th><th>Pionierstadium</th><th>Klimaxstadium</th></tr></thead><tbody><tr><td>Produktion : Abbau</td><td>Produktion grösser als Abbau (Biomasse nimmt zu)</td><td>Produktion ≈ Abbau</td></tr><tr><td>Strategen</td><td>eher r-Strategen</td><td>eher K-Strategen</td></tr><tr><td>Spezialisierung</td><td>eher Generalisten</td><td>eher Spezialisten</td></tr><tr><td>Nahrungsnetz</td><td>einfach, kurze Ketten</td><td>lange, verzweigte Nahrungsketten</td></tr><tr><td>Artenzahl</td><td>tief</td><td>hoch</td></tr></tbody></table></div>
-<h3>Zonation</h3>
-<p><strong>Zonation</strong> ist das räumliche Nebeneinander verschiedener Lebensgemeinschaften, z. B. die Gürtel am Ufer eines verlandenden Sees (Wasserpflanzen, Röhricht, Seggen, Bruchwald). Merke: <strong>Zonation = räumlich, Sukzession = zeitlich</strong>. Bei der Verlandung wandern die Zonen mit der Zeit seewärts – das räumliche Nebeneinander spiegelt die zeitliche Abfolge.</p>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-zonation.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Zonation eines Ufergürtels:</strong> Waagrecht das räumliche Nebeneinander der Zonen A–D (Zonation), senkrecht ihre zeitliche Verschiebung beim Verlanden (Sukzession).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 9, S. 9.5 (Abb. 9.7)</span></figcaption></figure>`
-        },
-        {
-          name: "Mosaik-Zyklus-Modell",
-          summary: `<p>Das <strong>Mosaik-Zyklus-Modell</strong> geht davon aus, dass Ökosysteme eine wiederkehrende Abfolge (Zyklus) verschiedener Reifestadien durchlaufen. Innerhalb eines Ökosystems findet man auf Teilflächen (Mosaik) gleichzeitig verschiedene Sukzessionsstadien – typisch für vom Menschen unbeeinflusste Urwälder. Die Natur «steht nicht still».</p>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-mosaik-zyklus.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Schema der ablaufenden Sukzession in einem Urwaldgebiet in Österreich:</strong> Die Waldstadien folgen zyklisch aufeinander und kommen gleichzeitig nebeneinander vor.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 10, S. 10.1 (Abb. 10.1)</span></figcaption></figure>
-<div class="summary-table-wrap"><table><caption>Mosaikmodell eines Buchen-Eichen-Mischwaldes (Lösung Aufgabe 9.4, Lektion 10, S. 10.2)</caption><thead><tr><th>Phase</th><th>Dauer (ca.)</th><th>Prägende Arten und Merkmale</th></tr></thead><tbody><tr><td>Pionierwaldphase</td><td>15 Jahre</td><td>Brennnessel, Brombeere, Weiden, Pappeln; Haselhuhn</td></tr><tr><td>Dickungsphase</td><td>60 Jahre</td><td>Buche, Eiche, Fichte, Bäume bis etwa 10 m hoch; Sperber</td></tr><tr><td>Klimax (Optimalphase)</td><td>300 Jahre</td><td>Buche, Eiche, Fichte, Kronendach geschlossen; Buntspecht</td></tr><tr><td>Absterbephase (Zerfallsphase)</td><td>100 Jahre</td><td>Buche, Eiche, Fichte, Totholz prägend; Waldkauz</td></tr></tbody></table></div>`
-        },
-        {
-          name: "Stabilität von Ökosystemen",
-          summary: `<ul>
-<li><strong>Resistenz:</strong> Mass für die Fähigkeit eines Ökosystems bzw. einer Population, bei Störungen mehr oder weniger im gleichen Zustand zu bleiben (Widerstand gegen Veränderung).</li>
-<li><strong>Resilienz:</strong> Mass für die Geschwindigkeit, mit der ein System nach einer Störung in den Ausgangszustand zurückkehrt (Erholungsfähigkeit).</li>
-</ul>
-<p>Ein resistentes System schwankt nach einer Störung wenig; ein resilientes kann stark ausgelenkt werden, erholt sich aber schnell.</p>`
-        },
-        {
-          name: "Räuber-Beute-Dynamik und Lotka-Volterra-Regeln",
-          summary: `<figure class="summary-figure"><img src="Resourcen/Bilder/oek-hudson-bay.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Fellstatistik der Hudson Bay Company (1845–1935):</strong> Die Zahl der erbeuteten Schneeschuhhasen und Luchse schwankt periodisch (etwa alle 10 Jahre), die Luchsmaxima folgen den Hasenmaxima zeitversetzt.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 10, S. 10.3 (Abb. 10.4)</span></figcaption></figure>
-<p>Modellvorstellung (negative Rückkopplung): Je mehr Beute, desto mehr Räuber (mehr Nahrung, mehr Nachkommen); je mehr Räuber, desto weniger Beute; je weniger Beute, desto weniger Räuber; je weniger Räuber, desto mehr Beute.</p>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-raeuber-beute-modell.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Modellvorstellung zur Entwicklung von Räuber- und Beutepopulationen:</strong> Die Wechselwirkung bildet einen Regelkreis mit gegenläufigen Wirkungen (+/−).<span class="figure-source">Quelle: Vorlesung.zip, Lektion 10, S. 10.3 (Abb. 10.5)</span></figcaption></figure>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-lotka-volterra.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Grafische Darstellung des Lotka-Volterra-Modells:</strong> Beute- (durchgezogen) und Räuberpopulation (gestrichelt) schwanken periodisch und phasenverschoben um konstante Mittelwerte.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 10, S. 10.3 (Abb. 10.6)</span></figcaption></figure>
-<div class="summary-table-wrap"><table><caption>Die Lotka-Volterra-Regeln</caption><thead><tr><th>Regel</th><th>Aussage</th></tr></thead><tbody><tr><td><strong>1. Periodische Populationsschwankungen</strong></td><td>Die Individuenzahlen von Räuber und Beute schwanken periodisch; die Maxima der Räuber folgen phasenverschoben auf die Maxima der Beute.</td></tr><tr><td><strong>2. Konstanz der Mittelwerte</strong></td><td>Trotz der Schwankungen bleiben die Mittelwerte beider Populationen über längere Zeit konstant, sofern sich die Bedingungen nicht ändern.</td></tr><tr><td><strong>3. Störung der Mittelwerte</strong></td><td>Werden Räuber und Beute gleich stark (im Verhältnis zu ihrer Dichte) dezimiert, erholt sich die Beutepopulation schneller als die Räuberpopulation: Der Mittelwert der Beute steigt kurzfristig, der der Räuber sinkt kurzfristig.</td></tr></tbody></table></div>
-<p><strong>Gründe für Regel 3:</strong> Ohne Fressfeinde wächst die Beutepopulation schneller als sonst; die Generationszeit der Räuber ist meist länger als die der Beute.</p>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-lotka-volterra-regel3.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Erholung von Beute- und Räuberpopulation nach einem dezimierenden Eingriff:</strong> Die Beute erholt sich rasch, die Räuber folgen verzögert.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 10, S. 10.4 (Abb. 10.8)</span></figcaption></figure>
-<p><strong>Bedeutung für die Schädlingsbekämpfung:</strong> Insektizide wirken nicht nur auf Schädlinge, sondern oft noch stärker auf deren Fressfeinde. Danach kann sich der Schädling schneller vermehren als vor der Behandlung – der Schaden ist dann grösser als ohne Bekämpfung.</p>
-<p><strong>Grenzen des Modells:</strong> Es gilt streng nur für eine Räuber- und eine Beuteart ohne weitere Einflüsse. In der Natur haben Räuber mehrere Beutearten, Beute mehrere Feinde, und Nahrung, Krankheiten und Wetter wirken mit. Beispiel Neufundland: Nach der Einführung des Schneeschuhhasen (1864) und der Ausrottung des Wolfs stieg der Luchsbestand; als die Hasenpopulation um 1915 zusammenbrach, wichen die Luchse auf Schneehasen und Karibukälber aus (1925 starben 70 % der Karibukälber in den ersten Lebensmonaten).</p>`
-        }
-      ]
-    },
-    {
-      id: "topic-27",
-      name: "Mensch und Umwelt",
-      group: "Ökologie",
-      subtopics: [
-        {
-          name: "Umweltschutz und planetare Belastbarkeitsgrenzen",
-          summary: `<p><strong>Umweltschutz</strong> ist die Gesamtheit aller Massnahmen zum Schutz der Umwelt, um die Gesundheit des Menschen zu erhalten. Seine Ziele decken sich nicht zwingend mit denen von Natur- oder Tierschutz. Ökosysteme erbringen für den Menschen wertvolle <strong>ökologische Leistungen</strong> (Schutzwald, Holz, Trinkwasser, landwirtschaftliche Produktion, Erholung, Fischfang, Erosionsschutz, unbekannte Wirkstoffe), deren Wert man in Geld abzuschätzen versucht.</p>
-<h3>Planetare Belastbarkeitsgrenzen</h3>
-<p>Das Konzept der planetaren Grenzen (Steffen et al. 2015) beschreibt Bereiche, in denen die Menschheit einen «sicheren Handlungsraum» nicht verlassen sollte, weil sonst gravierende, oft <strong>nicht umkehrbare</strong> Folgen drohen.</p>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-planetare-grenzen.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Planetare Belastbarkeitsgrenzen</strong> (Steffen et al. 2015, übersetzt). Der innere Kreis markiert den sicheren Handlungsraum; die Sektoren zeigen, wie weit die Menschheit ihn je Bereich bereits überschritten hat.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 11, S. 3</span></figcaption></figure>
-<div class="summary-table-wrap"><table><caption>Planetare Grenzen nach Steffen et al. 2015</caption><thead><tr><th>Bereich</th><th>Zustand (Stand der Abbildung)</th></tr></thead><tbody><tr><td>Biodiversitätsverlust (genetische Vielfalt)</td><td>sicherer Bereich verlassen – hohes Risiko</td></tr><tr><td>biogeochemische Flüsse (Stickstoff, Phosphor)</td><td>sicherer Bereich verlassen – hohes Risiko</td></tr><tr><td>Klimawandel</td><td>sicherer Bereich verlassen – erhöhtes Risiko</td></tr><tr><td>Landnutzungswandel (Abholzung)</td><td>sicherer Bereich verlassen – erhöhtes Risiko</td></tr><tr><td>Süsswassernutzung, Ozonverlust in der Stratosphäre, Versauerung der Meere</td><td>noch im sicheren Bereich</td></tr><tr><td>funktionale Vielfalt, neue chemische Substanzen/veränderte Organismen, Aerosole</td><td>Grenze (noch) nicht definiert</td></tr></tbody></table></div>
-<h3>Ursachen globaler Umweltbelastungen</h3>
-<ul>
-<li><strong>Bevölkerungswachstum:</strong> Die Weltbevölkerung hat sich seit 1900 vervielfacht.</li>
-<li><strong>Pro-Kopf-Verbrauch</strong> an Ressourcen und Energie steigt.</li>
-<li><strong>Endliche Ressourcen:</strong> Die Ackerfläche wächst kaum noch; höhere Ernten wurden durch Effizienzsteigerung erreicht – aber auch das hat Grenzen («Grenzen des Wachstums»).</li>
-</ul>
-<p><strong>Anthropozän:</strong> vorgeschlagener Name für eine neue geochronologische Epoche, in der der Mensch zu einem der wichtigsten Einflussfaktoren auf biologische, geologische und atmosphärische Prozesse geworden ist (Klimawandel, Artensterben, Lichtverschmutzung). Seine Spuren werden noch lange nachweisbar sein. Der Mensch ist nicht der erste Faktor, der die Erde stark verändert, aber der erste, der dafür verantwortlich ist.</p>`
-        },
-        {
-          name: "Nachhaltigkeit",
-          summary: `<p>Die Menschen brauchen immer mehr Ressourcen, viele davon sind begrenzt, und vieles Handeln ist nur kurzfristig möglich – daraus entstand der Ruf nach <strong>Nachhaltigkeit</strong> (langfristigem Handeln).</p>
-<h3>Zwei Definitionen</h3>
-<ul>
-<li>Prinzip, nach dem nicht mehr verbraucht werden darf, als jeweils nachwächst, sich regeneriert oder künftig wieder bereitgestellt werden kann.</li>
-<li>Entwicklung, die gewährleistet, dass künftige Generationen nicht schlechter gestellt sind, ihre Bedürfnisse zu befriedigen, als die heute lebenden.</li>
-</ul>
-<p>Nachhaltigkeit verbindet im Idealfall drei Dimensionen: <strong>ökologisch</strong> (Umwelt), <strong>ökonomisch</strong> (Wirtschaft) und <strong>sozial</strong> (Gesellschaft). Nur wo alle drei erfüllt sind, ist eine Entwicklung nachhaltig; ökologisch und sozial ergibt «lebenswert», ökologisch und ökonomisch «lebensfähig», sozial und ökonomisch «gerecht». Eine Dimension allein reicht nicht.</p>`
-        },
-        {
-          name: "Ökologische Bewertungen",
-          summary: `<p>Ökologische Bewertungen sind systematische Analysen der Umweltwirkungen von Produkten oder Lebensstilen.</p>
-<h3>Ökologischer Fussabdruck und Biokapazität</h3>
-<ul>
-<li><strong>Ökologischer Fussabdruck:</strong> die biologisch produktive Fläche, die ein Mensch mit seinem Lebensstandard und den heutigen Technologien benötigen würde, um nachhaltig zu leben – in globalen Hektaren (gha).</li>
-<li><strong>Biokapazität:</strong> die Kapazität der Erde oder eines Landes, nutzbare biologische Materialien bereitzustellen und Abfallstoffe umweltverträglich aufzunehmen. Weltweit stehen jedem Menschen etwa <strong>1,63 gha</strong> zur Verfügung.</li>
-<li><strong>Anzahl benötigter Erden</strong> = Fussabdruck des Landes / Biokapazität der Welt (bzw. / Biokapazität des Landes).</li>
-</ul>
-<div class="summary-table-wrap"><table><caption>Ökologischer Fussabdruck und Biokapazität pro Person (footprintnetwork.org, 2016). Erden ① = Fussabdruck / 1,63; Erden ② = Fussabdruck / Biokapazität des Landes</caption><thead><tr><th>Land</th><th>Fussabdruck (gha)</th><th>Biokapazität (gha)</th><th>Erden ①</th><th>Reserve (+)/Defizit (−)</th><th>Erden ②</th></tr></thead><tbody><tr><td>Äthiopien</td><td>1,0</td><td>0,6</td><td>0,6</td><td>−0,4</td><td>1,7</td></tr><tr><td>Brasilien</td><td>2,8</td><td>8,7</td><td>1,7</td><td>+5,9</td><td>0,3</td></tr><tr><td>Deutschland</td><td>4,8</td><td>1,6</td><td>2,9</td><td>−3,2</td><td>3,0</td></tr><tr><td>Frankreich</td><td>4,4</td><td>2,4</td><td>2,7</td><td>−2,0</td><td>1,8</td></tr><tr><td>Finnland</td><td>6,6</td><td>13,7</td><td>4,0</td><td>+7,1</td><td>0,5</td></tr><tr><td>Indien</td><td>1,2</td><td>0,4</td><td>0,7</td><td>−0,8</td><td>3</td></tr><tr><td>Japan</td><td>4,5</td><td>0,6</td><td>2,8</td><td>−3,9</td><td>7,5</td></tr><tr><td>Katar</td><td>14,4</td><td>1,0</td><td>8,8</td><td>−13,4</td><td>14,4</td></tr><tr><td>USA</td><td>8,1</td><td>3,6</td><td>5,0</td><td>−6,6</td><td>2,3</td></tr><tr><td>VR China</td><td>3,6</td><td>1,0</td><td>2,2</td><td>−2,6</td><td>3,6</td></tr><tr><td><strong>Schweiz</strong></td><td>4,6</td><td>1,0</td><td>2,8</td><td>−3,6</td><td>4,6</td></tr><tr><td><strong>Welt</strong></td><td>2,75</td><td>1,63</td><td>1,7</td><td>−1,12</td><td>1,7</td></tr></tbody></table></div>
-<figure class="summary-figure"><img src="Resourcen/Bilder/oek-fussabdruck-schweiz.jpg" alt="<strong>Abb" loading="lazy"><figcaption><strong>Abb. – Ökologischer Fussabdruck der Schweiz im Vergleich zur Biokapazität der Welt (1961–2014):</strong> Der Schweizer Fussabdruck liegt seit Jahrzehnten weit über der pro Kopf verfügbaren Biokapazität, die mit wachsender Weltbevölkerung sinkt.<span class="figure-source">Quelle: Vorlesung.zip, Lektion 11, S. 18</span></figcaption></figure>
-<h3>Ökobilanz – Lebenszyklusanalyse</h3>
-<p>Eine <strong>Lebenszyklusanalyse</strong> untersucht systematisch die Umweltwirkungen eines Produkts während seines gesamten Lebensweges «von der Wiege bis zur Bahre» (Rohstoffe, Herstellung, Transport, Nutzung, Entsorgung), z. B. eines Handys. Instrumente sind:</p>
-<ul>
-<li><strong>Treibhausgasbilanz (CO₂-Fussabdruck):</strong> Summe der Treibhausgasemissionen in CO₂-Äquivalenten. Beispiel Getränkeverpackungen (kg CO₂ pro 1000 l, Produktion, Abfüllung und Transport): Dose 200, PET-Einweg 1,5 l 122, Karton 1 l 81, Glas-Mehrweg 0,7 l 72, PET-Mehrweg 1 l 62. Eine <strong>Ökoeffizienzanalyse</strong> setzt zusätzlich Umweltbelastung und Kosten ins Verhältnis: Für Mineralwasser im Umkreis von 300 km schnitten dort Wasserspender-Mehrwegflaschen und PET-Einwegflaschen besser ab als schwere Glas-Mehrwegflaschen – das Ergebnis hängt also vom gewählten Rahmen (Transportweg, Gewicht, Umläufe) ab.</li>
-<li><strong>Umweltbelastungspunkte (UBP):</strong> Die Methode der ökologischen Knappheit vergleicht die aktuelle Belastung (Ist-Menge) mit der gesellschaftspolitisch als zulässig angesehenen Belastung (Toleranzmenge) und fasst viele Faktoren (Emissionen, Ressourcenverbrauch, Abfälle) in einer Zahl zusammen. Ein Schweizer verursacht durchschnittlich etwa <strong>21 Millionen UBP pro Jahr</strong> (zum Vergleich pro Jahr: Pferd 7,8 Mio., Hund 1,3 Mio., Katze 0,5 Mio.).</li>
-</ul>
-<div class="summary-table-wrap"><table><caption>Was entspricht 1000 Umweltbelastungspunkten? (Lektion 11, S. 17)</caption><thead><tr><th>Bereich</th><th>Produkt oder Aktivität</th><th>≈ 1000 UBP entsprechen</th></tr></thead><tbody><tr><td>Verkehr</td><td>Autofahrt (1,6 Personen)</td><td>3 km</td></tr><tr><td></td><td>Zugfahrt SBB-Regionalzug</td><td>24 km</td></tr><tr><td></td><td>Flugreise innerhalb Europas</td><td>6 km</td></tr><tr><td>Kleidung, Hygiene</td><td>T-Shirt aus Baumwolle</td><td>1/6 T-Shirt</td></tr><tr><td></td><td>Seife</td><td>200 g</td></tr><tr><td></td><td>WC-Papier (FSC)</td><td>5 Rollen</td></tr><tr><td>Papier</td><td>Recyclingpapier 80 g/m²</td><td>190 Blatt A4</td></tr><tr><td></td><td>FSC-Papier 80 g/m²</td><td>60 Blatt A4</td></tr><tr><td>Nahrungsmittel</td><td>Rindfleisch</td><td>12 g</td></tr><tr><td></td><td>Brot</td><td>300 g</td></tr><tr><td></td><td>Bier</td><td>1 l</td></tr><tr><td></td><td>Kaffee</td><td>8 Tassen Lungo</td></tr><tr><td></td><td>Zucker</td><td>1 kg</td></tr><tr><td>Elektrizität</td><td>Laptop</td><td>20 h Nutzung</td></tr><tr><td></td><td>12-W-Energiesparlampe</td><td>13 Tage (424 h)</td></tr><tr><td></td><td>Strom-Mix CH ab Steckdose</td><td>3,8 kWh</td></tr><tr><td>Wärme</td><td>Heizen mit Gas</td><td>0,7 m³ Erdgas</td></tr><tr><td></td><td>Heizen mit Öl</td><td>360 g Heizöl</td></tr><tr><td>Lebensstil</td><td>durchschnittliche Person in der Schweiz</td><td>25 Minuten</td></tr></tbody></table></div>`
-        },
-        {
-          name: "Fakten und Zahlen für die Schweiz",
-          summary: `<ul>
-<li>Der ökologische Fussabdruck der Schweiz beträgt etwa <strong>4,6 gha pro Person</strong>, die Biokapazität der Schweiz nur etwa <strong>1,0 gha</strong> (Defizit −3,6 gha). Würden alle Menschen so leben, bräuchte es rund <strong>2,8 Erden</strong>.</li>
-<li><strong>Konsumbereiche:</strong> Die Ernährung verursacht <strong>28 %</strong> der Umweltbelastung des Schweizer Endkonsums und ist damit der wichtigste Bereich, gefolgt von Wohnen (v. a. Heizenergie und Strom) und privater Mobilität (Treibstoff, Flugreisen). Innerhalb der Ernährung entfallen <strong>44 %</strong> auf tierische Produkte und <strong>18,6 %</strong> auf Getränke (v. a. Wein, Bier, Kaffee). Ein grosser Teil der Belastung entsteht im Ausland (importierte Güter).</li>
-<li><strong>Ernährungsstile:</strong> Eine vegane Ernährung halbiert die Umweltbelastung gegenüber einem sehr fleischlastigen Stil (2 kg Fleisch pro Woche). Schon ein zurückhaltender Fleischkonsum («Flexitarier», 300 g pro Woche) verbessert die Bilanz ähnlich stark wie eine vegetarische Ernährung; ein gesundheitlich und ökologisch optimierter Stil («FOODprints») senkt sie noch weiter.</li>
-</ul>
-<h3>Die Schweiz und die planetaren Grenzen</h3>
-<p>Die Schweiz trägt über Inlandbelastungen und über die in Importen «versteckten» Emissionen überdurchschnittlich zum Druck auf Klima, Gewässer und Biodiversität sowie zur Überdüngung (Eutrophierung) durch Stickstoff bei.</p>
-<div class="summary-table-wrap"><table><caption>Fussabdrücke der Schweiz im Vergleich zu den planetaren Schwellenwerten (Dao et al. 2015; BAFU 2018)</caption><thead><tr><th>Bereich</th><th>Fussabdruck pro Person</th><th>Schwellenwert pro Person</th><th>Überschreitung</th></tr></thead><tbody><tr><td>Treibhausgase</td><td>14 t CO₂-Äquivalente</td><td>0,6 t</td><td>23-fach</td></tr><tr><td>Ozeanversauerung (nur CO₂)</td><td>10,5 t</td><td>0,5 t</td><td>21-fach</td></tr><tr><td>Biodiversität</td><td>–</td><td>–</td><td>3,7-fach</td></tr><tr><td>Eutrophierung (Stickstoff)</td><td>–</td><td>–</td><td>2-fach</td></tr></tbody></table></div>
-<p>Der Schwellenwert für Treibhausgase ergibt sich aus einem Budget, das für eine 50-%-Chance reicht, die Erwärmung bis 2100 unter 2 °C zu halten, heruntergerechnet auf die einzelne Person.</p>`
+          name: "Das Aktionspotenzial als Informationsträger",
+          summary: `<h3>Reizcodierung</h3>
+            <ul>
+              <li><strong>Unterschwellig:</strong> Die Depolarisation erreicht den Schwellenwert (≈ −50 mV) nicht. Es entsteht kein Aktionspotenzial.</li>
+              <li><strong>Überschwellig:</strong> Der Schwellenwert wird erreicht oder überschritten. Es entsteht ein vollständiges Aktionspotenzial (Alles-oder-Nichts).</li>
+              <li>Ein stärkerer Reiz macht das Aktionspotenzial nicht höher, aber er löst es früher und öfter aus.</li>
+              <li>Die <strong>Reizstärke wird nur über die Frequenz</strong> der Aktionspotenziale codiert, nicht über deren Höhe: Je stärker der Reiz, desto höher die Frequenz und desto schneller wird der Schwellenwert erreicht.</li>
+            </ul>`
         }
       ]
     }
