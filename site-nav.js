@@ -6,9 +6,8 @@
 
   const sections = {
     index: {
-      brand: { mark: "M", name: "Vormatur", tag: "STARTSEITE", href: "index.html" },
+      brand: { mark: "M", name: "Fachübersicht", tag: "", href: "index.html" },
       links: [
-        { label: "Fachübersicht", href: "index.html",                 icon: "⌂", page: "home" },
         { label: "Geschichte",    href: "Geschichte/index.html",      icon: "▣", page: "history" },
         { label: "Chemie",        href: "Chemie/index.html",         icon: "⚗", page: "chemistry" },
         { label: "Geographie",    href: "Geographie/index.html",      icon: "◎", page: "geography" },
@@ -122,7 +121,7 @@
   brand.href      = navBase + config.brand.href;
   brand.innerHTML = `
     <span class="brand-mark">${config.brand.mark}</span>
-    <span class="brand-copy"><strong>${config.brand.name}</strong><small>${config.brand.tag}</small></span>
+    <span class="brand-copy"><strong>${config.brand.name}</strong>${config.brand.tag ? `<small>${config.brand.tag}</small>` : ""}</span>
   `;
 
   const nav = document.createElement("nav");
