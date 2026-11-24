@@ -586,6 +586,13 @@ window.subjectData = {
 </tbody></table></div>
 \\[ \\boxed{\\text{Minima am Einfachspalt: } D\\sin\\alpha = n\\lambda, \\quad n = \\pm1, \\pm2, \\dots \\;(n \\ne 0)} \\]
 <div class="summary-merke"><strong>Achtung, Verwechslungsgefahr:</strong> Beim Einfachspalt liefert \\(D\\sin\\alpha = n\\lambda\\) die <strong>Minima</strong>, beim Doppelspalt liefert \\(d\\sin\\alpha = n\\lambda\\) die <strong>Maxima</strong>. Beim Einfachspalt geht es um die Breite \\(D\\) <em>eines</em> Spalts, beim Doppelspalt um den Abstand \\(d\\) zweier Spalte.</div>
+<figure class="summary-figure"><img src="Resourcen/Bilder/wl-notiz-einfachspalt-extrema.jpg" alt="Handschriftliche Herleitung der Minima und Nebenmaxima am Einfachspalt" loading="lazy"><figcaption><strong>Abb. – Minima und Nebenmaxima am Einfachspalt.</strong> Aus der Abkürzung \\(y=kD\\sin\\alpha/2\\) folgen die dunklen Stellen aus \\(\\sin y=0\\). Die Grenze \\(-1\\leq\\sin\\alpha\\leq1\\) bestimmt, wie viele Ordnungen \\(n\\) überhaupt sichtbar sind.<span class="figure-source">Quelle: Notizen «Wellen», S. 7 (mit eingetragenen Lösungen)</span></figcaption></figure>
+<div class="summary-table-wrap"><table class="summary-note-table"><caption>Einfachspalt - Auswertung der Extremstellen - ergänzt</caption><thead><tr><th>Fall</th><th>Rechnung</th><th>Ergebnis</th></tr></thead><tbody>
+<tr><td><strong>Hauptmaximum</strong></td><td>\\(y=0\\), also \\(kD\\sin\\alpha/2=0\\)</td><td>\\(\\alpha=0\\); die Grenzwertrechnung \\(\\lim_{y\\to0}\\sin y/y=1\\) ergibt \\(I(0)=I_0\\)</td></tr>
+<tr><td><strong>Minima</strong></td><td>\\(\\sin y=0\\) mit \\(y\\ne0\\)</td><td>\\(y=n\\pi\\), daraus \\(D\\sin\\alpha=n\\lambda\\) für \\(n=\\pm1,\\pm2,\\dots\\)</td></tr>
+<tr><td><strong>Nebenmaxima</strong></td><td>Zwischen zwei benachbarten Minima liegt ein Maximum</td><td>Die ersten Lösungen liegen näherungsweise bei \\(y\\approx1{,}43\\pi\\) und \\(y\\approx2{,}46\\pi\\)</td></tr>
+<tr><td><strong>Sichtbare Ordnungen</strong></td><td>für \\(n\\ne0\\): \\(\\sin\\alpha=n\\lambda/D\\)</td><td>Es existiert eine Minimumrichtung nur, wenn \\(|n\\lambda/D|\\le1\\); bei \\(D&lt;\\lambda\\) gibt es kein Minimum</td></tr>
+</tbody></table></div>
 <div class="summary-table-wrap"><table><caption>Interpretation</caption><thead><tr><th>Fall</th><th>Folge</th></tr></thead><tbody>
 <tr><td>Breite des Hauptmaximums</td><td>von \\(\\sin\\alpha = -\\lambda/D\\) bis \\(+\\lambda/D\\), also Winkelbreite \\(\\approx 2\\lambda/D\\): <strong>schmaler Spalt → breites Muster</strong></td></tr>
 <tr><td>\\(D &lt; \\lambda\\)</td><td>\\(\\sin\\alpha = \\lambda/D &gt; 1\\) unmöglich: kein Minimum, der Spalt strahlt in alle Richtungen (Kugelwelle, «sehr kleiner Spalt»)</td></tr>
