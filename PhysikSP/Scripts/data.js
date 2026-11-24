@@ -761,6 +761,11 @@ window.subjectData = {
 <div class="summary-merke"><strong>Tipp:</strong> Bei jedem Applet zuerst eine Grösse verändern und eine Vorhersage mit der Formel machen (z. B. «\\(d\\) doppelt → Streifenabstand halb»), dann prüfen. So übt man genau die Interpretation, die an der Prüfung gefragt ist.</div>`
         }
       ]
+    },
+    {
+      id: "topic-2",
+      name: "Wellen mit Übungen",
+      href: "Zusammenfassungen/Wellen mit Übungen.html"
     }
     ]
   }

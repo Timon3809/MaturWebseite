@@ -41,6 +41,16 @@ const topicNumber = (topic) => {
 const renderTopic = (topic, label) => {
   const number = label ?? topicNumber(topic);
   const numberLabel = label ?? String(number).padStart(2, "0");
+  if (topic.href) {
+    return `
+      <a class="summary-card summary-card-static" href="${escapeHtml(encodeURI(topic.href))}" target="_blank" rel="noopener" style="display:block;color:inherit;text-decoration:none">
+        <div class="summary-static-row">
+          <span class="summary-number">${numberLabel}</span>
+          <span class="summary-title">${escapeHtml(topic.name)} ↗</span>
+        </div>
+      </a>
+    `;
+  }
   const hasContent = topic.summary || topic.placeholder || topic.subtopics?.length;
   if (!hasContent) {
     return `
