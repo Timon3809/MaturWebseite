@@ -200,6 +200,76 @@ small{font-size:.8em}
 .fb.near{background:var(--near-soft)} .fb.near strong{color:var(--near)}
 .fb .sol b{background:none;padding:0}
 .fb .alt{display:block;font-size:.85rem;color:var(--muted)}
+/* Fehleranalyse */
+.fb del,.fb ins,.w-bad del,.w-good ins{text-decoration:none;border-radius:3px;padding:0 1px}
+.w-bad del{background:var(--bad);color:var(--surface)}
+.w-good ins{background:var(--ok);color:var(--surface)}
+.w-bad{color:var(--bad);font-weight:700}
+.w-good{color:var(--ok);font-weight:700}
+.w-extra{text-decoration:line-through}
+.w-move{text-decoration:underline wavy;text-underline-offset:3px}
+.w-gap{color:var(--bad);font-weight:700}
+.issues{list-style:none;margin:6px 0 4px;padding:0;display:grid;gap:4px}
+.issues li{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
+.ik{font-family:var(--f-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;padding:1px 7px;border-radius:99px;background:var(--surface);border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.ik-ending,.ik-word{color:var(--bad);border-color:var(--bad)}
+.ik-accent,.ik-typo,.ik-elision{color:var(--near);border-color:var(--near)}
+.cmp{margin:8px 0 4px;display:grid;gap:3px}
+.cmp p{display:grid;grid-template-columns:8.5em 1fr;gap:8px;margin:0;align-items:baseline}
+.cl{font-size:.78rem;color:var(--muted)}
+.fb .alt{font-size:.85rem;color:var(--muted)}
+.rule{margin-top:6px}
+.rule summary{cursor:pointer;font-size:.86rem;color:var(--accent);font-weight:700}
+.rule p{margin:4px 0 0}
+.muted{color:var(--muted)} .small{font-size:.85rem}
+.fb.shown{background:var(--accent-soft)}
+.card-train{border-style:dashed}
+.card-train .num{font-family:var(--f-mono)}
+
+/* Verben */
+.tr-settings{display:grid;gap:10px;margin:6px 0 16px}
+.tr-settings fieldset{border:0;padding:0;margin:0}
+.tr-settings legend{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:6px}
+.tchips{display:flex;flex-wrap:wrap;gap:6px}
+.tchip{position:relative;display:inline-flex;cursor:pointer}
+.tchip[hidden]{display:none}
+.tchip input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.tchip span{border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 12px;font-size:.86rem}
+.tchip input:checked + span{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.tchip input:focus-visible + span{outline:3px solid var(--accent);outline-offset:2px}
+.tr-card{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:12px;padding:18px 20px;display:grid;gap:10px}
+.tr-card.is-ok{border-left-color:var(--ok)} .tr-card.is-bad{border-left-color:var(--bad)} .tr-card.is-near{border-left-color:var(--near)}
+.tr-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 14px;font-size:.88rem}
+.tr-tense{font-family:var(--f-mono);color:var(--accent);font-weight:500}
+.tr-stats{color:var(--muted);font-variant-numeric:tabular-nums}
+.tr-verb{margin:0;font-family:var(--f-display);font-size:1.7rem;font-weight:650;line-height:1.2}
+.tr-verb small{font-family:var(--f-body);font-weight:400;font-size:1rem;color:var(--muted)}
+.tr-line{display:flex;gap:10px;align-items:center}
+.tr-pron{font-size:1.1rem;white-space:nowrap;color:var(--muted)}
+.tr-line .line{max-width:320px}
+.tr-card .fb{margin-top:0}
+.vsearch{display:grid;gap:4px;max-width:360px;margin-bottom:12px}
+.vsearch label{font-size:.85rem;color:var(--muted)}
+.vchips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.vchip{display:inline-flex;flex-direction:column;align-items:flex-start;border:1.5px solid var(--line);background:var(--surface);border-radius:9px;padding:5px 11px;cursor:pointer;font-size:.95rem;line-height:1.2}
+.vchip small{font-size:.72rem;color:var(--muted)}
+.vchip.top{border-left:4px solid var(--accent)}
+.vchip:hover{border-color:var(--accent)}
+.vchip.active{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.vchip.active small{color:inherit;opacity:.85}
+.vcard{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px;scroll-margin-top:calc(var(--stick-top) + 12px)}
+.vhead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:10px}
+.vhead h3{font-size:1.8rem}
+.vhead .de{margin:2px 0 0;color:var(--muted)}
+.facts{list-style:none;padding:0;margin:14px 0;display:flex;flex-wrap:wrap;gap:6px}
+.facts li{background:var(--accent-soft);border-radius:8px;padding:4px 10px;font-size:.92rem}
+.facts span{display:block;font-family:var(--f-body);font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}
+.ctab{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--paper)}
+.ctab h4{margin:0 0 6px;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);font-family:var(--f-body)}
+.ctab ul{list-style:none;margin:0;padding:0;font-size:.93rem;line-height:1.55}
+.ctab .pr{color:var(--muted);font-size:.8rem}
+#vpanel{scroll-margin-top:calc(var(--stick-top) + 12px)}
 .result{margin-top:18px;padding:16px 18px;border-radius:12px;background:var(--surface);border:1px solid var(--line)}
 .result:empty{display:none}
 
@@ -248,6 +318,7 @@ small{font-size:.8em}
       <p class="nav-label">Themen</p>
       <ul class="topicnav" id="topicnav"></ul>
       <p class="nav-label">Training</p>
+      <a class="navlink" href="#verbes" data-id="verbes"><span class="n">≡</span><span class="nt">Unregelmässige Verben<small>Tabellen und Verb-Trainer</small></span></a>
       <a class="navlink" href="#test" data-id="test"><span class="n">✎</span><span class="nt">Gemischter Test<small>15 Aufgaben aus allen Themen</small></span></a>
     </nav>
   </aside>
@@ -1231,6 +1302,374 @@ const WOZU = {
  "Passiv ohne Urheber":["Wenn der Handelnde unbekannt, selbstverständlich oder unwichtig ist.","Das ist der häufigste Grund für das Passiv. Im Alltag sagt man dafür oft on."],
  "Alternativen zum Passiv":["Wenn das Passiv schwerfällig klingt, besonders mündlich.","Französisch verwendet das Passiv seltener als Deutsch. on und pronominale Verben klingen oft natürlicher."]}
 };
+/* ===== Zusätzliche Aufgaben und typische Fehler =====
+   fix: Index der bestehenden Aufgabe → zusätzliche Felder
+        f: { "typische falsche antwort": "gezielte Erklärung" }  (Lücken / Umformungen)
+        w: [ Erklärung pro falscher Option ]                       (Auswahlaufgaben)
+   add: neue Aufgaben */
+const MORE = {
+
+"temps-du-passe":{
+fix:{
+0:{f:{"avons allé":"aller bildet das passé composé mit être, nicht mit avoir.","avons allés":"aller bildet das passé composé mit être, nicht mit avoir.","sommes allé":"Mit être wird angeglichen: nous ist Plural → allés.","allions":"Das ist imparfait. Hier geht es um ein einmaliges, abgeschlossenes Ereignis (hier soir) → passé composé."}},
+1:{f:{"est né":"Mit être wird an das Subjekt angeglichen: elle → née.","a né":"naître bildet das passé composé mit être.","a née":"naître bildet das passé composé mit être."}},
+2:{f:{"écrit":"Das COD que (= les lettres) steht vor avoir → Angleichung nötig: écrites.","écrite":"les lettres ist Plural → écrites.","écrits":"les lettres ist feminin → écrites."}},
+3:{f:{"ai passé":"Eine Gewohnheit in der Kindheit steht im imparfait, nicht im passé composé."}},
+4:{f:{"sonnait":"Das Klingeln setzt plötzlich ein (soudain) → passé composé.","est sonné":"sonner bildet das passé composé mit avoir."}},
+5:{f:{"a fait":"Eine Wetterbeschreibung ist Hintergrund → imparfait."}},
+6:{f:{"est déjà parti":"Das ist passé composé. Der Zug war schon vor unserer Ankunft weg → plus-que-parfait.","avait déjà parti":"partir bildet zusammengesetzte Zeiten mit être → était.","était parti déjà":"Kurze Adverbien wie déjà stehen zwischen Hilfsverb und Partizip.","déjà était parti":"déjà steht zwischen Hilfsverb und Partizip."}},
+7:{w:[null,"Keine Angleichung: Das direkte Objekt les mains steht nach dem Verb.","Reflexive Verben bilden das passé composé mit être.","Subjekt ist elle (Singular), und das COD steht danach → keine Angleichung."]},
+8:{w:["Mit direktem Objekt (la valise) bildet monter das passé composé mit avoir.",null,"Mit direktem Objekt bildet monter das passé composé mit avoir.","Das COD steht nach dem Verb → keine Angleichung."]},
+9:{f:{"acheté":"les (= ces chaussures) steht vor avoir → Angleichung: achetées.","achetés":"chaussures ist feminin → achetées.","achetée":"chaussures ist Plural → achetées."}},
+10:{w:[null,"Das imparfait von mourir wäre mourait.","mûrir (reifen) hätte im passé simple mûrit.","Das Präsens wäre meurt."]},
+11:{f:{"téléphonées":"téléphoner à qn: se ist indirektes Objekt → keine Angleichung.","téléphonés":"téléphoner à qn: se ist indirektes Objekt → keine Angleichung.","téléphonée":"téléphoner à qn: se ist indirektes Objekt → keine Angleichung."}},
+12:{w:[null,"Die Hausaufgaben liefen noch, als die Schwester kam (pendant que) → imparfait.","Plus-que-parfait wäre eine Vorvergangenheit; hier laufen die Handlungen gleichzeitig.","Das passé simple ist literarisch und beschreibt keine laufende Handlung."]}
+},
+add:[
+{t:"fill",q:"Ce matin, je ___ (se lever) à six heures.",a:["me suis levé","me suis levée"],h:"Einmalige Handlung → passé composé; reflexive Verben mit être.",f:{"me levais":"Einmalige Handlung an einem bestimmten Morgen → passé composé.","ai levé":"Reflexive Verben bilden das passé composé mit être.","me suis lever":"Nach dem Hilfsverb steht das Partizip (levé), nicht der Infinitiv."}},
+{t:"fill",q:"Mes amis ___ (venir) me voir trois fois cette année.",a:["sont venus"],h:"Abgezählte Wiederholung → passé composé; venir mit être.",f:{"ont venu":"venir bildet das passé composé mit être.","sont venu":"Mit être wird angeglichen: mes amis → venus.","venaient":"Abgezählte Wiederholung (trois fois) → passé composé."}},
+{t:"fill",q:"Autrefois, les gens ___ (vivre) sans téléphone portable.",a:["vivaient"],h:"autrefois beschreibt einen früheren Zustand → imparfait.",f:{"ont vécu":"autrefois beschreibt einen Zustand von früher → imparfait.","vivait":"Subjekt ist les gens (Plural) → vivaient."}},
+{t:"fill",q:"Elle était triste parce qu'elle ___ (perdre) son chat la veille.",a:["avait perdu"],h:"Die Handlung liegt vor einer anderen vergangenen Handlung → plus-que-parfait.",f:{"a perdu":"Der Verlust geschah vor der Traurigkeit (la veille) → plus-que-parfait.","perdait":"Abgeschlossene Handlung vor einer anderen vergangenen Handlung → plus-que-parfait."}},
+{t:"fill",q:"Les fleurs que tu m'as ___ (offrir) sont magnifiques.",a:["offertes"],h:"Das COD que (= les fleurs) steht vor avoir → Angleichung.",f:{"offert":"Das COD que (= les fleurs, f. Pl.) steht vor avoir → offertes.","offerts":"fleurs ist feminin → offertes.","offri":"Das Partizip von offrir ist offert."}},
+{t:"fill",q:"Nous ___ (recevoir) ta lettre hier.",a:["avons reçu"],h:"Einmaliges Ereignis → passé composé. Partizip von recevoir: reçu.",f:{"avons recevu":"Das Partizip von recevoir ist unregelmässig: reçu.","recevions":"Einmaliges Ereignis (hier) → passé composé."}},
+{t:"mc",q:"Ils ___ quand je suis arrivé.",o:["dormaient","ont dormi","dormirent","dorment"],c:0,h:"Bereits laufende Handlung → imparfait.",w:[null,"Das Schlafen lief bereits, als ich ankam → imparfait.","Das passé simple ist literarisch und beschreibt keine laufende Handlung.","Die Geschichte spielt in der Vergangenheit."]},
+{t:"mc",q:"« Elle fit ses valises et partit. » Welche Zeit ist das?",o:["passé simple","présent","imparfait","plus-que-parfait"],c:0,h:"fit (faire) und partit (partir) sind Formen des passé simple.",w:[null,"Das Präsens wäre « elle fait … et part ».","Das imparfait wäre « elle faisait … ».","Das plus-que-parfait wäre « elle avait fait … »."]},
+{t:"tr",q:"Setze ins passé composé:",s:"Elle sort avec ses amies.",a:["Elle est sortie avec ses amies"],h:"sortir ohne direktes Objekt → être; Angleichung an elle.",f:{"elle a sorti avec ses amies":"sortir ohne direktes Objekt bildet das passé composé mit être.","elle est sorti avec ses amies":"Mit être wird an elle angeglichen: sortie."}}
+]},
+
+"futur-conditionnel":{
+fix:{
+1:{f:{"es":"Nach quand steht im Französischen das Futur, wenn Zukunft gemeint ist (im Deutschen Präsens).","serais":"Das ist Conditionnel. Gemeint ist eine sichere Zukunft → seras."}},
+2:{f:{"envoierai":"envoyer hat einen unregelmässigen Futurstamm: enverr-.","envoyerai":"envoyer hat einen unregelmässigen Futurstamm: enverr-."}},
+4:{f:{"finirai":"Das Fertigmachen ist abgeschlossen, bevor du anrufst → futur antérieur: aurai fini.","ai fini":"Es geht um die Zukunft → futur antérieur: aurai fini."}},
+5:{f:{"pourrez":"Das ist Futur. Eine höfliche Bitte steht im Conditionnel: Pourriez.","pouvez":"Grammatisch möglich, aber weniger höflich. Höflich ist der Conditionnel: Pourriez."}},
+6:{f:{"allerais":"aller hat den unregelmässigen Stamm ir-: j'irais.","irai":"Das ist Futur. Ein Ratschlag steht im Conditionnel: irais."}},
+7:{w:[null,"Das futur antérieur passt nicht: Die unbestätigte Information betrifft die Vergangenheit → conditionnel passé.","Diese Form gibt es nicht.","Das plus-que-parfait würde die Information als sicher darstellen."]},
+8:{f:{"devrais":"Der Vorwurf betrifft die Vergangenheit (plus tôt) → conditionnel passé: aurais dû.","as dû":"Ohne Conditionnel klingt es nicht nach Vorwurf: aurais dû."}},
+9:{w:["Nach einem Einleitungsverb in der Vergangenheit wird das Futur zum Conditionnel.",null,"promettre que steht mit Indikativ, nicht mit subjonctif.","Das imparfait würde Gleichzeitigkeit ausdrücken, nicht Zukunft."]},
+11:{w:["Das ist futur simple (Endung -ai).",null,"Das ist imparfait (ohne r vor der Endung).","Das ist passé simple."]}
+},
+add:[
+{t:"fill",q:"Si tu veux, je t'___ (appeler) demain matin.",a:["appellerai"],h:"appeler verdoppelt im Futur das l.",f:{"appelerai":"appeler verdoppelt im Futur das l: appellerai.","appellerais":"Nach si + présent steht im Hauptsatz das Futur (ohne s)."}},
+{t:"fill",q:"L'année prochaine, ils ___ (venir) nous voir en Suisse.",a:["viendront"],h:"venir hat den Futurstamm viendr-.",f:{"venirons":"venir hat den Futurstamm viendr-.","viendrons":"Subjekt ist ils → Endung -ont.","viendraient":"Das ist Conditionnel. Gemeint ist eine geplante Zukunft → viendront."}},
+{t:"fill",q:"Nous ___ (savoir) les résultats la semaine prochaine.",a:["saurons"],h:"savoir hat den Futurstamm saur-.",f:{"savrons":"savoir hat den Futurstamm saur-.","savons":"Das ist Präsens; mit la semaine prochaine → Futur."}},
+{t:"fill",q:"Quand vous ___ (lire) ce livre, vous me le rendrez.",a:["aurez lu"],h:"Vorzeitigkeit in der Zukunft → futur antérieur.",f:{"lirez":"Das Lesen muss abgeschlossen sein, bevor ihr das Buch zurückgebt → futur antérieur: aurez lu.","lisez":"Nach quand mit Zukunftsbezug kein Präsens. Hier: futur antérieur."}},
+{t:"fill",q:"J'___ (aimer) bien partir en Italie cet été. (Wunsch)",a:["aimerais"],h:"Wunsch → conditionnel présent.",f:{"aimerai":"aimerai (ohne s) ist Futur. Ein Wunsch steht im Conditionnel: aimerais."}},
+{t:"fill",q:"Vous ___ (devoir) faire plus attention. (Ratschlag)",a:["devriez"],h:"Ratschlag → conditionnel von devoir.",f:{"devez":"Das ist Präsens und klingt streng. Ein Ratschlag steht im Conditionnel: devriez.","devrez":"Das ist Futur. Ein Ratschlag steht im Conditionnel: devriez."}},
+{t:"mc",q:"D'après la météo, il ___ demain.",o:["pleuvra","pleuvrait","a plu","pleuvoira"],c:0,h:"Wettervorhersage = Prognose → Futur.",w:[null,"Die Vorhersage ist eine Prognose, keine Hypothese → Futur.","Das ist passé composé.","Diese Form gibt es nicht: Der Stamm heisst pleuvr-."]},
+{t:"tr",q:"Setze das Verb in Klammern in den conditionnel passé (Bedauern):",s:"J'(pouvoir) venir, mais j'étais malade.",a:["J'aurais pu venir, mais j'étais malade"],h:"Bedauern über Vergangenes → conditionnel passé: aurais pu.",f:{"je pourrais venir, mais j'étais malade":"Es geht um Vergangenes → conditionnel passé: J'aurais pu."}}
+]},
+
+"phrases-hypothetiques":{
+fix:{
+0:{f:{"viendras":"Nach si (= wenn) steht nie Futur → si + présent.","viendrais":"Nach si steht nie Conditionnel."}},
+1:{f:{"aurais":"Nach si steht nie Conditionnel → si + imparfait.","ai":"Der Hauptsatz steht im Conditionnel (apprendrais) → Typ 2: si + imparfait."}},
+2:{f:{"voyagerons":"Das ist Futur. Typ 2 (si + imparfait) verlangt den Conditionnel: voyagerions.","voyageons":"Typ 2 verlangt im Hauptsatz den Conditionnel: voyagerions.","voyagions":"Das ist imparfait. Im Hauptsatz von Typ 2 steht der Conditionnel."}},
+3:{f:{"aurait plu":"Nach si steht nie Conditionnel → plus-que-parfait.","pleuvait":"Der Hauptsatz steht im conditionnel passé → Typ 3: si + plus-que-parfait."}},
+4:{f:{"ne ferais pas":"Die Bedingung liegt in der Vergangenheit (avais écouté) → conditionnel passé.","n'aurais fait pas":"Bei zusammengesetzten Zeiten umklammert ne … pas das Hilfsverb.","n'avais pas fait":"Im Hauptsatz steht nicht plus-que-parfait, sondern conditionnel passé."}},
+5:{f:{"verrez":"Nach si steht nie Futur → si + présent.","voyiez":"Typ 1 → si + présent: voyez."}},
+6:{w:["Nach si steht nie Conditionnel.",null,"Mit hier ist die Vergangenheit gemeint → Typ 3.","Nach si steht in Typ 3 das plus-que-parfait, nicht das passé composé."]},
+7:{w:[null,"si + il wird zu s'il.","Falsche Endung: il viendra.","Mit demain ist eine Zukunft gemeint; das Futur passt besser."]},
+8:{f:{"aurais été":"maintenant zeigt: Die Folge betrifft die Gegenwart → conditionnel présent."}},
+11:{w:[null,"Nach au cas où steht der Conditionnel, nicht das Futur.","Nach au cas où steht der Conditionnel.","Nach au cas où steht der Conditionnel, nicht der subjonctif."]}
+},
+add:[
+{t:"fill",q:"Si elle ___ (avoir) le temps, elle viendra.",a:["a"],h:"Typ 1: si + présent → futur.",f:{"aurait":"Nach si steht nie Conditionnel. Hauptsatz im Futur → si + présent.","avait":"Hauptsatz im Futur → Typ 1: si + présent.","aura":"Nach si steht nie Futur."}},
+{t:"fill",q:"S'il faisait beau, nous ___ (aller) à la plage.",a:["irions"],h:"Typ 2: si + imparfait → conditionnel présent.",f:{"irons":"Typ 2: si + imparfait → conditionnel présent: irions.","allerions":"aller hat den Stamm ir-: irions.","allions":"Das ist imparfait. Im Hauptsatz steht der Conditionnel: irions."}},
+{t:"fill",q:"Si vous ___ (partir) plus tôt, vous n'auriez pas raté le train.",a:["étiez partis","étiez parties","étiez parti","étiez partie"],h:"Typ 3: si + plus-que-parfait.",f:{"aviez parti":"partir bildet zusammengesetzte Zeiten mit être.","partiez":"Der Hauptsatz steht im conditionnel passé → Typ 3: si + plus-que-parfait.","seriez partis":"Nach si steht nie Conditionnel."}},
+{t:"fill",q:"Même si tu insistais, je ne ___ (changer) pas d'avis.",a:["changerais"],h:"même si folgt den Regeln von si: imparfait → conditionnel.",f:{"changerai":"Nach même si + imparfait steht der Conditionnel (mit s).","change":"même si + imparfait → Conditionnel im Hauptsatz."}},
+{t:"tr",q:"Forme in Typ 2 um:",s:"Si j'ai assez d'argent, je partirai en Australie.",a:["Si j'avais assez d'argent, je partirais en Australie"],h:"si + imparfait → conditionnel présent."},
+{t:"tr",q:"Forme in Typ 3 um:",s:"S'il fait beau, nous mangerons dehors.",a:["S'il avait fait beau, nous aurions mangé dehors"],h:"si + plus-que-parfait → conditionnel passé."},
+{t:"mc",q:"Si on ___ au cinéma ce soir ?",o:["allait","irait","va","ira"],c:0,h:"si + imparfait ohne Hauptsatz ist ein Vorschlag: „Wie wäre es, wenn …?“",w:[null,"Nach si steht nie Conditionnel.","Als Vorschlag mit si steht das imparfait.","Nach si steht nie Futur."]},
+{t:"mc",q:"Welcher Satz ist korrekt?",o:["Si elle aurait le temps, elle viendrait.","Si elle avait le temps, elle viendrait.","Si elle a le temps, elle viendrait.","Si elle avait le temps, elle viendra."],c:1,h:"Typ 2: si + imparfait → conditionnel présent.",w:["Nach si steht nie Conditionnel.",null,"si + présent verlangt im Hauptsatz présent, futur oder impératif.","si + imparfait verlangt im Hauptsatz den Conditionnel."]}
+]},
+
+"subjonctif":{
+fix:{
+0:{f:{"fais":"Nach il faut que steht der subjonctif: que tu fasses.","fasse":"Bei tu endet der subjonctif auf -es: fasses."}},
+1:{f:{"êtes":"Nach vouloir que (Wille) steht der subjonctif: soyez.","soyiez":"Die Form heisst soyez (ohne i)."}},
+2:{f:{"pleut":"Nach bien que steht immer der subjonctif: pleuve."}},
+3:{f:{"peux":"Gefühl (être contente que) → subjonctif: puisses.","puisse":"Bei tu endet der subjonctif auf -es: puisses."}},
+4:{f:{"prenons":"Nach il est important que steht der subjonctif: prenions.","prennions":"nous bildet den subjonctif vom nous-Stamm (pren-) und hat deshalb nur ein n: prenions.","prennent":"Subjekt ist nous → prenions."}},
+5:{f:{"ailles":"espérer que steht mit Indikativ, nicht mit subjonctif: tu vas.","aille":"espérer que steht mit Indikativ: tu vas."}},
+6:{w:["Nach verneintem penser steht der subjonctif, nicht der Indikativ.",null,"Nach verneintem penser steht der subjonctif, nicht das Futur.","Nach verneintem penser steht der subjonctif, nicht das imparfait."]},
+7:{w:[null,"Bejahtes penser drückt eine Meinung aus → Indikativ.","aie ist die Form für je (que j'aie) und zudem subjonctif.","Das ist ein veralteter subjonctif imparfait."]},
+8:{f:{"comprends":"pour que verlangt den subjonctif: comprenne.","comprend":"pour que verlangt den subjonctif: comprenne.","comprene":"Der subjonctif kommt von ils comprennent → comprenne (zwei n)."}},
+9:{f:{"sait":"douter que (Zweifel) verlangt den subjonctif: sache.","saches":"Subjekt ist elle → sache (ohne s)."}},
+10:{w:["Bei gleichem Subjekt steht der Infinitiv statt eines que-Satzes.",null,"Bei gleichem Subjekt steht der Infinitiv. Ausserdem wäre nach vouloir que der subjonctif nötig.","Nach vouloir steht der Infinitiv ohne de."]},
+11:{f:{"partiez":"Das Weggehen ist bereits passiert (hier soir) → subjonctif passé: soyez partis.","avez parti":"partir bildet zusammengesetzte Zeiten mit être.","ayez parti":"partir bildet zusammengesetzte Zeiten mit être: soyez partis.","êtes partis":"regretter que verlangt den subjonctif: soyez partis."}},
+12:{f:{"reviens":"jusqu'à ce que verlangt den subjonctif: revienne.","reviendrai":"jusqu'à ce que verlangt den subjonctif: revienne."}},
+13:{w:[null,"Nach der Norm steht après que mit Indikativ, im Gegensatz zu avant que.","Die Handlung ist abgeschlossen → passé composé.","Der Conditionnel passt hier nicht."]}
+},
+add:[
+{t:"fill",q:"Il faut que nous ___ (aller) à la poste.",a:["allions"],h:"il faut que → subjonctif; nous vom nous-Stamm: allions.",f:{"allons":"il faut que verlangt den subjonctif: allions.","aillions":"nous bildet den subjonctif vom nous-Stamm: allions."}},
+{t:"fill",q:"Je veux qu'il ___ (avoir) une bonne note.",a:["ait"],h:"vouloir que → subjonctif; avoir: qu'il ait.",f:{"a":"vouloir que verlangt den subjonctif: qu'il ait.","aie":"aie ist die Form für je; für il heisst es ait.","aura":"vouloir que verlangt den subjonctif: qu'il ait."}},
+{t:"fill",q:"Elle est triste que ses amis ne ___ (venir) pas.",a:["viennent"],h:"Gefühl → subjonctif; ils viennent → qu'ils viennent.",f:{"venaient":"Gefühl (être triste que) → subjonctif présent: viennent.","viennes":"Subjekt ist ses amis (ils) → viennent.","viendront":"Gefühl (être triste que) → subjonctif: viennent."}},
+{t:"fill",q:"Bien que tu ___ (savoir) la réponse, tu ne dis rien.",a:["saches"],h:"bien que → subjonctif; savoir: que tu saches.",f:{"sais":"bien que verlangt immer den subjonctif: saches.","sache":"Bei tu endet der subjonctif auf -es: saches."}},
+{t:"fill",q:"Je crois que tu ___ (avoir) raison.",a:["as"],h:"croire bejaht → Indikativ.",f:{"aies":"Bejahtes croire drückt eine Meinung aus → Indikativ: tu as."}},
+{t:"fill",q:"C'est le meilleur livre que j'___ (lire) cette année.",a:["aie lu"],h:"Nach einem Superlativ steht im Relativsatz der subjonctif; das Lesen ist abgeschlossen → subjonctif passé.",f:{"ai lu":"Nach einem Superlativ (le meilleur) steht im Relativsatz der subjonctif: aie lu."}},
+{t:"mc",q:"Je te prête mon vélo à condition que tu me le ___ demain.",o:["rendes","rends","rendras","rendrais"],c:0,h:"à condition que → subjonctif.",w:[null,"à condition que verlangt den subjonctif, nicht das Präsens.","à condition que verlangt den subjonctif, nicht das Futur.","à condition que verlangt den subjonctif, nicht den Conditionnel."]},
+{t:"mc",q:"Il est probable qu'il ___ demain.",o:["viendra","vienne","viendrait","soit venu"],c:0,h:"il est probable que drückt hohe Wahrscheinlichkeit aus → Indikativ.",w:[null,"il est probable que steht mit Indikativ (anders als il est possible que).","Der Conditionnel passt nicht: Es geht um eine wahrscheinliche Zukunft.","il est probable que steht mit Indikativ."]},
+{t:"tr",q:"Beginne mit « Il faut que … »:",s:"Tu fais tes devoirs.",a:["Il faut que tu fasses tes devoirs"],h:"il faut que → subjonctif: que tu fasses.",f:{"il faut que tu fais tes devoirs":"Nach il faut que steht der subjonctif: fasses."}}
+]},
+
+"gerondif-participe":{
+fix:{
+0:{f:{"faisant":"Gleiches Subjekt und Gleichzeitigkeit → gérondif mit en: en faisant.","en fesant":"Schreibweise: faisant (von nous faisons)."}},
+1:{f:{"lisant":"Nach c'est … qu' steht hier das gérondif mit en: en lisant.","en lirant":"Das participe présent kommt von nous lisons → lisant."}},
+2:{f:{"en étant":"Hier ist ein Grund gemeint (Da er krank war) → participe présent ohne en.","en etant":"Hier ist ein Grund gemeint (Da er krank war) → participe présent ohne en.","étants":"Das participe présent ist unveränderlich."}},
+3:{f:{"ayants":"Das participe présent ist unveränderlich.","avant":"Ausnahme: avoir → ayant.","en ayant":"Hier ersetzt das Partizip einen Relativsatz → ohne en."}},
+4:{f:{"descendant":"Gleiches Subjekt und Gleichzeitigkeit → gérondif mit en."}},
+5:{f:{"savant":"Ausnahme: savoir → sachant.","en sachant":"Hier ist ein Grund gemeint (Da sie wusste) → ohne en."}},
+6:{w:[null,"„weil“ wäre parce que oder comme.","„nachdem“ wäre après avoir oder ayant + Partizip.","„damit“ wäre pour que oder pour."]},
+7:{w:["fatiguant ist das participe présent (Handlung). Als Adjektiv schreibt man fatigant.",null,"un travail ist Singular → fatigant.","Das gérondif passt nicht nach très."]},
+8:{f:{"finissant":"Die Handlung ist vor der nächsten abgeschlossen → ayant fini.","en finissant":"Vorzeitigkeit → participe présent composé: ayant fini."}},
+9:{w:[null,"Vor a braucht es die Cédille (ç), damit das c weich bleibt.","Das ist die Präsensform für ils.","Das ist die Präsensform für nous."]}
+},
+add:[
+{t:"fill",q:"Il s'est cassé la jambe ___ (faire) du ski.",a:["en faisant"],h:"Gleichzeitigkeit, gleiches Subjekt → gérondif."},
+{t:"fill",q:"On apprend une langue ___ (parler) avec des natifs.",a:["en parlant"],h:"Mittel (indem man spricht) → gérondif."},
+{t:"fill",q:"___ (avoir) peur du chien, l'enfant s'est mis à pleurer.",a:["Ayant"],h:"Grund → participe présent ohne en; avoir → ayant.",f:{"en ayant":"Grund (Da es Angst hatte) → participe présent ohne en.","avant":"Ausnahme: avoir → ayant."}},
+{t:"fill",q:"Nous cherchons un étudiant ___ (savoir) parler italien.",a:["sachant"],h:"Ersetzt den Relativsatz qui sait → participe présent.",f:{"savant":"Ausnahme: savoir → sachant.","en sachant":"Hier ersetzt das Partizip den Relativsatz (qui sait) → ohne en."}},
+{t:"fill",q:"Elle a lu le journal ___ (manger) son petit-déjeuner.",a:["en mangeant"],h:"Gleichzeitigkeit → gérondif; manger behält vor a das e: mangeant.",f:{"en mangant":"Vor a braucht es ein e, damit das g weich bleibt: mangeant.","mangeant":"Gleichzeitigkeit, gleiches Subjekt → gérondif mit en."}},
+{t:"fill",q:"___ (arriver) en retard, elle a manqué le début du film. (Vorzeitigkeit)",a:["Étant arrivée","Etant arrivée"],h:"Vorzeitigkeit → étant + Partizip; Angleichung an elle.",f:{"ayant arrivé":"arriver bildet zusammengesetzte Formen mit être → étant arrivée.","étant arrivé":"Das Subjekt ist elle → arrivée.","etant arrivé":"Das Subjekt ist elle → arrivée."}},
+{t:"mc",q:"Ce sont des arguments très ___.",o:["convaincants","convainquants","convaincant","en convainquant"],c:0,h:"Eigenschaft → adjectif verbal convaincant, angeglichen.",w:[null,"convainquant ist das participe présent. Als Adjektiv schreibt man convaincant.","Als Adjektiv wird es angeglichen: arguments → convaincants.","Das gérondif passt nach très nicht."]},
+{t:"tr",q:"Ersetze den Nebensatz durch ein participe présent:",s:"Comme il ne savait pas la réponse, il s'est tu.",a:["Ne sachant pas la réponse, il s'est tu"],h:"Grund → participe présent; verneint: ne + Partizip + pas.",f:{"ne savant pas la réponse, il s'est tu":"Ausnahme: savoir → sachant.","en ne sachant pas la réponse, il s'est tu":"Ein Grund wird ohne en ausgedrückt."}}
+]},
+
+"imperatif":{
+fix:{
+0:{f:{"vas":"Bei aller fällt das -s der tu-Form weg: Va !"}},
+1:{f:{"êtes":"Der Imperativ von être ist unregelmässig: soyez.","soyiez":"Die Form heisst soyez (ohne i)."}},
+2:{f:{"as":"Der Imperativ von avoir ist unregelmässig: aie.","aies":"Der Imperativ heisst aie (ohne s)."}},
+3:{f:{"donne-lui-le":"Reihenfolge beim bejahten Imperativ: zuerst le, dann lui.","le lui donne":"Beim bejahten Imperativ stehen die Pronomen nach dem Verb.","donne le lui":"Die Pronomen werden mit Bindestrichen verbunden: Donne-le-lui."}},
+4:{f:{"ne lève-toi pas":"Beim verneinten Imperativ steht das Pronomen vor dem Verb: Ne te lève pas.","ne toi lève pas":"toi wird beim verneinten Imperativ wieder zu te."}},
+5:{f:{"prends-les":"Teilungsartikel (des pommes) → en, nicht les.","en prends":"Beim bejahten Imperativ steht en nach dem Verb: Prends-en."}},
+6:{f:{"va":"Vor y kommt das -s zurück: Vas-y !"}},
+7:{w:[null,"Reihenfolge vor dem Verb: me vor le.","Beim verneinten Imperativ stehen die Pronomen vor dem Verb.","Diese Stellung gibt es nicht."]},
+8:{f:{"savez":"Der Imperativ von savoir ist unregelmässig: sachez."}},
+9:{f:{"parles-en-leur":"Reihenfolge: leur vor en.","parles-leur-en":"Das -s kommt nur direkt vor y oder en. Hier folgt leur → Parle-leur-en.","parle-en-leur":"Reihenfolge: leur vor en."}},
+10:{w:["Mange ! ist korrekt: -er-Verben verlieren das -s.","Finis ! ist korrekt.",null,"Prends ! ist korrekt."]}
+},
+add:[
+{t:"fill",q:"___ (finir, nous) ce travail avant midi !",a:["Finissons"],h:"Imperativ nous = Präsensform ohne Pronomen.",f:{"finons":"Die nous-Form von finir heisst finissons."}},
+{t:"fill",q:"N'___ (oublier, tu) pas ton passeport !",a:["oublie"],h:"-er-Verben verlieren in der tu-Form das -s.",f:{"oublies":"-er-Verben verlieren im Imperativ (tu) das -s: oublie."}},
+{t:"tr",q:"Ersetze das Objekt durch ein Pronomen:",s:"Achète ce livre !",a:["Achète-le"],h:"Bejahter Imperativ: Pronomen nach dem Verb mit Bindestrich.",f:{"le achète":"Beim bejahten Imperativ steht das Pronomen nach dem Verb.","achètes-le":"-er-Verben haben im Imperativ kein -s (ausser vor y/en)."}},
+{t:"tr",q:"Ersetze beide Objekte durch Pronomen:",s:"Montre les photos à tes parents !",a:["Montre-les-leur"],h:"Reihenfolge: les vor leur.",f:{"montre-leur-les":"Reihenfolge beim bejahten Imperativ: les vor leur."}},
+{t:"tr",q:"Verneine:",s:"Dépêchez-vous !",a:["Ne vous dépêchez pas"],h:"Verneint steht das Pronomen vor dem Verb.",f:{"ne dépêchez-vous pas":"Beim verneinten Imperativ steht das Pronomen vor dem Verb."}},
+{t:"tr",q:"Bejahe:",s:"Ne me le dis pas !",a:["Dis-le-moi"],h:"Bejaht: Verb – le – moi.",f:{"dis-moi-le":"Reihenfolge beim bejahten Imperativ: le vor moi.","dis-me-le":"Beim bejahten Imperativ wird me zu moi."}},
+{t:"mc",q:"Wie sagt man höflich: „Könnten Sie bitte die Tür schliessen?“",o:["Pourriez-vous fermer la porte, s'il vous plaît ?","Ferme la porte !","Fermez la porte !","Vous fermez la porte."],c:0,h:"Höfliche Bitte → conditionnel statt Imperativ.",w:[null,"Das ist die tu-Form und klingt wie ein Befehl.","Grammatisch korrekt, aber direkt und wenig höflich.","Das ist eine Feststellung, keine Bitte."]}
+]},
+
+"pronoms":{
+fix:{
+0:{f:{"je vois la tous les jours":"Das Pronomen steht vor dem Verb: Je la vois.","je lui vois tous les jours":"voir qn hat ein direktes Objekt → la."}},
+1:{f:{"je les téléphone":"téléphoner à qn → indirektes Objekt: leur.","je leurs téléphone":"leur als Pronomen bekommt nie ein -s.","je lui téléphone":"mes parents ist Plural → leur."}},
+2:{f:{"je lui aide":"aider qn hat im Französischen ein direktes Objekt → je l'aide (anders als im Deutschen: ihm helfen)."}},
+3:{f:{"nous allons y demain":"y steht vor dem konjugierten Verb: Nous y allons.","nous en allons demain":"Ort mit à → y."}},
+4:{f:{"elle la mange":"Teilungsartikel (de la) → en.","elle mange en":"en steht vor dem Verb."}},
+5:{f:{"je lui le donne":"Reihenfolge: le vor lui.","je le donne lui":"Beide Pronomen stehen vor dem Verb."}},
+6:{f:{"il en leur a parlé":"Reihenfolge: leur vor en.","il leur en a parlés":"Bei en wird das Partizip nicht angeglichen.","il les en a parlé":"parler à qn → indirektes Objekt: leur."}},
+7:{f:{"je la vais écrire":"Bei Verb + Infinitiv steht das Pronomen vor dem Infinitiv.","je vais la écrire":"Vor Vokal wird la zu l'."}},
+8:{w:[null,"Bei penser à + Person steht nicht lui/leur, sondern à + pronom tonique.","y steht für Sachen, nicht für Personen.","en ersetzt de + Sache."]},
+9:{w:[null,"y ersetzt à + Sache oder einen Ort.","les würde eine bestimmte Gruppe ersetzen; bei Mengen steht en.","leur ist ein indirektes Objekt (à + Personen)."]},
+10:{f:{"le tiens":"Das Possessivpronomen heisst le tien.","la tienne":"le stylo ist maskulin → le tien.","ton":"ton ist ein Begleiter und braucht ein Nomen. Ohne Nomen: le tien."}},
+11:{f:{"ceux":"chaussures ist feminin → celles.","celle":"chaussures ist Plural → celles.","ces":"ces braucht ein Nomen. Als Pronomen: celles."}},
+12:{w:[null,"leur ist ein indirektes Objekt; oublier hat ein direktes.","en passt nicht: les clés sind bestimmt.","y ersetzt à + Sache."]},
+13:{f:{"elle nous l'a expliqué":"l' (= la règle) steht vor avoir → das Partizip wird angeglichen: expliquée.","elle l'a nous expliquée":"Reihenfolge: nous vor l'.","elle la nous a expliquée":"Reihenfolge: nous vor la, und vor Vokal wird la zu l'."}}
+},
+add:[
+{t:"tr",q:"Ersetze « à Paul » durch ein Pronomen:",s:"Je réponds à Paul.",a:["Je lui réponds"],h:"répondre à qn → indirektes Objekt: lui.",f:{"je le réponds":"répondre à qn → indirektes Objekt: lui.","je réponds lui":"Das Pronomen steht vor dem Verb."}},
+{t:"tr",q:"Ersetze « mes clés » durch ein Pronomen:",s:"J'ai perdu mes clés.",a:["Je les ai perdues"],h:"les steht vor avoir → Angleichung (f. Pl.).",f:{"je les ai perdu":"les (f. Pl.) steht vor avoir → perdues.","je les ai perdus":"clés ist feminin → perdues."}},
+{t:"tr",q:"Ersetze « trois livres » durch ein Pronomen:",s:"Elle a acheté trois livres.",a:["Elle en a acheté trois"],h:"Mengenangabe → en; die Zahl bleibt stehen.",f:{"elle les a achetés":"Bei Mengen steht en, und die Zahl bleibt am Ende: Elle en a acheté trois.","elle en a acheté":"Die Zahl bleibt stehen: … acheté trois."}},
+{t:"tr",q:"Ersetze « à ce problème » durch ein Pronomen:",s:"Je réfléchis à ce problème.",a:["J'y réfléchis"],h:"à + Sache → y.",f:{"je lui réfléchis":"à + Sache → y."}},
+{t:"tr",q:"Ersetze « le message » durch ein Pronomen:",s:"Je t'ai envoyé le message.",a:["Je te l'ai envoyé"],h:"Reihenfolge: te vor le.",f:{"je le t'ai envoyé":"Reihenfolge: te vor le."}},
+{t:"tr",q:"Ersetze « du pain » durch ein Pronomen:",s:"Il y a du pain.",a:["Il y en a"],h:"Teilungsartikel → en; Reihenfolge y vor en.",f:{"il en y a":"Reihenfolge: y vor en (il y en a)."}},
+{t:"mc",q:"C'est ton sac ? – Oui, c'est ___.",o:["le mien","la mienne","mon","le mon"],c:0,h:"sac ist maskulin → le mien.",w:[null,"sac ist maskulin → le mien.","mon braucht ein Nomen danach.","Diese Form gibt es nicht."]},
+{t:"mc",q:"Tu viens avec ___ ?",o:["nous","nos","notre","on"],c:0,h:"Nach Präpositionen steht das pronom tonique.",w:[null,"nos ist ein Begleiter und braucht ein Nomen.","notre ist ein Begleiter und braucht ein Nomen.","on kann nur Subjekt sein; nach Präpositionen steht nous."]},
+{t:"fill",q:"Voici deux robes. Je préfère ___-ci.",a:["celle"],h:"Demonstrativpronomen für une robe (f. Sg.) → celle.",f:{"cette":"Ohne Nomen braucht es das Pronomen celle.","celui":"robe ist feminin → celle.","celles":"Du wählst eine Robe → Singular: celle."}}
+]},
+
+"adjectifs-adverbes":{
+fix:{
+0:{f:{"sportife":"-if wird im Feminin zu -ive: sportive."}},
+1:{f:{"internationals":"-al wird im maskulinen Plural zu -aux.","internationales":"problèmes ist maskulin → internationaux."}},
+2:{f:{"vieux":"Vor einem maskulinen Nomen mit Vokal steht vieil.","vieille":"appartement ist maskulin → vieil."}},
+3:{f:{"marrons":"Farbadjektive, die von einem Nomen kommen, bleiben unverändert: marron."}},
+4:{f:{"courament":"-ant → -amment (mit zwei m).","couramant":"-ant → -amment."}},
+5:{f:{"prudement":"-ent → -emment (mit zwei m).","prudentement":"Adjektive auf -ent bilden das Adverb auf -emment: prudemment.","prudamment":"-ent → -emment (mit e)."}},
+6:{f:{"précisemment":"Hier heisst die Endung -ément: précisément."}},
+7:{f:{"plus bon":"bon hat einen unregelmässigen Komparativ: meilleur.","mieux":"mieux ist der Komparativ des Adverbs bien. Hier geht es um das Adjektiv bon → meilleur."}},
+8:{f:{"plus bien":"bien hat einen unregelmässigen Komparativ: mieux.","meilleur":"meilleur ist der Komparativ des Adjektivs bon. chanter wird durch ein Adverb beschrieben → mieux."}},
+9:{w:[null,"„alt“ im Sinn von betagt wäre un professeur âgé.","„antik“ wäre un meuble ancien (nach dem Nomen).","„berühmt“ wäre un professeur célèbre."]},
+10:{w:[null,"Beim Superlativ braucht es den Artikel: la plus grande.","grande muss an la ville angeglichen sein.","la ville ist feminin → la plus grande."]},
+11:{w:[null,"bon ist ein Adjektiv; dormir wird durch ein Adverb beschrieben → bien.","bonne ist ein Adjektiv.","meilleur ist ein Adjektiv (Komparativ von bon)."]},
+12:{f:{"gentilment":"Ausnahme: gentil → gentiment (ohne l).","gentillement":"Ausnahme: gentil → gentiment."}},
+13:{f:{"nouvel":"nouvel steht nur vor maskulinen Nomen mit Vokal. Hier ist élève feminin (une) → nouvelle.","nouveau":"une élève ist feminin → nouvelle."}}
+},
+add:[
+{t:"fill",q:"Cette histoire est vraiment ___ (merveilleux).",a:["merveilleuse"],h:"-eux → -euse.",f:{"merveilleux":"histoire ist feminin → merveilleuse."}},
+{t:"fill",q:"J'ai les mains ___ (sec).",a:["sèches"],h:"sec → sèche, Plural sèches.",f:{"secs":"mains ist feminin: sec → sèche, im Plural sèches.","sèche":"mains ist Plural → sèches.","seches":"Im Feminin braucht es einen Accent grave: sèches."}},
+{t:"fill",q:"Ils ont acheté de ___ (beau) meubles.",a:["beaux"],h:"beau → Plural beaux.",f:{"beau":"meubles ist Plural → beaux.","bels":"Der Plural von beau heisst beaux.","belles":"meubles ist maskulin → beaux."}},
+{t:"fill",q:"Il a répondu ___. (poli → Adverb)",a:["poliment"],h:"Adjektiv auf Vokal: maskuline Form + -ment.",f:{"polimment":"Adjektive auf Vokal: maskuline Form + -ment: poliment.","polie":"Gefragt ist das Adverb: poliment.","poli":"Gefragt ist das Adverb: poliment."}},
+{t:"fill",q:"Elle conduit ___. (lent → Adverb)",a:["lentement"],h:"Ausnahme: lent → lentement (nicht -emment).",f:{"lemment":"lent ist eine Ausnahme: lentement.","lentemment":"lent ist eine Ausnahme: lentement.","lent":"Gefragt ist das Adverb: lentement."}},
+{t:"fill",q:"J'___ (beaucoup / travailler) cette semaine. (passé composé)",a:["ai beaucoup travaillé"],h:"Kurze Adverbien stehen zwischen Hilfsverb und Partizip.",f:{"ai travaillé beaucoup":"Kurze Adverbien wie beaucoup stehen zwischen Hilfsverb und Partizip."}},
+{t:"fill",q:"C'est la ___ (mauvais, Superlativ) idée de l'année.",a:["pire","plus mauvaise"],h:"mauvais → le pire / le plus mauvais.",f:{"plus mauvais":"idée ist feminin → la plus mauvaise (oder la pire).","pirre":"Die Form heisst pire."}},
+{t:"mc",q:"Elle a ___ chats que moi.",o:["plus de","plus des","plus","plus que"],c:0,h:"Vor einem Nomen: plus de + Nomen + que.",w:[null,"Nach plus steht vor dem Nomen nur de: plus de chats.","Vor einem Nomen braucht es de: plus de.","que kommt erst nach dem Nomen: plus de chats que moi."]},
+{t:"mc",q:"C'est un ___ homme : il a cent ans.",o:["vieil","vieux","vieille","vieilles"],c:0,h:"Vor maskulinem Nomen mit stummem h → vieil.",w:[null,"Vor maskulinem Nomen mit stummem h: vieil.","homme ist maskulin.","homme ist maskulin Singular."]}
+]},
+
+"negation":{
+fix:{
+0:{f:{"je n'ai compris pas la question":"ne … pas umklammert das Hilfsverb: Je n'ai pas compris.","je ne ai pas compris la question":"Vor Vokal wird ne zu n'."}},
+1:{f:{"il ne mange jamais de la viande":"Nach der Verneinung wird de la zu de.","il ne mange pas jamais de viande":"jamais ersetzt pas; beide zusammen sind falsch."}},
+2:{f:{"je n'ai personne vu":"personne steht nach dem Partizip.","je n'ai pas vu personne":"personne ersetzt pas; ne … pas … personne ist falsch."}},
+3:{f:{"elle n'a dit rien":"rien steht zwischen Hilfsverb und Partizip.","elle n'a pas rien dit":"rien ersetzt pas."}},
+4:{f:{"personne n'est pas venu":"Wenn personne Subjekt ist, fällt pas weg.","personne est venu":"ne darf nicht fehlen: Personne n'est venu.","personne n'est venue":"personne als Subjekt ist grammatisch maskulin: venu."}},
+5:{f:{"le médecin lui conseille de ne pas boire de l'alcool":"Nach der Verneinung wird de l' zu d'.","le médecin lui conseille de ne boire pas d'alcool":"Beim Infinitiv stehen ne pas zusammen davor.","le médecin lui conseille de pas boire d'alcool":"ne darf nicht fehlen."}},
+6:{w:[null,"Der Teilungsartikel wird nach der Verneinung zu de.","le würde „die bestimmte Milch“ bedeuten. Gemeint ist: keine Milch.","des ist Plural und wird nach der Verneinung ebenfalls zu de."]},
+7:{w:[null,"Nach être bleibt der unbestimmte Artikel.","Nach être bleibt der unbestimmte Artikel.","du ist ein Teilungsartikel; problème ist zählbar."]},
+8:{f:{"seulement":"Mit ne braucht es que: ne … que = nur.","pas":"ne … pas hiesse „nicht“. Gemeint ist „nur“ → que."}},
+9:{w:[null,"Auf eine verneinte Frage widerspricht man mit si, nicht mit oui.","Non würde bestätigen, dass du keine Schokolade magst.","aussi passt nicht als Antwort."]},
+10:{w:[null,"aussi bestätigt einen bejahten Satz. Hier ist der Satz verneint → non plus.","Diese Wendung gibt es so nicht.","si widerspricht, statt zuzustimmen."]},
+11:{f:{"nous habitons plus à bâle":"Schriftlich darf ne nicht fehlen.","nous ne habitons plus à bâle":"Vor Vokal wird ne zu n'."}},
+12:{f:{"je n'ai aucun idée":"idée ist feminin → aucune.","je n'ai pas aucune idée":"aucune ersetzt pas.","je n'ai pas d'idée":"Korrekt, aber hier ist ne … aucun verlangt."}}
+},
+add:[
+{t:"tr",q:"Verneine mit ne … rien:",s:"Quelque chose a changé.",a:["Rien n'a changé"],h:"rien als Subjekt + ne, ohne pas.",f:{"rien n'a pas changé":"Wenn rien Subjekt ist, fällt pas weg.","rien a changé":"ne darf nicht fehlen: Rien n'a changé."}},
+{t:"tr",q:"Verneine mit ne … jamais:",s:"Elle a voyagé en Asie.",a:["Elle n'a jamais voyagé en Asie"],h:"jamais steht zwischen Hilfsverb und Partizip.",f:{"elle n'a voyagé jamais en asie":"jamais steht zwischen Hilfsverb und Partizip."}},
+{t:"tr",q:"Verneine mit ne … ni … ni:",s:"Il aime le thé et le café.",a:["Il n'aime ni le thé ni le café"],h:"ne vor dem Verb, ni vor jedem Element; der bestimmte Artikel bleibt.",f:{"il n'aime pas ni le thé ni le café":"ni … ni ersetzt pas.","il n'aime ni le thé et le café":"Vor jedem Element steht ni."}},
+{t:"tr",q:"Verneine das konjugierte Verb mit ne … plus:",s:"Je veux le voir.",a:["Je ne veux plus le voir"],h:"ne … plus umklammert das konjugierte Verb (veux).",f:{"je veux ne plus le voir":"Hier soll das konjugierte Verb verneint werden: Je ne veux plus le voir.","je ne le veux plus voir":"Das Pronomen gehört zum Infinitiv: … plus le voir."}},
+{t:"tr",q:"Verneine mit ne … pas:",s:"Nous avons des devoirs.",a:["Nous n'avons pas de devoirs"],h:"des wird nach der Verneinung zu de.",f:{"nous n'avons pas des devoirs":"Nach der Verneinung wird des zu de."}},
+{t:"mc",q:"Je n'ai ___ vu ce film.",o:["jamais","pas jamais","personne","rien"],c:0,h:"ne … jamais = nie.",w:[null,"jamais ersetzt pas.","personne bedeutet niemand und stünde nach dem Partizip.","rien bedeutet nichts und passt nicht zu ce film."]},
+{t:"mc",q:"Il n'y a ___ dans la salle.",o:["personne","pas personne","personne pas","aucun"],c:0,h:"ne … personne = niemand.",w:[null,"personne ersetzt pas.","Diese Stellung gibt es nicht.","aucun braucht ein Nomen: aucun élève."]}
+]},
+
+"propositions":{
+fix:{
+0:{f:{"que":"Nach dem Pronomen folgt direkt das Verb (joue): Es ist Subjekt → qui."}},
+1:{f:{"qui":"Der Relativsatz hat ein eigenes Subjekt (tu) → que."}},
+2:{f:{"que":"parler de → dont.","de qui":"Bei einer Sache mit de → dont."}},
+3:{a:["où","dans laquelle"],f:{"que":"Ortsangabe → où.","dont":"grandir dans → où (oder dans laquelle)."}},
+4:{f:{"quand":"Nach einem Zeitpunkt (le jour) steht où, nicht quand.","que":"Zeitangabe → où."}},
+5:{f:{"laquelle":"stylo ist maskulin → lequel.","qui":"Nach einer Präposition steht qui nur bei Personen; bei Sachen lequel.","quoi":"Nach Präposition + Sache mit Bezugswort steht lequel."}},
+6:{f:{"à lequel":"à + lequel verschmilzt zu auquel.","à qui":"à qui nur für Personen; Sache → auquel.","dont":"penser à (nicht de) → auquel.","auxquels":"problème ist Singular → auquel."}},
+7:{f:{"que":"Ohne Bezugswort heisst „das, was“: ce que.","ce qui":"Das Pronomen ist Objekt (Subjekt ist tu) → ce que.","quoi":"In der indirekten Frage wird qu'est-ce que zu ce que."}},
+8:{f:{"ce que":"Das Pronomen ist Subjekt von m'énerve → ce qui.","qui":"Für „das, was“ braucht es ce qui."}},
+9:{f:{"ce que":"avoir besoin de → ce dont.","dont":"Ohne Bezugswort braucht es ce dont."}},
+10:{w:[null,"avant que verlangt den subjonctif.","avant que verlangt den subjonctif.","avant que verlangt den subjonctif."]},
+11:{w:[null,"parce que steht normalerweise nicht am Satzanfang; dort steht comme.","bien que bedeutet „obwohl“.","pour que bedeutet „damit“."]},
+12:{w:[null,"parce que bedeutet „weil“; hier wird ein Zweck ausgedrückt.","bien que bedeutet „obwohl“.","si bien que drückt eine Folge aus und steht mit Indikativ."]},
+13:{w:[null,"que wäre direktes Objekt. Hier: „deren Sohn“ → dont.","qui wäre Subjekt.","laquelle braucht eine Präposition davor; für „deren“ steht dont."]}
+},
+add:[
+{t:"fill",q:"Les amis avec ___ je pars en vacances sont sympas.",a:["qui","lesquels"],h:"Präposition + Person → qui (oder lesquels).",f:{"lequel":"amis ist Plural → lesquels oder, bei Personen, qui.","que":"Nach einer Präposition steht nie que."}},
+{t:"fill",q:"La ville ___ je rêve, c'est Montréal.",a:["dont"],h:"rêver de → dont.",f:{"que":"rêver de → dont.","où":"rêver de verlangt dont."}},
+{t:"fill",q:"Voici les raisons pour ___ j'ai refusé.",a:["lesquelles"],h:"Präposition + Sache, f. Pl. → lesquelles.",f:{"lesquels":"raisons ist feminin → lesquelles.","laquelle":"raisons ist Plural → lesquelles.","qui":"Nach Präposition + Sache steht lequel."}},
+{t:"fill",q:"Je ne sais pas ___ se passe.",a:["ce qui"],h:"„was“ als Subjekt ohne Bezugswort → ce qui.",f:{"ce que":"Das Pronomen ist Subjekt von se passe → ce qui.","qu'est-ce qui":"In der indirekten Frage wird qu'est-ce qui zu ce qui."}},
+{t:"fill",q:"Tout ___ brille n'est pas or.",a:["ce qui"],h:"tout ce qui = alles, was (Subjekt).",f:{"ce que":"Das Pronomen ist Subjekt von brille → ce qui.","qui":"Nach tout braucht es ce: tout ce qui."}},
+{t:"mc",q:"Je resterai ici jusqu'à ce que tu ___.",o:["reviennes","reviens","reviendras","revenais"],c:0,h:"jusqu'à ce que → subjonctif.",w:[null,"jusqu'à ce que verlangt den subjonctif.","jusqu'à ce que verlangt den subjonctif.","jusqu'à ce que verlangt den subjonctif."]},
+{t:"mc",q:"___ il fasse froid, il porte un t-shirt.",o:["Bien qu'","Parce qu'","Comme","Puisqu'"],c:0,h:"Gegensatz + subjonctif (fasse) → bien que.",w:[null,"parce que (weil) ergibt keinen Sinn und verlangt den Indikativ.","comme (da) passt inhaltlich nicht und verlangt den Indikativ.","puisque (da ja) passt inhaltlich nicht und verlangt den Indikativ."]},
+{t:"mc",q:"Il a tellement travaillé ___ il est tombé malade.",o:["qu'","pour qu'","bien qu'","dont"],c:0,h:"tellement … que drückt eine Folge aus.",w:[null,"Ein Zweck passt nicht; tellement … que drückt eine Folge aus.","Ein Gegensatz passt nicht.","dont ist ein Relativpronomen."]},
+{t:"tr",q:"Verbinde die Sätze mit einem Relativpronomen:",s:"J'ai lu un livre. Ce livre m'a beaucoup plu.",a:["J'ai lu un livre qui m'a beaucoup plu"],h:"ce livre ist Subjekt im zweiten Satz → qui.",f:{"j'ai lu un livre que m'a beaucoup plu":"Das Pronomen ist Subjekt von a plu → qui."}}
+]},
+
+"discours-indirect":{
+fix:{
+1:{f:{"il a dit qu'il est malade":"Das Einleitungsverb steht in der Vergangenheit → présent wird zu imparfait."}},
+2:{f:{"elle a dit qu'elle a raté le bus":"passé composé wird zu plus-que-parfait: avait raté."}},
+3:{f:{"ils ont dit qu'ils viendront demain":"futur → conditionnel, und demain → le lendemain.","ils ont dit qu'ils viendraient demain":"demain wird zu le lendemain.","ils ont dit qu'ils viendront le lendemain":"futur wird zu conditionnel: viendraient."}},
+4:{f:{"le prof nous a dit d'ouvrir vos livres":"Die Perspektive ändert sich: vos → nos.","le prof nous a dit qu'on ouvre nos livres":"Ein Imperativ wird zu de + Infinitiv."}},
+5:{f:{"il m'a demandé si j'ai faim":"présent → imparfait: si j'avais faim.","il m'a demandé est-ce que j'avais faim":"Ja/Nein-Frage → si, ohne est-ce que.","il m'a demandé si tu avais faim":"Die Perspektive ändert sich: tu → je."}},
+6:{f:{"elle m'a demandé ce que je faisais ce soir":"ce soir wird zu ce soir-là.","elle m'a demandé qu'est-ce que je faisais ce soir-là":"qu'est-ce que wird zu ce que.","elle m'a demandé ce que je fais ce soir-là":"présent → imparfait: faisais."}},
+7:{f:{"il a demandé où est la gare":"présent → imparfait: était."}},
+8:{w:[null,"ce que ersetzt qu'est-ce que (Objekt). Hier ist es Subjekt → ce qui.","In der indirekten Frage gibt es kein qu'est-ce qui.","si nur bei Ja/Nein-Fragen."]},
+9:{w:[null,"le lendemain entspricht demain.","ce jour-là entspricht aujourd'hui.","avant-hier wird zu l'avant-veille."]},
+10:{f:{"va":"Einleitung in der Vergangenheit → aller im imparfait: allait.","irait":"Der futur proche wird zu allait + Infinitiv."}},
+11:{f:{"mon père m'a dit de ne rentre pas trop tard":"Nach de steht der Infinitiv: rentrer.","mon père m'a dit de pas rentrer trop tard":"ne darf nicht fehlen.","mon père m'a dit de ne rentrer pas trop tard":"Beim Infinitiv stehen ne pas zusammen davor."}}
+},
+add:[
+{t:"tr",q:"Setze in die indirekte Rede:",s:"Elle a dit : « Je vais partir en vacances la semaine prochaine. »",a:["Elle a dit qu'elle allait partir en vacances la semaine suivante","Elle a dit qu'elle allait partir en vacances la semaine d'après"],h:"futur proche → allait + Infinitiv; la semaine prochaine → la semaine suivante.",f:{"elle a dit qu'elle va partir en vacances la semaine prochaine":"Zeitverschiebung: va → allait, la semaine prochaine → la semaine suivante.","elle a dit qu'elle allait partir en vacances la semaine prochaine":"la semaine prochaine wird zu la semaine suivante."}},
+{t:"tr",q:"Setze in die indirekte Rede:",s:"Il m'a demandé : « Pourquoi es-tu triste ? »",a:["Il m'a demandé pourquoi j'étais triste"],h:"Fragewort bleibt; keine Inversion; présent → imparfait.",f:{"il m'a demandé pourquoi étais-je triste":"In der indirekten Frage gibt es keine Inversion.","il m'a demandé pourquoi je suis triste":"présent → imparfait: j'étais."}},
+{t:"tr",q:"Setze in die indirekte Rede:",s:"Le guide a annoncé : « Le musée fermera à 18 heures. »",a:["Le guide a annoncé que le musée fermerait à 18 heures"],h:"futur → conditionnel présent.",f:{"le guide a annoncé que le musée fermera à 18 heures":"futur → conditionnel: fermerait."}},
+{t:"tr",q:"Setze in die indirekte Rede:",s:"Ma mère m'a demandé : « Qu'est-ce qui t'arrive ? »",a:["Ma mère m'a demandé ce qui m'arrivait"],h:"qu'est-ce qui → ce qui; t' → m'; présent → imparfait.",f:{"ma mère m'a demandé ce que m'arrivait":"qu'est-ce qui (Subjekt) wird zu ce qui.","ma mère m'a demandé ce qui t'arrivait":"Perspektive: t' → m'."}},
+{t:"tr",q:"Setze in die indirekte Rede:",s:"Paul a raconté : « J'ai vu ce film hier. »",a:["Paul a raconté qu'il avait vu ce film la veille"],h:"passé composé → plus-que-parfait; hier → la veille.",f:{"paul a raconté qu'il a vu ce film hier":"passé composé → plus-que-parfait, hier → la veille.","paul a raconté qu'il avait vu ce film hier":"hier wird zu la veille."}},
+{t:"mc",q:"« Tu as fini ? » → Elle m'a demandé ___ j'avais fini.",o:["si","que","ce que","est-ce que"],c:0,h:"Ja/Nein-Frage → si.",w:[null,"que leitet keine Frage ein.","ce que nur für Fragen mit qu'est-ce que.","est-ce que fällt in der indirekten Frage weg."]},
+{t:"mc",q:"Was wird aus <i>demain</i> in der indirekten Rede (Vergangenheit)?",o:["le lendemain","la veille","ce jour-là","demain-là"],c:0,h:"demain → le lendemain.",w:[null,"la veille entspricht hier.","ce jour-là entspricht aujourd'hui.","Diese Form gibt es nicht."]}
+]},
+
+"passif":{
+fix:{
+0:{f:{"les examens sont corrigé par le professeur":"Das Partizip wird an das Subjekt angeglichen: corrigés.","les examens ont été corrigés par le professeur":"Der Aktivsatz steht im présent → sont corrigés."}},
+1:{f:{"la petite fille a été sauvé par les pompiers":"Angleichung an la petite fille → sauvée.","la petite fille est sauvée par les pompiers":"Der Aktivsatz steht im passé composé → a été sauvée.","la petite fille a étée sauvée par les pompiers":"été bleibt immer unverändert."}},
+2:{f:{"le musée est construit par un architecte suisse":"Der Aktivsatz steht im Futur → sera construit."}},
+3:{f:{"a été détruit":"maison ist feminin → détruite.","est détruite":"Gefragt ist das passé composé des Passivs: a été détruite.","a étée détruite":"été bleibt unverändert."}},
+4:{f:{"sont écrit":"romans ist Plural → écrits.","ont été écrits":"Gefragt ist das présent: sont écrits."}},
+5:{w:[null,"Bei Zustandsverben wie entourer steht de.","avec ist keine Passivpräposition.","de + des wird zu de."]},
+6:{w:[null,"Das plus-que-parfait wäre avait été volé.","Das présent wäre est volé.","Das imparfait wäre était volé."]},
+7:{f:{"on a été fermé la porte":"Mit on steht der Satz im Aktiv: On a fermé la porte.","on ferme la porte":"Der Passivsatz steht im passé composé → On a fermé."}},
+8:{w:[null,"il se lave ist reflexiv (er wäscht sich).","ils se parlent ist reziprok (sie sprechen miteinander).","se souvenir ist ein pronominales Verb ohne Passivbedeutung."]},
+9:{f:{"faite":"Bei se faire + Infinitiv bleibt fait unverändert.","fais":"Das Partizip heisst fait."}},
+10:{f:{"la fête a été préparée par les élèves":"Der Aktivsatz steht im plus-que-parfait → avait été préparée.","la fête avait été préparé par les élèves":"fête ist feminin → préparée."}},
+11:{f:{"est":"il faut que verlangt den subjonctif: soit.","sois":"Subjekt ist le travail (3. Person) → soit."}}
+},
+add:[
+{t:"tr",q:"Setze ins Passiv:",s:"Les touristes visitent ce château.",a:["Ce château est visité par les touristes"],h:"présent → est + Partizip.",f:{"ce château est visités par les touristes":"Angleichung an ce château (m. Sg.) → visité."}},
+{t:"tr",q:"Setze ins Passiv:",s:"Le jury a récompensé les meilleures élèves.",a:["Les meilleures élèves ont été récompensées par le jury"],h:"passé composé → ont été + Partizip, angeglichen (f. Pl.).",f:{"les meilleures élèves ont été récompensés par le jury":"les meilleures élèves ist feminin → récompensées.","les meilleures élèves sont récompensées par le jury":"Der Aktivsatz steht im passé composé → ont été récompensées."}},
+{t:"tr",q:"Setze ins Passiv:",s:"La police arrêtait les manifestants.",a:["Les manifestants étaient arrêtés par la police"],h:"imparfait → étaient + Partizip.",f:{"les manifestants ont été arrêtés par la police":"Der Aktivsatz steht im imparfait → étaient arrêtés."}},
+{t:"fill",q:"Cette chanson est connue ___ tout le monde.",a:["de"],h:"connaître (Zustand) → de.",f:{"par":"Bei connaître (Zustand) steht de."}},
+{t:"fill",q:"Les résultats ___ (publier, futur, Passiv) demain.",a:["seront publiés"],h:"futur → seront + Partizip.",f:{"seront publié":"résultats ist Plural → publiés.","sont publiés":"Mit demain → Futur: seront publiés."}},
+{t:"tr",q:"Forme ins Aktiv mit « on » um:",s:"Le français est parlé dans cette région.",a:["On parle français dans cette région","On parle le français dans cette région"],h:"Gleiche Zeit (présent), on als Subjekt."},
+{t:"mc",q:"Wie sagt man natürlich: „Hier wird Deutsch gesprochen.“?",o:["Ici, on parle allemand.","Ici, l'allemand est parlé par on.","Ici, est parlé allemand.","Ici, parle-t-on allemand."],c:0,h:"Statt Passiv: on + Aktiv.",w:[null,"on kann nie Urheber mit par sein.","Ein Passivsatz braucht ein Subjekt.","Das ist eine Frage, keine Aussage."]}
+]}
+};
+/* ===== Unregelmässige Verben =====
+   p: Präsens (je, tu, il, nous, vous, ils) · pp: participe passé · aux: Hilfsverb
+   fut: Futur-/Conditionnel-Stamm · s1/s2: Subjonctif-Stämme (je/tu/il/ils bzw. nous/vous)
+   ps: passé simple (il) · top: gehört zu den wichtigsten 20 */
+const VERBS = [
+{inf:"être",de:"sein",p:["suis","es","est","sommes","êtes","sont"],pp:"été",aux:"avoir",fut:"ser",subj:["sois","sois","soit","soyons","soyez","soient"],impf:"ét",ps:"fut",imp:["sois","soyons","soyez"],top:1},
+{inf:"avoir",de:"haben",p:["ai","as","a","avons","avez","ont"],pp:"eu",aux:"avoir",fut:"aur",subj:["aie","aies","ait","ayons","ayez","aient"],ps:"eut",imp:["aie","ayons","ayez"],top:1},
+{inf:"aller",de:"gehen",p:["vais","vas","va","allons","allez","vont"],pp:"allé",aux:"être",fut:"ir",s1:"aill",s2:"all",ps:"alla",imp:["va","allons","allez"],top:1},
+{inf:"faire",de:"machen, tun",p:["fais","fais","fait","faisons","faites","font"],pp:"fait",aux:"avoir",fut:"fer",s1:"fass",s2:"fass",ps:"fit",top:1},
+{inf:"dire",de:"sagen",p:["dis","dis","dit","disons","dites","disent"],pp:"dit",aux:"avoir",fut:"dir",s1:"dis",s2:"dis",ps:"dit",top:1},
+{inf:"pouvoir",de:"können",p:["peux","peux","peut","pouvons","pouvez","peuvent"],pp:"pu",aux:"avoir",fut:"pourr",s1:"puiss",s2:"puiss",ps:"put",imp:null,top:1},
+{inf:"vouloir",de:"wollen",p:["veux","veux","veut","voulons","voulez","veulent"],pp:"voulu",aux:"avoir",fut:"voudr",s1:"veuill",s2:"voul",ps:"voulut",imp:["veuille","veuillons","veuillez"],top:1},
+{inf:"devoir",de:"müssen, sollen",p:["dois","dois","doit","devons","devez","doivent"],pp:"dû",aux:"avoir",fut:"devr",s1:"doiv",s2:"dev",ps:"dut",imp:null,top:1},
+{inf:"savoir",de:"wissen, können",p:["sais","sais","sait","savons","savez","savent"],pp:"su",aux:"avoir",fut:"saur",s1:"sach",s2:"sach",ps:"sut",imp:["sache","sachons","sachez"],top:1},
+{inf:"venir",de:"kommen",p:["viens","viens","vient","venons","venez","viennent"],pp:"venu",aux:"être",fut:"viendr",s1:"vienn",s2:"ven",ps:"vint",top:1},
+{inf:"tenir",de:"halten",p:["tiens","tiens","tient","tenons","tenez","tiennent"],pp:"tenu",aux:"avoir",fut:"tiendr",s1:"tienn",s2:"ten",ps:"tint"},
+{inf:"prendre",de:"nehmen",p:["prends","prends","prend","prenons","prenez","prennent"],pp:"pris",aux:"avoir",fut:"prendr",s1:"prenn",s2:"pren",ps:"prit",top:1},
+{inf:"mettre",de:"legen, stellen, anziehen",p:["mets","mets","met","mettons","mettez","mettent"],pp:"mis",aux:"avoir",fut:"mettr",s1:"mett",s2:"mett",ps:"mit",top:1},
+{inf:"voir",de:"sehen",p:["vois","vois","voit","voyons","voyez","voient"],pp:"vu",aux:"avoir",fut:"verr",s1:"voi",s2:"voy",ps:"vit",top:1},
+{inf:"croire",de:"glauben",p:["crois","crois","croit","croyons","croyez","croient"],pp:"cru",aux:"avoir",fut:"croir",s1:"croi",s2:"croy",ps:"crut",top:1},
+{inf:"recevoir",de:"erhalten, empfangen",p:["reçois","reçois","reçoit","recevons","recevez","reçoivent"],pp:"reçu",aux:"avoir",fut:"recevr",s1:"reçoiv",s2:"recev",ps:"reçut",top:1},
+{inf:"connaître",de:"kennen",p:["connais","connais","connaît","connaissons","connaissez","connaissent"],pp:"connu",aux:"avoir",fut:"connaîtr",s1:"connaiss",s2:"connaiss",ps:"connut",top:1},
+{inf:"naître",de:"geboren werden",p:["nais","nais","naît","naissons","naissez","naissent"],pp:"né",aux:"être",fut:"naîtr",s1:"naiss",s2:"naiss",ps:"naquit"},
+{inf:"mourir",de:"sterben",p:["meurs","meurs","meurt","mourons","mourez","meurent"],pp:"mort",aux:"être",fut:"mourr",s1:"meur",s2:"mour",ps:"mourut"},
+{inf:"vivre",de:"leben",p:["vis","vis","vit","vivons","vivez","vivent"],pp:"vécu",aux:"avoir",fut:"vivr",s1:"viv",s2:"viv",ps:"vécut"},
+{inf:"écrire",de:"schreiben",p:["écris","écris","écrit","écrivons","écrivez","écrivent"],pp:"écrit",aux:"avoir",fut:"écrir",s1:"écriv",s2:"écriv",ps:"écrivit",top:1},
+{inf:"lire",de:"lesen",p:["lis","lis","lit","lisons","lisez","lisent"],pp:"lu",aux:"avoir",fut:"lir",s1:"lis",s2:"lis",ps:"lut",top:1},
+{inf:"boire",de:"trinken",p:["bois","bois","boit","buvons","buvez","boivent"],pp:"bu",aux:"avoir",fut:"boir",s1:"boiv",s2:"buv",ps:"but",top:1},
+{inf:"ouvrir",de:"öffnen",p:["ouvre","ouvres","ouvre","ouvrons","ouvrez","ouvrent"],pp:"ouvert",aux:"avoir",fut:"ouvrir",s1:"ouvr",s2:"ouvr",ps:"ouvrit"},
+{inf:"offrir",de:"schenken, anbieten",p:["offre","offres","offre","offrons","offrez","offrent"],pp:"offert",aux:"avoir",fut:"offrir",s1:"offr",s2:"offr",ps:"offrit"},
+{inf:"partir",de:"weggehen, abreisen",p:["pars","pars","part","partons","partez","partent"],pp:"parti",aux:"être",fut:"partir",s1:"part",s2:"part",ps:"partit",top:1},
+{inf:"sortir",de:"hinausgehen, ausgehen",p:["sors","sors","sort","sortons","sortez","sortent"],pp:"sorti",aux:"être",fut:"sortir",s1:"sort",s2:"sort",ps:"sortit"},
+{inf:"dormir",de:"schlafen",p:["dors","dors","dort","dormons","dormez","dorment"],pp:"dormi",aux:"avoir",fut:"dormir",s1:"dorm",s2:"dorm",ps:"dormit"},
+{inf:"courir",de:"rennen",p:["cours","cours","court","courons","courez","courent"],pp:"couru",aux:"avoir",fut:"courr",s1:"cour",s2:"cour",ps:"courut"},
+{inf:"conduire",de:"fahren, führen",p:["conduis","conduis","conduit","conduisons","conduisez","conduisent"],pp:"conduit",aux:"avoir",fut:"conduir",s1:"conduis",s2:"conduis",ps:"conduisit"},
+{inf:"craindre",de:"fürchten",p:["crains","crains","craint","craignons","craignez","craignent"],pp:"craint",aux:"avoir",fut:"craindr",s1:"craign",s2:"craign",ps:"craignit"},
+{inf:"rire",de:"lachen",p:["ris","ris","rit","rions","riez","rient"],pp:"ri",aux:"avoir",fut:"rir",s1:"ri",s2:"ri",ps:"rit"},
+{inf:"suivre",de:"folgen",p:["suis","suis","suit","suivons","suivez","suivent"],pp:"suivi",aux:"avoir",fut:"suivr",s1:"suiv",s2:"suiv",ps:"suivit"},
+{inf:"plaire",de:"gefallen",p:["plais","plais","plaît","plaisons","plaisez","plaisent"],pp:"plu",aux:"avoir",fut:"plair",s1:"plais",s2:"plais",ps:"plut"},
+{inf:"envoyer",de:"schicken",p:["envoie","envoies","envoie","envoyons","envoyez","envoient"],pp:"envoyé",aux:"avoir",fut:"enverr",s1:"envoi",s2:"envoy",ps:"envoya"},
+{inf:"acheter",de:"kaufen",p:["achète","achètes","achète","achetons","achetez","achètent"],pp:"acheté",aux:"avoir",fut:"achèter",s1:"achèt",s2:"achet",ps:"acheta"},
+{inf:"appeler",de:"rufen, anrufen",p:["appelle","appelles","appelle","appelons","appelez","appellent"],pp:"appelé",aux:"avoir",fut:"appeller",s1:"appell",s2:"appel",ps:"appela"},
+{inf:"manger",de:"essen",p:["mange","manges","mange","mangeons","mangez","mangent"],pp:"mangé",aux:"avoir",fut:"manger",s1:"mang",s2:"mang",ps:"mangea"},
+{inf:"commencer",de:"beginnen",p:["commence","commences","commence","commençons","commencez","commencent"],pp:"commencé",aux:"avoir",fut:"commencer",s1:"commenc",s2:"commenc",ps:"commença"},
+{inf:"falloir",de:"nötig sein (il faut)",p:[null,null,"faut",null,null,null],pp:"fallu",aux:"avoir",fut:"faudr",subj:[null,null,"faille",null,null,null],impf:"fall",ps:"fallut",imp:null,imps:1},
+{inf:"pleuvoir",de:"regnen",p:[null,null,"pleut",null,null,null],pp:"plu",aux:"avoir",fut:"pleuvr",subj:[null,null,"pleuve",null,null,null],impf:"pleuv",ps:"plut",imp:null,imps:1}
+];
 (function(){
 const main = document.getElementById('main');
 const side = document.getElementById('side');
@@ -1239,33 +1678,188 @@ const menuBtn = document.getElementById('menuBtn');
 const STORE = 'fgm-progress-v1';
 const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-TOPICS.forEach((t,i)=>{ t.nr = i+1; });
+/* ---------- Zusatzaufgaben einbauen ---------- */
+TOPICS.forEach((t,i)=>{
+  t.nr = i+1;
+  const m = (typeof MORE!=='undefined') && MORE[t.id];
+  if(m){
+    Object.entries(m.fix||{}).forEach(([k,o])=>{ if(t.ex[+k]) Object.assign(t.ex[+k],o); });
+    (m.add||[]).forEach(e=>t.ex.push(e));
+  }
+});
 const TOTAL_EX = TOPICS.reduce((s,t)=>s+t.ex.length,0);
 const pad = n => String(n).padStart(2,'0');
 const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const smooth = el => el && el.scrollIntoView({behavior:reduce?'auto':'smooth'});
 
 /* ---------- Fortschritt (nur in diesem Browser) ---------- */
 function load(){ try{ return JSON.parse(localStorage.getItem(STORE)) || {}; }catch(e){ return {}; } }
 function save(id, score, total){
   try{
     const p = load(); const prev = p[id];
-    if(!prev || score > prev.best){ p[id] = {best:score,total}; localStorage.setItem(STORE, JSON.stringify(p)); markNav(); }
+    if(!prev || score > prev.best || prev.total!==total){ p[id] = {best:Math.max(score, prev && prev.total===total ? prev.best : 0),total}; localStorage.setItem(STORE, JSON.stringify(p)); markNav(); }
   }catch(e){}
 }
 
-/* ---------- Korrektur ---------- */
-function norm(s){
-  return String(s).normalize('NFC').toLowerCase()
-    .replace(/[’‘`´]/g,"'").replace(/œ/g,'oe').replace(/æ/g,'ae')
-    .replace(/[«»"“”]/g,' ')
-    .replace(/\s+/g,' ')
-    .replace(/\s*'\s*/g,"'")
-    .replace(/\s*-\s*/g,'-')
-    .replace(/\s+([,.!?;:])/g,'$1')
-    .replace(/[\s.!?;:,]+$/,'')
-    .trim();
+/* =========================================================
+   FEHLERANALYSE
+   ========================================================= */
+function clean(s){
+  return String(s).normalize('NFC')
+    .replace(/[’‘`´]/g,"'").replace(/[«»"“”]/g,' ')
+    .replace(/\s+/g,' ').replace(/\s*'\s*/g,"'").replace(/\s*-\s*/g,'-')
+    .replace(/\s+([,.!?;:])/g,'$1').replace(/[\s.!?;:,]+$/,'').trim();
 }
+const low = s => s.toLowerCase().replace(/œ/g,'oe').replace(/æ/g,'ae');
+const norm = s => low(clean(s)).replace(/[,;:!?.]/g,'').replace(/\s+/g,' ').trim();
 const bare = s => s.normalize('NFD').replace(/[̀-ͯ]/g,'');
+const key = w => low(w).replace(/[,;:!?.]/g,'');
+const tok = s => clean(s).split(' ').flatMap(w=>w.split(/(?<=')/)).filter(Boolean);
+const joinParts = parts => parts.filter(p=>p[0]).reduce((acc,[html,raw],k,arr)=>acc + html + (k<arr.length-1 && !String(raw).endsWith("'") ? ' ' : ''), '');
+function isElision(a,b){
+  const el = (x,y) => x.endsWith("'") && x.length<=3 && (y===x.slice(0,-1)+'e' || y===x.slice(0,-1)+'a' || (x==="s'" && y==='si'));
+  return el(a,b) || el(b,a);
+}
+
+function lev(a,b){
+  const m=a.length,n=b.length; if(!m) return n; if(!n) return m;
+  let prev = Array.from({length:n+1},(_,j)=>j);
+  for(let i=1;i<=m;i++){
+    const cur=[i];
+    for(let j=1;j<=n;j++) cur[j]=Math.min(prev[j]+1,cur[j-1]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1));
+    prev=cur;
+  }
+  return prev[n];
+}
+function subCost(u,e){
+  const a=key(u), b=key(e);
+  if(a===b) return 0;
+  if(bare(a)===bare(b)) return 0.3;
+  const l=lev(a,b), L=Math.max(a.length,b.length);
+  if(l<=Math.max(1,Math.ceil(L*0.4))) return 0.6+l/L;
+  return 2.2;
+}
+function align(U,E){
+  const m=U.length,n=E.length;
+  const D=[...Array(m+1)].map(()=>Array(n+1).fill(0));
+  for(let i=0;i<=m;i++) D[i][0]=i;
+  for(let j=0;j<=n;j++) D[0][j]=j;
+  for(let i=1;i<=m;i++) for(let j=1;j<=n;j++)
+    D[i][j]=Math.min(D[i-1][j]+1, D[i][j-1]+1, D[i-1][j-1]+subCost(U[i-1],E[j-1]));
+  const ops=[]; let i=m,j=n;
+  while(i>0||j>0){
+    if(i>0&&j>0 && Math.abs(D[i][j]-(D[i-1][j-1]+subCost(U[i-1],E[j-1])))<1e-9){ ops.push({t:'sub',u:U[i-1],e:E[j-1]}); i--; j--; }
+    else if(j>0 && Math.abs(D[i][j]-(D[i][j-1]+1))<1e-9){ ops.push({t:'ins',e:E[j-1]}); j--; }
+    else { ops.push({t:'del',u:U[i-1]}); i--; }
+  }
+  ops.reverse();
+  // verschobene Wörter erkennen (gleiches Wort fehlt an einer Stelle und steht zu viel an einer anderen)
+  ops.forEach(o=>{
+    if(o.t!=='del' || o.mv) return;
+    const m = ops.find(x=>x.t==='ins' && !x.mv && bare(key(x.e))===bare(key(o.u)));
+    if(m){ o.mv = m.mv = true; o.e = m.e; }
+  });
+  // benachbartes "zu viel" + "fehlt" als falsches Wort zusammenfassen
+  const out=[];
+  for(let k=0;k<ops.length;k++){
+    const o=ops[k], nx=ops[k+1];
+    if(nx && !o.mv && !nx.mv && ((o.t==='del'&&nx.t==='ins')||(o.t==='ins'&&nx.t==='del'))){
+      out.push({t:'sub',u:o.t==='del'?o.u:nx.u,e:o.t==='ins'?o.e:nx.e}); k++;
+    } else out.push(o);
+  }
+  out.forEach(o=>{ if(o.t==='sub'){ o.k = subKind(o.u,o.e); if(o.k==='eq') o.t='eq'; } });
+  return {ops:out, cost:D[m][n]};
+}
+function subKind(u,e){
+  const a=key(u), b=key(e);
+  if(a===b) return 'eq';
+  if(isElision(a,b)) return 'elision';
+  if(bare(a)===bare(b)) return 'accent';
+  let p=0; while(p<a.length&&p<b.length&&a[p]===b[p]) p++;
+  if(p>=2 && a.length-p<=3 && b.length-p<=3) return 'ending';
+  if(lev(a,b)<=2 && Math.max(a.length,b.length)>=4) return 'typo';
+  return 'word';
+}
+function charDiff(a,b){
+  const m=a.length,n=b.length;
+  const L=[...Array(m+1)].map(()=>Array(n+1).fill(0));
+  for(let i=m-1;i>=0;i--) for(let j=n-1;j>=0;j--)
+    L[i][j] = a[i].toLowerCase()===b[j].toLowerCase() ? L[i+1][j+1]+1 : Math.max(L[i+1][j],L[i][j+1]);
+  let i=0,j=0,A='',B='';
+  while(i<m&&j<n){
+    if(a[i].toLowerCase()===b[j].toLowerCase()){ A+=esc(a[i]); B+=esc(b[j]); i++; j++; }
+    else if(L[i+1][j]>=L[i][j+1]){ A+=`<del>${esc(a[i])}</del>`; i++; }
+    else { B+=`<ins>${esc(b[j])}</ins>`; j++; }
+  }
+  while(i<m){ A+=`<del>${esc(a[i])}</del>`; i++; }
+  while(j<n){ B+=`<ins>${esc(b[j])}</ins>`; j++; }
+  return [A.replace(/<\/del><del>/g,''), B.replace(/<\/ins><ins>/g,'')];
+}
+/* Ergebnis: {kind:'ok'|'accent'|'typo'|'typical'|'order'|'grammar', ops, best, msg} */
+function analyse(input, answers, fmap){
+  const ni = norm(input);
+  if(answers.some(a=>norm(a)===ni)) return {kind:'ok'};
+  const U = tok(input);
+  let best=null, bestA=null;
+  answers.forEach(a=>{ const r=align(U,tok(a)); if(!best||r.cost<best.cost){ best=r; bestA=a; } });
+  const res = {ops:best.ops, best:bestA, E:tok(bestA)};
+  if(fmap){
+    for(const k in fmap){ if(bare(norm(k))===bare(ni)){ return Object.assign(res,{kind:'typical',msg:fmap[k]}); } }
+  }
+  const subs = best.ops.filter(o=>o.t!=='eq');
+  const sortK = arr => arr.map(w=>bare(key(w))).sort().join('|');
+  if(U.length>1 && sortK(U)===sortK(res.E)) res.kind='order';
+  else if(subs.length && subs.every(o=>o.t==='sub'&&o.k==='accent')) res.kind='accent';
+  else if(subs.length && subs.every(o=>o.t==='sub'&&(o.k==='accent'||o.k==='typo'||o.k==='elision'))) res.kind='typo';
+  else res.kind='grammar';
+  return res;
+}
+const KLABEL = {accent:'Akzent',typo:'Schreibweise',ending:'Endung',word:'Falsches Wort',elision:'Apostroph'};
+function wordPair(o){
+  if(o.k==='word') return [`<span class="w-bad">${esc(o.u)}</span>`,`<span class="w-good">${esc(o.e)}</span>`];
+  const [a,b]=charDiff(o.u,o.e); return [`<span class="w-bad">${a}</span>`,`<span class="w-good">${b}</span>`];
+}
+function issueList(ops){
+  const li = ops.filter(o=>o.t!=='eq').map(o=>{
+    if(o.t==='sub'){ const [a,b]=wordPair(o); return `<li><span class="ik ik-${o.k}">${KLABEL[o.k]}</span><span lang="fr">${a} → ${b}</span></li>`; }
+    if(o.t==='del' && o.mv){
+      const acc = key(o.u)!==key(o.e) ? ` (richtig geschrieben: <span class="w-good">${esc(o.e)}</span>)` : '';
+      return `<li><span class="ik ik-word">Stellung</span><span><span lang="fr" class="w-bad">${esc(o.u)}</span> steht an der falschen Stelle${acc}.</span></li>`;
+    }
+    if(o.t==='ins' && o.mv) return '';
+    if(o.t==='del') return `<li><span class="ik ik-word">Zu viel</span><span lang="fr"><span class="w-bad">${esc(o.u)}</span></span></li>`;
+    return `<li><span class="ik ik-word">Fehlt</span><span lang="fr"><span class="w-good">${esc(o.e)}</span></span></li>`;
+  });
+  return `<ul class="issues">${li.join('')}</ul>`;
+}
+function compareLines(ops){
+  const u = joinParts(ops.map(o=>{
+    if(o.t==='eq') return [esc(o.u), o.u];
+    if(o.t==='sub') return [wordPair(o)[0], o.u];
+    if(o.t==='del') return [o.mv ? `<span class="w-bad w-move">${esc(o.u)}</span>` : `<span class="w-bad w-extra">${esc(o.u)}</span>`, o.u];
+    return [o.mv ? '' : `<span class="w-gap" title="Hier fehlt etwas">‸</span>`, ''];
+  }));
+  const e = joinParts(ops.map(o=>{
+    if(o.t==='eq') return [esc(o.e), o.e];
+    if(o.t==='sub') return [wordPair(o)[1], o.e];
+    if(o.t==='ins') return [`<span class="w-good">${esc(o.e)}</span>`, o.e];
+    return ['', ''];
+  }));
+  return `<div class="cmp"><p><span class="cl">Deine Antwort</span><span lang="fr">${u}</span></p><p><span class="cl">Richtig</span><span lang="fr">${e}</span></p></div>`;
+}
+const ruleBox = h => h ? `<details class="rule"><summary>Regel anzeigen</summary><p>${h}</p></details>` : '';
+function textFeedback(r, it){
+  const alt = (it.a && it.a.length>1) ? `<p class="alt">Ebenfalls richtig: <span lang="fr">${it.a.filter(a=>a!==r.best).map(esc).join(' · ')}</span></p>` : '';
+  const long = r.E && r.E.length>=3;
+  switch(r.kind){
+    case 'ok': return {state:'ok', html:`<p><strong>Richtig!</strong></p>`};
+    case 'accent': return {state:'near', html:`<p><strong>Fast richtig: nur die Akzente stimmen nicht.</strong></p>${issueList(r.ops)}`};
+    case 'typo': return {state:'near', html:`<p><strong>Fast richtig: ein Schreibfehler.</strong></p>${issueList(r.ops)}`};
+    case 'typical': return {state:'bad', html:`<p><strong>Typischer Fehler:</strong> ${r.msg}</p>${long?compareLines(r.ops):issueList(r.ops)}`};
+    case 'order': return {state:'bad', html:`<p><strong>Die Wörter stimmen, aber die Reihenfolge nicht.</strong></p>${issueList(r.ops)}${compareLines(r.ops)}${ruleBox(it.h)}`};
+    default: return {state:'bad', html:`<p><strong>Leider falsch.</strong> Das stimmt nicht:</p>${issueList(r.ops)}${long?compareLines(r.ops):''}${alt}${ruleBox(it.h)}`};
+  }
+}
 
 /* ---------- Navigation ---------- */
 nav.innerHTML = TOPICS.map(t=>`<li><a class="navlink" href="#${t.id}" data-id="${t.id}"><span class="n">${pad(t.nr)}</span><span class="nt"><span lang="fr">${t.fr}</span><small>${t.de}</small></span></a></li>`).join('');
@@ -1282,7 +1876,6 @@ menuBtn.addEventListener('click',()=>{
   menuBtn.setAttribute('aria-expanded', open);
   menuBtn.textContent = open ? 'Schliessen' : 'Themen';
 });
-
 function setActive(id){
   document.querySelectorAll('.navlink').forEach(a=>a.classList.toggle('active', a.dataset.id===id));
   side.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); menuBtn.textContent='Themen';
@@ -1299,18 +1892,20 @@ function renderHome(){
     <p class="lead">Alle Grammatikthemen, die du für die Maturprüfung brauchst: auf Deutsch erklärt, mit französischen Beispielen und Übungen, die sofort korrigiert werden.</p>
     <div class="hero-actions">
       <a class="btn" href="#${TOPICS[0].id}">Mit Thema 1 beginnen</a>
+      <a class="btn ghost" href="#verbes">Unregelmässige Verben</a>
       <a class="btn ghost" href="#test">Gemischter Test</a>
     </div>
     <div class="hero-stats">
       <div><b>${TOPICS.length}</b><span>Themen</span></div>
       <div><b>${TOTAL_EX}</b><span>Übungen mit Lösung</span></div>
+      <div><b>${VERBS.length}</b><span>unregelmässige Verben</span></div>
       <div><b>${done}</b><span>Themen schon geübt</span></div>
     </div>
   </section>
   <section class="howto" aria-label="So funktioniert es">
-    <div><b>1 · Lesen</b><p>Jede Regel auf Deutsch, jedes Beispiel auf Französisch mit Übersetzung.</p></div>
-    <div><b>2 · Üben</b><p>Lücke ausfüllen und mit Enter prüfen oder Antwort anklicken.</p></div>
-    <div><b>3 · Kontrollieren</b><p>Sofortige Korrektur mit Erklärung. Akzente zählen, die Sonderzeichen-Tasten helfen.</p></div>
+    <div><b>1 · Lesen</b><p>Jede Regel auf Deutsch, mit Wann und Wozu und französischen Beispielen.</p></div>
+    <div><b>2 · Üben</b><p>Lücke ausfüllen und mit Enter prüfen oder eine Antwort anklicken.</p></div>
+    <div><b>3 · Fehler verstehen</b><p>Du siehst genau, welches Wort, welche Endung oder welcher Akzent falsch ist.</p></div>
   </section>
   <h2 class="sec-title">Die Themen</h2>
   <div class="grid">${TOPICS.map(t=>{
@@ -1320,10 +1915,30 @@ function renderHome(){
       : `<p class="meta fresh">${t.ex.length} Übungen · noch nicht geübt</p>`;
     return `<a class="card" href="#${t.id}"><span class="num">${pad(t.nr)}</span><h3 lang="fr">${t.fr}</h3><p class="de">${t.de}</p><ul class="chips">${t.chips.map(c=>`<li>${c}</li>`).join('')}</ul>${prog}</a>`;
   }).join('')}</div>
+  <h2 class="sec-title">Training</h2>
+  <div class="grid">
+    <a class="card card-train" href="#verbes"><span class="num">Verben</span><h3 lang="fr">Verbes irréguliers</h3><p class="de">${VERBS.length} unregelmässige Verben: Konjugationstabellen, Merkhilfen und ein Trainer, der deine Fehler wiederholt.</p></a>
+    <a class="card card-train" href="#test"><span class="num">Test</span><h3>Gemischter Test</h3><p class="de">15 zufällige Aufgaben aus allen ${TOPICS.length} Themen, wie an der Prüfung.</p></a>
+  </div>
   </div>`;
 }
 
 /* ---------- Themenseite ---------- */
+function buildToc(extra){
+  const toc = main.querySelector('.toc');
+  main.querySelectorAll('.prose h2[data-toc]').forEach((h,k)=>{
+    h.id = 'sec-'+k;
+    const b = document.createElement('button'); b.type='button'; b.textContent = h.textContent;
+    b.addEventListener('click',()=>smooth(h));
+    toc.appendChild(b);
+  });
+  (extra||[]).forEach(([label,id])=>{
+    const bx = document.createElement('button'); bx.type='button'; bx.className='toc-ex'; bx.textContent=label;
+    bx.addEventListener('click',()=>smooth(document.getElementById(id)));
+    toc.appendChild(bx);
+  });
+}
+function wozuBox(w){ return `<div class="wozu"><p><span class="wz-l">Wann?</span><span>${w[0]}</span></p><p><span class="wz-l">Wozu?</span><span>${w[1]}</span></p></div>`; }
 function renderTopic(t){
   const i = TOPICS.indexOf(t), prev = TOPICS[i-1], next = TOPICS[i+1];
   main.innerHTML = `<article class="wrap">
@@ -1338,31 +1953,20 @@ function renderTopic(t){
     <div class="prose">${t.html}</div>
     <section class="ex-sec" id="uebungen">
       <h2>Übungen</h2>
-      <p class="hint">${t.ex.length} Aufgaben. Schreib deine Antwort und drück <b>Enter</b> oder <b>Prüfen</b>. Bei Auswahlaufgaben wird sofort korrigiert.</p>
+      <p class="hint">${t.ex.length} Aufgaben. Schreib deine Antwort und drück <b>Enter</b> oder <b>Prüfen</b>. Bei Fehlern siehst du, was genau nicht stimmt.</p>
       <div id="exwrap"></div>
     </section>
     <nav class="pager" aria-label="Weitere Themen">
       ${prev?`<a class="prev" href="#${prev.id}"><small>← Vorheriges Thema</small><span lang="fr">${prev.fr}</span></a>`:''}
-      ${next?`<a class="next" href="#${next.id}"><small>Nächstes Thema →</small><span lang="fr">${next.fr}</span></a>`:`<a class="next" href="#test"><small>Alles geschafft? →</small><span>Gemischter Test</span></a>`}
+      ${next?`<a class="next" href="#${next.id}"><small>Nächstes Thema →</small><span lang="fr">${next.fr}</span></a>`:`<a class="next" href="#verbes"><small>Weiter üben →</small><span>Unregelmässige Verben</span></a>`}
     </nav>
   </article>`;
-  const toc = main.querySelector('.toc');
   const wz = WOZU[t.id] || {};
-  main.querySelectorAll('.prose h2[data-toc]').forEach((h,k)=>{
-    h.id = 'sec-'+k;
+  main.querySelectorAll('.prose h2[data-toc]').forEach(h=>{
     const w = wz[h.textContent.trim()];
-    if(w){
-      const d = document.createElement('div'); d.className = 'wozu';
-      d.innerHTML = `<p><span class="wz-l">Wann?</span><span>${w[0]}</span></p><p><span class="wz-l">Wozu?</span><span>${w[1]}</span></p>`;
-      h.after(d);
-    }
-    const b = document.createElement('button'); b.type='button'; b.textContent = h.textContent;
-    b.addEventListener('click',()=>h.scrollIntoView({behavior:reduce?'auto':'smooth'}));
-    toc.appendChild(b);
+    if(w) h.insertAdjacentHTML('afterend', wozuBox(w));
   });
-  const bx = document.createElement('button'); bx.type='button'; bx.className='toc-ex'; bx.textContent='Zu den Übungen ↓';
-  bx.addEventListener('click',()=>document.getElementById('uebungen').scrollIntoView({behavior:reduce?'auto':'smooth'}));
-  toc.appendChild(bx);
+  buildToc([['Zu den Übungen ↓','uebungen']]);
   mountExercises(document.getElementById('exwrap'), t.ex.map(e=>Object.assign({},e)), t.id, true);
 }
 
@@ -1386,8 +1990,17 @@ function renderTest(){
   mountExercises(document.getElementById('exwrap'), items, 'test', false);
 }
 
-/* ---------- Übungs-Engine ---------- */
+/* ---------- Sonderzeichen ---------- */
 const KEYS = 'é è ê ë à â ç î ï ô û ù œ'.split(' ');
+const keysHtml = () => `<div class="keys" role="group" aria-label="Sonderzeichen einfügen">${KEYS.map(c=>`<button type="button" class="key" data-c="${c}" title="${c} einfügen">${c}</button>`).join('')}</div>`;
+function insertChar(target, c){
+  const s = target.selectionStart ?? target.value.length, en = target.selectionEnd ?? target.value.length;
+  target.value = target.value.slice(0,s) + c + target.value.slice(en);
+  target.focus(); target.setSelectionRange(s+1,s+1);
+  target.dispatchEvent(new Event('input',{bubbles:true}));
+}
+
+/* ---------- Übungs-Engine ---------- */
 function mountExercises(wrap, items, key, persist){
   const n = items.length;
   const state = new Array(n).fill(null);
@@ -1395,7 +2008,7 @@ function mountExercises(wrap, items, key, persist){
 
   wrap.innerHTML = `<div class="ex-bar">
       <div class="score" aria-live="polite"><strong class="sc">0</strong> von ${n} richtig</div>
-      <div class="keys" role="group" aria-label="Sonderzeichen einfügen">${KEYS.map(c=>`<button type="button" class="key" data-c="${c}" title="${c} einfügen">${c}</button>`).join('')}</div>
+      ${keysHtml()}
       <div class="bar-actions">
         <button type="button" class="btn sm" data-act="checkall">Alle prüfen</button>
         <button type="button" class="btn sm ghost" data-act="showall">Alle Lösungen</button>
@@ -1409,20 +2022,13 @@ function mountExercises(wrap, items, key, persist){
   const scEl = wrap.querySelector('.sc');
   const resEl = wrap.querySelector('.result');
 
-  function solution(it){ return it.t==='mc' ? it.o[it.c] : it.a[0]; }
-  function feedback(kind, it){
-    const head = {ok:'Richtig!', near:'Fast richtig: Prüfe die Akzente.', bad:'Leider falsch.', shown:'Lösung:'}[kind];
-    const sol = kind==='ok' ? '' : (kind==='shown' ? ` <span class="sol"><b lang="fr">${esc(solution(it))}</b></span>` : ` <span class="sol">Richtig ist: <b lang="fr">${esc(solution(it))}</b></span>`);
-    const alt = (kind!=='ok' && it.a && it.a.length>1) ? `<span class="alt">Ebenfalls richtig: <span lang="fr">${it.a.slice(1).map(esc).join(' · ')}</span></span>` : '';
-    return `<p><strong>${head}</strong>${sol}</p>${alt}${it.h?`<p class="why">${it.h}</p>`:''}`;
-  }
-  function setState(i, kind){
+  function setState(i, kind, html){
     state[i] = kind;
     const li = lis[i];
     li.classList.remove('is-ok','is-bad','is-near','is-shown');
     const fb = li.querySelector('.fb');
     fb.className = 'fb';
-    if(kind){ li.classList.add('is-'+kind); fb.classList.add(kind==='shown'?'shown':kind); fb.innerHTML = feedback(kind, items[i]); }
+    if(kind){ li.classList.add('is-'+kind); fb.classList.add(kind); fb.innerHTML = html||''; }
     else fb.innerHTML = '';
     update();
   }
@@ -1430,8 +2036,7 @@ function mountExercises(wrap, items, key, persist){
     const ok = state.filter(s=>s==='ok').length;
     scEl.textContent = ok;
     if(persist) save(key, ok, n);
-    const doneAll = state.every(s=>s!==null);
-    if(doneAll){
+    if(state.every(s=>s!==null)){
       const pct = Math.round(ok/n*100);
       const msg = pct>=90 ? 'Ausgezeichnet, dieses Thema sitzt.' : pct>=70 ? 'Gut gemacht. Schau dir die roten Aufgaben noch einmal an.' : pct>=50 ? 'Halb geschafft. Lies die Regeln oben nochmals und starte neu.' : 'Lies die Erklärungen oben in Ruhe durch und versuche es dann noch einmal.';
       resEl.innerHTML = `<p style="margin:0"><strong style="font-family:var(--f-display);font-size:1.3rem">${ok} von ${n} richtig (${pct} %)</strong></p><p style="margin:4px 0 0">${msg}</p>`;
@@ -1441,24 +2046,22 @@ function mountExercises(wrap, items, key, persist){
     const it = items[i];
     if(it.t==='mc' || state[i]==='shown') return;
     const inp = lis[i].querySelector('input');
-    const v = inp.value;
-    if(!v.trim()){
+    if(!inp.value.trim()){
       if(!silentEmpty){ const fb = lis[i].querySelector('.fb'); fb.className='fb'; fb.innerHTML='<p>Schreib zuerst eine Antwort in das Feld.</p>'; }
       return;
     }
-    const nv = norm(v);
-    const answers = it.a.map(norm);
-    if(answers.includes(nv)) setState(i,'ok');
-    else if(answers.some(a=>bare(a)===bare(nv))) setState(i,'near');
-    else setState(i,'bad');
+    const r = analyse(inp.value, it.a, it.f);
+    const fbk = textFeedback(r, it);
+    setState(i, fbk.state, fbk.html);
   }
   function show(i){
     const it = items[i];
     if(state[i]==='ok') return;
-    if(it.t==='mc'){ revealMc(i, null); setState(i,'shown'); return; }
-    const inp = lis[i].querySelector('input');
-    inp.value = it.a[0];
-    setState(i,'shown');
+    const sol = it.t==='mc' ? it.o[it.c] : it.a[0];
+    const alt = (it.t!=='mc' && it.a.length>1) ? `<p class="alt">Ebenfalls richtig: <span lang="fr">${it.a.slice(1).map(esc).join(' · ')}</span></p>` : '';
+    if(it.t==='mc') revealMc(i, null);
+    else lis[i].querySelector('input').value = it.a[0];
+    setState(i,'shown',`<p><strong>Lösung:</strong> <b lang="fr">${esc(sol)}</b></p>${alt}${it.h?`<p class="why">${it.h}</p>`:''}`);
   }
   function revealMc(i, chosen){
     const it = items[i];
@@ -1472,12 +2075,8 @@ function mountExercises(wrap, items, key, persist){
   wrap.addEventListener('click', e=>{
     const k = e.target.closest('.key');
     if(k){
-      const target = lastInput && document.body.contains(lastInput) ? lastInput : wrap.querySelector('.ex-item input:not([disabled])');
-      if(!target) return;
-      const s = target.selectionStart ?? target.value.length, en = target.selectionEnd ?? target.value.length;
-      target.value = target.value.slice(0,s) + k.dataset.c + target.value.slice(en);
-      target.focus(); target.setSelectionRange(s+1,s+1);
-      target.dispatchEvent(new Event('input',{bubbles:true}));
+      const target = lastInput && document.body.contains(lastInput) ? lastInput : wrap.querySelector('.ex-item input');
+      if(target) insertChar(target, k.dataset.c);
       return;
     }
     const act = e.target.closest('[data-act]');
@@ -1486,19 +2085,23 @@ function mountExercises(wrap, items, key, persist){
       if(a==='checkall'){
         items.forEach((it,i)=>check(i,true));
         const firstOpen = [...lis].find((li,i)=>state[i]===null);
-        if(firstOpen){ const f = firstOpen.querySelector('input,.opt'); if(f) f.focus({preventScroll:false}); }
+        if(firstOpen){ const f = firstOpen.querySelector('input,.opt'); if(f) f.focus(); }
       }
       else if(a==='showall') items.forEach((it,i)=>{ if(state[i]!=='ok') show(i); });
-      else if(a==='reset'){ mountExercises(wrap, items, key, persist); }
+      else if(a==='reset') mountExercises(wrap, items, key, persist);
       return;
     }
     const li = e.target.closest('.ex-item'); if(!li) return;
-    const i = +li.dataset.i;
+    const i = +li.dataset.i, it = items[i];
     const opt = e.target.closest('.opt');
     if(opt && !opt.disabled){
       const j = +opt.dataset.j;
       revealMc(i, j);
-      setState(i, j===items[i].c ? 'ok' : 'bad');
+      if(j===it.c) setState(i,'ok','<p><strong>Richtig!</strong></p>');
+      else {
+        const why = (it.w && it.w[j]) || it.h || '';
+        setState(i,'bad',`<p><strong>Leider falsch.</strong> Du hast <span lang="fr" class="w-bad">${it.o[j]}</span> gewählt, richtig ist <span lang="fr" class="w-good">${it.o[it.c]}</span>.</p>${why?`<p class="why">${why}</p>`:''}`);
+      }
       return;
     }
     if(e.target.closest('.do-check')) check(i,false);
@@ -1512,8 +2115,8 @@ function mountExercises(wrap, items, key, persist){
       const i = +e.target.closest('.ex-item').dataset.i;
       check(i,false);
       if(state[i]==='ok'){
-        const nxt = [...lis].slice(i+1).find((li,k)=>state[i+1+k]===null);
-        if(nxt){ const f = nxt.querySelector('input'); if(f) f.focus(); }
+        const nxt = [...lis].slice(i+1).find((li,k)=>state[i+1+k]===null && li.querySelector('input'));
+        if(nxt) nxt.querySelector('input').focus();
       }
     }
   });
@@ -1542,12 +2145,292 @@ function itemHtml(it, i, key){
   return `<li class="ex-item" data-i="${i}">${tag}${body}<div class="fb" aria-live="polite"></div></li>`;
 }
 
+/* =========================================================
+   UNREGELMÄSSIGE VERBEN
+   ========================================================= */
+const PR = ['je','tu','il/elle','nous','vous','ils/elles'];
+const IMP_PR = ['tu','nous','vous'];
+const isV = s => /^[aeiouyhâàäéèêëîïôöûùüœ]/i.test(s||'');
+function joinStem(st,en){
+  if(/^[ieè]/.test(en)){ if(st.endsWith('ge')) st=st.slice(0,-1); if(st.endsWith('ç')) st=st.slice(0,-1)+'c'; }
+  return st+en;
+}
+function psForms(ps){
+  if(ps.endsWith('int')){ const s=ps.slice(0,-3); return ['ins','ins','int','înmes','întes','inrent'].map(e=>s+e); }
+  if(ps.endsWith('ut')){ const s=ps.slice(0,-2); return ['us','us','ut','ûmes','ûtes','urent'].map(e=>s+e); }
+  if(ps.endsWith('it')){ const s=ps.slice(0,-2); return ['is','is','it','îmes','îtes','irent'].map(e=>s+e); }
+  const s=ps.slice(0,-1); return ['ai','as','a','âmes','âtes','èrent'].map(e=>joinStem(s,e));
+}
+const AUX = {avoir:['ai','as','a','avons','avez','ont'], etre:['suis','es','est','sommes','êtes','sont']};
+function forms(v){
+  if(v._f) return v._f;
+  const only = arr => v.imps ? arr.map((x,i)=>i===2?x:null) : arr;
+  const impStem = v.impf || v.p[3].replace(/ons$/,'');
+  const F = {};
+  F.pres = v.p;
+  F.impf = only(['ais','ais','ait','ions','iez','aient'].map(e=>joinStem(impStem,e)));
+  F.fut  = only(['ai','as','a','ons','ez','ont'].map(e=>v.fut+e));
+  F.cond = only(['ais','ais','ait','ions','iez','aient'].map(e=>v.fut+e));
+  F.subj = v.subj || [v.s1+'e', v.s1+'es', v.s1+'e', joinStem(v.s2,'ions'), joinStem(v.s2,'iez'), v.s1+'ent'];
+  F.ps   = only(psForms(v.ps));
+  const aux = v.aux==='être' ? AUX.etre : AUX.avoir;
+  F.pc   = only(aux.map((a,i)=> a+' '+(v.aux==='être' ? v.pp+(i<3?'(e)':'(e)s') : v.pp)));
+  F.pcAcc = only(aux.map((a,i)=> v.aux==='être' ? (i<3 ? [a+' '+v.pp, a+' '+v.pp+'e'] : [a+' '+v.pp+'s', a+' '+v.pp+'es']) : [a+' '+v.pp]));
+  if(v.imp===null) F.imp = null;
+  else if(v.imp) F.imp = v.imp;
+  else F.imp = [v.p[1].endsWith('es') ? v.p[1].slice(0,-1) : v.p[1], v.p[3], v.p[4]];
+  v._f = F; return F;
+}
+function withPron(i, form, subj, imps){
+  if(form==null) return null;
+  const p = imps ? 'il' : PR[i];
+  let s = (i===0 && isV(form)) ? "j'"+form : p+' '+form;
+  if(subj) s = ((i===2||i===5) ? "qu'" : 'que ')+s;
+  return s;
+}
+const TENSES = [
+  {id:'pres', fr:'Présent', on:true},
+  {id:'pc',   fr:'Passé composé', on:true},
+  {id:'impf', fr:'Imparfait', on:false},
+  {id:'fut',  fr:'Futur simple', on:true},
+  {id:'cond', fr:'Conditionnel présent', on:false},
+  {id:'subj', fr:'Subjonctif présent', on:true},
+  {id:'imp',  fr:'Impératif', on:false},
+  {id:'ps',   fr:'Passé simple (erkennen)', on:false}
+];
+const TIP = {
+  pres: v=>`Präsens von ${v.inf}: ${v.p.filter(Boolean).join(', ')}.`,
+  pc:   v=>`Hilfsverb: ${v.aux}, Partizip: ${v.pp}${v.aux==='être'?' (wird an das Subjekt angeglichen)':''}.`,
+  impf: v=>`Stamm aus der nous-Form: ${v.impf ? v.impf+'-' : 'nous '+v.p[3]+' → '+v.p[3].replace(/ons$/,'')+'-'}.`,
+  fut:  v=>`Futurstamm: ${v.fut}-.`,
+  cond: v=>`Conditionnel = Futurstamm (${v.fut}-) + Imparfait-Endungen.`,
+  subj: v=>v.subj ? 'Diese Formen sind unregelmässig und müssen auswendig gelernt werden.' : (v.s1===v.s2 ? `Stamm aus der ils-Form: ${v.s1}-.` : `Stamm aus der ils-Form: ${v.s1}-; für nous/vous: ${v.s2}-.`),
+  imp:  v=>'Imperativ = Präsensform von tu, nous, vous (bei -er-Verben ohne -s).',
+  ps:   v=>`Passé simple von ${v.inf}: il ${v.ps}.`
+};
+let trState = null;
+function renderVerbs(){
+  main.innerHTML = `<div class="wrap">
+    <header class="t-head">
+      <p class="t-nr">Training</p>
+      <h1 lang="fr">Les verbes irréguliers</h1>
+      <p class="t-de">Unregelmässige Verben</p>
+      <p class="lead">Die wichtigsten Verben sind unregelmässig. Hier findest du ${VERBS.length} Verben mit allen Zeiten, Merkhilfen zum Ableiten der Formen und einen Trainer, der deine Fehler später nochmals abfragt.</p>
+      <div class="why-box"><p class="why-t">Wann brauchst du das?</p><ul>
+        <li>In jedem Satz: être, avoir, faire, aller, pouvoir, vouloir und devoir gehören zu den häufigsten Wörtern überhaupt.</li>
+        <li>Alle anderen Grammatikthemen bauen darauf auf: passé composé (Partizip), Futur und Conditionnel (Stamm), subjonctif (Stamm).</li>
+        <li>Falsch konjugierte Verben gehören zu den häufigsten Punktabzügen im Aufsatz, weil sie sofort auffallen.</li></ul></div>
+      <nav class="toc" aria-label="Inhalt dieser Seite"></nav>
+    </header>
+    <div class="prose">
+      <h2 data-toc>So leitest du die Formen ab</h2>
+      ${wozuBox(['Wenn du eine Form nicht auswendig weisst.','Fast alle Zeiten lassen sich aus wenigen Grundformen ableiten. Wer diese kennt, muss viel weniger auswendig lernen.'])}
+      ${TBL(['Zeit','Woher kommt der Stamm?','Beispiel venir'],[
+        ['Imparfait','nous-Form des Präsens ohne -ons (einzige Ausnahme: être → ét-)','nous <b>ven</b>ons → je <b>ven</b>ais'],
+        ['Futur und Conditionnel','Futurstamm (meist der Infinitiv; die unregelmässigen musst du lernen)','<b>viendr</b>- → je viendrai / je viendrais'],
+        ['Subjonctif','ils-Form ohne -ent; nous und vous von der nous-Form','ils <b>vienn</b>ent → que je vienne; que nous <b>ven</b>ions'],
+        ['Participe présent','nous-Form + -ant (Ausnahmen: étant, ayant, sachant)','<b>ven</b>ant'],
+        ['Impératif','Präsens von tu, nous, vous','viens, venons, venez'],
+        ['Passé composé','Hilfsverb + participe passé (auswendig lernen)','je suis <b>venu(e)</b>'],
+        ['Passé simple','Endungsreihe auf -a, -i, -u oder -in','il <b>vint</b>, ils vinrent']])}
+      ${BOX('tip','Merkhilfe','<p>Lerne pro Verb nur fünf Grundformen: <b>je</b>, <b>nous</b> und <b>ils</b> im Präsens, das <b>Partizip</b> und den <b>Futurstamm</b>. Fast alles andere kannst du daraus ableiten.</p>')}
+      ${BOX('warn','Typische Stolpersteine','<p>Die ils-Form hat oft einen anderen Stamm als nous: <span lang="fr">ils <b>doivent</b> / nous devons, ils <b>prennent</b> / nous prenons, ils <b>boivent</b> / nous buvons</span>. Genau dieser Unterschied kommt im subjonctif zurück: <span lang="fr">que je <b>boive</b>, que nous <b>buvions</b></span>.</p>')}
+    </div>
+    <section class="ex-sec" id="trainer">
+      <h2>Verb-Trainer</h2>
+      <p class="hint">Wähle die Zeiten und Verben. Schreib die passende Form (ohne Pronomen) und drück <b>Enter</b>. Falsche Formen kommen nach ein paar Fragen wieder.</p>
+      <div id="trwrap"></div>
+    </section>
+    <section class="ex-sec" id="verbliste">
+      <h2>Alle Verben</h2>
+      <p class="hint">Klick auf ein Verb, um alle Zeiten zu sehen.</p>
+      <div class="vsearch"><label for="vq">Verb suchen</label><input id="vq" class="line" type="search" placeholder="z. B. prendre oder nehmen" autocomplete="off"></div>
+      <div class="vchips" id="vchips"></div>
+      <div id="vpanel"></div>
+    </section>
+  </div>`;
+  buildToc([['Verb-Trainer ↓','trainer'],['Alle Verben ↓','verbliste']]);
+  renderVerbList('');
+  showVerb(VERBS[0]);
+  document.getElementById('vq').addEventListener('input', e=>renderVerbList(e.target.value));
+  mountTrainer(document.getElementById('trwrap'));
+}
+function renderVerbList(q){
+  const nq = bare(low(q.trim()));
+  const list = VERBS.filter(v=>!nq || bare(low(v.inf)).includes(nq) || bare(low(v.de)).includes(nq));
+  document.getElementById('vchips').innerHTML = list.length
+    ? list.map(v=>`<button type="button" class="vchip${v.top?' top':''}" data-v="${VERBS.indexOf(v)}" lang="fr">${v.inf}<small lang="de">${v.de}</small></button>`).join('')
+    : '<p class="muted">Kein Verb gefunden.</p>';
+  document.querySelectorAll('.vchip').forEach(b=>b.addEventListener('click',()=>{ showVerb(VERBS[+b.dataset.v]); smooth(document.getElementById('vpanel')); }));
+}
+function showVerb(v){
+  const F = forms(v);
+  document.querySelectorAll('.vchip').forEach(b=>b.classList.toggle('active', VERBS[+b.dataset.v]===v));
+  const tbl = (title, arr, opt={}) => {
+    if(!arr) return `<div class="ctab"><h4>${title}</h4><p class="muted">Keine Formen</p></div>`;
+    const rows = arr.map((f,i)=>{
+      if(f==null) return '';
+      const pr = opt.imp ? '' : (opt.subj ? withPron(i,f,true,v.imps) : withPron(i,f,false,v.imps));
+      return `<li>${opt.imp ? `<span class="pr">(${IMP_PR[i]})</span> ${esc(f)}` : esc(pr)}</li>`;
+    }).join('');
+    return `<div class="ctab"><h4>${title}</h4><ul lang="fr">${rows}</ul></div>`;
+  };
+  document.getElementById('vpanel').innerHTML = `<div class="vcard">
+    <div class="vhead">
+      <div><h3 lang="fr">${v.inf}</h3><p class="de">${v.de}</p></div>
+      <button type="button" class="btn sm" id="trainThis">Nur dieses Verb trainieren</button>
+    </div>
+    <ul class="facts" lang="fr">
+      <li><span>Partizip</span>${v.pp}</li>
+      <li><span>Hilfsverb</span>${v.aux}</li>
+      <li><span>Futurstamm</span>${v.fut}-</li>
+      <li><span>Subjonctif</span>${v.subj ? 'unregelmässig' : (v.s1===v.s2 ? v.s1+'-' : v.s1+'- / '+v.s2+'-')}</li>
+      <li><span>Passé simple</span>il ${v.ps}</li>
+    </ul>
+    <div class="cgrid">
+      ${tbl('Présent', F.pres)}
+      ${tbl('Passé composé', F.pc)}
+      ${tbl('Imparfait', F.impf)}
+      ${tbl('Futur simple', F.fut)}
+      ${tbl('Conditionnel présent', F.cond)}
+      ${tbl('Subjonctif présent', F.subj, {subj:true})}
+      ${tbl('Impératif', F.imp, {imp:true})}
+      ${tbl('Passé simple', F.ps)}
+    </div>
+  </div>`;
+  document.getElementById('trainThis').addEventListener('click',()=>{
+    if(trState){ trState.only = v; trState.queue=[]; trState.setOnlyLabel(); trState.next(); smooth(document.getElementById('trainer')); }
+  });
+}
+function mountTrainer(wrap){
+  let saved = {};
+  try{ saved = JSON.parse(localStorage.getItem('fgm-trainer-v1'))||{}; }catch(e){}
+  const S = trState = {
+    tenses: new Set(saved.tenses || TENSES.filter(t=>t.on).map(t=>t.id)),
+    set: saved.set || 'top', only:null,
+    right:0, wrong:0, streak:0, count:0, queue:[], cur:null, done:false
+  };
+  wrap.innerHTML = `<div class="tr-settings">
+      <fieldset><legend>Zeiten</legend><div class="tchips">${TENSES.map(t=>`<label class="tchip"><input type="checkbox" value="${t.id}" ${S.tenses.has(t.id)?'checked':''}><span lang="fr">${t.fr}</span></label>`).join('')}</div></fieldset>
+      <fieldset><legend>Verben</legend><div class="tchips">
+        <label class="tchip"><input type="radio" name="vset" value="top" ${S.set==='top'?'checked':''}><span>Die 20 wichtigsten</span></label>
+        <label class="tchip"><input type="radio" name="vset" value="all" ${S.set==='all'?'checked':''}><span>Alle ${VERBS.length}</span></label>
+        <label class="tchip" id="onlyLbl" hidden><input type="radio" name="vset" value="only"><span></span></label>
+      </div></fieldset>
+    </div>
+    <div class="tr-card">
+      <div class="tr-top"><span class="tr-tense" lang="fr"></span><span class="tr-stats" aria-live="polite"></span></div>
+      <p class="tr-verb"></p>
+      <div class="tr-line"><span class="tr-pron" lang="fr"></span><input id="tr-in" class="line" type="text" lang="fr" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Verbform"></div>
+      ${keysHtml()}
+      <div class="ex-ctl"><button type="button" class="btn sm" id="trCheck">Prüfen</button><button type="button" class="btn sm ghost" id="trShow">Lösung zeigen</button><button type="button" class="btn sm ghost" id="trNext">Nächste Frage →</button></div>
+      <div class="fb" aria-live="polite"></div>
+    </div>`;
+  const $ = s => wrap.querySelector(s);
+  const inp = $('#tr-in'), fb = $('.fb'), card = $('.tr-card');
+  function persist(){ try{ localStorage.setItem('fgm-trainer-v1', JSON.stringify({tenses:[...S.tenses], set:S.set==='only'?'top':S.set})); }catch(e){} }
+  S.setOnlyLabel = ()=>{
+    const l = $('#onlyLbl'); l.hidden = false; l.querySelector('span').textContent = 'Nur ' + S.only.inf;
+    l.querySelector('input').checked = true; S.set = 'only';
+  };
+  function pool(){ return S.set==='only' && S.only ? [S.only] : S.set==='all' ? VERBS : VERBS.filter(v=>v.top); }
+  function makeQ(){
+    const ts = [...S.tenses]; const vs = pool();
+    for(let tries=0; tries<60; tries++){
+      const tense = ts[Math.floor(Math.random()*ts.length)];
+      const v = vs[Math.floor(Math.random()*vs.length)];
+      const F = forms(v);
+      if(tense==='imp'){ if(!F.imp) continue; const k=Math.floor(Math.random()*3); return {v,tense,i:k,ans:[F.imp[k]]}; }
+      let persons = v.imps ? [2] : (tense==='ps' ? [2,5] : [0,1,2,3,4,5]);
+      const i = persons[Math.floor(Math.random()*persons.length)];
+      if(tense==='ps') return {v,tense,i,ans:[v.inf],shown:'il'+(i===5?'s':'')+' '+F.ps[i]};
+      if(tense==='pc') return {v,tense,i,ans:F.pcAcc[i]};
+      const f = F[tense][i]; if(f==null) continue;
+      return {v,tense,i,ans:[f]};
+    }
+    return null;
+  }
+  function next(){
+    S.count++; S.done=false;
+    const due = S.queue.findIndex(q=>q.due<=S.count && (!S.only || S.set!=='only' || q.v===S.only));
+    let q = due>=0 ? S.queue.splice(due,1)[0] : makeQ();
+    if(!q){ fb.className='fb'; fb.innerHTML='<p>Wähle mindestens eine Zeit aus, die für diese Verben existiert.</p>'; return; }
+    S.cur = q;
+    const t = TENSES.find(x=>x.id===q.tense);
+    $('.tr-tense').textContent = t.fr + (q.repeat ? ' · Wiederholung' : '');
+    if(q.tense==='ps'){
+      $('.tr-verb').innerHTML = `Von welchem Verb kommt <b lang="fr">« ${esc(q.shown)} »</b>?`;
+      $('.tr-pron').textContent = 'Infinitiv:';
+    } else {
+      $('.tr-verb').innerHTML = `<span lang="fr">${q.v.inf}</span> <small>${q.v.de}</small>`;
+      let p = q.tense==='imp' ? '('+IMP_PR[q.i]+')' : (q.v.imps ? 'il' : PR[q.i]);
+      if(q.tense==='subj') p = ((q.i===2||q.i===5)?"qu'":'que ')+p;
+      $('.tr-pron').textContent = p;
+    }
+    inp.value=''; fb.className='fb'; fb.innerHTML=''; card.classList.remove('is-ok','is-bad','is-near');
+    stats(); inp.focus({preventScroll:true});
+  }
+  S.next = next;
+  function stats(){
+    const rep = S.queue.length;
+    $('.tr-stats').textContent = `Richtig ${S.right} · Falsch ${S.wrong} · Serie ${S.streak}${rep?` · ${rep} zum Wiederholen`:''}`;
+  }
+  function stripPron(s){
+    return s.replace(/^\s*(que\s+|qu')?\s*(j'|je\s+|tu\s+|il\/elle\s+|ils\/elles\s+|ils\s+|elles\s+|il\s+|elle\s+|on\s+|nous\s+|vous\s+)/i,'');
+  }
+  function check(){
+    const q = S.cur; if(!q || S.done) { if(S.done) next(); return; }
+    let v = inp.value; if(!v.trim()){ fb.className='fb'; fb.innerHTML='<p>Schreib zuerst eine Form.</p>'; return; }
+    if(q.tense!=='ps' && q.tense!=='imp') v = stripPron(v);
+    const r = analyse(v, q.ans, null);
+    S.done = true;
+    card.classList.remove('is-ok','is-bad','is-near');
+    const full = q.tense==='ps' ? q.v.inf : (q.tense==='imp' ? q.ans[0]+' !' : withPron(q.i, q.ans[0], q.tense==='subj', q.v.imps));
+    if(r.kind==='ok'){ S.right++; S.streak++; card.classList.add('is-ok'); fb.className='fb ok'; fb.innerHTML=`<p><strong>Richtig!</strong> <span lang="fr">${esc(full)}</span></p>`; }
+    else {
+      S.wrong++; S.streak=0;
+      S.queue.push(Object.assign({}, q, {due:S.count+3, repeat:true}));
+      const near = r.kind==='accent'||r.kind==='typo';
+      card.classList.add(near?'is-near':'is-bad'); fb.className='fb '+(near?'near':'bad');
+      const head = r.kind==='accent' ? 'Fast richtig: nur die Akzente stimmen nicht.' : r.kind==='typo' ? 'Fast richtig: ein Schreibfehler.' : 'Leider falsch.';
+      fb.innerHTML = `<p><strong>${head}</strong> Richtig ist <b lang="fr">${esc(full)}</b>.</p>${issueList(r.ops)}${near?'':`<p class="why">${TIP[q.tense](q.v)}</p>`}<p class="muted small">Diese Form kommt gleich nochmals.</p>`;
+    }
+    stats();
+  }
+  function showSol(){
+    const q = S.cur; if(!q || S.done) return;
+    S.done = true; S.wrong++; S.streak=0;
+    S.queue.push(Object.assign({}, q, {due:S.count+3, repeat:true}));
+    inp.value = q.ans[0];
+    fb.className='fb shown'; fb.innerHTML = `<p><strong>Lösung:</strong> <b lang="fr">${esc(q.ans[0])}</b></p><p class="why">${TIP[q.tense](q.v)}</p>`;
+    stats();
+  }
+  $('#trCheck').addEventListener('click', check);
+  $('#trShow').addEventListener('click', showSol);
+  $('#trNext').addEventListener('click', next);
+  inp.addEventListener('keydown', e=>{ if(e.key==='Enter'){ e.preventDefault(); check(); } });
+  inp.addEventListener('input', ()=>{ if(S.done && S.cur && !card.classList.contains('is-ok')) { /* weiterschreiben erlaubt */ } });
+  wrap.querySelector('.keys').addEventListener('mousedown', e=>{ if(e.target.closest('.key')) e.preventDefault(); });
+  wrap.querySelector('.keys').addEventListener('click', e=>{ const k=e.target.closest('.key'); if(k) insertChar(inp, k.dataset.c); });
+  wrap.querySelectorAll('.tchip input[type=checkbox]').forEach(c=>c.addEventListener('change',()=>{
+    if(c.checked) S.tenses.add(c.value); else S.tenses.delete(c.value);
+    if(!S.tenses.size){ c.checked = true; S.tenses.add(c.value); }
+    S.queue = S.queue.filter(q=>S.tenses.has(q.tense)); persist(); next();
+  }));
+  wrap.querySelectorAll('.tchip input[type=radio]').forEach(r=>r.addEventListener('change',()=>{
+    S.set = r.value; if(r.value!=='only') { S.only=null; } S.queue=[]; persist(); next();
+  }));
+  next();
+}
+
 /* ---------- Router ---------- */
 function route(){
   const h = decodeURIComponent(location.hash.slice(1));
   const t = TOPICS.find(x=>x.id===h);
+  trState = null;
   if(t){ renderTopic(t); setActive(t.id); document.title = t.fr + ' – Grammaire française'; }
   else if(h==='test'){ renderTest(); setActive('test'); document.title = 'Gemischter Test – Grammaire française'; }
+  else if(h==='verbes'){ renderVerbs(); setActive('verbes'); document.title = 'Unregelmässige Verben – Grammaire française'; }
   else { renderHome(); setActive('start'); document.title = 'Grammaire française – Matura'; }
   window.scrollTo(0,0);
 }
