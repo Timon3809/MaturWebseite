@@ -1,4 +1,15 @@
 (function () {
+  const base = document.currentScript ? document.currentScript.src : "";
+  const href = base ? new URL("favicon.png", base).href : "favicon.png";
+  document.querySelectorAll('link[rel~="icon"]').forEach((l) => l.remove());
+  const link = document.createElement("link");
+  link.rel = "icon";
+  link.type = "image/png";
+  link.href = href;
+  document.head.appendChild(link);
+})();
+
+(function () {
   const themeStorageKey = "vormatur-theme";
   const savedTheme = localStorage.getItem(themeStorageKey);
   const isDark = savedTheme === "dark";
