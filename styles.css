@@ -428,6 +428,8 @@ button.mindmap-node:hover, button.mindmap-node:focus-visible, button.mindmap-nod
 
 @media (max-width: 760px) {
   .summary-text img, .summary-text .summary-figure-wide img { max-width: 100%; max-height: none; }
+  .summary-text .summary-figure-wide.summary-svg { overflow-x: auto; }
+  .summary-text .summary-figure-wide.summary-svg svg { min-width: 520px; }
   .sidebar { position: sticky; top: 0; width: 100%; height: auto; flex-direction: row; align-items: center; justify-content: space-between; border-right: 0; border-bottom: 1px solid var(--line); padding: 10px 17px; }
   .brand-mark { width: 32px; height: 32px; }
   .sidebar-label { display: none; }

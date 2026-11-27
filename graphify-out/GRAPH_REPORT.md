@@ -1,43 +1,52 @@
-# Graph Report - MaturWebseite  (2026-11-18)
+# Graph Report - GitMaturWebseite  (2026-11-27)
 
 ## Corpus Check
-- 52 files · ~227,939 words
+- 62 files · ~326,468 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 9 file(s) not represented in the graph (top: .css 4, .zip 4, (none) 1)
 
 ## Summary
-- 1342 nodes · 2028 edges · 186 communities (99 shown, 87 thin omitted)
-- Extraction: 86% EXTRACTED · 14% INFERRED · 0% AMBIGUOUS · INFERRED: 286 edges (avg confidence: 0.84)
+- 1456 nodes · 2171 edges · 195 communities (106 shown, 89 thin omitted)
+- Extraction: 87% EXTRACTED · 13% INFERRED · 0% AMBIGUOUS · INFERRED: 287 edges (avg confidence: 0.84)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `14a7c312`
+- Built from commit: `cfebc6a3`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- app.js
+- Karten-Trainer/src/app.js
 - Schweiz-Kartentrainer/src/app.js
 - Geologisches Profil Jura-Alpen
 - KÃ¶ppen Klimatypen
 - Akkumulator (Rechargeable Battery / Accumulator)
 - Glossar-Mindmap Script
+- sys
 - Projektstruktur und FÃ¤cher
 - Historische China-Karte
+- apply_fragments.js
+- add_glossary.js
+- Arbeitsablauf
+- HTML-Bausteine der Zusammenfassungen
 - Alpine Deckentektonik
 - Schweizer Asylverfahren
 - Peking Stadtplan
+- add_topics.js
 - NSDAP-Organisation
 - Geschichte Stoffplan Begriffe
 - PrÃ¼fungssimulator Script
 - Geographie Resourcen Bilder
 - Geographie Resourcen Bilder
+- reorder_groups.js
 - Geographie Resourcen Bilder
 - Geographie Resourcen Dateien
 - Geographie Ressourcen Bilder
+- outline.js
 - Kleines Cluster geschichte_dateien_page
 - Geschichte Resourcen Dateien
 - Chemie Resourcen Pr
+- r
 - Geographie Resourcen Bilder
 - Geographie Resourcen Bilder
 - Geographie Resourcen Dateien
@@ -107,7 +116,6 @@
 - Geschichte Resourcen Bilder
 - Geschichte Resourcen Bilder
 - Geschichte Resourcen Bilder
-- Claude Claude Graphify
 - Geographie Resourcen Bilder
 - build_data.py
 - Geo P12 1
@@ -326,9 +334,9 @@
 - **Crystalline Massifs as Basement Windows (Aar + Gotthard)** — geographie_resourcen_bilder_geo_p10_1_aarmassiv, geographie_resourcen_bilder_geo_p10_1_gotthard_massiv, geographie_resourcen_bilder_geo_p10_1_grundgebirge [INFERRED 0.95]
 - **Molasse Foreland Basin Sequence (Mittelland → Subalpine → Alpenrand)** — geographie_resourcen_bilder_geo_p10_1_mittelland_molasse, geographie_resourcen_bilder_geo_p10_1_subalpine_molasse, geographie_resourcen_bilder_geo_p10_1_alpenrand [INFERRED 0.95]
 
-## Communities (186 total, 87 thin omitted)
+## Communities (195 total, 89 thin omitted)
 
-### Community 0 - "app.js"
+### Community 0 - "Karten-Trainer/src/app.js"
 Cohesion: 0.07
 Nodes (73): activeMapItems(), activePointers, appendMarkerSymbol(), applyTheme(), applyTransform(), availableTypes(), chooseMapItem(), clamp() (+65 more)
 
@@ -356,6 +364,22 @@ Nodes (22): Matur-Sektion (Juni 2027), Startseite: Vormatur & Matur, Vormatur-Se
 Cohesion: 0.12
 Nodes (23): Hainan Island, Historical German Map of Eastern China, Honan (Henan Province), Hopeh (Hebei Province), Hunan Province, Hupeh (Hubei Province), Hwang Hai (Yellow Sea), Hwangho (Yellow River / Huang He) (+15 more)
 
+### Community 12 - "apply_fragments.js"
+Cohesion: 0.09
+Nodes (19): all, args, dry, dup, edits, [file, topicKey, ...frags], fs, idHits (+11 more)
+
+### Community 13 - "add_glossary.js"
+Cohesion: 0.14
+Nodes (14): a1, a2, args, dry, existing, [file, json], fs, i1 (+6 more)
+
+### Community 14 - "Arbeitsablauf"
+Cohesion: 0.13
+Nodes (14): 1. Bestand erfassen, 2. Quellen sichten, 3. Abbildungen ausschneiden, 4. Schemata und Grafiken zeichnen, 5. Kapitel schreiben, 6. Einsetzen, 6b. Glossar ergänzen, 7. Prüfen (+6 more)
+
+### Community 15 - "HTML-Bausteine der Zusammenfassungen"
+Cohesion: 0.18
+Nodes (10): 1. Abbildung aus dem Skript, 2. Inline-SVG-Schema, 3. Tabellen, 4. Merke-Kasten, 5. Listen und Zwischentitel, 6. Bildunterschrift und Quelle, 7. SVG-Regeln und Farbpalette, 8. Vorlagen für häufige Schemata (+2 more)
+
 ### Community 16 - "Alpine Deckentektonik"
 Cohesion: 0.16
 Nodes (20): Aarmassiv (Aar Massif), Alpenrand (Alpine Margin), Swiss Alps Geological Cross-Section Diagram, Autochthone Sedimente (Autochthonous Sediments), Bedrettomulde (Bedretto Syncline), Bündner Schiefer (Bündner Slate), Flysch, Gotthard-Massiv (Gotthard Massif) (+12 more)
@@ -367,6 +391,10 @@ Nodes (18): Airport Entry Point (Flughafen / aéroport), Cantons — Asylum Acco
 ### Community 18 - "Peking Stadtplan"
 Cohesion: 0.17
 Nodes (18): Große Halle des Volkes, Hauptbahnhof, Konfuziustempel, Kulturpalast, Lamatempel, Mongolentempel, Museum der chinesischen Revolution, Nutzungskategorien (Legende) (+10 more)
+
+### Community 19 - "add_topics.js"
+Cohesion: 0.20
+Nodes (10): args, block, dry, [file, specFile], fs, ids, q(), re (+2 more)
 
 ### Community 20 - "NSDAP-Organisation"
 Cohesion: 0.12
@@ -388,6 +416,10 @@ Nodes (16): Afrikanischer Kontinent (südalpiner Raum, Flachmeersedimente), Afri
 Cohesion: 0.27
 Nodes (16): Tour Map: St. Moritz Region (Satellite), Alp Suvretta, Celerina/Schlarigna, Champfèr, Corviglia, Crap da l'Aivla, Upper Engadin Valley, Maloja (+8 more)
 
+### Community 25 - "reorder_groups.js"
+Cohesion: 0.20
+Nodes (10): args, chunks, dry, endRe, [file, ...order], first, fs, rank() (+2 more)
+
 ### Community 26 - "Geographie Resourcen Bilder"
 Cohesion: 0.18
 Nodes (15): Afrikanischer Kontinent (African Plate), Alpenfaltung (Alpine Orogeny), Briançonnais-Schwelle, Divergenz und Bildung neuer Erdkruste (Divergence and New Crust Formation), Europäischer Kontinent (European Plate), Generoso-Ozean, Helvetikum, Luganer Schwelle (+7 more)
@@ -399,6 +431,10 @@ Nodes (15): Lehrmittel Buch "Erde", Erdbeben, Tsunami und Vulkanismus, Aussertro
 ### Community 28 - "Geographie Ressourcen Bilder"
 Cohesion: 0.20
 Nodes (15): USA Klima p5-1 - Present Potential Vegetation Map of North America, Cool Temperate and Mixed, Grassland, Ice, Mediterranean Scrub (Medit. scrub), Mid Taiga, Open Boreal Woodland, Open Woodland (+7 more)
+
+### Community 29 - "outline.js"
+Cohesion: 0.22
+Nodes (5): [file, flag, topicId, out], fs, loadTopics(), path, topics
 
 ### Community 30 - "Kleines Cluster geschichte_dateien_page"
 Cohesion: 0.22
@@ -689,7 +725,7 @@ Cohesion: 0.67
 Nodes (3): Nationalitätensowjet (Soviet of Nationalities), Oberster Sowjet (Supreme Soviet), Unionssowjet (Soviet of the Union)
 
 ### Community 126 - "build_data.py"
-Cohesion: 0.14
+Cohesion: 0.15
 Nodes (15): _city_osm(), city_xy(), hav(), lake_geom(), load_cache(), nodes(), _pass_osm(), pass_xy() (+7 more)
 
 ### Community 206 - "glossar-quiz.js"
@@ -701,11 +737,11 @@ Cohesion: 0.08
 Nodes (53): addNucleus(), animateEquilibriumParticles(), atomRadius(), chooseElement(), currentElement(), currentMolecule(), drawAtom(), drawAtomrumpf() (+45 more)
 
 ### Community 209 - "ovp.py"
-Cohesion: 0.18
+Cohesion: 0.25
 Nodes (3): run(), run(), q()
 
 ### Community 210 - "json"
-Cohesion: 0.23
+Cohesion: 0.21
 Nodes (7): build(), clean(), r(), features(), geometry(), load(), _ring()
 
 ### Community 211 - "build_main.py"
@@ -713,8 +749,8 @@ Cohesion: 0.15
 Nodes (3): add(), best_anchor(), uid()
 
 ### Community 212 - "re"
-Cohesion: 0.24
-Nodes (6): drop_dup_consts(), js_json(), strip_modules(), rel_lines(), river_lines(), slug()
+Cohesion: 0.32
+Nodes (4): drop_dup_consts(), js_json(), strip_modules(), slug()
 
 ### Community 214 - "Prüfbericht: Schweizer Karte (Legende + deine beschriftete Karte)"
 Cohesion: 0.40
@@ -739,20 +775,20 @@ Nodes (3): Datensatz neu erzeugen (`tools/pipeline/`), Schweizer Kartentrainer �
   C:/Users/irar/MaturWebseite/Geographie/Resourcen/Bilder/geo-p12-1.jpg · relation: references
 
 ## Knowledge Gaps
-- **297 isolated node(s):** `Nagelfluh (Alpine Conglomerate)`, `Helvetikum`, `Tethys Ocean`, `Ur-Donau (Proto-Danube)`, `Die Organisation der NSDAP` (+292 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 419 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **87 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **295 isolated node(s):** `Nagelfluh (Alpine Conglomerate)`, `Helvetikum`, `Tethys Ocean`, `Ur-Donau (Proto-Danube)`, `Die Organisation der NSDAP` (+290 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 504 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **89 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Stufe 4: Die Schweiz` connect `Geographie Resourcen Dateien` to `Geographie Resourcen Dateien`, `Geographie Resourcen Dateien`, `Geographie Resourcen Dateien`, `Geographie Resourcen Dateien`?**
+- **Why does `Wiener Kongress: Restauration und Regeneration, Nationalstaatenbildung` connect `Geschichte Stoffplan Begriffe` to `Geschichte Resourcen Dateien`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `Nagelfluh (Alpine Conglomerate)`, `Helvetikum`, `Tethys Ocean` to the rest of the system?**
-  _297 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `app.js` be split into smaller, more focused modules?**
+  _295 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Karten-Trainer/src/app.js` be split into smaller, more focused modules?**
   _Cohesion score 0.0670886075949367 - nodes in this community are weakly interconnected._
-- **Why does `Lehrmittel Buch "Erde"` connect `Geographie Resourcen Dateien` to `Geographie Resourcen Dateien`, `Geographie Resourcen Dateien`, `Geographie Resourcen Dateien`, `Geographie Resourcen Dateien`?**
+- **Why does `Schweizer Geschichtsbuch` connect `Geschichte Resourcen Dateien` to `Geschichte Resourcen Dateien`, `Geschichte Resourcen Dateien`, `Geschichte Stoffplan Begriffe`, `Geschichte Resourcen Dateien`, `Geschichte Resourcen Dateien`, `Geschichte Resourcen Dateien`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Should `Schweiz-Kartentrainer/src/app.js` be split into smaller, more focused modules?**
   _Cohesion score 0.0670886075949367 - nodes in this community are weakly interconnected._

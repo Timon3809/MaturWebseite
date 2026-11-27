@@ -1792,13 +1792,196 @@ window.subjectData.summaries = {
     {
       id: "topic-8",
       name: "Organische Chemie",
-      status: "not-covered",
       subtopics: [
-        { name: "Kurze Grundlagen der organischen Chemie", placeholder: true },
-        { name: "Formeln zur Beschreibung von organischen Molekülen", placeholder: true },
-        { name: "Grundbausteine der organischen Industrie: Alkane", placeholder: true },
-        { name: "Funktionelle Gruppen und Stoffklassen", placeholder: true },
-        { name: "Die Reaktionen von organischen Molekülen", placeholder: true }
+        {
+          name: "Kurze Grundlagen der organischen Chemie",
+          summary: `
+            <p>Die <strong>organische Chemie</strong> untersucht Aufbau und Eigenschaften von Kohlenstoffverbindungen. Fast alle Kohlenstoffverbindungen werden dazugezählt; einige einfache Verbindungen wie Kohlenstoffdioxid und Carbonate gelten als Ausnahmen. Früher nahm man an, dass organische Stoffe nur mithilfe einer besonderen «Lebenskraft» (Vis Vitalis) entstehen könnten.</p>
+            <figure class="summary-figure summary-figure-wide summary-svg"><svg viewBox="0 0 640 190" role="img" aria-label="Entwicklung der Definition der organischen Chemie" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+              <line x1="84" y1="88" x2="556" y2="88" stroke="currentColor" stroke-width="2"/>
+              <circle cx="105" cy="88" r="8" fill="#c47b59"/><circle cx="320" cy="88" r="8" fill="#4f7ea8"/><circle cx="535" cy="88" r="8" fill="#58745a"/>
+              <rect x="20" y="20" width="170" height="48" rx="6" fill="rgba(196,123,89,.14)" stroke="#c47b59"/>
+              <rect x="235" y="108" width="170" height="54" rx="6" fill="rgba(79,126,168,.13)" stroke="#4f7ea8"/>
+              <rect x="450" y="20" width="170" height="48" rx="6" fill="rgba(88,116,90,.13)" stroke="#58745a"/>
+              <g fill="currentColor" text-anchor="middle">
+                <text x="105" y="40" font-weight="bold">1806: Berzelius</text><text x="105" y="56">Begriff «organisch»</text>
+                <text x="320" y="128" font-weight="bold">1828: Wöhler</text><text x="320" y="145">Harnstoff wird hergestellt</text>
+                <text x="535" y="40" font-weight="bold">Heute</text><text x="535" y="56">Chemie der C-Verbindungen</text>
+              </g>
+            </svg><figcaption><strong>Abb. – Von der «Lebenskraft» zur heutigen Definition.</strong> Die Herstellung von Harnstoff aus einem Stoffwechselprodukt zeigte, dass organische Stoffe auch im Labor entstehen können.<span class="figure-source">Quelle: Skript «Kapitel 7 – Organische Chemie», S. 1</span></figcaption></figure>
+            <div class="summary-table-wrap"><table><caption>Einordnung ausgewählter Kohlenstoffverbindungen</caption><thead><tr><th>Verbindung</th><th>Einordnung gemäss Skript</th></tr></thead><tbody>
+              <tr><td><strong>Harnstoff</strong></td><td>Organische Verbindung; 1828 von Friedrich Wöhler hergestellt.</td></tr>
+              <tr><td><strong>Kohlenstoffdioxid (CO<sub>2</sub>)</strong></td><td>Kohlenstoffverbindung, die nicht zur organischen Chemie gezählt wird.</td></tr>
+              <tr><td><strong>Carbonat-Ion (CO<sub>3</sub><sup>2−</sup>)</strong></td><td>Beispiel einer weiteren Ausnahme.</td></tr>
+            </tbody></table></div>
+            <div class="summary-merke"><strong>Merke:</strong> «Organisch» bedeutet heute nicht «nur von Lebewesen gebildet»: Entscheidend ist die Chemie der Kohlenstoffverbindungen.</div>
+          `
+        },
+        {
+          name: "Formeln zur Beschreibung von organischen Molekülen",
+          summary: `
+            <p>Formeln zeigen unterschiedliche Aspekte desselben Moleküls. Die <strong>Summenformel</strong> zählt Atome; Struktur- und Skelettformeln machen sichtbar, wie sie verknüpft sind.</p>
+            <div class="summary-table-wrap"><table><caption>Darstellungen am Beispiel Ethanol</caption><thead><tr><th>Formelart</th><th>Beispiel</th><th>Was ist erkennbar?</th></tr></thead><tbody>
+              <tr><td><strong>Summenformel</strong></td><td>C<sub>2</sub>H<sub>6</sub>O</td><td>Art und Anzahl der Atome; die Verknüpfung bleibt offen.</td></tr>
+              <tr><td><strong>Gruppenformel</strong></td><td>CH<sub>3</sub>CH<sub>2</sub>OH</td><td>Atome sind gruppiert, die Verknüpfung wird angedeutet.</td></tr>
+              <tr><td><strong>Lewis-/Strukturformel</strong></td><td>CH<sub>3</sub>—CH<sub>2</sub>—O—H</td><td>Welche Atome miteinander verbunden sind; Lewis-Formeln können Elektronenpaare zeigen.</td></tr>
+              <tr><td><strong>Skelettformel</strong></td><td>Zickzack-Kette mit «OH» am Ende</td><td>Kohlenstoffgerüst kompakt; C-Atome und daran gebundene H-Atome werden weggelassen.</td></tr>
+              <tr><td><strong>Keil-Strich-Formel</strong></td><td>Striche und Keile</td><td>Zusätzliche räumliche Information; die Grundformen von Molekülen sind im Kapitel «Moleküle und molekulare Stoffe» erklärt.</td></tr>
+            </tbody></table></div>
+            <figure class="summary-figure summary-figure-wide summary-svg"><svg viewBox="0 0 640 180" role="img" aria-label="Skelettformel einer Kohlenstoffkette mit markiertem Ende und Ecke" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+              <polyline points="150,105 250,45 350,105 450,45" fill="none" stroke="#4f7ea8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="150" cy="105" r="5" fill="#c47b59"/><circle cx="250" cy="45" r="5" fill="#c47b59"/><circle cx="350" cy="105" r="5" fill="#c47b59"/><circle cx="450" cy="45" r="5" fill="#c47b59"/>
+              <g fill="currentColor" text-anchor="middle"><text x="150" y="140">Ende = C</text><text x="250" y="24">Ecke = C</text><text x="350" y="140">Ecke = C</text><text x="450" y="24">Ende = C</text><text x="320" y="168">C–C-Bindungen werden als Striche gezeichnet</text></g>
+            </svg><figcaption><strong>Abb. – So liest man eine Skelettformel.</strong> Jedes Linienende und jede Ecke steht für ein C-Atom. H-Atome an C werden nicht eingezeichnet; andere Atome wie O werden ausgeschrieben.<span class="figure-source">Quelle: nach Skript «Kapitel 7 – Organische Chemie», S. 3</span></figcaption></figure>
+            <h3>Strukturformeln aus einer Summenformel entwickeln</h3>
+            <ol>
+              <li>Alle vorkommenden Atome und ihre Häufigkeit notieren.</li>
+              <li>Atome mit freien Valenzelektronen so verbinden, dass bindende Elektronenpaare entstehen.</li>
+              <li>H-Atome und Halogene (F, Cl, Br, I) bilden jeweils nur eine Bindung; bei C, N und O können Mehrfachbindungen vorkommen.</li>
+              <li>Am Schluss prüfen: keine ungepaarten Elektronen übrig und die Bindigkeiten der Atome erfüllt.</li>
+            </ol>
+            <h3>Isomerie</h3>
+            <p><strong>Isomere</strong> haben dieselbe Summenformel, aber eine unterschiedliche Verknüpfung oder räumliche Anordnung ihrer Atome. Damit können sich auch ihre Stoffeigenschaften unterscheiden.</p>
+            <div class="summary-table-wrap"><table><caption>Gleiche Summenformel – unterschiedliche Struktur</caption><thead><tr><th>Beispiel mit C<sub>3</sub>H<sub>6</sub>O</th><th>Verknüpfung</th><th>Stoffklasse</th></tr></thead><tbody>
+              <tr><td><strong>Propanal</strong></td><td>CH<sub>3</sub>—CH<sub>2</sub>—CHO</td><td>Aldehyd</td></tr>
+              <tr><td><strong>Propanon (Aceton)</strong></td><td>CH<sub>3</sub>—CO—CH<sub>3</sub></td><td>Keton</td></tr>
+            </tbody></table></div>
+            <h3>Konformation und räumliche Isomerie</h3>
+            <div class="summary-table-wrap"><table><thead><tr><th>Art</th><th>Was ist anders?</th><th>Einordnung</th></tr></thead><tbody>
+              <tr><td><strong>Konformation</strong></td><td>Drehung um eine C—C-Einfachbindung verändert die räumliche Stellung der Gruppen.</td><td>Gleiches Molekül; keine andere Verknüpfung.</td></tr>
+              <tr><td><strong>Geometrische Isomerie</strong></td><td>Gruppen an einer C=C-Doppelbindung liegen auf unterschiedlichen Seiten.</td><td>Keine freie Drehung um C=C; stabile räumliche Isomere.</td></tr>
+            </tbody></table></div>
+            <figure class="summary-figure summary-figure-wide summary-svg"><svg viewBox="0 0 640 180" role="img" aria-label="Zwei geometrische Isomere mit Brom- und Wasserstoffatomen an einer Kohlenstoff-Doppelbindung" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+              <g stroke="currentColor" stroke-width="2" fill="none">
+                <path d="M120 80h80 M120 87h80 M135 80l-15-32 M185 80l15-32 M135 87l-15 32 M185 87l15 32"/>
+                <path d="M440 80h80 M440 87h80 M455 80l-15-32 M505 80l15 32 M455 87l-15 32 M505 87l15-32"/>
+              </g>
+              <g fill="currentColor" text-anchor="middle"><text x="120" y="42">Br</text><text x="200" y="42">Br</text><text x="120" y="151">H</text><text x="200" y="151">H</text>
+                <text x="440" y="42">Br</text><text x="520" y="151">Br</text><text x="440" y="151">H</text><text x="520" y="42">H</text>
+                <text x="160" y="24" font-weight="bold">gleiche Seite</text><text x="480" y="24" font-weight="bold">gegenüber</text></g>
+            </svg><figcaption><strong>Abb. – Geometrische Isomere an einer Doppelbindung.</strong> Die Gruppen sind entweder auf derselben Seite oder einander gegenüber angeordnet; wegen der C=C-Bindung können sie nicht frei umeinander rotieren.<span class="figure-source">Quelle: nach Skript «Kapitel 7 – Organische Chemie», S. 6</span></figcaption></figure>
+            <div class="summary-merke"><strong>Merke:</strong> Eine Summenformel allein legt die Struktur nicht fest. Für die Verknüpfung braucht es mindestens eine Struktur- oder Skelettformel.</div>
+          `
+        },
+        {
+          name: "Grundbausteine der organischen Industrie: Alkane",
+          summary: `
+            <p><strong>Alkane</strong> sind gesättigte Kohlenwasserstoffe: Sie bestehen nur aus C- und H-Atomen und enthalten ausschliesslich C—C-Einfachbindungen. Die unverzweigte Reihe wächst jeweils um eine CH<sub>2</sub>-Gruppe.</p>
+            <div class="summary-table-wrap"><table><caption>Homologe Reihe der Alkane</caption><thead><tr><th>Name</th><th>Summenformel</th><th>Name</th><th>Summenformel</th></tr></thead><tbody>
+              <tr><td><strong>Methan</strong></td><td>CH<sub>4</sub></td><td><strong>Hexan</strong></td><td>C<sub>6</sub>H<sub>14</sub></td></tr>
+              <tr><td><strong>Ethan</strong></td><td>C<sub>2</sub>H<sub>6</sub></td><td><strong>Heptan</strong></td><td>C<sub>7</sub>H<sub>16</sub></td></tr>
+              <tr><td><strong>Propan</strong></td><td>C<sub>3</sub>H<sub>8</sub></td><td><strong>Octan</strong></td><td>C<sub>8</sub>H<sub>18</sub></td></tr>
+              <tr><td><strong>Butan</strong></td><td>C<sub>4</sub>H<sub>10</sub></td><td><strong>Decan</strong></td><td>C<sub>10</sub>H<sub>22</sub></td></tr>
+              <tr><td><strong>Pentan</strong></td><td>C<sub>5</sub>H<sub>12</sub></td><td><strong>Allgemein</strong></td><td>C<sub>n</sub>H<sub>2n+2</sub></td></tr>
+            </tbody></table></div>
+            <p>Aufeinanderfolgende Vertreter unterscheiden sich jeweils um <strong>CH<sub>2</sub></strong>. Die Reihe heisst deshalb <strong>homolog</strong>.</p>
+            <h3>Erdöl: Entstehung und Trennung</h3>
+            <figure class="summary-figure summary-figure-wide summary-svg"><svg viewBox="0 0 640 220" role="img" aria-label="Vier Schritte der Erdölentstehung und Gewinnung" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
+              <g stroke="currentColor" fill="#fff"><rect x="8" y="35" width="142" height="112" rx="7"/><rect x="170" y="35" width="142" height="112" rx="7"/><rect x="332" y="35" width="142" height="112" rx="7"/><rect x="494" y="35" width="138" height="112" rx="7"/></g>
+              <g fill="currentColor" text-anchor="middle"><text x="79" y="62" font-weight="bold">① Organismen</text><text x="79" y="84">sinken auf</text><text x="79" y="100">Meeresboden</text><text x="79" y="126">sauerstoffarm</text>
+                <text x="241" y="62" font-weight="bold">② Faulschlamm</text><text x="241" y="84">wird kaum</text><text x="241" y="100">abgebaut</text><text x="241" y="126">Luftabschluss</text>
+                <text x="403" y="62" font-weight="bold">③ Überdeckung</text><text x="403" y="84">Druck + Wärme</text><text x="403" y="100">über Millionen</text><text x="403" y="116">Jahre</text>
+                <text x="563" y="62" font-weight="bold">④ Lagerstätte</text><text x="563" y="84">Erdöl / Erdgas</text><text x="563" y="100">durch Risse</text><text x="563" y="116">erschliessbar</text></g>
+              <g stroke="#c47b59" stroke-width="2"><path d="M151 91h16"/><path d="M313 91h16"/><path d="M475 91h16"/></g>
+            </svg><figcaption><strong>Abb. – Vom abgestorbenen Plankton zum Erdöl.</strong> Sauerstoffarme Ablagerung, Überdeckung sowie Druck und Wärme verwandeln organisches Material über lange Zeiträume in Kohlenwasserstoffe.<span class="figure-source">Quelle: nach Skript «Kapitel 7 – Organische Chemie», S. 7</span></figcaption></figure>
+            <p>Erdöl ist ein Gemisch aus mehreren Hundert Kohlenwasserstoffen, darunter Alkane, Cycloalkane und aromatische Verbindungen. Es dient als Energieträger und als Rohstoff, etwa für Kunststoffe, Medikamente, Lösungsmittel, Farben und Kosmetika. In der <strong>fraktionierten Destillation</strong> werden die Bestandteile wegen ihrer unterschiedlichen Siedebereiche getrennt:</p>
+            <div class="summary-table-wrap"><table><caption>Fraktionen der Erdöldestillation (Temperaturbereiche aus dem Skript)</caption><thead><tr><th>Fraktion</th><th>Siedebereich</th><th>Beispiel / Verwendung</th></tr></thead><tbody>
+              <tr><td><strong>Gase</strong></td><td>unter 30 °C</td><td>Gasfraktion</td></tr>
+              <tr><td><strong>Benzin</strong></td><td>35–140 °C</td><td>Kraftstoff</td></tr>
+              <tr><td><strong>Mitteldestillate</strong></td><td>150–250 °C</td><td>Petroleum / Kerosin</td></tr>
+              <tr><td><strong>Dieselöl und leichtes Heizöl</strong></td><td>250–360 °C</td><td>Treib- und Brennstoff</td></tr>
+              <tr><td><strong>Rückstand</strong></td><td>höher siedend</td><td>Schweres Heizöl</td></tr>
+            </tbody></table></div>
+            <h3>E-Fuels aus erneuerbarer Energie</h3>
+            <figure class="summary-figure summary-figure-wide summary-svg"><svg viewBox="0 0 640 170" role="img" aria-label="Herstellung von E-Fuels aus Wasser, Strom und Kohlenstoffdioxid" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+              <g stroke="#4f7ea8" fill="rgba(79,126,168,.1)"><rect x="14" y="42" width="170" height="74" rx="8"/><rect x="235" y="42" width="170" height="74" rx="8"/><rect x="456" y="42" width="170" height="74" rx="8"/></g>
+              <g fill="currentColor" text-anchor="middle"><text x="99" y="65" font-weight="bold">① Elektrolyse</text><text x="99" y="85">2 H₂O → 2 H₂ + O₂</text><text x="99" y="103">Strom liefert H₂</text>
+                <text x="320" y="65" font-weight="bold">② CO₂ gewinnen</text><text x="320" y="85">Industrieabgas</text><text x="320" y="103">oder Atmosphäre</text>
+                <text x="541" y="65" font-weight="bold">③ Synthese</text><text x="541" y="85">H₂ + CO₂</text><text x="541" y="103">zu Kohlenwasserstoff</text></g>
+              <g stroke="#c47b59" stroke-width="2"><path d="M186 79h42"/><path d="M407 79h42"/></g>
+            </svg><figcaption><strong>Abb. – Drei Schritte zur Herstellung synthetischer Kraftstoffe.</strong> Erneuerbarer Strom erzeugt Wasserstoff; CO₂ wird gewonnen und zusammen mit H₂ in Kohlenwasserstoffe umgewandelt.<span class="figure-source">Quelle: nach Skript «Kapitel 7 – Organische Chemie», S. 8–9</span></figcaption></figure>
+            <div class="summary-table-wrap"><table><caption>Im Skript genannte Reaktionsschemata und Wirkungsgrad-Vergleich</caption><thead><tr><th>Prozess</th><th>Schema / Angabe</th></tr></thead><tbody>
+              <tr><td><strong>CO-Bildung aus CO<sub>2</sub></strong></td><td>CO<sub>2</sub> + H<sub>2</sub> → CO + H<sub>2</sub>O</td></tr>
+              <tr><td><strong>Fischer-Tropsch-Synthese</strong></td><td>(2n + 1) H<sub>2</sub> + n CO → C<sub>n</sub>H<sub>2n+2</sub> + n H<sub>2</sub>O</td></tr>
+              <tr><td><strong>Methanisierung aus CO</strong></td><td>CO + 3 H<sub>2</sub> → CH<sub>4</sub> + H<sub>2</sub>O</td></tr>
+              <tr><td><strong>Methanisierung aus CO<sub>2</sub></strong></td><td>CO<sub>2</sub> + 4 H<sub>2</sub> → CH<sub>4</sub> + 2 H<sub>2</sub>O</td></tr>
+              <tr><td><strong>Im Skript angegebene Energie bis zum Autoantrieb</strong></td><td>E-Fuel: ca. 10–15 %; Batterieauto: ca. 70 % (ohne Zwischenspeicherung).</td></tr>
+            </tbody></table></div>
+            <p>E-Fuels sind synthetische flüssige oder gasförmige Energieträger. Sie können Benzin, Diesel oder Kerosin ersetzen, ohne dass Verbrennungsmotoren oder die bestehende Infrastruktur grundsätzlich geändert werden müssen.</p>
+            <div class="summary-merke"><strong>Merke:</strong> Alkane haben die Formel C<sub>n</sub>H<sub>2n+2</sub>. Erdöl ist ein Kohlenwasserstoffgemisch; E-Fuels benötigen Wasserstoff, CO₂ und erneuerbare Energie.</div>
+          `
+        },
+        {
+          name: "Funktionelle Gruppen und Stoffklassen",
+          summary: `
+            <p>Die <strong>funktionelle Gruppe</strong> ist der charakteristische Teil eines organischen Moleküls. Sie bestimmt wesentlich, zu welcher <strong>Stoffklasse</strong> das Molekül gehört und wie es reagiert. In den Schemata steht <strong>R</strong> für den restlichen Molekülteil.</p>
+            <figure class="summary-figure summary-figure-wide summary-svg"><svg viewBox="0 0 640 150" role="img" aria-label="Funktionelle Gruppen gliedern organische Moleküle in Stoffklassen" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+              <rect x="235" y="12" width="170" height="38" rx="7" fill="rgba(88,116,90,.14)" stroke="#58745a"/>
+              <g fill="currentColor" text-anchor="middle"><text x="320" y="36" font-weight="bold">Molekülgerüst + Gruppe</text></g>
+              <path d="M320 50v27 M100 77h440 M100 77v18 M320 77v18 M540 77v18" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <g stroke="#4f7ea8" fill="rgba(79,126,168,.1)"><rect x="25" y="96" width="150" height="42" rx="6"/><rect x="245" y="96" width="150" height="42" rx="6"/><rect x="465" y="96" width="150" height="42" rx="6"/></g>
+              <g fill="currentColor" text-anchor="middle"><text x="100" y="114" font-weight="bold">O-haltig</text><text x="100" y="130">Alkohol, Ester, Säure</text>
+                <text x="320" y="114" font-weight="bold">N-haltig</text><text x="320" y="130">Amin, Amid</text>
+                <text x="540" y="114" font-weight="bold">C—C-Bindungen</text><text x="540" y="130">Alken, Alkin, Aromat</text></g>
+            </svg><figcaption><strong>Abb. – Eine funktionelle Gruppe weist auf die Stoffklasse hin.</strong> Die Beispiele sind nach den im Skript dargestellten Gruppen geordnet; die Gruppen steuern typische Reaktionsmöglichkeiten.<span class="figure-source">Quelle: nach Skript «Kapitel 7 – Organische Chemie», S. 10</span></figcaption></figure>
+            <h3>Sauerstoffhaltige Stoffklassen</h3>
+            <div class="summary-table-wrap"><table><thead><tr><th>Stoffklasse</th><th>Gruppe / Erkennungsmerkmal</th><th>Beispiel aus dem Skript</th></tr></thead><tbody>
+              <tr><td><strong>Alkohol</strong></td><td>R—OH</td><td>Ethandiol (zwei OH-Gruppen)</td></tr>
+              <tr><td><strong>Phenol</strong></td><td>OH direkt am Benzolring</td><td>Phenol</td></tr>
+              <tr><td><strong>Aldehyd</strong></td><td>R—CHO; C=O am Kettenende, am Carbonyl-C sitzt H</td><td>Zimtaldehyd</td></tr>
+              <tr><td><strong>Keton</strong></td><td>R—CO—R′; C=O innerhalb der Kohlenstoffkette</td><td>Aceton</td></tr>
+              <tr><td><strong>Carbonsäure</strong></td><td>R—COOH (Carboxylgruppe)</td><td>Essigsäure, Ameisensäure</td></tr>
+              <tr><td><strong>Ester</strong></td><td>R—COO—R′</td><td>Bananenester</td></tr>
+              <tr><td><strong>Ether</strong></td><td>R—O—R′; O zwischen zwei Molekülteilen</td><td>Diethylether</td></tr>
+            </tbody></table></div>
+            <h3>Stickstoffhaltige Gruppen und Kohlenwasserstoffklassen</h3>
+            <div class="summary-table-wrap"><table><thead><tr><th>Stoffklasse</th><th>Gruppe / Erkennungsmerkmal</th><th>Beispiel aus dem Skript</th></tr></thead><tbody>
+              <tr><td><strong>Amin</strong></td><td>N im Molekül; z. B. R—NH<sub>2</sub></td><td>Cadaverin (zwei Aminogruppen)</td></tr>
+              <tr><td><strong>Amid</strong></td><td>Carbonyl-C direkt an N gebunden: R—CO—NH—R′</td><td>Peptid Glycin-Glycin</td></tr>
+              <tr><td><strong>Alken</strong></td><td>Mindestens eine C=C-Doppelbindung</td><td>Ethen</td></tr>
+              <tr><td><strong>Alkin</strong></td><td>Mindestens eine C≡C-Dreifachbindung</td><td>Ethin</td></tr>
+              <tr><td><strong>Aromat</strong></td><td>Benzolring als charakteristisches Ringsystem</td><td>Benzol</td></tr>
+            </tbody></table></div>
+            <div class="summary-merke"><strong>Merke:</strong> Beim Unterscheiden genau hinschauen: Aldehyd und Keton enthalten C=O; Carbonsäure und Ester enthalten C=O und O, aber ihre Verknüpfung ist verschieden.</div>
+          `
+        },
+        {
+          name: "Die Reaktionen von organischen Molekülen",
+          summary: `
+            <p>Organische Reaktionen verändern meist gezielt eine funktionelle Gruppe; das Kohlenstoffgerüst bleibt häufig erhalten. Die fünf Grundtypen unterscheiden sich darin, ob Gruppen addiert, abgespalten, ersetzt oder Moleküle gespalten beziehungsweise verknüpft werden.</p>
+            <figure class="summary-figure summary-figure-wide summary-svg"><svg viewBox="0 0 640 310" role="img" aria-label="Übersicht der fünf Grundtypen organischer Reaktionen" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
+              <g stroke="currentColor" fill="#fff"><rect x="20" y="12" width="285" height="76" rx="7"/><rect x="335" y="12" width="285" height="76" rx="7"/>
+                <rect x="20" y="112" width="285" height="76" rx="7"/><rect x="335" y="112" width="285" height="76" rx="7"/>
+                <rect x="177" y="212" width="285" height="76" rx="7"/></g>
+              <g fill="currentColor" text-anchor="middle">
+                <text x="162" y="34" font-weight="bold">Addition</text><text x="162" y="54">C=C + X—Y → X—C—C—Y</text><text x="162" y="73">an Mehrfachbindung anlagern</text>
+                <text x="477" y="34" font-weight="bold">Eliminierung</text><text x="477" y="54">C—C → C=C + kleines Molekül</text><text x="477" y="73">Umkehrung der Addition</text>
+                <text x="162" y="134" font-weight="bold">Kondensation</text><text x="162" y="154">A + B → A—B + kleines Molekül</text><text x="162" y="173">häufig wird H₂O abgespalten</text>
+                <text x="477" y="134" font-weight="bold">Hydrolyse</text><text x="477" y="154">A—B + H₂O → A + B</text><text x="477" y="173">Spaltung durch Wasser</text>
+                <text x="320" y="234" font-weight="bold">Substitution</text><text x="320" y="254">R—X + Y → R—Y + X</text><text x="320" y="273">Atom / Gruppe ersetzen</text>
+              </g>
+            </svg><figcaption><strong>Abb. – Fünf Reaktionstypen, geordnet nach der Veränderung.</strong> Addition und Eliminierung sind Gegenrichtungen; Kondensation verbindet Moleküle, Hydrolyse spaltet unter Beteiligung von Wasser.<span class="figure-source">Quelle: nach Skript «Kapitel 7 – Organische Chemie», S. 12</span></figcaption></figure>
+            <div class="summary-table-wrap"><table><caption>Woran erkennt man den Reaktionstyp?</caption><thead><tr><th>Typ</th><th>Was ändert sich?</th><th>Beispiel / Hinweis aus dem Skript</th></tr></thead><tbody>
+              <tr><td><strong>Addition</strong></td><td>Atome oder Gruppen lagern sich an eine Mehrfachbindung an.</td><td>Br<sub>2</sub> wird an eine C=C-Bindung addiert.</td></tr>
+              <tr><td><strong>Eliminierung</strong></td><td>Ein kleines Molekül wird abgespalten; eine Mehrfachbindung entsteht.</td><td>Abspaltung von HBr; Umkehrung einer Addition.</td></tr>
+              <tr><td><strong>Substitution</strong></td><td>Ein Atom oder eine Gruppe wird durch ein anderes ersetzt.</td><td>Am Aromaten kann ein H durch NO<sub>2</sub> ersetzt werden.</td></tr>
+              <tr><td><strong>Kondensation</strong></td><td>Zwei organische Moleküle werden verknüpft; ein kleines Molekül geht ab.</td><td>Oft wird Wasser abgespalten, z. B. bei der Esterbildung.</td></tr>
+              <tr><td><strong>Hydrolyse</strong></td><td>Ein Molekül wird unter Beteiligung von Wasser in zwei organische Moleküle gespalten.</td><td>Gegenrichtung einer Kondensation.</td></tr>
+            </tbody></table></div>
+            <h3>Verbrennung und Reaktionsbedingungen</h3>
+            <div class="summary-table-wrap"><table><caption>Verbrennung von Heptan, ausgeglichen wie im Skript</caption><thead><tr><th>Ausgangsstoffe</th><th>→</th><th>Produkte</th><th>Voraussetzung</th></tr></thead><tbody>
+              <tr><td>C<sub>7</sub>H<sub>16</sub> + 11 O<sub>2</sub></td><td>→</td><td>7 CO<sub>2</sub> + 8 H<sub>2</sub>O</td><td>Sauerstoff und Zufuhr von Wärme</td></tr>
+            </tbody></table></div>
+            <ul>
+              <li><strong>Mit Sauerstoff:</strong> Organische Stoffe sind häufig brennbar; bei vollständiger Verbrennung entstehen aus C und H Kohlenstoffdioxid und Wasser.</li>
+              <li><strong>Erhitzen:</strong> Bei etwa 300–400 °C werden Moleküle meist vollständig zerstört; bei Sauerstoffmangel kann Verkohlung auftreten.</li>
+              <li><strong>Reaktionsbedingungen:</strong> Organische Reaktionen laufen bei Raumtemperatur oft langsam ab. Reagenzien, Katalysatoren, Temperatur und Druck werden deshalb am Reaktionspfeil angegeben.</li>
+              <li><strong>Reaktionsschema:</strong> Es zeigt meist nur die wichtigsten Edukte und Produkte und ist nicht zwingend eine vollständig ausgeglichene Reaktionsgleichung.</li>
+              <li><strong>Mehrere Gruppen:</strong> Ein Molekül mit mehreren funktionellen Gruppen kann auf verschiedene Arten reagieren; dadurch können unterschiedliche Produkte entstehen.</li>
+            </ul>
+            <div class="summary-merke"><strong>Merke:</strong> Erst die Veränderung erkennen: addieren, abspalten, ersetzen, verknüpfen oder mit Wasser spalten. So lässt sich der Reaktionstyp bestimmen.</div>
+          `
+        }
       ]
     }
   ]
